@@ -30,7 +30,7 @@ Ext.define("B2B.store.Friends_Ajax", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-                console.log(records);
+               // console.log(records);
             }
         }
     }
