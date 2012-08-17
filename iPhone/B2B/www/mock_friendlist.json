@@ -1,0 +1,49 @@
+{
+  "response": {
+    "status": {
+      "success": true,
+      "code": "OK",
+      "msg": "Status OK"
+    },
+    "body": {
+      "users": [
+        {
+          "username": "DM851",
+          "description": "test1",
+          "email": "asd@gmail.com",
+          "firstName": "Alessio1",
+          "lastName": "Della Motta",
+          "address": "via Emilia, 183 Bologna",
+          "idUser": "50073be62318689565ffad4e2",
+          "pwdHash": "e20d7798a5440b23378133454f0bdae699f2f23e",
+          "role": 0,
+          "status": 1
+        },
+        {
+          "username": "DM852",
+          "description": "test2",
+          "email": "asd2@gmail.com",
+          "firstName": "Alessio2",
+          "lastName": "Della Motta2",
+          "address": "via Emilia, 183 Bologna",
+          "idUser": "50073be6222222224easd2",
+          "pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
+          "role": 0,
+          "status": 1
+        }
+      ]
+    }
+  },
+  "metaData": {
+    "notification": {
+      "code": "OK",
+      "type": 1,
+      "msg": "Notification OK"
+    },
+    "badge": {
+      "code": "OK",
+      "type": 1,
+      "msg": "Notification OK"
+    }
+  }
+}

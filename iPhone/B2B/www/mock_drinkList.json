@@ -1,0 +1,47 @@
+{
+  "response": {
+    "status": {
+      "success": true,
+      "code": "OK",
+      "msg": "Status OK"
+    },
+    "body": {
+      "drinks": [
+        {
+          "username": "DM851",
+         // "description": "test1",
+          "image": "cippa",
+          "idUser": "Alessio1",
+          "idBeer": "Della Motta",
+          "IdPlace": "via Emilia, 183 Bologna",
+          "idActivity": "50073be62318689565ffad4e2",
+          "idFeedback": "dfefeef",
+          "status": 1
+        },
+        {
+          "username": "DM852",
+          //"description": "test2",
+          "image": "cippa2",
+          "idUser": "Alessio2",
+          "idBeer": "Della Motta",
+          "IdPlace": "via Emilia, 183 Bologna",
+          "idActivity": "dwdwd22222dwd65ffad4e2",
+          "idFeedback": "wdwdwdww",
+          "status": 1
+        }
+      ]
+    }
+  },
+  "metaData": {
+      "notification": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      },
+      "badge": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      }
+  }
+}

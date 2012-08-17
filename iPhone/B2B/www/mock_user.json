@@ -1,0 +1,52 @@
+{
+  "response": {
+    "status": {
+      "success": true,
+      "code": "OK",
+      "msg": "Status OK",
+      "count": 1
+    },
+    "body": {
+      "users": [
+        {
+          "idUser": 1,
+          "username": "Admin",
+          "displayName": "Geremiah",
+          "description": "descAdmin",
+          "email": "Admin@gmail.com",
+          "firstName": "NomeAdmin",
+          "lastName": "Cognome Admin",
+          "gender": 1,
+          "nationality": "IT",
+          "shareTwitter": true,
+          "shareFacebook": false,
+          "enableNotification": false,
+          "idUser": "50073asdsdsaddassd2",
+          "pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
+          "role": 1,
+          "status": 1,
+          "badges": "",
+          "favorites": "",
+          "activatedOn": new Date(),
+          "lastLoginOn": new Date(),
+          "liked": "",
+          "counter_friends": 0,
+          "counter_checkIns": 0,
+          "counter_badges": 0
+        }
+      ]
+    }
+  },
+  "metaData": {
+      "notification": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      },
+      "badge": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      }
+  }
+}

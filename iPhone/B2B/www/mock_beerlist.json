@@ -1,0 +1,39 @@
+{
+  "response": {
+    "status": {
+      "success": true,
+      "code": "OK",
+      "msg": "Status OK"
+    },
+    "body": {
+      "beers": [
+        {
+          "idBeer": "Guinness",
+          "name": "Guinness",
+          "description": "Black Stout",
+          "brewery": "Guinness brewery",
+          "nationality": "Ireland",
+          "type": "Black",
+          "style": "Stout",
+          "grad": 8.7,
+          "idUser": "50073asdsdsaddassd2",
+          "username": "admin",
+          "status": 1,
+          "insertedOn": new Date()
+        }
+      ]
+    }
+  },
+  "metaData": {
+      "notification": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      },
+      "badge": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      }
+  }
+}
