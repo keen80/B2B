@@ -21,16 +21,17 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 			placeHolder: i18n.app.LABEL_SEARCH,
 			name: 'beerfiltersearch',
 			flex: 1,
-			listeners  : {
-	           scope: this,
-	           
-	           keyup: function(field) {
+			listeners : {
+	            scope: this,
+	            keyup: function(field) {
 		           	var value = field.getValue();
 		           	var store = Ext.getStore('Beers_Ajax');
+
+		           	store.clearFilter();
 		           
 		           	if (!value) {
 		           		store.filterBy(function() {
-		                          return true;
+		                    return true;
 		                });
 					} else {
 						var searches = value.split(' '), regexps  = [], i;

@@ -3,6 +3,10 @@ Ext.define("B2B.store.Friends_Ajax", {
     id: "Friends_Ajax",
     config: {
         model: "B2B.model.Friend",
+        sorters: 'displayName',
+      /*  grouper: function(record){
+            return (record.get('displayName')[0]).toUpperCase();
+        }, */
         proxy: {
             type:'ajax',
             url:'mock_friendlist.json',
@@ -26,7 +30,7 @@ Ext.define("B2B.store.Friends_Ajax", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-
+                console.log(records);
             }
         }
     }
