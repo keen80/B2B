@@ -23,7 +23,7 @@ Ext.define("B2B.controller.Profiles", {
 
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
-		profileForm.setRecord(Ext.getStore('Profile').first());
+		profileForm.setRecord(Ext.getStore('Profile_Ajax').first());
 		var activatedOnField = Ext.getCmp('activatedOnField');
 		var lastLoginOnField = Ext.getCmp('lastLoginOnField');
 		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));

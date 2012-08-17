@@ -14,6 +14,8 @@ Ext.define('B2B.view.Beer_List_Container', {
 	initialize: function(){
 		this.callParent(arguments);
 
+		var me = this;
+
 		var beerlistsearchcomponent = {
 			xtype: 'beerlistsearchcomponent',
 		};
@@ -59,14 +61,14 @@ Ext.define('B2B.view.Beer_List_Container', {
 		   // indexBar: true,
 		    ui: 'round',
 		    singleSelect: true,
-		    listeners: {
-		      //  disclose: { fn: this.onNotesListDisclose, scope: this }
-		    }
+		    onItemDisclosure: function(a, b, c, d, e) {
+		   		me.onListItemTap(c);
+		   	}
 		};
 
 		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);
 	},
-	onAddFriendButtonTap: function(){
-		this.fireEvent("addFriendCommand", this);
+	onListItemTap: function(record){
+		this.fireEvent("viewBeerDetailCommand", this, record);
 	}
 });

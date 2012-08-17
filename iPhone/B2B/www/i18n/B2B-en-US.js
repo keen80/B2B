@@ -39,6 +39,7 @@ var i18n = {
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",
+		"BTN_BEERREPORT": "Report Incorrect",
 		"BTN_CANCEL": "Cancel",
 		"BTN_DELETE": "Delete",
 		"BTN_EDIT": "Edit",

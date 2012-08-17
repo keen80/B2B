@@ -116,7 +116,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
     initialize: function () {
         
         var me = this;
-        Ext.ux.starrating.View.superclass.initialize.apply(me, arguments);
+        Ext.ux.starrating.StarRating.superclass.initialize.apply(me, arguments);
 
         me.element.on({
             scope: me,

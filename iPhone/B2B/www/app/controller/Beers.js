@@ -18,8 +18,12 @@ Ext.define("B2B.controller.Beers", {
 				beerBackCommand: "onBackBeer"
 			},
 			beerDetail: {
-				addReportBeerCommand: "onAddReportBeer",
-				beerEditCommand: "onEditBeer"
+				reportBeerCommand: "onReportBeer",
+				beerEditCommand: "onEditBeer",
+				backBeerDetailCommand: "onBackBeerDetail"
+			},
+			beerList: {
+				viewBeerDetailCommand: "onViewBeerDetail"
 			}
 		}
 	},
@@ -54,11 +58,23 @@ Ext.define("B2B.controller.Beers", {
 		this.getBeerForm().reset();
 		this.getApp().pop();
 	},
+	onViewBeerDetail: function(what, record){
+		var jsonData = (Ext.getStore('Beers_Ajax').getAt(record)).data;
+		this.getApp().push({
+			xtype: "beerdetailpanel",
+			jsonData: jsonData
+		});
+
+	},
+	onBackBeerDetail: function(){
+		this.getApp().pop();
+	},
+
 	/* Not Yet Implemented */
 	onDeleteBeer: function(){
 		Ext.Msg.alert('DeleteBeer Not Implemented');
 	},
-	onAddReportBeer: function(){
+	onReportBeer: function(){
 		Ext.Msg.alert('onAddReportBeer Not Implemented');
 	},
 	launch: function(){
