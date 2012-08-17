@@ -6,9 +6,12 @@ Ext.define('B2B.view.Activity_List_Container', {
 	xtype: 'activitylistcontainerpanel',
 	
 	config: {
-		title: i18n.app.PANEL_DASHBOARD,
+		title: i18n.app.PANEL_ACTIVITY,
 		iconCls: 'maps',
-		styleHtmlContent: true
+		styleHtmlContent: true,
+		layout: {
+        	type: 'fit'
+        }
 	},
 	initialize: function(){
 
@@ -16,7 +19,7 @@ Ext.define('B2B.view.Activity_List_Container', {
 
 		var activityStreams = {
             xtype: "activitylistcomponent",
-            store: Ext.getStore("ActivityStreams"),
+            store: Ext.getStore("Activities_Ajax"),
         };
 
 		this.add([ activityStreams ]);

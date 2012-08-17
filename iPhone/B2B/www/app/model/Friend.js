@@ -14,12 +14,8 @@ Ext.define("B2B.model.Friend", {
 			{ name: 'nationality', type: 'string' },
 			{ name: 'birthDate', type: 'date', dateformat: 'c' },
 			{ name: 'avatar', type: 'string', defaultValue: 'resources/images/defaultAvatar.jpg'},
-			{ name: 'shareFacebook', type: 'boolean', defaultValue: false},
-			{ name: 'shareTwitter', type: 'boolean', defaultValue: false},
-			{ name: 'enableNotification', type: 'boolean', defaultValue: false},
 			{ name: 'role', type: 'int' },
 			{ name: 'status', type: 'int' },
-			{ name: 'pwdHash', type: 'string' },
 			{ name: 'activatedOn', type: 'date', dateformat: 'c' },
 			{ name: 'lastLoginOn', type: 'date', dateformat: 'c' },
 			{ name: 'badges', type: 'string', defaultValue: ''},
@@ -30,7 +26,7 @@ Ext.define("B2B.model.Friend", {
 			{ name: 'counter_badges', type: 'int', defaultValue: 0},
 		],
 		validations: [
-		//	{ type: 'presence', field: 'id'}
+			{ type: 'presence', field: 'displayName'}
 		]
 	}
 });

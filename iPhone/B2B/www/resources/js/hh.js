@@ -1,3 +1,7 @@
+var HH_config = {
+	"beergroup": 2
+}
+
 /* Utils Global Object*/
 var utils = {
 	/* translate f() a la wordpress */
@@ -24,6 +28,12 @@ var utils = {
 	},
 	getCodeFromCountry: function(text){
 		return (_.find(i18n.countries, function(state){ return state.text.toUpperCase() === text.toUpperCase();})||"").value;
+	},
+	getBeerStyleFromCode: function(value) {
+		return (_.find(i18n.beerstyles, function(style){ return style.value === value;})||"").text;
+	},
+	getBeerCodeFromStyle: function(text) {
+		return (_.find(i18n.beerstyles, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
 	}
 }
 	

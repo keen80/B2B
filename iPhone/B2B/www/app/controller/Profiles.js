@@ -38,7 +38,7 @@ Ext.define("B2B.controller.Profiles", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		var storeProfile = Ext.getStore("Profile");
+		var storeProfile = Ext.getStore("Profile_Ajax");
 		storeProfile.remove(storeProfile.getRange());
 		storeProfile.load();
 	},

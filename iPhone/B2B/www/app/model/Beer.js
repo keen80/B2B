@@ -9,7 +9,7 @@ Ext.define("B2B.model.Beer", {
 			{ name: 'name', type: 'string' },
 			{ name: 'brewery', type: 'string' },
 			{ name: 'nationality', type: 'string' },
-			{ name: 'type', type: 'string' },
+			{ name: 'beertype', type: 'string' },
 			{ name: 'beerstyle', type: 'string' },
 			{ name: 'grad', type: 'float' },
 			{ name: 'image', type: 'string' },

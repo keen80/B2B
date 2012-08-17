@@ -60,7 +60,7 @@ Ext.define("B2B.controller.Preferences", {
 		console.log("asdsads");
 		var preferencesForm = this.getPreferencesForm();
 		preferencesForm.reset();
-		preferencesForm.setRecord(Ext.getStore('Profile').first());
+		preferencesForm.setRecord(Ext.getStore('Profile_Ajax').first());
 	},
 	onChangeTwitter: function(a, what){
 		if(what){

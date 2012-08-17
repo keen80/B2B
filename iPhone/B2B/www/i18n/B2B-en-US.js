@@ -1,10 +1,10 @@
 var i18n = {
 	"app": {
 		"PANEL_ABOUTME": "About Me",
+		"PANEL_ACTIVITY": "Activities",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "The Beer Compendium",
 		"PANEL_CHECKIN": "Check In",
-		"PANEL_DASHBOARD": "Activities",
 		"PANEL_FACEBOOK": "Facebook Account",
 		"PANEL_FRIENDLIST": "My Friend List",
 		"PANEL_NOTIFICATION": "Notifications",
@@ -46,6 +46,9 @@ var i18n = {
 		"BTN_LOGOUT": "Logout",
 		"BTN_MARKALLREAD": "Mark All Read",
 		"BTN_OK": "OK",
+		"BTN_ORDERBYALPHA": "Alphabetical",
+		"BTN_ORDERBYSTYLE": "by Style",
+		"BTN_ORDERBYNATION": "by Nation",
 		"BTN_REFRESH": "Refresh",
 		"BTN_REMOVE": "Remove",
 		"BTN_REMOVEPERSONAL": "Remove Personal Information",
@@ -104,8 +107,12 @@ var i18n = {
 		"HINT_DISPLAYNAME": "We will display to other users only your selected Display Name",
 		"HINT_OFFLINE": "We are sorry, but an Internet Connection is required!",
 
-		"TEXT_NOFRIENDFOUND": "No friend found",
 		"TEXT_NOACTIVITYFOUND": "No activity found",
+		"TEXT_NOBEERFOUND": "No beer found",
+		"TEXT_NOFRIENDFOUND": "No friend found",
+		"TEXT_NONOTIFICATIONFOUND": "No activity found",
+		"TEXT_NOPROFILEFOUND": "No profile found",
+
 		"TEXT_TERMS": "Lorem Ipsum",
 
 		"Z": "Puppa Code"
@@ -125,7 +132,7 @@ var i18n = {
 		{ "text": "Special", "value": 10 }
 	],
 
-	"beertype": [
+	"beertypes": [
 		{ "text": "Single", "value": 0 },
 		{ "text": "Dubbel", "value": 1 },
 		{ "text": "Tripel", "value": 2 },

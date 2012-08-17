@@ -1,15 +1,15 @@
-Ext.define("B2B.store.Friends", {
+Ext.define("B2B.store.Notifications_Ajax", {
     extend: "Ext.data.Store",
-    id: "Friends",
+    id: "Notifications_Ajax",
     requires: "Ext.data.proxy.LocalStorage",
     config: {
-        model: "B2B.model.Friend",
+        model: "B2B.model.Notification",
         proxy: {
             type:'ajax',
-            url:'mock_friendlist.json',
+            url:'mock_notificationlist.json',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.users',
+                rootProperty: 'response.body.notifications',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'

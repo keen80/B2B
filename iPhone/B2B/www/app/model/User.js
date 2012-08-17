@@ -30,7 +30,7 @@ Ext.define("B2B.model.User", {
 			{ name: 'counter_badges', type: 'int', defaultValue: 0},
 		],
 		validations: [
-			//{ type: 'presence', field: 'id'}
+			{ type: 'presence', field: 'displayName'}
 		]
 	}
 });

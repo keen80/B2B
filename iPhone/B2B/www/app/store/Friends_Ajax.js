@@ -1,21 +1,24 @@
-Ext.define("B2B.store.Activities", {
+Ext.define("B2B.store.Friends_Ajax", {
     extend: "Ext.data.Store",
-    id: "Activities",
-    requires: "Ext.data.proxy.LocalStorage",
+    id: "Friends_Ajax",
     config: {
-        model: "B2B.model.Activity",
+        model: "B2B.model.Friend",
+        sorters: 'displayName',
+      /*  grouper: function(record){
+            return (record.get('displayName')[0]).toUpperCase();
+        }, */
         proxy: {
             type:'ajax',
-            url:'mock_activitylist.json',
+            url:'mock_friendlist.json',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.activities',
+                rootProperty: 'response.body.users',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
             },
             extraParams:{
-                username:'test'
+                username: 'test'
             }
         },
         listeners:{
@@ -24,10 +27,10 @@ Ext.define("B2B.store.Activities", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Activities Store Callback");
+                console.log("Friends Store Callback");
             },
-            load:function(el,records, successful){
-                //console.log(records);
+            load:function(el,records, successful){ 
+                console.log(records);
             }
         }
     }
