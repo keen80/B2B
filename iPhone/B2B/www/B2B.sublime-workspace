@@ -1,0 +1,443 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fi",
+				"firstName"
+			],
+			[
+				"data",
+				"dataJSON"
+			],
+			[
+				"store",
+				"storeProfile"
+			],
+			[
+				"notifica",
+				"notificationContainer"
+			],
+			[
+				"coun",
+				"counter_badges"
+			],
+			[
+				"V",
+				"View_Terms"
+			],
+			[
+				"User",
+				"User_Profile_Container"
+			],
+			[
+				"las",
+				"lastLoginOn"
+			],
+			[
+				"to",
+				"toUpperCase"
+			],
+			[
+				"acti",
+				"activityStream"
+			],
+			[
+				"actvit",
+				"Activity"
+			],
+			[
+				"frie",
+				"Friends"
+			],
+			[
+				"CONT",
+				"CONST_String"
+			],
+			[
+				"P",
+				"PANEL_PREFERENCES"
+			],
+			[
+				"DA",
+				"PANEL_DASHBOARD"
+			],
+			[
+				"language",
+				"language_string"
+			],
+			[
+				"langua",
+				"language_string"
+			],
+			[
+				"addFriend",
+				"addFriendButton"
+			],
+			[
+				"N",
+				"NOTIFICATION_OK"
+			],
+			[
+				"STAT",
+				"STATUS_OK"
+			],
+			[
+				"if",
+				"ifelse	if … else …"
+			],
+			[
+				"profile",
+				"User_Profile"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: se",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 440.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/slidenavigation/SlideNavigation.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/_App_Slider.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/Profile.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/toolbarspinner/TSpinner.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/_App_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/App_Dashboard.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/starrating/StarRating.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_Add_Form.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/Friends.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/Notifications.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Friend_List_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Friend.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/ActivityStreams.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/ActivityStreamList.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_activitylist.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/ActivityStream.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Preferences.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Preferences_Form.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Drink_AroundMe.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_user.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_friendlist.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_beerlist.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_drinkList.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/i18n/B2B-en-US.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Friend_List_SearchComponent.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_SearchComponent.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/i18n/B2B-it.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/temp_mock_beer.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Feedback.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Notification.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Beer.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Drink.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/User.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/custompicker/View.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/hh.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/index.html",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Drinks.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Notifications.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Privacy.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/css/hh.css",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Form.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Profiles.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/CheckIns.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Components_BeerSearch.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/css/app.css",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Component_IOSToggle.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Component_NotificationBar.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/View_Terms.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/View_Whatsnew.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Privacy_Form.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/slidenavigation/View.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/sdk/microloader/development.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/app-config.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/underscore_string-min.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/prettydate.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/packager.json",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/moment.min.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/hh.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_About.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/_App.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/_App.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/starrating/View.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/starrating/Ext.ux.touch.Rating.css",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Beers.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Notification_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Friend_List.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Notification_List.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/sass/app.scss",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/toolbarspinner/View.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/underscore-min.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/App_Container.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Privacy.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/App_Slider.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Profile.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Beers.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/App_Container - Copy.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Other_Profile.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Friend_Profile.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app-config.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_Detail.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_by_Region.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_AroundMe.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Drink_Add_Form.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_by_State.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_by_Alpha.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Beer_List_by_Type.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Component_BeerSearch.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Friends.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/ActivityStreams",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/i18n/B2B-en.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/Users.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/ActivityStreams.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Privacy (Hoang Chau Huynh's conflicted copy 2012-08-05).js",
+		"/C/Users/HC/Downloads/senchalearn-Watchlist-77bcc8f/senchalearn-Watchlist-77bcc8f/lib/facebook.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock.php",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Contact.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Home.js",
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Main.js",
+		"/C/Users/HC/Desktop/cb.txt",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/HC/Desktop/Adobe_CS6_All_Products_Activator_RePack__08.05.2012.softarchive.net/MPT.nfo"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"single",
+			"type",
+			"\"beerstyle\":\"",
+			"\"beerstyle\": \"",
+			"\"ALE/LAGER HYBRID\"",
+			"Ale",
+			"\"LAGER - DARK (SCURA)\"",
+			"\"LAGER - AMBER (ROSSA)\"",
+			"\"STRONG LAGER\"",
+			"lager",
+			"\"LAGER - PALE (CHIARA)\"",
+			"\"WHEAT (GRANO)\"",
+			"\"LAMBIC\"",
+			"\"ALE - BELGIAN STYLE\"",
+			"\"ALE - BRITISH STYLE\"",
+			"\"STOUT/PORTER\"",
+			"STOUT/PORTER",
+			"\"SPECIAL\"",
+			"style",
+			"LAGER - PALE (CHIARA)",
+			"\"description\": \"\"",
+			"title",
+			"setTitle",
+			"getTitle",
+			"Title",
+			"setTitle",
+			"titl",
+			",\n",
+			"B2B.app.loggedUser",
+			"'",
+			"value",
+			"{text",
+			"\"\n",
+			"code",
+			"name",
+			"console.log",
+			"Ext.ux.touch.Rating",
+			"Event AddBeer",
+			";\n",
+			"{\n            \"path\": \"resources/css/app.css\",\n            \"update\": \"delta\"\n        }",
+			"getCountryFromCode",
+			"__(",
+			"__",
+			"}\n",
+			"userprofileaboutpanel",
+			"AboutTitlebar",
+			",/\"",
+			",\\\"",
+			",\"",
+			"loggedUser",
+			"appLoadingIndicator",
+			" etc",
+			"\\},",
+			"},",
+			"\\},",
+			"\"sottostile\"",
+			"\"stile\"",
+			",\\s\\s\\s\\s\\s\\n",
+			"\"voto\": \"....\"",
+			"\"nazione\"",
+			"\"voto\": \"\"",
+			"\"voto\": \".\"",
+			"\"voto\": \"..\"",
+			"\"voto\": \"...\"",
+			"\"alc.vol.\"",
+			"\"birreria\"",
+			"\"nome\"",
+			"},\n",
+			"NomeAdmin",
+			"LABEL_FRIEND"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"beertype",
+			"6",
+			"2",
+			"1",
+			"3",
+			"0",
+			"8",
+			"9",
+			"5",
+			"4",
+			"7",
+			"10",
+			"beerstyle",
+			"\"idBeer\": \"\", \"idUser\": \"\", \"username\": \"\", \"image\": \"\", \"status\": \"\", \"insertedOn\": \"\", \"param1\": \"\", \"param2\": \"\", \"param3\": \"\"",
+			"Ext.getStore('Profile').first().data",
+			"\"",
+			"\"value\"",
+			"{ \"text\"",
+			"value",
+			"text",
+			"Ext.ux.starrating.View",
+			"",
+			"\"description\": \"\"},",
+			"\"description:\" \"\"},",
+			"{}},",
+			"\"type\"",
+			"\"style\"",
+			"",
+			"\"nationality\"",
+			"",
+			"\"grad\"",
+			"\"brewery\"",
+			"\"name\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true
+}

@@ -8,11 +8,7 @@ Ext.define('B2B.view.App_Dashboard', {
 	config: {
 		title: i18n.app.PANEL_DASHBOARD,
 		iconCls: 'maps',
-		styleHtmlContent: true,
-
-		items:[
-		
-        ]
+		styleHtmlContent: true
 	},
 	initialize: function(){
 
@@ -20,10 +16,7 @@ Ext.define('B2B.view.App_Dashboard', {
 
 		var activityStreams = {
             xtype: "activitystreamcomponent",
-            store: Ext.getStore("Friends"),
-            listeners: {
-              //  disclose: { fn: this.onNotesListDisclose, scope: this }
-            }
+            store: Ext.getStore("ActivityStreams"),
         };
 
 		this.add([ activityStreams ]);
