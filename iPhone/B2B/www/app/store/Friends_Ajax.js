@@ -1,7 +1,6 @@
-Ext.define("B2B.store.Friends", {
+Ext.define("B2B.store.Friends_Ajax", {
     extend: "Ext.data.Store",
-    id: "Friends",
-    requires: "Ext.data.proxy.LocalStorage",
+    id: "Friends_Ajax",
     config: {
         model: "B2B.model.Friend",
         proxy: {

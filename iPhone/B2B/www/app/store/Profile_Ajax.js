@@ -1,6 +1,6 @@
-Ext.define("B2B.store.Profile", {
+Ext.define("B2B.store.Profile_Ajax", {
     extend: "Ext.data.Store",
-    id:"Profile",
+    id:"Profile_Ajax",
     requires: "Ext.data.proxy.LocalStorage",
     config: {
         model: "B2B.model.User",

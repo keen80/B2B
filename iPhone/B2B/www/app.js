@@ -13,11 +13,14 @@ Ext.application({
         '_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy'
     ],
 
-    stores: ['Profile','Friends', 'Activities' ],
+    stores: [
+        'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax',
+        'Profile_Local'
+    ],
 
     views: [ '_App', '_App_Slider', '_App_Container',
         'Activity_List_Container', 'Activity_List',
-        'Beer_List_Container', 'Beer_List_by_Type', 'Beer_List_by_State', 'Beer_List_by_Alpha', 'Beer_List_SearchComponent', 'Beer_Add_Form',
+        'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form',
         'Drink_AroundMe',
         'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent',
         'Notification_Container', 'Notification_List',
@@ -46,11 +49,11 @@ Ext.application({
     },
 
     launch: function() {
+        this.CheckWhatsNew();
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         Ext.Viewport.add(Ext.create('B2B.view._App'));
     },
-
     onUpdated: function() {
         Ext.Msg.confirm(
             "Application Update",
@@ -61,5 +64,16 @@ Ext.application({
                 }
             }
         );
+    },
+    CheckWhatsNew: function(){
+        this.SyncProfile();
+        this.SyncBeer();
+    },
+    SyncProfile: function(){
+        console.log('TODO Sync Profile');
+    },
+    SyncBeer: function(){
+        console.log('PENDING Sync Beer');
+        Ext.getStore('Beers_Ajax').load();
     }
 });

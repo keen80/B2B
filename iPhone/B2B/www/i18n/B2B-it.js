@@ -1,10 +1,10 @@
 var i18n = {
 	"app": {
 		"PANEL_ABOUTME": "About Me",
+		"PANEL_ACTIVITY": "Activities",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "The Beer Compendium",
 		"PANEL_CHECKIN": "Check In",
-		"PANEL_DASHBOARD": "Activities",
 		"PANEL_FACEBOOK": "Facebook Account",
 		"PANEL_FRIENDLIST": "My Friend List",
 		"PANEL_NOTIFICATION": "Notifications",
@@ -87,6 +87,8 @@ var i18n = {
 		"LABEL_UNDISCLOSED": "Undisclosed",
 		"LABEL_WHATSNEW": "What&apos;s New",
 
+		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
+		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
 		"HINT_BEERCHOOSESTYLE": "Choose a Style",
 		"HINT_BEERCHOOSEGRAD": "Select a Gradation",
 		"HINT_CHOOSEBIRTHDATE": "When did You born?",
@@ -122,6 +124,21 @@ var i18n = {
 		{ "text": "Lambic", "value": 9 },
 		{ "text": "Special", "value": 10 }
 	],
+
+	"beertype": [
+		{ "text": "Single", "value": 0 },
+		{ "text": "Dubbel", "value": 1 },
+		{ "text": "Tripel", "value": 2 },
+		{ "text": "Quadrupel", "value": 3 },
+		{ "text": "Pilsen", "value": 4 },
+		{ "text": "Porter", "value": 5 },
+		{ "text": "Bitter / Pale", "value": 6 },
+		{ "text": "Spiced / Herbs", "value": 7 },
+		{ "text": "Wheat", "value": 8 },
+		{ "text": "Honey", "value": 9 },
+		{ "text": "Fruit", "value": 10 }
+	],
+
 	"beergrads": [
 		{ "text": "2.5%", "value": 1 },
 		{ "text": "3.0%", "value": 2 },

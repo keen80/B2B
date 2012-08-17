@@ -39,7 +39,7 @@ Ext.define('B2B.view.Friend_List_Container', {
 
 		var friendList = {
 		    xtype: "friendlistcomponent",
-		    store: Ext.getStore("Friends"),
+		    store: Ext.getStore("Friends_Ajax"),
 		    listeners: {
 		      //  disclose: { fn: this.onNotesListDisclose, scope: this }
 		    }

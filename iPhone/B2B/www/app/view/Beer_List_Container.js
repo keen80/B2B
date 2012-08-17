@@ -1,64 +1,71 @@
 Ext.define('B2B.view.Beer_List_Container', {
-	extend: 'Ext.tab.Panel',
+	extend: 'Ext.Panel',
 	xtype: 'beerlistcontainerpanel',
-	require: [
-		'Ext.field.Search'
+	requires: [
+		'Ext.SegmentedButton'
 	],
 	config: {
 		title: i18n.app.LABEL_BEERS,
 		iconCls: 'list',
-		activeItem: 0,
 		layout: {
-			animation: 'fade'
-		},
-		tabBar:{
+        	type: 'fit'
+        }
+	},
+	initialize: function(){
+		this.callParent(arguments);
+
+		var beerlistsearchcomponent = {
+			xtype: 'beerlistsearchcomponent',
+		};
+
+		var groupedButton = {
+			xtype: 'segmentedbutton',
+			items: [
+				{
+					text: i18n.app.BTN_ORDERBYALPHA,
+					pressed: true
+				},
+				{
+					text: i18n.app.BTN_ORDERBYSTYLE,
+					pressed: false
+				},
+				{
+					text: i18n.app.BTN_ORDERBYNATION,
+					pressed: false
+				}
+			]
+		};
+
+		var beerToolbar = {
+			xtype: 'toolbar',
+			cls: 'sub_titlebar',
 			ui: 'neutral',
-			layout: {
-				pack: 'center'
-			}
-		},
-		items: [
-			{
-				xtype: 'beerlistsearchcomponent'
-			},
-			{
-				title: 'by Type',
-				xtype: 'panel',
-				id: 'beertypeform',
-				iconCls: 'refresh',
-				items: [
-					{
-						xtype: 'beerlistbytypepanel'
-					}
-				]
-			},
-			{
-				title: 'by State',
-				xtype: 'panel',
-				id: 'beerstateform',
-				iconCls: 'refresh',
-				items: [
-					{
-						xtype: 'beerlistbystatepanel'
-					}
-				]
-			},
-			{
-				title: 'Alphabetical',
-				xtype: 'panel',
-				id: 'beeralphabeticalform',
-				iconCls: 'refresh',
-				items: [
-					{
-						xtype: 'beerlistbyalphapanel'
-					}
-				]
-			}
-	    ] /*,
-	 	listeners: {
-			show: function(){
-				Ext.getCmp('MainTitlebar').setTitle(i18n.app.PANEL_BEER);
-			}
-		} */
+			docked: 'top',
+			items: [
+				{
+					xtype: 'spacer'
+				},
+				groupedButton,
+				{
+					xtype: 'spacer'
+				},
+			]
+		};
+
+		var beerList = {
+		    xtype: "beerlistcomponent",
+		    store: Ext.getStore("Beers_Ajax"),
+		    grouped: true,
+		    indexBar: true,
+		    ui: 'round',
+		    listeners: {
+		      //  disclose: { fn: this.onNotesListDisclose, scope: this }
+		    }
+		};
+
+		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);
+	},
+	onAddFriendButtonTap: function(){
+		this.fireEvent("addFriendCommand", this);
 	}
 });

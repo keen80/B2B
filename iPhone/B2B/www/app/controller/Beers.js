@@ -26,16 +26,8 @@ Ext.define("B2B.controller.Beers", {
 	onShowBeerForm: function(){
 
 		var newBeer = Ext.create("B2B.model.Beer", {
-			'idUser': B2B.app.loggedUser.idUser,
-			'username': B2B.app.loggedUser.username,
-			'name': "",
-			'brewery': "TestBrewery",
-			'nationality': "AZ",
-			'type': 2,
-			'beerstyle': 2,
-			'grad': 2,
-			'image': "",
-			'param1': 2
+		//	'idUser': B2B.app.loggedUser.idUser,
+		//	'username': B2B.app.loggedUser.username,
 		});
 
 		this.getApp().push({

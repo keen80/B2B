@@ -23,7 +23,7 @@ Ext.define("B2B.controller.Friends", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		Ext.getStore("Friends").load();
+		Ext.getStore("Friends_Ajax").load();
 
 	},
 	init: function(){

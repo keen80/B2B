@@ -1,21 +1,21 @@
-Ext.define("B2B.store.Notifications", {
+Ext.define("B2B.store.Activities_Ajax", {
     extend: "Ext.data.Store",
-    id: "Friends",
+    id: "Activities_Ajax",
     requires: "Ext.data.proxy.LocalStorage",
     config: {
-        model: "B2B.model.Notification",
+        model: "B2B.model.Activity",
         proxy: {
             type:'ajax',
-            url:'mock_notificationlist.json',
+            url:'mock_activitylist.json',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.notifications',
+                rootProperty: 'response.body.activities',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
             },
             extraParams:{
-                username: 'test'
+                username:'test'
             }
         },
         listeners:{
@@ -24,10 +24,10 @@ Ext.define("B2B.store.Notifications", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Friends Store Callback");
+                console.log("Activities Store Callback");
             },
-            load:function(el,records, successful){ 
-
+            load:function(el,records, successful){
+                //console.log(records);
             }
         }
     }
