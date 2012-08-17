@@ -15,7 +15,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	},
 	initialize: function(){
 		this.callParent(arguments);
-
+		var oldValueCount = 0;
 		var searchField = {
 			xtype: 'searchfield',
 			placeHolder: i18n.app.LABEL_SEARCH,
@@ -27,7 +27,11 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           	var value = field.getValue();
 		           	var store = Ext.getStore('Beers_Ajax');
 
-		           	store.clearFilter();
+		           	if(value < oldValueCount){
+		           		store.clearFilter();
+		            }
+
+		            oldValueCount = value;
 		           
 		           	if (!value) {
 		           		store.filterBy(function() {

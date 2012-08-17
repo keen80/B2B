@@ -16,6 +16,7 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 	initialize: function(){
 		this.callParent(arguments);
 		
+		var oldValueCount = 0;
 
 		var searchField = {
 			xtype: 'searchfield',
@@ -27,8 +28,12 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 	            keyup: function(field) {
 		           	var value = field.getValue();
 		           	var store = Ext.getStore('Friends_Ajax');
-		           	
-		           	store.clearFilter();
+
+		           	if(value < oldValueCount){
+		           		store.clearFilter();
+		            }
+
+		            oldValueCount = value;
 		           
 		           	if (!value) {
 		           		store.filterBy(function() {
