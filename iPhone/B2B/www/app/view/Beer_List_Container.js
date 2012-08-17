@@ -58,6 +58,7 @@ Ext.define('B2B.view.Beer_List_Container', {
 		    grouped: true,
 		    indexBar: true,
 		    ui: 'round',
+		    singleSelect: true,
 		    listeners: {
 		      //  disclose: { fn: this.onNotesListDisclose, scope: this }
 		    }
