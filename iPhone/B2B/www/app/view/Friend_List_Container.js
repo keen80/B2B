@@ -1,6 +1,7 @@
 Ext.define('B2B.view.Friend_List_Container', {
 	extend: 'Ext.Panel',
 	xtype: 'friendlistcontainerpanel',
+	id: 'friendlistcontainerpanel',
 	config: {
 		title: i18n.app.LABEL_FRIENDS,
 		iconCls: 'user_list',
@@ -17,7 +18,7 @@ Ext.define('B2B.view.Friend_List_Container', {
 			text: i18n.app.BTN_SEARCHFRIEND,
 			ui: 'action',
 			id: 'search_friend_btn',
-			handler: this.onSearchFriendButtonTap,
+			handler: this.onItemTap,
 			scope: this
 		};
 
@@ -41,6 +42,7 @@ Ext.define('B2B.view.Friend_List_Container', {
 		    xtype: "friendlistcomponent",
 		    store: Ext.getStore("Friends_Ajax"),
 		    listeners: {
+		    	itemtap: this.onItemTap
 		      //  disclose: { fn: this.onNotesListDisclose, scope: this }
 		    }
 		};
@@ -49,6 +51,10 @@ Ext.define('B2B.view.Friend_List_Container', {
 
     },
 	onSearchFriendButtonTap: function(){
-		this.fireEvent("addSearchCommand", this);
+		this.fireEvent("onSearchCommand", this);
+	},
+	onItemTap: function(a, b){
+		console.log('fired: ' + b);
+		this.fireEvent("viewFriendDetailCommand", this, b);
 	}
 });

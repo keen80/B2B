@@ -7,7 +7,7 @@ Ext.define("B2B.controller.Friends", {
 		},
 		control: {
 			friendListContainer: {
-				addFriendCommand: "onAddFriend",
+				onSearchCommand: "onSearchFriend",
 				viewFriendDetailCommand: "onViewFriendDetail"
 			},
 			friendsProfile: {
@@ -15,11 +15,15 @@ Ext.define("B2B.controller.Friends", {
 			}
 		}
 	},
-	onAddFriend: function(){
-		Ext.Msg.alert('Event AddFriend Received');
+	onSearchFriend: function(){
+		Ext.Msg.alert('Event SearchFriend Received');
 	},
 	onDeleteFriend: function(){
 		Ext.Msg.alert('Event DeleteFriend Received');
+	},
+	onViewFriendDetail: function(a, b){
+		var jsonData = Ext.getStore('Friends_Ajax').getAt(b);
+		console.log(jsonData);
 	},
 	launch: function(){
 		this.callParent(arguments);
