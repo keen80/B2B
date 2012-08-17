@@ -1,4 +1,4 @@
-Ext.define("B2B.model.ActivityStream", {
+Ext.define("B2B.model.Activity", {
 	extend: "Ext.data.Model",
 	config: {
 		idProperty: 'idActivity',

@@ -22,7 +22,7 @@ Ext.define("B2B.view._App_Container", {
         },
         items: [
             {
-                xtype: 'dashboardpanel'
+                xtype: 'activitylistcontainerpanel'
             },
             {
                 xtype: 'beerlistcontainerpanel'
@@ -34,7 +34,7 @@ Ext.define("B2B.view._App_Container", {
                 xtype: 'friendlistcontainerpanel'
             },
             {
-                xtype: 'userprofilecontainer'
+                xtype: 'userprofilecontainerpanel'
             }
         ]
     },

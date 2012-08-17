@@ -1,9 +1,9 @@
-Ext.define('B2B.view.App_Dashboard', {
+Ext.define('B2B.view.Activity_List_Container', {
 	extend: 'Ext.Panel',
 	requires: [
         'Ext.TitleBar',
     ],
-	xtype: 'dashboardpanel',
+	xtype: 'activitylistcontainerpanel',
 	
 	config: {
 		title: i18n.app.PANEL_DASHBOARD,
@@ -15,7 +15,7 @@ Ext.define('B2B.view.App_Dashboard', {
     	this.callParent(arguments);
 
 		var activityStreams = {
-            xtype: "activitystreamcomponent",
+            xtype: "activitylistcomponent",
             store: Ext.getStore("ActivityStreams"),
         };
 

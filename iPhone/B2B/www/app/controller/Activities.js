@@ -1,11 +1,11 @@
-Ext.define("B2B.controller.ActivityStreams", {
+Ext.define("B2B.controller.Activities", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			dashboard: "dashboardpanel"
+			activitylistcontainerpanel: "activitylistcontainerpanel"
 		},
 		control: {
-			dashboard: {
+			activitylistcontainerpanel: {
 				viewActivityDetailCommand: "onViewActivityDetail"
 			}
 		}
@@ -15,7 +15,7 @@ Ext.define("B2B.controller.ActivityStreams", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		Ext.getStore("ActivityStreams").load();
+		Ext.getStore("Activities").load();
 		
 
 	},

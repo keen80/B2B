@@ -1,6 +1,6 @@
-Ext.define('B2B.view.ActivityStreamList', {
+Ext.define('B2B.view.Activity_List', {
     extend: 'Ext.dataview.List',
-    xtype: 'activitystreamcomponent',
+    xtype: 'activitylistcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',

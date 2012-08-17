@@ -53,39 +53,7 @@ Ext.define("B2B.view._App_Slider", {
                         xtype: 'App_Container' 
                     }
                 ]
-            }, /*
-            {
-                title: i18n.app.LABEL_PREFERENCES,
-                group: 'Settings',
-                slideButton: {
-                    selector: 'toolbar',
-                    docked: 'left',
-                    iconMask: true,
-                    iconCls: 'list'
-                },
-                items: [
-                    {
-                        xtype: 'userpreferencesform',
-                        layout: 'card'
-                    }
-                ]
             },
-            {
-                title: i18n.app.LABEL_MANAGELOGINDATA,
-                group: 'Privacy',
-                slideButton: {
-                    selector: 'toolbar',
-                    docked: 'left',
-                    iconMask: true,
-                    iconCls: 'list'
-                },
-                items: [
-                    {
-                        xtype: 'userprofileform',
-                        layout: 'card'
-                    }
-                ]
-            }, */
             {
                 title: i18n.app.LABEL_WHATSNEW,
                 group: 'News',

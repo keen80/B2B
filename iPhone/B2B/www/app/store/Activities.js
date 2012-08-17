@@ -1,9 +1,9 @@
-Ext.define("B2B.store.ActivityStreams", {
+Ext.define("B2B.store.Activities", {
     extend: "Ext.data.Store",
-    id: "ActivityStreams",
+    id: "Activities",
     requires: "Ext.data.proxy.LocalStorage",
     config: {
-        model: "B2B.model.ActivityStream",
+        model: "B2B.model.Activity",
         proxy: {
             type:'ajax',
             url:'mock_activitylist.json',
@@ -24,7 +24,7 @@ Ext.define("B2B.store.ActivityStreams", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("ActivityStream Store Callback");
+                console.log("Activities Store Callback");
             },
             load:function(el,records, successful){
                 //console.log(records);

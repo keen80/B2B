@@ -1,6 +1,6 @@
 Ext.define('B2B.view.User_Profile_Container', {
 	extend: 'Ext.Container',
-	xtype: 'userprofilecontainer',
+	xtype: 'userprofilecontainerpanel',
 	requires: [
 		'Ext.carousel.Carousel'
 	],
