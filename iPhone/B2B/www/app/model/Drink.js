@@ -1,9 +1,11 @@
 Ext.define("B2B.model.Drink", {
 	extend: "Ext.data.Model",
+	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'id',
+		idProperty: 'idDrink',
+		identifier:'uuid',
 		fields: [
-			{ name: 'id', type: 'int' },
+			{ name: 'idDrink', type: 'int' },
 			{ name: 'username', type: 'string' },
 			{ name: 'beer', type: 'string' },
 			{ name: 'feedback', type: 'string' },
@@ -11,7 +13,7 @@ Ext.define("B2B.model.Drink", {
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' }
 		],
 		validations: [
-			{ type: 'presence', field: 'id'}
+			{ type: 'presence', field: 'idDrink'}
 		]
 	}
 });

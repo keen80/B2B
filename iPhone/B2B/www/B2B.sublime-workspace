@@ -187,7 +187,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2509,
+				"buffer_size": 2511,
 				"line_ending": "Windows"
 			}
 		},
@@ -813,7 +813,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -828,8 +828,8 @@
 						"selection":
 						[
 							[
-								1975,
-								1975
+								1310,
+								1310
 							]
 						],
 						"settings":
@@ -839,7 +839,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1012,15 +1012,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2509,
+						"buffer_size": 2511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1892,
-								1892
+								2049,
+								2049
 							]
 						],
 						"settings":

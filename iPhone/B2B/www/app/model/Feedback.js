@@ -1,9 +1,11 @@
 Ext.define("B2B.model.Feedback", {
 	extend: "Ext.data.Model",
+	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'id',
+		idProperty: 'idFeedback',
+		identifier:'uuid',
 		fields: [
-			{ name: 'id', type: 'int' },
+			{ name: 'idFeedback', type: 'int' },
 			{ name: 'rate', type: 'int' },
 			{ name: 'comment', type: 'string' },
 			{ name: 'idUser', type: 'string' },
@@ -13,7 +15,7 @@ Ext.define("B2B.model.Feedback", {
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' },
 		],
 		validations: [
-			{ type: 'presence', field: 'id'}
+			{ type: 'presence', field: 'idFeedback'}
 		]
 	}
 });

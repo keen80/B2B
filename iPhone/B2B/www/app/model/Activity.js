@@ -1,7 +1,9 @@
 Ext.define("B2B.model.Activity", {
 	extend: "Ext.data.Model",
+	requires:'Ext.data.identifier.Uuid',
 	config: {
 		idProperty: 'idActivity',
+		identifier:'uuid',
 		fields: [
 			{ name: 'idActivity', type: 'int' },
 			{ name: 'avatar', type: 'string' },

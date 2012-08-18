@@ -8,37 +8,26 @@
     "body": {
       "notifications": [
         {
-          "idActivity": "dwd1232322dwd65ffad4e2",
-          "avatar": "cip2222.jpg",
-          "displayName": "1221312",
-          "idUser": "Adelee",
-          "idBeer": "Beeraa",
-          "IdPlace": "sadsad",
-          "idFriend" : "ttggtrg",
-          "beerName": "Caccaaa",
-          "placeName": "PARCO",
-          "friendName" : "Sara H",
-          "type": 1,
-          "status": 1,
-          "like": 0,
-          "date": ""
+          "idPlace": "dwd1232322dwd65ffad4e2",
+          "placeName": "1221312",
+          "lat": "4134142",
+          "long": "13422434",
+          "description": "sadsad",
+          "category": 1,
+          "subcategory": 1,
+          "insertedOn": new Date(),
         },
         {
-          "idActivity": "dwdwd22222dwd65ffad4e2",
-          "avatar": "cippa2.jpg",
-          "displayName": "DM852",
-          "idUser": "Alessio2",
-          "idBeer": "Della Motta",
-          "IdPlace": "dtrdrd",
-          "idFriend" : "csdfewffewewf",
-          "beerName": "Guinness",
-          "placeName": "Wolf Pub",
-          "friendName" : "Marco G.",
-          "type": 1,
-          "status": 1,
-          "like": 0,
-          "date": ""
-        }
+          "idPlace": "dwd12343534ad4e2",
+          "placeName": "gtgtgrt",
+          "lat": "332423",
+          "long": "6546546",
+          "description": "nhtntdn",
+          "category": 0,
+          "subcategory": 4,
+          "insertedOn": new Date(),
+        },
+
       ]
     }
   },

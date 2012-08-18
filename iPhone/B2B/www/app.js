@@ -7,21 +7,22 @@ Ext.application({
         'Ext.MessageBox',
     ],
 
-    models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification'],
+    models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place'],
 
     controllers: [
-        '_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy'
+        '_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy', 'Places'
     ],
 
     stores: [
-        'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax',
-        'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'
+        'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax',
+        'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Places_Local'
     ],
 
     views: [ '_App', '_App_Slider', '_App_Container',
         'Activity_List_Container', 'Activity_List',
         'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
         'Drink_AroundMe',
+        'Place_List',
         'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
         'Notification_Container', 'Notification_List',
         'User_Profile_Container', 'User_Profile_About', 'User_Profile_Privacy_Form', 'User_Profile_Form',
@@ -54,7 +55,7 @@ Ext.application({
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         Ext.Viewport.add(Ext.create('B2B.view._App'));
-        Ext.getCmp("_app").setMasked({xtype:'loadmask',message:'your custom loadmask'});
+       // Ext.getCmp("_app").setMasked({xtype:'loadmask',message:'your custom loadmask'});
     },
     onUpdated: function() {
         Ext.Msg.confirm(

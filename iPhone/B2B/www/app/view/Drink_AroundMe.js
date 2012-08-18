@@ -3,6 +3,7 @@ Ext.define('B2B.view.Drink_AroundMe', {
     requires: [
         'Ext.Map'
     ],
+  id: 'drinkaroundmepanel',
 	xtype: 'drinkaroundmepanel',
 	config: {
 		title: i18n.app.LABEL_CHECKIN,
@@ -20,7 +21,7 @@ Ext.define('B2B.view.Drink_AroundMe', {
         height: 180,
         flex: 1,                                    
         mapOptions: {
-            zoom: app_config.map.zoomLevel,
+            zoom: HH_config.map.zoomLevel,
             mapTypeId : google.maps.MapTypeId.ROADMAP,
             navigationControl: false,
             zoomControl: false,
@@ -28,14 +29,14 @@ Ext.define('B2B.view.Drink_AroundMe', {
             scaleControl: false,
             streetViewControl: false,
             panControl: false,
-            draggable: false
+            draggable: true
         },
         listeners: {
             maprender: function(comp, map){
                 new google.maps.Marker({
                     position: new google.maps.LatLng(this._geo.getLatitude(), this._geo.getLongitude()),
                     map: map,
-                    icon: app_config.map.marker
+                    icon: HH_config.map.marker
                 });
             }
         }
@@ -73,9 +74,34 @@ Ext.define('B2B.view.Drink_AroundMe', {
           ]
       };
 
+      var geo = Ext.create('Ext.util.Geolocation', {
+    autoUpdate: false,
+    listeners: {
+        locationupdate: function(geo) {
+            //Ext Call To server with call back
+            var geoStore = Ext.getStore("Places_Ajax");
+            //geoStore.getProxy().extraParams.lat = geo.getLatitude();
+            //geoStore.getProxy().extraParams.long = geo.getLongititude();
+            geoStore.getProxy().setExtraParam('lat', geo.getLatitude());
+            geoStore.getProxy().setExtraParam('lon', geo.getLongitude());
+            geoStore.load();
+            /*geoStore.load({
+              params: {
+                lat: geo.getLatitude(),
+                lon: geo.getLongititude()
+              }
+            }); */
+        },
+        locationerror: function(geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
+            console.error(message);
+        }
+    }
+});
+geo.updateLocation();
+
       var placeList = {
-        xtype: "friendlistcomponent",
-        store: Ext.getStore("Friends"),
+        xtype: "placelistcomponent",
+        store: Ext.getStore("Places_Ajax"),
         flex: 1
       };
 

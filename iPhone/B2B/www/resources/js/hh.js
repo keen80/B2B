@@ -1,5 +1,9 @@
 var HH_config = {
-	"beergroup": 2
+	"beergroup": 2,
+	map: {
+		marker: "resources/icons/icon.png",
+		zoomLevel: 18
+	}
 }
 
 var goingTo = {

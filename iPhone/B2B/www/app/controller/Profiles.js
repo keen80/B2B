@@ -24,10 +24,10 @@ Ext.define("B2B.controller.Profiles", {
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-		var activatedOnField = Ext.getCmp('activatedOnField');
+		/*var activatedOnField = Ext.getCmp('activatedOnField');
 		var lastLoginOnField = Ext.getCmp('lastLoginOnField');
 		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));
-		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));
+		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));*/
 	},
 	onSaveProfile: function(){
 		Ext.Msg.alert("Saved!");
