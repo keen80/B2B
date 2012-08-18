@@ -42,7 +42,7 @@ var goingTo = {
 
         if(toBeer || storeBeer.getCount() < 1)
         	console.log("BeerList is empty or need to be refreshed");
-        	Ext.getStore('Beers_Ajax').load();
+        	//Ext.getStore('Beers_Ajax').load();
         if(toFriend || storeFriend.getCount() < 1)
         	console.log("Friendlist is empty or need to be refreshed");
         	Ext.getStore('Friends_Ajax').load();

@@ -50,9 +50,11 @@ Ext.application({
 
     launch: function() {
         goingTo.step1("Loading Profile");
+
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         Ext.Viewport.add(Ext.create('B2B.view._App'));
+        Ext.getCmp("_app").setMasked({xtype:'loadmask',message:'your custom loadmask'});
     },
     onUpdated: function() {
         Ext.Msg.confirm(

@@ -63,7 +63,7 @@ Ext.define('B2B.view.Beer_List_Container', {
 		    singleSelect: true,
 		    onItemDisclosure: function(a, b, c, d, e) {
 		   		me.onListItemTap(c);
-		   	}
+		   	},
 		};
 
 		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);

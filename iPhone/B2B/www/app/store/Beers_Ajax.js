@@ -18,6 +18,7 @@ Ext.define("B2B.store.Beers_Ajax", {
                 messageProperty: 'response.status.msg'
             }
         },
+        autoLoad: true,
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);

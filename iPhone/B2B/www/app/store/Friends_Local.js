@@ -2,12 +2,12 @@ Ext.define("B2B.store.Friends_Local", {
     extend: "Ext.data.Store",
     id: "Friends_Local",
     requires: "Ext.data.proxy.LocalStorage",
-    grouper: function(record){
-            return (record.get('displayName')[0]).toUpperCase();
-        },
     config: {
         model: "B2B.model.Friend",
         sorters: 'displayName',
+        grouper: function(record){
+            return (record.get('displayName')[0]).toUpperCase();
+        },
         proxy: {
             type:'localstorage'
         },

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Notifi",
+				"Notifications_Ajax"
+			],
+			[
+				"Friend",
+				"Friends_Local"
+			],
+			[
+				"store",
+				"store_local"
+			],
+			[
 				"On",
 				"onItemDisclosure"
 			],
@@ -34,10 +46,6 @@
 			[
 				"data",
 				"dataJSON"
-			],
-			[
-				"store",
-				"storeProfile"
 			],
 			[
 				"notifica",
@@ -123,7 +131,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2385,
+				"buffer_size": 2392,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +139,7 @@
 			"file": "app/view/Activity_List_Container.js",
 			"settings":
 			{
-				"buffer_size": 528,
+				"buffer_size": 529,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +147,7 @@
 			"file": "mock_beerlist.json",
 			"settings":
 			{
-				"buffer_size": 1216386,
+				"buffer_size": 1195086,
 				"line_ending": "Windows"
 			}
 		},
@@ -179,7 +187,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2581,
+				"buffer_size": 2509,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +195,15 @@
 			"file": "app/store/Activities_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1155,
+				"buffer_size": 1454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Activities_Local.js",
+			"settings":
+			{
+				"buffer_size": 777,
 				"line_ending": "Windows"
 			}
 		},
@@ -203,7 +219,7 @@
 			"file": "app/controller/Activities.js",
 			"settings":
 			{
-				"buffer_size": 523,
+				"buffer_size": 525,
 				"line_ending": "Windows"
 			}
 		},
@@ -227,7 +243,7 @@
 			"file": "app/view/Beer_List_by_State.js",
 			"settings":
 			{
-				"buffer_size": 206,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -235,7 +251,7 @@
 			"file": "app/view/Beer_List_by_Type.js",
 			"settings":
 			{
-				"buffer_size": 213,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -243,7 +259,7 @@
 			"file": "app/view/Beer_List_by_Region.js",
 			"settings":
 			{
-				"buffer_size": 270,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -251,7 +267,15 @@
 			"file": "app/store/Beers_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1565,
+				"buffer_size": 1506,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Beers_Local.js",
+			"settings":
+			{
+				"buffer_size": 885,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,7 +283,15 @@
 			"file": "app/store/Friends_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1242,
+				"buffer_size": 1580,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Friends_Local.js",
+			"settings":
+			{
+				"buffer_size": 908,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,7 +299,7 @@
 			"file": "app/store/Profile_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1779,
+				"buffer_size": 2013,
 				"line_ending": "Windows"
 			}
 		},
@@ -275,7 +307,7 @@
 			"file": "app/store/Profile_Local.js",
 			"settings":
 			{
-				"buffer_size": 720,
+				"buffer_size": 945,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,7 +315,15 @@
 			"file": "app/store/Notifications_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1132,
+				"buffer_size": 1521,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Notifications_Local.js",
+			"settings":
+			{
+				"buffer_size": 744,
 				"line_ending": "Windows"
 			}
 		},
@@ -291,7 +331,7 @@
 			"file": "app/controller/Profiles.js",
 			"settings":
 			{
-				"buffer_size": 1269,
+				"buffer_size": 1274,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,7 +339,7 @@
 			"file": "app/controller/Friends.js",
 			"settings":
 			{
-				"buffer_size": 1037,
+				"buffer_size": 1040,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +363,7 @@
 			"file": "app/view/Friend_List_Container.js",
 			"settings":
 			{
-				"buffer_size": 1224,
+				"buffer_size": 1287,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +371,7 @@
 			"file": "resources/js/hh.js",
 			"settings":
 			{
-				"buffer_size": 1284,
+				"buffer_size": 3244,
 				"line_ending": "Windows"
 			}
 		},
@@ -347,7 +387,7 @@
 			"file": "i18n/B2B-it.js",
 			"settings":
 			{
-				"buffer_size": 16345,
+				"buffer_size": 19348,
 				"line_ending": "Windows"
 			}
 		},
@@ -355,7 +395,7 @@
 			"file": "app/view/Beer_List_Container.js",
 			"settings":
 			{
-				"buffer_size": 1346,
+				"buffer_size": 1351,
 				"line_ending": "Windows"
 			}
 		},
@@ -379,7 +419,7 @@
 			"file": "app/model/User.js",
 			"settings":
 			{
-				"buffer_size": 1499,
+				"buffer_size": 1643,
 				"line_ending": "Windows"
 			}
 		},
@@ -436,6 +476,54 @@
 			"settings":
 			{
 				"buffer_size": 8650,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sdk/microloader/development.js",
+			"settings":
+			{
+				"buffer_size": 2499,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/model/Notification.js",
+			"settings":
+			{
+				"buffer_size": 462,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mock_notificationlist.json",
+			"settings":
+			{
+				"buffer_size": 1316,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/User_Preferences_Form.js",
+			"settings":
+			{
+				"buffer_size": 2985,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/Friend_List.js",
+			"settings":
+			{
+				"buffer_size": 465,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/_App.js",
+			"settings":
+			{
+				"buffer_size": 253,
 				"line_ending": "Windows"
 			}
 		}
@@ -725,7 +813,7 @@
 	"groups":
 	[
 		{
-			"selected": 21,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -733,15 +821,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2385,
+						"buffer_size": 2392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1310,
-								1310
+								1975,
+								1975
 							]
 						],
 						"settings":
@@ -751,7 +839,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -761,15 +849,15 @@
 					"file": "app/view/Activity_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 529,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								287,
-								245
+								519,
+								519
 							]
 						],
 						"settings":
@@ -787,15 +875,15 @@
 					"file": "mock_beerlist.json",
 					"settings":
 					{
-						"buffer_size": 1216386,
+						"buffer_size": 1195086,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1145,
-								1151
+								711,
+								711
 							]
 						],
 						"settings":
@@ -805,7 +893,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5791.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -924,15 +1012,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2581,
+						"buffer_size": 2509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								699,
-								699
+								1892,
+								1892
 							]
 						],
 						"settings":
@@ -942,7 +1030,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -952,15 +1040,15 @@
 					"file": "app/store/Activities_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 1155,
+						"buffer_size": 1454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1094,
-								1094
+								1274,
+								1274
 							]
 						],
 						"settings":
@@ -977,6 +1065,34 @@
 				},
 				{
 					"buffer": 9,
+					"file": "app/store/Activities_Local.js",
+					"settings":
+					{
+						"buffer_size": 777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								706,
+								734
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "app/model/Activity.js",
 					"settings":
 					{
@@ -1003,19 +1119,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "app/controller/Activities.js",
 					"settings":
 					{
-						"buffer_size": 523,
+						"buffer_size": 525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								449
+								422,
+								422
 							]
 						],
 						"settings":
@@ -1030,7 +1146,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "app/model/Beer.js",
 					"settings":
 					{
@@ -1057,7 +1173,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "app/view/Beer_List.js",
 					"settings":
 					{
@@ -1084,46 +1200,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "app/view/Beer_List_by_State.js",
 					"settings":
 					{
-						"buffer_size": 206,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/view/Beer_List_by_Type.js",
-					"settings":
-					{
-						"buffer_size": 213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								213,
-								213
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1139,18 +1228,18 @@
 				},
 				{
 					"buffer": 15,
-					"file": "app/view/Beer_List_by_Region.js",
+					"file": "app/view/Beer_List_by_Type.js",
 					"settings":
 					{
-						"buffer_size": 270,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								270,
-								270
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1166,25 +1255,24 @@
 				},
 				{
 					"buffer": 16,
-					"file": "app/store/Beers_Ajax.js",
+					"file": "app/view/Beer_List_by_Region.js",
 					"settings":
 					{
-						"buffer_size": 1565,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								189,
-								310
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1194,18 +1282,18 @@
 				},
 				{
 					"buffer": 17,
-					"file": "app/store/Friends_Ajax.js",
+					"file": "app/store/Beers_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 1242,
+						"buffer_size": 1506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								173
+								637,
+								637
 							]
 						],
 						"settings":
@@ -1222,18 +1310,18 @@
 				},
 				{
 					"buffer": 18,
-					"file": "app/store/Profile_Ajax.js",
+					"file": "app/store/Beers_Local.js",
 					"settings":
 					{
-						"buffer_size": 1779,
+						"buffer_size": 885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								983,
-								983
+								372,
+								372
 							]
 						],
 						"settings":
@@ -1250,18 +1338,18 @@
 				},
 				{
 					"buffer": 19,
-					"file": "app/store/Profile_Local.js",
+					"file": "app/store/Friends_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 720,
+						"buffer_size": 1580,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								661,
-								661
+								1388,
+								1388
 							]
 						],
 						"settings":
@@ -1278,18 +1366,18 @@
 				},
 				{
 					"buffer": 20,
-					"file": "app/store/Notifications_Ajax.js",
+					"file": "app/store/Friends_Local.js",
 					"settings":
 					{
-						"buffer_size": 1132,
+						"buffer_size": 908,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								663,
-								663
+								139,
+								139
 							]
 						],
 						"settings":
@@ -1306,24 +1394,25 @@
 				},
 				{
 					"buffer": 21,
-					"file": "app/controller/Profiles.js",
+					"file": "app/store/Profile_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 1269,
+						"buffer_size": 2013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								927,
-								927
+								1294,
+								1294
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1333,18 +1422,102 @@
 				},
 				{
 					"buffer": 22,
-					"file": "app/controller/Friends.js",
+					"file": "app/store/Profile_Local.js",
 					"settings":
 					{
-						"buffer_size": 1037,
+						"buffer_size": 945,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								405,
-								428
+								662,
+								662
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "app/store/Notifications_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 1521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1134,
+								1134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/store/Notifications_Local.js",
+					"settings":
+					{
+						"buffer_size": 744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								704,
+								704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "app/controller/Profiles.js",
+					"settings":
+					{
+						"buffer_size": 1274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
 							]
 						],
 						"settings":
@@ -1359,7 +1532,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 26,
+					"file": "app/controller/Friends.js",
+					"settings":
+					{
+						"buffer_size": 1040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
 					"file": "app/controller/Preferences.js",
 					"settings":
 					{
@@ -1386,7 +1586,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 28,
 					"file": "app/controller/Beers.js",
 					"settings":
 					{
@@ -1413,19 +1613,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 29,
 					"file": "app/view/Friend_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 1224,
+						"buffer_size": 1287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								873,
-								873
+								891,
+								891
 							]
 						],
 						"settings":
@@ -1440,19 +1640,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 30,
 					"file": "resources/js/hh.js",
 					"settings":
 					{
-						"buffer_size": 1284,
+						"buffer_size": 3244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								355,
-								355
+								1599,
+								1599
 							]
 						],
 						"settings":
@@ -1461,13 +1661,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 27,
+					"buffer": 31,
 					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
@@ -1494,19 +1694,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 32,
 					"file": "i18n/B2B-it.js",
 					"settings":
 					{
-						"buffer_size": 16345,
+						"buffer_size": 19348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15616,
-								15616
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1521,19 +1721,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 33,
 					"file": "app/view/Beer_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 1346,
+						"buffer_size": 1351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1040,
-								1040
+								1176,
+								1176
 							]
 						],
 						"settings":
@@ -1548,7 +1748,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 34,
 					"file": "app/view/user_login.js",
 					"settings":
 					{
@@ -1566,7 +1766,7 @@
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1576,7 +1776,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 35,
 					"file": "app/view/Beer_List_SearchComponent.js",
 					"settings":
 					{
@@ -1603,19 +1803,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 32,
+					"buffer": 36,
 					"file": "app/model/User.js",
 					"settings":
 					{
-						"buffer_size": 1499,
+						"buffer_size": 1643,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1495,
-								1495
+								1547,
+								1547
 							]
 						],
 						"settings":
@@ -1630,7 +1830,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 37,
 					"file": "app/model/Friend.js",
 					"settings":
 					{
@@ -1657,7 +1857,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 38,
 					"file": "app/view/Friend_List_SearchComponent.js",
 					"settings":
 					{
@@ -1684,7 +1884,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 39,
 					"file": "mock_friendlist.json",
 					"settings":
 					{
@@ -1712,7 +1912,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 40,
 					"file": "app/view/Friend_Detail.js",
 					"settings":
 					{
@@ -1739,7 +1939,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 41,
 					"file": "app/view/Beer_Detail.js",
 					"settings":
 					{
@@ -1766,7 +1966,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 38,
+					"buffer": 42,
 					"file": "app/view/Beer_Add_Form.js",
 					"settings":
 					{
@@ -1793,7 +1993,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 39,
+					"buffer": 43,
 					"file": "ux/starrating/StarRating.js",
 					"settings":
 					{
@@ -1816,6 +2016,169 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1476.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "sdk/microloader/development.js",
+					"settings":
+					{
+						"buffer_size": 2499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1335,
+								1335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 64.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "app/model/Notification.js",
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								335,
+								335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "mock_notificationlist.json",
+					"settings":
+					{
+						"buffer_size": 1316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								795,
+								795
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "app/view/User_Preferences_Form.js",
+					"settings":
+					{
+						"buffer_size": 2985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2593,
+								2567
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1149.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "app/view/Friend_List.js",
+					"settings":
+					{
+						"buffer_size": 465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "app/view/_App.js",
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
