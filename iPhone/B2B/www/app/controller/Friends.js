@@ -24,7 +24,7 @@ Ext.define("B2B.controller.Friends", {
 		Ext.Msg.alert('Event DeleteFriend Received');
 	},
 	onViewFriendDetail: function(what, record){
-		var jsonData = (Ext.getStore('Friends_Ajax').getAt(record)).data;
+		var jsonData = (Ext.getStore('Friends_Local').getAt(record)).data;
 		this.getApp().push({
 			xtype: "frienddetailpanel",
 			jsonData: jsonData
@@ -36,7 +36,7 @@ Ext.define("B2B.controller.Friends", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		Ext.getStore("Friends_Ajax").load();
+		//Ext.getStore("Friends_Ajax").load();
 
 	},
 	init: function(){

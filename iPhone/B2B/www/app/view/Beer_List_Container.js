@@ -57,9 +57,9 @@ Ext.define('B2B.view.Beer_List_Container', {
 		var beerList = {
 		    xtype: "beerlistcomponent",
 		    store: Ext.getStore("Beers_Ajax"),
-		    grouped: true,
+		   // grouped: true,
 		   // indexBar: true,
-		    ui: 'round',
+		   // ui: 'round',
 		    singleSelect: true,
 		    onItemDisclosure: function(a, b, c, d, e) {
 		   		me.onListItemTap(c);

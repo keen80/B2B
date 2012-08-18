@@ -1,7 +1,6 @@
 Ext.define("B2B.store.Activities_Ajax", {
     extend: "Ext.data.Store",
     id: "Activities_Ajax",
-    requires: "Ext.data.proxy.LocalStorage",
     config: {
         model: "B2B.model.Activity",
         proxy: {
@@ -27,7 +26,15 @@ Ext.define("B2B.store.Activities_Ajax", {
                 console.log("Activities Store Callback");
             },
             load:function(el,records, successful){
-                //console.log(records);
+                console.log("Activities_Ajax: Retrieved Data, copying to Local");
+                var store_local = Ext.getStore('Activities_Local');
+
+                store_local.getProxy().clear();
+                this.each(function(record) {
+                    store_local.add(record.data);
+                });
+                store_local.sync();
+                this.removeAll();
             }
         }
     }

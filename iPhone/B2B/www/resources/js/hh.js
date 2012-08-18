@@ -2,6 +2,56 @@ var HH_config = {
 	"beergroup": 2
 }
 
+var goingTo = {
+	log: true,
+	step1: function(msg){
+		if(this.log) console.log(msg);
+		// Autenticazione and Get Profile
+		Ext.getStore('Profile_Local').load();
+	},
+	step2: function(msg){
+		if(this.log) console.log(msg);
+		//Load data from Ajax
+		Ext.getStore('Profile_Ajax').load();
+		Ext.getStore('Activities_Ajax').load();
+	},
+	step3: function(msg, toBeer, toFriend, toNotification){
+		// Load Profile Defaults
+		if(this.log) console.log(msg);
+		/* From local Storage */
+		var storeProfile = Ext.getStore("Profile_Local");
+		var storeBeer = Ext.getStore('Beers_Local');
+		var storeFriend = Ext.getStore('Friends_Local');
+		var storeNotification = Ext.getStore('Notifications_Local');
+
+        var dataJSON  = storeProfile.first().data;
+        var displayName = utils.getDisplayName(dataJSON);
+        Ext.getCmp('AboutTitlebar').setTitle(displayName);
+        Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+dataJSON.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+
+        var preferencesForm = Ext.getCmp("userpreferencesform");
+        preferencesForm.reset();
+        preferencesForm.setRecord(storeProfile.first());
+
+        B2B.app.getController('Preferences').onChangeTwitter(null, dataJSON.shareTwitter);
+        B2B.app.getController('Preferences').onChangeFacebook(null, dataJSON.shareFacebook);
+
+		storeBeer.load();
+		storeFriend.load();
+		storeNotification.load();
+
+        if(toBeer || storeBeer.getCount() < 1)
+        	console.log("BeerList is empty or need to be refreshed");
+        	Ext.getStore('Beers_Ajax').load();
+        if(toFriend || storeFriend.getCount() < 1)
+        	console.log("Friendlist is empty or need to be refreshed");
+        	Ext.getStore('Friends_Ajax').load();
+        if(toNotification || storeNotification.getCount() < 1)
+        	console.log("NotificationList is empty or need to be refreshed");
+        	Ext.getStore('Notifications_Ajax').load();
+	}
+};
+
 /* Utils Global Object*/
 var utils = {
 	/* translate f() a la wordpress */

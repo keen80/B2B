@@ -30,7 +30,15 @@ Ext.define("B2B.store.Friends_Ajax", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-               // console.log(records);
+                console.log("Friends_Ajax: Retrieved Data, copying to Local");
+                var store_local = Ext.getStore('Friends_Local');
+
+                store_local.getProxy().clear();
+                this.each(function(record) {
+                    store_local.add(record.data);
+                });
+                store_local.sync();
+                this.removeAll();
             }
         }
     }

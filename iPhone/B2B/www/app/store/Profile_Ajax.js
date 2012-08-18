@@ -1,7 +1,6 @@
 Ext.define("B2B.store.Profile_Ajax", {
     extend: "Ext.data.Store",
     id:"Profile_Ajax",
-    requires: "Ext.data.proxy.LocalStorage",
     config: {
         model: "B2B.model.User",
         proxy:{
@@ -15,26 +14,37 @@ Ext.define("B2B.store.Profile_Ajax", {
                 messageProperty: 'response.status.msg'
             },
         },
+        autoload: false,
         listeners: {
             exception:function(proxy, response, orientation){
                     console.error('Failure Notification', response.responseText);
-                    Ext.Msg.alert('Loading failed', response.statusText);
+                    goingTo.step3("Nevermind We will use the LS");
             },
-            callback: function(success,response){
-                console.log("Profile Store Callback");
-            },
-            load:function(el,records, successful){
-                var dataJSON  = el.first().data;
-                var displayName = utils.getDisplayName(dataJSON);
-                Ext.getCmp('AboutTitlebar').setTitle(displayName);
-                Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+dataJSON.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
-                
-                var preferencesForm = Ext.getCmp("userpreferencesform");
-                preferencesForm.reset();
-                preferencesForm.setRecord(el.first());
+            load: function(el,records, successful){
+                console.log("Profile_Ajax: Retrieved Data, copying to Local");
+                var store_local = Ext.getStore('Profile_Local');
+                var toBeer = false;
+                var toFriend = false;
+                var toNotify = false;
 
-                B2B.app.getController('Preferences').onChangeTwitter(null, dataJSON.shareTwitter);
-                B2B.app.getController('Preferences').onChangeFacebook(null, dataJSON.shareFacebook);
+                /* has something changed? */
+                if(store_local.getCount > 0){
+                    localJSON  = store_local.first().data;
+                    remoteJSON = el.first().data;
+                    
+                    toBeer = (localJSON.hash_beerlist != remoteJSON.hash_beerlist);
+                    toFriend = (localJSON.hash_friendlist != remoteJSON.hash_friendlist);
+                    toNotify = (localJSON.hash_notificationlist != remoteJSON.hash_notificationlist);
+                }
+
+                store_local.getProxy().clear();
+                this.each(function(record) {
+                    store_local.add(record.data);
+                });
+                store_local.sync();
+                this.removeAll();
+                
+                goingTo.step3("Profile_Local: Load App Defaults from LS", toBeer, toFriend, toNotify);
             }
             
         }

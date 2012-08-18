@@ -12,11 +12,14 @@ Ext.define("B2B.store.Profile_Local", {
                     console.error('Failure Notification', response.responseText);
                     Ext.Msg.alert('Loading failed', response.statusText);
             },
-            callback: function(success,response){
-                console.log("Profile Store Callback");
-            },
             load:function(el,records, successful){
-
+                console.log("Profile_Local: Loading profile from LS...");
+                if (navigator.onLine){
+                    goingTo.step2("Profile_Local: Store Empty, Refresh Data via Ajax");
+                }else{
+                    goingTo.step3("Profile_Local: Offline Mode, Should never happen");
+                }
+                
             }
             
         }

@@ -8,7 +8,7 @@ Ext.define("B2B.model.Notification", {
 			{ name: 'idUser', type: 'string' },
 			{ name: 'idTarget', type: 'string' },
 			{ name: 'type', type: 'string' },
-			{ name: 'read', type: 'int' }
+			{ name: 'read', type: 'int' },
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' },
 		],
 		validations: [

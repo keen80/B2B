@@ -1,23 +1,11 @@
 Ext.define("B2B.store.Beers_Ajax", {
     extend: "Ext.data.Store",
     id: "Beers_Ajax",
-    requires: "Ext.data.proxy.LocalStorage",
     config: {
         model: "B2B.model.Beer",
-        sorters: 'name',
-        grouper: function(record){
+        /*  sorters: 'name',
+      grouper: function(record){
             return (record.get('name')[0]).toUpperCase();
-        }, /* {
-            groupFn: function(record){
-               return record.get('name').subStr(0,1);
-            },
-            transform: function(record){
-                console.log(record);
-                return  utils.getBeerStyleFromCode(record);
-            },
-            property: "name"
-            //sortProperty: 'beerStyle',
-            //direction: 'ASC' 
         },*/
         proxy: {
             type:'ajax',
@@ -39,7 +27,16 @@ Ext.define("B2B.store.Beers_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-              //  console.log(records);
+              /*  console.log("Beers_Ajax: Retrieved Data, copying to Local");
+                var store_local = Ext.getStore('Beers_Local');
+
+                store_local.getProxy().clear();
+                this.each(function(record) {
+                    store_local.add(record.data);
+                });
+                store_local.sync();
+                this.removeAll();
+*/
             }
         }
     }

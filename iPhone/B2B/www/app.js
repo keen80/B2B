@@ -7,15 +7,15 @@ Ext.application({
         'Ext.MessageBox',
     ],
 
-    models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity'],
+    models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification'],
 
     controllers: [
         '_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy'
     ],
 
     stores: [
-        'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax',
-        'Profile_Local'
+        'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax',
+        'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'
     ],
 
     views: [ '_App', '_App_Slider', '_App_Container',
@@ -49,7 +49,7 @@ Ext.application({
     },
 
     launch: function() {
-        this.CheckWhatsNew();
+        goingTo.step1("Loading Profile");
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         Ext.Viewport.add(Ext.create('B2B.view._App'));
@@ -64,16 +64,5 @@ Ext.application({
                 }
             }
         );
-    },
-    CheckWhatsNew: function(){
-        this.SyncProfile();
-        this.SyncBeer();
-    },
-    SyncProfile: function(){
-        console.log('TODO Sync Profile');
-    },
-    SyncBeer: function(){
-        console.log('PENDING Sync Beer');
-        Ext.getStore('Beers_Ajax').load();
     }
 });

@@ -19,7 +19,7 @@ Ext.define('B2B.view.Activity_List_Container', {
 
 		var activityStreams = {
             xtype: "activitylistcomponent",
-            store: Ext.getStore("Activities_Ajax"),
+            store: Ext.getStore("Activities_Local"),
         };
 
 		this.add([ activityStreams ]);

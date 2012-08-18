@@ -42,7 +42,10 @@ Ext.define('B2B.view.Friend_List_Container', {
 
 		var friendList = {
 		    xtype: "friendlistcomponent",
-		    store: Ext.getStore("Friends_Ajax"),
+		    store: Ext.getStore("Friends_Local"),
+		    ui: 'round',
+		    grouped: true,
+		    indexBar: true,
 		   	onItemDisclosure: function(a, b, c, d, e) {
 		   		me.onListItemTap(c);
 		   	}

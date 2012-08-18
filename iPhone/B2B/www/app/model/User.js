@@ -28,6 +28,9 @@ Ext.define("B2B.model.User", {
 			{ name: 'counter_checkIns', type: 'int', defaultValue: 0 },
 			{ name: 'counter_friends', type: 'int', defaultValue: 0 },
 			{ name: 'counter_badges', type: 'int', defaultValue: 0},
+			{ name: 'hash_beerlist', type: 'string'},
+			{ name: 'hash_friendlist', type: 'string'},
+			{ name: 'hash_notificationlist', type: 'string'}
 		],
 		validations: [
 			{ type: 'presence', field: 'displayName'}

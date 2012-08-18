@@ -23,7 +23,7 @@ Ext.define("B2B.controller.Profiles", {
 
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
-		profileForm.setRecord(Ext.getStore('Profile_Ajax').first());
+		profileForm.setRecord(Ext.getStore('Profile_Local').first());
 		var activatedOnField = Ext.getCmp('activatedOnField');
 		var lastLoginOnField = Ext.getCmp('lastLoginOnField');
 		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));
@@ -38,9 +38,9 @@ Ext.define("B2B.controller.Profiles", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		var storeProfile = Ext.getStore("Profile_Ajax");
+		/*var storeProfile = Ext.getStore("Profile_Ajax");
 		storeProfile.remove(storeProfile.getRange());
-		storeProfile.load();
+		storeProfile.load();*/
 	},
 	init: function(){
 		this.callParent(arguments);
