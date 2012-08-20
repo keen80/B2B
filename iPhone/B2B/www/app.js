@@ -29,7 +29,7 @@ Ext.application({
 		'User_Preferences_Form',
 		'View_Terms', 'View_Whatsnew',
 		'Component_IOSToggle', 'Component_NotificationBar',
-		'Camera_Container'
+		'Camera_Container', 'Camera_Picker'
 		],
 
 	icon: {

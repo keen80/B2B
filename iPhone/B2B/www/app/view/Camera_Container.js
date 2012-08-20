@@ -6,24 +6,31 @@ Ext.define('B2B.view.Camera_Container', {
 		iconCls : 'photo1',
 		styleHtmlContent: true,
 		scrollable: true,
-		items : [
-			
-		]
+		layout: 'vbox',
+		items : []
 	},
 	initialize: function (a, b) {
-		var btn_camera = {
+		var components = [
+			{
+				xtype: "image",
+				id: 'photoView',
+				src: '',
+				flex: 1
+			},
+			{
 				xtype: "button",
-				text: i18n.app.BTN_CAMERA,
+				text: i18n.app.BTN_PHOTO,
 				ui: 'action',
-				id: 'camera_btn',
-				handler: this.onCameraButtonTap,
-				scope: this
-			};
+				id: 'takephoto_btn',
+				handler: this.onTakePhotoButtonTap,
+				scope: this,
+				height: 50
+			}
+		];
 
-		this.add([ btn_camera]);
+		this.add(components);
 	},
-	onCameraButtonTap: function(){
-		console.log("CIAO");
-		this.fireEvent("cameraCommand", this);
+	onTakePhotoButtonTap: function(){
+		this.fireEvent("takePhotoCommand", this);
 	}
 });
