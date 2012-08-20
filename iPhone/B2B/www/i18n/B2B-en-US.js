@@ -146,7 +146,7 @@ var i18n = {
 		{ "text": "Bitter / Pale", "value": 6 },
 		{ "text": "Spiced / Herbs", "value": 7 },
 		{ "text": "Wheat", "value": 8 },
-		{ "text": "Honey", "value": 9 },
+		{ "text": "Honey", "value": 9 },//MIELE
 		{ "text": "Fruit", "value": 10 },
         { "text": "Imperial", "value": 11 },
         { "text": "Belgian strong", "value": 12 },
@@ -171,7 +171,7 @@ var i18n = {
         { "text": "Framboise", "value": 31 },
         { "text": "Sweet", "value": 32 },
         { "text": "Blonde", "value": 33 },
-        { "text": "Smoked", "value": 34 },
+        { "text": "Smoked", "value": 34 },//AFFUMICATA
         { "text": "Weize", "value": 35 },
         { "text": "Alt", "value": 36 },
         { "text": "Whiskymalt", "value": 37 }, 
@@ -190,7 +190,7 @@ var i18n = {
         { "text": "Mild", "value": 50 },
         { "text": "Irish Red", "value": 51 },
         { "text": "Brown", "value": 52 },
-        { "text": "Chestnut", "value": 53 }
+        { "text": "Chestnut", "value": 53 } //CASTAGNA
 	],
 
 	"beergrads": [
