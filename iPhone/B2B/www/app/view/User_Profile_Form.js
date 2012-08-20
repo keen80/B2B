@@ -7,7 +7,9 @@ Ext.define('B2B.view.User_Profile_Form', {
 		'Ext.field.Hidden',
 		'Ext.field.DatePicker',
 		'Ext.field.Select',
-		'Ext.field.Toggle'
+		'Ext.field.Toggle',
+		'Ext.Img',
+		'Ext.ActionSheet'
 	],
 	config: {
 		title: i18n.app.PANEL_PROFILEEDIT,
@@ -15,49 +17,98 @@ Ext.define('B2B.view.User_Profile_Form', {
 		url: '/cippa.php',
 		items: [
 			{
-				xtype: 'fieldset',
-				title: i18n.app.FORM_ACCOUNT,
-				instructions: i18n.app.HINT_DISPLAYNAME,
-				items: [
+				xtype: 'panel',
+   				layout:{
+				    type:'hbox',
+				    align: 'strech'
+				},
+   				defaults:{flex:'1'},
+  				items: [
+	  				{
+			            xtype: 'image',
+			            src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
+			            width: 80,
+			            mode: 'element',
+	                    listeners: {
+	                        tap: function (img, evt) {
+		                        if(!this.actions){
+		                        	this.actions = Ext.Viewport.add(
+		                        		{	
+			                        		xtype: 'actionsheet',
+			                        		items: [
+			                        			{
+			                        				text: i18n.app.BTN_CHOOSEPICTURE,
+			                        				scope: this,
+			                        				ui: 'confirm',
+			                        				handler: function(){
+			                        					Ext.getCmp("userprofileform").fireEvent("chooseProfilePictureCommand", this);
+			                        					this.actions.hide();
+			                        				}
+			                        			},
+			                        			{
+			                        				text: i18n.app.BTN_REMOVEPICTURE,
+			                        				scope: this,
+			                        				ui: 'decline',
+			                        				handler: function(){
+			                        					Ext.getCmp("userprofileform").fireEvent("removeProfilePictureCommand", this);
+			                        					this.actions.hide();
+			                        				}
+			                        			},
+			                        			{
+			                        				text: i18n.app.BTN_CANCEL,
+			                        				scope: this,
+			                        				handler: function(){
+			                        					this.actions.hide();
+			                        				}
+			                        			}
+			                        		]
+			                        	}
+		                        	);
+		                        }
+		                        this.actions.show();
+	                        } 
+	                    }
+			        },
 					{
-						xtype: 'hiddenfield',
-						name: 'idUser',
-						//value: B2B.app.loggedUser.idUser
-					},
-					{
-						xtype: 'hiddenfield',
-						name: 'pwdHash',
-						//value: B2B.app.loggedUser.pwdHash
-					},
-					{
-						xtype: 'hiddenfield',
-						name: 'role',
-						//value: B2B.app.loggedUser.role
-					},
-					{
-						xtype: 'hiddenfield',
-						name: 'status',
-						//value: B2B.app.loggedUser.status
-					},
-					{
-						xtype: 'textfield',
-						name: 'username',
-						label: i18n.app.FORM_USERNAME,
-						//value: B2B.app.loggedUser.username,
-						disabled: true
-					},
-					{
-						xtype: 'textfield',
-						name: 'email',
-						label: i18n.app.FORM_EMAIL,
-						//value: B2B.app.loggedUser.email,
-						disabled: true
-					},
-					{
-						xtype: 'textfield',
-						name: 'displayName',
-						label: i18n.app.FORM_DISPLAYNAME,
-						//value: B2B.app.loggedUser.displayName
+						xtype: 'fieldset',
+						title: i18n.app.FORM_ACCOUNT,
+						instructions: i18n.app.HINT_DISPLAYNAME,
+						flex: 1,
+						items: [
+							{
+								xtype: 'hiddenfield',
+								name: 'idUser'
+							},
+							{
+								xtype: 'hiddenfield',
+								name: 'pwdHash'
+							},
+							{
+								xtype: 'hiddenfield',
+								name: 'role'
+							},
+							{
+								xtype: 'hiddenfield',
+								name: 'status'
+							},
+							{
+								xtype: 'textfield',
+								name: 'username',
+								label: i18n.app.FORM_USERNAME,
+								disabled: true
+							},
+							{
+								xtype: 'textfield',
+								name: 'email',
+								label: i18n.app.FORM_EMAIL,
+								disabled: true
+							},
+							{
+								xtype: 'textfield',
+								name: 'displayName',
+								label: i18n.app.FORM_DISPLAYNAME
+							}
+						]
 					}
 				]
 			},

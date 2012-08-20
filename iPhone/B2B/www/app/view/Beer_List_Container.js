@@ -19,7 +19,7 @@ Ext.define('B2B.view.Beer_List_Container', {
 		var beerlistsearchcomponent = {
 			xtype: 'beerlistsearchcomponent',
 		};
-
+		/*
 		var groupedButton = {
 			xtype: 'segmentedbutton',
 			items: [
@@ -53,17 +53,28 @@ Ext.define('B2B.view.Beer_List_Container', {
 				},
 			]
 		};
-
+		*/
 		var beerList = {
 		    xtype: "beerlistcomponent",
-		    store: Ext.getStore("Beers_Ajax"),
+		    store: Ext.getStore("Beers_Single_Ajax"),
 		   // grouped: true,
 		   // indexBar: true,
 		   // ui: 'round',
-		    singleSelect: true,
+		    singleSelect: true
+		    /* FOTTUTO BASTARDO, catch nel controller perche' e' mascherato
 		    onItemDisclosure: function(a, b, c, d, e) {
 		   		me.onListItemTap(c);
 		   	},
+		   	onItemTap: function(a, b, c, d, e, f){
+		   		me.onListItemTap(b);
+		   	}
+		   	listeners:[
+{
+				onItemTap: function(a, b, c, d, e, f){
+		   			me.onListItemTap(d);
+		   		}
+}
+		   	]*/
 		};
 
 		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);

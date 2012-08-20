@@ -22,7 +22,7 @@ Ext.define("B2B.model.Beer", {
 			{ name: 'param3', type: 'int' }
 		],
 		validations: [
-			{ type: 'presence', field: 'id'}
+		//	{ type: 'presence', field: 'idBeer'}
 		]
 	}
 });

@@ -2,6 +2,8 @@ Ext.define("B2B.store.Beers_Local", {
     extend: "Ext.data.Store",
     id: "Beers_Local",
     requires: "Ext.data.proxy.LocalStorage",
+    autoload: true,
+    autosync: true,
     config: {
         model: "B2B.model.Beer",
         sorters: 'name',

@@ -48,6 +48,7 @@ Ext.define('B2B.view.Beer_Detail', {
 			]
 		};
 		this.add([toolbar]);
+		console.log(this.jsonData);
     },
 	onBeerReportButtonTap: function(){
 		this.fireEvent("reportBeerCommand", this);

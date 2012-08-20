@@ -4,12 +4,18 @@ Ext.define("B2B.controller.Camera", {
 	config : {
 		refs : {
 			app: "_app",
-			activitylistcontainerpanel : "cameracontainerpanel"
+			userprofileform: "userprofileform",
+			cameraTestcontainerpanel : "cameracontainerpanel"
 		},
 		control : {
-			activitylistcontainerpanel : {
+			cameraTestcontainerpanel : {
 				takePhotoCommand : "takePhoto"
+			},
+			userprofileform: {
+				chooseProfilePictureCommand: "onChooseProfilePictureCommand",
+				removeProfilePictureCommand: "onRemoveProfilePictureCommand"
 			}
+			
 		}
 	},
 	takePhoto : function() {
@@ -49,6 +55,12 @@ Ext.define("B2B.controller.Camera", {
 		});
 			//Ext.Msg.alert(i18n.app.COMMON_ATTENTION, i18n.app.LABEL_CAMERA_NOT_AVAILABLE);
 		}
+	},
+	onChooseProfilePictureCommand: function(){
+		console.log("TODO: Choose Profile Picture Event Received");
+	},
+	onRemoveProfilePictureCommand: function(){
+		console.log("TODO: Remove Profile Picture Event Received");
 	},
 	launch : function() {
 		this.callParent(arguments);

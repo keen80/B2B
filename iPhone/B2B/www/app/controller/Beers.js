@@ -6,6 +6,7 @@ Ext.define("B2B.controller.Beers", {
 			beerList: "beerlistcontainerpanel",
 			beerForm: "beeraddform",
 			beerDetail: "beerdetailpanel",
+			beerlistcomponent: "beerlistcomponent",
 			spinner: 'tbarspinner',
 			app: "_app"
 		},
@@ -24,6 +25,9 @@ Ext.define("B2B.controller.Beers", {
 			},
 			beerList: {
 				viewBeerDetailCommand: "onViewBeerDetail"
+			},
+			beerlistcomponent: {
+				itemtap: "onViewBeerDetail"
 			}
 		}
 	},
@@ -58,8 +62,11 @@ Ext.define("B2B.controller.Beers", {
 		this.getBeerForm().reset();
 		this.getApp().pop();
 	},
-	onViewBeerDetail: function(what, record){
-		var jsonData = (Ext.getStore('Beers_Ajax').getAt(record)).data;
+	onViewBeerDetail: function(a, b, c, record){
+		//console.log(Ext.getStore('Beers_Ajax').findExact("name", record.data.name));
+		var ajax_store = Ext.getStore('Beers_Ajax');
+		var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
+		console.log(jsonData);
 		this.getApp().push({
 			xtype: "beerdetailpanel",
 			jsonData: jsonData
@@ -69,7 +76,6 @@ Ext.define("B2B.controller.Beers", {
 	onBackBeerDetail: function(){
 		this.getApp().pop();
 	},
-
 	/* Not Yet Implemented */
 	onDeleteBeer: function(){
 		Ext.Msg.alert('DeleteBeer Not Implemented');

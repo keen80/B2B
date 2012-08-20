@@ -7,7 +7,7 @@ Ext.application({
 		'Ext.MessageBox',
 	],
 
-	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place'],
+	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle'],
 
 	controllers: [
 		'_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
@@ -15,7 +15,7 @@ Ext.application({
 
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax',
-		'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Places_Local'
+		'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Places_Local', 'Beers_Single_Ajax'
 	],
 
 	views: [ '_App', '_App_Slider', '_App_Container',

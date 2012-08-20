@@ -16,7 +16,8 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	initialize: function(){
 		this.callParent(arguments);
 		var oldValueCount = 0;
-		var store = Ext.getStore('Beers_Ajax');
+		var store = Ext.getStore('Beers_Single_Ajax');
+		var matchedhistory = [];
 
 		var searchField = {
 			xtype: 'searchfield',
@@ -31,12 +32,15 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	            keyup: function(field) {
 		           	var value = field.getValue();
 		           	
-		           	if(!value||value < oldValueCount){
-		           		store.clearFilter();
+		           	if((!value||value < oldValueCount)){
+		           		if((value.length%2) == 0) store.clearFilter();
+		           	//	store.filterBy( function(record) { return matchedhistory.pop(); });
 		            }
 
-		           	if (value) {
-		           		oldValueCount = value;
+		            oldValueCount = value;
+
+		           	if ((value.length%2) == 0 ) {
+		           		
 						var searches = value.split(' '), regexps  = [], i;
 
 						for (i = 0; i < searches.length; i++) {
@@ -48,11 +52,14 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		                    var matched = [];
 		                          
 							for (i = 0; i < regexps.length; i++) {
+
 								var search = regexps[i];
 
 								if (record.get('name').match(search) ) matched.push(true);
 								else matched.push(false);
 							};
+
+							//matchedhistory.push(matched);
 
 							if (regexps.length > 1 && matched.indexOf(false) != -1) {
 								return false;
