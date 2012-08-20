@@ -35,7 +35,10 @@ Ext.define("B2B.view._App_Container", {
             },
             {
                 xtype: 'userprofilecontainerpanel'
-            }
+            },
+			{
+                xtype: 'cameracontainerpanel'
+			}
         ]
     },
     initialize: function(){
