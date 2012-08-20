@@ -1,5 +1,7 @@
 var i18n = {
 	"app": {
+		"COMMON_ATTENTION": "Attention",
+
 		"PANEL_ABOUTME": "About Me",
 		"PANEL_ACTIVITY": "Activities",
 		"PANEL_ADDBEER": "Add a Beer",
@@ -52,7 +54,7 @@ var i18n = {
 		"BTN_RESET": "Reset",
 		"BTN_SAVE": "Save",
 		"BTN_SEARCHFRIEND": "Invite Friends",
-		"BTN_CAMERA": "Fai una foto",
+		"BTN_PHOTO": "Carica una foto",
 
 		"DIALOG_YOUSURE": "Are You really sure?",
 		"DIALOG_UNFRIEND": "Do You really want to Unfriend %1 ?",
@@ -89,6 +91,7 @@ var i18n = {
 		"LABEL_WHATSNEW": "What&apos;s New",
 
 		"LABEL_CAMERA": "Camera",
+		"LABEL_CAMERA_NOT_AVAILABLE": "Camera not available",
 
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
