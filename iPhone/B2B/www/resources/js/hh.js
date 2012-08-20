@@ -53,6 +53,8 @@ var goingTo = {
         if(toNotification || storeNotification.getCount() < 1)
         	console.log("NotificationList is empty or need to be refreshed");
         	Ext.getStore('Notifications_Ajax').load();
+
+        Ext.get("profile_username").setHtml(storeProfile.first().data.username);
 	}
 };
 

@@ -106,7 +106,6 @@ Ext.define('B2B.view.User_Preferences_Form', {
 
     },
     activate: function(){
-    	console.log("cippa");
     	this.fireEvent("showPreferencesCommand", this);
     },
     onSavePreferencesButtonTap: function(){

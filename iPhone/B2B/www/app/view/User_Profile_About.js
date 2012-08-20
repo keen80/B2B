@@ -1,6 +1,7 @@
 Ext.define('B2B.view.User_Profile_About', {
 	extend: 'Ext.Container',
 	xtype: 'userprofileaboutpanel',
+    id: "userprofileaboutpanel",
 
 	config: {
 		title: i18n.app.PANEL_ABOUTME,
@@ -21,7 +22,6 @@ Ext.define('B2B.view.User_Profile_About', {
             scope: this
         };
 
-
         var toolbar = {
             xtype: 'toolbar',
             cls: "sub_titlebar",
@@ -37,10 +37,30 @@ Ext.define('B2B.view.User_Profile_About', {
             ]
         };
 
-        this.add([toolbar]);
+        var profile_container = {
+            xtype: 'fieldset',
+            title: i18n.app.FORM_ACCOUNT,
+            items: [
+                {
+                    xtype: 'panel',
+                    html: [
+                        '<div class="profile_left"><img id="profile_avatar" style="height: 100px; width: 100px;" src="http://addressofmyimage.com/image.png" /></div>',
+                        '<div class="profile_right">',
+                        '<p id="profile_username"></p>',
+                        '<p id="profile_firstname"></p>',
+                        '<p id="profile_lastname"></p>',
+                        '<div>'
+                    ].join("") 
+                },
+            ]
+        };
+        this.add([ toolbar, profile_container ]);
+       // this.refreshProfileData();
     },
-
     onEditProfileButtonTap: function(){
         this.fireEvent("editProfileCommand", this);
+    },
+    refreshProfileData: function(){
+        this.fireEvent("reloadProfileCommand", this);
     }
 });

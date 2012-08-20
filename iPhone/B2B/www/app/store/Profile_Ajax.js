@@ -44,7 +44,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                 store_local.sync();
                 this.removeAll();
                 
-                goingTo.step3("Profile_Local: Load App Defaults from LS", toBeer, toFriend, toNotify);
+                goingTo.step3("Profile_Ajax: Load App Defaults from LS", toBeer, toFriend, toNotify);
             }
             
         }

@@ -8,7 +8,8 @@ Ext.define("B2B.controller.Profiles", {
 		},
 		control: {
 			profile: {
-				editProfileCommand: "onShowProfileForm"
+				editProfileCommand: "onShowProfileForm",
+				reloadProfileCommand: "onReloadProfile"
 			},
 			profileForm:{
 				saveProfileCommand: "onSaveProfile",

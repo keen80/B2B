@@ -14,11 +14,14 @@ Ext.define("B2B.store.Profile_Local", {
             },
             load:function(el,records, successful){
                 console.log("Profile_Local: Loading profile from LS...");
-                if (navigator.onLine){
+                 if (navigator.onLine){
                     goingTo.step2("Profile_Local: Store Empty, Refresh Data via Ajax");
+
                 }else{
-                    goingTo.step3("Profile_Local: Offline Mode, Should never happen");
+                    goingTo.step3("Profile_Local: Offline Mode");
                 }
+
+               
                 
             }
             

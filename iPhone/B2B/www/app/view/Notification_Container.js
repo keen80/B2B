@@ -6,12 +6,7 @@ Ext.define('B2B.view.Notification_Container', {
 		iconCls: 'user_list',
         layout: {
         	type: 'fit'
-        },
-        listeners: {
-			show: function(){
-				Ext.getCmp('MainTitlebar').setTitle(i18n.app.PANEL_FRIENDLIST);
-			}
-		},
+        }
 	},
 	initialize: function(){
 
