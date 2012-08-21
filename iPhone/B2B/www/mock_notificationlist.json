@@ -8,26 +8,35 @@
     "body": {
       "notifications": [
         {
-          "idPlace": "dwd1232322dwd65ffad4e2",
-          "placeName": "1221312",
-          "lat": "4134142",
-          "long": "13422434",
-          "description": "sadsad",
-          "category": 1,
-          "subcategory": 1,
-          "insertedOn": new Date(),
+          "idNotification": "dwd12323dddasda4e2",
+          "description": "322432",
+          "displayName": "Batman",
+          "idUser": "Adelee",
+          "idBeer": "Beeraa",
+          "IdPlace": "sadsad",
+          "idFriend" : "ttggtrg",
+          "beerName": "Caccaaa",
+          "placeName": "PARCO",
+          "friendName" : "Sara H",
+          "type": 1,
+          "read": false,
+          "insertedOn": ""
         },
         {
-          "idPlace": "dwd12343534ad4e2",
-          "placeName": "gtgtgrt",
-          "lat": "332423",
-          "long": "6546546",
-          "description": "nhtntdn",
-          "category": 0,
-          "subcategory": 4,
-          "insertedOn": new Date(),
-        },
-
+          "idNotification": "dwd1232322sdsdfad4e2",
+          "description": "adsadasd",
+          "displayName": "Joker",
+          "idUser": "Asde",
+          "idBeer": "Besda",
+          "IdPlace": "sqwd",
+          "idFriend" : "ttgwqg",
+          "beerName": "qwwq",
+          "placeName": "wqwq",
+          "friendName" : "qwqw H",
+          "type": 2,
+          "status": true,
+          "insertedOn": ""
+        }
       ]
     }
   },

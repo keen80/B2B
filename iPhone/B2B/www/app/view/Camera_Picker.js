@@ -12,20 +12,20 @@ Ext.define('B2B.view.Camera_Picker', {
 					{text: i18n.app.PICKER_LIBRARY, value:false}
 				]
 			}
-		]
+		],
+		listeners: {
+			change: function (picker, value, oldValue) {
+				var eventName = "openLibraryCommand";
+				if (value.camera_source) {
+					eventName = "openCameraCommand";
+				}
+
+				this.fireEvent(eventName, this);
+			},
+			cancel: function (picker) {}
+		}
 	},
 	initialize: function(){
 		this.callParent(arguments);
-	},
-	listeners: {
-		change: function (picker, value, oldValue) {
-			var eventName = "openLibraryCommand";
-			if (value.camera_source) {
-				eventName = "openCameraCommand";
-			}
-
-			this.fireEvent(eventName, this);
-		},
-		cancel: function (picker) {}
 	}
 });
