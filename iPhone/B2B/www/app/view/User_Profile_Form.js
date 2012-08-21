@@ -18,57 +18,58 @@ Ext.define('B2B.view.User_Profile_Form', {
 		items: [
 			{
 				xtype: 'panel',
-   				layout:{
-				    type:'hbox',
-				    align: 'strech'
+				layout:{
+					type:'hbox',
+					align: 'strech'
 				},
-   				defaults:{flex:'1'},
-  				items: [
-	  				{
-			            xtype: 'image',
-			            src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
-			            width: 80,
-			            mode: 'element',
-	                    listeners: {
-	                        tap: function (img, evt) {
-		                        if(!this.actions){
-		                        	this.actions = Ext.Viewport.add(
-		                        		{	
-			                        		xtype: 'actionsheet',
-			                        		items: [
-			                        			{
-			                        				text: i18n.app.BTN_CHOOSEPICTURE,
-			                        				scope: this,
-			                        				ui: 'confirm',
-			                        				handler: function(){
-			                        					Ext.getCmp("userprofileform").fireEvent("chooseProfilePictureCommand", this);
-			                        					this.actions.hide();
-			                        				}
-			                        			},
-			                        			{
-			                        				text: i18n.app.BTN_REMOVEPICTURE,
-			                        				scope: this,
-			                        				ui: 'decline',
-			                        				handler: function(){
-			                        					Ext.getCmp("userprofileform").fireEvent("removeProfilePictureCommand", this);
-			                        					this.actions.hide();
-			                        				}
-			                        			},
-			                        			{
-			                        				text: i18n.app.BTN_CANCEL,
-			                        				scope: this,
-			                        				handler: function(){
-			                        					this.actions.hide();
-			                        				}
-			                        			}
-			                        		]
-			                        	}
-		                        	);
-		                        }
-		                        this.actions.show();
-	                        } 
-	                    }
-			        },
+				defaults:{flex:'1'},
+				items: [
+					{
+						xtype: 'image',
+						id : 'ProfileImage',
+						src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
+						width: 80,
+						mode: 'element',
+						listeners: {
+							tap: function (img, evt) {
+								if(!this.actions){
+									this.actions = Ext.Viewport.add(
+										{
+											xtype: 'actionsheet',
+											items: [
+												{
+													text: i18n.app.BTN_CHOOSEPICTURE,
+													scope: this,
+													ui: 'confirm',
+													handler: function(){
+														Ext.getCmp("userprofileform").fireEvent("chooseProfilePictureCommand", this, Ext.getCmp("ProfileImage"));
+														this.actions.hide();
+													}
+												},
+												{
+													text: i18n.app.BTN_REMOVEPICTURE,
+													scope: this,
+													ui: 'decline',
+													handler: function(){
+														Ext.getCmp("ProfileImage").setSrc("");
+														this.actions.hide();
+													}
+												},
+												{
+													text: i18n.app.BTN_CANCEL,
+													scope: this,
+													handler: function(){
+														this.actions.hide();
+													}
+												}
+											]
+										}
+									);
+								}
+								this.actions.show();
+							}
+						}
+					},
 					{
 						xtype: 'fieldset',
 						title: i18n.app.FORM_ACCOUNT,
@@ -115,7 +116,7 @@ Ext.define('B2B.view.User_Profile_Form', {
 			{
 				xtype: 'fieldset',
 				title: i18n.app.FORM_PROFILE,
-				items: [ 
+				items: [
 					{
 						xtype: 'textfield',
 						name: 'firstName',
@@ -148,7 +149,7 @@ Ext.define('B2B.view.User_Profile_Form', {
 						options: [
 							{
 								text: i18n.app.LABEL_UNDISCLOSED,
-								value: 0	
+								value: 0
 							},
 							{
 								text: i18n.app.LABEL_MALE,
@@ -192,48 +193,48 @@ Ext.define('B2B.view.User_Profile_Form', {
 		]
 	},
 	initialize: function(){
-        
-        this.callParent(arguments);
 
-        var saveProfileButton = {
-            text: i18n.app.BTN_SAVE,
-            ui: 'action',
-            id: 'save_profile_btn',
-            handler: this.onSaveProfileButtonTap,
-            scope: this
-        };
+		this.callParent(arguments);
 
-        var backProfileButton = {
-            text: i18n.app.BTN_BACK,
-            ui: 'back',
-            id: 'back_profile_btn',
-            handler: this.onBackProfileButtonTap,
-            scope: this
-        };
+		var saveProfileButton = {
+			text: i18n.app.BTN_SAVE,
+			ui: 'action',
+			id: 'save_profile_btn',
+			handler: this.onSaveProfileButtonTap,
+			scope: this
+		};
+
+		var backProfileButton = {
+			text: i18n.app.BTN_BACK,
+			ui: 'back',
+			id: 'back_profile_btn',
+			handler: this.onBackProfileButtonTap,
+			scope: this
+		};
 
 
-        var toolbar = {
-            xtype: 'toolbar',
-            docked: 'top',
-            cls: 'sub_titlebar',
-            title: i18n.app.PANEL_PROFILEEDIT,
-            id: 'ProfileFormTitlebar',
-            defaults: {
-                iconMask: true
-            },
-            items: [
-            	backProfileButton,
-            	{ xtype: 'spacer' },
-                saveProfileButton
-            ]
-        };
+		var toolbar = {
+			xtype: 'toolbar',
+			docked: 'top',
+			cls: 'sub_titlebar',
+			title: i18n.app.PANEL_PROFILEEDIT,
+			id: 'ProfileFormTitlebar',
+			defaults: {
+				iconMask: true
+			},
+			items: [
+				backProfileButton,
+				{ xtype: 'spacer' },
+				saveProfileButton
+			]
+		};
 
-        this.add([toolbar]);
-    },
-    onSaveProfileButtonTap: function(){
-        this.fireEvent("saveProfileCommand", this);
-    },
-    onBackProfileButtonTap: function(){
-        this.fireEvent("backProfileCommand", this);
-    }
+		this.add([toolbar]);
+	},
+	onSaveProfileButtonTap: function(){
+		this.fireEvent("saveProfileCommand", this);
+	},
+	onBackProfileButtonTap: function(){
+		this.fireEvent("backProfileCommand", this);
+	}
 });

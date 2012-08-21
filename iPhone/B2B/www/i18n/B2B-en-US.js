@@ -100,6 +100,9 @@ var i18n = {
 		"LABEL_CAMERA": "Camera",
 		"LABEL_CAMERA_NOT_AVAILABLE": "Camera not available",
 
+		"PICKER_CAMERA": "Camera",
+		"PICKER_LIBRARY": "Library",
+
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
 		"HINT_BEERCHOOSESTYLE": "Choose a Style",
