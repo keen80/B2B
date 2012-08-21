@@ -1,5 +1,6 @@
 Ext.define("B2B.store.Beers_Ajax", {
     extend: "Ext.data.Store",
+    requires: "Ext.data.proxy.JsonP",
     id: "Beers_Ajax",
     config: {
         model: "B2B.model.Beer",
@@ -8,8 +9,9 @@ Ext.define("B2B.store.Beers_Ajax", {
             return (record.get('name')[0]).toUpperCase();
         },*/
         proxy: {
-            type:'ajax',
-            url:'mock_beerlist.json',
+            type:'jsonp',
+           // url:'mock_beerlist.json',
+            url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.beers',
@@ -18,7 +20,7 @@ Ext.define("B2B.store.Beers_Ajax", {
                 messageProperty: 'response.status.msg'
             }
         },
-        autoLoad: true,
+       // autoLoad: true,
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);

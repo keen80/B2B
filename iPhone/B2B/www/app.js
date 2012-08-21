@@ -3,6 +3,8 @@ Ext.Loader.setPath('Ext.ux', './ux');
 
 Ext.application({
 	"name": 'B2B',
+	"APP_NAME": "Meet Beer",
+	"APP_LOGO": "resources/logo.png",
 	requires: [
 		'Ext.MessageBox',
 	],

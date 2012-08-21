@@ -41,7 +41,7 @@ Ext.define("B2B.view._App_Slider", {
         },
         items: [
             {
-                //title: '<div class="nav_slidemenu_profile"><img src=""><span>'+B2B.app.loggedUser.displayName+'</span>',
+                title: '<div class="nav_slidemenu_profile"><img src='+B2B.app.APP_LOGO+'><span>'+B2B.app.APP_NAME+'</span>',
                 slideButton: {
                     selector: 'titlebar',
                     docked: 'left',

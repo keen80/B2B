@@ -8,11 +8,11 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
             return (record.get('name')[0]).toUpperCase();
         },*/
         proxy: {
-            type:'ajax',
-            url:'mock_beersinglelist.json',
+            type:'jsonp',
+            url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.beers',
+                rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
@@ -29,7 +29,7 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-
+                console.log(records);
             }
         }
     }

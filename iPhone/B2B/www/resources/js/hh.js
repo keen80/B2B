@@ -1,4 +1,6 @@
 var HH_config = {
+	APP_NAME: "Meet Beer",
+	APP_LOGO: "/cippa.png",
 	"beergroup": 2,
 	map: {
 		marker: "resources/icons/icon.png",
