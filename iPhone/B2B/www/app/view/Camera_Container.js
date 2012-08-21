@@ -13,7 +13,7 @@ Ext.define('B2B.view.Camera_Container', {
 		var components = [
 			{
 				xtype: "image",
-				id: 'photoView',
+				id: 'PhotoView',
 				src: '',
 				flex: 1
 			},
@@ -31,6 +31,6 @@ Ext.define('B2B.view.Camera_Container', {
 		this.add(components);
 	},
 	onTakePhotoButtonTap: function(){
-		this.fireEvent("takePhotoCommand", this);
+		this.fireEvent("takePhotoCommand", this, Ext.getCmp("PhotoView"));
 	}
 });

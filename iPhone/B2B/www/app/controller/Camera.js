@@ -17,13 +17,17 @@ Ext.define("B2B.controller.Camera", {
 				openLibraryCommand : "openLibrary"
 			},
 			userprofileform: {
-				chooseProfilePictureCommand: "onChooseProfilePictureCommand",
-				removeProfilePictureCommand: "onRemoveProfilePictureCommand"
+				chooseProfilePictureCommand: "onChooseProfilePictureCommand"
 			}
 
 		}
 	},
-	takePhoto : function() {
+	onChooseProfilePictureCommand: function(source, imageView){
+		this.takePhoto(source, imageView);
+	},
+	takePhoto : function(source, imageView) {
+		this.imageView = imageView;
+
 		if (this.isDevice) {
 			if (this.isCameraAvailable) {
 				this.getApp().push({
@@ -37,36 +41,25 @@ Ext.define("B2B.controller.Camera", {
 		}
 	},
 	openLibrary : function(){
-		this.camera.capture({
-			success : function(image) {
-				var view = Ext.getCmp('photoView');
-				view.setSrc(image);
-			},
-			failure : function(e) {
-			},
-			quality : 75,
-			destination : 'file',
-			source : 'library'
-		});
+		this.captureFromCamera(false);
 	},
 	openCamera : function(){
+		this.captureFromCamera(true);
+	},
+	captureFromCamera : function(camera){
+		var imageView = this.imageView;
 		this.camera.capture({
 			success : function(image) {
-				var view = Ext.getCmp('photoView');
-				view.setSrc(image);
+				if (imageView) {
+					imageView.setSrc(image);
+				}
 			},
 			failure : function(e) {
 			},
 			quality : 75,
 			destination : 'file',
-			source : 'camera'
+			source : (camera ? 'camera' : 'library')
 		});
-	},
-	onChooseProfilePictureCommand: function(){
-		console.log("TODO: Choose Profile Picture Event Received");
-	},
-	onRemoveProfilePictureCommand: function(){
-		console.log("TODO: Remove Profile Picture Event Received");
 	},
 	launch : function() {
 		this.callParent(arguments);

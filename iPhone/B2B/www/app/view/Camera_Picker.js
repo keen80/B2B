@@ -8,8 +8,8 @@ Ext.define('B2B.view.Camera_Picker', {
 				name : 'camera_source',
 				title : 'Select source',
 				data : [
-					{text: 'Camera', value:true},
-					{text: 'Album', value:false}
+					{text: i18n.app.PICKER_CAMERA, value:true},
+					{text: i18n.app.PICKER_LIBRARY, value:false}
 				]
 			}
 		]
