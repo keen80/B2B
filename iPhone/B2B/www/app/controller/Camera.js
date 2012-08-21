@@ -5,56 +5,62 @@ Ext.define("B2B.controller.Camera", {
 		refs : {
 			app: "_app",
 			userprofileform: "userprofileform",
-			cameraTestcontainerpanel : "cameracontainerpanel"
+			cameracontainerpanel : "cameracontainerpanel",
+			camerapicker : "camerapicker"
 		},
 		control : {
-			cameraTestcontainerpanel : {
+			cameracontainerpanel : {
 				takePhotoCommand : "takePhoto"
+			},
+			camerapicker : {
+				openCameraCommand : "openCamera",
+				openLibraryCommand : "openLibrary"
 			},
 			userprofileform: {
 				chooseProfilePictureCommand: "onChooseProfilePictureCommand",
 				removeProfilePictureCommand: "onRemoveProfilePictureCommand"
 			}
-			
+
 		}
 	},
 	takePhoto : function() {
-		var isDevice = (Ext.browser.is.WebView && (Ext.os.is.Android || Ext.os.is.iOS)),
-			isCameraAvailable = false,
-			camera = Ext.device.Camera;
-
-		if (isDevice) {
-			camera.capture({
-				success : function(image) {
-					isCameraAvailable = true;
-				},
-				source : 'camera'
-			});
-
-			/*camera.capture({
-				success : function(image) {
-					var view = Ext.getCmp('photoView');
-					view.setSrc(image);
-				},
-				failure : function(e) {
-					console.log("SKIFO|||" + e);
-				},
-				quality : 75,
-				width : 200,
-				height : 200,
-				destination : 'file',
-				source : 'camera'
-			});
-			*/
-			this.getApp().push({
-				xtype: "camerapicker"
-			});
+		if (this.isDevice) {
+			if (this.isCameraAvailable) {
+				this.getApp().push({
+					xtype: "camerapicker"
+				});
+			} else {
+				this.openLibrary();
+			}
 		} else {
-			this.getApp().push({
-			xtype: "camerapicker"
-		});
-			//Ext.Msg.alert(i18n.app.COMMON_ATTENTION, i18n.app.LABEL_CAMERA_NOT_AVAILABLE);
+			Ext.Msg.alert(i18n.app.COMMON_ATTENTION, i18n.app.LABEL_CAMERA_NOT_AVAILABLE);
 		}
+	},
+	openLibrary : function(){
+		this.camera.capture({
+			success : function(image) {
+				var view = Ext.getCmp('photoView');
+				view.setSrc(image);
+			},
+			failure : function(e) {
+			},
+			quality : 75,
+			destination : 'file',
+			source : 'library'
+		});
+	},
+	openCamera : function(){
+		this.camera.capture({
+			success : function(image) {
+				var view = Ext.getCmp('photoView');
+				view.setSrc(image);
+			},
+			failure : function(e) {
+			},
+			quality : 75,
+			destination : 'file',
+			source : 'camera'
+		});
 	},
 	onChooseProfilePictureCommand: function(){
 		console.log("TODO: Choose Profile Picture Event Received");
@@ -67,5 +73,21 @@ Ext.define("B2B.controller.Camera", {
 	},
 	init : function() {
 		this.callParent(arguments);
+
+		this.isDevice = (Ext.browser.is.WebView && (Ext.os.is('Android') || Ext.os.is('iOS')));
+		this.isCameraAvailable = false;
+
+		if (!this.camera) {
+			this.camera = Ext.device.Camera;
+		}
+
+		if (this.isDevice) {
+			this.camera.capture({
+				success : function(image) {
+					this.isCameraAvailable = true;
+				},
+				source : 'camera'
+			});
+		}
 	}
 });
