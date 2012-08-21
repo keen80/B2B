@@ -290,7 +290,7 @@
 		F946B90815DE2E83003664FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = Imolinfo;
 			};
 			buildConfigurationList = F946B90B15DE2E83003664FF /* Build configuration list for PBXProject "B2B" */;
@@ -543,6 +543,7 @@
 				F946B96E15DE2E83003664FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

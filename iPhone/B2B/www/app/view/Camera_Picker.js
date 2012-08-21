@@ -1,6 +1,7 @@
 Ext.define('B2B.view.Camera_Picker', {
 	extend: 'Ext.picker.Picker',
 	xtype: 'camerapicker',
+	autoDestroy: true,
 	config: {
 		slots: [
 			{
@@ -8,13 +9,23 @@ Ext.define('B2B.view.Camera_Picker', {
 				title : 'Select source',
 				data : [
 					{text: 'Camera', value:true},
-					{text: 'Album', value:false},
+					{text: 'Album', value:false}
 				]
 			}
 		]
 	},
 	initialize: function(){
 		this.callParent(arguments);
-		console.log("CAMERA: " + arguments);
+	},
+	listeners: {
+		change: function (picker, value, oldValue) {
+			var eventName = "openLibraryCommand";
+			if (value.camera_source) {
+				eventName = "openCameraCommand";
+			}
+
+			this.fireEvent(eventName, this);
+		},
+		cancel: function (picker) {}
 	}
 });
