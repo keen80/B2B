@@ -8,6 +8,7 @@ var i18n = {
 		"PANEL_BEER": "The Beer Compendium",
 		"PANEL_CHECKIN": "Check In",
 		"PANEL_FACEBOOK": "Facebook Account",
+		"PANEL_FRIENDFINDER": "Friend Finder",
 		"PANEL_FRIENDLIST": "My Friend List",
 		"PANEL_NOTIFICATION": "Notifications",
 		"PANEL_PREFERENCES": "Preferences",

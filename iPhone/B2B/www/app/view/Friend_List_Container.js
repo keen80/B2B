@@ -46,9 +46,9 @@ Ext.define('B2B.view.Friend_List_Container', {
 		    ui: 'round',
 		    grouped: true,
 		    indexBar: true,
-		   	onItemDisclosure: function(a, b, c, d, e) {
+		   /*	onItemDisclosure: function(a, b, c, d, e) {
 		   		me.onListItemTap(c);
-		   	}
+		   	}*/
 		};
 
 		this.add([toolbar, friendListSearchComponent, friendList]);
@@ -56,8 +56,8 @@ Ext.define('B2B.view.Friend_List_Container', {
     },
 	onSearchFriendButtonTap: function(){
 		this.fireEvent("searchFriendCommand", this);
-	},
+	}/*,
 	onListItemTap: function(record){
 		this.fireEvent("viewFriendDetailCommand", this, record);
-	}
+	}*/
 });

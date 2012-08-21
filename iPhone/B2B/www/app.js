@@ -23,6 +23,7 @@ Ext.application({
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
 		'Place_List',
+		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
 		'Notification_Container', 'Notification_List',
 		'User_Profile_Container', 'User_Profile_About', 'User_Profile_Privacy_Form', 'User_Profile_Form',

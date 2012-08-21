@@ -4,6 +4,7 @@ Ext.define("B2B.controller.Friends", {
 		refs: {
 			friendListContainer: "friendlistcontainerpanel",
 			friendDetail: "frienddetailpanel",
+			friendFinder: "friendfinderpanel",
 			app: "_app"
 		},
 		control: {
@@ -15,16 +16,25 @@ Ext.define("B2B.controller.Friends", {
 				deleteFriendCommand: "onDeleteFriend",
 				backFriendDetailCommand: "onBackFriendDetail"
 			},
+			friendFinder: {
+				backFriendFinderCommand: "onBackFriendDetail"
+			},
+			friendlistcomponent: {
+				itemtap: "onViewFriendDetail"
+			}
 		}
 	},
 	onSearchFriend: function(){
-		Ext.Msg.alert('Event SearchFriend Received');
+		this.getApp().push({
+			xtype: "friendfinderpanel"
+		});
 	},
 	onDeleteFriend: function(){
 		Ext.Msg.alert('Event DeleteFriend Received');
 	},
-	onViewFriendDetail: function(what, record){
-		var jsonData = (Ext.getStore('Friends_Local').getAt(record)).data;
+	onViewFriendDetail: function(a, b, c, record){
+	//	var jsonData = (Ext.getStore('Friends_Local').getAt(record)).data;
+		var jsonData = record.data;
 		this.getApp().push({
 			xtype: "frienddetailpanel",
 			jsonData: jsonData
