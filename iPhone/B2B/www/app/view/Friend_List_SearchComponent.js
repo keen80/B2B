@@ -27,7 +27,7 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 	            scope: this,
 	            keyup: function(field) {
 		           	var value = field.getValue();
-		           	var store = Ext.getStore('Friends_Ajax');
+		           	var store = Ext.getStore('Friends_Local');
 
 		           	if(value < oldValueCount){
 		           		store.clearFilter();
