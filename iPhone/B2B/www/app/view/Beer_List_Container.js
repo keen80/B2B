@@ -78,8 +78,8 @@ Ext.define('B2B.view.Beer_List_Container', {
 		};
 
 		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);
-	},
+	}/*,
 	onListItemTap: function(record){
 		this.fireEvent("viewBeerDetailCommand", this, record);
-	}
+	}*/
 });
