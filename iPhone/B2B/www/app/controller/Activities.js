@@ -20,8 +20,8 @@ Ext.define("B2B.controller.Activities", {
 		}
 	},
 	onViewActivityDetail: function(a, b, c, record){
+		setTimeout(function(){a.deselect(b);},500);
 		var jsonData = record.data;
-		//console.log(jsonData);
 		this.getApp().push({
 			xtype: "activitydetailpanel",
 			jsonData: jsonData

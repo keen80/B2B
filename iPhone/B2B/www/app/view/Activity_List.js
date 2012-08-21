@@ -20,6 +20,6 @@ Ext.define('B2B.view.Activity_List', {
                 	return str;
                 }
             }
-   		),
+   		)
 	}
 });

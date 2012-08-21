@@ -6,6 +6,8 @@ Ext.define("B2B.store.Notifications_Local", {
         proxy: {
             type:'localstorage'
         },
+        autoload: true,
+        autosync: true,
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);

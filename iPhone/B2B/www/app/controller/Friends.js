@@ -33,7 +33,7 @@ Ext.define("B2B.controller.Friends", {
 		Ext.Msg.alert('Event DeleteFriend Received');
 	},
 	onViewFriendDetail: function(a, b, c, record){
-	//	var jsonData = (Ext.getStore('Friends_Local').getAt(record)).data;
+		setTimeout(function(){a.deselect(b);},500);
 		var jsonData = record.data;
 		this.getApp().push({
 			xtype: "frienddetailpanel",
@@ -46,8 +46,6 @@ Ext.define("B2B.controller.Friends", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		//Ext.getStore("Friends_Ajax").load();
-
 	},
 	init: function(){
 		this.callParent(arguments);

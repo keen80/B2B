@@ -45,10 +45,10 @@ Ext.define('B2B.view.Notification_Container', {
 
 		var notificationList = {
 		    xtype: "notificationlistcomponent",
-		    store: Ext.getStore("Friends"),
-		    listeners: {
+		    store: Ext.getStore("Notifications_Local"),
+		    /*listeners: {
 		        disclose: { fn: this.onNotesListDisclose, scope: this }
-		    }
+		    }*/
 		};
 
 		this.add([toolbar, notificationList]);

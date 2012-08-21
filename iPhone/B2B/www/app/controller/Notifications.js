@@ -16,7 +16,7 @@ Ext.define("B2B.controller.Notifications", {
 				notificationBackCommand: "onNotificationBack"
 			},
 			notificationList: {
-				notificationReadCommand: "onNotificationRead"
+				itemtap: "onNotificationRead"
 			}
 		}
 	},
@@ -25,7 +25,8 @@ Ext.define("B2B.controller.Notifications", {
 			xtype: "notificationlistcontainerpanel"
 		});
 	},
-	onNotificationRead: function(){
+	onNotificationRead: function(a, b, c, record){
+		setTimeout(function(){a.deselect(b);},500);
 		Ext.Msg.alert("Notification Read");
 	},
 	onNotificationReadAll: function(){
