@@ -19,7 +19,7 @@ Ext.application({
 	],
 
 	views: [ '_App', '_App_Slider', '_App_Container',
-		'Activity_List_Container', 'Activity_List',
+		'Activity_List_Container', 'Activity_List', 'Activity_Detail',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
 		'Place_List',

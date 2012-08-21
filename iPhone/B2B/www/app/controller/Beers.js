@@ -63,7 +63,6 @@ Ext.define("B2B.controller.Beers", {
 		this.getApp().pop();
 	},
 	onViewBeerDetail: function(a, b, c, record){
-		//console.log(Ext.getStore('Beers_Ajax').findExact("name", record.data.name));
 		var ajax_store = Ext.getStore('Beers_Ajax');
 		var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
 		console.log(jsonData);

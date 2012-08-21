@@ -10,7 +10,6 @@ Ext.define('B2B.view.Activity_List', {
             		return "activity-list-item_"+values.type;
             	},
             	getImageURL: function(values){
-            		console.log("Passiamo");
                 // I have to return either of two images
                 // if  uId = 0, return 'resources/images/Image0.png'
                 // if uId = 1, return 'resources/images/Image1.png'

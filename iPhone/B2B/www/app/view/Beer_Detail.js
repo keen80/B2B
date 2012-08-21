@@ -10,7 +10,7 @@ Ext.define('B2B.view.Beer_Detail', {
         'Ext.field.Select'
     ],
 	config: {
-		title: i18n.app.PANEL_FRIENDDETAIL,
+		title: i18n.app.PANEL_BEERDETAIL,
 		iconCls: 'add',
 		items: [
 		]
@@ -48,7 +48,6 @@ Ext.define('B2B.view.Beer_Detail', {
 			]
 		};
 		this.add([toolbar]);
-		console.log(this.jsonData);
     },
 	onBeerReportButtonTap: function(){
 		this.fireEvent("reportBeerCommand", this);
