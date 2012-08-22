@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D9D10515E5119A00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
+		38D9D10715E511AD00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
+		38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
+		38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
 		F946B91915DE2E83003664FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91815DE2E83003664FF /* Foundation.framework */; };
 		F946B91B15DE2E83003664FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91A15DE2E83003664FF /* UIKit.framework */; };
 		F946B91D15DE2E83003664FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91C15DE2E83003664FF /* CoreGraphics.framework */; };
@@ -20,13 +24,8 @@
 		F946B92D15DE2E83003664FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B92C15DE2E83003664FF /* SystemConfiguration.framework */; };
 		F946B92F15DE2E83003664FF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B92E15DE2E83003664FF /* MobileCoreServices.framework */; };
 		F946B93115DE2E83003664FF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B93015DE2E83003664FF /* CoreMedia.framework */; };
-		F946B93715DE2E83003664FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F946B93515DE2E83003664FF /* InfoPlist.strings */; };
 		F946B93915DE2E83003664FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F946B93815DE2E83003664FF /* main.m */; };
 		F946B93C15DE2E83003664FF /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B93B15DE2E83003664FF /* Cordova.framework */; };
-		F946B94115DE2E83003664FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F946B93F15DE2E83003664FF /* Localizable.strings */; };
-		F946B94515DE2E83003664FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F946B94315DE2E83003664FF /* Localizable.strings */; };
-		F946B94915DE2E83003664FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F946B94715DE2E83003664FF /* Localizable.strings */; };
-		F946B94D15DE2E83003664FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F946B94B15DE2E83003664FF /* Localizable.strings */; };
 		F946B95015DE2E83003664FF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B94F15DE2E83003664FF /* icon.png */; };
 		F946B95215DE2E83003664FF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95115DE2E83003664FF /* icon@2x.png */; };
 		F946B95415DE2E83003664FF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95315DE2E83003664FF /* icon-72.png */; };
@@ -41,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38D9D10415E5119A00ACCA70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38D9D10A15E511E900ACCA70 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/Localizations/it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F946B91415DE2E83003664FF /* B2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946B91815DE2E83003664FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F946B91A15DE2E83003664FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -56,14 +57,9 @@
 		F946B92E15DE2E83003664FF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F946B93015DE2E83003664FF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F946B93415DE2E83003664FF /* B2B-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "B2B-Info.plist"; sourceTree = "<group>"; };
-		F946B93615DE2E83003664FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F946B93815DE2E83003664FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F946B93A15DE2E83003664FF /* B2B-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "B2B-Prefix.pch"; sourceTree = "<group>"; };
 		F946B93B15DE2E83003664FF /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
-		F946B94015DE2E83003664FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F946B94415DE2E83003664FF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F946B94815DE2E83003664FF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F946B94C15DE2E83003664FF /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Resources/se.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F946B94F15DE2E83003664FF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
 		F946B95115DE2E83003664FF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
 		F946B95315DE2E83003664FF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
@@ -113,11 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D9D10C15E511FD00ACCA70 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F946B93815DE2E83003664FF /* main.m */,
+				F946B93A15DE2E83003664FF /* B2B-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
 		F946B90615DE2E83003664FF = {
 			isa = PBXGroup;
 			children = (
-				F946B96F15DE2EAA003664FF /* www */,
 				F946B93215DE2E83003664FF /* B2B */,
+				F946B96F15DE2EAA003664FF /* www */,
 				F946B91715DE2E83003664FF /* Frameworks */,
 				F946B91515DE2E83003664FF /* Products */,
 			);
@@ -134,6 +139,7 @@
 		F946B91715DE2E83003664FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F946B93B15DE2E83003664FF /* Cordova.framework */,
 				F946B91815DE2E83003664FF /* Foundation.framework */,
 				F946B91A15DE2E83003664FF /* UIKit.framework */,
 				F946B91C15DE2E83003664FF /* CoreGraphics.framework */,
@@ -154,73 +160,34 @@
 		F946B93215DE2E83003664FF /* B2B */ = {
 			isa = PBXGroup;
 			children = (
-				F946B93B15DE2E83003664FF /* Cordova.framework */,
-				F946B93D15DE2E83003664FF /* Resources */,
 				F946B95E15DE2E83003664FF /* Classes */,
+				38D9D10C15E511FD00ACCA70 /* Other Sources */,
+				F946B93D15DE2E83003664FF /* Resources */,
 				F946B96715DE2E83003664FF /* Plugins */,
-				F946B93315DE2E83003664FF /* Supporting Files */,
+				F946B93315DE2E83003664FF /* System */,
 			);
 			path = B2B;
 			sourceTree = "<group>";
 		};
-		F946B93315DE2E83003664FF /* Supporting Files */ = {
+		F946B93315DE2E83003664FF /* System */ = {
 			isa = PBXGroup;
 			children = (
 				F946B93415DE2E83003664FF /* B2B-Info.plist */,
-				F946B93515DE2E83003664FF /* InfoPlist.strings */,
-				F946B93815DE2E83003664FF /* main.m */,
-				F946B93A15DE2E83003664FF /* B2B-Prefix.pch */,
 				F946B95C15DE2E83003664FF /* Cordova.plist */,
-				F946B96515DE2E83003664FF /* MainViewController.xib */,
 				F946B96915DE2E83003664FF /* verify.sh */,
 			);
-			name = "Supporting Files";
+			name = System;
 			sourceTree = "<group>";
 		};
 		F946B93D15DE2E83003664FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				F946B95A15DE2E83003664FF /* Capture.bundle */,
-				F946B93E15DE2E83003664FF /* en.lproj */,
-				F946B94215DE2E83003664FF /* es.lproj */,
-				F946B94615DE2E83003664FF /* de.lproj */,
-				F946B94A15DE2E83003664FF /* se.lproj */,
+				38D9D10315E5119A00ACCA70 /* Localizable.strings */,
 				F946B94E15DE2E83003664FF /* icons */,
 				F946B95515DE2E83003664FF /* splash */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		F946B93E15DE2E83003664FF /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				F946B93F15DE2E83003664FF /* Localizable.strings */,
-			);
-			name = en.lproj;
-			sourceTree = "<group>";
-		};
-		F946B94215DE2E83003664FF /* es.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				F946B94315DE2E83003664FF /* Localizable.strings */,
-			);
-			name = es.lproj;
-			sourceTree = "<group>";
-		};
-		F946B94615DE2E83003664FF /* de.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				F946B94715DE2E83003664FF /* Localizable.strings */,
-			);
-			name = de.lproj;
-			sourceTree = "<group>";
-		};
-		F946B94A15DE2E83003664FF /* se.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				F946B94B15DE2E83003664FF /* Localizable.strings */,
-			);
-			name = se.lproj;
 			sourceTree = "<group>";
 		};
 		F946B94E15DE2E83003664FF /* icons */ = {
@@ -249,6 +216,7 @@
 				F946B96015DE2E83003664FF /* AppDelegate.m */,
 				F946B96215DE2E83003664FF /* MainViewController.h */,
 				F946B96315DE2E83003664FF /* MainViewController.m */,
+				F946B96515DE2E83003664FF /* MainViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -302,6 +270,7 @@
 				es,
 				de,
 				se,
+				it,
 			);
 			mainGroup = F946B90615DE2E83003664FF;
 			productRefGroup = F946B91515DE2E83003664FF /* Products */;
@@ -318,11 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F946B93715DE2E83003664FF /* InfoPlist.strings in Resources */,
-				F946B94115DE2E83003664FF /* Localizable.strings in Resources */,
-				F946B94515DE2E83003664FF /* Localizable.strings in Resources */,
-				F946B94915DE2E83003664FF /* Localizable.strings in Resources */,
-				F946B94D15DE2E83003664FF /* Localizable.strings in Resources */,
 				F946B95015DE2E83003664FF /* icon.png in Resources */,
 				F946B95215DE2E83003664FF /* icon@2x.png in Resources */,
 				F946B95415DE2E83003664FF /* icon-72.png in Resources */,
@@ -332,6 +296,10 @@
 				F946B95D15DE2E83003664FF /* Cordova.plist in Resources */,
 				F946B96615DE2E83003664FF /* MainViewController.xib in Resources */,
 				F946B97015DE2EAA003664FF /* www in Resources */,
+				38D9D10515E5119A00ACCA70 /* Localizable.strings in Resources */,
+				38D9D10715E511AD00ACCA70 /* Localizable.strings in Resources */,
+				38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */,
+				38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,42 +342,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F946B93515DE2E83003664FF /* InfoPlist.strings */ = {
+		38D9D10315E5119A00ACCA70 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F946B93615DE2E83003664FF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F946B93F15DE2E83003664FF /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F946B94015DE2E83003664FF /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		F946B94315DE2E83003664FF /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F946B94415DE2E83003664FF /* es */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		F946B94715DE2E83003664FF /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F946B94815DE2E83003664FF /* de */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		F946B94B15DE2E83003664FF /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F946B94C15DE2E83003664FF /* se */,
+				38D9D10415E5119A00ACCA70 /* en */,
+				38D9D10A15E511E900ACCA70 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
