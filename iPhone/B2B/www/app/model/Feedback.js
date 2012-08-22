@@ -11,7 +11,7 @@ Ext.define("B2B.model.Feedback", {
 			{ name: 'idUser', type: 'string' },
 			{ name: 'idTarget', type: 'string' },
 			{ name: 'type', type: 'string' },
-			{ name: 'like', type: 'int' }
+			{ name: 'like', type: 'int' },
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' },
 		],
 		validations: [
