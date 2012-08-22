@@ -3,6 +3,8 @@ Ext.define("B2B.store.Profile_Local", {
     id:"Profile_Local",
     requires: "Ext.data.proxy.LocalStorage",
     config: {
+        autoLoad: true,
+        autoSync: true,
         model: "B2B.model.User",
         proxy:{
             type:'localstorage'
@@ -13,15 +15,18 @@ Ext.define("B2B.store.Profile_Local", {
                     Ext.Msg.alert('Loading failed', response.statusText);
             },
             load:function(el,records, successful){
-                console.log("Profile_Local: Loading profile from LS...");
-                 if (navigator.onLine){
+               //  console.log("Profile_Local: Loading profile from LS...");
+                
+                /*  Definition will be in resources/js/hh 
+
+                if (navigator.onLine){
                     goingTo.step2("Profile_Local: Store Empty, Refresh Data via Ajax");
 
                 }else{
                     goingTo.step3("Profile_Local: Offline Mode");
                 }
 
-               
+               */
                 
             }
             

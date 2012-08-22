@@ -4,14 +4,12 @@ Ext.define("B2B.store.Beers_Ajax", {
     id: "Beers_Ajax",
     config: {
         model: "B2B.model.Beer",
-        /*  sorters: 'name',
-      grouper: function(record){
-            return (record.get('name')[0]).toUpperCase();
-        },*/
         proxy: {
-            type:'jsonp',
-           // url:'mock_beerlist.json',
-            url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+            // Mock for Development 
+            type:'ajax',
+            url:'mock_beerlist.json',
+            //type:'jsonp',
+            //url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.beers',
@@ -30,7 +28,9 @@ Ext.define("B2B.store.Beers_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-              /*  console.log("Beers_Ajax: Retrieved Data, copying to Local");
+            /*  
+                HH for performance reason we don't copy into localstorage
+                console.log("Beers_Ajax: Retrieved Data, copying to Local");
                 var store_local = Ext.getStore('Beers_Local');
 
                 store_local.getProxy().clear();
@@ -39,7 +39,7 @@ Ext.define("B2B.store.Beers_Ajax", {
                 });
                 store_local.sync();
                 this.removeAll();
-*/  
+            */  
 
             }
         }

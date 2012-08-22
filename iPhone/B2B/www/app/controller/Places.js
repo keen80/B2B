@@ -13,7 +13,8 @@ Ext.define("B2B.controller.Places", {
 		}
 	},
 	onReloadCommand: function(){
-		Ext.Msg.alert("Map Reload Mock");
+		/* TODO: HOW THE HELL WE REFRESH THE REVIEW? */
+		Ext.Msg.alert("TODO: Map Reload Mock");
 	},
 	init: function(){
 		this.callParent(arguments);

@@ -32,8 +32,6 @@ Ext.define("B2B.controller.Activities", {
 	},
 	launch: function(){
 		this.callParent(arguments);
-		//Ext.getStore("Activities_Ajax").load();
-
 	},
 	init: function(){
 		this.callParent(arguments);

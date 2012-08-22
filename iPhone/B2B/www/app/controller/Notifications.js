@@ -26,18 +26,24 @@ Ext.define("B2B.controller.Notifications", {
 		});
 	},
 	onNotificationRead: function(a, b, c, record){
+		/* deselection of the list */
 		setTimeout(function(){a.deselect(b);},500);
-		Ext.Msg.alert("Notification Read");
+		/*
+			TODO
+			Mark the clicke notification as read and synch the store and the server
+
+		*/
+		Ext.Msg.alert("TODO: Notification Read");
 	},
 	onNotificationReadAll: function(){
-		Ext.Msg.alert("Notification Read All");
+		/* TODO SET all notification read */
+		Ext.Msg.alert("TOD: Notification Read All");
 	},
 	onNotificationBack: function(){
 		this.getApp().pop();
 	},
 	launch: function(){
 		this.callParent(arguments);
-		//Ext.getStore("ActivityStreams").load();
 	},
 	init: function(){
 		this.callParent(arguments);

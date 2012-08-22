@@ -12,15 +12,15 @@ Ext.application({
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle'],
 
 	controllers: [
-		'_APP', 'Friends', 'Activities', 'Profiles', 'Beers', 'CheckIns', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
+		'_APP', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
 	],
 
 	stores: [
-		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax',
-		'Activities_Local', 'Beers_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Places_Local', 'Beers_Single_Ajax'
+		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax',
+		'Activities_Local', /*'Beers_Local, '*/ 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Beers_Single_Ajax', 'Drinks_Local'
 	],
 
-	views: [ '_App', '_App_Slider', '_App_Container',
+	views: [ '_App', '_Login', '_App_Slider', '_App_Container',
 		'Activity_List_Container', 'Activity_List', 'Activity_Detail',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
@@ -28,7 +28,8 @@ Ext.application({
 		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
 		'Notification_Container', 'Notification_List',
-		'User_Profile_Container', 'User_Profile_About', 'User_Profile_Privacy_Form', 'User_Profile_Form',
+		'User_Profile_Container', 'User_Profile_About', 'User_Profile_Form',
+		'User_Profile_Privacy_Form',
 		'User_Preferences_Form',
 		'View_Terms', 'View_Whatsnew',
 		'Component_IOSToggle', 'Component_NotificationBar',
@@ -58,7 +59,13 @@ Ext.application({
 
 		// Destroy the #appLoadingIndicator element
 		Ext.fly('appLoadingIndicator').destroy();
-		Ext.Viewport.add(Ext.create('B2B.view._App'));
+		var profileStore = Ext.getStore("Profile_Local");
+		if(profileStore.getCount() < 1){
+			console.log("Profile Store Empty, Log In First");
+			Ext.Viewport.add(Ext.create('B2B.view._Login'));
+		}else{
+			Ext.Viewport.add(Ext.create('B2B.view._App'));
+		}
 	// Ext.getCmp("_app").setMasked({xtype:'loadmask',message:'your custom loadmask'});
 	},
 	onUpdated: function() {

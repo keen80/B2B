@@ -9,7 +9,7 @@ var HH_config = {
 }
 
 var goingTo = {
-	log: true,
+	log: false,
 	step1: function(msg){
 		if(this.log) console.log(msg);
 		// Autenticazione and Get Profile
@@ -26,7 +26,7 @@ var goingTo = {
 		if(this.log) console.log(msg);
 		/* From local Storage */
 		var storeProfile = Ext.getStore("Profile_Local");
-		var storeBeer = Ext.getStore('Beers_Local');
+//		var storeBeer = Ext.getStore('Beers_Local');
 		var storeFriend = Ext.getStore('Friends_Local');
 		var storeNotification = Ext.getStore('Notifications_Local');
 
@@ -42,18 +42,18 @@ var goingTo = {
         B2B.app.getController('Preferences').onChangeTwitter(null, dataJSON.shareTwitter);
         B2B.app.getController('Preferences').onChangeFacebook(null, dataJSON.shareFacebook);
 
-		storeBeer.load();
+		//storeBeer.load();
 		storeFriend.load();
 		storeNotification.load();
 
-        if(toBeer || storeBeer.getCount() < 1)
+        /*if(toBeer || storeBeer.getCount() < 1)
         	console.log("BeerList is empty or need to be refreshed");
-        	//Ext.getStore('Beers_Ajax').load();
+        	Ext.getStore('Beers_Ajax').load(); */
         if(toFriend || storeFriend.getCount() < 1)
-        	console.log("Friendlist is empty or need to be refreshed");
+        	//console.log("Friendlist is empty or need to be refreshed");
         	Ext.getStore('Friends_Ajax').load();
         if(toNotification || storeNotification.getCount() < 1)
-        	console.log("NotificationList is empty or need to be refreshed");
+        	//console.log("NotificationList is empty or need to be refreshed");
         	Ext.getStore('Notifications_Ajax').load();
 
         Ext.get("profile_username").setHtml(storeProfile.first().data.username);

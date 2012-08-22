@@ -21,13 +21,13 @@ Ext.define("B2B.store.Profile_Ajax", {
                     goingTo.step3("Nevermind We will use the LS");
             },
             load: function(el,records, successful){
-                console.log("Profile_Ajax: Retrieved Data, copying to Local");
+               // console.log("Profile_Ajax: Retrieved Data, copying to Local");
                 var store_local = Ext.getStore('Profile_Local');
                 var toBeer = false;
                 var toFriend = false;
                 var toNotify = false;
 
-                /* has something changed? */
+                /* has something changed? Then we flag to load the whole resxs */
                 if(store_local.getCount > 0){
                     localJSON  = store_local.first().data;
                     remoteJSON = el.first().data;
@@ -37,6 +37,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                     toNotify = (localJSON.hash_notificationlist != remoteJSON.hash_notificationlist);
                 }
 
+                /* We copy from memory to localstorage */
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);
@@ -44,6 +45,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                 store_local.sync();
                 this.removeAll();
                 
+                /* see resources/js/hh */
                 goingTo.step3("Profile_Ajax: Load App Defaults from LS", toBeer, toFriend, toNotify);
             }
             

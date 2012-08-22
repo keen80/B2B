@@ -1,5 +1,6 @@
 Ext.define('B2B.view.User_Profile_Privacy_Form', {
 	extend: 'Ext.form.Panel',
+	id: 'userprofileprivacyform',
 	xtype: 'userprofileprivacyform',
 	config: {
 		title: i18n.app.PANEL_PRIVACY,
@@ -7,7 +8,6 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
 		url: '/cippa.php'
 	},
 	initialize: function(){
-        
         this.callParent(arguments);
 
         var toolbar = {
@@ -33,6 +33,7 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
 					items: [
 						{
 							xtype: 'button',
+							id: 'BTN_removeData',
 							text: utils.__(i18n.app.BTN_REMOVEPERSONAL),
 							ui: 'decline-small',
 							handler: this.onRemoveDataButtonTap
@@ -44,6 +45,7 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
 
 		var button_Logout = {
 			xtype: 'button',
+			id: 'BTN_logOut',
 			text: utils.__(i18n.app.BTN_LOGOUT),
 			ui: 'decline',
 			handler: this.onLogoutButtonTap
@@ -52,11 +54,9 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
         this.add([toolbar, fieldset_RemoveData, button_Logout]);
     },
     onRemoveDataButtonTap: function(){
-    	console.log("RemoveData Fired");
         this.fireEvent("privacyRemoveDataCommand", this);
     },
     onLogoutButtonTap: function(){
-    	console.log("LogOut Fired");
         this.fireEvent("privacyLogoutCommand", this);
     }
 });

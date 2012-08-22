@@ -11,9 +11,25 @@
          */
         html, body {
             height: 100%;
-            background-color: #1985D0
+            background-color: #FFF;
+            overflow: hidden;
         }
+        #appLoadingIndicator {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-image: linear-gradient(bottom, #EB0 25%, #ED0 60%, #FCFCFC 90%);
+            background-image: -webkit-linear-gradient(bottom, #EB0 25%, #ED0 60%, #FCFCFC 90%);
+            background-image: -webkit-gradient(
+              linear,
+              left bottom,
+              left top,
+              color-stop(0.25, #EB0 ),
+              color-stop(0.60, #ED0 ),
+              color-stop(0.9, #FCFCFC));
 
+        }
+/*
         #appLoadingIndicator {
             position: absolute;
             top: 50%;
@@ -25,29 +41,9 @@
             -webkit-animation-duration: 0.3s;
             -webkit-animation-iteration-count: infinite;
             -webkit-animation-direction: linear;
-        }
+        }*/
 
-        #appLoadingIndicator > * {
-            background-color: #FFFFFF;
-            display: inline-block;
-            height: 30px;
-            -webkit-border-radius: 15px;
-            margin: 0 5px;
-            width: 30px;
-            opacity: 0.8;
-        }
 
-        @-webkit-keyframes appLoadingIndicator{
-            0% {
-                opacity: 0.8
-            }
-            50% {
-                opacity: 0
-            }
-            100% {
-                opacity: 0.8
-            }
-        }
     </style>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script id="underscore" type="text/javascript" src="resources/js/underscore-min.js"></script>

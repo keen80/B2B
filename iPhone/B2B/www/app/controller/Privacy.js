@@ -2,30 +2,42 @@ Ext.define("B2B.controller.Privacy", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			privacyContainer: "userprofileprivacyform",
+			userprofileprivacyform: "#BTN_removeData",
 			appContainer: "App_Container",
 			app: "_app"
 		},
 		control: {
-			privacyContainer: {
-				privacyRemoveDataCommand: "onRemoveData",
-				privacyLogoutCommand: "onLogOut"
+			userprofileprivacyform: {
+				privacyRemoveDataCommand: "onRemoveDataCommand",
+				privacyLogoutCommand: "onLogOutCommand"
 			}
 		}
 	},
-	onRemoveData: function(){
+	onRemoveDataCommand: function(){
 		var removeData = function(){
-			Ext.Msg.alert("Data Removed Mock");
+			Ext.getStore("Activities_Ajax").removeAll();
+			Ext.getStore("Activities_Local").removeAll();
+			Ext.getStore("Beers_Ajax").removeAll();
+			Ext.getStore("Beers_Single_Ajax").removeAll();
+			Ext.getStore("Friends_Ajax").removeAll();
+			Ext.getStore("Friends_Local").removeAll();
+			Ext.getStore("Notifications_Ajax").removeAll();
+			Ext.getStore("Notifications_Local").removeAll();
+			Ext.getStore("Places_Ajax").removeAll();
+			Ext.getStore("Drinks_Ajax").removeAll();
+			Ext.getStore("Drinks_Local").removeAll();
+			Ext.getStore("Profile_Ajax").removeAll();
+			Ext.getStore("Profile_Local").removeAll();
+			alert(i18n.app.DIALOG_APPLICATIONDATAREMOVED);
+			window.location.reload();
 		};
-		console.log("removeData Received");
-		Ext.Msg.confirm("Test Remove Data", utils.__(i18n.app.DIALOG_YOUSURE), removeData);
+		Ext.Msg.confirm(i18n.app.PANEL_REMOVE_DATA, utils.__(i18n.app.DIALOG_YOUSUREREMOVEDATA), removeData);
 	},
-	onLogOut: function(){
+	onLogOutCommand: function(){
 		var LogOut = function(){
 			Ext.Msg.alert("LogOut Mock");
 		};
-		console.log("LogOut Received");
-		Ext.Msg.confirm("Test Log Out", utils.__(i18n.app.DIALOG_YOUSURE), LogOut);
+		Ext.Msg.confirm(i18n.app.PANEL_LOGOUT, utils.__(i18n.app.DIALOG_YOUSURELOGUT), LogOut);
 	},
 	init: function(){
 		this.callParent(arguments);

@@ -1,15 +1,17 @@
+/* What's that store? We use it to bind the beerlist with a small subset of data
+instead of the full json, hopefully something will be more responsive */
+
 Ext.define("B2B.store.Beers_Single_Ajax", {
     extend: "Ext.data.Store",
     id: "Beers_Ajax",
     config: {
         model: "B2B.model.BeerSingle",
-        /*  sorters: 'name',
-      grouper: function(record){
-            return (record.get('name')[0]).toUpperCase();
-        },*/
         proxy: {
-            type:'jsonp',
-            url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+            // Mock for Development
+            type:'ajax',
+            url:'mock_beerlist.json',
+            //type:'jsonp',
+            //url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
@@ -29,7 +31,7 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-                console.log(records);
+               /* console.log(records); */
             }
         }
     }

@@ -44,10 +44,6 @@ Ext.define("B2B.controller.Beers", {
 		var beerForm = this.getBeerForm();
 		beerForm.setRecord(newBeer);
 	},
-	onEditBeer: function(){
-		// TODO
-		Ext.Msg.alert('Event EditBeer Received');
-	},
 	onSaveBeer: function(){
 		var spinner = this.getSpinner();
 		if(spinner.isHidden()) spinner.show();
@@ -63,7 +59,10 @@ Ext.define("B2B.controller.Beers", {
 		this.getApp().pop();
 	},
 	onViewBeerDetail: function(a, b, c, record){
+		/* List Selection Deactivation */
 		setTimeout(function(){a.deselect(b);},500);
+		/* Since we used a subset list for list binding, on Beer Details we have to get
+			the original value, we cannot use the index, which change upon filtering */
 		var ajax_store = Ext.getStore('Beers_Ajax');
 		var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
 		this.getApp().push({
@@ -76,15 +75,17 @@ Ext.define("B2B.controller.Beers", {
 		this.getApp().pop();
 	},
 	/* Not Yet Implemented */
+	onEditBeer: function(){
+		Ext.Msg.alert('TODO: Event EditBeer Received, Next release');
+	},
 	onDeleteBeer: function(){
-		Ext.Msg.alert('DeleteBeer Not Implemented');
+		Ext.Msg.alert('TODO: DeleteBeer Not Implemented');
 	},
 	onReportBeer: function(){
-		Ext.Msg.alert('onAddReportBeer Not Implemented');
+		Ext.Msg.alert('TODO: onAddReportBeer Not Implemented');
 	},
 	launch: function(){
 		this.callParent(arguments);
-		// Load Store
 	},
 	init: function(){
 		this.callParent(arguments);

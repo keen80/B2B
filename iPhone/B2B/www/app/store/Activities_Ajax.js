@@ -26,9 +26,10 @@ Ext.define("B2B.store.Activities_Ajax", {
                 console.log("Activities Store Callback");
             },
             load:function(el,records, successful){
-                console.log("Activities_Ajax: Retrieved Data, copying to Local");
+                //console.log("Activities_Ajax: Retrieved Data, copying to Local");
                 var store_local = Ext.getStore('Activities_Local');
 
+                /* Copying to Localstorage */
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);

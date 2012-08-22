@@ -33,7 +33,9 @@ Ext.define("B2B.controller.Friends", {
 		Ext.Msg.alert('Event DeleteFriend Received');
 	},
 	onViewFriendDetail: function(a, b, c, record){
+		/* Deselection of the list */
 		setTimeout(function(){a.deselect(b);},500);
+		
 		var jsonData = record.data;
 		this.getApp().push({
 			xtype: "frienddetailpanel",

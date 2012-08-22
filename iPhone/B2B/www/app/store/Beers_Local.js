@@ -2,9 +2,9 @@ Ext.define("B2B.store.Beers_Local", {
     extend: "Ext.data.Store",
     id: "Beers_Local",
     requires: "Ext.data.proxy.LocalStorage",
-    autoload: true,
-    autosync: true,
     config: {
+        autoload: true,
+        autosync: true,
         model: "B2B.model.Beer",
         sorters: 'name',
         grouper: function(record){
@@ -22,7 +22,7 @@ Ext.define("B2B.store.Beers_Local", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-                console.log("Beers_Local: Store Loaded");
+               // console.log("Beers_Local: Store Loaded");
             }
         }
     }
