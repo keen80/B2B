@@ -2,10 +2,10 @@ Ext.define("B2B.model.Place", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'idPlace',
+		//idProperty: 'idPlace',
 		identifier:'uuid',
 		fields: [
-			{ name: 'idPlace', type: 'int' },
+			{ name: 'idPlace', type: 'string' },
 			{ name: 'placeName', type: 'string' },
 			{ name: 'lat', type: 'string' },
 			{ name: 'long', type: 'string' },

@@ -2,10 +2,10 @@ Ext.define("B2B.model.Friend", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'idUser',
+		//idProperty: 'idUser',
 		identifier:'uuid',
 		fields: [
-			{ name: 'idUser', type: 'int' },
+			{ name: 'idUser', type: 'string' },
 			{ name: 'username', type: 'string' },
 			{ name: 'displayName', type: 'string' },
 			{ name: 'firstName', type: 'string' },

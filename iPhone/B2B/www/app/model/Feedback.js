@@ -2,10 +2,10 @@ Ext.define("B2B.model.Feedback", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'idFeedback',
+	//	idProperty: 'idFeedback',
 		identifier:'uuid',
 		fields: [
-			{ name: 'idFeedback', type: 'int' },
+			{ name: 'idFeedback', type: 'string' },
 			{ name: 'rate', type: 'int' },
 			{ name: 'comment', type: 'string' },
 			{ name: 'idUser', type: 'string' },

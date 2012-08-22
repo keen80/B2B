@@ -2,10 +2,10 @@ Ext.define("B2B.model.Notification", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'idNotification',
+	//	idProperty: 'idNotification',
 		identifier:'uuid',
 		fields: [
-			{ name: 'idNotification', type: 'int' },
+			{ name: 'idNotification', type: 'string' },
 			{ name: 'idUser', type: 'string' },
 			{ name: 'displayName', type: 'string' },
 			{ name: 'idBeer', type: 'string' },

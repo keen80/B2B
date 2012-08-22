@@ -2,11 +2,11 @@ Ext.define("B2B.model.Beer", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		idProperty: 'idBeer',
+		//idProperty: 'idBeer',
 		identifier:'uuid',
 		fields: [
-			{ name: 'idBeer', type: 'int' },
-			{ name: 'idUser', type: 'int' },
+			{ name: 'idBeer', type: 'string' },
+			{ name: 'idUser', type: 'string' },
 			{ name: 'username', type: 'string' },
 			{ name: 'name', type: 'string' },
 			{ name: 'brewery', type: 'string' },

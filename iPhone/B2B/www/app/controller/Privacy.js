@@ -14,7 +14,8 @@ Ext.define("B2B.controller.Privacy", {
 		}
 	},
 	onRemoveDataCommand: function(){
-		var removeData = function(){
+		var confirmation = window.confirm(utils.__(i18n.app.DIALOG_YOUSUREREMOVEDATA));
+		if(confirmation){
 			Ext.getStore("Activities_Ajax").removeAll();
 			Ext.getStore("Activities_Local").removeAll();
 			Ext.getStore("Beers_Ajax").removeAll();
@@ -28,10 +29,8 @@ Ext.define("B2B.controller.Privacy", {
 			Ext.getStore("Drinks_Local").removeAll();
 			Ext.getStore("Profile_Ajax").removeAll();
 			Ext.getStore("Profile_Local").removeAll();
-			alert(i18n.app.DIALOG_APPLICATIONDATAREMOVED);
 			window.location.reload();
 		};
-		Ext.Msg.confirm(i18n.app.PANEL_REMOVE_DATA, utils.__(i18n.app.DIALOG_YOUSUREREMOVEDATA), removeData);
 	},
 	onLogOutCommand: function(){
 		var LogOut = function(){
