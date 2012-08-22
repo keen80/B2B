@@ -13,7 +13,11 @@ Ext.define('B2B.view.Beer_Detail', {
 		title: i18n.app.PANEL_BEERDETAIL,
 		iconCls: 'add',
 		items: [
-		]
+		],
+		html: [
+			'<h1>Beer Detail: '+'</h1>',
+			'I changed the default <b>HTML Contents</b> to something different!'
+		].join("")
 	},
 	initialize: function(){
 
@@ -48,6 +52,12 @@ Ext.define('B2B.view.Beer_Detail', {
 			]
 		};
 		this.add([toolbar]);
+		this.setHtml(
+			 [
+			'<h1>Beer Detail: '+this.jsonData.data.name+'</h1>',
+			'I changed the default <b>HTML Contents</b> to something different!'
+		].join(""));
+		console.log(this.jsonData.data);
     },
 	onBeerReportButtonTap: function(){
 		this.fireEvent("reportBeerCommand", this);

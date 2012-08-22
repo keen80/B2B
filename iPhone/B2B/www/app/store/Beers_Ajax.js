@@ -12,13 +12,13 @@ Ext.define("B2B.store.Beers_Ajax", {
             //url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.beers',
+                rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
             }
         },
-       // autoLoad: true,
+        autoLoad: true,
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);

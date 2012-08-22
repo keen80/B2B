@@ -1,5 +1,6 @@
 Ext.define('B2B.view.Beer_List', {
-    extend: 'Ext.dataview.List',
+    //extend: 'Ext.dataview.List',
+    extend: 'Ext.ux.bufferedlist.BufferedList',
     xtype: 'beerlistcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,

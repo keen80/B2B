@@ -41,6 +41,9 @@ var i18n = {
 		"FORM_SHAREFACEBOOK": "Share on Facebook",
 		"FORM_USERNAME": "Username",
 
+		"PLACEHOLDER_USERNAME": "Your Username",
+		"PLACEHOLDER_PASSWORD": "Your Password",
+
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",

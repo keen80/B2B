@@ -6,7 +6,7 @@
       "msg": "Status OK"
     },
     "body": {
-      "beers": [
+      "list": [
         {
           "name": "'t schoenlappertje",
           "brewery": "scheldebrouwerij",
