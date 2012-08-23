@@ -378,6 +378,30 @@
 				"buffer_size": 1942,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "ux/bufferedlist/BufferedList.js",
+			"settings":
+			{
+				"buffer_size": 31697,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/model/Feedback.js",
+			"settings":
+			{
+				"buffer_size": 646,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/model/TemporaryData_Local.js",
+			"settings":
+			{
+				"buffer_size": 509,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -551,7 +575,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -562,6 +586,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"BufferedList",
 			"LABEL_ABOUT",
 			"goingTo.step2",
 			"HH_config",
@@ -701,7 +726,7 @@
 	"groups":
 	[
 		{
-			"selected": 22,
+			"selected": 28,
 			"sheets":
 			[
 				{
@@ -743,8 +768,8 @@
 						"selection":
 						[
 							[
-								268,
-								268
+								452,
+								452
 							]
 						],
 						"settings":
@@ -833,7 +858,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1420,6 +1446,87 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 620.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "ux/bufferedlist/BufferedList.js",
+					"settings":
+					{
+						"buffer_size": 31697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31697,
+								31697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16085.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "app/model/Feedback.js",
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								303
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "app/model/TemporaryData_Local.js",
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								423,
+								423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -7,6 +7,8 @@ Ext.define("B2B.model.Feedback", {
 		fields: [
 			{ name: 'idFeedback', type: 'string' },
 			{ name: 'rate', type: 'int' },
+			{ name: 'rate2', type: 'int' },
+			{ name: 'rate3', type: 'int' },
 			{ name: 'comment', type: 'string' },
 			{ name: 'idUser', type: 'string' },
 			{ name: 'idTarget', type: 'string' },
