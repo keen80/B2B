@@ -17,6 +17,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		this.callParent(arguments);
 		var oldValueCount = 0;
 		var store = Ext.getStore('Beers_Single_Ajax');
+		
 		var matchedhistory = [];
 
 		var searchField = {
@@ -31,16 +32,19 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	            },
 	            keyup: function(field) {
 		           	var value = field.getValue();
-		           	
-		           	if((!value||value < oldValueCount)){
-		           		if((value.length%2) == 0) store.clearFilter();
-		           	//	store.filterBy( function(record) { return matchedhistory.pop(); });
-		            }
+		           	var beerlist = Ext.getCmp("beerlist");
+		           	var infobar = Ext.getCmp("searchinfobar");
 
+		           	if((!value||value < oldValueCount)){
+		           		beerlist.setStore(null);
+		            }
+		            
 		            oldValueCount = value;
 
-		           	if ((value.length%2) == 0 ) {
-		           		
+		           	if(value.length > 2){
+		           		beerlist.setStore(null);
+		           		store.clearFilter();
+
 						var searches = value.split(' '), regexps  = [], i;
 
 						for (i = 0; i < searches.length; i++) {
@@ -58,17 +62,34 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 								if (record.get('name').match(search) ) matched.push(true);
 								else matched.push(false);
 							};
-
-							//matchedhistory.push(matched);
-
+							
 							if (regexps.length > 1 && matched.indexOf(false) != -1) {
 								return false;
 							} else {
 								return matched[0];
 							}
 						});
-		            }
-	            }
+						var howmany = store.getCount();
+
+						if(howmany > 0){
+							infobar.setHtml(utils.__(i18n.app.HINT_SEARCHRESCHAR, store.getCount()));
+		        			beerlist.setStore(store);
+		        		}else{
+		        			infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
+		        		}
+		           	}else{
+		           		beerlist.setStore(null);
+		           		store.filterBy( function(record) {return false});
+		           	}
+	           		beerlist.setStore(store);
+	           		if(!store.getCount() > 0){
+		           		if(value.length < 3 && value.length > 0 ){
+		           			infobar.setHtml(utils.__(i18n.app.HINT_SEARCH1CHAR, 3 - value.length));
+		           		}else{
+		           			infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
+		           		}
+	           		}
+	           }
             }
 		};
 
@@ -92,7 +113,14 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 				addBeerButton
 			]
 		};
-		this.add([toolbar]);
+
+		var searchInfoBar = {
+			xtype: 'container',
+			id: "searchinfobar",
+			docked: 'top',
+			html: "<span class='searchInfoBar'>"+i18n.app.HINT_SEARCH2CHAR+"</span>"
+		}
+		this.add([toolbar, searchInfoBar]);
 	},
 	onAddBeerButtonTap: function(){
 		this.fireEvent("beerAddCommand", this);

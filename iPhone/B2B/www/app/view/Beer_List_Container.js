@@ -56,7 +56,9 @@ Ext.define('B2B.view.Beer_List_Container', {
 		*/
 		var beerList = {
 		    xtype: "beerlistcomponent",
-		    store: Ext.getStore("Beers_Single_Ajax"),
+		    id: "beerlist",
+		   // store: Ext.getStore("Beers_Single_Ajax"),
+		   store: null,
 		   // grouped: true,
 		   // indexBar: true,
 		   // ui: 'round',

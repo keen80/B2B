@@ -122,6 +122,10 @@ var i18n = {
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
 		"HINT_CHOOSEGENDER": "Select your Gender",
 		"HINT_CHOOSENATIONALITY": "Where do You live?",
+		"HINT_SEARCH2CHAR": "Start searching by writing 3 letters",
+		"HINT_SEARCH1CHAR": "Good, %1 more!",
+		"HINT_SEARCHNORES": "Aww no result match.",
+		"HINT_SEARCHRESCHAR": "Yeah, found %1 results!",
 
 
 		"HINT_LOADING": "Loading...",

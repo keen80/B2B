@@ -1,10 +1,10 @@
 Ext.define('B2B.view.Beer_List', {
-    //extend: 'Ext.dataview.List',
-    extend: 'Ext.ux.bufferedlist.BufferedList',
+    extend: 'Ext.dataview.List',
+    //extend: 'Ext.ux.bufferedlist.BufferedList',
     xtype: 'beerlistcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
-        emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
+       // emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'><span>{[this.getString(values)]}</span></div>",
         {
         	getClass: function(values){
