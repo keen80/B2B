@@ -8,7 +8,7 @@ Ext.define('B2B.view.View_Terms', {
 		cls: 'slidableToolbar',
 		html: [
 			'<h1>Terms of Service</h1>',
-			i18n.app.LABEL_WHATSNEW,
+			i18n.app.TEXT_LOREM,
 		].join("")
 	},
 	initialize: function(){
@@ -23,9 +23,7 @@ Ext.define('B2B.view.View_Terms', {
             id: 'DisclaimerTitlebar',
             defaults: {
                 iconMask: true
-            },
-            items: [
-            ]
+            }
         };
 
         this.add([toolbar]);

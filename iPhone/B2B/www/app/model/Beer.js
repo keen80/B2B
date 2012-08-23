@@ -17,9 +17,9 @@ Ext.define("B2B.model.Beer", {
 			{ name: 'image', type: 'string' },
 			{ name: 'status', type: 'int' },
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' },
-			{ name: 'param1', type: 'int' },
-			{ name: 'param2', type: 'int' },
-			{ name: 'param3', type: 'int' }
+			{ name: 'param1', type: 'int', defaultValue: 1  },
+			{ name: 'param2', type: 'int', defaultValue: 1 },
+			{ name: 'param3', type: 'int', defaultValue: 1 }
 		],
 		validations: [
 		//	{ type: 'presence', field: 'idBeer'}

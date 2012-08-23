@@ -82,12 +82,10 @@ Ext.define("B2B.view._App_Slider", {
                     ui: 'plain'
                 },
                 items: [
-                  /*  {
+                    {
                         xtype: 'viewterms'
                     }
-                    */
-                ],
-                handler: function(){ alert("click"); }
+                ]
             },
             {
                 title: i18n.app.LABEL_ABOUTUS ,

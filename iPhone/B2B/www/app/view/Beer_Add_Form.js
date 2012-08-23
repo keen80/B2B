@@ -13,6 +13,11 @@ Ext.define('B2B.view.Beer_Add_Form', {
 	config: {
 		title: i18n.app.PANEL_ADDBEER,
 		iconCls: 'add',
+		defaults: {
+			labelAlign: 'left',
+			labelWidth: '50%',
+			labelHeight: '50%'
+		},
 		items: [
 			{
 				xtype: 'textfield',
@@ -41,6 +46,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 				name: "grad",
 				cls: "beer_grad",
 				label: i18n.app.LABEL_BEERGRAD,
+				placeHolder: i18n.app.HINT_BEERCHOOSESTYLE,
 				usePicker: true,
 				options: i18n.beergrads
 			},

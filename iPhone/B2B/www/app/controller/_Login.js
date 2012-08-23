@@ -41,12 +41,12 @@ Ext.define("B2B.controller._Login", {
             HH.log("---> Step: AUTH Success");
         	goingTo.step2("Loading Store.Profile_Ajax");
         	HH.log("---> Step: Clear app, loading _App");
-        	Ext.Viewport.removeAll(true);
+        	Ext.Viewport.removeAll(true, true);
         	Ext.Viewport.add(Ext.create('B2B.view._App'));
         },
 
         failure_: function(){
-            Ext.Msg.alert("Could not connect to server.");
+            alert("Could not connect to server.");
         }   
     });
 

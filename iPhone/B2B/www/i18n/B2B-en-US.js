@@ -3,7 +3,7 @@ var i18n = {
 		"COMMON_ATTENTION": "Attention",
 
 		"PANEL_ABOUTME": "About Me",
-		"PANEL_ACTIVITY": "Activities",
+		"PANEL_ACTIVITY": "News Feed",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "The Beer Compendium",
 		"PANEL_CHECKIN": "Check In",

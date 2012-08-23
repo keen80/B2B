@@ -1,7 +1,7 @@
 var HH = {
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
-	DEBUG: true,
+	DEBUG: false,
 	"beergroup": 2,
 	map: {
 		marker: "resources/img/pin_small.png",
@@ -17,7 +17,6 @@ var HH = {
 }
 
 var goingTo = {
-	log: false,
 	step1: function(msg){
 		HH.log("---> Step: "+msg);
 		Ext.getStore('Profile_Local').load();

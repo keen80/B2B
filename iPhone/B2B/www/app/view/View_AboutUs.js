@@ -20,7 +20,7 @@ Ext.define('B2B.view.View_AboutUs', {
             title: i18n.app.LABEL_ABOUTUS,
             cls: "sub_titlebar, slidableToolbar",
             docked: 'top',
-            id: 'DisclaimerTitlebar',
+            id: 'AboutusTitlebar',
             defaults: {
                 iconMask: true
             }

@@ -31,7 +31,7 @@ Ext.application({
 		'User_Profile_Container', 'User_Profile_About', 'User_Profile_Form',
 		'User_Profile_Privacy_Form',
 		'User_Preferences_Form',
-		'View_Terms', 'View_Whatsnew',
+		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker'
 		],

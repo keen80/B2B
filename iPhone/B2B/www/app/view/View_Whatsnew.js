@@ -4,8 +4,9 @@ Ext.define('B2B.view.View_Whatsnew', {
 	config: {
 		title: i18n.app.PANEL_WHATSNEW,
 		iconCls: 'settings6',
-        cls: 'slidableToolbar',
 		styleHtmlContent: true,
+        cls: 'slidableToolbar',
+
 		html: [
 			'<h1>Whats New</h1>',
 			i18n.app.TEXT_LOREM,
@@ -23,9 +24,7 @@ Ext.define('B2B.view.View_Whatsnew', {
             id: 'WhatsnewTitlebar',
             defaults: {
                 iconMask: true
-            },
-            items: [
-            ]
+            }
         };
 
         this.add([toolbar]);
