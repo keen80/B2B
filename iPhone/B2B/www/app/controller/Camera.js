@@ -68,12 +68,12 @@ Ext.define("B2B.controller.Camera", {
 		this.callParent(arguments);
 
 		this.isDevice = (Ext.browser.is.WebView && (Ext.os.is('Android') || Ext.os.is('iOS')));
-		this.isCameraAvailable = false;
+		this.isCameraAvailable = true;
 
 		if (!this.camera) {
 			this.camera = Ext.device.Camera;
 		}
-
+/*
 		if (this.isDevice) {
 			this.camera.capture({
 				success : function(image) {
@@ -82,5 +82,5 @@ Ext.define("B2B.controller.Camera", {
 				source : 'camera'
 			});
 		}
-	}
+*/	}
 });

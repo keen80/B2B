@@ -52,6 +52,7 @@ Ext.define('B2B.view.Beer_Detail', {
 			]
 		};
 		this.add([toolbar]);
+		   console.log(this.jsonData);
 		this.setHtml(
 			 [
 			'<h1>Beer Detail: '+this.jsonData.data.name+'</h1>',
