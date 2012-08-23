@@ -6,7 +6,7 @@
       "msg": "Status OK"
     },
     "body": {
-      "users": [
+      "list": [
         {
           "idUser": 1,
           "username": "user1",
