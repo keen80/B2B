@@ -8,7 +8,7 @@ Ext.define("B2B.store.Activities_Ajax", {
             url:'mock_activitylist.json',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.activities',
+                rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
@@ -26,7 +26,7 @@ Ext.define("B2B.store.Activities_Ajax", {
                 console.log("Activities Store Callback");
             },
             load:function(el,records, successful){
-                //console.log("Activities_Ajax: Retrieved Data, copying to Local");
+                HH.log("* Loaded: Activities_Ajax, copying to Local");
                 var store_local = Ext.getStore('Activities_Local');
 
                 /* Copying to Localstorage */

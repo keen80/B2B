@@ -31,7 +31,8 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-               /* console.log(records); */
+                HH.log("* Loaded: Store.Beer_Single_Ajax");
+
             }
         }
     }

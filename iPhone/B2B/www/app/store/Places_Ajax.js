@@ -23,7 +23,7 @@ Ext.define("B2B.store.Places_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
-                /* console.log(records); */
+                HH.log("* Loaded: Store.Places_Ajax");
             }
         }
     }

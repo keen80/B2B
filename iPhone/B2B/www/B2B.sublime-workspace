@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"get",
+				"getCmp"
+			],
+			[
 				"confir",
 				"confirmation"
 			],
@@ -160,420 +172,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/view/Beer_List_Container.js",
-			"settings":
-			{
-				"buffer_size": 1633,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Beers_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1671,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Drinks_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1676,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Beers_Single_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1381,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Beers_Local.js",
-			"settings":
-			{
-				"buffer_size": 935,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Drinks_Local.js",
-			"settings":
-			{
-				"buffer_size": 751,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/model/Beer.js",
-			"settings":
-			{
-				"buffer_size": 838,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/model/BeerSingle.js",
-			"settings":
-			{
-				"buffer_size": 325,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2691,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mock_beersinglelist.json",
-			"settings":
-			{
-				"buffer_size": 260087,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Beer_List_SearchComponent.js",
-			"settings":
-			{
-				"buffer_size": 2285,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Activity_List.js",
-			"settings":
-			{
-				"buffer_size": 1177,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/User_Profile_Form.js",
-			"settings":
-			{
-				"buffer_size": 5099,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "i18n/B2B-en-US.js",
-			"settings":
-			{
-				"buffer_size": 18354,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Camera.js",
-			"settings":
-			{
-				"buffer_size": 1881,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Beers.js",
-			"settings":
-			{
-				"buffer_size": 2354,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Beer_Detail.js",
-			"settings":
-			{
-				"buffer_size": 1158,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Activity_Detail.js",
-			"settings":
-			{
-				"buffer_size": 913,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Beer_List.js",
-			"settings":
-			{
-				"buffer_size": 609,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Activities.js",
-			"settings":
-			{
-				"buffer_size": 919,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Friend_List_Container.js",
-			"settings":
-			{
-				"buffer_size": 1295,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Friends.js",
-			"settings":
-			{
-				"buffer_size": 1232,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Friend_Finder.js",
-			"settings":
-			{
-				"buffer_size": 863,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "i18n/B2B-it.js",
-			"settings":
-			{
-				"buffer_size": 18000,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Friend_List_SearchComponent.js",
-			"settings":
-			{
-				"buffer_size": 2004,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Notification_Container.js",
-			"settings":
-			{
-				"buffer_size": 1458,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Notifications.js",
-			"settings":
-			{
-				"buffer_size": 1232,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Friend_List.js",
-			"settings":
-			{
-				"buffer_size": 424,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/js/hh.js",
-			"settings":
-			{
-				"buffer_size": 3453,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Notifications_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1569,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Notifications_Local.js",
-			"settings":
-			{
-				"buffer_size": 794,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/Notification_List.js",
-			"settings":
-			{
-				"buffer_size": 1197,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mock_notificationlist.json",
-			"settings":
-			{
-				"buffer_size": 1266,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 1124 files for \"listeners\" (case sensitive)\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\cordova-1.9.0.js:\n   92  \n   93  /**\n   94:  * Houses custom event handlers to intercept on document + window event listeners.\n   95   */\n   96  var documentEventHandlers = {},\n   ..\n 3379  var timers = {};\n 3380  \n 3381: // Array of listeners; used to keep track of when we should call start and stop.\n 3382: var listeners = [];\n 3383  \n 3384  // Last returned acceleration object from native\n ....\n 3388  function start() {\n 3389      exec(function(a) {\n 3390:         var tempListeners = listeners.slice(0);\n 3391          accel = new Acceleration(a.x, a.y, a.z, a.timestamp);\n 3392          for (var i = 0, l = tempListeners.length; i < l; i++) {\n ....\n 3394          }\n 3395      }, function(e) {\n 3396:         var tempListeners = listeners.slice(0);\n 3397          for (var i = 0, l = tempListeners.length; i < l; i++) {\n 3398              tempListeners[i].fail(e);\n ....\n 3408  }\n 3409  \n 3410: // Adds a callback pair to the listeners array\n 3411  function createCallbackPair(win, fail) {\n 3412      return {win:win, fail:fail};\n 3413  }\n 3414  \n 3415: // Removes a win/fail listener pair from the listeners array\n 3416  function removeListeners(l) {\n 3417:     var idx = listeners.indexOf(l);\n 3418      if (idx > -1) {\n 3419:         listeners.splice(idx, 1);\n 3420:         if (listeners.length === 0) {\n 3421              stop();\n 3422          }\n ....\n 3449  \n 3450          p = createCallbackPair(win, fail);\n 3451:         listeners.push(p);\n 3452  \n 3453          if (!running) {\n ....\n 3480              removeListeners(p);\n 3481          });\n 3482:         listeners.push(p);\n 3483  \n 3484          timers[id] = {\n ....\n 3488                  }\n 3489              }, frequency),\n 3490:             listeners:p\n 3491          };\n 3492  \n ....\n 3510          if (id && timers[id]) {\n 3511              window.clearInterval(timers[id].timer);\n 3512:             removeListeners(timers[id].listeners);\n 3513              delete timers[id];\n 3514          }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Activities_Ajax.js:\n   18              }\n   19          },\n   20:         listeners:{\n   21              exception:function(proxy, response, orientation){\n   22                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Activities_Local.js:\n    8              type:'localstorage',\n    9          },\n   10:         listeners:{\n   11              exception:function(proxy, response, orientation){\n   12                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Beers_Ajax.js:\n   20          },\n   21          autoLoad: true,\n   22:         listeners:{\n   23              exception:function(proxy, response, orientation){\n   24                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Beers_Local.js:\n   14              type:'localstorage',\n   15          },\n   16:         listeners:{\n   17              exception:function(proxy, response, orientation){\n   18                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Beers_Single_Ajax.js:\n   21          autoLoad: true,\n   22          autosync: true,\n   23:         listeners:{\n   24              exception:function(proxy, response, orientation){\n   25                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Friends_Ajax.js:\n   22              }\n   23          },\n   24:         listeners:{\n   25              exception:function(proxy, response, orientation){\n   26                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Friends_Local.js:\n   12              type:'localstorage'\n   13          },\n   14:         listeners:{\n   15              exception:function(proxy, response, orientation){\n   16                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Notifications_Ajax.js:\n   19              }\n   20          },\n   21:         listeners:{\n   22              exception:function(proxy, response, orientation){\n   23                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Notifications_Local.js:\n    9          autoload: true,\n   10          autosync: true,\n   11:         listeners:{\n   12              exception:function(proxy, response, orientation){\n   13                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Places_Ajax.js:\n   15              }\n   16          },\n   17:         listeners:{\n   18              exception:function(proxy, response, orientation){\n   19                  console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Places_Local.js:\n    8              type:'localstorage'\n    9          },\n   10:         listeners: {\n   11              exception:function(proxy, response, orientation){\n   12                      console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Profile_Ajax.js:\n   16          },\n   17          autoload: false,\n   18:         listeners: {\n   19              exception:function(proxy, response, orientation){\n   20                      console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\store\\Profile_Local.js:\n    8              type:'localstorage'\n    9          },\n   10:         listeners: {\n   11              exception:function(proxy, response, orientation){\n   12                      console.error('Failure Notification', response.responseText);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Beer_List_Container.js:\n   69  		   		me.onListItemTap(b);\n   70  		   	}\n   71: 		   	listeners:[\n   72  {\n   73  				onItemTap: function(a, b, c, d, e, f){\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Beer_List_SearchComponent.js:\n   25  			name: 'beerfiltersearch',\n   26  			flex: 1,\n   27: 			listeners : {\n   28  	            scope: this,\n   29  	            clearicontap: function(){\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Camera_Picker.js:\n   18  		this.callParent(arguments);\n   19  	},\n   20: 	listeners: {\n   21  		change: function (picker, value, oldValue) {\n   22  			var eventName = \"openLibraryCommand\";\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Drink_AroundMe.js:\n   32              draggable: true\n   33          },\n   34:         listeners: {\n   35              maprender: function(comp, map){\n   36                  new google.maps.Marker({\n   ..\n   77        var geo = Ext.create('Ext.util.Geolocation', {\n   78      autoUpdate: false,\n   79:     listeners: {\n   80          locationupdate: function(geo) {\n   81              //Ext Call To server with call back\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Friend_List_SearchComponent.js:\n   24  			name: 'friendfiltersearch',\n   25  			flex: 1,\n   26: 			listeners : {\n   27  	            scope: this,\n   28  	            keyup: function(field) {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\Notification_Container.js:\n   47  		    xtype: \"notificationlistcomponent\",\n   48  		    store: Ext.getStore(\"Notifications_Local\"),\n   49: 		    /*listeners: {\n   50  		        disclose: { fn: this.onNotesListDisclose, scope: this }\n   51  		    }*/\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\user_login.js:\n   14                  xtype: 'textfield',\n   15                  label: 'Username:',\n   16:                 listeners: {\n   17                      keyup: function(fld, e){\n   18                          //if user hits return button or keyboard-down button\n   ..\n   30                  xtype: 'passwordfield',\n   31                  label: 'Password:',\n   32:                 listeners: {\n   33                      keyup: function(fld, e){\n   34                          //if user hits return button or keyboard-down button\n   ..\n  148                                               xtype      : 'searchfield',\n  149                                               placeHolder: 'Search...',\n  150:                                              listeners  : {\n  151                                               scope: this,\n  152                                               \n  ...\n  215                                                 xtype      : 'searchfield',\n  216                                                 placeHolder: 'Search...',\n  217:                                                listeners  : {\n  218                                                 scope: this,\n  219                                                 \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\User_Preferences_Form.js:\n   50  					name: 'enableNotification',\n   51  					label: i18n.app.FORM_NOTIFICATIONENABLE,\n   52: 					listeners: {\n   53  				        change: function (slider, thumb, newValue, oldValue) {\n   54  				           console.log(\"Notification Toggle\");\n   ..\n   64  			name: 'shareTwitter',\n   65  			label: i18n.app.FORM_SHARETWITTER,\n   66: 			listeners: {\n   67  		        change: function (slider, thumb, newValue, oldValue) {\n   68  		            if (oldValue == 0) {\n   ..\n   81  			name: 'shareFacebook',	\n   82  			label: i18n.app.FORM_SHAREFACEBOOK,\n   83: 			listeners: {\n   84  		        change: function (slider, thumb, newValue, oldValue) {\n   85  		            if (oldValue == 0) {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\app\\view\\User_Profile_Form.js:\n   30  			            width: 80,\n   31  			            mode: 'element',\n   32: 	                    listeners: {\n   33  	                        tap: function (img, evt) {\n   34  		                        if(!this.actions){\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\sencha-touch-all.js:\n 5838           */\n 5839          triggerCreated: function(className) {\n 5840:             var listeners = this.createdListeners,\n 5841                  nameListeners = this.nameCreatedListeners,\n 5842                  alternateNames = this.maps.nameToAlternates[className],\n ....\n 5844                  i, ln, j, subLn, listener, name;\n 5845  \n 5846:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 5847:                 listener = listeners[i];\n 5848                  listener.fn.call(listener.scope, className);\n 5849              }\n ....\n 5855              for (i = 0,ln = names.length; i < ln; i++) {\n 5856                  name = names[i];\n 5857:                 listeners = nameListeners[name];\n 5858  \n 5859:                 if (listeners) {\n 5860:                     for (j = 0,subLn = listeners.length; j < subLn; j++) {\n 5861:                         listener = listeners[j];\n 5862                          listener.fn.call(listener.scope, name);\n 5863                      }\n ....\n 5871           */\n 5872          onCreated: function(fn, scope, className) {\n 5873:             var listeners = this.createdListeners,\n 5874                  nameListeners = this.nameCreatedListeners,\n 5875                  listener = {\n ....\n 5891              }\n 5892              else {\n 5893:                 listeners.push(listener);\n 5894              }\n 5895          },\n ....\n 7447  \n 7448          /**\n 7449:          * Maintain the list of listeners to execute when all required scripts are fully loaded\n 7450           * @private\n 7451           */\n ....\n 8183       * @member Ext.Class\n 8184       * List of optional classes to load together with this class. These aren't neccessarily loaded before\n 8185:      * this class is created, but are guaranteed to be available before Ext.onReady listeners are\n 8186       * invoked\n 8187       */\n ....\n 8406  \n 8407      /**\n 8408:      * Attempts to destroy any objects passed to it by removing all event listeners, removing them from the\n 8409       * DOM (if applicable) and calling their destroy functions (if available).  This method is primarily\n 8410       * intended for arguments of type {@link Ext.Element} and {@link Ext.Component}.\n ....\n 8462  \n 8463      /**\n 8464:      * <p>Removes this element from the document, removes all DOM event listeners, and deletes the cache reference.\n 8465:      * All DOM event listeners are removed from this element.\n 8466       * @param {HTMLElement} node The node to remove\n 8467       */\n ....\n 8769  \n 8770          callback = function() {\n 8771:             var listeners = Ext.setupListeners,\n 8772:                 ln = listeners.length,\n 8773                  i, listener;\n 8774  \n ....\n 8777  \n 8778              for (i = 0; i < ln; i++) {\n 8779:                 listener = listeners[i];\n 8780                  listener.fn.call(listener.scope);\n 8781              }\n ....\n 9416       */\n 9417      triggerReady: function() {\n 9418:         var listeners = Ext.readyListeners,\n 9419              i, ln, listener;\n 9420  \n ....\n 9422              Ext.isReady = true;\n 9423  \n 9424:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 9425:                 listener = listeners[i];\n 9426                  listener.fn.call(listener.scope);\n 9427              }\n ....\n 17160              push = firingListeners.push,\n 17161              ln = listenerStacks.length,\n 17162:             listeners, beforeListeners, currentListeners, afterListeners,\n 17163              isActionBefore = false,\n 17164              isActionAfter = false,\n .....\n 17177  \n 17178          if (ln === 1) {\n 17179:             listeners = listenerStacks[0].listeners;\n 17180:             beforeListeners = listeners.before;\n 17181:             currentListeners = listeners.current;\n 17182:             afterListeners = listeners.after;\n 17183  \n 17184              if (beforeListeners.length > 0) {\n .....\n 17204          else {\n 17205              for (i = 0; i < ln; i++) {\n 17206:                 beforeListeners = listenerStacks[i].listeners.before;\n 17207                  if (beforeListeners.length > 0) {\n 17208                      push.apply(firingListeners, beforeListeners);\n .....\n 17215  \n 17216              for (i = 0; i < ln; i++) {\n 17217:                 currentListeners = listenerStacks[i].listeners.current;\n 17218                  if (currentListeners.length > 0) {\n 17219                      push.apply(firingListeners, currentListeners);\n .....\n 17226  \n 17227              for (i = 0; i < ln; i++) {\n 17228:                 afterListeners = listenerStacks[i].listeners.after;\n 17229                  if (afterListeners.length > 0) {\n 17230                      push.apply(firingListeners, afterListeners);\n .....\n 17494  \n 17495      constructor: function() {\n 17496:         this.listeners = {\n 17497              before: [],\n 17498              current: [],\n .....\n 17507      add: function(fn, scope, options, order) {\n 17508          var lateBindingMap = this.lateBindingMap,\n 17509:             listeners = this.getAll(order),\n 17510:             i = listeners.length,\n 17511              bindingMap, listener, id;\n 17512  \n .....\n 17532              if (i > 0) {\n 17533                  while (i--) {\n 17534:                     listener = listeners[i];\n 17535  \n 17536                      if (listener.fn === fn && listener.scope === scope) {\n .....\n 17546          if (options && options.prepend) {\n 17547              delete options.prepend;\n 17548:             listeners.unshift(listener);\n 17549          }\n 17550          else {\n 17551:             listeners.push(listener);\n 17552          }\n 17553  \n .....\n 17566          }\n 17567  \n 17568:         return this.listeners[order];\n 17569      },\n 17570  \n .....\n 17587  \n 17588      remove: function(fn, scope, order) {\n 17589:         var listeners = this.getAll(order),\n 17590:             i = listeners.length,\n 17591              isRemoved = false,\n 17592              lateBindingMap = this.lateBindingMap,\n .....\n 17595          if (i > 0) {\n 17596              // Start from the end index, faster than looping from the\n 17597:             // beginning for \"single\" listeners,\n 17598              // which are normally LIFO\n 17599              while (i--) {\n 17600:                 listener = listeners[i];\n 17601  \n 17602                  if (listener.fn === fn && listener.scope === scope) {\n 17603:                     listeners.splice(i, 1);\n 17604                      isRemoved = true;\n 17605                      this.length--;\n .....\n 26345  /**\n 26346   * Mixin that provides a common interface for publishing events. Classes using this mixin can use the {@link #fireEvent}\n 26347:  * and {@link #fireAction} methods to notify listeners of events on the class.\n 26348   *\n 26349:  * Classes can also define a {@link #listeners} config to add an event hanler to the current object. See\n 26350   * {@link #addListener} for more details.\n 26351   *\n .....\n 26372   *         fullName: 'Ed Spencer',\n 26373   *\n 26374:  *         listeners: {\n 26375   *             quit: function() { // This function will be called when the 'quit' event is fired\n 26376   *                 // By default, \"this\" will be the object that fired the event.\n .....\n 26414      config: {\n 26415          /**\n 26416:          * @cfg {Object} listeners\n 26417           *\n 26418           * A config object containing one or more event handlers to be added to this object during initialization. This\n 26419:          * should be a valid listeners config object as specified in the {@link #addListener} example for attaching\n 26420           * multiple handlers at once.\n 26421           *\n 26422           * See the [Event guide](#!/guide/events) for more\n 26423           *\n 26424:          * **Note** it is bad practice to specify a listeners config when you are defining a class using Ext.define.\n 26425:          * Instead, only specify listeners when you are instantiating your class with Ext.create.\n 26426           * @accessor\n 26427           */\n 26428:         listeners: null,\n 26429  \n 26430          /**\n .....\n 26439      },\n 26440  \n 26441:     applyListeners: function(listeners) {\n 26442:         if (listeners) {\n 26443:             this.addListener(listeners);\n 26444          }\n 26445      },\n .....\n 26539      /**\n 26540       * Fires the specified event with the passed parameters and execute a function (action)\n 26541:      * at the end if there are no listeners that return false.\n 26542       *\n 26543       * @param {String} eventName The name of the event to fire.\n .....\n 26670      clearManagedListeners: function(object) {\n 26671          var managedListeners = this.managedListeners,\n 26672:             id, namedListeners, listeners, eventName, i, ln, listener, options;\n 26673  \n 26674          if (!managedListeners) {\n .....\n 26688              for (eventName in namedListeners) {\n 26689                  if (namedListeners.hasOwnProperty(eventName)) {\n 26690:                     listeners = namedListeners[eventName];\n 26691  \n 26692:                     for (i = 0,ln = listeners.length; i < ln; i++) {\n 26693:                         listener = listeners[i];\n 26694  \n 26695                          options = {};\n .....\n 26729      changeListener: function(actionFn, eventName, fn, scope, options, order) {\n 26730          var eventNames,\n 26731:             listeners,\n 26732              listenerOptionsRegex,\n 26733              actualOptions,\n .....\n 26735  \n 26736          if (typeof fn != 'undefined') {\n 26737:             // Support for array format to add multiple listeners\n 26738              if (typeof eventName != 'string') {\n 26739                  for (i = 0,ln = eventName.length; i < ln; i++) {\n .....\n 26749          }\n 26750          else if (Ext.isArray(eventName)) {\n 26751:             listeners = eventName;\n 26752  \n 26753:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 26754:                 listener = listeners[i];\n 26755  \n 26756                  actionFn.call(this, listener.event, listener.fn, listener.scope, listener, listener.order);\n .....\n 26761              options = eventName;\n 26762              eventNames = [];\n 26763:             listeners = [];\n 26764              actualOptions = {};\n 26765  \n .....\n 26785  \n 26786                      eventNames.push(name);\n 26787:                     listeners.push(value);\n 26788                  }\n 26789                  else {\n .....\n 26793  \n 26794              for (i = 0,ln = eventNames.length; i < ln; i++) {\n 26795:                 actionFn.call(this, eventNames[i], listeners[i], scope, actualOptions, order);\n 26796              }\n 26797          }\n .....\n 26805       * ## Combining Options\n 26806       *\n 26807:      * Using the options argument, it is possible to combine different types of listeners:\n 26808       *\n 26809       * A delayed, one-time listener:\n .....\n 26876       *\n 26877       *       Ext.create('Ext.Component', {\n 26878:      *           listeners: {\n 26879       *               element: 'element',\n 26880       *               tap: function() {\n .....\n 26995  \n 26996      /**\n 26997:      * Removes all listeners for this object.\n 26998       */\n 26999      clearListeners: function() {\n .....\n 27010  \n 27011      /**\n 27012:      * Checks to see if this object has any listeners for a specified event\n 27013       *\n 27014       * @param {String} eventName The name of the event to check for\n .....\n 27033       *\n 27034       * If events were suspended using the `queueSuspended` parameter, then all events fired\n 27035:      * during event suspension will be sent to any listeners now.\n 27036       */\n 27037      resumeEvents: function() {\n .....\n 27299           * This is helpful when we only want the event to be fired for subsequent changes.\n 27300           * Also it's a major performance improvement for instantiation when fired events\n 27301:          * are mostly useless since there's no listeners\n 27302           */\n 27303          for (name in eventedConfig) {\n .....\n 28915          var dispatcher = this.getEventDispatcher(),\n 28916              refs = (controller) ? controller.getRefs() : {},\n 28917:             selector, eventName, listener, listeners, ref;\n 28918  \n 28919          for (selector in selectors) {\n 28920              if (selectors.hasOwnProperty(selector)) {\n 28921:                 listeners = selectors[selector];\n 28922                  ref = refs[selector];\n 28923  \n .....\n 28926                      selector = ref.selector || ref;\n 28927                  }\n 28928:                 for (eventName in listeners) {\n 28929:                     listener = listeners[eventName];\n 28930  \n 28931                      if (Ext.isString(listener)) {\n .....\n 31695       * @param {Object} options.operations Object containing the Model instances to act upon, keyed by action name\n 31696       *\n 31697:      * @param {Object} [options.listeners] Event listeners object passed straight through to the Batch -\n 31698       * see {@link Ext.data.Batch} for details\n 31699       *\n .....\n 31727       * @return {Ext.data.Batch} The newly created Batch\n 31728       */\n 31729:     batch: function(options, /* deprecated */listeners) {\n 31730          var me = this,\n 31731              useBatch = me.getBatchActions(),\n .....\n 31735  \n 31736          if (options.operations === undefined) {\n 31737:             // the old-style (operations, listeners) signature was called\n 31738              // so convert to the single options argument syntax\n 31739              options = {\n 31740                  operations: options,\n 31741                  batch: {\n 31742:                     listeners: listeners\n 31743                  }\n 31744              };\n 31745  \n 31746:             Ext.Logger.deprecate('Passes old-style signature to Proxy.batch (operations, listeners). Please convert to single options argument syntax.');\n 31747          }\n 31748  \n .....\n 31756               options.batch = {\n 31757                   proxy: me,\n 31758:                  listeners: options.listeners || {}\n 31759               };\n 31760          }\n .....\n 35708      extend: 'Ext.fx.runner.Css',\n 35709  \n 35710:     listenersAttached: false,\n 35711  \n 35712      constructor: function() {\n .....\n 35717  \n 35718      attachListeners: function() {\n 35719:         this.listenersAttached = true;\n 35720          this.getEventDispatcher().addListener('element', '*', 'transitionend', 'onTransitionEnd', this);\n 35721      },\n .....\n 35949              runningNameMap, runningNameList, runningSessions, runningSession;\n 35950  \n 35951:         if (!this.listenersAttached) {\n 35952              this.attachListeners();\n 35953          }\n .....\n 39663   * # Server side events\n 39664   *\n 39665:  * Custom events from the server may be handled by the client by adding listeners, for example:\n 39666   *\n 39667   *     {\"type\":\"event\",\"name\":\"message\",\"data\":\"Successfully polled at: 11:19:30 am\"}\n .....\n 41046   *     var geo = Ext.create('Ext.util.Geolocation', {\n 41047   *         autoUpdate: false,\n 41048:  *         listeners: {\n 41049   *             locationupdate: function(geo) {\n 41050   *                 alert('New latitude: ' + geo.getLatitude());\n .....\n 44747          };\n 44748  \n 44749:         this.listeners = {\n 44750              expand: expandListener,\n 44751              shrink: shrinkListener\n .....\n 44807      destroyDetector: function(name) {\n 44808          var detector = this.detectors[name],\n 44809:             listener = this.listeners[name];\n 44810  \n 44811          detector.removeEventListener('scroll', listener, true);\n .....\n 44819          this.destroyDetector('shrink');\n 44820  \n 44821:         delete this.listeners;\n 44822          delete this.detectors;\n 44823      }\n .....\n 46338          this.set(this.getIdProperty(), id);\n 46339  \n 46340:         // We don't update the this.id since we don't want to break listeners that already\n 46341          // exist on the record instance.\n 46342          this.internalId = id;\n .....\n 49034              me.getProxy().batch({\n 49035                  operations: operations,\n 49036:                 listeners: me.getBatchListeners()\n 49037              });\n 49038          }\n .....\n 49151      /**\n 49152       * @private\n 49153:      * Returns an object which is passed in as the listeners argument to proxy.batch inside this.sync.\n 49154:      * This is broken out into a separate function to allow for customisation of the listeners\n 49155:      * @return {Object} The listeners object\n 49156       */\n 49157      getBatchListeners: function() {\n .....\n 51419  \n 51420      constructor: function() {\n 51421:         this.listeners = {\n 51422              painted: 'onComponentPainted',\n 51423              scope: this\n .....\n 51445                  }\n 51446  \n 51447:                 component.on(this.listeners);\n 51448              }\n 51449              else if (Ext.isObject(config)) {\n .....\n 51466  \n 51467          delete this.translatable;\n 51468:         component.un(this.listeners);\n 51469      },\n 51470  \n .....\n 51765          this.stopAnimation = Ext.Function.bind(this.stopAnimation, this);\n 51766  \n 51767:         this.listeners = {\n 51768              scope: this,\n 51769              touchstart: 'onTouchStart',\n .....\n 51844                  easingY: bounceEasing.y,\n 51845                  useWrapper: false,\n 51846:                 listeners: {\n 51847                      animationframe: 'onAnimationFrame',\n 51848                      animationend: 'onAnimationEnd',\n .....\n 51866       */\n 51867      attachListeneners: function() {\n 51868:         this.getContainer().on(this.listeners);\n 51869      },\n 51870  \n .....\n 51873       */\n 51874      detachListeners: function() {\n 51875:         this.getContainer().un(this.listeners);\n 51876      },\n 51877  \n .....\n 52801          };\n 52802  \n 52803:         this.listeners = {\n 52804              dragstart: 'onDragStart',\n 52805              drag     : 'onDrag',\n .....\n 52828  \n 52829      updateElement: function(element) {\n 52830:         element.on(this.listeners);\n 52831  \n 52832          this.sizeMonitor = new Ext.util.SizeMonitor({\n .....\n 52950  \n 52951      detachListeners: function() {\n 52952:         this.getElement().un(this.listeners);\n 52953      },\n 52954  \n .....\n 53123  \n 53124      constructor: function() {\n 53125:         this.listeners = {\n 53126              painted: 'onComponentPainted',\n 53127              scope: this\n .....\n 53151                  }\n 53152  \n 53153:                 component.on(this.listeners);\n 53154              }\n 53155              else if (Ext.isObject(config)) {\n .....\n 53172  \n 53173          delete this.draggable;\n 53174:         component.un(this.listeners);\n 53175      },\n 53176  \n .....\n 54160       */\n 54161      triggerInitialized: function() {\n 54162:         var listeners = this.onInitializedListeners,\n 54163:             ln = listeners.length,\n 54164              listener, i;\n 54165  \n .....\n 54169              if (ln > 0) {\n 54170                  for (i = 0; i < ln; i++) {\n 54171:                     listener = listeners[i];\n 54172                      listener.fn.call(listener.scope, this);\n 54173                  }\n 54174  \n 54175:                 listeners.length = 0;\n 54176              }\n 54177          }\n .....\n 54184       */\n 54185      onInitialized: function(fn, scope) {\n 54186:         var listeners = this.onInitializedListeners;\n 54187  \n 54188          if (!scope) {\n .....\n 54194          }\n 54195          else {\n 54196:             listeners.push({\n 54197                  fn: fn,\n 54198                  scope: scope\n .....\n 57055           * @inheritdoc\n 57056           */\n 57057:         listeners: {\n 57058              painted: 'onPainted',\n 57059              erased: 'onErased'\n .....\n 60738       * @event action\n 60739       * @preventable doAction\n 60740:      * Fires whenever the return key or go is pressed. FormPanel listeners\n 60741       * for this event, and submits itself whenever it fires. Also note\n 60742       * that this event bubbles up to parent containers.\n .....\n 62177                  message: this.getLoadMoreText()\n 62178              }),\n 62179:             listeners: {\n 62180                  tap: {\n 62181                      fn: this.loadNextPage,\n .....\n 63396  \n 63397      constructor: function() {\n 63398:         this.listeners = {\n 63399              painted: 'onComponentPainted',\n 63400              scope: this\n .....\n 63430                  }\n 63431  \n 63432:                 component.on(this.listeners);\n 63433              }\n 63434              else if (Ext.isString(config) || Ext.isObject(config)) {\n .....\n 63457          this.scrollContainer.destroy();\n 63458  \n 63459:         component.un(this.listeners);\n 63460  \n 63461          delete this.scrollerElement;\n .....\n 63877  \n 63878      updateModal: function(newModal, oldModal) {\n 63879:         var listeners = {\n 63880              painted: 'refreshModalMask',\n 63881              erased: 'destroyModalMask'\n .....\n 63883  \n 63884          if (newModal) {\n 63885:             this.on(listeners);\n 63886              newModal.on('destroy', 'onModalDestroy', this);\n 63887              if (this.getTop() === null && this.getBottom() === null && this.getRight() === null && this.getLeft() === null && !this.getCentered()) {\n .....\n 63897          else if (oldModal) {\n 63898              oldModal.un('destroy', 'onModalDestroy', this);\n 63899:             this.un(listeners);\n 63900          }\n 63901      },\n .....\n 63995       */\n 63996       applyControl: function(selectors) {\n 63997:          var selector, key, listener, listeners;\n 63998  \n 63999           for (selector in selectors) {\n 64000:              listeners = selectors[selector];\n 64001  \n 64002:              for (key in listeners) {\n 64003:                  listener = listeners[key];\n 64004  \n 64005                   if (Ext.isObject(listener)) {\n .....\n 64008               }\n 64009  \n 64010:              listeners.delegate = selector;\n 64011  \n 64012:              this.addListener(listeners);\n 64013           }\n 64014  \n .....\n 64017  \n 64018      /**\n 64019:      * Initialize layout and event listeners the very first time an item is added\n 64020       * @private\n 64021       */\n .....\n 65131   *             }\n 65132   *         ],\n 65133:  *         listeners: {\n 65134   *             toggle: function(container, button, pressed){\n 65135   *                 console.log(\"User toggled the '\" + button.text + \"' button: \" + (pressed ? 'on' : 'off'));\n .....\n 65834                  align: 'center'\n 65835              },\n 65836:             listeners: {\n 65837                  resize: 'refreshTitlePosition',\n 65838                  scope: me\n .....\n 65844              style: 'position: relative',\n 65845              flex: 1,\n 65846:             listeners: {\n 65847                  resize: 'refreshTitlePosition',\n 65848                  scope: me\n .....\n 65857                  align: 'center'\n 65858              },\n 65859:             listeners: {\n 65860                  resize: 'refreshTitlePosition',\n 65861                  scope: me\n .....\n 70519      updateStore: function(newStore, oldStore) {\n 70520          var me = this,\n 70521:             listeners = this.storeListeners;\n 70522  \n 70523:         listeners.scope = me;\n 70524  \n 70525          if (oldStore && Ext.isObject(oldStore) && oldStore.isStore) {\n .....\n 70527                  oldStore.destroy();\n 70528              }\n 70529:             oldStore.un(listeners);\n 70530          }\n 70531  \n 70532          if (newStore) {\n 70533              me.goToNode(newStore.getRoot());\n 70534:             newStore.on(listeners);\n 70535          }\n 70536      },\n .....\n 70805              onItemDisclosure: me.getOnItemDisclosure(),\n 70806              allowDeselect : me.getAllowDeselect(),\n 70807:             listeners: [\n 70808                  { event: 'itemdoubletap', fn: 'onItemDoubleTap', scope: me },\n 70809                  { event: 'itemtap', fn: 'onItemInteraction', scope: me, order: 'before'},\n .....\n 71012   *\n 71013   *     var form = Ext.create('Ext.form.Panel', {\n 71014:  *         listeners: {\n 71015   *             '> field': {\n 71016   *                 change: function(field, newValue, oldValue) {\n .....\n 71022   *     });\n 71023   *\n 71024:  * The above used a new capability of Touch 2.0, which enables you to specify listeners on child components of any\n 71025   * container. In this case, we attached a listener to the {@link Ext.field.Text#change change} event of each form\n 71026   * field that is a direct child of the form panel. Our listener gets the name of the field that fired the change event,\n .....\n 74085                      store       : this.getStore()\n 74086                  }],\n 74087:                 listeners: {\n 74088                      change: this.onPickerChange,\n 74089                      scope: this\n .....\n 74110                      store: this.getStore(),\n 74111                      itemTpl: '<span class=\"x-list-label\">{' + this.getDisplayField() + ':htmlEncode}</span>',\n 74112:                     listeners: {\n 74113                          select : this.onListSelect,\n 74114                          itemtap: this.onListTap,\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\sencha-touch.js:\n 5843           */\n 5844          triggerCreated: function(className) {\n 5845:             var listeners = this.createdListeners,\n 5846                  nameListeners = this.nameCreatedListeners,\n 5847                  alternateNames = this.maps.nameToAlternates[className],\n ....\n 5849                  i, ln, j, subLn, listener, name;\n 5850  \n 5851:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 5852:                 listener = listeners[i];\n 5853                  listener.fn.call(listener.scope, className);\n 5854              }\n ....\n 5860              for (i = 0,ln = names.length; i < ln; i++) {\n 5861                  name = names[i];\n 5862:                 listeners = nameListeners[name];\n 5863  \n 5864:                 if (listeners) {\n 5865:                     for (j = 0,subLn = listeners.length; j < subLn; j++) {\n 5866:                         listener = listeners[j];\n 5867                          listener.fn.call(listener.scope, name);\n 5868                      }\n ....\n 5876           */\n 5877          onCreated: function(fn, scope, className) {\n 5878:             var listeners = this.createdListeners,\n 5879                  nameListeners = this.nameCreatedListeners,\n 5880                  listener = {\n ....\n 5896              }\n 5897              else {\n 5898:                 listeners.push(listener);\n 5899              }\n 5900          },\n ....\n 7452  \n 7453          /**\n 7454:          * Maintain the list of listeners to execute when all required scripts are fully loaded\n 7455           * @private\n 7456           */\n ....\n 8188       * @member Ext.Class\n 8189       * List of optional classes to load together with this class. These aren't neccessarily loaded before\n 8190:      * this class is created, but are guaranteed to be available before Ext.onReady listeners are\n 8191       * invoked\n 8192       */\n ....\n 8533  \n 8534      /**\n 8535:      * Attempts to destroy any objects passed to it by removing all event listeners, removing them from the\n 8536       * DOM (if applicable) and calling their destroy functions (if available).  This method is primarily\n 8537       * intended for arguments of type {@link Ext.Element} and {@link Ext.Component}.\n ....\n 8589  \n 8590      /**\n 8591:      * <p>Removes this element from the document, removes all DOM event listeners, and deletes the cache reference.\n 8592:      * All DOM event listeners are removed from this element.\n 8593       * @param {HTMLElement} node The node to remove\n 8594       */\n ....\n 8896  \n 8897          callback = function() {\n 8898:             var listeners = Ext.setupListeners,\n 8899:                 ln = listeners.length,\n 8900                  i, listener;\n 8901  \n ....\n 8904  \n 8905              for (i = 0; i < ln; i++) {\n 8906:                 listener = listeners[i];\n 8907                  listener.fn.call(listener.scope);\n 8908              }\n ....\n 9543       */\n 9544      triggerReady: function() {\n 9545:         var listeners = Ext.readyListeners,\n 9546              i, ln, listener;\n 9547  \n ....\n 9549              Ext.isReady = true;\n 9550  \n 9551:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 9552:                 listener = listeners[i];\n 9553                  listener.fn.call(listener.scope);\n 9554              }\n ....\n 9673   * @member Ext\n 9674   * @property {Boolean} enableListenerCollection\n 9675:  * True to automatically purge event listeners during garbageCollection.\n 9676   * @removed 2.0.0\n 9677   */\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\jasmine-node\\node_modules\\.bin\\r.js:\n  527                  fullName = map.fullName,\n  528                  args = manager.deps,\n  529:                 listeners = manager.listeners,\n  530                  cjsModule;\n  531  \n  ...\n  578  \n  579              //Clean up waiting. Do this before error calls, and before\n  580:             //calling back listeners, so that bookkeeping is correct\n  581              //in the event of an error and error is reported in correct order,\n  582:             //since the listeners will likely have errors if the\n  583              //onError function does not throw.\n  584              if (waiting[manager.id]) {\n  ...\n  615              }\n  616  \n  617:             //Let listeners know of this manager's value.\n  618:             for (i = 0; (cb = listeners[i]); i++) {\n  619                  cb(ret);\n  620              }\n  ...\n  751           */\n  752          function managerAdd(cb) {\n  753:             this.listeners.push(cb);\n  754          }\n  755  \n  ...\n  779                      depCallbacks: [],\n  780                      deps: [],\n  781:                     listeners: [],\n  782                      add: managerAdd\n  783                  };\n  ...\n  865                  loaded[id] = true;\n  866  \n  867:                 //If module is jQuery set up delaying its dom ready listeners.\n  868                  if (fullName === \"jquery\" && callback) {\n  869                      jQueryCheck(callback());\n  ...\n 8329  \n 8330                      //Need to close out completion of this module\n 8331:                     //so that listeners will get notified that it is available.\n 8332                      try {\n 8333                          context.completeLoad(moduleName);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\jasmine-node\\node_modules\\coffee-script\\lib\\coffee-script\\command.js:\n  150      } catch (err) {\n  151        CoffeeScript.emit('failure', err, task);\n  152:       if (CoffeeScript.listeners('failure').length) return;\n  153        if (o.watch) return printLine(err.message);\n  154        printWarn(err instanceof Error && err.stack || (\"ERROR: \" + err));\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\jasmine-node\\node_modules\\jasmine-reporters\\ext\\env.rhino.1.2.js:\n 5611          //    $events[target.uuid][type][phase].length, $events[target.uuid][type][phase].indexOf( fn ));\n 5612      }\n 5613:     //console.log('registered event listeners %s', $events.length);\n 5614  }\n 5615  \n ....\n 5624      }\n 5625      if(type == '*'){\n 5626:         //used to clean all event listeners for a given node\n 5627:         //console.log('cleaning all event listeners for node %s %s',target, target.uuid);\n 5628          delete $events[target.uuid];\n 5629          return;\n ....\n 7034          //attributes\n 7035          if(node.nodeType !== Node.DOCUMENT_NODE && node.uuid){\n 7036:             //console.log('removing event listeners, %s', node, node.uuid);\n 7037              node.removeEventListener('*', null, null);\n 7038          }\n ....\n 7055                  //storing the registered events in an array accessed\n 7056                  //by the uuid property of the node.  unforunately this\n 7057:                 //means listeners hang out way after(forever ;)) the node\n 7058                  //has been removed and gone out of scope.\n 7059:                 //console.log('removing event listeners, %s', node, node.uuid);\n 7060                  node.removeEventListener('*', null, null);\n 7061                  switch(node.tagName.toLowerCase()){\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\jasmine-node\\node_modules\\requirejs\\require.js:\n  423                  fullName = map.fullName,\n  424                  args = manager.deps,\n  425:                 listeners = manager.listeners,\n  426                  cjsModule;\n  427  \n  ...\n  474  \n  475              //Clean up waiting. Do this before error calls, and before\n  476:             //calling back listeners, so that bookkeeping is correct\n  477              //in the event of an error and error is reported in correct order,\n  478:             //since the listeners will likely have errors if the\n  479              //onError function does not throw.\n  480              if (waiting[manager.id]) {\n  ...\n  511              }\n  512  \n  513:             //Let listeners know of this manager's value.\n  514:             for (i = 0; (cb = listeners[i]); i++) {\n  515                  cb(ret);\n  516              }\n  ...\n  647           */\n  648          function managerAdd(cb) {\n  649:             this.listeners.push(cb);\n  650          }\n  651  \n  ...\n  675                      depCallbacks: [],\n  676                      deps: [],\n  677:                     listeners: [],\n  678                      add: managerAdd\n  679                  };\n  ...\n  761                  loaded[id] = true;\n  762  \n  763:                 //If module is jQuery set up delaying its dom ready listeners.\n  764                  if (fullName === \"jquery\" && callback) {\n  765                      jQueryCheck(callback());\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\jasmine-node\\node_modules\\requirejs\\bin\\r.js:\n  527                  fullName = map.fullName,\n  528                  args = manager.deps,\n  529:                 listeners = manager.listeners,\n  530                  cjsModule;\n  531  \n  ...\n  578  \n  579              //Clean up waiting. Do this before error calls, and before\n  580:             //calling back listeners, so that bookkeeping is correct\n  581              //in the event of an error and error is reported in correct order,\n  582:             //since the listeners will likely have errors if the\n  583              //onError function does not throw.\n  584              if (waiting[manager.id]) {\n  ...\n  615              }\n  616  \n  617:             //Let listeners know of this manager's value.\n  618:             for (i = 0; (cb = listeners[i]); i++) {\n  619                  cb(ret);\n  620              }\n  ...\n  751           */\n  752          function managerAdd(cb) {\n  753:             this.listeners.push(cb);\n  754          }\n  755  \n  ...\n  779                      depCallbacks: [],\n  780                      deps: [],\n  781:                     listeners: [],\n  782                      add: managerAdd\n  783                  };\n  ...\n  865                  loaded[id] = true;\n  866  \n  867:                 //If module is jQuery set up delaying its dom ready listeners.\n  868                  if (fullName === \"jquery\" && callback) {\n  869                      jQueryCheck(callback());\n  ...\n 8329  \n 8330                      //Need to close out completion of this module\n 8331:                     //so that listeners will get notified that it is available.\n 8332                      try {\n 8333                          context.completeLoad(moduleName);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\command\\vendor\\nodejs\\node_modules\\uglify-js\\tmp\\app.js:\n  292  \n  293  	ready: function( fn ) {\n  294: 		// Attach the listeners\n  295  		jQuery.bindReady();\n  296  \n  ...\n 13281  \n 13282    /**\n 13283:    * Wraps setTimeout and setInterval to handle uncaught exceptions in listeners.\n 13284     */\n 13285    function wrapTimeouts() {\n .....\n 13311    /**\n 13312     * Wraps DOM event interfaces (addEventListener and removeEventListener) to add try/catch wrappers to all event\n 13313:    * listeners.\n 13314     */\n 13315    function wrapDOMEvents() {\n .....\n 13373  \n 13374    /**\n 13375:    * Wrap XMLHttpRequest onreadystatechange listeners to handle uncaught JS exceptions.\n 13376     * This only affects the .onreadystatechange property. The addEventListener property is handled by wrapDOMEvents.\n 13377     */\n .....\n 13439  \n 13440  /**\n 13441:  * Wrapper for addEventListener/removeEventListener listeners. Global to avoid potential memory/performance impacts of a\n 13442   * function closure for each event listener. This is a handleEvent property of the EventHandler object passed to\n 13443   * addEventListener. It accesses other properties of that object to read exception information.\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\Component.js:\n  975       */\n  976      triggerInitialized: function() {\n  977:         var listeners = this.onInitializedListeners,\n  978:             ln = listeners.length,\n  979              listener, i;\n  980  \n  ...\n  984              if (ln > 0) {\n  985                  for (i = 0; i < ln; i++) {\n  986:                     listener = listeners[i];\n  987                      listener.fn.call(listener.scope, this);\n  988                  }\n  989  \n  990:                 listeners.length = 0;\n  991              }\n  992          }\n  ...\n  999       */\n 1000      onInitialized: function(fn, scope) {\n 1001:         var listeners = this.onInitializedListeners;\n 1002  \n 1003          if (!scope) {\n ....\n 1009          }\n 1010          else {\n 1011:             listeners.push({\n 1012                  fn: fn,\n 1013                  scope: scope\n ....\n 2556          addListener: function(options) {\n 2557              if (arguments.length === 1 && Ext.isObject(options) && (('el' in options) || ('body' in options))) {\n 2558:                 Ext.Logger.error(\"Adding component element listeners using the old format is no longer supported. \" +\n 2559                      \"Please refer to: http://bit.ly/xHCyfa for more details.\", this);\n 2560              }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\Container.js:\n  403  \n  404      updateModal: function(newModal, oldModal) {\n  405:         var listeners = {\n  406              painted: 'refreshModalMask',\n  407              erased: 'destroyModalMask'\n  ...\n  409  \n  410          if (newModal) {\n  411:             this.on(listeners);\n  412              newModal.on('destroy', 'onModalDestroy', this);\n  413              if (this.getTop() === null && this.getBottom() === null && this.getRight() === null && this.getLeft() === null && !this.getCentered()) {\n  ...\n  425          else if (oldModal) {\n  426              oldModal.un('destroy', 'onModalDestroy', this);\n  427:             this.un(listeners);\n  428          }\n  429      },\n  ...\n  523       */\n  524       applyControl: function(selectors) {\n  525:          var selector, key, listener, listeners;\n  526  \n  527           for (selector in selectors) {\n  528:              listeners = selectors[selector];\n  529  \n  530:              for (key in listeners) {\n  531:                  listener = listeners[key];\n  532  \n  533                   if (Ext.isObject(listener)) {\n  ...\n  536               }\n  537  \n  538:              listeners.delegate = selector;\n  539  \n  540:              this.addListener(listeners);\n  541           }\n  542  \n  ...\n  545  \n  546      /**\n  547:      * Initialize layout and event listeners the very first time an item is added\n  548       * @private\n  549       */\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\Evented.js:\n   89           * This is helpful when we only want the event to be fired for subsequent changes.\n   90           * Also it's a major performance improvement for instantiation when fired events\n   91:          * are mostly useless since there's no listeners\n   92           */\n   93          for (name in eventedConfig) {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\LoadMask.js:\n   55           * @inheritdoc\n   56           */\n   57:         listeners: {\n   58              painted: 'onPainted',\n   59              erased: 'onErased'\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\SegmentedButton.js:\n   24   *             }\n   25   *         ],\n   26:  *         listeners: {\n   27   *             toggle: function(container, button, pressed){\n   28   *                 console.log(\"User toggled the '\" + button.text + \"' button: \" + (pressed ? 'on' : 'off'));\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\TitleBar.js:\n  189                  align: 'center'\n  190              },\n  191:             listeners: {\n  192                  resize: 'refreshTitlePosition',\n  193                  scope: me\n  ...\n  199              style: 'position: relative',\n  200              flex: 1,\n  201:             listeners: {\n  202                  resize: 'refreshTitlePosition',\n  203                  scope: me\n  ...\n  212                  align: 'center'\n  213              },\n  214:             listeners: {\n  215                  resize: 'refreshTitlePosition',\n  216                  scope: me\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\app\\Application.js:\n  448          var dispatcher = this.getEventDispatcher(),\n  449              refs = (controller) ? controller.getRefs() : {},\n  450:             selector, eventName, listener, listeners, ref;\n  451  \n  452          for (selector in selectors) {\n  453              if (selectors.hasOwnProperty(selector)) {\n  454:                 listeners = selectors[selector];\n  455                  ref = refs[selector];\n  456  \n  ...\n  459                      selector = ref.selector || ref;\n  460                  }\n  461:                 for (eventName in listeners) {\n  462:                     listener = listeners[eventName];\n  463  \n  464                      if (Ext.isString(listener)) {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\behavior\\Draggable.js:\n   11  \n   12      constructor: function() {\n   13:         this.listeners = {\n   14              painted: 'onComponentPainted',\n   15              scope: this\n   ..\n   39                  }\n   40  \n   41:                 component.on(this.listeners);\n   42              }\n   43              else if (Ext.isObject(config)) {\n   ..\n   60  \n   61          delete this.draggable;\n   62:         component.un(this.listeners);\n   63      },\n   64  \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\behavior\\Scrollable.js:\n   11  \n   12      constructor: function() {\n   13:         this.listeners = {\n   14              painted: 'onComponentPainted',\n   15              scope: this\n   ..\n   45                  }\n   46  \n   47:                 component.on(this.listeners);\n   48              }\n   49              else if (Ext.isString(config) || Ext.isObject(config)) {\n   ..\n   72          this.scrollContainer.destroy();\n   73  \n   74:         component.un(this.listeners);\n   75  \n   76          delete this.scrollerElement;\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\behavior\\Translatable.js:\n   11  \n   12      constructor: function() {\n   13:         this.listeners = {\n   14              painted: 'onComponentPainted',\n   15              scope: this\n   ..\n   37                  }\n   38  \n   39:                 component.on(this.listeners);\n   40              }\n   41              else if (Ext.isObject(config)) {\n   ..\n   58  \n   59          delete this.translatable;\n   60:         component.un(this.listeners);\n   61      },\n   62  \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\core\\Ext-more.js:\n  169  \n  170      /**\n  171:      * Attempts to destroy any objects passed to it by removing all event listeners, removing them from the\n  172       * DOM (if applicable) and calling their destroy functions (if available).  This method is primarily\n  173       * intended for arguments of type {@link Ext.Element} and {@link Ext.Component}.\n  ...\n  225  \n  226      /**\n  227:      * <p>Removes this element from the document, removes all DOM event listeners, and deletes the cache reference.\n  228:      * All DOM event listeners are removed from this element.\n  229       * @param {HTMLElement} node The node to remove\n  230       */\n  ...\n  534  \n  535          callback = function() {\n  536:             var listeners = Ext.setupListeners,\n  537:                 ln = listeners.length,\n  538                  i, listener;\n  539  \n  ...\n  542  \n  543              for (i = 0; i < ln; i++) {\n  544:                 listener = listeners[i];\n  545                  listener.fn.call(listener.scope);\n  546              }\n  ...\n 1222       */\n 1223      triggerReady: function() {\n 1224:         var listeners = Ext.readyListeners,\n 1225              i, ln, listener;\n 1226  \n ....\n 1228              Ext.isReady = true;\n 1229  \n 1230:             for (i = 0,ln = listeners.length; i < ln; i++) {\n 1231:                 listener = listeners[i];\n 1232                  listener.fn.call(listener.scope);\n 1233              }\n ....\n 1355   * @member Ext\n 1356   * @property {Boolean} enableListenerCollection\n 1357:  * True to automatically purge event listeners during garbageCollection.\n 1358   * @removed 2.0.0\n 1359   */\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\core\\class\\ClassManager.js:\n  305           */\n  306          triggerCreated: function(className) {\n  307:             var listeners = this.createdListeners,\n  308                  nameListeners = this.nameCreatedListeners,\n  309                  alternateNames = this.maps.nameToAlternates[className],\n  ...\n  311                  i, ln, j, subLn, listener, name;\n  312  \n  313:             for (i = 0,ln = listeners.length; i < ln; i++) {\n  314:                 listener = listeners[i];\n  315                  listener.fn.call(listener.scope, className);\n  316              }\n  ...\n  322              for (i = 0,ln = names.length; i < ln; i++) {\n  323                  name = names[i];\n  324:                 listeners = nameListeners[name];\n  325  \n  326:                 if (listeners) {\n  327:                     for (j = 0,subLn = listeners.length; j < subLn; j++) {\n  328:                         listener = listeners[j];\n  329                          listener.fn.call(listener.scope, name);\n  330                      }\n  ...\n  338           */\n  339          onCreated: function(fn, scope, className) {\n  340:             var listeners = this.createdListeners,\n  341                  nameListeners = this.nameCreatedListeners,\n  342                  listener = {\n  ...\n  358              }\n  359              else {\n  360:                 listeners.push(listener);\n  361              }\n  362          },\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\core\\class\\Loader.js:\n  458  \n  459          /**\n  460:          * Maintain the list of listeners to execute when all required scripts are fully loaded\n  461           * @private\n  462           */\n  ...\n 1241       * @member Ext.Class\n 1242       * List of optional classes to load together with this class. These aren't neccessarily loaded before\n 1243:      * this class is created, but are guaranteed to be available before Ext.onReady listeners are\n 1244       * invoked\n 1245       */\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\data\\Model.js:\n  669          this.set(this.getIdProperty(), id);\n  670  \n  671:         // We don't update the this.id since we don't want to break listeners that already\n  672          // exist on the record instance.\n  673          this.internalId = id;\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\data\\Store.js:\n 1731              me.getProxy().batch({\n 1732                  operations: operations,\n 1733:                 listeners: me.getBatchListeners()\n 1734              });\n 1735          }\n ....\n 1848      /**\n 1849       * @private\n 1850:      * Returns an object which is passed in as the listeners argument to proxy.batch inside this.sync.\n 1851:      * This is broken out into a separate function to allow for customisation of the listeners\n 1852:      * @return {Object} The listeners object\n 1853       */\n 1854      getBatchListeners: function() {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\data\\proxy\\Proxy.js:\n  220       * @param {Object} options.operations Object containing the Model instances to act upon, keyed by action name\n  221       *\n  222:      * @param {Object} [options.listeners] Event listeners object passed straight through to the Batch -\n  223       * see {@link Ext.data.Batch} for details\n  224       *\n  ...\n  252       * @return {Ext.data.Batch} The newly created Batch\n  253       */\n  254:     batch: function(options, /* deprecated */listeners) {\n  255          var me = this,\n  256              useBatch = me.getBatchActions(),\n  ...\n  260  \n  261          if (options.operations === undefined) {\n  262:             // the old-style (operations, listeners) signature was called\n  263              // so convert to the single options argument syntax\n  264              options = {\n  265                  operations: options,\n  266                  batch: {\n  267:                     listeners: listeners\n  268                  }\n  269              };\n  270  \n  271              // <debug warn>\n  272:             Ext.Logger.deprecate('Passes old-style signature to Proxy.batch (operations, listeners). Please convert to single options argument syntax.');\n  273              // </debug>\n  274          }\n  ...\n  283               options.batch = {\n  284                   proxy: me,\n  285:                  listeners: options.listeners || {}\n  286               };\n  287          }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\dataview\\NestedList.js:\n  506      updateStore: function(newStore, oldStore) {\n  507          var me = this,\n  508:             listeners = this.storeListeners;\n  509  \n  510:         listeners.scope = me;\n  511  \n  512          if (oldStore && Ext.isObject(oldStore) && oldStore.isStore) {\n  ...\n  514                  oldStore.destroy();\n  515              }\n  516:             oldStore.un(listeners);\n  517          }\n  518  \n  519          if (newStore) {\n  520              me.goToNode(newStore.getRoot());\n  521:             newStore.on(listeners);\n  522          }\n  523      },\n  ...\n  792              onItemDisclosure: me.getOnItemDisclosure(),\n  793              allowDeselect : me.getAllowDeselect(),\n  794:             listeners: [\n  795                  { event: 'itemdoubletap', fn: 'onItemDoubleTap', scope: me },\n  796                  { event: 'itemtap', fn: 'onItemInteraction', scope: me, order: 'before'},\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\device\\geolocation\\Simulator.js:\n   11          Ext.apply(config, {\n   12              autoUpdate: false,\n   13:             listeners: {\n   14                  scope: this,\n   15                  locationupdate: function(geolocation) {\n   ..\n   36  \n   37          Ext.apply(config, {\n   38:             listeners: {\n   39                  scope: this,\n   40                  locationupdate: function(geolocation) {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\direct\\Manager.js:\n   30   * # Server side events\n   31   *\n   32:  * Custom events from the server may be handled by the client by adding listeners, for example:\n   33   *\n   34   *     {\"type\":\"event\",\"name\":\"message\",\"data\":\"Successfully polled at: 11:19:30 am\"}\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\event\\Controller.js:\n   35              push = firingListeners.push,\n   36              ln = listenerStacks.length,\n   37:             listeners, beforeListeners, currentListeners, afterListeners,\n   38              isActionBefore = false,\n   39              isActionAfter = false,\n   ..\n   52  \n   53          if (ln === 1) {\n   54:             listeners = listenerStacks[0].listeners;\n   55:             beforeListeners = listeners.before;\n   56:             currentListeners = listeners.current;\n   57:             afterListeners = listeners.after;\n   58  \n   59              if (beforeListeners.length > 0) {\n   ..\n   79          else {\n   80              for (i = 0; i < ln; i++) {\n   81:                 beforeListeners = listenerStacks[i].listeners.before;\n   82                  if (beforeListeners.length > 0) {\n   83                      push.apply(firingListeners, beforeListeners);\n   ..\n   90  \n   91              for (i = 0; i < ln; i++) {\n   92:                 currentListeners = listenerStacks[i].listeners.current;\n   93                  if (currentListeners.length > 0) {\n   94                      push.apply(firingListeners, currentListeners);\n   ..\n  101  \n  102              for (i = 0; i < ln; i++) {\n  103:                 afterListeners = listenerStacks[i].listeners.after;\n  104                  if (afterListeners.length > 0) {\n  105                      push.apply(firingListeners, afterListeners);\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\event\\ListenerStack.js:\n    9  \n   10      constructor: function() {\n   11:         this.listeners = {\n   12              before: [],\n   13              current: [],\n   ..\n   22      add: function(fn, scope, options, order) {\n   23          var lateBindingMap = this.lateBindingMap,\n   24:             listeners = this.getAll(order),\n   25:             i = listeners.length,\n   26              bindingMap, listener, id;\n   27  \n   ..\n   47              if (i > 0) {\n   48                  while (i--) {\n   49:                     listener = listeners[i];\n   50  \n   51                      if (listener.fn === fn && listener.scope === scope) {\n   ..\n   61          if (options && options.prepend) {\n   62              delete options.prepend;\n   63:             listeners.unshift(listener);\n   64          }\n   65          else {\n   66:             listeners.push(listener);\n   67          }\n   68  \n   ..\n   81          }\n   82  \n   83:         return this.listeners[order];\n   84      },\n   85  \n   ..\n  102  \n  103      remove: function(fn, scope, order) {\n  104:         var listeners = this.getAll(order),\n  105:             i = listeners.length,\n  106              isRemoved = false,\n  107              lateBindingMap = this.lateBindingMap,\n  ...\n  110          if (i > 0) {\n  111              // Start from the end index, faster than looping from the\n  112:             // beginning for \"single\" listeners,\n  113              // which are normally LIFO\n  114              while (i--) {\n  115:                 listener = listeners[i];\n  116  \n  117                  if (listener.fn === fn && listener.scope === scope) {\n  118:                     listeners.splice(i, 1);\n  119                      isRemoved = true;\n  120                      this.length--;\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\field\\Select.js:\n  255                      store       : this.getStore()\n  256                  }],\n  257:                 listeners: {\n  258                      change: this.onPickerChange,\n  259                      scope: this\n  ...\n  280                      store: this.getStore(),\n  281                      itemTpl: '<span class=\"x-list-label\">{' + this.getDisplayField() + ':htmlEncode}</span>',\n  282:                     listeners: {\n  283                          select : this.onListSelect,\n  284                          itemtap: this.onListTap,\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\field\\Text.js:\n  125       * @event action\n  126       * @preventable doAction\n  127:      * Fires whenever the return key or go is pressed. FormPanel listeners\n  128       * for this event, and submits itself whenever it fires. Also note\n  129       * that this event bubbles up to parent containers.\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\form\\Panel.js:\n   77   *\n   78   *     var form = Ext.create('Ext.form.Panel', {\n   79:  *         listeners: {\n   80   *             '> field': {\n   81   *                 change: function(field, newValue, oldValue) {\n   ..\n   87   *     });\n   88   *\n   89:  * The above used a new capability of Touch 2.0, which enables you to specify listeners on child components of any\n   90   * container. In this case, we attached a listener to the {@link Ext.field.Text#change change} event of each form\n   91   * field that is a direct child of the form panel. Our listener gets the name of the field that fired the change event,\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\fx\\runner\\CssAnimation.js:\n   23          var eventDispatcher = this.getEventDispatcher();\n   24  \n   25:         this.listenersAttached = true;\n   26  \n   27          eventDispatcher.addListener('element', '*', 'animationstart', 'onAnimationStart', this);\n   ..\n   92              names, durations, easings, delays, directions, iterations;\n   93  \n   94:         if (!this.listenersAttached) {\n   95              this.attachListeners();\n   96          }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\fx\\runner\\CssTransition.js:\n    6      extend: 'Ext.fx.runner.Css',\n    7  \n    8:     listenersAttached: false,\n    9  \n   10      constructor: function() {\n   ..\n   15  \n   16      attachListeners: function() {\n   17:         this.listenersAttached = true;\n   18          this.getEventDispatcher().addListener('element', '*', 'transitionend', 'onTransitionEnd', this);\n   19      },\n   ..\n  247              runningNameMap, runningNameList, runningSessions, runningSession;\n  248  \n  249:         if (!this.listenersAttached) {\n  250              this.attachListeners();\n  251          }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\mixin\\Observable.js:\n    1  /**\n    2   * Mixin that provides a common interface for publishing events. Classes using this mixin can use the {@link #fireEvent}\n    3:  * and {@link #fireAction} methods to notify listeners of events on the class.\n    4   *\n    5:  * Classes can also define a {@link #listeners} config to add an event hanler to the current object. See\n    6   * {@link #addListener} for more details.\n    7   *\n    .\n   28   *         fullName: 'Ed Spencer',\n   29   *\n   30:  *         listeners: {\n   31   *             quit: function() { // This function will be called when the 'quit' event is fired\n   32   *                 // By default, \"this\" will be the object that fired the event.\n   ..\n   70      config: {\n   71          /**\n   72:          * @cfg {Object} listeners\n   73           *\n   74           * A config object containing one or more event handlers to be added to this object during initialization. This\n   75:          * should be a valid listeners config object as specified in the {@link #addListener} example for attaching\n   76           * multiple handlers at once.\n   77           *\n   78           * See the [Event guide](#!/guide/events) for more\n   79           *\n   80:          * **Note** it is bad practice to specify a listeners config when you are defining a class using Ext.define.\n   81:          * Instead, only specify listeners when you are instantiating your class with Ext.create.\n   82           * @accessor\n   83           */\n   84:         listeners: null,\n   85  \n   86          /**\n   ..\n   95      },\n   96  \n   97:     applyListeners: function(listeners) {\n   98:         if (listeners) {\n   99:             this.addListener(listeners);\n  100          }\n  101      },\n  ...\n  197      /**\n  198       * Fires the specified event with the passed parameters and execute a function (action)\n  199:      * at the end if there are no listeners that return false.\n  200       *\n  201       * @param {String} eventName The name of the event to fire.\n  ...\n  328      clearManagedListeners: function(object) {\n  329          var managedListeners = this.managedListeners,\n  330:             id, namedListeners, listeners, eventName, i, ln, listener, options;\n  331  \n  332          if (!managedListeners) {\n  ...\n  346              for (eventName in namedListeners) {\n  347                  if (namedListeners.hasOwnProperty(eventName)) {\n  348:                     listeners = namedListeners[eventName];\n  349  \n  350:                     for (i = 0,ln = listeners.length; i < ln; i++) {\n  351:                         listener = listeners[i];\n  352  \n  353                          options = {};\n  ...\n  387      changeListener: function(actionFn, eventName, fn, scope, options, order) {\n  388          var eventNames,\n  389:             listeners,\n  390              listenerOptionsRegex,\n  391              actualOptions,\n  ...\n  393  \n  394          if (typeof fn != 'undefined') {\n  395:             // Support for array format to add multiple listeners\n  396              if (typeof eventName != 'string') {\n  397                  for (i = 0,ln = eventName.length; i < ln; i++) {\n  ...\n  407          }\n  408          else if (Ext.isArray(eventName)) {\n  409:             listeners = eventName;\n  410  \n  411:             for (i = 0,ln = listeners.length; i < ln; i++) {\n  412:                 listener = listeners[i];\n  413  \n  414                  actionFn.call(this, listener.event, listener.fn, listener.scope, listener, listener.order);\n  ...\n  419              options = eventName;\n  420              eventNames = [];\n  421:             listeners = [];\n  422              actualOptions = {};\n  423  \n  ...\n  443  \n  444                      eventNames.push(name);\n  445:                     listeners.push(value);\n  446                  }\n  447                  else {\n  ...\n  451  \n  452              for (i = 0,ln = eventNames.length; i < ln; i++) {\n  453:                 actionFn.call(this, eventNames[i], listeners[i], scope, actualOptions, order);\n  454              }\n  455          }\n  ...\n  463       * ## Combining Options\n  464       *\n  465:      * Using the options argument, it is possible to combine different types of listeners:\n  466       *\n  467       * A delayed, one-time listener:\n  ...\n  534       *\n  535       *       Ext.create('Ext.Component', {\n  536:      *           listeners: {\n  537       *               element: 'element',\n  538       *               tap: function() {\n  ...\n  653  \n  654      /**\n  655:      * Removes all listeners for this object.\n  656       */\n  657      clearListeners: function() {\n  ...\n  668  \n  669      /**\n  670:      * Checks to see if this object has any listeners for a specified event\n  671       *\n  672       * @param {String} eventName The name of the event to check for\n  ...\n  691       *\n  692       * If events were suspended using the `queueSuspended` parameter, then all events fired\n  693:      * during event suspension will be sent to any listeners now.\n  694       */\n  695      resumeEvents: function() {\n  ...\n  877      /**\n  878       * @method addManagedListener\n  879:      * Adds listeners to any Observable object (or Element) which are automatically removed when this Component\n  880       * is destroyed.\n  881:      * @param {Ext.mixin.Observable/HTMLElement} object The item to which to add a listener/listeners.\n  882       * @param {Object/String} eventName The event name, or an object containing event name properties.\n  883       * @param {Function} [fn] If the `eventName` parameter was an event name, this is the handler function.\n  ...\n  886       * @param {Object} [options] If the `eventName` parameter was an event name, this is the\n  887       * {@link #addListener} options.\n  888:      * @deprecated 2.0 All listeners are now automatically managed where necessary. Simply use {@link #addListener}.\n  889       */\n  890      Ext.deprecateClassMethod(this, 'addManagedListener', function(object, eventName, fn, scope, options) {\n  891          return object.addListener(eventName, fn, scope, options);\n  892:     }, \"addManagedListener() / mon() is deprecated, simply use addListener() / on(). All listeners are now automatically managed where necessary.\");\n  893  \n  894      /**\n  895       * @method removeManagedListener\n  896:      * Adds listeners to any Observable object (or Element) which are automatically removed when this Component\n  897       * is destroyed.\n  898:      * @param {Ext.mixin.Observable/HTMLElement} object The item to which to add a listener/listeners.\n  899       * @param {Object/String} eventName The event name, or an object containing event name properties.\n  900       * @param {Function} [fn] If the `eventName` parameter was an event name, this is the handler function.\n  901       * @param {Object} [scope] If the `eventName` parameter was an event name, this is the scope in which\n  902       * the handler function is executed.\n  903:      * @deprecated 2.0 All listeners are now automatically managed where necessary. Simply use {@link #removeListener}.\n  904       */\n  905      Ext.deprecateClassMethod(this, 'removeManagedListener', function(object, eventName, fn, scope) {\n  906          return object.removeListener(eventName, fn, scope);\n  907:     }, \"removeManagedListener() / mun() is deprecated, simply use removeListener() / un(). All listeners are now automatically managed where necessary.\");\n  908  \n  909      this.createAlias({\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\plugin\\ListPaging.js:\n  196                  message: this.getLoadMoreText()\n  197              }),\n  198:             listeners: {\n  199                  tap: {\n  200                      fn: this.loadNextPage,\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\scroll\\Scroller.js:\n  286          this.stopAnimation = Ext.Function.bind(this.stopAnimation, this);\n  287  \n  288:         this.listeners = {\n  289              scope: this,\n  290              touchstart: 'onTouchStart',\n  ...\n  365                  easingY: bounceEasing.y,\n  366                  useWrapper: false,\n  367:                 listeners: {\n  368                      animationframe: 'onAnimationFrame',\n  369                      animationend: 'onAnimationEnd',\n  ...\n  387       */\n  388      attachListeneners: function() {\n  389:         this.getContainer().on(this.listeners);\n  390      },\n  391  \n  ...\n  394       */\n  395      detachListeners: function() {\n  396:         this.getContainer().un(this.listeners);\n  397      },\n  398  \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\util\\Draggable.js:\n  104          };\n  105  \n  106:         this.listeners = {\n  107              dragstart: 'onDragStart',\n  108              drag     : 'onDrag',\n  ...\n  131  \n  132      updateElement: function(element) {\n  133:         element.on(this.listeners);\n  134  \n  135          this.sizeMonitor = new Ext.util.SizeMonitor({\n  ...\n  253  \n  254      detachListeners: function() {\n  255:         this.getElement().un(this.listeners);\n  256      },\n  257  \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\util\\Geolocation.js:\n   17   *     var geo = Ext.create('Ext.util.Geolocation', {\n   18   *         autoUpdate: false,\n   19:  *         listeners: {\n   20   *             locationupdate: function(geo) {\n   21   *                 alert('New latitude: ' + geo.getLatitude());\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\util\\SizeMonitor.js:\n   60          };\n   61  \n   62:         this.listeners = {\n   63              expand: expandListener,\n   64              shrink: shrinkListener\n   ..\n  120      destroyDetector: function(name) {\n  121          var detector = this.detectors[name],\n  122:             listener = this.listeners[name];\n  123  \n  124          detector.removeEventListener('scroll', listener, true);\n  ...\n  132          this.destroyDetector('shrink');\n  133  \n  134:         delete this.listeners;\n  135          delete this.detectors;\n  136      }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\ux\\slidenavigation\\SlideNavigation.js:\n  149              iconCls: 'more',\n  150              name: 'slidebutton',\n  151:             listeners: {\n  152                  release: me.toggleContainer,\n  153                  scope: me\n  ...\n  427              style: 'position: absolute; top: 0; left: 0; height: 100%;' +\n  428                     'width: 100% !important; z-index: 2',\n  429:             listeners: {\n  430                  select: this.onSelect,\n  431                  scope: this\n  ...\n  452                      max: { x: this.config.list.maxDrag || Math.max(screen.width, screen.height), y: 0 }\n  453                  },\n  454:                 listeners: {\n  455                      dragstart: {\n  456                          fn: this.onContainerDragstart,\n  ...\n  463                  },\n  464                  translatable: {\n  465:                     listeners: {\n  466                          animationend: function(translatable, b, c) {\n  467                              // Remove the class when the animation is finished, but only\n\n412 matches across 64 files\n",
-			"settings":
-			{
-				"buffer_size": 79540,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "app/view/Camera_Picker.js",
-			"settings":
-			{
-				"buffer_size": 650,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Friends_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1628,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/model/Notification.js",
-			"settings":
-			{
-				"buffer_size": 815,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/_App_Slider.js",
-			"settings":
-			{
-				"buffer_size": 2437,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Profile_Local.js",
-			"settings":
-			{
-				"buffer_size": 1072,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Profile_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 2151,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Places_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1019,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Activities_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1502,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/_App.js",
-			"settings":
-			{
-				"buffer_size": 353,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/_Login.js",
-			"settings":
-			{
-				"buffer_size": 648,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Places.js",
-			"settings":
-			{
-				"buffer_size": 450,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Drinks.js",
-			"settings":
-			{
-				"buffer_size": 968,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Preferences.js",
-			"settings":
-			{
-				"buffer_size": 2333,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Privacy.js",
-			"settings":
-			{
-				"buffer_size": 1373,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/User_Profile_Privacy_Form.js",
-			"settings":
-			{
-				"buffer_size": 1477,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/_Login.js",
-			"settings":
-			{
-				"buffer_size": 485,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Activities_Local.js",
-			"settings":
-			{
-				"buffer_size": 779,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Friends_Local.js",
-			"settings":
-			{
-				"buffer_size": 958,
+				"buffer_size": 2736,
 				"line_ending": "Windows"
 			}
 		},
@@ -581,55 +183,199 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2374,
+				"buffer_size": 2380,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/User.js",
+			"file": "mock_beerlist.json",
 			"settings":
 			{
-				"buffer_size": 1707,
+				"buffer_size": 1195085,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/Place.js",
+			"file": "mock_beersinglelist.json",
 			"settings":
 			{
-				"buffer_size": 534,
+				"buffer_size": 260086,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/Friend.js",
+			"file": "resources/js/hh.js",
 			"settings":
 			{
-				"buffer_size": 1320,
+				"buffer_size": 3725,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/Feedback.js",
+			"file": "sdk/microloader/development.js",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 2693,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/Drink.js",
+			"file": "app.json",
 			"settings":
 			{
-				"buffer_size": 495,
+				"buffer_size": 4464,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/model/Activity.js",
+			"file": "app/store/Profile_Local.js",
 			"settings":
 			{
-				"buffer_size": 810,
+				"buffer_size": 704,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controller/_Login.js",
+			"settings":
+			{
+				"buffer_size": 1402,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Profile_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 2227,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Activities_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1483,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Activities_Local.js",
+			"settings":
+			{
+				"buffer_size": 773,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Beers_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1722,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Beers_Local.js",
+			"settings":
+			{
+				"buffer_size": 980,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Beers_Single_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1399,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mock_activitylist.json",
+			"settings":
+			{
+				"buffer_size": 1307,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controller/_App.js",
+			"settings":
+			{
+				"buffer_size": 309,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Friends_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Friends_Local.js",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Notifications_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1561,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Notifications_Local.js",
+			"settings":
+			{
+				"buffer_size": 786,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/store/Places_Ajax.js",
+			"settings":
+			{
+				"buffer_size": 1030,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/_App_Slider.js",
+			"settings":
+			{
+				"buffer_size": 2837,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "i18n/B2B-en-US.js",
+			"settings":
+			{
+				"buffer_size": 18471,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/View_AboutUs.js",
+			"settings":
+			{
+				"buffer_size": 766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/_App_Container.js",
+			"settings":
+			{
+				"buffer_size": 1942,
 				"line_ending": "Windows"
 			}
 		}
@@ -670,68 +416,88 @@
 	},
 	"file_history":
 	[
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/bufferedlist/BufferedList.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_beerlist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_beersinglelist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Beer.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/BeerSingle.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Camera.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_Detail.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Activities.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Friends.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_Finder.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-it.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_SearchComponent.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Notification_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Notifications.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Notification_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_notificationlist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Camera_Picker.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Notification.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Drinks.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Preferences.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Privacy_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/User.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Place.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Friend.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Feedback.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Drink.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Activity.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Activity.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Activities.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Beer.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_State.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Type.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Region.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Profiles.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Friends.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Preferences.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-it.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/user_login.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/User.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Friend.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Place.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_friendlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_Detail.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/starrating/StarRating.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/microloader/development.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Notification.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_notificationlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_placelist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Drink.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Feedback.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Notification_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Camera_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/app-config.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/src/dataview/DataView.js",
@@ -777,27 +543,7 @@
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Notifications.js",
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Privacy.js",
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/css/hh.css",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Form.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Profiles.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/CheckIns.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Components_BeerSearch.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/css/app.css",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Component_IOSToggle.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Component_NotificationBar.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/View_Terms.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/View_Whatsnew.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Privacy_Form.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/slidenavigation/View.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/sdk/microloader/development.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/app-config.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/underscore_string-min.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/prettydate.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/packager.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/moment.min.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/resources/js/hh.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_About.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/_App.js"
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Form.js"
 	],
 	"find":
 	{
@@ -805,7 +551,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			""
@@ -816,6 +562,14 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"LABEL_ABOUT",
+			"goingTo.step2",
+			"HH_config",
+			"png",
+			";\n",
+			"x-requested-with",
+			"placeholder",
+			"FORM_USERNAME",
 			"listeners",
 			"notificationReadCommand",
 			"\",\n",
@@ -947,23 +701,23 @@
 	"groups":
 	[
 		{
-			"selected": 47,
+			"selected": 22,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/view/Beer_List_Container.js",
+					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 1633,
+						"buffer_size": 2736,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1342,
-								1342
+								2407,
+								2407
 							]
 						],
 						"settings":
@@ -972,31 +726,31 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 690.0,
+						"translation.y": 675.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/store/Beers_Ajax.js",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1671,
+						"buffer_size": 2380,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								1671
+								268,
+								268
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1007,52 +761,52 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/store/Drinks_Ajax.js",
+					"file": "mock_beerlist.json",
 					"settings":
 					{
-						"buffer_size": 1676,
+						"buffer_size": 1195085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1385,
-								1385
+								130,
+								134
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/store/Beers_Single_Ajax.js",
+					"file": "mock_beersinglelist.json",
 					"settings":
 					{
-						"buffer_size": 1381,
+						"buffer_size": 260086,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								264,
-								264
+								130,
+								134
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1063,25 +817,23 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/store/Beers_Local.js",
+					"file": "resources/js/hh.js",
 					"settings":
 					{
-						"buffer_size": 935,
+						"buffer_size": 3725,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								158,
-								158
+								70,
+								61
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1091,18 +843,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/store/Drinks_Local.js",
+					"file": "sdk/microloader/development.js",
 					"settings":
 					{
-						"buffer_size": 751,
+						"buffer_size": 2693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
+								1170,
+								1170
 							]
 						],
 						"settings":
@@ -1112,303 +864,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 675.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "app/model/Beer.js",
+					"file": "app.json",
 					"settings":
 					{
-						"buffer_size": 838,
+						"buffer_size": 4464,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/model/BeerSingle.js",
-					"settings":
-					{
-						"buffer_size": 325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								117,
-								117
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app.js",
-					"settings":
-					{
-						"buffer_size": 2691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2327,
-								2281
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 605.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "mock_beersinglelist.json",
-					"settings":
-					{
-						"buffer_size": 260087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								259847,
-								259847
+								1465,
+								1465
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 170603.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/view/Beer_List_SearchComponent.js",
-					"settings":
-					{
-						"buffer_size": 2285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1005,
-								1005
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 161.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/view/Activity_List.js",
-					"settings":
-					{
-						"buffer_size": 1177,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1169,
-								1169
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/view/User_Profile_Form.js",
-					"settings":
-					{
-						"buffer_size": 5099,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4959,
-								4959
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3315.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "i18n/B2B-en-US.js",
-					"settings":
-					{
-						"buffer_size": 18354,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2290,
-								2290
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 743.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/controller/Camera.js",
-					"settings":
-					{
-						"buffer_size": 1881,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/controller/Beers.js",
-					"settings":
-					{
-						"buffer_size": 2354,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1859,
-								1859
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "app/view/Beer_Detail.js",
-					"settings":
-					{
-						"buffer_size": 1158,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								970,
-								970
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 315.0,
@@ -1417,430 +898,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "app/view/Activity_Detail.js",
+					"buffer": 7,
+					"file": "app/store/Profile_Local.js",
 					"settings":
 					{
-						"buffer_size": 913,
+						"buffer_size": 704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								488,
-								496
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "app/view/Beer_List.js",
-					"settings":
-					{
-						"buffer_size": 609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								601,
-								601
+								624,
+								624
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "app/controller/Activities.js",
-					"settings":
-					{
-						"buffer_size": 919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								859,
-								859
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "app/view/Friend_List_Container.js",
-					"settings":
-					{
-						"buffer_size": 1295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								692,
-								692
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "app/controller/Friends.js",
-					"settings":
-					{
-						"buffer_size": 1232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1232,
-								1232
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 23.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "app/view/Friend_Finder.js",
-					"settings":
-					{
-						"buffer_size": 863,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								278,
-								305
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "i18n/B2B-it.js",
-					"settings":
-					{
-						"buffer_size": 18000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14973,
-								14973
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "app/view/Friend_List_SearchComponent.js",
-					"settings":
-					{
-						"buffer_size": 2004,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								637,
-								637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "app/view/Notification_Container.js",
-					"settings":
-					{
-						"buffer_size": 1458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								968,
-								968
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "app/controller/Notifications.js",
-					"settings":
-					{
-						"buffer_size": 1232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1008,
-								1008
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 27,
-					"file": "app/view/Friend_List.js",
-					"settings":
-					{
-						"buffer_size": 424,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								416,
-								416
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 28,
-					"file": "resources/js/hh.js",
-					"settings":
-					{
-						"buffer_size": 3453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1999,
-								1999
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1084.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 29,
-					"file": "app/store/Notifications_Ajax.js",
-					"settings":
-					{
-						"buffer_size": 1569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1109,
-								1109
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 30,
-					"file": "app/store/Notifications_Local.js",
-					"settings":
-					{
-						"buffer_size": 794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								703,
-								703
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 31,
-					"file": "app/view/Notification_List.js",
-					"settings":
-					{
-						"buffer_size": 1197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								802,
-								813
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 32,
-					"file": "mock_notificationlist.json",
-					"settings":
-					{
-						"buffer_size": 1266,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								881,
-								882
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1850,1844 +926,45 @@
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 8,
+					"file": "app/controller/_Login.js",
 					"settings":
 					{
-						"buffer_size": 79540,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										219,
-										228
-									],
-									[
-										337,
-										346
-									],
-									[
-										417,
-										426
-									],
-									[
-										594,
-										603
-									],
-									[
-										840,
-										849
-									],
-									[
-										1037,
-										1046
-									],
-									[
-										1210,
-										1219
-									],
-									[
-										1284,
-										1293
-									],
-									[
-										1348,
-										1357
-									],
-									[
-										1393,
-										1402
-									],
-									[
-										1542,
-										1551
-									],
-									[
-										1679,
-										1688
-									],
-									[
-										1820,
-										1829
-									],
-									[
-										2008,
-										2017
-									],
-									[
-										2208,
-										2217
-									],
-									[
-										2527,
-										2536
-									],
-									[
-										2831,
-										2840
-									],
-									[
-										3145,
-										3154
-									],
-									[
-										3469,
-										3478
-									],
-									[
-										3765,
-										3774
-									],
-									[
-										4080,
-										4089
-									],
-									[
-										4382,
-										4391
-									],
-									[
-										4708,
-										4717
-									],
-									[
-										5003,
-										5012
-									],
-									[
-										5317,
-										5326
-									],
-									[
-										5629,
-										5638
-									],
-									[
-										5949,
-										5958
-									],
-									[
-										6265,
-										6274
-									],
-									[
-										6489,
-										6498
-									],
-									[
-										6714,
-										6723
-									],
-									[
-										6974,
-										6983
-									],
-									[
-										7193,
-										7202
-									],
-									[
-										7465,
-										7474
-									],
-									[
-										7763,
-										7772
-									],
-									[
-										8048,
-										8057
-									],
-									[
-										8316,
-										8325
-									],
-									[
-										8681,
-										8690
-									],
-									[
-										9036,
-										9045
-									],
-									[
-										9362,
-										9371
-									],
-									[
-										9600,
-										9609
-									],
-									[
-										9823,
-										9832
-									],
-									[
-										10130,
-										10139
-									],
-									[
-										10423,
-										10432
-									],
-									[
-										10708,
-										10717
-									],
-									[
-										10775,
-										10784
-									],
-									[
-										11011,
-										11020
-									],
-									[
-										11079,
-										11088
-									],
-									[
-										11138,
-										11147
-									],
-									[
-										11216,
-										11225
-									],
-									[
-										11437,
-										11446
-									],
-									[
-										11650,
-										11659
-									],
-									[
-										11787,
-										11796
-									],
-									[
-										12139,
-										12148
-									],
-									[
-										12300,
-										12309
-									],
-									[
-										12646,
-										12655
-									],
-									[
-										12718,
-										12727
-									],
-									[
-										12909,
-										12918
-									],
-									[
-										12969,
-										12978
-									],
-									[
-										13125,
-										13134
-									],
-									[
-										13295,
-										13304
-									],
-									[
-										13459,
-										13468
-									],
-									[
-										13526,
-										13535
-									],
-									[
-										13741,
-										13750
-									],
-									[
-										13958,
-										13967
-									],
-									[
-										13988,
-										13997
-									],
-									[
-										14037,
-										14046
-									],
-									[
-										14094,
-										14103
-									],
-									[
-										14150,
-										14159
-									],
-									[
-										14367,
-										14376
-									],
-									[
-										14641,
-										14650
-									],
-									[
-										14916,
-										14925
-									],
-									[
-										15138,
-										15147
-									],
-									[
-										15357,
-										15366
-									],
-									[
-										15413,
-										15422
-									],
-									[
-										15603,
-										15612
-									],
-									[
-										15829,
-										15838
-									],
-									[
-										15919,
-										15928
-									],
-									[
-										16034,
-										16043
-									],
-									[
-										16161,
-										16170
-									],
-									[
-										16217,
-										16226
-									],
-									[
-										16492,
-										16501
-									],
-									[
-										16619,
-										16628
-									],
-									[
-										16748,
-										16757
-									],
-									[
-										17062,
-										17071
-									],
-									[
-										17152,
-										17161
-									],
-									[
-										17361,
-										17370
-									],
-									[
-										17651,
-										17660
-									],
-									[
-										17845,
-										17854
-									],
-									[
-										18143,
-										18152
-									],
-									[
-										18249,
-										18258
-									],
-									[
-										18379,
-										18388
-									],
-									[
-										18493,
-										18502
-									],
-									[
-										18526,
-										18535
-									],
-									[
-										18576,
-										18585
-									],
-									[
-										18786,
-										18795
-									],
-									[
-										19065,
-										19074
-									],
-									[
-										19326,
-										19335
-									],
-									[
-										19418,
-										19427
-									],
-									[
-										19494,
-										19503
-									],
-									[
-										19709,
-										19718
-									],
-									[
-										19925,
-										19934
-									],
-									[
-										20160,
-										20169
-									],
-									[
-										20228,
-										20237
-									],
-									[
-										20296,
-										20305
-									],
-									[
-										20540,
-										20549
-									],
-									[
-										20700,
-										20709
-									],
-									[
-										20925,
-										20934
-									],
-									[
-										21155,
-										21164
-									],
-									[
-										21324,
-										21333
-									],
-									[
-										21492,
-										21501
-									],
-									[
-										21660,
-										21669
-									],
-									[
-										21964,
-										21973
-									],
-									[
-										22292,
-										22301
-									],
-									[
-										22555,
-										22564
-									],
-									[
-										22712,
-										22721
-									],
-									[
-										22935,
-										22944
-									],
-									[
-										22987,
-										22996
-									],
-									[
-										23260,
-										23269
-									],
-									[
-										23277,
-										23286
-									],
-									[
-										23542,
-										23551
-									],
-									[
-										23761,
-										23770
-									],
-									[
-										24003,
-										24012
-									],
-									[
-										24014,
-										24023
-									],
-									[
-										24179,
-										24188
-									],
-									[
-										24378,
-										24387
-									],
-									[
-										24397,
-										24406
-									],
-									[
-										24524,
-										24533
-									],
-									[
-										24676,
-										24685
-									],
-									[
-										24958,
-										24967
-									],
-									[
-										25171,
-										25180
-									],
-									[
-										25426,
-										25435
-									],
-									[
-										25622,
-										25631
-									],
-									[
-										25865,
-										25874
-									],
-									[
-										26055,
-										26064
-									],
-									[
-										26263,
-										26272
-									],
-									[
-										26494,
-										26503
-									],
-									[
-										26676,
-										26685
-									],
-									[
-										26821,
-										26830
-									],
-									[
-										26867,
-										26876
-									],
-									[
-										27019,
-										27028
-									],
-									[
-										27200,
-										27209
-									],
-									[
-										27379,
-										27388
-									],
-									[
-										27534,
-										27543
-									],
-									[
-										27752,
-										27761
-									],
-									[
-										28000,
-										28009
-									],
-									[
-										28145,
-										28154
-									],
-									[
-										28237,
-										28246
-									],
-									[
-										28433,
-										28442
-									],
-									[
-										28616,
-										28625
-									],
-									[
-										28727,
-										28736
-									],
-									[
-										28908,
-										28917
-									],
-									[
-										29084,
-										29093
-									],
-									[
-										29208,
-										29217
-									],
-									[
-										29274,
-										29283
-									],
-									[
-										29465,
-										29474
-									],
-									[
-										29606,
-										29615
-									],
-									[
-										29760,
-										29769
-									],
-									[
-										29908,
-										29917
-									],
-									[
-										30068,
-										30077
-									],
-									[
-										30308,
-										30317
-									],
-									[
-										30568,
-										30577
-									],
-									[
-										30738,
-										30747
-									],
-									[
-										30919,
-										30928
-									],
-									[
-										31128,
-										31137
-									],
-									[
-										31286,
-										31295
-									],
-									[
-										31472,
-										31481
-									],
-									[
-										31849,
-										31858
-									],
-									[
-										32012,
-										32021
-									],
-									[
-										32100,
-										32109
-									],
-									[
-										32175,
-										32184
-									],
-									[
-										32224,
-										32233
-									],
-									[
-										32364,
-										32373
-									],
-									[
-										32442,
-										32451
-									],
-									[
-										32557,
-										32566
-									],
-									[
-										32717,
-										32726
-									],
-									[
-										33007,
-										33016
-									],
-									[
-										33215,
-										33224
-									],
-									[
-										33408,
-										33417
-									],
-									[
-										33625,
-										33634
-									],
-									[
-										33683,
-										33692
-									],
-									[
-										33897,
-										33906
-									],
-									[
-										34053,
-										34062
-									],
-									[
-										34248,
-										34257
-									],
-									[
-										34539,
-										34548
-									],
-									[
-										34784,
-										34793
-									],
-									[
-										35188,
-										35197
-									],
-									[
-										35503,
-										35512
-									],
-									[
-										35798,
-										35807
-									],
-									[
-										36083,
-										36092
-									],
-									[
-										36150,
-										36159
-									],
-									[
-										36386,
-										36395
-									],
-									[
-										36454,
-										36463
-									],
-									[
-										36513,
-										36522
-									],
-									[
-										36591,
-										36600
-									],
-									[
-										36812,
-										36821
-									],
-									[
-										37025,
-										37034
-									],
-									[
-										37162,
-										37171
-									],
-									[
-										37514,
-										37523
-									],
-									[
-										37675,
-										37684
-									],
-									[
-										38021,
-										38030
-									],
-									[
-										38093,
-										38102
-									],
-									[
-										38284,
-										38293
-									],
-									[
-										38344,
-										38353
-									],
-									[
-										38500,
-										38509
-									],
-									[
-										38670,
-										38679
-									],
-									[
-										38834,
-										38843
-									],
-									[
-										38901,
-										38910
-									],
-									[
-										39120,
-										39129
-									],
-									[
-										39432,
-										39441
-									],
-									[
-										39452,
-										39461
-									],
-									[
-										39631,
-										39640
-									],
-									[
-										39790,
-										39799
-									],
-									[
-										39991,
-										40000
-									],
-									[
-										40068,
-										40077
-									],
-									[
-										40233,
-										40242
-									],
-									[
-										40393,
-										40402
-									],
-									[
-										40608,
-										40617
-									],
-									[
-										40859,
-										40868
-									],
-									[
-										41276,
-										41285
-									],
-									[
-										41773,
-										41782
-									],
-									[
-										41910,
-										41919
-									],
-									[
-										41986,
-										41995
-									],
-									[
-										42254,
-										42263
-									],
-									[
-										42558,
-										42567
-									],
-									[
-										42726,
-										42735
-									],
-									[
-										43136,
-										43145
-									],
-									[
-										43156,
-										43165
-									],
-									[
-										43335,
-										43344
-									],
-									[
-										43494,
-										43503
-									],
-									[
-										43695,
-										43704
-									],
-									[
-										43772,
-										43781
-									],
-									[
-										43937,
-										43946
-									],
-									[
-										44097,
-										44106
-									],
-									[
-										44312,
-										44321
-									],
-									[
-										44688,
-										44697
-									],
-									[
-										44708,
-										44717
-									],
-									[
-										44887,
-										44896
-									],
-									[
-										45046,
-										45055
-									],
-									[
-										45247,
-										45256
-									],
-									[
-										45324,
-										45333
-									],
-									[
-										45489,
-										45498
-									],
-									[
-										45649,
-										45658
-									],
-									[
-										45864,
-										45873
-									],
-									[
-										46115,
-										46124
-									],
-									[
-										46436,
-										46445
-									],
-									[
-										46591,
-										46600
-									],
-									[
-										46808,
-										46817
-									],
-									[
-										46952,
-										46961
-									],
-									[
-										47222,
-										47231
-									],
-									[
-										47665,
-										47674
-									],
-									[
-										47730,
-										47739
-									],
-									[
-										47915,
-										47924
-									],
-									[
-										48052,
-										48061
-									],
-									[
-										48200,
-										48209
-									],
-									[
-										48342,
-										48351
-									],
-									[
-										48666,
-										48675
-									],
-									[
-										48992,
-										49001
-									],
-									[
-										49172,
-										49181
-									],
-									[
-										49543,
-										49552
-									],
-									[
-										49700,
-										49709
-									],
-									[
-										49785,
-										49794
-									],
-									[
-										49858,
-										49867
-									],
-									[
-										49906,
-										49915
-									],
-									[
-										50040,
-										50049
-									],
-									[
-										50116,
-										50125
-									],
-									[
-										50225,
-										50234
-									],
-									[
-										50627,
-										50636
-									],
-									[
-										50835,
-										50844
-									],
-									[
-										51067,
-										51076
-									],
-									[
-										51415,
-										51424
-									],
-									[
-										51617,
-										51626
-									],
-									[
-										51804,
-										51813
-									],
-									[
-										52159,
-										52168
-									],
-									[
-										52312,
-										52321
-									],
-									[
-										52529,
-										52538
-									],
-									[
-										52580,
-										52589
-									],
-									[
-										52812,
-										52821
-									],
-									[
-										52987,
-										52996
-									],
-									[
-										53157,
-										53166
-									],
-									[
-										53337,
-										53346
-									],
-									[
-										53512,
-										53521
-									],
-									[
-										53715,
-										53724
-									],
-									[
-										53927,
-										53936
-									],
-									[
-										54102,
-										54111
-									],
-									[
-										54275,
-										54284
-									],
-									[
-										54488,
-										54497
-									],
-									[
-										54834,
-										54843
-									],
-									[
-										54906,
-										54915
-									],
-									[
-										55097,
-										55106
-									],
-									[
-										55157,
-										55166
-									],
-									[
-										55313,
-										55322
-									],
-									[
-										55483,
-										55492
-									],
-									[
-										55647,
-										55656
-									],
-									[
-										55714,
-										55723
-									],
-									[
-										55933,
-										55942
-									],
-									[
-										56185,
-										56194
-									],
-									[
-										56470,
-										56479
-									],
-									[
-										56537,
-										56546
-									],
-									[
-										56773,
-										56782
-									],
-									[
-										56841,
-										56850
-									],
-									[
-										56900,
-										56909
-									],
-									[
-										56978,
-										56987
-									],
-									[
-										57199,
-										57208
-									],
-									[
-										57412,
-										57421
-									],
-									[
-										57622,
-										57631
-									],
-									[
-										57974,
-										57983
-									],
-									[
-										58231,
-										58240
-									],
-									[
-										58522,
-										58531
-									],
-									[
-										58698,
-										58707
-									],
-									[
-										58842,
-										58851
-									],
-									[
-										58887,
-										58896
-									],
-									[
-										59214,
-										59223
-									],
-									[
-										59231,
-										59240
-									],
-									[
-										59490,
-										59499
-									],
-									[
-										59703,
-										59712
-									],
-									[
-										59940,
-										59949
-									],
-									[
-										59951,
-										59960
-									],
-									[
-										60147,
-										60156
-									],
-									[
-										60363,
-										60372
-									],
-									[
-										60382,
-										60391
-									],
-									[
-										60623,
-										60632
-									],
-									[
-										60679,
-										60688
-									],
-									[
-										60887,
-										60896
-									],
-									[
-										61038,
-										61047
-									],
-									[
-										61227,
-										61236
-									],
-									[
-										61604,
-										61613
-									],
-									[
-										61784,
-										61793
-									],
-									[
-										62092,
-										62101
-									],
-									[
-										62411,
-										62420
-									],
-									[
-										62622,
-										62631
-									],
-									[
-										62652,
-										62661
-									],
-									[
-										62700,
-										62709
-									],
-									[
-										62756,
-										62765
-									],
-									[
-										62811,
-										62820
-									],
-									[
-										63022,
-										63031
-									],
-									[
-										63290,
-										63299
-									],
-									[
-										63559,
-										63568
-									],
-									[
-										63850,
-										63859
-									],
-									[
-										64063,
-										64072
-									],
-									[
-										64118,
-										64127
-									],
-									[
-										64302,
-										64311
-									],
-									[
-										64522,
-										64531
-									],
-									[
-										64609,
-										64618
-									],
-									[
-										64718,
-										64727
-									],
-									[
-										64839,
-										64848
-									],
-									[
-										64894,
-										64903
-									],
-									[
-										65163,
-										65172
-									],
-									[
-										65287,
-										65296
-									],
-									[
-										65413,
-										65422
-									],
-									[
-										65705,
-										65714
-									],
-									[
-										66014,
-										66023
-									],
-									[
-										66350,
-										66359
-									],
-									[
-										66657,
-										66666
-									],
-									[
-										66896,
-										66905
-									],
-									[
-										67357,
-										67366
-									],
-									[
-										67612,
-										67621
-									],
-									[
-										67837,
-										67846
-									],
-									[
-										67983,
-										67992
-									],
-									[
-										68259,
-										68268
-									],
-									[
-										68609,
-										68618
-									],
-									[
-										68697,
-										68706
-									],
-									[
-										68900,
-										68909
-									],
-									[
-										69184,
-										69193
-									],
-									[
-										69375,
-										69384
-									],
-									[
-										69668,
-										69677
-									],
-									[
-										69773,
-										69782
-									],
-									[
-										69900,
-										69909
-									],
-									[
-										70008,
-										70017
-									],
-									[
-										70040,
-										70049
-									],
-									[
-										70089,
-										70098
-									],
-									[
-										70293,
-										70302
-									],
-									[
-										70566,
-										70575
-									],
-									[
-										70821,
-										70830
-									],
-									[
-										70911,
-										70920
-									],
-									[
-										70986,
-										70995
-									],
-									[
-										71195,
-										71204
-									],
-									[
-										71405,
-										71414
-									],
-									[
-										71634,
-										71643
-									],
-									[
-										71700,
-										71709
-									],
-									[
-										71767,
-										71776
-									],
-									[
-										72005,
-										72014
-									],
-									[
-										72159,
-										72168
-									],
-									[
-										72378,
-										72387
-									],
-									[
-										72602,
-										72611
-									],
-									[
-										72765,
-										72774
-									],
-									[
-										72927,
-										72936
-									],
-									[
-										73089,
-										73098
-									],
-									[
-										73387,
-										73396
-									],
-									[
-										73536,
-										73545
-									],
-									[
-										73763,
-										73772
-									],
-									[
-										74183,
-										74192
-									],
-									[
-										74571,
-										74580
-									],
-									[
-										74717,
-										74726
-									],
-									[
-										74944,
-										74953
-									],
-									[
-										75375,
-										75384
-									],
-									[
-										75760,
-										75769
-									],
-									[
-										76034,
-										76043
-									],
-									[
-										76313,
-										76322
-									],
-									[
-										76525,
-										76534
-									],
-									[
-										76767,
-										76776
-									],
-									[
-										76906,
-										76915
-									],
-									[
-										77062,
-										77071
-									],
-									[
-										77252,
-										77261
-									],
-									[
-										77429,
-										77438
-									],
-									[
-										77657,
-										77666
-									],
-									[
-										77919,
-										77928
-									],
-									[
-										78156,
-										78165
-									],
-									[
-										78340,
-										78349
-									],
-									[
-										78585,
-										78594
-									],
-									[
-										78853,
-										78862
-									],
-									[
-										79113,
-										79122
-									],
-									[
-										79326,
-										79335
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								6721,
-								6721
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1955.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 34,
-					"file": "app/view/Camera_Picker.js",
-					"settings":
-					{
-						"buffer_size": 650,
+						"buffer_size": 1402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
+								1065,
+								1065
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 35,
-					"file": "app/store/Friends_Ajax.js",
-					"settings":
-					{
-						"buffer_size": 1628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1179,
-								1179
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 36,
-					"file": "app/model/Notification.js",
-					"settings":
-					{
-						"buffer_size": 815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 37,
-					"file": "app/view/_App_Slider.js",
-					"settings":
-					{
-						"buffer_size": 2437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1024,
-								1024
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 38,
-					"file": "app/store/Profile_Local.js",
-					"settings":
-					{
-						"buffer_size": 1072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								161,
-								161
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 39,
+					"buffer": 9,
 					"file": "app/store/Profile_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 2151,
+						"buffer_size": 2227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								855,
-								855
+								928,
+								928
 							]
 						],
 						"settings":
@@ -3697,45 +974,17 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 40,
-					"file": "app/store/Places_Ajax.js",
-					"settings":
-					{
-						"buffer_size": 1019,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								979,
-								979
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 41,
+					"buffer": 10,
 					"file": "app/store/Activities_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 1502,
+						"buffer_size": 1483,
 						"regions":
 						{
 						},
@@ -3759,233 +1008,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 42,
-					"file": "app/controller/_App.js",
-					"settings":
-					{
-						"buffer_size": 353,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								353,
-								353
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 43,
-					"file": "app/controller/_Login.js",
-					"settings":
-					{
-						"buffer_size": 648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								518,
-								518
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 44,
-					"file": "app/controller/Places.js",
-					"settings":
-					{
-						"buffer_size": 450,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								450
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 45,
-					"file": "app/controller/Drinks.js",
-					"settings":
-					{
-						"buffer_size": 968,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								195,
-								195
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 46,
-					"file": "app/controller/Preferences.js",
-					"settings":
-					{
-						"buffer_size": 2333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								155
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 47,
-					"file": "app/controller/Privacy.js",
-					"settings":
-					{
-						"buffer_size": 1373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								478,
-								478
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 48,
-					"file": "app/view/User_Profile_Privacy_Form.js",
-					"settings":
-					{
-						"buffer_size": 1477,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1314,
-								1314
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 274.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 49,
-					"file": "app/view/_Login.js",
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								429,
-								429
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 50,
+					"buffer": 11,
 					"file": "app/store/Activities_Local.js",
 					"settings":
 					{
-						"buffer_size": 779,
+						"buffer_size": 773,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								694,
-								694
+								700,
+								700
 							]
 						],
 						"settings":
@@ -4001,19 +1036,186 @@
 					"type": "text"
 				},
 				{
-					"buffer": 51,
+					"buffer": 12,
+					"file": "app/store/Beers_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 1722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1198,
+								1162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/store/Beers_Local.js",
+					"settings":
+					{
+						"buffer_size": 980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/store/Beers_Single_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 1399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1323,
+								1323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "mock_activitylist.json",
+					"settings":
+					{
+						"buffer_size": 1307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/controller/_App.js",
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/store/Friends_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1095,
+								1095
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
 					"file": "app/store/Friends_Local.js",
 					"settings":
 					{
-						"buffer_size": 958,
+						"buffer_size": 951,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								856,
+								856
 							]
 						],
 						"settings":
@@ -4029,53 +1231,54 @@
 					"type": "text"
 				},
 				{
-					"buffer": 52,
-					"file": "index.html",
+					"buffer": 19,
+					"file": "app/store/Notifications_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 2374,
+						"buffer_size": 1561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1475,
-								1475
+								1144,
+								1144
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 53,
-					"file": "app/model/User.js",
+					"buffer": 20,
+					"file": "app/store/Notifications_Local.js",
 					"settings":
 					{
-						"buffer_size": 1707,
+						"buffer_size": 786,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								743,
+								743
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -4084,25 +1287,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 54,
-					"file": "app/model/Place.js",
+					"buffer": 21,
+					"file": "app/store/Places_Ajax.js",
 					"settings":
 					{
-						"buffer_size": 534,
+						"buffer_size": 1030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								112
+								982,
+								982
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -4111,25 +1315,81 @@
 					"type": "text"
 				},
 				{
-					"buffer": 55,
-					"file": "app/model/Friend.js",
+					"buffer": 22,
+					"file": "app/view/_App_Slider.js",
 					"settings":
 					{
-						"buffer_size": 1320,
+						"buffer_size": 2837,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								2436,
+								2436
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 758.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "i18n/B2B-en-US.js",
+					"settings":
+					{
+						"buffer_size": 18471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2706,
+								2706
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 748.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/view/View_AboutUs.js",
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -4138,19 +1398,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 56,
-					"file": "app/model/Feedback.js",
+					"buffer": 25,
+					"file": "app/view/_App_Container.js",
 					"settings":
 					{
-						"buffer_size": 575,
+						"buffer_size": 1942,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								114,
-								114
+								929,
+								929
 							]
 						],
 						"settings":
@@ -4159,61 +1419,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 57,
-					"file": "app/model/Drink.js",
-					"settings":
-					{
-						"buffer_size": 495,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								112,
-								112
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 58,
-					"file": "app/model/Activity.js",
-					"settings":
-					{
-						"buffer_size": 810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 620.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

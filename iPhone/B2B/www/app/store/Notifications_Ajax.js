@@ -27,7 +27,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-               // console.log("Notifications_Ajax: Retrieved Data, copying to Local");
+                HH.log("* Loaded: Store.Notification_Ajax, copying to Local");
                 var store_local = Ext.getStore('Notifications_Local');
 
                 /* Copying to localstorage */

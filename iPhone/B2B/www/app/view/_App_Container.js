@@ -28,9 +28,6 @@ Ext.define("B2B.view._App_Container", {
 			{
 				xtype: 'beerlistcontainerpanel'
 			},
-		/*   {
-				xtype: 'drinkaroundmepanel'
-			},*/
 			{
 				xtype: 'friendlistcontainerpanel'
 			},
@@ -47,14 +44,16 @@ Ext.define("B2B.view._App_Container", {
 		this.callParent(arguments);
 
 		var logo = {
-			xtype: 'container',
-			html: "LOGO",
+			xtype: 'image',
+			src: 'resources/img/logo_text_black_small.png',
+    		height: 28,
+    		width: 144,
 			align: 'left'
 		}
 
 		var gotoNotificationButton = {
-			iconCls: 'bubble',
-			ui: 'action',
+			iconCls: 'compose',
+			ui: 'plain',
 			id: 'jump_2_notification_btn',
 			handler: this.onGotoNotificationButtonTap,
 			scope: this,

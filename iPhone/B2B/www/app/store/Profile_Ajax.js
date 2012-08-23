@@ -21,7 +21,8 @@ Ext.define("B2B.store.Profile_Ajax", {
                     goingTo.step3("Nevermind We will use the LS");
             },
             load: function(el,records, successful){
-               // console.log("Profile_Ajax: Retrieved Data, copying to Local");
+                HH.log("* Loaded: Store.Profile_Ajax, copying to Local");
+                
                 var store_local = Ext.getStore('Profile_Local');
                 var toBeer = false;
                 var toFriend = false;
@@ -31,7 +32,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                 if(store_local.getCount > 0){
                     localJSON  = store_local.first().data;
                     remoteJSON = el.first().data;
-                    
+                    HH.log("---> Step: Calculating if other Stores need refresh");
                     toBeer = (localJSON.hash_beerlist != remoteJSON.hash_beerlist);
                     toFriend = (localJSON.hash_friendlist != remoteJSON.hash_friendlist);
                     toNotify = (localJSON.hash_notificationlist != remoteJSON.hash_notificationlist);
@@ -46,7 +47,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                 this.removeAll();
                 
                 /* see resources/js/hh */
-                goingTo.step3("Profile_Ajax: Load App Defaults from LS", toBeer, toFriend, toNotify);
+                goingTo.step3("Load: App Defaults from Store.Profile_Local", toBeer, toFriend, toNotify);
             }
             
         }

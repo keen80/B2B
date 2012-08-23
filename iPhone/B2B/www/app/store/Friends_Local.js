@@ -22,7 +22,7 @@ Ext.define("B2B.store.Friends_Local", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-               // console.log("Friends_Local: Store Loaded");
+               HH.log("* Loaded: Store.Friend_Local");
             }
         }
     }

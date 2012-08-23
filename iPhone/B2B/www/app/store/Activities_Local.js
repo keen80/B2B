@@ -16,7 +16,7 @@ Ext.define("B2B.store.Activities_Local", {
                 console.log("Activities Store Callback");
             },
             load:function(el,records, successful){
-               // console.log("Activity_Local: Store Loaded");
+               HH.log("* Loaded: Store.Activity_Local");
             }
         }
     }

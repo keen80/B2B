@@ -17,7 +17,7 @@ Ext.define("B2B.store.Notifications_Local", {
                 console.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
-              //  console.log("Notifications_Local: Store Loaded");
+              HH.log("* Loaded: Store.Notification_Local");
             }
         }
     }

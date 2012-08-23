@@ -21,7 +21,7 @@ Ext.define('B2B.view.Drink_AroundMe', {
         height: 180,
         flex: 1,                                    
         mapOptions: {
-            zoom: HH_config.map.zoomLevel,
+            zoom: HH.map.zoomLevel,
             mapTypeId : google.maps.MapTypeId.ROADMAP,
             navigationControl: false,
             zoomControl: false,
@@ -36,7 +36,7 @@ Ext.define('B2B.view.Drink_AroundMe', {
                 new google.maps.Marker({
                     position: new google.maps.LatLng(this._geo.getLatitude(), this._geo.getLongitude()),
                     map: map,
-                    icon: HH_config.map.marker
+                    icon: HH.map.marker
                 });
             }
         }

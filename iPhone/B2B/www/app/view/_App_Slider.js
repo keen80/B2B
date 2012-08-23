@@ -41,7 +41,7 @@ Ext.define("B2B.view._App_Slider", {
         },
         items: [
             {
-                title: '<div class="nav_slidemenu_profile"><img src='+B2B.app.APP_LOGO+'><span>'+B2B.app.APP_NAME+'</span>',
+                title: '<div class="nav_slidemenu_profile">"Something here</div>',
                 slideButton: {
                     selector: 'titlebar',
                     docked: 'left',
@@ -81,6 +81,21 @@ Ext.define("B2B.view._App_Slider", {
                 items: [
                     {
                         xtype: 'viewterms'
+                    }
+                ]
+            },
+            {
+                title: i18n.app.LABEL_ABOUTUS ,
+                group: 'Privacy',
+                slideButton: {
+                    selector: 'toolbar',
+                    docked: 'left',
+                    iconMask: true,
+                    iconCls: 'list'
+                },
+                items: [
+                    {
+                        xtype: 'viewaboutus'
                     }
                 ]
             }

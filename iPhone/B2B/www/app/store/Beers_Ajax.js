@@ -28,6 +28,8 @@ Ext.define("B2B.store.Beers_Ajax", {
                 console.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
+                HH.log("* Loaded: Store.Beer_Ajax");
+
             /*  
                 HH for performance reason we don't copy into localstorage
                 console.log("Beers_Ajax: Retrieved Data, copying to Local");

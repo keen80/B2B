@@ -6,7 +6,7 @@
       "msg": "Status OK"
     },
     "body": {
-      "activities": [
+      "list": [
         {
           "idActivity": "dwd1232322dwd65ffad4e2",
           "avatar": "cip2222.jpg",

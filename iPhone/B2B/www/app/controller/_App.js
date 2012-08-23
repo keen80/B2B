@@ -11,7 +11,7 @@ Ext.define("B2B.controller._APP", {
 		}
 	},
 	onInitialize: function(){
-		/* May be we are checkin there for auth? */ 
+		
 	},
 	onSyncProfileStore: function(){
 

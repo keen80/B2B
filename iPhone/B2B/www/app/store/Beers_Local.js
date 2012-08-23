@@ -1,3 +1,7 @@
+/*
+    NOT LOADED FOR PERFORMANCE REASON
+*/
+
 Ext.define("B2B.store.Beers_Local", {
     extend: "Ext.data.Store",
     id: "Beers_Local",

@@ -17,6 +17,7 @@ If you are unsure which license is appropriate for your use, please contact the 
  * @author Jacky Nguyen <jacky@sencha.com>
  */
 (function() {
+    HH.log("* Loaded: development.js");
     function write(content) {
         document.write(content);
     }
@@ -40,7 +41,7 @@ If you are unsure which license is appropriate for your use, please contact the 
     }
 */
     if (navigator.onLine){
-
+        HH.log("---+ Check: Online, Startup Start");
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'app.json', false);
         xhr.send(null);
@@ -73,8 +74,9 @@ If you are unsure which license is appropriate for your use, please contact the 
 
             write('<script src="'+path+'"></'+'script>');
         }
-
+        HH.log("---> Step: Online, Startup End");
     }else{
+        HH.log("---+ Check: Offline, alert fired.");
         alert("We are sorry, but this application cannot start without an Internet Connection.");
     }
 

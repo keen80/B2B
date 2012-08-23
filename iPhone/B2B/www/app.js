@@ -4,7 +4,6 @@ Ext.Loader.setPath('Ext.ux', './ux');
 Ext.application({
 	"name": 'B2B',
 	"APP_NAME": "Meet Beer",
-	"APP_LOGO": "resources/logo.png",
 	requires: [
 		'Ext.MessageBox',
 	],
@@ -17,7 +16,7 @@ Ext.application({
 
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax',
-		'Activities_Local', /*'Beers_Local, '*/ 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Beers_Single_Ajax', 'Drinks_Local'
+		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Beers_Single_Ajax', 'Drinks_Local'
 	],
 
 	views: [ '_App', '_Login', '_App_Slider', '_App_Container',
@@ -55,18 +54,23 @@ Ext.application({
 	},
 
 	launch: function() {
-		goingTo.step1("Loading Profile");
+		HH.log("---> Step: app.js:launch()");
+
+		goingTo.step1("Loading Store.Profile");
 
 		// Destroy the #appLoadingIndicator element
 		Ext.fly('appLoadingIndicator').destroy();
+
 		var profileStore = Ext.getStore("Profile_Local");
-		if(profileStore.getCount() < 1){
-			console.log("Profile Store Empty, Log In First");
+
+		if(profileStore && profileStore.getCount() < 1){
+			HH.log("---+ Check: ProfileStore Empty - Show view._login");
 			Ext.Viewport.add(Ext.create('B2B.view._Login'));
 		}else{
+			HH.log("---+ Check: ProfileStore OK, loading view._App");
+			goingTo.step2("Loading Store.Profile_Ajax");
 			Ext.Viewport.add(Ext.create('B2B.view._App'));
 		}
-	// Ext.getCmp("_app").setMasked({xtype:'loadmask',message:'your custom loadmask'});
 	},
 	onUpdated: function() {
 		Ext.Msg.confirm(
