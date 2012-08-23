@@ -6,7 +6,7 @@
       "msg": "Status OK"
     },
     "body": {
-      "drinks": [
+      "list": [
         {
           "username": "DM851",
          // "description": "test1",

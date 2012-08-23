@@ -6,7 +6,7 @@
       "msg": "Status OK"
     },
     "body": {
-      "notifications": [
+      "list": [
         {
           "idNotification": "dwd12323dddasda4e2",
           "description": "322432",

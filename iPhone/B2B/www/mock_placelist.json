@@ -6,26 +6,22 @@
       "msg": "Status OK"
     },
     "body": {
-      "places": [
+      "list": [
         {
           "idPlace": "dwd123232adsadd4e2",
           "placeName": "Risotarante",
-          "lat": "Adelee",
-          "lon": "Beeraa",
-          "description": "sadsad",
-          "category": 1,
-          "read": false,
-          "subcategory": 0
+          "lat": "10.1",
+          "lng": "11.2",
+          "url": "",
+          "category": "pizza place"
         },
         {
           "idPlace": "dwd1232322dwd65ffad4e2",
           "placeName": "Ciabattino",
-          "lat": "Adelee",
-          "lon": "Beeraa",
-          "description": "sadsad",
-          "category": 1,
-          "read": false,
-          "subcategory": 0
+          "lat": "10.2",
+          "lng": "10.3",
+          "url": "",
+          "category": "venues"
         }
       ]
     }
