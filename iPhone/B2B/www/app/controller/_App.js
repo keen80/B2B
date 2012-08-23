@@ -1,4 +1,4 @@
-Ext.define("B2B.controller._APP", {
+Ext.define("B2B.controller._App", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {

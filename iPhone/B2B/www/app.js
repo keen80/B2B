@@ -11,7 +11,7 @@ Ext.application({
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle'],
 
 	controllers: [
-		'_APP', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
+		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', //'Camera'
 	],
 
 	stores: [
