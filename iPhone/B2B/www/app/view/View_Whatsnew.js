@@ -6,14 +6,9 @@ Ext.define('B2B.view.View_Whatsnew', {
 		iconCls: 'settings6',
         cls: 'slidableToolbar',
 		styleHtmlContent: true,
-		items: [
-			{
-
-			}
-		],
 		html: [
 			'<h1>Whats New</h1>',
-			'I changed the default <b>HTML Contents</b> to something different!'
+			i18n.app.TEXT_LOREM,
 		].join("")
 	},
 	initialize: function(){

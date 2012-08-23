@@ -12,7 +12,6 @@ Ext.define("B2B.view._App_Slider", {
     
     config: {
         fullscreen: true,
-       // slideSelector: 'x-toolbar',
         slideSelector: 'slidableToolbar',
         selectSlideDuration: 200,
         list: {
@@ -24,6 +23,7 @@ Ext.define("B2B.view._App_Slider", {
                 docked: 'top',
                 ui: 'light',                    
                 title: {
+                    title: i18n.app.PANEL_NAVIGATION,
                     centered: true,
                     width: 200,
                     left: 0
@@ -41,12 +41,13 @@ Ext.define("B2B.view._App_Slider", {
         },
         items: [
             {
-                title: '<div class="nav_slidemenu_profile">"Something here</div>',
+                title: '<div class="nav_slidemenu_profile">'+i18n.app.PANEL_CLAIM+'</div>',
                 slideButton: {
                     selector: 'titlebar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list'
+                    iconCls: 'more',
+                    ui: 'plain'
                 },
                 items: [
                     {
@@ -61,7 +62,8 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list'
+                    iconCls: 'more',
+                    ui: 'plain'
                 },
                 items: [
                     {
@@ -76,13 +78,16 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list'
+                    iconCls: 'more',
+                    ui: 'plain'
                 },
                 items: [
-                    {
+                  /*  {
                         xtype: 'viewterms'
                     }
-                ]
+                    */
+                ],
+                handler: function(){ alert("click"); }
             },
             {
                 title: i18n.app.LABEL_ABOUTUS ,
@@ -91,7 +96,7 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list'
+                    iconCls: 'more'
                 },
                 items: [
                     {

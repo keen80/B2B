@@ -33,10 +33,10 @@ Ext.define("B2B.view._App_Container", {
 			},
 			{
 				xtype: 'userprofilecontainerpanel'
-			},
+			}/*,
 			{
 				xtype: 'cameracontainerpanel'
-			}
+			}*/
 		]
 	},
 	initialize: function(){
@@ -52,7 +52,7 @@ Ext.define("B2B.view._App_Container", {
 		}
 
 		var gotoNotificationButton = {
-			iconCls: 'compose',
+			iconCls: 'bubble',
 			ui: 'plain',
 			id: 'jump_2_notification_btn',
 			handler: this.onGotoNotificationButtonTap,
@@ -69,7 +69,7 @@ Ext.define("B2B.view._App_Container", {
 
 		var gotoCheckInButton = {
 			iconCls: 'locate',
-			ui: 'action',
+			ui: 'plain',
 			id: 'jump_2_checkin_btn',
 			handler: this.onGotoCheckInButtonTap,
 			scope: this,

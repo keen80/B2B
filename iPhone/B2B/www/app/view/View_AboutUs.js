@@ -7,8 +7,8 @@ Ext.define('B2B.view.View_AboutUs', {
 		styleHtmlContent: true,
 		cls: 'slidableToolbar',
 		html: [
-			'<h1>Ab</h1>'outUs,
-			'I changed the default <b>HTML Contents</b> to something different!'
+			'<h1>About Us</h1>',
+			i18n.app.TEXT_LOREM
 		].join("")
 	},
 	initialize: function(){
@@ -23,9 +23,7 @@ Ext.define('B2B.view.View_AboutUs', {
             id: 'DisclaimerTitlebar',
             defaults: {
                 iconMask: true
-            },
-            items: [
-            ]
+            }
         };
 
         this.add([toolbar]);

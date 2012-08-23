@@ -7,8 +7,8 @@ Ext.define('B2B.view.View_Terms', {
 		styleHtmlContent: true,
 		cls: 'slidableToolbar',
 		html: [
-			'<h1>Disclaimer</h1>',
-			'I changed the default <b>HTML Contents</b> to something different!'
+			'<h1>Terms of Service</h1>',
+			i18n.app.LABEL_WHATSNEW,
 		].join("")
 	},
 	initialize: function(){
