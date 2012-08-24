@@ -1,0 +1,26 @@
+{
+	"response": {
+		"status": {
+			"success": true,
+			"code": "OK",
+			"msg": "Status OK"
+		},
+		"body": {
+			"list": [
+				{
+				"idFeedback": "",
+				"rate": 0,
+				"rate2": 0,
+				"rate3": 0,
+				"comment": "",
+				"idUser": "",
+				"idTarget": "",
+				"type": "",
+				"like": 0,
+				"insertedOn": new Date()
+				}
+			]
+		},
+		"metaData": {}
+	}
+}

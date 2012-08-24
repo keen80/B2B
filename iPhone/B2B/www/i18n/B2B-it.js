@@ -42,6 +42,7 @@ var i18n = {
 		"FORM_SHARETWITTER": "Share on Twitter",
 		"FORM_SHAREFACEBOOK": "Share on Facebook",
 		"FORM_USERNAME": "Username",
+		"FORM_FEEDBACK": "Feedback",
 
 		"PLACEHOLDER_USERNAME": "Your Username",
 		"PLACEHOLDER_PASSWORD": "Your Password",
@@ -109,7 +110,7 @@ var i18n = {
 
 		"LABEL_CAMERA": "Camera",
 		"LABEL_CAMERA_NOT_AVAILABLE": "Camera not available",
-		
+
 		"HTML_ALIAS": "Alias",
 		"HTML_NAME": "Name",
 		"HTML_SURNAME": "Surname",
@@ -118,7 +119,7 @@ var i18n = {
 		"HTML_NFRIENDS": "Friends",
 		"HTML_CHECKINS": "Checkins",
 		"HTML_BADGES": "Badges",
-		
+
 		"PICKER_CAMERA": "Camera",
 		"PICKER_LIBRARY": "Library",
 
@@ -127,7 +128,7 @@ var i18n = {
 		"HINT_BEERCHOOSEDESCRIPTION": "Write Here Something More",
 		"HINT_BEERCHOOSESTYLE": "Which Style",
 		"HINT_BEERCHOOSEGRAD": "Alcoholic Grade?",
-		"HINT_BEERCHOOSENATIONALITY": "Do You know the Nation?",	
+		"HINT_BEERCHOOSENATIONALITY": "Do You know the Nation?",
 		"HINT_CHOOSEBIRTHDATE": "When did You born?",
 		"HINT_CHOOSEFIRSTNAME": "How Can I Call You?",
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
