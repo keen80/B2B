@@ -435,7 +435,7 @@ var i18n = {
 		{ "text": "Reunion", "value": "RE"},
 		{ "text": "Romania", "value": "RO"},
 		{ "text": "Russian Federation", "value": "RU"},
-		{ "text": "RWANDA", "value": "RW"},
+		{ "text": "Rwanda", "value": "RW"},
 		{ "text": "Saint Helena", "value": "SH"},
 		{ "text": "Saint Kitts and Nevis", "value": "KN"},
 		{ "text": "Saint Lucia", "value": "LC"},
@@ -496,7 +496,9 @@ var i18n = {
 		{ "text": "Western Sahara", "value": "EH"},
 		{ "text": "Yemen", "value": "YE"},
 		{ "text": "Zambia", "value": "ZM"},
-		{ "text": "Zimbabwe", "value": "ZW"}
+		/* NOT STANDARD */
+		{ "text": "Scotland", "value": "SCO"},
+		{ "text": "Wales", "value": "WAL"}
 	]
 
 };

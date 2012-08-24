@@ -58,7 +58,6 @@ Ext.define('B2B.view.Beer_Detail', {
 	},
 	getStringHTMLFromValues: function(info){
 		var value = '';
-		console.log(info);
 
 		if (info.image !== null && info.image !== '') {
 		   value += '<img id="beer_thumbnail" src="' + info.image +'" /><hr />';

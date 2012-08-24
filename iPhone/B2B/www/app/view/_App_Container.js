@@ -85,7 +85,7 @@ Ext.define("B2B.view._App_Container", {
 				iconMask: true
 			},
 			items: [
-				logo,
+				//logo,
 				gotoNotificationButton,
 				toolbarSpinner,
 				gotoCheckInButton
