@@ -52,6 +52,7 @@ var i18n = {
 		"BTN_BACK": "Back",
 		"BTN_BEERREPORT": "Report",
 		"BTN_BEERREPORTXL": "Report as Incorrect",
+		"BTN_BEERSUGGESTEDIT": "Suggest a Edit",
 		"BTN_CANCEL": "Cancel",
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
@@ -63,6 +64,7 @@ var i18n = {
 		"BTN_ORDERBYALPHA": "Alphabetical",
 		"BTN_ORDERBYSTYLE": "by Style",
 		"BTN_ORDERBYNATION": "by Nation",
+		"BTN_PHOTO": "Take a photo",
 		"BTN_REFRESH": "Refresh",
 		"BTN_REMOVE": "Remove",
 		"BTN_REMOVEPERSONAL": "Remove Personal Information",
@@ -70,7 +72,6 @@ var i18n = {
 		"BTN_RESET": "Reset",
 		"BTN_SAVE": "Save",
 		"BTN_SEARCHFRIEND": "Invite Friends",
-		"BTN_PHOTO": "Take a photo",
 		"BTN_SEND": "Send",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",

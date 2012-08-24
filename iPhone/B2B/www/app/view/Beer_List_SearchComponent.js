@@ -16,7 +16,8 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	initialize: function(){
 		this.callParent(arguments);
 		var oldValueCount = 0;
-		var store = Ext.getStore('Beers_Single_Ajax');
+		//var store = Ext.getStore('Beers_Single_Ajax');
+		var store = Ext.getStore('Beers_Ajax');
 		
 		var matchedhistory = [];
 

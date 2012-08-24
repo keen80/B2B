@@ -64,10 +64,11 @@ Ext.define("B2B.controller.Beers", {
 		/* Since we used a subset list for list binding, on Beer Details we have to get
 			the original value, we cannot use the index, which change upon filtering */
 		var ajax_store = Ext.getStore('Beers_Ajax');
-		var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
+		//var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
 		this.getApp().push({
 			xtype: "beerdetailpanel",
-			jsonData: jsonData
+			//jsonData: jsonData
+			jsonData: record
 		});
 
 	},
@@ -93,6 +94,24 @@ Ext.define("B2B.controller.Beers", {
 						handler: function(){
 							alert(i18n.app.DIALOG_BEERREPORTED)
 							a.actions.hide();
+						}
+					},
+					{
+						text: i18n.app.BTN_BEERSUGGESTEDIT,
+						scope: this,
+						handler: function(){
+							console.log(a.jsonData);
+							a.actions.hide();
+							var newBeer = Ext.create("B2B.model.Beer", {
+							//	'idUser': B2B.app.loggedUser.idUser,
+							//	'username': B2B.app.loggedUser.username,
+							});
+
+							this.getApp().push({
+								xtype: "beeraddform"
+							});
+							var beerForm = this.getBeerForm();
+							beerForm.setRecord(newBeer);
 						}
 					},
 					{
