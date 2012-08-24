@@ -3,7 +3,7 @@ Ext.define('B2B.view.Feedback_Form', {
 	xtype: 'feedbackform',
 	id: 'feedbackform',
 	config: {
-		title: i18n.app.FORM_FEEDBACK
+		title: ""
 	},
 
 	initialize: function(){
