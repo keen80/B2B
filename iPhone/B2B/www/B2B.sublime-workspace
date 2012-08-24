@@ -195,7 +195,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2835,
+				"buffer_size": 2866,
 				"line_ending": "Windows"
 			}
 		},
@@ -211,7 +211,7 @@
 			"file": "mock_beerlist.json",
 			"settings":
 			{
-				"buffer_size": 1192583,
+				"buffer_size": 1192412,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +323,7 @@
 			"file": "mock_activitylist.json",
 			"settings":
 			{
-				"buffer_size": 1307,
+				"buffer_size": 1324,
 				"line_ending": "Windows"
 			}
 		},
@@ -403,7 +403,7 @@
 			"file": "app/view/_App_Container.js",
 			"settings":
 			{
-				"buffer_size": 1944,
+				"buffer_size": 1946,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "i18n/B2B-it.js",
 			"settings":
 			{
-				"buffer_size": 20047,
+				"buffer_size": 20073,
 				"line_ending": "Windows"
 			}
 		},
@@ -603,7 +603,15 @@
 			"file": "i18n/B2B-en-US.js",
 			"settings":
 			{
-				"buffer_size": 20244,
+				"buffer_size": 20359,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/Friend_List_Container.js",
+			"settings":
+			{
+				"buffer_size": 1301,
 				"line_ending": "Windows"
 			}
 		}
@@ -775,7 +783,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -790,6 +798,36 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"THAI",
+			"nationality\": \"....\"",
+			"URSS",
+			"\"CINA\"",
+			"nationality\": \"...\"",
+			"\"DOM\"",
+			"\"HON\"",
+			"nationality\": \"...\"",
+			"\"TAH\"",
+			"\"AUS\"",
+			"\"CEC\"",
+			"\"FIN\"",
+			"\"ISR\"",
+			"nationality\": \"...\"",
+			"\"CAN\"",
+			"nationality\": \"...\"",
+			"\"SLO\"",
+			"\"PERU\"",
+			"\"MEX\"",
+			"HH",
+			"nationality\": \"...\"",
+			"\"BIR\"",
+			"\"BRA\"",
+			"\"JAP\"",
+			"nationality\": \"...\"",
+			"\"POL\"",
+			"\"SUI\"",
+			"nationality\": \"...\"",
+			"\"SWE\"",
+			"\"AUT\"",
 			"\"POR\"",
 			"nationality\": \"...\"",
 			"\"NOR\"",
@@ -887,20 +925,7 @@
 			"},",
 			"\\},",
 			"\"sottostile\"",
-			"\"stile\"",
-			",\\s\\s\\s\\s\\s\\n",
-			"\"voto\": \"....\"",
-			"\"nazione\"",
-			"\"voto\": \"\"",
-			"\"voto\": \".\"",
-			"\"voto\": \"..\"",
-			"\"voto\": \"...\"",
-			"\"alc.vol.\"",
-			"\"birreria\"",
-			"\"nome\"",
-			"},\n",
-			"NomeAdmin",
-			"LABEL_FRIEND"
+			"\"stile\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -908,6 +933,27 @@
 		"regex": true,
 		"replace_history":
 		[
+			"TH",
+			"RU",
+			"\"CN\"",
+			"\"DO\"",
+			"\"HN\"",
+			"\"PF\"",
+			"\"AU\"",
+			"\"CZ\"",
+			"\"FI\"",
+			"\"IL\"",
+			"\"CA\"",
+			"\"SI\"",
+			"\"PE\"",
+			"\"MX\"",
+			"\"MM\"",
+			"\"BR\"",
+			"\"JP\"",
+			"\"PL\"",
+			"\"CH\"",
+			"\"SE\"",
+			"\"AT\"",
 			"\"PT\"",
 			"\"NO\"",
 			"\"IS\"",
@@ -966,7 +1012,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 16,
 			"sheets":
 			[
 				{
@@ -974,15 +1020,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2835,
+						"buffer_size": 2866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1332,
-								1332
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1029,15 +1075,15 @@
 					"file": "mock_beerlist.json",
 					"settings":
 					{
-						"buffer_size": 1192583,
+						"buffer_size": 1192412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								536963,
-								536963
+								968375,
+								968375
 							]
 						],
 						"settings":
@@ -1047,7 +1093,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 332045.0,
+						"translation.y": 590234.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1418,15 +1464,15 @@
 					"file": "mock_activitylist.json",
 					"settings":
 					{
-						"buffer_size": 1307,
+						"buffer_size": 1324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								1307
+								601,
+								601
 							]
 						],
 						"settings":
@@ -1536,8 +1582,8 @@
 						"selection":
 						[
 							[
-								856,
-								856
+								935,
+								935
 							]
 						],
 						"settings":
@@ -1697,15 +1743,15 @@
 					"file": "app/view/_App_Container.js",
 					"settings":
 					{
-						"buffer_size": 1944,
+						"buffer_size": 1946,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								762,
-								762
+								1609,
+								1609
 							]
 						],
 						"settings":
@@ -1714,7 +1760,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1949,8 +1995,8 @@
 						"selection":
 						[
 							[
-								337,
-								346
+								9010,
+								9010
 							]
 						],
 						"settings":
@@ -1960,7 +2006,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3914.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2133,7 +2179,7 @@
 					"file": "i18n/B2B-it.js",
 					"settings":
 					{
-						"buffer_size": 20047,
+						"buffer_size": 20073,
 						"regions":
 						{
 						},
@@ -2378,7 +2424,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -2386,15 +2432,15 @@
 					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
-						"buffer_size": 20244,
+						"buffer_size": 20359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17645,
-								17645
+								20307,
+								20307
 							]
 						],
 						"settings":
@@ -2403,7 +2449,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4356.0,
+						"translation.y": 7369.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "app/view/Friend_List_Container.js",
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2439,7 +2512,7 @@
 		"cols":
 		[
 			0.0,
-			0.690052256148,
+			0.340798524805,
 			1.0
 		],
 		"rows":

@@ -497,8 +497,10 @@ var i18n = {
 		{ "text": "Yemen", "value": "YE"},
 		{ "text": "Zambia", "value": "ZM"},
 		/* NOT STANDARD */
+		{ "text": "North Ireland", "value": "NIRL"},
 		{ "text": "Scotland", "value": "SCO"},
-		{ "text": "Wales", "value": "WAL"}
+		{ "text": "Wales", "value": "WAL"},
+		{ "text": "Ex Yugoslavia", "value": "YUG"}
 	]
 
 };
