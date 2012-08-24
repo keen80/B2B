@@ -100,6 +100,12 @@ var utils = {
 	},
 	getBeerCodeFromStyle: function(text) {
 		return (_.find(i18n.beerstyles, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
+	},
+	getBeerTypeFromCode: function(value) {
+		return (_.find(i18n.beertypes, function(type){ return type.value === value;})||"").text;
+	},
+	getBeerCodeFromType: function(text) {
+		return (_.find(i18n.beertypes, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
 	}
 }
 

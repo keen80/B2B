@@ -58,14 +58,19 @@ Ext.define('B2B.view.Beer_Detail', {
 	},
 	getStringHTMLFromValues: function(info){
 		var value = '';
-		   
+		console.log(info);
+
 		if (info.image !== null && info.image !== '') {
 		   value += '<img id="beer_thumbnail" src="' + info.image +'" /><hr />';
 		}
 		
-		value += '<p>' + i18n.app.HTML_NAME + ': <b>' + info.name + '</b></p>'+
-				 '<p>' + i18n.app.HTML_DESCRIPTION + ': <b>' + info.brewery + '</b></p>';
-		   
+		value += '<p>' + i18n.app.LABEL_BEERNAME + ': <span>' + _.titleize(info.name) + '</span></p>';
+		if(info.brewery) value+= '<p>' + i18n.app.LABEL_BEERBREWERY + ': <span>' + _.titleize(info.brewery) + '</span></p>';
+		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(parseInt(info.beerstyle)) + '</span></p>';
+		if(info.beertype) value += '<p>' + i18n.app.LABEL_BEERTYPE + ': <span>' + utils.getBeerTypeFromCode(parseInt(info.beertype)) + '</span></p>';
+		if(info.grad) value += '<p>' + i18n.app.LABEL_BEERGRAD + ': <span>' + info.grad + '</span></p>';
+		if(info.nationality) value += '<p>' + i18n.app.LABEL_BEERNATIONALITY + ': <span>' + utils.getCountryFromCode(info.nationality) + '</span></p>';
+		if(info.description) value += '<p>' + i18n.app.LABEL_BEERDESCRIPTION + ': <span>' + info.description + '</span></p>';
 		return value;
 	},
 	onBeerReportButtonTap: function(){

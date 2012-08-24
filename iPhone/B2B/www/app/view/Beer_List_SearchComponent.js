@@ -27,10 +27,16 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 			flex: 1,
 			listeners : {
 	            scope: this,
-	            clearicontap: function(){
-	            	store.clearFilter();
+	            clearicontap: function(field){
+	            	var beerlist = Ext.getCmp("beerlist");
+	            	var infobar = Ext.getCmp("searchinfobar");
+	            	field.setValue("");
+	            	beerlist.setStore(null);
+		           	store.filterBy( function(record) {return false});
+		           	beerlist.setStore(store);
+		           	infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
 	            },
-	            keyup: function(field) {
+	            keyup: function(field, e) {
 		           	var value = field.getValue();
 		           	var beerlist = Ext.getCmp("beerlist");
 		           	var infobar = Ext.getCmp("searchinfobar");
@@ -89,6 +95,13 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           			infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
 		           		}
 	           		}
+
+	           		if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
+		                e.stopEvent();
+		                fld.element.dom.blur();
+		                window.scrollTo(0,0);
+		                var activeItem = beerlist.getActiveItem();
+		            }
 	           }
             }
 		};
