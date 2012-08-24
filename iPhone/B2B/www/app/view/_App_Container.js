@@ -46,8 +46,8 @@ Ext.define("B2B.view._App_Container", {
 		var logo = {
 			xtype: 'image',
 			src: 'resources/img/logo_text_black_small.png',
-    		height: 28,
-    		width: 144,
+			height: 28,
+			width: 144,
 			align: 'left'
 		}
 

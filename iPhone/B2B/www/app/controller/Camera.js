@@ -55,6 +55,7 @@ Ext.define("B2B.controller.Camera", {
 				}
 			},
 			failure : function(e) {
+				console.log('[Camera] Error capture: ' + e);
 			},
 			quality : 75,
 			destination : 'file',

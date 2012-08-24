@@ -6,7 +6,7 @@ Ext.application({
 	"name": 'B2B',
 	"APP_NAME": "Meet Beer",
 	requires: [
-		'Ext.MessageBox',
+		'Ext.MessageBox'
 	],
 
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback'],

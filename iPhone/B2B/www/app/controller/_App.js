@@ -6,12 +6,12 @@ Ext.define("B2B.controller._App", {
 		},
 		control: {
 			_App: {
-				initialize: "onInitialize",
+				initialize: "onInitialize"
 			}
 		}
 	},
 	onInitialize: function(){
-		
+
 	},
 	onSyncProfileStore: function(){
 

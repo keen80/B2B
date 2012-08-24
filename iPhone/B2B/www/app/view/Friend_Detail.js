@@ -16,7 +16,6 @@ Ext.define('B2B.view.Friend_Detail', {
 		]
 	},
 	initialize: function(){
-
 		this.callParent(arguments);
 
 		var backFriendDetailButton = {
