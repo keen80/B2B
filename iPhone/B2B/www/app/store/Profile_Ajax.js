@@ -8,7 +8,7 @@ Ext.define("B2B.store.Profile_Ajax", {
             url:'mock_user.json',
             reader:{
                 type:'json',
-                rootProperty: 'response.body.users',
+                rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'

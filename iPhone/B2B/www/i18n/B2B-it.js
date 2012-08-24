@@ -3,18 +3,22 @@ var i18n = {
 		"COMMON_ATTENTION": "Attention",
 
 		"PANEL_ABOUTME": "About Me",
-		"PANEL_ACTIVITY": "Activities",
+		"PANEL_ACTIVITY": "News Feed",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "The Beer Compendium",
 		"PANEL_CHECKIN": "Check In",
+		"PANEL_CLAIM": "Beer Me UP!",
 		"PANEL_FACEBOOK": "Facebook Account",
 		"PANEL_FRIENDFINDER": "Friend Finder",
 		"PANEL_FRIENDLIST": "My Friend List",
+		"PANEL_LOGOUT": "Logout",
+		"PANEL_NAVIGATION": "Navigation",
 		"PANEL_NOTIFICATION": "Notifications",
 		"PANEL_PREFERENCES": "Preferences",
 		"PANEL_PRIVACY": "Privacy",
 		"PANEL_PROFILE": "My Profile",
 		"PANEL_PROFILEEDIT": "Edit Profile",
+		"PANEL_REMOVEDATA": "Remove Stored Data",
 		"PANEL_SHARE": "Share with your Friends",
 		"PANEL_TERMS": "Terms of Service",
 		"PANEL_TWITTER": "Twitter Account",
@@ -38,6 +42,9 @@ var i18n = {
 		"FORM_SHARETWITTER": "Share on Twitter",
 		"FORM_SHAREFACEBOOK": "Share on Facebook",
 		"FORM_USERNAME": "Username",
+
+		"PLACEHOLDER_USERNAME": "Your Username",
+		"PLACEHOLDER_PASSWORD": "Your Password",
 
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDFRIEND": "Add a Friend",
@@ -63,13 +70,16 @@ var i18n = {
 		"BTN_SEARCHFRIEND": "Invite Friends",
 		"BTN_PHOTO": "Take a photo",
 
+		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
 		"DIALOG_YOUSURE": "Are You really sure?",
+		"DIALOG_YOUSUREREMOVEDATA": "Removing all your store data will log you out, Do You want to continue?",
+		"DIALOG_YOUSURELOGOUT": "You are going to log out, are You really sure?",
 		"DIALOG_UNFRIEND": "Do You really want to Unfriend %1 ?",
 
 		"COMPONENT_BEERSEARCH": "Search a Beer",
 
 		"LABEL_ABOUT": "About",
-
+		"LABEL_ABOUTUS": "About Us",
 		"LABEL_BEER": "Beer",
 		"LABEL_BEERS": "Beers",
 		"LABEL_BEERBREWERY": "Brewery",
@@ -105,13 +115,19 @@ var i18n = {
 
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
-		"HINT_BEERCHOOSESTYLE": "Choose a Style",
-		"HINT_BEERCHOOSEGRAD": "Select a Gradation",
+		"HINT_BEERCHOOSEDESCRIPTION": "Write Here Something More",
+		"HINT_BEERCHOOSESTYLE": "Which Style",
+		"HINT_BEERCHOOSEGRAD": "Alcoholic Grade?",
+		"HINT_BEERCHOOSENATIONALITY": "Do You know the Nation?",	
 		"HINT_CHOOSEBIRTHDATE": "When did You born?",
 		"HINT_CHOOSEFIRSTNAME": "How Can I Call You?",
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
 		"HINT_CHOOSEGENDER": "Select your Gender",
 		"HINT_CHOOSENATIONALITY": "Where do You live?",
+		"HINT_SEARCH2CHAR": "Start searching by writing 3 letters",
+		"HINT_SEARCH1CHAR": "Good, %1 more!",
+		"HINT_SEARCHNORES": "Aww no result match.",
+		"HINT_SEARCHRESCHAR": "Yeah, found %1 results!",
 
 
 		"HINT_LOADING": "Loading...",
@@ -128,7 +144,7 @@ var i18n = {
 		"TEXT_NONOTIFICATIONFOUND": "No activity found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 
-		"TEXT_TERMS": "Lorem Ipsum",
+		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 
 		"Z": "Puppa Code"
 	},
@@ -205,6 +221,7 @@ var i18n = {
 	],
 
 	"beergrads": [
+		{ "text": "2.0%", "value": 0 },
 		{ "text": "2.5%", "value": 1 },
 		{ "text": "3.0%", "value": 2 },
 		{ "text": "3.5%", "value": 3 },

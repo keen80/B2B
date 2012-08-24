@@ -20,8 +20,39 @@ Ext.define('B2B.view.Activity_List_Container', {
 		var activityStreams = {
             xtype: "activitylistcomponent",
             store: Ext.getStore("Activities_Local"),
+            title: "dfdsfds"
         };
 
-		this.add([ activityStreams ]);
+        var myLastDrinkIn = {
+        	xtype: "activityusercomponent",
+            store: Ext.getStore("Activities_User_Ajax"),
+            draggable: false,
+            height: 100
+        };
+
+         var myLastDrinkInPanel = {
+        	xtype: "panel",
+            //store: Ext.getStore("Activities_User_Ajax"),
+            draggable: false,
+            height: 80,
+            html: "cippa"
+        };
+
+        var container = {
+        	xtype: 'panel',
+        	
+    layout     : {
+        type  : 'vbox',
+        align : 'stretch'
+    },
+    defaults   : {
+        flex : 1
+    },
+        	items: [
+	        	myLastDrinkInPanel,
+	        	activityStreams
+        	]
+        }
+		this.add([ container ]);
     }
 });

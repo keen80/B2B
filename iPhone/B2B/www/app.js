@@ -16,12 +16,12 @@ Ext.application({
 	],
 
 	stores: [
-		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax',
+		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
 		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Beers_Single_Ajax', 'Drinks_Local'
 	],
 
 	views: [ '_App', '_Login', '_App_Slider', '_App_Container',
-		'Activity_List_Container', 'Activity_List', 'Activity_Detail',
+		'Activity_List_Container', 'Activity_List', 'Activity_Detail', 'Activity_User',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
 		'Place_List',

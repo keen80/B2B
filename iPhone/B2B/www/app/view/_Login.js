@@ -10,25 +10,44 @@ Ext.define('B2B.view._Login', {
 		items: [
 			{
 				xtype: 'fieldset',
+				width: 380,
+				margin: '50px auto',
 				id: '_loginfieldset',
 				items:[
 					{
 						xtype: 'hiddenfield',
 						name: 'dateRequest',
-
 						value: new Date()
 					},
 					{
 						xtype: 'textfield',
 						id: 'loginform_username',
 						name: 'username',
-						placeHolder: i18n.app.PLACEHOLDER_USERNAME
+						placeHolder: i18n.app.PLACEHOLDER_USERNAME,
+						listeners: {
+		                    keyup: function(fld, e){
+		                        if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
+		                            e.stopEvent();
+		                            fld.element.dom.blur();
+		                            window.scrollTo(0,0);
+		                        }
+		                    }
+		                }
 					},
 					{
 						xtype: 'passwordfield',
 						id: 'loginform_password',
 						name: 'password',
-						placeHolder: i18n.app.PLACEHOLDER_PASSWORD
+						placeHolder: i18n.app.PLACEHOLDER_PASSWORD,
+						listeners: {
+		                    keyup: function(fld, e){
+		                        if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
+		                            e.stopEvent();
+		                            fld.element.dom.blur();
+		                            window.scrollTo(0,0);
+		                        }
+		                    }
+		                }
 					}
 				]
 			}
@@ -50,7 +69,11 @@ Ext.define('B2B.view._Login', {
 		var button_Login = {
 			xtype: 'button',
 			id: 'BTN_login',
-			text: utils.__(i18n.app.BTN_LOGIN),
+            width: 150,
+            text: 'Log In',
+            margin: '15px auto',
+            ui: 'action',
+            text: utils.__(i18n.app.BTN_LOGIN),
 			handler: this.onLoginButtonTap
 		}
 

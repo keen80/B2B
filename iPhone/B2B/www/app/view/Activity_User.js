@@ -1,17 +1,9 @@
-Ext.define('B2B.view.Activity_List', {
+Ext.define('B2B.view.Activity_User', {
     extend: 'Ext.dataview.List',
-    requires: [
-        'Ext.plugin.PullRefresh'
-    ],
-    xtype: 'activitylistcomponent',
+    xtype: 'activityusercomponent',
 	config: {
+        draggable: false,
         loadingText: i18n.app.HINT_LOADING,
-        plugins: [
-            {
-                xclass: 'Ext.plugin.PullRefresh',
-                pullRefreshText: 'Pull down for more new Tweets!'
-            }
-        ],
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'><img class='drinkAvatar' src=\"{[this.getImageURL()]}\" width=\"20\" height=\"20\"></img><span>{[this.getBadgeString(values)]}</span></div>",
             {

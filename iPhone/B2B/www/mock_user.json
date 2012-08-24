@@ -7,7 +7,7 @@
       "count": 1
     },
     "body": {
-      "users": [
+      "list": [
         {
           "idUser": 1,
           "username": "Admin",

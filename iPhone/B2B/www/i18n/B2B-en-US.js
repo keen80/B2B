@@ -49,7 +49,8 @@ var i18n = {
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",
-		"BTN_BEERREPORT": "Report Incorrect",
+		"BTN_BEERREPORT": "Report",
+		"BTN_BEERREPORTXL": "Report as Incorrect",
 		"BTN_CANCEL": "Cancel",
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
@@ -71,6 +72,7 @@ var i18n = {
 		"BTN_PHOTO": "Take a photo",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
+		"DIALOG_BEERREPORTED": "Thank You for you report, We will look into it.",
 		"DIALOG_YOUSURE": "Are You really sure?",
 		"DIALOG_YOUSUREREMOVEDATA": "Removing all your store data will log you out, Do You want to continue?",
 		"DIALOG_YOUSURELOGOUT": "You are going to log out, are You really sure?",
@@ -115,8 +117,10 @@ var i18n = {
 
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
-		"HINT_BEERCHOOSESTYLE": "Choose a Style",
-		"HINT_BEERCHOOSEGRAD": "Select a Gradation",
+		"HINT_BEERCHOOSEDESCRIPTION": "Write Here Something More",
+		"HINT_BEERCHOOSESTYLE": "Which Style",
+		"HINT_BEERCHOOSEGRAD": "Alcoholic Grade?",
+		"HINT_BEERCHOOSENATIONALITY": "Do You know the Nation?",	
 		"HINT_CHOOSEBIRTHDATE": "When did You born?",
 		"HINT_CHOOSEFIRSTNAME": "How Can I Call You?",
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
@@ -219,6 +223,7 @@ var i18n = {
 	],
 
 	"beergrads": [
+		{ "text": "2.0%", "value": 0 },
 		{ "text": "2.5%", "value": 1 },
 		{ "text": "3.0%", "value": 2 },
 		{ "text": "3.5%", "value": 3 },

@@ -10,3 +10,15 @@ Ext.define('B2B.view.DrinkAddForm', {
 		].join("")
 	}
 });
+
+/*
+			{
+				xtype: 'starrating',
+			    itemsCount : 5,
+			    name: "param1",
+			    label : 'Rating',
+			    inputCls : 'x-rating-star-input',
+			    itemCls : 'x-rating-star',
+			    itemHoverCls : 'x-rating-star-hover'
+			},
+*/

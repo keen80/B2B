@@ -1,0 +1,41 @@
+{
+  "response": {
+    "status": {
+      "success": true,
+      "code": "OK",
+      "msg": "Status OK"
+    },
+    "body": {
+      "list": [
+        {
+          "idActivity": "dwd1232322dwd65ffad4e2",
+          "avatar": "cip2222.jpg",
+          "displayName": "1221312",
+          "idUser": "Adelee",
+          "idBeer": "Beeraa",
+          "IdPlace": "sadsad",
+          "idFriend" : "ttggtrg",
+          "beerName": "Caccaaa",
+          "placeName": "PARCO",
+          "friendName" : "Sara H",
+          "type": 1,
+          "status": 1,
+          "like": 0,
+          "date": ""
+        }
+      ]
+    }
+  },
+  "metaData": {
+      "notification": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      },
+      "badge": {
+        "code": "OK",
+        "type": 1,
+        "msg": "Notification OK"
+      }
+  }
+}

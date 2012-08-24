@@ -24,6 +24,7 @@ var goingTo = {
 	step2: function(msg){
 		HH.log("---> Step: "+msg);
 		Ext.getStore('Profile_Ajax').load();
+		Ext.getStore('Activities_User_Ajax').load();
 		Ext.getStore('Activities_Ajax').load();
 	},
 	step3: function(msg, toBeer, toFriend, toNotification){

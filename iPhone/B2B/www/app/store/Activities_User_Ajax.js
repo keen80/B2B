@@ -1,12 +1,11 @@
-Ext.define("B2B.store.Notifications_Ajax", {
+Ext.define("B2B.store.Activities_User_Ajax", {
     extend: "Ext.data.Store",
-    id: "Notifications_Ajax",
-    requires: "Ext.data.proxy.LocalStorage",
+    id: "Activities_User_Ajax",
     config: {
-        model: "B2B.model.Notification",
+        model: "B2B.model.Activity",
         proxy: {
             type:'ajax',
-            url:'mock_notificationlist.json',
+            url:'mock_activityuser.json',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
@@ -15,7 +14,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
                 messageProperty: 'response.status.msg'
             },
             extraParams:{
-                username: 'test'
+                username:'test'
             }
         },
         listeners:{
@@ -24,19 +23,11 @@ Ext.define("B2B.store.Notifications_Ajax", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Friends Store Callback");
+                console.log("Activities Store Callback");
             },
-            load:function(el,records, successful){ 
-                HH.log("* Loaded: Store.Notification_Ajax, copying to Local");
-                var store_local = Ext.getStore('Notifications_Local');
-
-                /* Copying to localstorage */
-                store_local.getProxy().clear();
-                this.each(function(record) {
-                    store_local.add(record.data);
-                });
-                store_local.sync();
-                this.removeAll();
+            load:function(el,records, successful){
+                HH.log("* Loaded: Activities_User_Ajax, copying to Local");
+               
             }
         }
     }

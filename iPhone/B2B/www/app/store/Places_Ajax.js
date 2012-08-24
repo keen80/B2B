@@ -8,7 +8,7 @@ Ext.define("B2B.store.Places_Ajax", {
             url:'mock_placelist.json',
             reader: {
                 type:'json',
-                rootProperty: 'response.body.places',
+                rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'

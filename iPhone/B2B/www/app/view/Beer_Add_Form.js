@@ -22,54 +22,53 @@ Ext.define('B2B.view.Beer_Add_Form', {
 			{
 				xtype: 'textfield',
 				name: 'name',
+				cls: 'beer_form_textfield',
 				placeHolder: i18n.app.HINT_BEERCHOOSENAME,
-				label: i18n.app.LABEL_BEERNAME,
+				//label: i18n.app.LABEL_BEERNAME,
 				required: true
 			},
 			{
 				xtype: 'textfield',
 				name: 'brewery',
+				cls: 'beer_form_textfield',
 				placeHolder: i18n.app.HINT_BEERCHOOSEBREWERY,
-				label: i18n.app.LABEL_BEERBREWERY,
+				//label: i18n.app.LABEL_BEERBREWERY,
 				required: true
 			},
 			{
 				xtype: 'selectfield',
 				name: "beerstyle",
-				cls: "beer_style",
+				id: "selectfieldbeerstyle",
+				cls: 'beer_form_selectfield',
 				placeHolder: i18n.app.HINT_BEERCHOOSESTYLE,
-				label: i18n.app.LABEL_BEERSTYLE,
+				//label: i18n.app.LABEL_BEERSTYLE,
 				options: i18n.beerstyles
 			},
 			{
 				xtype: 'selectfield',
 				name: "grad",
-				cls: "beer_grad",
-				label: i18n.app.LABEL_BEERGRAD,
-				placeHolder: i18n.app.HINT_BEERCHOOSESTYLE,
-				usePicker: true,
+				id: "selectfieldgrad",
+				cls: 'beer_form_selectfield',
+				//label: i18n.app.LABEL_BEERGRAD,
+				placeHolder: i18n.app.HINT_BEERCHOOSEGRAD,
+				store: null,
 				options: i18n.beergrads
 			},
 			{
 				xtype: 'selectfield',
 				name: "nationality",
-				cls: "nation",
-				label: i18n.app.FORM_NATIONALITY,
-				options: i18n.countries
-			},
-			{
-				xtype: 'starrating',
-			    itemsCount : 5,
-			    name: "param1",
-			    label : 'Rating',
-			    inputCls : 'x-rating-star-input',
-			    itemCls : 'x-rating-star',
-			    itemHoverCls : 'x-rating-star-hover'
+				id: "selectfieldnationality",
+				cls: 'beer_form_selectfield',
+				//label: i18n.app.FORM_NATIONALITY,
+				placeHolder: i18n.app.HINT_BEERCHOOSENATIONALITY,
+				//options: i18n.countries
 			},
 			{
 				xtype: 'textareafield',
 				name: 'description',
-				label: i18n.app.LABEL_BEERDESCRIPTION
+				cls: 'beer_form_textfield',
+				//label: i18n.app.LABEL_BEERDESCRIPTION,
+				placeHolder: i18n.app.HINT_BEERCHOOSEDESCRIPTION,
 			}
 		]
 	},
@@ -110,6 +109,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 		};
 
 		this.add([toolbar]);
+		Ext.getCmp("selectfieldnationality").setOptions(i18n.countries);
 
     },
 	onBeerSaveButtonTap: function(){

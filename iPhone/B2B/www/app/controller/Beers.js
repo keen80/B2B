@@ -81,8 +81,31 @@ Ext.define("B2B.controller.Beers", {
 	onDeleteBeer: function(){
 		Ext.Msg.alert('TODO: DeleteBeer Not Implemented');
 	},
-	onReportBeer: function(){
-		Ext.Msg.alert('TODO: onAddReportBeer Not Implemented');
+	onReportBeer: function(a){
+		if (!a.actions){
+			a.actions = Ext.Viewport.add({
+				xtype: 'actionsheet',
+				items: [
+					{
+						text: i18n.app.BTN_BEERREPORTXL,
+						scope: this,
+						ui: 'decline',
+						handler: function(){
+							alert(i18n.app.DIALOG_BEERREPORTED)
+							a.actions.hide();
+						}
+					},
+					{
+						text: i18n.app.BTN_CANCEL,
+						scope: this,
+						handler: function(){
+							a.actions.hide();
+						}
+					}
+				]	
+			});
+		}
+		a.actions.show();
 	},
 	launch: function(){
 		this.callParent(arguments);
