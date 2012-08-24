@@ -195,7 +195,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2866,
+				"buffer_size": 2885,
 				"line_ending": "Windows"
 			}
 		},
@@ -480,10 +480,13 @@
 			}
 		},
 		{
+			"contents": "Ext.define(\"B2B.controller.Beers\", {\n	extend: \"Ext.app.Controller\",\n	config: {\n		refs: {\n			beerSearchComponent: \"beerlistsearchcomponent\",\n			beerList: \"beerlistcontainerpanel\",\n			beerForm: \"beeraddform\",\n			beerDetail: \"beerdetailpanel\",\n			beerlistcomponent: \"beerlistcomponent\",\n			spinner: 'tbarspinner',\n			app: \"_app\"\n		},\n		control:{\n			beerSearchComponent: {\n				beerAddCommand:	\"onShowBeerForm\"\n			},\n			beerForm: {\n				beerSaveCommand: \"onSaveBeer\",\n				beerBackCommand: \"onBackBeer\"\n			},\n			beerDetail: {\n				reportBeerCommand: \"onReportBeer\",\n				beerEditCommand: \"onEditBeer\",\n				backBeerDetailCommand: \"onBackBeerDetail\"\n			},\n			beerList: {\n				viewBeerDetailCommand: \"onViewBeerDetail\"\n			},\n			beerlistcomponent: {\n				itemtap: \"onViewBeerDetail\"\n			}\n		}\n	},\n	onShowBeerForm: function(){\n\n		var newBeer = Ext.create(\"B2B.model.Beer\", {\n		//	'idUser': B2B.app.loggedUser.idUser,\n		//	'username': B2B.app.loggedUser.username,\n		});\n\n		this.getApp().push({\n			xtype: \"beeraddform\"\n		});\n		var beerForm = this.getBeerForm();\n		beerForm.setRecord(newBeer);\n	},\n	onSaveBeer: function(){\n		var spinner = this.getSpinner();\n		if(spinner.isHidden()) spinner.show();\n\n		Ext.Msg.alert(\"Saved!\");\n		this.getBeerForm().reset();\n		this.getApp().pop();\n\n		if(!spinner.isHidden()) spinner.hide();\n	},\n	onBackBeer: function(){\n		this.getBeerForm().reset();\n		this.getApp().pop();\n	},\n	onViewBeerDetail: function(a, b, c, record){\n		/* List Selection Deactivation */\n		setTimeout(function(){a.deselect(b);},500);\n		/* Since we used a subset list for list binding, on Beer Details we have to get\n			the original value, we cannot use the index, which change upon filtering */\n		var ajax_store = Ext.getStore('Beers_Ajax');\n		//var jsonData = ajax_store.getAt(ajax_store.findExact(\"name\", record.data.name));\n		this.getApp().push({\n			xtype: \"beerdetailpanel\",\n			//jsonData: jsonData\n			jsonData: record\n		});\n\n	},\n	onBackBeerDetail: function(){\n		this.getApp().pop();\n	},\n	/* Not Yet Implemented */\n	onEditBeer: function(){\n		Ext.Msg.alert('TODO: Event EditBeer Received, Next release');\n	},\n	onDeleteBeer: function(){\n		Ext.Msg.alert('TODO: DeleteBeer Not Implemented');\n	},\n	onReportBeer: function(a){\n		if (!a.actions){\n			a.actions = Ext.Viewport.add({\n				xtype: 'actionsheet',\n				items: [\n					{\n						text: i18n.app.BTN_BEERREPORTXL,\n						scope: this,\n						ui: 'decline',\n						handler: function(){\n							alert(i18n.app.DIALOG_BEERREPORTED)\n							a.actions.hide();\n						}\n					},\n					{\n						text: i18n.app.BTN_BEERSUGGESTEDIT,\n						scope: this,\n						handler: function(){\n							//console.log(a.jsonData);\n							a.actions.hide();\n							var newBeer = Ext.create(\"B2B.model.Beer\", {\n							//	'idUser': B2B.app.loggedUser.idUser,\n							//	'username': B2B.app.loggedUser.username,\n							});\n\n							this.getApp().push({\n								xtype: \"beeraddform\"\n							});\n							var beerForm = this.getBeerForm();\n							beerForm.setRecord(newBeer);\n						}\n					},\n					{\n						text: i18n.app.BTN_CANCEL,\n						scope: this,\n						handler: function(){\n							a.actions.hide();\n						}\n					}\n				]	\n			});\n		}\n		a.actions.show();\n	},\n	launch: function(){\n		this.callParent(arguments);\n	},\n	init: function(){\n		this.callParent(arguments);\n	}\n});",
 			"file": "app/controller/Beers.js",
+			"file_size": 3384,
+			"file_write_time": 129903013062414009,
 			"settings":
 			{
-				"buffer_size": 2750,
+				"buffer_size": 3252,
 				"line_ending": "Windows"
 			}
 		},
@@ -507,7 +510,7 @@
 			"file": "app/view/Beer_List_SearchComponent.js",
 			"settings":
 			{
-				"buffer_size": 3838,
+				"buffer_size": 4091,
 				"line_ending": "Windows"
 			}
 		},
@@ -515,7 +518,7 @@
 			"file": "app/view/Beer_List.js",
 			"settings":
 			{
-				"buffer_size": 661,
+				"buffer_size": 1356,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +534,7 @@
 			"file": "i18n/B2B-it.js",
 			"settings":
 			{
-				"buffer_size": 20073,
+				"buffer_size": 20095,
 				"line_ending": "Windows"
 			}
 		},
@@ -600,10 +603,18 @@
 			}
 		},
 		{
+			"file": "app/view/Friend_List.js",
+			"settings":
+			{
+				"buffer_size": 947,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "i18n/B2B-en-US.js",
 			"settings":
 			{
-				"buffer_size": 20359,
+				"buffer_size": 20402,
 				"line_ending": "Windows"
 			}
 		},
@@ -611,7 +622,7 @@
 			"file": "app/view/Friend_List_Container.js",
 			"settings":
 			{
-				"buffer_size": 1301,
+				"buffer_size": 1299,
 				"line_ending": "Windows"
 			}
 		}
@@ -1012,7 +1023,7 @@
 	"groups":
 	[
 		{
-			"selected": 16,
+			"selected": 39,
 			"sheets":
 			[
 				{
@@ -1020,15 +1031,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2866,
+						"buffer_size": 2885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								743,
+								743
 							]
 						],
 						"settings":
@@ -1036,7 +1047,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": 138.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1138,8 +1149,8 @@
 						"selection":
 						[
 							[
-								3640,
-								3640
+								1205,
+								1205
 							]
 						],
 						"settings":
@@ -1147,8 +1158,8 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 3.0,
-						"translation.y": 998.0,
+						"translation.x": 0.0,
+						"translation.y": 384.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1275,8 +1286,8 @@
 						"selection":
 						[
 							[
-								313,
-								313
+								91,
+								91
 							]
 						],
 						"settings":
@@ -1387,8 +1398,8 @@
 						"selection":
 						[
 							[
-								0,
-								1722
+								218,
+								218
 							]
 						],
 						"settings":
@@ -1471,8 +1482,8 @@
 						"selection":
 						[
 							[
-								601,
-								601
+								456,
+								456
 							]
 						],
 						"settings":
@@ -1666,8 +1677,8 @@
 						"selection":
 						[
 							[
-								320,
-								320
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1940,8 +1951,8 @@
 						"selection":
 						[
 							[
-								979,
-								979
+								1675,
+								1675
 							]
 						],
 						"settings":
@@ -1950,7 +1961,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 503.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2016,15 +2027,15 @@
 					"file": "app/controller/Beers.js",
 					"settings":
 					{
-						"buffer_size": 2750,
+						"buffer_size": 3252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2429,
-								2429
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2033,7 +2044,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1125.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2077,8 +2088,8 @@
 						"selection":
 						[
 							[
-								1274,
-								1274
+								1330,
+								1330
 							]
 						],
 						"settings":
@@ -2087,7 +2098,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 53.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2097,15 +2108,15 @@
 					"file": "app/view/Beer_List_SearchComponent.js",
 					"settings":
 					{
-						"buffer_size": 3838,
+						"buffer_size": 4091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1059,
-								1059
+								1127,
+								1127
 							]
 						],
 						"settings":
@@ -2114,7 +2125,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 35.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2124,15 +2135,15 @@
 					"file": "app/view/Beer_List.js",
 					"settings":
 					{
-						"buffer_size": 661,
+						"buffer_size": 1356,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								606,
-								614
+								1240,
+								1240
 							]
 						],
 						"settings":
@@ -2179,7 +2190,7 @@
 					"file": "i18n/B2B-it.js",
 					"settings":
 					{
-						"buffer_size": 20073,
+						"buffer_size": 20095,
 						"regions":
 						{
 						},
@@ -2406,8 +2417,8 @@
 						"selection":
 						[
 							[
-								1261,
-								1261
+								2468,
+								2468
 							]
 						],
 						"settings":
@@ -2416,7 +2427,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 429.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "app/view/Friend_List.js",
+					"settings":
+					{
+						"buffer_size": 947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2424,23 +2461,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 51,
+					"buffer": 52,
 					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
-						"buffer_size": 20359,
+						"buffer_size": 20402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20307,
-								20307
+								1916,
+								1916
 							]
 						],
 						"settings":
@@ -2448,26 +2485,26 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 7369.0,
+						"translation.x": 29.0,
+						"translation.y": 592.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 52,
+					"buffer": 53,
 					"file": "app/view/Friend_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 1301,
+						"buffer_size": 1299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1100,
-								1100
+								881,
+								881
 							]
 						],
 						"settings":
@@ -2512,7 +2549,7 @@
 		"cols":
 		[
 			0.0,
-			0.340798524805,
+			0.707962703909,
 			1.0
 		],
 		"rows":

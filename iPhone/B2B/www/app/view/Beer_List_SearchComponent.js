@@ -39,6 +39,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	            },
 	            keyup: function(field, e) {
 		           	var value = field.getValue();
+		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 		           	var beerlist = Ext.getCmp("beerlist");
 		           	var infobar = Ext.getCmp("searchinfobar");
 
@@ -93,7 +94,11 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           		if(value.length < 3 && value.length > 0 ){
 		           			infobar.setHtml(utils.__(i18n.app.HINT_SEARCH1CHAR, 3 - value.length));
 		           		}else{
-		           			infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
+		           			if(value.length > 0) {
+		           				infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
+		           			}else{
+		        				infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
+		           			}
 		           		}
 	           		}
 
