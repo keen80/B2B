@@ -10,6 +10,8 @@ Ext.define('B2B.view.Camera_Container', {
 		items : []
 	},
 	initialize: function (a, b) {
+		this.callParent(arguments);
+
 		var components = [
 			{
 				xtype: "image",

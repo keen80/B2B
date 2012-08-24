@@ -12,7 +12,7 @@ Ext.application({
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback'],
 
 	controllers: [
-				  '_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
+				'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
 	],
 
 	stores: [
@@ -24,7 +24,7 @@ Ext.application({
 		'Activity_List_Container', 'Activity_List', 'Activity_Detail', 'Activity_User',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
-		'Place_List',
+		'Place_List', 'Feedback_Form',
 		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
 		'Notification_Container', 'Notification_List',

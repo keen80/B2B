@@ -70,6 +70,7 @@ var i18n = {
 		"BTN_SAVE": "Save",
 		"BTN_SEARCHFRIEND": "Invite Friends",
 		"BTN_PHOTO": "Take a photo",
+		"BTN_SEND": "Send",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
 		"DIALOG_YOUSURE": "Are You really sure?",
