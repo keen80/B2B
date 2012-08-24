@@ -52,14 +52,22 @@ Ext.define('B2B.view.Beer_Detail', {
 			]
 		};
 		this.add([toolbar]);
-		   console.log(this.jsonData);
-		this.setHtml(
-			 [
-			'<h1>Beer Detail: '+this.jsonData.data.name+'</h1>',
-			'I changed the default <b>HTML Contents</b> to something different!'
-		].join(""));
-		console.log(this.jsonData.data);
-    },
+		
+		var html = this.getStringHTMLFromValues(this.jsonData.data);
+		this.setHtml([html].join(""));
+	},
+	getStringHTMLFromValues: function(info){
+		var value = '';
+		   
+		if (info.image !== null && info.image !== '') {
+		   value += '<img id="beer_thumbnail" src="' + info.image +'" /><hr />';
+		}
+		
+		value += '<p>' + i18n.app.HTML_NAME + ': <b>' + info.name + '</b></p>'+
+				 '<p>' + i18n.app.HTML_DESCRIPTION + ': <b>' + info.brewery + '</b></p>';
+		   
+		return value;
+	},
 	onBeerReportButtonTap: function(){
 		this.fireEvent("reportBeerCommand", this);
 	},

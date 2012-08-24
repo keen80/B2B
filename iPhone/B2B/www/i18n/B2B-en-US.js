@@ -111,6 +111,15 @@ var i18n = {
 
 		"LABEL_CAMERA": "Camera",
 		"LABEL_CAMERA_NOT_AVAILABLE": "Camera not available",
+		
+		"HTML_ALIAS": "Alias",
+		"HTML_NAME": "Name",
+		"HTML_SURNAME": "Surname",
+		"HTML_DESCRIPTION": "Description",
+		"HTML_EMAIL": "Email",
+		"HTML_NFRIENDS": "Friends",
+		"HTML_CHECKINS": "Checkins",
+		"HTML_BADGES": "Badges",
 
 		"PICKER_CAMERA": "Camera",
 		"PICKER_LIBRARY": "Library",

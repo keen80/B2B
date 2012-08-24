@@ -36,7 +36,8 @@ Ext.define("B2B.controller.Friends", {
 		/* Deselection of the list */
 		setTimeout(function(){a.deselect(b);},500);
 		
-		var jsonData = record.data;
+		var ajax_store = Ext.getStore('Friends_Local');
+		var jsonData = ajax_store.getAt(ajax_store.findExact("id", record.data.id));
 		this.getApp().push({
 			xtype: "frienddetailpanel",
 			jsonData: jsonData
