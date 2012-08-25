@@ -63,6 +63,8 @@
 		<string>CDVSplashScreen</string>
 		<key>Battery</key>
 		<string>CDVBattery</string>
+		<key>Device</key>
+		<string>CDVDevice</string>
 	</dict>
 </dict>
 </plist>
