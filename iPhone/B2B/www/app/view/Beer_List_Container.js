@@ -1,6 +1,7 @@
 Ext.define('B2B.view.Beer_List_Container', {
 	extend: 'Ext.Panel',
 	xtype: 'beerlistcontainerpanel',
+	id: "beerlistcontainer",
 	requires: [
 		'Ext.SegmentedButton'
 	],
@@ -57,31 +58,12 @@ Ext.define('B2B.view.Beer_List_Container', {
 		var beerList = {
 		    xtype: "beerlistcomponent",
 		    id: "beerlist",
-		   // store: Ext.getStore("Beers_Single_Ajax"),
-		   store: null,
+		   	store: null,
 		   // grouped: true,
 		   // indexBar: true,
-		   // ui: 'round',
 		    singleSelect: true
-		    /* FOTTUTO BASTARDO, catch nel controller perche' e' mascherato
-		    onItemDisclosure: function(a, b, c, d, e) {
-		   		me.onListItemTap(c);
-		   	},
-		   	onItemTap: function(a, b, c, d, e, f){
-		   		me.onListItemTap(b);
-		   	}
-		   	listeners:[
-{
-				onItemTap: function(a, b, c, d, e, f){
-		   			me.onListItemTap(d);
-		   		}
-}
-		   	]*/
 		};
 
 		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);
-	}/*,
-	onListItemTap: function(record){
-		this.fireEvent("viewBeerDetailCommand", this, record);
-	}*/
+	}
 });

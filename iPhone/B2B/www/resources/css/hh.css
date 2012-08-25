@@ -1,3 +1,43 @@
+/* CUSTOM */
+/* layout */
+#slider_logo{ padding-top: 8px}
+.loading_div{
+
+}
+
+/* Small List */
+.small-list{
+    min-height: 30px;
+}
+
+.small-list-text{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+}
+.small-list-subtext{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+    color: #CCC;
+    font-size: 11px;
+}
+.medium-list-text{
+    position: relative;
+    left: 30px;
+    padding-right: 10px;
+}
+
+.avatar_small, .avatar_medium{
+    float: left;
+    border: 2px solid #EEE; 
+}
+.small-list-when{
+    text-align: right;
+    font-size: 10px;
+    color: #CCC;
+}
+
 /* --- IOS5 TOGGLE --------------- */
 .ios5_toggle .x-toggle {
     float:right;

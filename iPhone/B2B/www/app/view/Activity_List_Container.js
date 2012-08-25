@@ -20,7 +20,6 @@ Ext.define('B2B.view.Activity_List_Container', {
 		var activityStreams = {
             xtype: "activitylistcomponent",
             store: Ext.getStore("Activities_Local"),
-            title: "dfdsfds"
         };
 
         var myLastDrinkIn = {
@@ -32,22 +31,21 @@ Ext.define('B2B.view.Activity_List_Container', {
 
          var myLastDrinkInPanel = {
         	xtype: "panel",
-            //store: Ext.getStore("Activities_User_Ajax"),
+            id: "lastdrink",
             draggable: false,
             height: 80,
-            html: "cippa"
+            html: '<div class="loading_div"></div>'
         };
 
         var container = {
         	xtype: 'panel',
-        	
-    layout     : {
-        type  : 'vbox',
-        align : 'stretch'
-    },
-    defaults   : {
-        flex : 1
-    },
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            },
+            defaults: {
+                flex: 1
+            },
         	items: [
 	        	myLastDrinkInPanel,
 	        	activityStreams

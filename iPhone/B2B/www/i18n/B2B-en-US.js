@@ -1,4 +1,4 @@
-var i18n = {
+﻿var i18n = {
 	"app": {
 		"COMMON_ATTENTION": "Attention",
 
@@ -150,7 +150,19 @@ var i18n = {
 		"HINT_DISPLAYNAME": "We will display to other users only your selected Display Name",
 		"HINT_OFFLINE": "We are sorry, but an Internet Connection is required!",
 
-		"BADGES_TEXT1": "%1 has a wonderful %2 in %3",
+		"ACTIVITY_TEXT0_1": "%1 is now friend with %2",
+        "ACTIVITY_TEXT1_0": "%1 was at %2 drinking %3"
+        "ACTIVITY_TEXT1_1": "%1 has a wonderful %2 in %3",
+        "ACTIVITY_TEXT1_2": "%1 has a good %2 in %3",
+        "ACTIVITY_TEXT1_3": "%1 has a nice %2 in %3",
+        "ACTIVITY_TEXT1_4": "%1 has a bad %2 in %3",
+        "ACTIVITY_TEXT1_5": "%1 has the worst %2 in %3 in the life",
+        "ACTIVITY_TEXT2_1": "%1 has joined %2",
+        "ACTIVITY_TEXT3_1": "%1 has commented %3",
+        "ACTIVITY_TEXT4_1": "%1 has changed the profile picture",
+        "ACTIVITY_TEXT5_1": "%1 has written a message on %2 page",
+        "ACTIVITY_TEXT6_1": "%1 likes %2",
+
 
 		"TEXT_NOACTIVITYFOUND": "No activity found",
 		"TEXT_NOBEERFOUND": "No beer found",

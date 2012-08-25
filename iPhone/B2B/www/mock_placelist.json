@@ -8,20 +8,58 @@
     "body": {
       "list": [
         {
-          "idPlace": "dwd123232adsadd4e2",
-          "placeName": "Risotarante",
+          "idPlace": "place_A_1",
+          "placeName": "La pizza ricca",
           "lat": "10.1",
           "lng": "11.2",
-          "url": "",
-          "category": "pizza place"
+          "url": "www.pizzaricca.it",
+          "category": "pizzeria",
+          "type": 1
         },
         {
-          "idPlace": "dwd1232322dwd65ffad4e2",
-          "placeName": "Ciabattino",
+          "idPlace": "place_A_2",
+          "placeName": "Il pub dei tuoi sogni",
           "lat": "10.2",
           "lng": "10.3",
-          "url": "",
-          "category": "venues"
+          "url": "www.ilpubdeituoisogni.it",
+          "category": "bar"
+          "type": 2
+        },
+        {
+          "idPlace": "place_A_3",
+          "placeName": "La pizza ghiotta",
+          "lat": "10.7",
+          "lng": "6.3",
+          "url": "www.pizzaghiotta.it",
+          "category": "pizzeria"
+          "type": 1
+        },
+        {
+          "idPlace": "place_A_4",
+          "placeName": "Il palio di Asti",
+          "lat": "10.6",
+          "lng": "12.4",
+          "url": "www.lasagradellesagre.it",
+          "category": "sagra"
+          "type": 3
+        },
+        {
+          "idPlace": "place_A_5",
+          "placeName": "Il maiale arrostito",
+          "lat": "9.2",
+          "lng": "14.3",
+          "url": "www.ilmaialearrostito.it",
+          "category": "ristorante"
+          "type": 4
+        },
+        {
+          "idPlace": "place_A_6",
+          "placeName": "al dente",
+          "lat": "10.9",
+          "lng": "10.0",
+          "url": "www.osteriaaldente.it",
+          "category": "ristorante"
+          "type": 4
         }
       ]
     }

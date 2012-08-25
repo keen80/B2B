@@ -6,7 +6,7 @@ Ext.define("B2B.model.Activity", {
 		identifier:'uuid',
 		fields: [
 			{ name: 'idActivity', type: 'string' },
-			{ name: 'avatar', type: 'string' },
+			{ name: 'image', type: 'string' },
 			{ name: 'displayName', type: 'string' },
 			{ name: 'idUser', type: 'string' },
 			{ name: 'idBeer', type: 'string' },

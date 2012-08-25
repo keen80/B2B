@@ -9,19 +9,18 @@
     "body": {
       "list": [
         {
-          "idUser": 1,
-          "username": "Admin",
-          "displayName": "Geremiah",
-          "description": "descAdmin",
-          "email": "Admin@gmail.com",
-          "firstName": "NomeAdmin",
-          "lastName": "Cognome Admin",
+          "idUser": "user_1",
+          "username": "Marco",
+          "displayName": "Marco",
+          "description": "Scrittore e collezionista di cartoline d'epoca",
+          "email": "marco85@gmail.com",
+          "firstName": "Marco",
+          "lastName": "Calabrò",
           "gender": 1,
           "nationality": "IT",
           "shareTwitter": true,
           "shareFacebook": false,
           "enableNotification": false,
-          "idUser": "50073asdsdsaddassd2",
           "pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
           "role": 1,
           "status": 1,
@@ -30,9 +29,9 @@
           "activatedOn": new Date(),
           "lastLoginOn": new Date(),
           "liked": "",
-          "counter_friends": 0,
-          "counter_checkIns": 0,
-          "counter_badges": 0
+          "counter_friends": 32,
+          "counter_checkIns": 3,
+          "counter_badges": 2
         }
       ]
     }

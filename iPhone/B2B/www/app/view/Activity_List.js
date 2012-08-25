@@ -13,20 +13,32 @@ Ext.define('B2B.view.Activity_List', {
             }
         ],
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
-        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'><img class='drinkAvatar' src=\"{[this.getImageURL()]}\" width=\"20\" height=\"20\"></img><span>{[this.getBadgeString(values)]}</span></div>",
+        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getTextString(values)]}{[this.getWhenString()]}</div>",
             {
             	getClass: function(values){
-            		return "activity-list-item_"+values.type;
+            		return "activity-list-item activity-type small-list activity-type"+values.type;
             	},
             	getImageURL: function(values){
-                // I have to return either of two images
-                // if  uId = 0, return 'resources/images/Image0.png'
-                // if uId = 1, return 'resources/images/Image1.png'
-                	return 'resources/images/Image0.png';
-                },
-                getBadgeString: function(values){
-            		var str = utils.__(i18n.app.BADGES_TEXT1, values.displayName, values.beerName, values.placeName);
+                    var str = '<img class="avatar_small" src="';
+                    if (_.isEmpty(values.image)){
+                         str += 'resources/img/default/blank_avatar_32.png';
+                     }else{
+                        str+=values.image;
+                     }
+                    str += '" width="32" height="32">';
                 	return str;
+                },
+                getWhenString: function(values){
+                    var str = "<div class='small-list-when'>";
+                    str += "5 minuti fa";
+                    str += "</div>";
+                    return str;
+                },
+                getTextString: function(values){
+                    var str = "<div class='small-list-text'>";
+            		str += utils.__(i18n.app.BADGES_TEXT1, values.displayName, values.beerName, values.placeName);
+                	str += "</div>";
+                    return str;
                 }
             }
    		)

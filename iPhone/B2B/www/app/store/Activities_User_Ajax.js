@@ -27,7 +27,18 @@ Ext.define("B2B.store.Activities_User_Ajax", {
             },
             load:function(el,records, successful){
                 HH.log("* Loaded: Activities_User_Ajax, copying to Local");
-               
+                var jsonData = records.data;
+                console.log(records);
+                Ext.getCmp("lastdrink").setHtml(
+                    [
+                    '<div>',
+                    '<img src="'+jsonData.image+'" width="64" height="64" >',
+                    '<span class=".medium-list-text">Blah Blah Blah</span>',
+                    '<span class="small-list-when"> 2 min fa</span>',
+                    '</div>'
+                    ].join("")
+                );
+                console.log(records);
             }
         }
     }

@@ -6,12 +6,7 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 	xtype: 'friendlistsearchcomponent',
 	id: 'friendlistsearchcomponent',
 	config: {
-		docked: 'top',
-		items: [
-			{
-				
-			}
-		]
+		docked: 'top'
 	},
 	initialize: function(){
 		this.callParent(arguments);

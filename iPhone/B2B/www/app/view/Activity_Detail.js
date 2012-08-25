@@ -11,9 +11,7 @@ Ext.define('B2B.view.Activity_Detail', {
     ],
 	config: {
 		title: i18n.app.PANEL_ACTIVITYDETAIL,
-		iconCls: 'add',
-		items: [
-		]
+		iconCls: 'add'
 	},
 	initialize: function(){
 
@@ -37,7 +35,6 @@ Ext.define('B2B.view.Activity_Detail', {
 			]
 		};
 		this.add([toolbar]);
-	//	console.log(this.jsonData);
     },
 	onActivityDetailBackButtonTap: function(){
 		this.fireEvent("backActivityDetailCommand", this);

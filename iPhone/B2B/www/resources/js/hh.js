@@ -1,6 +1,11 @@
 var HH = {
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
+	"default_user32": "resources/img/default/blank_avatar_32.png",
+	"default_user64": "resources/img/default/blank_avatar_64.png",
+	"default_beerstyle32": "resources/img/default/blank_avatar_32.png",
+	"default_beergrad32": "resources/img/default/blank_avatar_32.png",
+	"default_place32": "resources/img/default/blank_avatar_32.png",
 	DEBUG: false,
 	"beergroup": 2,
 	map: {

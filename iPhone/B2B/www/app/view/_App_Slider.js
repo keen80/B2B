@@ -21,10 +21,11 @@ Ext.define("B2B.view._App_Slider", {
             items: [{
                 xtype: 'toolbar',
                 docked: 'top',
-                ui: 'light',                    
+                ui: 'plain',                    
                 title: {
-                    title: i18n.app.PANEL_NAVIGATION,
-                    centered: true,
+                    //title: i18n.app.PANEL_NAVIGATION,
+                    title: '<img id="slider_logo" src="resources/img/logopin_text_black_small.png">',
+                    //centered: true,
                     width: 200,
                     left: 0
                 }

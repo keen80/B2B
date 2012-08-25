@@ -6,8 +6,7 @@ Ext.define('B2B.view.Camera_Container', {
 		iconCls : 'photo1',
 		styleHtmlContent: true,
 		scrollable: true,
-		layout: 'vbox',
-		items : []
+		layout: 'vbox'
 	},
 	initialize: function (a, b) {
 		this.callParent(arguments);

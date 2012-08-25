@@ -31,6 +31,7 @@ Ext.define("B2B.store.Friends_Ajax", {
                 var store_local = Ext.getStore('Friends_Local');
 
                 /* Copying to localstorage */
+                store_local.removeAll();
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);
