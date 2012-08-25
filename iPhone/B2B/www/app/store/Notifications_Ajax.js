@@ -18,6 +18,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
                 username: 'test'
             }
         },
+        autoload: true,
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);
@@ -31,6 +32,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
                 var store_local = Ext.getStore('Notifications_Local');
 
                 /* Copying to localstorage */
+                store_local.removeAll();
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);

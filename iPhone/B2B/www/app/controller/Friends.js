@@ -13,7 +13,7 @@ Ext.define("B2B.controller.Friends", {
 				viewFriendDetailCommand: "onViewFriendDetail"
 			},
 			friendDetail: {
-				deleteFriendCommand: "onDeleteFriend",
+				removeFriendDetailCommand: "onRemoveFriend",
 				backFriendDetailCommand: "onBackFriendDetail"
 			},
 			friendFinder: {
@@ -29,8 +29,13 @@ Ext.define("B2B.controller.Friends", {
 			xtype: "friendfinderpanel"
 		});
 	},
-	onDeleteFriend: function(){
-		Ext.Msg.alert('Event DeleteFriend Received');
+	onRemoveFriend: function(){
+		//Ext.Msg.alert('Event DeleteFriend Received');
+		var removeIt = function(){
+			this.getApp().pop();
+		};
+
+		confirm(i18n.app.DIALOG_YOUSURE, removeIt);
 	},
 	onViewFriendDetail: function(a, b, c, record){
 		/* Deselection of the list */

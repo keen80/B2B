@@ -39,6 +39,7 @@ Ext.define("B2B.store.Profile_Ajax", {
                 }
 
                 /* We copy from memory to localstorage */
+                store_local.removeAll();
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);

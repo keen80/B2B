@@ -30,6 +30,7 @@ Ext.define("B2B.store.Activities_Ajax", {
                 var store_local = Ext.getStore('Activities_Local');
 
                 /* Copying to Localstorage */
+                store_local.removeAll();
                 store_local.getProxy().clear();
                 this.each(function(record) {
                     store_local.add(record.data);

@@ -9,14 +9,14 @@ Ext.define('B2B.view.Activity_List', {
         plugins: [
             {
                 xclass: 'Ext.plugin.PullRefresh',
-                pullRefreshText: 'Pull down for more new Tweets!'
+                pullRefreshText: 'Pull down for more!'
             }
         ],
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getTextString(values)]}{[this.getWhenString()]}</div>",
             {
             	getClass: function(values){
-            		return "activity-list-item activity-type small-list activity-type"+values.type;
+            		return "activity-list-item small-list activity-type"+values.type;
             	},
             	getImageURL: function(values){
                     var str = '<img class="avatar_small" src="';
@@ -36,7 +36,7 @@ Ext.define('B2B.view.Activity_List', {
                 },
                 getTextString: function(values){
                     var str = "<div class='small-list-text'>";
-            		str += utils.__(i18n.app.BADGES_TEXT1, values.displayName, values.beerName, values.placeName);
+            		str += utils.getActivityString(values);
                 	str += "</div>";
                     return str;
                 }

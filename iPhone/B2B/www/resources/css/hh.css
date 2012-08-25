@@ -10,7 +10,7 @@
     min-height: 30px;
 }
 
-.small-list-text{
+.small-list-text, .medium-list-text{
     position: relative;
     left: 10px;
     padding-right: 10px;
@@ -23,20 +23,31 @@
     font-size: 11px;
 }
 .medium-list-text{
-    position: relative;
-    left: 30px;
-    padding-right: 10px;
+    font-size: 16px;
 }
 
 .avatar_small, .avatar_medium{
     float: left;
     border: 2px solid #EEE; 
 }
+.lastdrink{
+    padding: 4px;
+}
 .small-list-when{
     text-align: right;
     font-size: 10px;
     color: #CCC;
 }
+.profile-detail{
+    position: absolute;
+    top: 180px;
+    background: white;
+    border: 2px solid;
+    left: 60px;
+    padding: 10px;
+}
+
+
 
 /* --- IOS5 TOGGLE --------------- */
 .ios5_toggle .x-toggle {

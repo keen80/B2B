@@ -7,7 +7,7 @@ Ext.define("B2B.model.Beer", {
 		fields: [
 			{ name: 'idBeer', type: 'string' },
 			{ name: 'idUser', type: 'string' },
-			{ name: 'username', type: 'string' },
+			{ name: 'displayName', type: 'string' },
 			{ name: 'name', type: 'string' },
 			{ name: 'brewery', type: 'string' },
 			{ name: 'nationality', type: 'string' },

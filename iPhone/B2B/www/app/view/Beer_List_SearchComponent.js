@@ -41,11 +41,23 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           	var value = field.getValue();
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 		           	var beerlist = Ext.getCmp("beerlist");
+		           	var splashscreen = Ext.getCmp("_splashbeersearch");
 		           	var beerlistcontainer = Ext.getCmp("beerlistcontainer");
 		           	var infobar = Ext.getCmp("searchinfobar");
 
-		           	if(value > 3){
-		           		/* M1 */
+		           /*	if(value > 3){
+		           		 M1
+		           		if(splashscreen){
+			        		beerlistcontainer.remove(splashscreen, true);
+			        		beerlistcontainer.add(
+				        		{
+				        			xtype: 'beerlistcomponent'
+				        		}
+				        	);
+				        	beerlist = Ext.getCmp("beerlist");
+			        	}
+ */
+
 			           	if((!value||value < oldValueCount)){
 			           		beerlist.setStore(null);
 			            }
@@ -111,7 +123,8 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 			                window.scrollTo(0,0);
 			                var activeItem = beerlist.getActiveItem();
 			            }
-			        }else{
+			      	/*  }else{
+			        
 			        	if(beerlist){
 			        		beerlistcontainer.remove(beerlist, true);
 			        		beerlistcontainer.add(
@@ -120,7 +133,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 				        		}
 				        	);
 			        	}
-			        }
+			        }*/
 	           }
             }
 		};

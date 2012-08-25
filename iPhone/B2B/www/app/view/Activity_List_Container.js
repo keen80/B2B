@@ -33,7 +33,7 @@ Ext.define('B2B.view.Activity_List_Container', {
         	xtype: "panel",
             id: "lastdrink",
             draggable: false,
-            height: 80,
+            height: 60,
             html: '<div class="loading_div"></div>'
         };
 

@@ -105,13 +105,19 @@ geo.updateLocation();
         flex: 1
       };
 
+      var squareLogo ={
+        xtype: 'image',
+        src: 'rosurces/img/poweredByFoursquare_gray.png'
+      }
+
       var verticalBox = {
         xtype: "panel",
         layout: 'vbox',
         align: 'stretch',
         items: [
             mapPanel,
-            placeList
+            placeList,
+            squareLogo
         ]
       };
 

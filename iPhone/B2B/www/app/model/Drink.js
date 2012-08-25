@@ -2,13 +2,16 @@ Ext.define("B2B.model.Drink", {
 	extend: "Ext.data.Model",
 	requires:'Ext.data.identifier.Uuid',
 	config: {
-		//idProperty: 'idDrink',
 		identifier:'uuid',
 		fields: [
 			{ name: 'idDrink', type: 'string' },
-			{ name: 'username', type: 'string' },
-			{ name: 'beer', type: 'string' },
-			{ name: 'feedback', type: 'string' },
+			{ name: 'displayName', type: 'string' },
+			{ name: 'idUser', type: 'string' },
+			{ name: 'idBeer', type: 'string' },
+			{ name: 'beerName', type: 'string' },
+			{ name: 'idPlace', type: 'string' },
+			{ name: 'placeName', type: 'string' },
+			{ name: 'idFeedback', type: 'string' },
 			{ name: 'image', type: 'string' },
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' }
 		],

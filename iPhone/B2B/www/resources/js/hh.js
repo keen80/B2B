@@ -2,6 +2,7 @@ var HH = {
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	"default_user32": "resources/img/default/blank_avatar_32.png",
+	"default_user48": "resources/img/default/blank_avatar_48.png",
 	"default_user64": "resources/img/default/blank_avatar_64.png",
 	"default_beerstyle32": "resources/img/default/blank_avatar_32.png",
 	"default_beergrad32": "resources/img/default/blank_avatar_32.png",
@@ -82,6 +83,45 @@ var utils = {
 	    	CONST_String = CONST_String.replace("%"+i, arguments[i]);
 	    };
 	    return CONST_String;
+	},
+	getActivityString: function(values){
+		var str;
+		switch(values.type){
+			case 0:
+				return this.__(i18n.app.ACTIVITY_TEXT_0_1, values.displayName, values.friendName);
+				break;
+			case 1:
+				return this.__(i18n.app.ACTIVITY_TEXT_1_1, values.displayName, values.beerName, values.placeName);
+				break;
+			case 2:
+				return this.__(i18n.app.ACTIVITY_TEXT_2_1, values.username, values.friendname);
+				break;
+			default:
+				return this.__(i18n.app.ACTIVITY_TEXT_0_0, values.username, values.friendname);
+				break;
+		}
+		return str;
+	},
+	getNotificationString: function(values){
+		var str;
+		switch(values.type){
+			case 0:
+				return this.__(i18n.app.NOTIFICATION_TEXT_0_1, values.friendName);
+				break;
+			case 1:
+				return this.__(i18n.app.NOTIFICATION_TEXT_1_1, values.friendName);
+				break;
+			case 2:
+				return this.__(i18n.app.NOTIFICATION_TEXT_2_1, values.friendName);
+				break;
+			case 3:
+				return this.__(i18n.app.NOTIFICATION_TEXT_3_1, values.beerName, values.targetName);
+				break;
+			default:
+				return this.__(i18n.app.NOTIFICATION_TEXT_0_0, values.friendName);
+				break;
+		}
+		return str;
 	},
 	getDisplayName: function(json){
 		if (json.displayName){
