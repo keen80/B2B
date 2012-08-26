@@ -8,14 +8,13 @@
 		"body": {
 			"list": [
 				{
-				"idFeedback": "",
-				"rate": 0,
-				"rate2": 0,
-				"rate3": 0,
-				"comment": "",
+				"idFeedback": "feedback_01",
+				"comment": "Davvero? Fantastico, anche io lo devo fare!",
 				"idUser": "",
+				"displayName"
 				"idTarget": "",
-				"type": "",
+				"targetName": "",
+				"type": "0",
 				"like": 0,
 				"insertedOn": new Date()
 				}

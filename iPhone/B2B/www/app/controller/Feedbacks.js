@@ -1,4 +1,4 @@
-Ext.define("B2B.controller._App", {
+Ext.define("B2B.controller.Feedbacls", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
@@ -6,11 +6,11 @@ Ext.define("B2B.controller._App", {
 		},
 		control: {
 			_App: {
-				initialize: "onInitialize"
+				
 			}
 		}
 	},
-	onInitialize: function(){
+	onCommentSubmit: function(){
 
 	},
 	init: function(){

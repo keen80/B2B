@@ -63,7 +63,7 @@
 	 *  - Android
 	 *  - AndroidEmulator
 	 */
-	"platform":"iOSSimulator",
+	"platform":"iOS",
 
 	/**
 	 * @cfg {String} deviceType
@@ -77,7 +77,7 @@
 	 *  - iPad
 	 *  - Universal
 	 */
-	"deviceType":"Universal",
+	"deviceType":"iPhone",
 
 	/**
 	 * @cfg {String} certificatePath
