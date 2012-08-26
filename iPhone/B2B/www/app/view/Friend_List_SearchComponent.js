@@ -13,6 +13,15 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 		
 		var oldValueCount = 0;
 
+    	var searchFriendButton = {
+			xtype: "button",
+			text: i18n.app.BTN_SEARCHFRIEND,
+			ui: 'action',
+			id: 'search_friend_btn',
+			handler: this.onSearchFriendButtonTap,
+			scope: this
+		};
+
 		var searchField = {
 			xtype: 'searchfield',
 			placeHolder: i18n.app.LABEL_SEARCH,
@@ -69,11 +78,12 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 			docked: 'top',
 			items: [
 				searchField,
+				searchFriendButton
 			]
 		};
 		this.add([toolbar]);
 	},
-	onAddFriendButtonTap: function(){
-		this.fireEvent("addFriendCommand", this);
+	onSearchFriendButtonTap: function(){
+		this.fireEvent("searchFriendCommand", this);
 	}
 });

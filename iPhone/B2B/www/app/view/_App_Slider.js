@@ -47,8 +47,8 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'titlebar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'more',
-                    ui: 'plain'
+                    iconCls: 'list',
+                    ui: 'action'
                 },
                 items: [
                     {
@@ -63,8 +63,8 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'more',
-                    ui: 'plain'
+                    iconCls: 'list',
+                    ui: 'action'
                 },
                 items: [
                     {
@@ -79,8 +79,8 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'more',
-                    ui: 'plain'
+                    iconCls: 'list',
+                    ui: 'action'
                 },
                 items: [
                     {
@@ -95,7 +95,8 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'more'
+                    iconCls: 'list',
+                    ui: 'action'
                 },
                 items: [
                     {

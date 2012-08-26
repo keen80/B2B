@@ -17,6 +17,15 @@ Ext.define('B2B.view.Activity_List_Container', {
 
     	this.callParent(arguments);
 
+        var header = {
+            xtype: 'container',
+            cls: 'header_img',
+            height: 50,
+            width: '100%',
+            docked: 'top',
+            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
+        };
+
 		var activityStreams = {
             xtype: "activitylistcomponent",
             store: Ext.getStore("Activities_Local"),
@@ -33,7 +42,8 @@ Ext.define('B2B.view.Activity_List_Container', {
         	xtype: "panel",
             id: "lastdrink",
             draggable: false,
-            height: 60,
+            height: 70,
+            docked: 'top',
             html: '<div class="loading_div"></div>'
         };
 
@@ -47,10 +57,11 @@ Ext.define('B2B.view.Activity_List_Container', {
                 flex: 1
             },
         	items: [
+                header,
 	        	myLastDrinkInPanel,
 	        	activityStreams
         	]
         }
-		this.add([ container ]);
+		this.add([ /*container*/ header, myLastDrinkInPanel, activityStreams ]);
     }
 });

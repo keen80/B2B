@@ -50,18 +50,21 @@ var i18n = {
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",
-		"BTN_BEERREPORT": "Report Incorrect",
+		"BTN_BEERREPORT": "Report",
+		"BTN_BEERREPORTXL": "Report as Incorrect",
+		"BTN_BEERSUGGESTEDIT": "Suggest a Edit",
 		"BTN_CANCEL": "Cancel",
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
 		"BTN_EDIT": "Edit",
 		"BTN_LOGIN": "Login",
 		"BTN_LOGOUT": "Logout",
-		"BTN_MARKALLREAD": "Mark All Read",
+		"BTN_MARKALLREAD": "Mark Read",
 		"BTN_OK": "OK",
 		"BTN_ORDERBYALPHA": "Alphabetical",
 		"BTN_ORDERBYSTYLE": "by Style",
 		"BTN_ORDERBYNATION": "by Nation",
+		"BTN_PHOTO": "Take a photo",
 		"BTN_REFRESH": "Refresh",
 		"BTN_REMOVE": "Remove",
 		"BTN_REMOVEPERSONAL": "Remove Personal Information",
@@ -69,10 +72,10 @@ var i18n = {
 		"BTN_RESET": "Reset",
 		"BTN_SAVE": "Save",
 		"BTN_SEARCHFRIEND": "Invite Friends",
-		"BTN_PHOTO": "Take a photo",
 		"BTN_SEND": "Send",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
+		"DIALOG_BEERREPORTED": "Thank You for you report, We will look into it.",
 		"DIALOG_YOUSURE": "Are You really sure?",
 		"DIALOG_YOUSUREREMOVEDATA": "Removing all your store data will log you out, Do You want to continue?",
 		"DIALOG_YOUSURELOGOUT": "You are going to log out, are You really sure?",
@@ -147,15 +150,34 @@ var i18n = {
 		"HINT_DISPLAYNAME": "We will display to other users only your selected Display Name",
 		"HINT_OFFLINE": "We are sorry, but an Internet Connection is required!",
 
-		"BADGES_TEXT1": "%1 has a wonderful %2 in %3",
-
 		"TEXT_NOACTIVITYFOUND": "No activity found",
 		"TEXT_NOBEERFOUND": "No beer found",
 		"TEXT_NOFRIENDFOUND": "No friend found",
 		"TEXT_NONOTIFICATIONFOUND": "No activity found",
+		"TEXT_FEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
+
+		"ACTIVITY_TEXT_0_0": "Know what? %1 is doing somethin!",
+		"ACTIVITY_TEXT_0_1": "%1 is now friend with %2",
+        "ACTIVITY_TEXT_1_0": "%1 was at %2 drinking %3",
+        "ACTIVITY_TEXT_1_1": "%1 has a wonderful %2 in %3",
+        "ACTIVITY_TEXT_1_2": "%1 has a good %2 in %3",
+        "ACTIVITY_TEXT_1_3": "%1 has a nice %2 in %3",
+        "ACTIVITY_TEXT_1_4": "%1 has a bad %2 in %3",
+        "ACTIVITY_TEXT_1_5": "%1 has the worst %2 in %3 in the life",
+        "ACTIVITY_TEXT_2_1": "%1 has joined %2",
+        "ACTIVITY_TEXT_3_1": "%1 has commented %3",
+        "ACTIVITY_TEXT_4_1": "%1 has changed the profile picture",
+        "ACTIVITY_TEXT_5_1": "%1 has written a message on %2 page",
+        "ACTIVITY_TEXT_6_1": "%1 likes %2",
+
+        "NOTIFICATION_TEXT_0_0": "Know what? %1 is doing somethin!",
+        "NOTIFICATION_TEXT_0_1": "%1 has sent You a message!",
+        "NOTIFICATION_TEXT_1_1": "%1 has sent You a message!",
+        "NOTIFICATION_TEXT_2_1": "%1 has commented your DrinkIn",
+        "NOTIFICATION_TEXT_3_1": "Great! The last %1 has unlocked the %2!",
 
 		"Z": "Puppa Code"
 	},
@@ -433,7 +455,7 @@ var i18n = {
 		{ "text": "Reunion", "value": "RE"},
 		{ "text": "Romania", "value": "RO"},
 		{ "text": "Russian Federation", "value": "RU"},
-		{ "text": "RWANDA", "value": "RW"},
+		{ "text": "Rwanda", "value": "RW"},
 		{ "text": "Saint Helena", "value": "SH"},
 		{ "text": "Saint Kitts and Nevis", "value": "KN"},
 		{ "text": "Saint Lucia", "value": "LC"},
@@ -494,7 +516,11 @@ var i18n = {
 		{ "text": "Western Sahara", "value": "EH"},
 		{ "text": "Yemen", "value": "YE"},
 		{ "text": "Zambia", "value": "ZM"},
-		{ "text": "Zimbabwe", "value": "ZW"}
+		/* NOT STANDARD */
+		{ "text": "North Ireland", "value": "NIRL"},
+		{ "text": "Scotland", "value": "SCO"},
+		{ "text": "Wales", "value": "WAL"},
+		{ "text": "Ex Yugoslavia", "value": "YUG"}
 	]
 
 };

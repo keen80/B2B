@@ -59,7 +59,7 @@
 		"BTN_EDIT": "Edit",
 		"BTN_LOGIN": "Login",
 		"BTN_LOGOUT": "Logout",
-		"BTN_MARKALLREAD": "Mark All Read",
+		"BTN_MARKALLREAD": "Mark Read",
 		"BTN_OK": "OK",
 		"BTN_ORDERBYALPHA": "Alphabetical",
 		"BTN_ORDERBYSTYLE": "by Style",

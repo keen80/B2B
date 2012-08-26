@@ -7,7 +7,7 @@ Ext.define('B2B.view.Beer_List_Container', {
 	],
 	config: {
 		title: i18n.app.LABEL_BEERS,
-		iconCls: 'list',
+		iconCls: 'trash',
 		layout: {
         	type: 'fit'
         }
@@ -16,6 +16,16 @@ Ext.define('B2B.view.Beer_List_Container', {
 		this.callParent(arguments);
 
 		var me = this;
+
+
+        var header = {
+            xtype: 'container',
+            cls: 'header_img',
+            height: 50,
+            width: '100%',
+            docked: 'top',
+            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
+        };
 
 		var beerlistsearchcomponent = {
 			xtype: 'beerlistsearchcomponent',
@@ -64,6 +74,6 @@ Ext.define('B2B.view.Beer_List_Container', {
 		    singleSelect: true
 		};
 
-		this.add([ beerlistsearchcomponent,/* beerToolbar, */beerList]);
+		this.add([ header, beerlistsearchcomponent,/* beerToolbar, */beerList]);
 	}
 });

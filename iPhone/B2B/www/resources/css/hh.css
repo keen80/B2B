@@ -19,8 +19,8 @@
     position: relative;
     left: 10px;
     padding-right: 10px;
-    color: #CCC;
-    font-size: 11px;
+    color: #AAA;
+    font-size: 12px;
 }
 .medium-list-text{
     font-size: 16px;
@@ -33,10 +33,15 @@
 .lastdrink{
     padding: 4px;
 }
+
+.lastdrink img {
+    margin-top: 6px;
+}
+
 .small-list-when{
     text-align: right;
-    font-size: 10px;
-    color: #CCC;
+    font-size: 11px;
+    color: #AAA;
 }
 .profile-detail{
     position: absolute;

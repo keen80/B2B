@@ -1,3 +1,120 @@
+$base_color: #77AABB;
+//$active-color:#DDCC00;
+$base-gradient: 'flat';
+$tabs-bottom-active-gradient: 'flat';
+$tabs-bottom-gradient: 'flat';
+$tabs-dark-active-color: #DDCC00;
+
+/*
+
+// Define variable in sass
+
+// Base Color
+$base-color: #af2584;
+
+// Base Gradient Style
+$base-gradient: 'glossy'; //matte, bevel,glossy,recessed
+
+// Custome Panel Color
+$page-bg-color: #EFEFEF;
+$form-bg-color: #EFEFEF;
+$form-field-color:$base-color;
+$tabs-dark: #333;
+$list-bg-color: #FFF;
+$form-dark: #FFF; //dark
+
+// Define custom Font Size 
+$app-base-font-base:15px;
+$app-base-font-smallest:13px;
+
+***********************
+// Use Custom Icon Image sass/images/icon by default
+@mixin custom-iconmask($name) {
+  .x-tab img.#{$name}, .x-button img.x-icon-mask.#{$name} {
+    -webkit-mask-image: inline-image('icon/' + $name + '.png');
+  }
+}
+
+@include custom-iconmask('Closed');
+
+// Adding ui theme
+@include sencha-toolbar-ui('gray-light',rgb(200, 200, 200),'matte');
+@include sencha-toolbar-ui('white',#DDD,'bevel');
+@include sencha-toolbar-ui('tbar-main-ui', rgb(1, 58, 157),  'matte');
+@include sencha-toolbar-ui('light-gray', rgb(234, 234, 234),  'matte');
+@include sencha-toolbar-ui('dark-blue',rgb(1, 58, 157),'matte');
+@include sencha-toolbar-ui('tbar-white',rgb(255, 255, 255),'matte');
+
+
+********************
+http://www.slideshare.net/senchainc/theming-sencha-touch
+
+flat: No gradient.
+matte: A subtle gradient.
+bevel: A medium gradient.
+glossy: A glassy style gradient.
+recessed: A reversed gradient.
+
+
+$active-color
+$alert-color
+$base-color
+$base-gradient
+$bright-color
+$button-gradient
+$button-height
+$button-radius
+$button-stroke-weight
+$carousel-indicator-size
+$carousel-indicator-spacing
+$carousel-track-size
+$form-bg-color
+$form-dark
+$form-field-bg-color
+$form-field-height
+$form-fieldset-radius
+$form-label-width
+$form-light
+$form-slider-size
+$form-spacing
+$form-textarea-height
+$form-thumb-size
+$form-thumb-space
+$form-toggle-size
+$global-row-height
+$include-bottom-tabs
+$include-button-uis
+$include-default-icons
+$include-default-uis
+$include-form-sliders
+$include-highlights
+$include-html-style
+$include-tabbar-uis
+$include-toolbar-uis
+$include-top-tabs
+$light-tab-active
+$light-tab-color
+$page-bg-color
+$sheet-bg-color
+$sheet-button-spacing
+$sheet-padding
+$tabs-bottom-active-gradient
+$tabs-bottom-icon-size
+$tabs-bottom-gradient
+$tabs-bottom-radius
+$tabs-dark-active-color
+$tabs-dark-color
+$toolbar-gradient
+$toolbar-highlights
+$toolbar-icon-size
+$toolbar-input-bg
+$toolbar-input-color
+$toolbar-input-height
+$toolbar-spacing
+$top-tab-height
+
+*/
+
 @import 'sencha-touch/default/all';
 
 // You may remove any of the following modules that you
@@ -18,3 +135,9 @@
 @include sencha-loading-spinner;
 
 // Your custom code goes here...
+@include sencha-list-pullrefresh;
+
+@include pictos-iconmask('list');
+@include pictos-iconmask('chat4');
+@include pictos-iconmask('trash');
+@include pictos-iconmask('user_list');
