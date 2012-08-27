@@ -2,9 +2,6 @@ Ext.define('B2B.view.Feedback_Form', {
 	extend: 'Ext.form.Panel',
 	xtype: 'feedbackform',
 	id: 'feedbackform',
-	config: {
-		title: ""
-	},
 
 	initialize: function(){
 		this.callParent(arguments);

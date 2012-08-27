@@ -6,7 +6,7 @@ Ext.define("B2B.model.Activity", {
 		identifier:'uuid',
 		fields: [
 			{ name: 'idActivity', type: 'string' },
-			{ name: 'avatar', type: 'string' },
+			{ name: 'image', type: 'string' },
 			{ name: 'displayName', type: 'string' },
 			{ name: 'idUser', type: 'string' },
 			{ name: 'idBeer', type: 'string' },
@@ -15,6 +15,7 @@ Ext.define("B2B.model.Activity", {
 			{ name: 'beerName', type: 'string' },
 			{ name: 'placeName', type: 'string' },
 			{ name: 'friendName', type: 'string' },
+			{ name: 'jumpTo', type: 'string' },
 			{ name: 'type', type: 'int' },
 			{ name: 'status', type: 'int' },
 			{ name: 'like', type: 'int' },

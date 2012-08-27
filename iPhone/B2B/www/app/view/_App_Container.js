@@ -52,7 +52,7 @@ Ext.define("B2B.view._App_Container", {
 		}
 
 		var gotoNotificationButton = {
-			iconCls: 'bubble',
+			iconCls: 'chat4',
 			ui: 'plain',
 			id: 'jump_2_notification_btn',
 			handler: this.onGotoNotificationButtonTap,

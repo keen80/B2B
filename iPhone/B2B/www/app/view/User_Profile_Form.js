@@ -26,9 +26,12 @@ Ext.define('B2B.view.User_Profile_Form', {
 				items: [
 					{
 						xtype: 'image',
+						name: 'image',
 						id : 'ProfileImage',
-						src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
-						width: 80,
+						// TODO AVATAR IMAGE
+						src: HH.default_user64,
+						width: 64,
+						margin: 10,
 						mode: 'element',
 						listeners: {
 							tap: function (img, evt) {
@@ -51,7 +54,7 @@ Ext.define('B2B.view.User_Profile_Form', {
 													scope: this,
 													ui: 'decline',
 													handler: function(){
-														Ext.getCmp("ProfileImage").setSrc("");
+														Ext.getCmp("ProfileImage").setSrc(HH.default_user64);
 														this.actions.hide();
 													}
 												},

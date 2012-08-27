@@ -15,9 +15,12 @@ Ext.define("B2B.store.Feedback_Ajax", {
 				successProperty: 'response.status.success',
 				totalProperty: 'response.status.count',
 				messageProperty: 'response.status.msg'
-			}
+			},
+			extraParams:{
+                target:''
+            }
 		},
-		autoLoad: true,
+		//autoLoad: true,
 		autosync: true,
 		listeners:{
 			exception:function(proxy, response, orientation){

@@ -6,17 +6,21 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 	xtype: 'friendlistsearchcomponent',
 	id: 'friendlistsearchcomponent',
 	config: {
-		docked: 'top',
-		items: [
-			{
-				
-			}
-		]
+		docked: 'top'
 	},
 	initialize: function(){
 		this.callParent(arguments);
 		
 		var oldValueCount = 0;
+
+    	var searchFriendButton = {
+			xtype: "button",
+			text: i18n.app.BTN_SEARCHFRIEND,
+			ui: 'action',
+			id: 'search_friend_btn',
+			handler: this.onSearchFriendButtonTap,
+			scope: this
+		};
 
 		var searchField = {
 			xtype: 'searchfield',
@@ -74,11 +78,12 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 			docked: 'top',
 			items: [
 				searchField,
+				searchFriendButton
 			]
 		};
 		this.add([toolbar]);
 	},
-	onAddFriendButtonTap: function(){
-		this.fireEvent("addFriendCommand", this);
+	onSearchFriendButtonTap: function(){
+		this.fireEvent("searchFriendCommand", this);
 	}
 });

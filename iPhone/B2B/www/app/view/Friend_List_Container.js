@@ -15,6 +15,16 @@ Ext.define('B2B.view.Friend_List_Container', {
 
     	this.callParent(arguments);
 
+
+        var header = {
+            xtype: 'container',
+            cls: 'header_img',
+            height: 50,
+            width: '100%',
+            docked: 'top',
+            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
+        };
+/*
     	var searchFriendButton = {
 			xtype: "button",
 			text: i18n.app.BTN_SEARCHFRIEND,
@@ -23,7 +33,8 @@ Ext.define('B2B.view.Friend_List_Container', {
 			handler: this.onSearchFriendButtonTap,
 			scope: this
 		};
-
+		*/
+/*
 		var toolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
@@ -35,6 +46,7 @@ Ext.define('B2B.view.Friend_List_Container', {
 				searchFriendButton
 			]
 		};
+		*/
 
 		var friendListSearchComponent = {
 			xtype: 'friendlistsearchcomponent'
@@ -44,19 +56,15 @@ Ext.define('B2B.view.Friend_List_Container', {
 		    xtype: "friendlistcomponent",
 		    store: Ext.getStore("Friends_Local"),
 		    ui: 'round',
-		   // grouped: true,
-		   // indexBar: true,
-		   /*	onItemDisclosure: function(a, b, c, d, e) {
-		   		me.onListItemTap(c);
-		   	}*/
+		    grouped: true,
 		};
 
-		this.add([toolbar, friendListSearchComponent, friendList]);
+		this.add([/*toolbar, */header, friendListSearchComponent, friendList]);
 
-    },
+    }, /*
 	onSearchFriendButtonTap: function(){
 		this.fireEvent("searchFriendCommand", this);
-	}/*,
+	},
 	onListItemTap: function(record){
 		this.fireEvent("viewFriendDetailCommand", this, record);
 	}*/

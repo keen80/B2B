@@ -44,7 +44,7 @@ Ext.define('B2B.view.User_Profile_About', {
                 {
                     xtype: 'panel',
                     html: [
-                        '<div class="profile_left"><img id="profile_avatar" style="height: 100px; width: 100px;" src="http://addressofmyimage.com/image.png" /></div>',
+                        '<img class="avatar_medium" height="48" width="48" src="'+HH.default_user48+'" />',
                         '<div class="profile_right">',
                         '<p id="profile_username"></p>',
                         '<p id="profile_firstname"></p>',

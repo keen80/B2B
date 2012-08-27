@@ -41,73 +41,99 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           	var value = field.getValue();
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 		           	var beerlist = Ext.getCmp("beerlist");
+		           	var splashscreen = Ext.getCmp("_splashbeersearch");
+		           	var beerlistcontainer = Ext.getCmp("beerlistcontainer");
 		           	var infobar = Ext.getCmp("searchinfobar");
 
-		           	if((!value||value < oldValueCount)){
-		           		beerlist.setStore(null);
-		            }
-		            
-		            oldValueCount = value;
+		           /*	if(value > 3){
+		           		 M1
+		           		if(splashscreen){
+			        		beerlistcontainer.remove(splashscreen, true);
+			        		beerlistcontainer.add(
+				        		{
+				        			xtype: 'beerlistcomponent'
+				        		}
+				        	);
+				        	beerlist = Ext.getCmp("beerlist");
+			        	}
+ */
 
-		           	if(value.length > 2){
-		           		beerlist.setStore(null);
-		           		store.clearFilter();
+			           	if((!value||value < oldValueCount)){
+			           		beerlist.setStore(null);
+			            }
+			            
+			            oldValueCount = value;
 
-						var searches = value.split(' '), regexps  = [], i;
+			           	if(value.length > 2){
+			           		beerlist.setStore(null);
+			           		store.clearFilter();
 
-						for (i = 0; i < searches.length; i++) {
-							if (!searches[i]) return;
-							regexps.push(new RegExp(searches[i], 'i'));
-						};
+							var searches = value.split(' '), regexps  = [], i;
 
-						store.filterBy( function(record) {
-		                    var matched = [];
-		                          
-							for (i = 0; i < regexps.length; i++) {
-
-								var search = regexps[i];
-
-								if (record.get('name').match(search) ) matched.push(true);
-								else matched.push(false);
+							for (i = 0; i < searches.length; i++) {
+								if (!searches[i]) return;
+								regexps.push(new RegExp(searches[i], 'i'));
 							};
-							
-							if (regexps.length > 1 && matched.indexOf(false) != -1) {
-								return false;
-							} else {
-								return matched[0];
-							}
-						});
-						var howmany = store.getCount();
 
-						if(howmany > 0){
-							infobar.setHtml(utils.__(i18n.app.HINT_SEARCHRESCHAR, store.getCount()));
-		        			beerlist.setStore(store);
-		        		}else{
-		        			infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
-		        		}
-		           	}else{
-		           		beerlist.setStore(null);
-		           		store.filterBy( function(record) {return false});
-		           	}
-	           		beerlist.setStore(store);
-	           		if(!store.getCount() > 0){
-		           		if(value.length < 3 && value.length > 0 ){
-		           			infobar.setHtml(utils.__(i18n.app.HINT_SEARCH1CHAR, 3 - value.length));
-		           		}else{
-		           			if(value.length > 0) {
-		           				infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
-		           			}else{
-		        				infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
-		           			}
+							store.filterBy( function(record) {
+			                    var matched = [];
+			                          
+								for (i = 0; i < regexps.length; i++) {
+
+									var search = regexps[i];
+
+									if (record.get('name').match(search) ) matched.push(true);
+									else matched.push(false);
+								};
+								
+								if (regexps.length > 1 && matched.indexOf(false) != -1) {
+									return false;
+								} else {
+									return matched[0];
+								}
+							});
+							var howmany = store.getCount();
+
+							if(howmany > 0){
+								infobar.setHtml(utils.__(i18n.app.HINT_SEARCHRESCHAR, store.getCount()));
+			        			beerlist.setStore(store);
+			        		}else{
+			        			infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
+			        		}
+			           	}else{
+			           		beerlist.setStore(null);
+			           		store.filterBy( function(record) {return false});
+			           	}
+		           		beerlist.setStore(store);
+		           		if(!store.getCount() > 0){
+			           		if(value.length < 3 && value.length > 0 ){
+			           			infobar.setHtml(utils.__(i18n.app.HINT_SEARCH1CHAR, 3 - value.length));
+			           		}else{
+			           			if(value.length > 0) {
+			           				infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
+			           			}else{
+			        				infobar.setHtml(i18n.app.HINT_SEARCH2CHAR);
+			           			}
+			           		}
 		           		}
-	           		}
 
-	           		if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
-		                e.stopEvent();
-		                fld.element.dom.blur();
-		                window.scrollTo(0,0);
-		                var activeItem = beerlist.getActiveItem();
-		            }
+		           		if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
+			                e.stopEvent();
+			                fld.element.dom.blur();
+			                window.scrollTo(0,0);
+			                var activeItem = beerlist.getActiveItem();
+			            }
+			      	/*  }else{
+			        
+			        	if(beerlist){
+			        		beerlistcontainer.remove(beerlist, true);
+			        		beerlistcontainer.add(
+				        		{
+				        			xtype: '_splashbeersearch'
+				        		}
+				        	);
+			        	}
+			        }*/
 	           }
             }
 		};

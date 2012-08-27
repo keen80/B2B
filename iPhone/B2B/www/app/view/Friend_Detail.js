@@ -35,7 +35,15 @@ Ext.define('B2B.view.Friend_Detail', {
 			]
 		};
 
-		this.add([toolbar]);
+		var deleteProfileButton = {
+            text: i18n.app.BTN_REMOVE,
+            ui: 'action',
+            id: 'delete_profile_btn',
+            handler: this.onDeleteProfileButtonTap,
+            scope: this
+        };
+
+		this.add([toolbar, deleteProfileButton]);
 
 		var html = this.getStringHTMLFromValues(this.jsonData.data);
 		this.setHtml([html].join(""));
@@ -43,10 +51,10 @@ Ext.define('B2B.view.Friend_Detail', {
 	getStringHTMLFromValues: function(info){
 		var value = '';
 
-		if (info.avatar !== null && info.avatar !== '') {
-		value += '<img id="friend_thumbnail" src="' + info.avatar +'" /><hr />';
+		if (_.isEmpty(info.image)) {
+			value += '<img class="avatar_small" src="' + HH.default_user64 +'" width="200" height="200" />';
 		}
-
+		value += '<div class="profile-detail">';
 		value += '<p>' + i18n.app.HTML_NAME + ': <b>' + info.firstName + '</b></p>';
 		value += '<p>' + i18n.app.HTML_SURNAME + ': <b>' + info.lastName + '</b></p>';
 		value += '<p>' + i18n.app.HTML_ALIAS + ': <b>' + info.displayName + '</b></p>';
@@ -56,10 +64,13 @@ Ext.define('B2B.view.Friend_Detail', {
 		value += '<p>' + i18n.app.HTML_NFRIENDS + ': <b>' + info.counter_friends + '</b></p>';
 		value += '<p>' + i18n.app.HTML_CHECKINS + ': <b>' + info.counter_checkIns + '</b></p>';
 		value += '<p>' + i18n.app.HTML_BADGES + ': <b>' + info.counter_badges + '</b></p>';
-
+		value += '</div>';
 		return value;
 	},
 	onFriendDetailBackButtonTap: function(){
 		this.fireEvent("backFriendDetailCommand", this);
+	},
+	onFriendRemoveBackButtonTap: function(){
+		this.fireEvent("removeFriendDetailCommand", this);
 	}
 });

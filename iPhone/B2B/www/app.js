@@ -4,7 +4,6 @@ Ext.Loader.setPath('Ext', './sdk/src');
 
 Ext.application({
 	"name": 'B2B',
-	"APP_NAME": "Meet Beer",
 	requires: [
 		'Ext.MessageBox'
 	],
@@ -12,7 +11,7 @@ Ext.application({
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback'],
 
 	controllers: [
-				'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Camera'
+		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera'
 	],
 
 	stores: [
@@ -20,11 +19,14 @@ Ext.application({
 		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'/*, 'Beers_Single_Ajax'*/, 'Drinks_Local', 'Feedback_Ajax'
 	],
 
-	views: [ '_App', '_Login', '_App_Slider', '_App_Container',
+	views: [
+		'_App', '_Login', '_App_Slider', '_App_Container',
+		'_SplashBeerSearch',
 		'Activity_List_Container', 'Activity_List', 'Activity_Detail', 'Activity_User',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Drink_AroundMe',
 		'Place_List', 'Feedback_Form',
+		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
 		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
 		'Notification_Container', 'Notification_List',

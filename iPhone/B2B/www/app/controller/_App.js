@@ -13,9 +13,6 @@ Ext.define("B2B.controller._App", {
 	onInitialize: function(){
 
 	},
-	onSyncProfileStore: function(){
-
-	},
 	init: function(){
 		this.callParent(arguments);
 	}

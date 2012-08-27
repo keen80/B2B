@@ -19,7 +19,7 @@ Ext.define("B2B.controller.Privacy", {
 			Ext.getStore("Activities_Ajax").removeAll();
 			Ext.getStore("Activities_Local").removeAll();
 			Ext.getStore("Beers_Ajax").removeAll();
-			Ext.getStore("Beers_Single_Ajax").removeAll();
+			//Ext.getStore("Beers_Single_Ajax").removeAll();
 			Ext.getStore("Friends_Ajax").removeAll();
 			Ext.getStore("Friends_Local").removeAll();
 			Ext.getStore("Notifications_Ajax").removeAll();

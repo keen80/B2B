@@ -8,24 +8,30 @@ Ext.define('B2B.view.Feedback_Container', {
 	initialize: function(){
 		this.callParent(arguments);
 
-/*		var feedbackForm = {
-			xtype: "button",
-			text: i18n.app.BTN_SEARCHFRIEND,
-			ui: 'action',
-			id: 'search_friend_btn',
-			handler: this.onSearchFriendButtonTap,
-			scope: this
-		};
+		if(this.target){
 
-		};
+			var store = Ext.getStore("Feedback_Ajax");
+			store.getProxy().setExtraParam(target, this.target); 
+			
+			var feedbacklist = {
+				xtype: "feedbacklistcomponent",
+	            store: store,
+	            draggable: false,
+	            height: 100
+	        };
 
-		this.add([toolbar, friendListSearchComponent, friendList]);*/
+			var feedbackform = {
+				xtype: 'feedbackform'
+			};
+			
+			this.add([feedbacklist, feedbackform]);
 
-	},
-	onSearchFriendButtonTap: function(){
-		this.fireEvent("searchFriendCommand", this);
-	}/*,
-	onListItemTap: function(record){
-		this.fireEvent("viewFriendDetailCommand", this, record);
-	}*/
+		}else{
+			var nocomment = [
+				'<div>'+i18n.app.TEXT_NOFEEDBACKFOUND+'</div>'
+			].join("");
+			this.add([nocomment]);
+		}
+        
+	}
 });

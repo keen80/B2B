@@ -1,3 +1,59 @@
+/* CUSTOM */
+/* layout */
+#slider_logo{ padding-top: 8px}
+.loading_div{
+
+}
+
+/* Small List */
+.small-list{
+    min-height: 30px;
+}
+
+.small-list-text, .medium-list-text{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+}
+.small-list-subtext{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+    color: #AAA;
+    font-size: 12px;
+}
+.medium-list-text{
+    font-size: 16px;
+}
+
+.avatar_small, .avatar_medium{
+    float: left;
+    border: 2px solid #EEE; 
+}
+.lastdrink{
+    padding: 4px;
+}
+
+.lastdrink img {
+    margin-top: 6px;
+}
+
+.small-list-when{
+    text-align: right;
+    font-size: 11px;
+    color: #AAA;
+}
+.profile-detail{
+    position: absolute;
+    top: 180px;
+    background: white;
+    border: 2px solid;
+    left: 60px;
+    padding: 10px;
+}
+
+
+
 /* --- IOS5 TOGGLE --------------- */
 .ios5_toggle .x-toggle {
     float:right;
