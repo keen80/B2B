@@ -29,7 +29,7 @@ Ext.define('B2B.view.Drink_AroundMe', {
             scaleControl: false,
             streetViewControl: false,
             panControl: false,
-            draggable: true
+            draggable: false
         },
         listeners: {
             maprender: function(me, map){

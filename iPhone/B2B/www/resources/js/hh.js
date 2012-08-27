@@ -12,7 +12,7 @@ var HH = {
 	map: {
 		marker: "resources/img/pin_small.png",
 		zoomLevel: 18,
-		zoomLevel: 15
+		zoomLevel2: 15
 	},
 	log: function(what, isError) {
 		if ( this.DEBUG && !isError ) {
