@@ -47,16 +47,7 @@
  * This is main kick off after the app inits, the views and Settings are setup here. (preferred - iOS4 and up)
  */
 -(BOOL) application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
-{    
-    NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
-    NSString* invokeString = nil;
-    
-    if (url && [url isKindOfClass:[NSURL class]])
-	{
-        invokeString = [url absoluteString];
-		NSLog(@"B2B launchOptions = %@", url);
-    }    
-    
+{
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
     self.window.autoresizesSubviews = YES;
@@ -67,7 +58,6 @@
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
     self.viewController.startPage = @"index.html";
-    self.viewController.invokeString = invokeString;
     self.viewController.view.frame = viewBounds;
     
     // check whether the current orientation is supported: if it is, keep it, rather than forcing a rotation

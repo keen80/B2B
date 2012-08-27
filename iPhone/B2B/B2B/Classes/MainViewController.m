@@ -21,14 +21,6 @@
 
 -(void) webViewDidFinishLoad:(UIWebView*) theWebView
 {
-     // only valid if ___PROJECTNAME__-Info.plist specifies a protocol to handle
-     if (self.invokeString)
-     {
-        // this is passed before the deviceready event is fired, so you can access it in js when you receive deviceready
-        NSString* jsString = [NSString stringWithFormat:@"var invokeString = \"%@\";", self.invokeString];
-        [theWebView stringByEvaluatingJavaScriptFromString:jsString];
-     }
-     
      // Black base color for background matches the native apps
      theWebView.backgroundColor = [UIColor blackColor];
 
