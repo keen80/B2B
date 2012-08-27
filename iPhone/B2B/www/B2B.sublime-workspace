@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ur",
+				"url(image-url.gif)"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
@@ -220,50 +228,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/view/Feedback_Container.js",
+			"file": "app/view/Friend_List_Container.js",
 			"settings":
 			{
-				"buffer_size": 762,
+				"buffer_size": 1471,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/store/Feedback_Ajax.js",
+			"file": "app/view/Place_List.js",
 			"settings":
 			{
-				"buffer_size": 1021,
+				"buffer_size": 1514,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/Feedback_List.js",
+			"file": "app/view/Activity_List.js",
 			"settings":
 			{
-				"buffer_size": 1742,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "packager.json",
-			"settings":
-			{
-				"buffer_size": 3685,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sdk/command/src/module/generate/App.js",
-			"settings":
-			{
-				"buffer_size": 3682,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/sass/app.scss",
-			"settings":
-			{
-				"buffer_size": 3255,
+				"buffer_size": 1749,
 				"line_ending": "Windows"
 			}
 		},
@@ -271,55 +255,39 @@
 			"file": "app/view/_App_Slider.js",
 			"settings":
 			{
-				"buffer_size": 3104,
+				"buffer_size": 3140,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/_App_Container.js",
+			"file": "app/view/Place_Detail.js",
 			"settings":
 			{
-				"buffer_size": 1939,
+				"buffer_size": 2980,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/Beer_List_Container.js",
+			"file": "app/controller/Places.js",
 			"settings":
 			{
-				"buffer_size": 1449,
+				"buffer_size": 870,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/Activity_List_Container.js",
+			"file": "app/store/Drinks_Ajax.js",
 			"settings":
 			{
-				"buffer_size": 1591,
+				"buffer_size": 2267,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/Friend_List_Container.js",
+			"file": "app/view/Drink_AroundMe.js",
 			"settings":
 			{
-				"buffer_size": 1469,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "i18n/B2B-en-US.js",
-			"settings":
-			{
-				"buffer_size": 21473,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/js/hh.js",
-			"settings":
-			{
-				"buffer_size": 5572,
+				"buffer_size": 3798,
 				"line_ending": "Windows"
 			}
 		},
@@ -327,23 +295,15 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2952,
+				"buffer_size": 2951,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "mock_feedbacklist.json",
+			"file": "resources/js/hh.js",
 			"settings":
 			{
-				"buffer_size": 397,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Feedbacks.js",
-			"settings":
-			{
-				"buffer_size": 250,
+				"buffer_size": 5590,
 				"line_ending": "Windows"
 			}
 		},
@@ -351,15 +311,31 @@
 			"file": "resources/css/hh.css",
 			"settings":
 			{
-				"buffer_size": 9455,
+				"buffer_size": 9695,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "i18n/B2B-it.js",
+			"file": "i18n/B2B-en-US.js",
 			"settings":
 			{
-				"buffer_size": 21473,
+				"buffer_size": 22085,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 3256,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2382,
 				"line_ending": "Windows"
 			}
 		}
@@ -400,35 +376,59 @@
 	},
 	"file_history":
 	[
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Drink.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinklist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Place.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_placelist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_User_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/android.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/apple.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/bb6.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/stylesheets/sencha-touch/default/widgets/_toolbar.scss",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/sencha-touch.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_feedbacklist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-it.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Feedback_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/packager.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/command/src/module/generate/App.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/templates/project/sencha-touch.scss",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Drink.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Notification.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_User_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Activity.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_activityuser.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinkList.json",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_placelist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_friendlist.json",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_SplashBeerSearch.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_activitylist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
@@ -438,7 +438,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_notificationlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Friends.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_user.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Feedback.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/User.js",
@@ -456,13 +455,8 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_AboutUs.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/bufferedlist/BufferedList.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Whatsnew.js",
@@ -472,23 +466,19 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_Add_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-it.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Notifications.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_User.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Login.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/BeerSingle.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Camera.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Activities.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_Finder.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Camera_Picker.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Drinks.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Preferences.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Privacy_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Place.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Friend.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
@@ -499,7 +489,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Profiles.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/user_login.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/starrating/StarRating.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/app-config.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/src/dataview/DataView.js",
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/ux/slidenavigation/SlideNavigation.js",
@@ -514,20 +503,7 @@
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/Notifications.js",
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Friend_List_Container.js",
 		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/Friend.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/ActivityStreams.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/ActivityStreamList.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_activitylist.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/model/ActivityStream.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/controller/Preferences.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Preferences_Form.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/Drink_AroundMe.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/view/User_Profile_Container.js",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_user.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_friendlist.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_beerlist.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/mock_drinkList.json",
-		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/i18n/B2B-en-US.js"
+		"/C/Users/HC/Dropbox/Projects/Antreem/Beer2Beer/B2B/app/store/ActivityStreams.js"
 	],
 	"find":
 	{
@@ -547,6 +523,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"log",
+			"console",
+			" console.log",
+			" console.log(",
+			".x-button",
+			"lastdrink",
+			"x-title",
 			"pull",
 			"sencha-toolbar-forms",
 			"app.scss",
@@ -667,17 +650,10 @@
 			"console.log",
 			"Ext.ux.touch.Rating",
 			"Event AddBeer",
-			";\n",
-			"{\n            \"path\": \"resources/css/app.css\",\n            \"update\": \"delta\"\n        }",
-			"getCountryFromCode",
-			"__(",
-			"__",
-			"}\n",
-			"userprofileaboutpanel",
-			"AboutTitlebar"
+			";\n"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
@@ -763,56 +739,54 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/view/Feedback_Container.js",
+					"file": "app/view/Friend_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 762,
+						"buffer_size": 1471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								418,
-								418
+								1136,
+								1136
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/store/Feedback_Ajax.js",
+					"file": "app/view/Place_List.js",
 					"settings":
 					{
-						"buffer_size": 1021,
+						"buffer_size": 1514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								448,
-								448
+								1514,
+								1514
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -822,18 +796,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/view/Feedback_List.js",
+					"file": "app/view/Activity_List.js",
 					"settings":
 					{
-						"buffer_size": 1742,
+						"buffer_size": 1749,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1083,
-								1083
+								1056,
+								1056
 							]
 						],
 						"settings":
@@ -850,45 +824,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "packager.json",
+					"file": "app/view/_App_Slider.js",
 					"settings":
 					{
-						"buffer_size": 3685,
+						"buffer_size": 3140,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2272,
-								2272
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 682.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sdk/command/src/module/generate/App.js",
-					"settings":
-					{
-						"buffer_size": 3682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3336,
-								3336
+								2399,
+								2399
 							]
 						],
 						"settings":
@@ -898,25 +845,250 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 467.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "resources/sass/app.scss",
+					"buffer": 4,
+					"file": "app/view/Place_Detail.js",
 					"settings":
 					{
-						"buffer_size": 3255,
+						"buffer_size": 2980,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18,
-								18
+								2383,
+								2383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 421.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controller/Places.js",
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/store/Drinks_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 2267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1712,
+								1712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/view/Drink_AroundMe.js",
+					"settings":
+					{
+						"buffer_size": 3798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1333,
+								1333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 239.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 2951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1084
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/js/hh.js",
+					"settings":
+					{
+						"buffer_size": 5590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								764,
+								764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1061.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "resources/css/hh.css",
+					"settings":
+					{
+						"buffer_size": 9695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9449,
+								9449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "i18n/B2B-en-US.js",
+					"settings":
+					{
+						"buffer_size": 22085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "resources/sass/app.scss",
+					"settings":
+					{
+						"buffer_size": 3256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								616,
+								616
 							]
 						],
 						"settings":
@@ -930,334 +1102,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/view/_App_Slider.js",
-					"settings":
-					{
-						"buffer_size": 3104,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2554,
-								2554
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 884.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/view/_App_Container.js",
-					"settings":
-					{
-						"buffer_size": 1939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								919,
-								919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 613.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/view/Beer_List_Container.js",
-					"settings":
-					{
-						"buffer_size": 1449,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								488,
-								488
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 32.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/view/Activity_List_Container.js",
-					"settings":
-					{
-						"buffer_size": 1591,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								937,
-								937
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 346.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/view/Friend_List_Container.js",
-					"settings":
-					{
-						"buffer_size": 1469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								501,
-								501
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 302.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 5,
-			"sheets":
-			[
-				{
-					"buffer": 11,
-					"file": "i18n/B2B-en-US.js",
-					"settings":
-					{
-						"buffer_size": 21473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								21473
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 547.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "resources/js/hh.js",
-					"settings":
-					{
-						"buffer_size": 5572,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207,
-								221
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 13,
-					"file": "app.js",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2952,
+						"buffer_size": 2382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								454
+								1023,
+								1023
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 135.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "mock_feedbacklist.json",
-					"settings":
-					{
-						"buffer_size": 397,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								238,
-								238
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/controller/Feedbacks.js",
-					"settings":
-					{
-						"buffer_size": 250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								250,
-								250
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "resources/css/hh.css",
-					"settings":
-					{
-						"buffer_size": 9455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								553,
-								553
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "i18n/B2B-it.js",
-					"settings":
-					{
-						"buffer_size": 21473,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21473,
-								21473
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7139.0,
+						"translation.y": 429.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1293,7 +1159,7 @@
 		"cols":
 		[
 			0.0,
-			0.541072844904,
+			0.574274425932,
 			1.0
 		],
 		"rows":
@@ -1328,6 +1194,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 273.0,
+	"side_bar_width": 272.0,
 	"status_bar_visible": true
 }
