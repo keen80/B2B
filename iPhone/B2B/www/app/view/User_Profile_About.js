@@ -107,13 +107,13 @@ Ext.define('B2B.view.User_Profile_About', {
 		this.fireEvent("editProfileCommand", this);
 	},
 	onBadgesButtonTap: function() {
-
+		Ext.Msg.alert("To Be Implemented");
 	},
 	onDrinkListButtonTap: function() {
-
+		Ext.Msg.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
-
+		Ext.Msg.alert("To Be Implemented");
 	},
 	refreshProfileData: function() {
 		this.fireEvent("reloadProfileCommand", this);
