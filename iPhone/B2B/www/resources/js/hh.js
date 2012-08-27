@@ -11,7 +11,8 @@ var HH = {
 	"beergroup": 2,
 	map: {
 		marker: "resources/img/pin_small.png",
-		zoomLevel: 18
+		zoomLevel: 18,
+		zoomLevel: 15
 	},
 	log: function(what, isError) {
 	    if ( this.DEBUG && !isError ) {

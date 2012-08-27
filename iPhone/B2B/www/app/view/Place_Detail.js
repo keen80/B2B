@@ -38,12 +38,12 @@ Ext.define('B2B.view.Place_Detail', {
 
       var mapPanel = {
         xtype: 'map',
-        id: 'mapDrink',
-        useCurrentLocation: true, 
+        id: 'mapMiniDrink',
+        useCurrentLocation: false, 
         height: 100,
         width: 100,                                    
         mapOptions: {
-            zoom: HH.map.zoomLevel,
+            zoom: HH.map.zoomLevel2,
             mapTypeId : google.maps.MapTypeId.ROADMAP,
             navigationControl: false,
             zoomControl: false,
@@ -51,13 +51,13 @@ Ext.define('B2B.view.Place_Detail', {
             scaleControl: false,
             streetViewControl: false,
             panControl: false,
-            draggable: true
+            draggable: false
         },
         listeners: {
             maprender: function(me, map){
-              map.markers = [];
-               var position = new google.maps.LatLng(5.978132,116.072617);
-               setTimeout(function() {
+                map.markers = [];
+                var position = new google.maps.LatLng(5.978132,116.072617);
+                setTimeout(function() {
                     map.panTo(position);
                 }, 1000);
             },
@@ -72,8 +72,6 @@ Ext.define('B2B.view.Place_Detail', {
         }
       };
 
-
-
 		var toolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
@@ -84,20 +82,18 @@ Ext.define('B2B.view.Place_Detail', {
 				reportBeerButton*/
 			]
 		};
-		this.add([toolbar]);
+		this.add([toolbar, mapPanel]);
 		
 		var html = this.getStringHTMLFromValues(this.jsonData);
 		this.setHtml([html].join(""));
 	},
 	getStringHTMLFromValues: function(info){
-		var value = '';
-		console.log(value);
 		if (_.isEmpty(info.image)) {
 		   value += '<img class="avatar_medium" src="' + info.image +'" />';
 		}else{
 			value += '<img class="avatar_medium" src="' + HH.default_place32 +'" />';
 		}
-
+		/*
 		value += '<p>' + i18n.app.LABEL_BEERNAME + ': <span>' + _.titleize(info.name) + '</span></p>';
 		if(info.brewery) value+= '<p>' + i18n.app.LABEL_BEERBREWERY + ': <span>' + _.titleize(info.brewery) + '</span></p>';
 		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(parseInt(info.beerstyle)) + '</span></p>';
