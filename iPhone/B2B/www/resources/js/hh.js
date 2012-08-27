@@ -15,11 +15,11 @@ var HH = {
 		zoomLevel: 15
 	},
 	log: function(what, isError) {
-	    if ( this.DEBUG && !isError ) {
-	        console.log(what);
-	    } else if ( this.DEBUG && Error){
-	    	console.error(what);
-	    }
+		if ( this.DEBUG && !isError ) {
+			console.log(what);
+		} else if ( this.DEBUG && Error){
+			console.error(what);
+		}
 	}
 }
 
@@ -41,37 +41,37 @@ var goingTo = {
 		var storeNotification = Ext.getStore('Notifications_Local');
 
 		var profile = storeProfile.first();
-        
-        this.setupDisplayName(profile);
-        this.setupPreferences(profile);
-        
+
+		this.setupDisplayName(profile);
+		this.setupPreferences(profile);
+
 		storeFriend.load();
 		storeNotification.load();
 
-        /*if(toBeer || storeBeer.getCount() < 1)
-        	console.log("BeerList is empty or need to be refreshed");
-        	Ext.getStore('Beers_Ajax').load(); */
-        if(toFriend || storeFriend.getCount() < 1)
-        	HH.log("---> Step: Store_Friend is empty or need to be refreshed");
-        	Ext.getStore('Friends_Ajax').load();
-        if(toNotification || storeNotification.getCount() < 1)
-        	HH.log("---> Step: Store.Notification is empty or need to be refreshed");
-        	Ext.getStore('Notifications_Ajax').load();
+		/*if(toBeer || storeBeer.getCount() < 1)
+			console.log("BeerList is empty or need to be refreshed");
+			Ext.getStore('Beers_Ajax').load(); */
+		if(toFriend || storeFriend.getCount() < 1)
+			HH.log("---> Step: Store_Friend is empty or need to be refreshed");
+			Ext.getStore('Friends_Ajax').load();
+		if(toNotification || storeNotification.getCount() < 1)
+			HH.log("---> Step: Store.Notification is empty or need to be refreshed");
+			Ext.getStore('Notifications_Ajax').load();
 	},
 	setupDisplayName: function(profile){
 		HH.log("---> Step: Setup DisplayName thru app");
 		var displayName = utils.getDisplayName(profile.data);
 		Ext.get("profile_username").setHtml(profile.data.username);
-        Ext.getCmp('AboutTitlebar').setTitle(displayName);
-        Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+		Ext.getCmp('AboutTitlebar').setTitle(displayName);
+		Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
 	},
 	setupPreferences: function(profile){
 		HH.log("---> Step: Setup Preferences");
 		var preferencesForm = Ext.getCmp("userpreferencesform");
-        preferencesForm.reset();
-        preferencesForm.setRecord(profile);
-        B2B.app.getController('Preferences').onChangeTwitter(null, profile.data.shareTwitter);
-        B2B.app.getController('Preferences').onChangeFacebook(null, profile.data.shareFacebook);
+		preferencesForm.reset();
+		preferencesForm.setRecord(profile);
+		B2B.app.getController('Preferences').onChangeTwitter(null, profile.data.shareTwitter);
+		B2B.app.getController('Preferences').onChangeFacebook(null, profile.data.shareFacebook);
 	}
 };
 
@@ -79,11 +79,11 @@ var goingTo = {
 var utils = {
 	/* translate f() a la wordpress */
 	__:	function(CONST_String){
-	    if ( _.isUndefined(CONST_String)) CONST_String = "";
-	    for (var i = arguments.length - 1; i >= 1; i--) {
-	    	CONST_String = CONST_String.replace("%"+i, arguments[i]);
-	    };
-	    return CONST_String;
+		if ( _.isUndefined(CONST_String)) CONST_String = "";
+		for (var i = arguments.length - 1; i >= 1; i--) {
+			CONST_String = CONST_String.replace("%"+i, arguments[i]);
+		};
+		return CONST_String;
 	},
 	getActivityString: function(values){
 		var str;

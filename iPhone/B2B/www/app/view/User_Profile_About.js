@@ -9,7 +9,6 @@ Ext.define('B2B.view.User_Profile_About', {
 		layout: 'vbox'
 	},
 	initialize: function(){
-
 		this.callParent(arguments);
 
 		var editProfileButton = {
@@ -41,10 +40,10 @@ Ext.define('B2B.view.User_Profile_About', {
 			text: i18n.app.BTN_PROFILE,
 			badgeText: i18n.app.BTN_PROFILE,
 			flex: 1,
-			margin: '20 20 10 20',
 			html: [
-				'<img class="avatar_medium" height="48" width="48" src="'+HH.default_user48+'" /><div class="profile_right"><p id="profile_username"></p></div>'
-			],
+				'<img class="avatar_medium" height="48" width="48" src="'+HH.default_user48+'" />',
+				'<div class="profile_right"><p id="profile_username"></p></div>'
+			].join(""),
 			handler: this.onProfileButtonTap,
 			scope: this
 		},
@@ -54,7 +53,6 @@ Ext.define('B2B.view.User_Profile_About', {
 			ui: 'action',
 			text: i18n.app.BTN_BADGES,
 			flex: 1,
-			margin: '20 20 10 20',
 			handler: this.onBadgesButtonTap,
 			scope: this
 		},
@@ -64,7 +62,6 @@ Ext.define('B2B.view.User_Profile_About', {
 			ui: 'action',
 			text: i18n.app.BTN_DRINKLIST,
 			flex: 1,
-			margin: '10 20 40 20',
 			handler: this.onDrinkListButtonTap,
 			scope: this
 		},
@@ -74,28 +71,29 @@ Ext.define('B2B.view.User_Profile_About', {
 			ui: 'action',
 			text: i18n.app.BTN_MYACTIVITY,
 			flex: 1,
-			margin: '10 20 40 20',
 			handler: this.onMyActivityButtonTap,
 			scope: this
 		},
 		topButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
+			padding: '20 0 10 0',
 			layout: {
 				type: 'hbox'
 			},
 			items: [
-				profileButton,
-				badgesButton
+				profileButton
 			]
 		},
 		bottomButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
+			padding: '0 0 30 0',
 			layout: {
 				type: 'hbox'
 			},
 			items: [
+				badgesButton,
 				drinkListButton,
 				myActivityButton
 			]
@@ -106,7 +104,7 @@ Ext.define('B2B.view.User_Profile_About', {
 		this.fireEvent("editProfileCommand", this);
 	},
 	onProfileButtonTap: function() {
-
+		this.fireEvent("editProfileCommand", this);
 	},
 	onBadgesButtonTap: function() {
 
