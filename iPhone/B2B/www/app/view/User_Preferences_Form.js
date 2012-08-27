@@ -51,7 +51,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 					label: i18n.app.FORM_NOTIFICATIONENABLE,
 					listeners: {
 				        change: function (slider, thumb, newValue, oldValue) {
-				           console.log("Notification Toggle");
+				           HH.log("Notification Toggle");
 				        }
 				    } 
 				}

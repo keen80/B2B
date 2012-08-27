@@ -7,9 +7,11 @@ Ext.define("B2B.model.Place", {
 		fields: [
 			{ name: 'idPlace', type: 'string' },
 			{ name: 'placeName', type: 'string' },
+			{ name: 'image', type: 'string' },
 			{ name: 'lat', type: 'string' },
 			{ name: 'lng', type: 'string' },
 			{ name: 'url', type: 'string' },
+			{ name: 'drinkedIn', type: 'int' },
 			{ name: 'category', type: 'string' },
 		],
 		validations: [

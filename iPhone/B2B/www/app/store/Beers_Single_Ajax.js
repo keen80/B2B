@@ -28,7 +28,7 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Beers Store Callback");
+                HH.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
                 HH.log("* Loaded: Store.Beer_Single_Ajax");

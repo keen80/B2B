@@ -56,7 +56,7 @@ Ext.define('B2B.view.Friend_List_Container', {
 		    xtype: "friendlistcomponent",
 		    store: Ext.getStore("Friends_Local"),
 		    ui: 'round',
-		    grouped: true,
+		    //grouped: true,
 		};
 
 		this.add([/*toolbar, */header, friendListSearchComponent, friendList]);

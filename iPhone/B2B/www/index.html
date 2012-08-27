@@ -55,7 +55,15 @@
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script id="underscore" type="text/javascript" src="resources/js/underscore-min.js"></script>
 	<script id="underscor_string" type="text/javascript" src="resources/js/underscore_string-min.js"></script>
-	<script type="text/javascript"> _.mixin(_.str.exports()); </script>
+	<script type="text/javascript">
+		_.mixin(_.str.exports());
+		google.maps.Map.prototype.clearMarkers = function() {
+		    for(var i=0; i < this.markers.length; i++){
+		        this.markers[i].setMap(null);
+		    }
+		    this.markers = new Array();
+		};
+	</script>
 	<script id="hh-js" type="text/javascript" src="resources/js/hh.js"></script>
 	<!--script id="moment-js" type="text/javascript" src="resources/js/moment.min.js"></script>-->
 	<script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>

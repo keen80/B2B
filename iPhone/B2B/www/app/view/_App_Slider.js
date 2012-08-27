@@ -47,7 +47,7 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'titlebar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list',
+                    iconCls: 'list slidebutton',
                     ui: 'action'
                 },
                 items: [
@@ -63,7 +63,7 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list',
+                    iconCls: 'list slidebutton',
                     ui: 'action'
                 },
                 items: [
@@ -95,7 +95,7 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list',
+                    iconCls: 'list slidebutton',
                     ui: 'action'
                 },
                 items: [

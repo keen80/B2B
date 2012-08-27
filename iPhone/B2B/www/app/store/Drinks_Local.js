@@ -15,7 +15,7 @@ Ext.define("B2B.store.Drinks_Local", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Beers Store Callback");
+                HH.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
  

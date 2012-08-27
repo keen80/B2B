@@ -1,4 +1,10 @@
 /* CUSTOM */
+/* Typo */
+strong{
+    font-weight: bold;
+    color: #69B;
+}
+
 /* layout */
 #slider_logo{ padding-top: 8px}
 .loading_div{
@@ -38,10 +44,15 @@
     margin-top: 6px;
 }
 
-.small-list-when{
+.small-list-when, .small-list-drinkedin{
     text-align: right;
     font-size: 11px;
     color: #AAA;
+}
+
+..small-list-drinkedin {
+    padding-left: 20px;
+    background: url(image-url.gif);
 }
 .profile-detail{
     position: absolute;
@@ -52,7 +63,10 @@
     padding: 10px;
 }
 
-
+.footer_img{
+    margin: auto;
+    display: block;
+}
 
 /* --- IOS5 TOGGLE --------------- */
 .ios5_toggle .x-toggle {

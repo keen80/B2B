@@ -24,7 +24,7 @@ Ext.define("B2B.store.Friends_Ajax", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Friends Store Callback");
+                HH.log("Friends Store Callback");
             },
             load:function(el,records, successful){ 
                 HH.log("* Loaded: Store.Friends_Ajax, copying to Local");

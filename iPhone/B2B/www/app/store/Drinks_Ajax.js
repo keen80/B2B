@@ -25,7 +25,7 @@ Ext.define("B2B.store.Drinks_Ajax", {
                 Ext.Msg.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Beers Store Callback");
+                HH.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
                 HH.log("* Loaded: Store.Drinks_Ajax, copying to Local");
@@ -38,7 +38,7 @@ Ext.define("B2B.store.Drinks_Ajax", {
                     '<div class="lastdrink">',
                     '<img class="avatar_medium" src="'+image+'" width="48" height="48" >',
                     '<div class="small-list-when"> 2 min fa</div>',
-                    '<div class="medium-list-text">Your lastest drink was a '+userdata.data.beerName+', at '+userdata.data.placeName+'</div>',
+                    '<div class="medium-list-text">Your lastest drink was a <strong>'+userdata.data.beerName+'</strong>, at <strong>'+userdata.data.placeName+'</strong></div>',
                     '</div>'
                     ].join("")
                 );

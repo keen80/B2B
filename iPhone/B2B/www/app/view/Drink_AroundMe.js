@@ -32,12 +32,16 @@ Ext.define('B2B.view.Drink_AroundMe', {
             draggable: true
         },
         listeners: {
-            maprender: function(comp, map){
-                new google.maps.Marker({
+            maprender: function(me, map){
+              map.markers = [];
+            },
+            centerchange: function(me, map){
+              map.clearMarkers();
+              map.markers.push(new google.maps.Marker({
                     position: new google.maps.LatLng(this._geo.getLatitude(), this._geo.getLongitude()),
                     map: map,
                     icon: HH.map.marker
-                });
+              }));
             }
         }
       };
@@ -106,8 +110,8 @@ geo.updateLocation();
       };
 
       var squareLogo ={
-        xtype: 'image',
-        src: 'rosurces/img/poweredByFoursquare_gray.png'
+        xtype: 'container',
+        html: '<img class="footer_img" src="resources/img/poweredByFoursquare_footer.png" width="99%">'
       }
 
       var verticalBox = {

@@ -21,7 +21,7 @@ Ext.define('B2B.view.Activity_List', {
             	getImageURL: function(values){
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.image)){
-                         str += 'resources/img/default/blank_avatar_32.png';
+                         str += HH.default_place32;
                      }else{
                         str+=values.image;
                      }
