@@ -1,8 +1,8 @@
 /* CUSTOM */
 /* Typo */
 strong{
-    font-weight: bold;
-    color: #69B;
+	font-weight: bold;
+	color: #69B;
 }
 
 /* layout */
@@ -44,22 +44,15 @@ strong{
 	margin-top: 6px;
 }
 
-<<<<<<< HEAD
 .small-list-when, .small-list-drinkedin{
-    text-align: right;
-    font-size: 11px;
-    color: #AAA;
-=======
-.small-list-when{
 	text-align: right;
 	font-size: 11px;
 	color: #AAA;
->>>>>>> Cambiati i default.png e le icone. Cambiato stile dei bottoni in about.
 }
 
-..small-list-drinkedin {
-    padding-left: 20px;
-    background: url(image-url.gif);
+.small-list-drinkedin {
+	padding-left: 20px;
+	background: url(image-url.gif);
 }
 .profile-detail{
 	position: absolute;
@@ -71,8 +64,8 @@ strong{
 }
 
 .footer_img{
-    margin: auto;
-    display: block;
+	margin: auto;
+	display: block;
 }
 
 /* --- IOS5 TOGGLE --------------- */
@@ -106,8 +99,8 @@ strong{
 
 .ios5_toggle .x-toggle-on {
 	background-color: #369aee;
-	 background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,  from(#007fea), to(#6EAFE6));
-	 -webkit-box-shadow:  inset .4em .9em .1em 0 rgba(0,0,0,0.05), inset .1em .1em .3em 0 rgba(0,0,0,0.4);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,  from(#007fea), to(#6EAFE6));
+	-webkit-box-shadow:  inset .4em .9em .1em 0 rgba(0,0,0,0.05), inset .1em .1em .3em 0 rgba(0,0,0,0.4);
 	box-shadow: inset .4em .9em .1em 0 rgba(0,0,0,0.1), inset .1em .1em .3em 0 rgba(0,0,0,0.4);
 }
 
