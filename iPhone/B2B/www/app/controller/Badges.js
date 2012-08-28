@@ -39,7 +39,8 @@ Ext.define("B2B.controller.Badges", {
 
 		if (model.data.active) {
 			this.getApp().push({
-				xtype: "badgedetailpanel"
+				xtype: "badgedetailpanel",
+				jsonData: model.data
 			});
 		}
 	},

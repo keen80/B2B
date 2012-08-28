@@ -264,3 +264,29 @@ strong{
 	padding-right: 10px;
 	color: gray;
 }
+
+/* Badge detail */
+
+.badge-image-big {
+	position: relative;
+	border: 2px solid #EEE;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.badge-detail {
+	position: relative;
+
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.badge-title {
+	font-size: 18pt;
+}
+
+.badge-description {
+	font-size: 14pt;
+	padding-top: 10px;
+}
