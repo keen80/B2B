@@ -42,6 +42,6 @@ Ext.define('B2B.view.Badge_List_Container', {
 		this.add([toolbar, badgeList]);
 	},
 	onBackButtonTap: function() {
-		this.fireEvent("backProfileCommand", this);
+		this.fireEvent("backToProfileCommand", this);
 	}
 });

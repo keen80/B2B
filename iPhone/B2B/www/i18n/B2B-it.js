@@ -23,6 +23,7 @@ var i18n = {
 		"PANEL_TERMS": "Terms of Service",
 		"PANEL_TWITTER": "Twitter Account",
 		"PANEL_WHATSNEW": "What&apos;s New",
+		"PANEL_BADGEDETAIL": "Badge",
 
 		"FORM_ACCOUNT": "Account",
 		"FORM_ACTIVATEDON": "Registered Since",

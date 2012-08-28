@@ -13,10 +13,10 @@ Ext.define('B2B.view.Friend_List', {
 					//resources/beer/style"+values.beerstyle+".png'
 					var str = '<img class="avatar_small" src="';
 					if (_.isEmpty(values.image)){
-						 str += HH.default_user32;
-					 }else{
+						str += HH.default_user32;
+					}else{
 						str += value.image;
-					 }
+					}
 					str += '" width="32" height="32">';
 					return str;
 			},
