@@ -4,16 +4,21 @@ Ext.define("B2B.controller.Profiles", {
 		refs: {
 			profile: "userprofileaboutpanel",
 			profileForm: "userprofileform",
+			badgeListContainer: "badgelistcontainerpanel",
 			app: "_app"
 		},
 		control: {
 			profile: {
 				editProfileCommand: "onShowProfileForm",
-				reloadProfileCommand: "onReloadProfile"
+				reloadProfileCommand: "onReloadProfile",
+				badgesProfileCommand: "onShowBadgesList"
 			},
-			profileForm:{
+			profileForm: {
 				saveProfileCommand: "onSaveProfile",
-				backProfileCommand: "onBackProfile" 
+				backProfileCommand: "onBackProfile"
+			},
+			badgeListContainer: {
+				backProfileCommand: "onBackProfile"
 			}
 		}
 	},
@@ -29,6 +34,12 @@ Ext.define("B2B.controller.Profiles", {
 		var lastLoginOnField = Ext.getCmp('lastLoginOnField');
 		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));
 		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));*/
+	},
+	onShowBadgesList: function() {
+		this.getApp().push({
+			xtype: "badgelistcontainerpanel"
+		});
+
 	},
 	onSaveProfile: function(){
 		Ext.Msg.alert("Saved!");

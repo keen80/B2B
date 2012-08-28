@@ -4,28 +4,39 @@ Ext.define('B2B.view.Badge_List', {
 	config: {
 		loadingText: i18n.app.HINT_LOADING,
 		emptyText: '</pre><div class="badge-list-empty-text">'+utils.__(i18n.app.TEXT_NOBADGEFOUND)+'</div><pre>',
-		itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getString(values)]}</div>",
+		itemTpl: new Ext.XTemplate([
+				"<div class='{[this.getClass(values)]}'>",
+				"{[this.getImageURL(values)]}",
+				"{[this.getString(values)]}",
+				"</div>"
+			].join(""),
 		{
-			getClass: function(values){
+			getClass: function(values) {
 				return "badge-list-item-title small-list";
 			},
-			getImageURL: function(values){
-					//resources/beer/style"+values.beerstyle+".png'
-					var str = '<img class="badge_image_small" src="';
-					if (_.isEmpty(values.imageUlr)){
+			getImageURL: function(values) {
+					var className = "badge_image_small",
+						str = "";
+					className += (values.active === true ? " active" : "");
+					str = "<img class='" + className + "' src='";
+					if (_.isEmpty(values.imageUlr)) {
 						str += HH.default_badge32;
 					}else{
-						str += value.image;
+						str += values.imageUrl;
 					}
-					str += '" width="32" height="32">';
+					str += "' width='32' height='32'>";
 					return str;
 			},
-			getString: function(values){
-				var tpl = "<div class='small-list-text'>"+utils.getDisplayName(values)+"</div>";
-				if(values.title){
-					tpl += "<div class='small-list-subtext'>"+values.title;
+			getString: function(values) {
+				var tpl = "",
+					className = "badge-list-text";
+
+				if (values.title) {
+					className += (values.active === true ? " active" : "");
+					tpl = "<div class='" + className + "'>" + values.title + "</div>";
 					tpl += "</div>";
 				}
+
 				return tpl;
 			}
 		})

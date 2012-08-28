@@ -12,43 +12,50 @@
 			"idBadge": "badge_1",
 			"title": "Newbie",
 			"description": "Ma che bello questo badge!",
-			"imageUlr": "http://logo.png"
+			"imageUlr": "",
+			"active": true
 			},
 			{
 			"idBadge": "badge_2",
 			"title": "Adventurer",
 			"description": "A wei!",
-			"imageUlr": "http://logo.png"
+			"imageUlr": "",
+			"active": false
 			},
 			{
 			"idBadge": "badge_3",
 			"title": "Explorer",
 			"description": "Explorer!",
-			"imageUrl": "http://logo.png"
+			"imageUrl": "http://logo.png",
+			"active": true
 			},
 			{
 			"idBadge": "badge_4",
 			"title": "Superstar",
 			"description": "Superstar!",
-			"imageUrl": "http://logo.png"
+			"imageUrl": "http://logo.png",
+			"active": false
 			},
 			{
 			"idBadge": "badge_5",
 			"title": "Bender",
 			"description": "Bender!",
-			"imageUrl": "http://logo.png"
+			"imageUrl": "http://logo.png",
+			"active": false
 			},
 			{
 			"idBadge": "badge_6",
 			"title": "Crunked",
 			"description": "Crunked!",
-			"imageUrl": "http://logo.png"
+			"imageUrl": "http://logo.png",
+			"active": false
 			},
 			{
 			"idBadge": "badge_7",
 			"title": "Local",
 			"description": "Local!",
-			"imageUrl": "http://logo.png"
+			"imageUrl": "http://logo.png",
+			"active": false
 			}
 		]
 	}

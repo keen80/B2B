@@ -24,7 +24,6 @@
 		"pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
 		"role": 1,
 		"status": 1,
-		"badges": "badge_1,badge_3",
 		"favorites": "",
 		"activatedOn": new Date(),
 		"lastLoginOn": new Date(),

@@ -90,6 +90,7 @@
 
 		"LABEL_ABOUT": "About",
 		"LABEL_ABOUTUS": "About Us",
+		"LABEL_BADGES": "Badges",
 		"LABEL_BEER": "Beer",
 		"LABEL_BEERS": "Beers",
 		"LABEL_BEERBREWERY": "Brewery",

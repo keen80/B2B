@@ -205,18 +205,15 @@ Ext.define('B2B.view.User_Profile_Form', {
 			id: 'save_profile_btn',
 			handler: this.onSaveProfileButtonTap,
 			scope: this
-		};
-
-		var backProfileButton = {
+		},
+		backProfileButton = {
 			text: i18n.app.BTN_BACK,
 			ui: 'back',
 			id: 'back_profile_btn',
 			handler: this.onBackProfileButtonTap,
 			scope: this
-		};
-
-
-		var toolbar = {
+		},
+		toolbar = {
 			xtype: 'toolbar',
 			docked: 'top',
 			cls: 'sub_titlebar',

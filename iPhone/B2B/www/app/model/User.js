@@ -24,7 +24,6 @@ Ext.define("B2B.model.User", {
 			{ name: 'pwdHash', type: 'string' },
 			{ name: 'activatedOn', type: 'date', dateformat: 'c' },
 			{ name: 'lastLoginOn', type: 'date', dateformat: 'c' },
-			{ name: 'badges', type: 'string', defaultValue: ''},
 			{ name: 'favorites', type: 'string', defaultValue: ''},
 			{ name: 'liked', type: 'string', defaultValue: '' },
 			{ name: 'counterCheckIns', type: 'int', defaultValue: 0 },

@@ -33,9 +33,10 @@ strong{
 }
 
 .avatar_small, .avatar_medium, .mapMiniDrink{
-    float: left;
-    border: 2px solid #EEE; 
+	float: left;
+	border: 2px solid #EEE;
 }
+
 .lastdrink{
 	padding: 4px;
 }
@@ -234,4 +235,32 @@ strong{
 .rating-desc {
 	color: #fff;
 	margin-top: 2.7em;
+}
+
+/* List badge */
+
+.badge_image_small {
+	float: left;
+	border: 2px solid #EEE;
+	opacity: 0.25;
+}
+
+.badge_image_small.active {
+	float: left;
+	border: 2px solid #EEE;
+	opacity: 1;
+}
+
+.badge-list-text.active {
+	position: relative;
+	left: 10px;
+	padding-right: 10px;
+	color: black;
+}
+
+.badge-list-text {
+	position: relative;
+	left: 10px;
+	padding-right: 10px;
+	color: gray;
 }
