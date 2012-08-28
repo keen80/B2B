@@ -8,16 +8,19 @@ Ext.define("B2B.store.Beers_Single_Ajax", {
         model: "B2B.model.BeerSingle",
         proxy: {
             // Mock for Development
-            type:'ajax',
-            url:'mock_beerlist.json',
-            //type:'jsonp',
-            //url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+            //type:'ajax',
+            //url:'mock_beerlist.json',
+            type:'jsonp',
+            url:'http://localhost:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
+            },
+             extraParams:{
+                details:'single'
             }
         },
         autoLoad: true,
