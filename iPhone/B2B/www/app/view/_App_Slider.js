@@ -25,7 +25,7 @@ Ext.define("B2B.view._App_Slider", {
                 id: 'slider_toolbar',                  
                 title: {
                     //title: i18n.app.PANEL_NAVIGATION,
-                    title: '<img id="slider_logo" src="resources/img/logopin_text_black_small.png" width="140px">',
+                    title: '<img id="slider_logo" src="resources/img/logopin_text_black_small.png" width="160px">',
                     //centered: true,
                     width: 200,
                     left: 0
