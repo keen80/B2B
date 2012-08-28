@@ -33,16 +33,17 @@ Ext.define("B2B.store.Drinks_Ajax", {
 					image = HH.default_user48,
 					userdata = el.first();
 
-				Ext.getCmp("lastdrink").setHtml(
-					[
-					'<div class="lastdrink">',
-					'<img class="avatar_medium" src="'+image+'" width="48" height="48" >',
-					'<div class="small-list-when"> 2 min fa</div>',
-					'<div class="medium-list-text">Your lastest drink was a <strong>'+userdata.data.beerName+'</strong>, at <strong>'+userdata.data.placeName+'</strong></div>',
-					'</div>'
-					].join("")
-				);
-
+				if(Ext.getCmp("lastdrink")){
+					Ext.getCmp("lastdrink").setHtml(
+						[
+						'<div class="lastdrink">',
+						'<img class="avatar_medium" src="'+image+'" width="48" height="48" >',
+						'<div class="small-list-when"> 2 min fa</div>',
+						'<div class="medium-list-text">Your lastest drink was a <strong>'+userdata.data.beerName+'</strong>, at <strong>'+userdata.data.placeName+'</strong></div>',
+						'</div>'
+						].join("")
+					);
+				}
 				/* Copying to localstorage */
 				store_local.removeAll();
 				store_local.getProxy().clear();

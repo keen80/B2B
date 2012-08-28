@@ -37,6 +37,9 @@ Ext.define("B2B.controller.Privacy", {
 			Ext.Msg.alert("LogOut Mock");
 		};
 		Ext.Msg.confirm(i18n.app.PANEL_LOGOUT, utils.__(i18n.app.DIALOG_YOUSURELOGUT), LogOut);
+		Ext.getStore("Profile_Ajax").removeAll();
+		Ext.getStore("Profile_Local").removeAll();
+		window.location.reload();
 	},
 	init: function(){
 		this.callParent(arguments);

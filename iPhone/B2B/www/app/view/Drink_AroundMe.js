@@ -111,7 +111,7 @@ geo.updateLocation();
 
       var squareLogo ={
         xtype: 'container',
-        html: '<img class="footer_img" src="resources/img/poweredByFoursquare_footer.png" width="99%">'
+        html: '<img class="footer_img" src="resources/img/poweredByFoursquare_footer.png" width="200px">'
       }
 
       var verticalBox = {

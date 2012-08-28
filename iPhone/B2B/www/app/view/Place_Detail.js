@@ -52,42 +52,47 @@ Ext.define('B2B.view.Place_Detail', {
 		};
 */
 
-      var mapPanel = {
-        xtype: 'map',
-        id: 'mapMiniDrink',
-        useCurrentLocation: false, 
-        cls: 'mapMiniDrink',
-        height: 100,
-        width: 100,                                    
-        mapOptions: {
-            zoom: HH.map.zoomLevel2,
-            mapTypeId : google.maps.MapTypeId.ROADMAP,
-            navigationControl: false,
-            zoomControl: false,
-            mapTypeControl: false,
-            scaleControl: false,
-            streetViewControl: false,
-            panControl: false,
-            draggable: false
-        },
-        listeners: {
-            maprender: function(me, map){
-                map.markers = [];
-                var position = new google.maps.LatLng(5.978132,116.072617);
-                setTimeout(function() {
-                    map.panTo(position);
-                }, 1000);
-            },
-            centerchange: function(me, map){
-              map.clearMarkers();
-              map.markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(5.978132, 116.072617),
-                    map: map,
-                    icon: HH.map.marker
-              }));
-            }
-        }
-      };
+	    var mapPanel = {
+	        xtype: 'map',
+	        id: 'mapMiniDrink',
+	        useCurrentLocation: false, 
+	        cls: 'mapMiniDrink',
+	        height: 100,
+	        width: 100,                                    
+	        mapOptions: {
+	            zoom: HH.map.zoomLevel2,
+	            mapTypeId : google.maps.MapTypeId.ROADMAP,
+	            navigationControl: false,
+	            zoomControl: false,
+	            mapTypeControl: false,
+	            scaleControl: false,
+	            streetViewControl: false,
+	            panControl: false,
+	            draggable: false
+	        },
+	        listeners: {
+	            maprender: function(me, map){
+	                map.markers = [];
+	                var position = new google.maps.LatLng(5.978132,116.072617);
+	                setTimeout(function() {
+	                    map.panTo(position);
+	                }, 1000);
+	            },
+	            centerchange: function(me, map){
+	              map.clearMarkers();
+	              map.markers.push(new google.maps.Marker({
+	                    position: new google.maps.LatLng(5.978132, 116.072617),
+	                    map: map,
+	                    icon: HH.map.marker
+	              }));
+	            }
+	        }
+	    };
+
+	    var friendCheckInList = {
+		    xtype: "drinkincheckinlistcomponent",
+		    store: Ext.getStore("DrinkInCheckIn_Ajax"),
+		};
 
 		var toolbar = {
 			xtype: 'toolbar',
@@ -106,7 +111,7 @@ Ext.define('B2B.view.Place_Detail', {
 			html: getStringHTMLFromValues(jsonData)
 		};
 
-		this.add([toolbar /*, mapPanel*/ , content]);
+		this.add([toolbar /*, mapPanel*/ , content, friendCheckInList]);
 
 	},
 	/*

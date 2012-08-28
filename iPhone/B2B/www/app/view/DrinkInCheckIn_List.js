@@ -1,14 +1,13 @@
-Ext.define('B2B.view.Place_List', {
+Ext.define('B2B.view.DrinkInCheckIn_List', {
     extend: 'Ext.dataview.List',
-    xtype: 'placelistcomponent',
+    xtype: 'drinkincheckinlistcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
-        emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOPLACEFOUND)+'</div><pre>',
-        //itemTpl: '</pre><div class="beer-list-item-title">{placeName}</div><pre>',
+        emptyText: '',
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getTextString(values)]}</div>",
             {
             	getClass: function(values){
-            		return "place-list-item small-list activity-type"+values.type;
+            		return "drinkincheckin-list-item small-list";
             	},
             	getImageURL: function(values){
                     var str = '<img class="avatar_small" src="';

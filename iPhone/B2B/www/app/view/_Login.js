@@ -10,7 +10,6 @@ Ext.define('B2B.view._Login', {
 		items: [
 			{
 				xtype: 'fieldset',
-				width: 380,
 				margin: '50px auto',
 				id: '_loginfieldset',
 				items:[
