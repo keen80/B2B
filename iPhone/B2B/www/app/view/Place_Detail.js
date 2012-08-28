@@ -16,6 +16,22 @@ Ext.define('B2B.view.Place_Detail', {
 	initialize: function(){
 
     	this.callParent(arguments);
+    	var jsonData = this.jsonData;
+
+    	var getStringHTMLFromValues = function(){
+			var value = "";
+			
+			if (!_.isEmpty(jsonData.image)) {
+			   value += '<img class="avatar_medium" src="' + jsonData.image +'" />';
+			}else{
+				value += '<img class="avatar_medium" src="' + HH.default_user64 +'" />';
+			}
+		
+			value += "<h1>"+jsonData.placeName+"</p>";
+			value += "<p>"+jsonData.url+"</p>";
+			value += "<p>"+jsonData.category+"</p>";
+			return value;
+		};
 
     	var backPlaceDetailButton = {
 			xtype: "button",
@@ -40,6 +56,7 @@ Ext.define('B2B.view.Place_Detail', {
         xtype: 'map',
         id: 'mapMiniDrink',
         useCurrentLocation: false, 
+        cls: 'mapMiniDrink',
         height: 100,
         width: 100,                                    
         mapOptions: {
@@ -64,7 +81,7 @@ Ext.define('B2B.view.Place_Detail', {
             centerchange: function(me, map){
               map.clearMarkers();
               map.markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(this._geo.getLatitude(), this._geo.getLongitude()),
+                    position: new google.maps.LatLng(5.978132, 116.072617),
                     map: map,
                     icon: HH.map.marker
               }));
@@ -82,28 +99,17 @@ Ext.define('B2B.view.Place_Detail', {
 				reportBeerButton*/
 			]
 		};
-		this.add([toolbar, mapPanel]);
-		
-		var html = this.getStringHTMLFromValues(this.jsonData);
-		this.setHtml([html].join(""));
+
+		var content = {
+			xtype: 'container',
+			id: 'placeDetailContent',
+			html: getStringHTMLFromValues(jsonData)
+		};
+
+		this.add([toolbar /*, mapPanel*/ , content]);
+
 	},
-	getStringHTMLFromValues: function(info){
-		if (_.isEmpty(info.image)) {
-		   value += '<img class="avatar_medium" src="' + info.image +'" />';
-		}else{
-			value += '<img class="avatar_medium" src="' + HH.default_place32 +'" />';
-		}
-		/*
-		value += '<p>' + i18n.app.LABEL_BEERNAME + ': <span>' + _.titleize(info.name) + '</span></p>';
-		if(info.brewery) value+= '<p>' + i18n.app.LABEL_BEERBREWERY + ': <span>' + _.titleize(info.brewery) + '</span></p>';
-		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(parseInt(info.beerstyle)) + '</span></p>';
-		if(info.beertype) value += '<p>' + i18n.app.LABEL_BEERTYPE + ': <span>' + utils.getBeerTypeFromCode(parseInt(info.beertype)) + '</span></p>';
-		if(info.grad) value += '<p>' + i18n.app.LABEL_BEERGRAD + ': <span>' + info.grad + '</span></p>';
-		if(info.nationality) value += '<p>' + i18n.app.LABEL_BEERNATIONALITY + ': <span>' + utils.getCountryFromCode(info.nationality) + '</span></p>';
-		if(info.description) value += '<p>' + i18n.app.LABEL_BEERDESCRIPTION + ': <span>' + info.description + '</span></p>';
-		*/
-		return value;
-	},/*
+	/*
 	onPlaceReportButtonTap: function(){
 		this.fireEvent("reportPlaceCommand", this);
 	},*/

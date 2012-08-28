@@ -32,9 +32,9 @@ strong{
 	font-size: 16px;
 }
 
-.avatar_small, .avatar_medium{
-	float: left;
-	border: 2px solid #EEE;
+.avatar_small, .avatar_medium, .mapMiniDrink{
+    float: left;
+    border: 2px solid #EEE; 
 }
 .lastdrink{
 	padding: 4px;
