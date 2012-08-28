@@ -255,7 +255,14 @@
 		{ "text": "Mild", "value": 50 },
 		{ "text": "Irish Red", "value": 51 },
 		{ "text": "Brown", "value": 52 },
-		{ "text": "Chestnut", "value": 53 }
+		{ "text": "Chestnut", "value": 53 },
+		{ "text": "Black", "value": 54 },
+		{ "text": "Berliner", "value": 55},
+		{ "text": "Ice", "value": 56},
+		{ "text": "Eisbock", "value": 57},
+		{ "text": "Light", "value": 58},
+		{ "text": "Dark wit", "value": 59},
+		{ "text": "Weizenwine", "value": 60}
 	],
 
 	"beergrads": [
