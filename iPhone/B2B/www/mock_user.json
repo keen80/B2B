@@ -1,51 +1,51 @@
 {
-  "response": {
-    "status": {
-      "success": true,
-      "code": "OK",
-      "msg": "Status OK",
-      "count": 1
-    },
-    "body": {
-      "list": [
-        {
-          "idUser": "user_1",
-          "username": "Marco",
-          "displayName": "Marco",
-          "description": "Scrittore e collezionista di cartoline d'epoca",
-          "email": "marco85@gmail.com",
-          "firstName": "Marco",
-          "lastName": "Calabrò",
-          "gender": 1,
-          "nationality": "IT",
-          "shareTwitter": true,
-          "shareFacebook": false,
-          "enableNotification": false,
-          "pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
-          "role": 1,
-          "status": 1,
-          "badges": "",
-          "favorites": "",
-          "activatedOn": new Date(),
-          "lastLoginOn": new Date(),
-          "liked": "",
-          "counter_friends": 32,
-          "counter_checkIns": 3,
-          "counter_badges": 2
-        }
-      ]
-    }
-  },
-  "metaData": {
-      "notification": {
-        "code": "OK",
-        "type": 1,
-        "msg": "Notification OK"
-      },
-      "badge": {
-        "code": "OK",
-        "type": 1,
-        "msg": "Notification OK"
-      }
-  }
+"response": {
+	"status": {
+	"success": true,
+	"code": "OK",
+	"msg": "Status OK",
+	"count": 1
+	},
+	"body": {
+	"list": [
+		{
+		"idUser": "user_1",
+		"username": "Marco",
+		"displayName": "Marco",
+		"description": "Scrittore e collezionista di cartoline d'epoca",
+		"email": "marco85@gmail.com",
+		"firstName": "Marco",
+		"lastName": "Calabrï¿½",
+		"gender": 1,
+		"nationality": "IT",
+		"shareTwitter": true,
+		"shareFacebook": false,
+		"enableNotification": false,
+		"pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
+		"role": 1,
+		"status": 1,
+		"badges": "badge_1,badge_3",
+		"favorites": "",
+		"activatedOn": new Date(),
+		"lastLoginOn": new Date(),
+		"liked": "",
+		"counter_friends": 32,
+		"counter_checkIns": 3,
+		"counter_badges": 2
+		}
+	]
+	}
+},
+"metaData": {
+	"notification": {
+		"code": "OK",
+		"type": 1,
+		"msg": "Notification OK"
+	},
+	"badge": {
+		"code": "OK",
+		"type": 1,
+		"msg": "Notification OK"
+	}
+}
 }

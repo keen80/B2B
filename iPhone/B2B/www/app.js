@@ -8,7 +8,7 @@ Ext.application({
 		'Ext.MessageBox'
 	],
 
-	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback'],
+	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge'],
 
 	controllers: [
 		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera'
@@ -16,7 +16,8 @@ Ext.application({
 
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
-		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'/*, 'Beers_Single_Ajax'*/, 'Drinks_Local', 'Feedback_Ajax'
+		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'/*, 'Beers_Single_Ajax'*/, 'Drinks_Local', 'Feedback_Ajax',
+		'Badges_Ajax'
 	],
 
 	views: [
@@ -31,8 +32,7 @@ Ext.application({
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',
 		'Notification_Container', 'Notification_List',
 		'User_Profile_Container', 'User_Profile_About', 'User_Profile_Form',
-		'User_Profile_Privacy_Form',
-		'User_Preferences_Form',
+		'User_Profile_Privacy_Form', 'User_Preferences_Form',
 		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker'
