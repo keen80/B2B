@@ -27,9 +27,9 @@
           "lastLoginOn": new Date(),
           "birthDate": new Date(),
           "liked": "",
-          "counter_friends": 6,
-          "counter_checkIns": 50,
-          "counter_badges": 3
+          "counterFriends": 6,
+          "counterCheckIns": 50,
+          "counterBadges": 3
         },
         {
           "idUser": "user_3",
@@ -50,9 +50,9 @@
           "lastLoginOn": new Date(),
           "birthDate": new Date(),
           "liked": "",
-          "counter_friends": 120,
-          "counter_checkIns": 12,
-          "counter_badges": 2
+          "counterFriends": 120,
+          "counterCheckIns": 12,
+          "counterBadges": 2
         },
         {
           "idUser": "user_4",
@@ -74,9 +74,9 @@
           "lastLoginOn": new Date(),
           "birthDate": new Date(),
           "liked": "",
-          "counter_friends": 200,
-          "counter_checkIns": 4,
-          "counter_badges": 5
+          "counterFriends": 200,
+          "counterCheckIns": 4,
+          "counterBadges": 5
         },
         {
           "idUser": "user_5",
@@ -98,9 +98,9 @@
           "lastLoginOn": new Date(),
           "birthDate": new Date(),
           "liked": "",
-          "counter_friends": 50,
-          "counter_checkIns": 9,
-          "counter_badges": 14
+          "counterFriends": 50,
+          "counterCheckIns": 9,
+          "counterBadges": 14
         },
         {
           "idUser": "user_6",
