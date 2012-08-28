@@ -1,63 +1,63 @@
 {
-"response": {
-	"status": {
-	"success": true,
-	"code": "OK",
-	"msg": "Status OK",
-	"count": 7
-	},
-	"body": {
-		"list": [
-			{
-			"idBadge": "badge_1",
-			"title": "Newbie",
-			"description": "Benvento! Questa è la tua 1 bevuta su mert beer! Continua con altri check-in e conquista il prossimo livello.",
-			"imageUlr": "",
-			"active": true
-			},
-			{
-			"idBadge": "badge_2",
-			"title": "Adventurer",
-			"description": "L'accoppiata per eccelleza, pizza e birra fresca! Sicuro che ne basti solo una?!",
-			"imageUlr": "",
-			"active": false
-			},
-			{
-			"idBadge": "badge_3",
-			"title": "Explorer",
-			"description": "Il più classico dei locali dove gustarsi un'ottima birra. Prossimo livello? Cameriere!!!! :)",
-			"imageUrl": "",
-			"active": true
-			},
-			{
-			"idBadge": "badge_4",
-			"title": "Superstar",
-			"description": "Heilà, un check-in da intenditore! Una buona birra accompagna tantissimi piatti. Perchè non provarne subito un'altra?!",
-			"imageUrl": "",
-			"active": false
-			},
-			{
-			"idBadge": "badge_5",
-			"title": "Bender",
-			"description": "Finita la giornata lavorativa? O aspetti il solito ritardatario al bar? Bhè poco importa... Una bella birra e si stà subito meglio! E ricordati... L'ultimo che arriva paga il conto!",
-			"imageUrl": "",
-			"active": false
-			},
-			{
-			"idBadge": "badge_6",
-			"title": "Crunked",
-			"description": "Con un paesaggio così la birra è la cigliegina sulla torta! Ah... Alla prossima ricordati anche il cavatappi! :)",
-			"imageUrl": "",
-			"active": false
-			},
-			{
-			"idBadge": "badge_7",
-			"title": "Local",
-			"description": "Fammi indovinare... Divano, partita e birra con gli amici? O stai aspettando che tocchi a te giocare alla play? Poco importa, gustati una birra ghiacciata!",
-			"imageUrl": "",
-			"active": false
-			}
-		]
-	}
-}
+    "response": {
+        "status": {
+            "success": true,
+            "code": "OK",
+            "msg": "Status OK",
+            "count": 7
+        },
+        "body": {
+            "list": [
+                {
+                    "idBadge": "badge_1",
+                    "title": "Newbie",
+                    "description": "Benvento! Questa è la tua 1 bevuta su mert beer! Continua con altri check-in e conquista il prossimo livello.",
+                    "imageUlr": "",
+                    "active": true
+                },
+                {
+                    "idBadge": "badge_2",
+                    "title": "Adventurer",
+                    "description": "L'accoppiata per eccelleza, pizza e birra fresca! Sicuro che ne basti solo una?!",
+                    "imageUlr": "",
+                    "active": false
+                },
+                {
+                    "idBadge": "badge_3",
+                    "title": "Explorer",
+                    "description": "Il più classico dei locali dove gustarsi un'ottima birra. Prossimo livello? Cameriere!!!! :)",
+                    "imageUrl": "",
+                    "active": true
+                },
+                {
+                    "idBadge": "badge_4",
+                    "title": "Superstar",
+                    "description": "Heilà, un check-in da intenditore! Una buona birra accompagna tantissimi piatti. Perchè non provarne subito un'altra?!",
+                    "imageUrl": "",
+                    "active": false
+                },
+                {
+                    "idBadge": "badge_5",
+                    "title": "Bender",
+                    "description": "Finita la giornata lavorativa? O aspetti il solito ritardatario al bar? Bhè poco importa... Una bella birra e si stà subito meglio! E ricordati... L'ultimo che arriva paga il conto!",
+                    "imageUrl": "",
+                    "active": false
+                },
+                {
+                    "idBadge": "badge_6",
+                    "title": "Crunked",
+                    "description": "Con un paesaggio così la birra è la cigliegina sulla torta! Ah... Alla prossima ricordati anche il cavatappi! :)",
+                    "imageUrl": "",
+                    "active": false
+                },
+                {
+                    "idBadge": "badge_7",
+                    "title": "Local",
+                    "description": "Fammi indovinare... Divano, partita e birra con gli amici? O stai aspettando che tocchi a te giocare alla play? Poco importa, gustati una birra ghiacciata!",
+                    "imageUrl": "",
+                    "active": false
+                }
+            ]
+        }
+    }
 }
