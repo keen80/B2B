@@ -1,0 +1,56 @@
+{
+"response": {
+	"status": {
+	"success": true,
+	"code": "OK",
+	"msg": "Status OK",
+	"count": 1
+	},
+	"body": {
+		"list": [
+			{
+			"idBadge": "badge_1",
+			"title": "Newbie",
+			"description": "Ma che bello questo badge!",
+			"imageUlr": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_2",
+			"title": "Adventurer",
+			"description": "A wei!",
+			"imageUlr": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_3",
+			"title": "Explorer",
+			"description": "Explorer!",
+			"imageUrl": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_4",
+			"title": "Superstar",
+			"description": "Superstar!",
+			"imageUrl": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_5",
+			"title": "Bender",
+			"description": "Bender!",
+			"imageUrl": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_6",
+			"title": "Crunked",
+			"description": "Crunked!",
+			"imageUrl": "http://logo.png"
+			},
+			{
+			"idBadge": "badge_7",
+			"title": "Local",
+			"description": "Local!",
+			"imageUrl": "http://logo.png"
+			}
+		]
+	}
+}
+}
