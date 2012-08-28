@@ -31,10 +31,7 @@
 			top: 50%;
 			margin-top: -102px;
 			width: 100%;
-			height: 204px;
-			background-image: url('resources/img/logo_large.png');
-			background-position: center;
-			background-repeat: no-repeat;
+			text-align: center;
 		}
 		#loading_bubbles {
 			height: 100%;
@@ -44,10 +41,7 @@
 			-webkit-animation: snow 20s linear infinite;
 		}
 
-		@-webkit-keyframes snow {
-		0% {  background-position: 500px 1000px, 400px 400px, 300px 300px; }
-		100% { background-position: 0px 0px, 0px 0px, 0px 0px; }
-		}
+
 	</style>
 	<script type="text/javascript" src="cordova-2.0.0.js"></script>
 	<script type="text/javascript" src="sdk/sencha-touch.js"></script>
@@ -70,7 +64,9 @@
 </head>
 <body>
 	<div id="appLoadingIndicator">
-		<div id="loading_logo"></div>
+		<div id="loading_logo">
+			<img src="resources/img/logo_large.png" width="260" height="220">
+		</div>
 		<div id="loading_bubbles"></div>
 	</div>
 </body>
