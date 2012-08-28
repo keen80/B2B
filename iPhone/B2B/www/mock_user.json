@@ -29,9 +29,9 @@
 		"activatedOn": new Date(),
 		"lastLoginOn": new Date(),
 		"liked": "",
-		"counter_friends": 32,
-		"counter_checkIns": 3,
-		"counter_badges": 2
+		"counterFriends": 32,
+		"counterCheckIns": 3,
+		"counterBadges": 2
 		}
 	]
 	}
