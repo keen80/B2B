@@ -16,7 +16,8 @@ Ext.define("B2B.controller.Badges", {
 				backToProfileCommand: "popCurrentView"
 			},
 			badgeList: {
-				itemtap: "onViewBadgeDetail"
+				itemtap: "onViewBadgeDetail",
+				select: "onSelectItem"
 			},
 			badgeDetail: {
 				backBadgesCommand: "popCurrentView"
@@ -31,10 +32,19 @@ Ext.define("B2B.controller.Badges", {
 	popCurrentView: function() {
 		this.getApp().pop();
 	},
-	onViewBadgeDetail: function(that, item, index, model, eventObject) {
-		this.getApp().push({
-			xtype: "badgedetailpanel"
-		});
+	onViewBadgeDetail: function(that, index, item, model, eventObject) {
+		setTimeout(function() {
+			that.deselect(index);
+		}, 500);
+
+		if (model.data.active) {
+			this.getApp().push({
+				xtype: "badgedetailpanel"
+			});
+		}
+	},
+	onSelectItem: function(that, item, eventObject) {
+		return item.data.active;
 	},
 	launch: function(){
 		this.callParent(arguments);
