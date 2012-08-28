@@ -7,6 +7,8 @@ var HH = {
 	"default_beerstyle32": "resources/img/default/blank_avatar_32.png",
 	"default_beergrad32": "resources/img/default/blank_avatar_32.png",
 	"default_place32": "resources/img/default/blank_avatar_32.png",
+	"default_badge32": "resources/img/default/blank_avatar_32.png",
+	"default_badge64": "resources/img/default/blank_avatar_64.png",
 	DEBUG: false,
 	"beergroup": 2,
 	map: {

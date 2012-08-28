@@ -33,20 +33,18 @@ Ext.define('B2B.view.Friend_Detail', {
 			items: [
 				backFriendDetailButton
 			]
-		};
-
-		var deleteProfileButton = {
-            text: i18n.app.BTN_REMOVE,
-            ui: 'action',
-            id: 'delete_profile_btn',
-            handler: this.onDeleteProfileButtonTap,
-            scope: this
-        };
+		},
+		deleteProfileButton = {
+			text: i18n.app.BTN_REMOVE,
+			ui: 'action',
+			id: 'delete_profile_btn',
+			handler: this.onDeleteProfileButtonTap,
+			scope: this
+		},
+		html = this.getStringHTMLFromValues(this.jsonData.data);
 
 		this.add([toolbar, deleteProfileButton]);
-
-		var html = this.getStringHTMLFromValues(this.jsonData.data);
-		this.setHtml([html].join(""));
+		this.setHtml([html]);
 	},
 	getStringHTMLFromValues: function(info){
 		var value = '';

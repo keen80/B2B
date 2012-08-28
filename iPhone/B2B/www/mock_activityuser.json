@@ -2,7 +2,7 @@
   "response": {
     "status": {
       "success": true,
-      "code": "OK",
+      "code": 100,
       "msg": "Status OK"
     },
     "body": {

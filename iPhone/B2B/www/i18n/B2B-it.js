@@ -23,6 +23,7 @@ var i18n = {
 		"PANEL_TERMS": "Terms of Service",
 		"PANEL_TWITTER": "Twitter Account",
 		"PANEL_WHATSNEW": "What&apos;s New",
+		"PANEL_BADGEDETAIL": "Badge",
 
 		"FORM_ACCOUNT": "Account",
 		"FORM_ACTIVATEDON": "Registered Since",
@@ -89,6 +90,7 @@ var i18n = {
 
 		"LABEL_ABOUT": "About",
 		"LABEL_ABOUTUS": "About Us",
+		"LABEL_BADGES": "Badges",
 		"LABEL_BEER": "Beer",
 		"LABEL_BEERS": "Beers",
 		"LABEL_BEERBREWERY": "Brewery",
@@ -160,6 +162,7 @@ var i18n = {
 		"TEXT_NONOTIFICATIONFOUND": "No activity found",
 		"TEXT_FEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
+		"TEXT_NOBADGEFOUND": "No badge found",
 
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 

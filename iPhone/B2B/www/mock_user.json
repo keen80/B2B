@@ -2,7 +2,7 @@
 "response": {
 	"status": {
 	"success": true,
-	"code": "OK",
+	"code": 100,
 	"msg": "Status OK",
 	"count": 1
 	},
@@ -24,14 +24,13 @@
 		"pwdHash": "e20d7722222240b23378133454f0bdae699f2f23e",
 		"role": 1,
 		"status": 1,
-		"badges": "badge_1,badge_3",
 		"favorites": "",
 		"activatedOn": new Date(),
 		"lastLoginOn": new Date(),
 		"liked": "",
-		"counter_friends": 32,
-		"counter_checkIns": 3,
-		"counter_badges": 2
+		"counterFriends": 32,
+		"counterCheckIns": 3,
+		"counterBadges": 2
 		}
 	]
 	}

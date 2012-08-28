@@ -11,9 +11,9 @@ Ext.define("B2B.controller.Profiles", {
 				editProfileCommand: "onShowProfileForm",
 				reloadProfileCommand: "onReloadProfile"
 			},
-			profileForm:{
+			profileForm: {
 				saveProfileCommand: "onSaveProfile",
-				backProfileCommand: "onBackProfile" 
+				backProfileCommand: "onBackProfile"
 			}
 		}
 	},
@@ -30,11 +30,11 @@ Ext.define("B2B.controller.Profiles", {
 		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));
 		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));*/
 	},
-	onSaveProfile: function(){
+	onSaveProfile: function() {
 		Ext.Msg.alert("Saved!");
 		this.getApp().pop();
 	},
-	onBackProfile: function(){
+	onBackProfile: function() {
 		this.getApp().pop();
 	},
 	launch: function(){

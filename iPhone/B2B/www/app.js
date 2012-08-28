@@ -8,10 +8,10 @@ Ext.application({
 		'Ext.MessageBox'
 	],
 
-	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge'],
+	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge' ],
 
 	controllers: [
-		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera'
+		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera', 'Badges'
 	],
 
 	stores: [
@@ -37,7 +37,8 @@ Ext.application({
 		'User_Profile_Privacy_Form', 'User_Preferences_Form',
 		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
-		'Camera_Container', 'Camera_Picker'
+		'Camera_Container', 'Camera_Picker',
+		'Badge_List', 'Badge_List_Container', 'Badge_Detail'
 		],
 
 	icon: {
