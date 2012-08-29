@@ -17,15 +17,27 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 
 		var me = this;
 
+		var backBeerSelectButton = {
+          text: i18n.app.BTN_BACK,
+          ui: 'back',
+          id: 'back_beerselect_btn',
+          handler: this.onBackBeerSelectButtonTap,
+          scope: this
+	      };
 
-        var header = {
-            xtype: 'container',
-            cls: 'header_img',
-            height: 50,
-            width: '100%',
-            docked: 'top',
-            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
-        };
+	      var toolbar = {
+	          xtype: 'toolbar',
+	          docked: 'top',
+	          cls: 'sub_titlebar',
+	          title: i18n.app.PANEL_BEER,
+	          id: 'BeerSelectTitlebar',
+	          defaults: {
+	              iconMask: true
+	          },
+	          items: [
+	            backBeerSelectButton
+	          ]
+	    };
 
 		var selectbeerfavorite= {
 			xtype: 'selectfield',
@@ -35,11 +47,12 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			placeHolder: i18n.app.HINT_BEERCHOOSE,
 			//label: i18n.app.LABEL_BEERSTYLE,
 			store: Ext.getStore("FavoriteBeers_Local"),
-			valueField: "beerName"
+			valueField: "beerName",
+			docked: 'top'
 		};
 
-		var beerlistsearchcomponent = {
-			xtype: 'beerlistsearchcomponent',
+		var beerlistselectsearchcomponent = {
+			xtype: 'beerlistselectsearchcomponent',
 		};
 
 		var beerList = {
@@ -49,7 +62,10 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 		    singleSelect: true
 		};
 
-		this.add([ header, selectbeerfavorite, beerlistsearchcomponent,beerList]);
+		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerList]);
+	},
+	onBackBeerSelectButtonTap: function(){
+		this.fireEvent("backBeerSelectCommand", this);
 	}
 });
 

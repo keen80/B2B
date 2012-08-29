@@ -3,15 +3,21 @@ Ext.define("B2B.controller.Beers", {
 	config: {
 		refs: {
 			beerSearchComponent: "beerlistsearchcomponent",
+			beerSelectContainer: "beerlistselectcontainerpanel",
+			beerSelectSearchComponent: "beerlistselectsearchcomponent",
 			beerList: "beerlistcontainerpanel",
 			beerForm: "beeraddform",
 			beerDetail: "beerdetailpanel",
 			beerlistcomponent: "beerlistcomponent",
+			beerlistselectcomponent: "beerlistselectcomponent",
 			spinner: 'tbarspinner',
 			app: "_app"
 		},
 		control:{
 			beerSearchComponent: {
+				beerAddCommand:	"onShowBeerForm"
+			},
+			beerSelectSearchComponent: {
 				beerAddCommand:	"onShowBeerForm"
 			},
 			beerForm: {
@@ -29,6 +35,12 @@ Ext.define("B2B.controller.Beers", {
 			},
 			beerlistcomponent: {
 				itemtap: "onViewBeerDetail"
+			},
+			beerlistselectcomponent: {
+				itemtap: "onSelectBeer"
+			},
+			beerSelectContainer:{
+				backBeerSelectCommand: "onBackBeer"
 			}
 		}
 	},
@@ -51,7 +63,7 @@ Ext.define("B2B.controller.Beers", {
 		var beerForm = this.getBeerForm();
  
 		beerForm.submit({
-		    url: 'http://192.168.1.19:8080/birrettaservice/rest/bserv/insertBeer',
+		    url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
 		    method: 'POST',
 		    success: function() {
 		        alert('form submitted successfully!');
@@ -61,11 +73,9 @@ Ext.define("B2B.controller.Beers", {
 		    },
 		    failure: function(form, action) {
 		    	alert("PUPPA");
+		    	if(!spinner.isHidden()) spinner.hide();
 		    }
 		});
-
-
-
 	},
 	onBackBeer: function(){
 		this.getBeerForm().reset();
@@ -123,7 +133,7 @@ Ext.define("B2B.controller.Beers", {
 						text: i18n.app.BTN_BEERSUGGESTEDIT,
 						scope: this,
 						handler: function(){
-							console.log(a.jsonData);
+							HH.log(a.jsonData);
 							a.actions.hide();
 							var newBeer = Ext.create("B2B.model.Beer", {
 							//	'idUser': B2B.app.loggedUser.idUser,
