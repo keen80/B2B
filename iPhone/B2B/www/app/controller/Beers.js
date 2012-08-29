@@ -48,12 +48,24 @@ Ext.define("B2B.controller.Beers", {
 	onSaveBeer: function(){
 		var spinner = this.getSpinner();
 		if(spinner.isHidden()) spinner.show();
+		var beerForm = this.getBeerForm();
+ 
+		beerForm.submit({
+		    url: 'http://192.168.1.19:8080/birrettaservice/rest/bserv/insertBeer',
+		    method: 'POST',
+		    success: function() {
+		        alert('form submitted successfully!');
+		        if(!spinner.isHidden()) spinner.hide();
+		        this.getBeerForm().reset();
+				this.getApp().pop();
+		    },
+		    failure: function(form, action) {
+		    	alert("PUPPA");
+		    }
+		});
 
-		Ext.Msg.alert("Saved!");
-		this.getBeerForm().reset();
-		this.getApp().pop();
 
-		if(!spinner.isHidden()) spinner.hide();
+
 	},
 	onBackBeer: function(){
 		this.getBeerForm().reset();

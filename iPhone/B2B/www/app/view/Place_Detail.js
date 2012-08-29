@@ -58,7 +58,6 @@ Ext.define('B2B.view.Place_Detail', {
 	        useCurrentLocation: false, 
 	        cls: 'mapMiniDrink',
 	        height: 100,
-	        width: 100,                                    
 	        mapOptions: {
 	            zoom: HH.map.zoomLevel2,
 	            mapTypeId : google.maps.MapTypeId.ROADMAP,
@@ -94,6 +93,13 @@ Ext.define('B2B.view.Place_Detail', {
 		    store: Ext.getStore("DrinkInCheckIn_Ajax"),
 		};
 
+		var friendCheckInList = {
+		    xtype: "drinkincheckinlistcomponent",
+		    store: Ext.getStore("DrinkInCheckIn_Ajax"),
+		};
+
+
+
 		var toolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
@@ -111,7 +117,32 @@ Ext.define('B2B.view.Place_Detail', {
 			html: getStringHTMLFromValues(jsonData)
 		};
 
-		this.add([toolbar /*, mapPanel*/ , content, friendCheckInList]);
+		var drinkInButton = {
+			xtype: "button",
+			text: i18n.app.BTN_DRINKIN,
+			ui: 'action',
+			id: 'favorites_add_btn',
+			handler: this.onDrinkInButtonTap,
+			scope: this,
+			//docked: 'bottom'
+		};
+
+		var beerButton = {
+			xtype: "button",
+			text: i18n.app.BTN_ADDBEERDRINK,
+			ui: 'action',
+			id: 'add_beerdrink_btn',
+			handler: this.onSelectBeerButtonTap,
+			scope: this,
+		};
+
+		var actionButton = beerButton;
+		//TODO CHECK
+		if(false){
+			actionButton = drinkInButton;
+		}
+
+		this.add([toolbar, mapPanel, content, actionButton, friendCheckInList]);
 
 	},
 	/*
@@ -120,5 +151,11 @@ Ext.define('B2B.view.Place_Detail', {
 	},*/
 	onPlaceDetailBackButtonTap: function(){
 		this.fireEvent("backPlaceDetailCommand", this);
+	},
+	onSelectBeerButtonTap: function(){
+		this.fireEvent("selectBeerDrinkCommand", this);
+	},
+	onDrinkInButtonTap: function(){
+		this.fireEvent("onDrinkInCommand", this);
 	}
 });

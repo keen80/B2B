@@ -50,6 +50,7 @@
 		"PLACEHOLDER_PASSWORD": "Your Password",
 
 		"BTN_ADDBEER": "Add a Beer",
+		"BTN_ADDBEERDRINK": "Add a Beer from the List",
 		"BTN_ADDBEERFAVORITE": "Add this beer to favorite",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",
@@ -60,6 +61,7 @@
 		"BTN_CANCEL": "Cancel",
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
+		"BTN_DRINKIN": "Drink In!",
 		"BTN_DRINKLIST": "Drink List",
 		"BTN_EDIT": "Edit",
 		"BTN_FAVORITES": "Favorites",
@@ -137,6 +139,7 @@
 		"PICKER_CAMERA": "Camera",
 		"PICKER_LIBRARY": "Library",
 
+		"HINT_BEERCHOOSE": "Select a beer from favorite",
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
 		"HINT_BEERCHOOSEDESCRIPTION": "Write Here Something More",

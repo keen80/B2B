@@ -12,7 +12,9 @@ Ext.define("B2B.controller.Places", {
 				reloadCommand: "onReloadCommand"
 			},
 			placeDetail: {
-				backPlaceDetailCommand: "onBackPlace"
+				backPlaceDetailCommand: "onBackPlace",
+				selectBeerDrinkCommand: "onSelectBeerDrink",
+				onDrinkInCommand: "onDrinkIn"
 			},
 			placelistcomponent: {
 				itemtap: "onViewPlaceDetail"
@@ -33,6 +35,14 @@ Ext.define("B2B.controller.Places", {
 			xtype: "placedetailpanel",
 			jsonData: jsonData
 		});
+	},
+	onSelectBeerDrink: function(){
+		this.getApp().push({
+			xtype: "beerlistselectcontainerpanel",
+		});
+	},
+	onDrinkIn: function(){
+		this.getApp().pop();
 	},
 	init: function(){
 		this.callParent(arguments);
