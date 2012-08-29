@@ -42,9 +42,9 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			id: "selectfieldbeerfavorite",
 			cls: 'beer_form_selectfield',
 			placeHolder: i18n.app.HINT_BEERCHOOSE,
-			//label: i18n.app.LABEL_BEERSTYLE,
 			store: Ext.getStore("FavoriteBeers_Local"),
 			valueField: "beerName",
+			displayField: "beerName",
 			docked: 'top'
 		},
 		beerlistselectsearchcomponent = {
