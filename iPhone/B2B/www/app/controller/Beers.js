@@ -79,25 +79,21 @@ Ext.define("B2B.controller.Beers", {
 		});
 
 		Ext.util.JSONP.request({
-      params: beerForm.getValues,
-      url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
-      callbackKey: 'callback',
-      scope: 'this',
-      method: 'POST',
-      success: function(response) {
-        console.log(response.responseText);
-        if(!spinner.isHidden()) spinner.hide();
-      },
+	  params: beerForm.getValues,
+	  url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
+	  callbackKey: 'callback',
+	  scope: 'this',
+	  method: 'POST',
+	  success: function(response) {
+		console.log(response.responseText);
+		if(!spinner.isHidden()) spinner.hide();
+	  },
 
-      failure: function(response) {
-        console.log(response.responseText);
-        if(!spinner.isHidden()) spinner.hide();
-      }*/
-       alert('form submitted successfully!');
-		        if(!spinner.isHidden()) spinner.hide();
-		        this.getBeerForm().reset();
-				this.getApp().pop();
-//});
+	  failure: function(response) {
+		console.log(response.responseText);
+		if(!spinner.isHidden()) spinner.hide();
+	  }
+});
 
 
 	},
