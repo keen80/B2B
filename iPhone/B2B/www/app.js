@@ -34,7 +34,7 @@ Ext.application({
 		'Drink_AroundMe',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
-		'Favorites_List_Container', 'Favorites_List',
+		'Favorites_List', 'Favorites_List_Container',
 		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
 		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',

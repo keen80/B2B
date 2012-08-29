@@ -84,16 +84,6 @@ Ext.define('B2B.view.User_Profile_About', {
 			handler: this.onFavoritesButtonTap,
 			scope: this
 		},
-
-		favoritesButton = {
-			id: 'favorites_btn',
-			xtype: 'button',
-			ui: 'action',
-			text: i18n.app.BTN_FAVORITES,
-			flex: 1,
-			handler: this.onFavoritesButtonTap,
-			scope: this
-		},
 /*
 		topButtonsContainer = {
 			xtype: 'panel',

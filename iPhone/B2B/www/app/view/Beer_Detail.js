@@ -3,39 +3,37 @@ Ext.define('B2B.view.Beer_Detail', {
 	id: 'BeerDetail',
 	xtype: 'beerdetailpanel',
 	requires: [
-        'Ext.Container',
-        'Ext.MessageBox',
-        'Ext.Panel',
-        'Ext.Toolbar',
-        'Ext.field.Select'
-    ],
+		'Ext.Container',
+		'Ext.MessageBox',
+		'Ext.Panel',
+		'Ext.Toolbar',
+		'Ext.field.Select'
+	],
 	config: {
 		title: i18n.app.PANEL_BEERDETAIL,
 		iconCls: 'add'
 	},
 	initialize: function(){
 
-    	this.callParent(arguments);
+		this.callParent(arguments);
 
-    	var backBeerDetailButton = {
+		var backBeerDetailButton = {
 			xtype: "button",
 			text: i18n.app.BTN_BACK,
 			ui: 'back',
 			id: 'beerdetail_back_btn',
 			handler: this.onBeerDetailBackButtonTap,
 			scope: this
-		};
-
-		var reportBeerButton = {
+		},
+		reportBeerButton = {
 			xtype: "button",
 			text: i18n.app.BTN_BEERREPORT,
 			ui: 'action',
 			id: 'beer_report_btn',
 			handler: this.onBeerReportButtonTap,
 			scope: this
-		};
-
-		var toolbar = {
+		},
+		toolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
 			docked: 'top',
@@ -44,18 +42,16 @@ Ext.define('B2B.view.Beer_Detail', {
 				{ xtype: 'spacer' },
 				reportBeerButton
 			]
-		};
-
-		var reportBeerButton = {
+		},
+		reportBeerButton = {
 			xtype: "button",
 			text: i18n.app.BTN_BEERREPORT,
 			ui: 'action',
 			id: 'beer_report_btn',
 			handler: this.onBeerReportButtonTap,
 			scope: this
-		};
-
-		var addBeerFavoriteButton = {
+		},
+		addBeerFavoriteButton = {
 			xtype: "button",
 			text: i18n.app.BTN_ADDBEERFAVORITE,
 			ui: 'action',
@@ -63,22 +59,21 @@ Ext.define('B2B.view.Beer_Detail', {
 			handler: this.onFavoritesAddBeerButtonTap,
 			scope: this,
 			//docked: 'bottom'
-		};
-
-		var container = {
+		},
+		container = {
 			xtype: 'container',
 			html: this.getStringHTMLFromValues(this.jsonData.data)
 		}
 		this.add([toolbar, container, addBeerFavoriteButton]);
-		
-	}, 
+
+	},
 	getStringHTMLFromValues: function(info){
 		var value = '';
 
 		if (info.image !== null && info.image !== '') {
-		   value += '<img id="beer_thumbnail" src="' + info.image +'" /><hr />';
+		value += '<img id="beer_thumbnail" src="' + info.image +'" /><hr />';
 		}
-		
+
 		value += '<p>' + i18n.app.LABEL_BEERNAME + ': <span>' + _.titleize(info.name) + '</span></p>';
 		if(info.brewery) value+= '<p>' + i18n.app.LABEL_BEERBREWERY + ': <span>' + _.titleize(info.brewery) + '</span></p>';
 		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(parseInt(info.beerstyle)) + '</span></p>';

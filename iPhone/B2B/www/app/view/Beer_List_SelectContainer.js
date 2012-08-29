@@ -15,31 +15,28 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 	initialize: function(){
 		this.callParent(arguments);
 
-		var me = this;
-
-		var backBeerSelectButton = {
-          text: i18n.app.BTN_BACK,
-          ui: 'back',
-          id: 'back_beerselect_btn',
-          handler: this.onBackBeerSelectButtonTap,
-          scope: this
-	      };
-
-	      var toolbar = {
-	          xtype: 'toolbar',
-	          docked: 'top',
-	          cls: 'sub_titlebar',
-	          title: i18n.app.PANEL_BEER,
-	          id: 'BeerSelectTitlebar',
-	          defaults: {
-	              iconMask: true
-	          },
-	          items: [
-	            backBeerSelectButton
-	          ]
-	    };
-
-		var selectbeerfavorite= {
+		var me = this,
+		backBeerSelectButton = {
+			text: i18n.app.BTN_BACK,
+			ui: 'back',
+			id: 'back_beerselect_btn',
+			handler: this.onBackBeerSelectButtonTap,
+			scope: this
+		},
+		toolbar = {
+			xtype: 'toolbar',
+			docked: 'top',
+			cls: 'sub_titlebar',
+			title: i18n.app.PANEL_BEER,
+			id: 'BeerSelectTitlebar',
+			defaults: {
+				iconMask: true
+			},
+			items: [
+				backBeerSelectButton
+			]
+		},
+		selectbeerfavorite= {
 			xtype: 'selectfield',
 			name: "selectbeerfavorite",
 			id: "selectfieldbeerfavorite",
@@ -49,20 +46,18 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			store: Ext.getStore("FavoriteBeers_Local"),
 			valueField: "beerName",
 			docked: 'top'
+		},
+		beerlistselectsearchcomponent = {
+			xtype: 'beerlistselectsearchcomponent'
+		},
+		beerList = {
+			xtype: "beerlistcomponent",
+			id: "beerlistselect",
+			store: null,
+			singleSelect: true
 		};
 
-		var beerlistselectsearchcomponent = {
-			xtype: 'beerlistselectsearchcomponent',
-		};
-
-		var beerListSelect = {
-		    xtype: "beerlistselectcomponent",
-		    id: "beerlistselect",
-		   	store: null,
-		    singleSelect: true
-		};
-
-		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerListSelect]);
+		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerList]);
 	},
 	onBackBeerSelectButtonTap: function(){
 		this.fireEvent("backBeerSelectCommand", this);

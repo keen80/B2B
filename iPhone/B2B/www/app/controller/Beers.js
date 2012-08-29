@@ -10,6 +10,7 @@ Ext.define("B2B.controller.Beers", {
 			beerDetail: "beerdetailpanel",
 			beerlistcomponent: "beerlistcomponent",
 			beerlistselectcomponent: "beerlistselect",
+			beerlistselectcomponent: "beerlistselectcomponent",
 			spinner: 'tbarspinner',
 			app: "_app"
 		},
@@ -61,20 +62,20 @@ Ext.define("B2B.controller.Beers", {
 		var spinner = this.getSpinner();
 		if(spinner.isHidden()) spinner.show();
 		var beerForm = this.getBeerForm();
- /*
+
 		beerForm.submit({
-		    url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
-		    method: 'POST',
-		    success: function() {
-		        alert('form submitted successfully!');
-		        if(!spinner.isHidden()) spinner.hide();
-		        this.getBeerForm().reset();
+			url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
+			method: 'POST',
+			success: function() {
+				alert('form submitted successfully!');
+				if(!spinner.isHidden()) spinner.hide();
+				this.getBeerForm().reset();
 				this.getApp().pop();
-		    },
-		    failure: function(form, action) {
-		    	alert("PUPPA");
-		    	if(!spinner.isHidden()) spinner.hide();
-		    }
+			},
+			failure: function(form, action) {
+				alert("PUPPA");
+				if(!spinner.isHidden()) spinner.hide();
+			}
 		});
 
 		Ext.util.JSONP.request({
@@ -127,11 +128,11 @@ Ext.define("B2B.controller.Beers", {
 	onAddFavoriteBeer: function(a, beer){
 		var newFavorite = Ext.create("B2B.model.FavoriteBeer", {
 			'idBeer': beer.idBeer,
-			'beerName': beer.name,
+			'beerName': beer.name
 		});
 		var store = Ext.getStore('FavoriteBeers_Local');
 		store.add(newFavorite);
-		store.sync()
+		//store.sync()
 		HH.log("-- Added Beer " + beer.name+" to store (now "+store.getCount()+" items)");
 	},
 	onSelectBeer: function(){
@@ -183,7 +184,7 @@ Ext.define("B2B.controller.Beers", {
 							a.actions.hide();
 						}
 					}
-				]	
+				]
 			});
 		}
 		a.actions.show();
