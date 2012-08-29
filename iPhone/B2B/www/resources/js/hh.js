@@ -9,7 +9,7 @@ var HH = {
 	"default_place32": "resources/img/default/blank_avatar_32.png",
 	"default_badge32": "resources/img/default/blank_avatar_32.png",
 	"default_badge64": "resources/img/default/blank_avatar_64.png",
-	DEBUG: false,
+	DEBUG: true,
 	"beergroup": 2,
 	map: {
 		marker: "resources/img/pin_small.png",

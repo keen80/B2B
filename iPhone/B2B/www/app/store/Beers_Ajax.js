@@ -7,9 +7,9 @@ Ext.define("B2B.store.Beers_Ajax", {
         proxy: {
             // Mock for Development 
             type:'ajax',
-            //url:'mock_beerlist.json',
-            type:'jsonp',
-            url:'http://localhost:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+            url:'mock_beerlist.json',
+            //type:'jsonp',
+            //url:'http://localhost:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

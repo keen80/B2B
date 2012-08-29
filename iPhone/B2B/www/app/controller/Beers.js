@@ -21,7 +21,8 @@ Ext.define("B2B.controller.Beers", {
 			beerDetail: {
 				reportBeerCommand: "onReportBeer",
 				beerEditCommand: "onEditBeer",
-				backBeerDetailCommand: "onBackBeerDetail"
+				backBeerDetailCommand: "onBackBeerDetail",
+				addFavoriteBeerCommand: "onAddFavoriteBeer"
 			},
 			beerList: {
 				viewBeerDetailCommand: "onViewBeerDetail"
@@ -74,6 +75,16 @@ Ext.define("B2B.controller.Beers", {
 	},
 	onBackBeerDetail: function(){
 		this.getApp().pop();
+	},
+	onAddFavoriteBeer: function(a, beer){
+		var newFavorite = Ext.create("B2B.model.FavoriteBeer", {
+			'idBeer': beer.idBeer,
+			'beerName': beer.name,
+		});
+		var store = Ext.getStore('FavoriteBeers_Local');
+		store.add(newFavorite);
+		store.sync()
+		HH.log("-- Added Beer " + beer.name+" to store (now "+store.getCount()+" items)");
 	},
 	/* Not Yet Implemented */
 	onEditBeer: function(){

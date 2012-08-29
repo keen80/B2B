@@ -8,17 +8,21 @@ Ext.application({
 		'Ext.MessageBox'
 	],
 
-	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge' ],
+	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge', 'FavoriteBeer' ],
 
 	controllers: [
-		'_App', '_Login', 'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications', 'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera', 'Badges'
+		'_App', '_Login',
+		'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications',
+		'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera', 'Badges',
+		'Favorites'
 	],
 
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
 		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'/*, 'Beers_Single_Ajax'*/, 'Drinks_Local', 'Feedback_Ajax',
 		'Badges_Ajax',
-		'DrinkInCheckIn_Ajax'
+		'DrinkInCheckIn_Ajax',
+		'FavoriteBeers_Local'
 	],
 
 	views: [
@@ -29,6 +33,7 @@ Ext.application({
 		'Drink_AroundMe',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
+		'Favorites_List_Container', 'Favorites_List',
 		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
 		'Friend_Finder',
 		'Friend_List_Container', 'Friend_List', 'Friend_List_SearchComponent', 'Friend_Detail',

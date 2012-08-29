@@ -37,6 +37,7 @@ Ext.define('B2B.view.User_Profile_About', {
 			xtype: 'button',
 			ui: 'action',
 			icon: 'image.png',
+			margin: '10 0 10 0',
 			text: i18n.app.BTN_PROFILE,
 			badgeText: i18n.app.BTN_PROFILE,
 			flex: 1,
@@ -74,6 +75,26 @@ Ext.define('B2B.view.User_Profile_About', {
 			handler: this.onMyActivityButtonTap,
 			scope: this
 		},
+		favoritesButton = {
+			id: 'favorites_btn',
+			xtype: 'button',
+			ui: 'action',
+			text: i18n.app.BTN_FAVORITES,
+			flex: 1,
+			handler: this.onFavoritesButtonTap,
+			scope: this
+		},
+
+		favoritesButton = {
+			id: 'favorites_btn',
+			xtype: 'button',
+			ui: 'action',
+			text: i18n.app.BTN_FAVORITES,
+			flex: 1,
+			handler: this.onFavoritesButtonTap,
+			scope: this
+		},
+/*
 		topButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
@@ -84,7 +105,19 @@ Ext.define('B2B.view.User_Profile_About', {
 			items: [
 				profileButton
 			]
-		},
+		},*/
+		middleButtonsContainer = {
+			xtype: 'panel',
+			flex: 1,
+			padding: '0 0 10 0',
+			layout: {
+				type: 'hbox'
+			},
+			items: [
+				badgesButton,
+				favoritesButton
+			]
+		};
 		bottomButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
@@ -93,12 +126,11 @@ Ext.define('B2B.view.User_Profile_About', {
 				type: 'hbox'
 			},
 			items: [
-				badgesButton,
 				drinkListButton,
-				myActivityButton
+				myActivityButton	
 			]
 		};
-		this.add([toolbar, topButtonsContainer, bottomButtonsContainer]);
+		this.add([toolbar, profileButton, middleButtonsContainer, bottomButtonsContainer]);
 	},
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
@@ -114,6 +146,9 @@ Ext.define('B2B.view.User_Profile_About', {
 	},
 	onMyActivityButtonTap: function() {
 		Ext.Msg.alert("To Be Implemented");
+	},
+	onFavoritesButtonTap: function() {
+		this.fireEvent("favoritesProfileCommand", this);
 	},
 	refreshProfileData: function() {
 		this.fireEvent("reloadProfileCommand", this);

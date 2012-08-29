@@ -2,10 +2,10 @@ Ext.define("B2B.controller._App", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			_App: "_app",
+			app: "_app",
 		},
 		control: {
-			_App: {
+			app: {
 				initialize: "onInitialize"
 			}
 		}

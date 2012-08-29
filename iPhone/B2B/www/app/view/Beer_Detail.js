@@ -11,13 +11,7 @@ Ext.define('B2B.view.Beer_Detail', {
     ],
 	config: {
 		title: i18n.app.PANEL_BEERDETAIL,
-		iconCls: 'add',
-		items: [
-		],
-		html: [
-			'<h1>Beer Detail: '+'</h1>',
-			'I changed the default <b>HTML Contents</b> to something different!'
-		].join("")
+		iconCls: 'add'
 	},
 	initialize: function(){
 
@@ -51,11 +45,33 @@ Ext.define('B2B.view.Beer_Detail', {
 				reportBeerButton
 			]
 		};
-		this.add([toolbar]);
+
+		var reportBeerButton = {
+			xtype: "button",
+			text: i18n.app.BTN_BEERREPORT,
+			ui: 'action',
+			id: 'beer_report_btn',
+			handler: this.onBeerReportButtonTap,
+			scope: this
+		};
+
+		var addBeerFavoriteButton = {
+			xtype: "button",
+			text: i18n.app.BTN_ADDBEERFAVORITE,
+			ui: 'action',
+			id: 'favorites_addbeer_btn',
+			handler: this.onFavoritesAddBeerButtonTap,
+			scope: this,
+			//docked: 'bottom'
+		};
+
+		var container = {
+			xtype: 'container',
+			html: this.getStringHTMLFromValues(this.jsonData.data)
+		}
+		this.add([toolbar, container, addBeerFavoriteButton]);
 		
-		var html = this.getStringHTMLFromValues(this.jsonData.data);
-		this.setHtml([html].join(""));
-	},
+	}, 
 	getStringHTMLFromValues: function(info){
 		var value = '';
 
@@ -75,7 +91,11 @@ Ext.define('B2B.view.Beer_Detail', {
 	onBeerReportButtonTap: function(){
 		this.fireEvent("reportBeerCommand", this);
 	},
+	onFavoritesAddBeerButtonTap: function(){
+		this.fireEvent("addFavoriteBeerCommand", this, this.jsonData.data);
+	},
 	onBeerDetailBackButtonTap: function(){
 		this.fireEvent("backBeerDetailCommand", this);
 	}
 });
+

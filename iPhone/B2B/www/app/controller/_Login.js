@@ -2,11 +2,11 @@ Ext.define("B2B.controller._Login", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			_Login: "#BTN_login",
-			_App: "_app"
+			login: "#BTN_login",
+			app: "_app"
 		},
 		control: {
-			_Login:{
+			login:{
 				loginCommand: "onLoginCommand"
 			}
 		}

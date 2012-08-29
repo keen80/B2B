@@ -119,9 +119,10 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 
 		           		if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
 			                e.stopEvent();
-			                fld.element.dom.blur();
+			                field.element.dom.blur();
 			                window.scrollTo(0,0);
-			                var activeItem = beerlist.getActiveItem();
+			                var activeItem = beerlist.setActiveItem(1);
+			                console.log(beerlist.getActiveItem());
 			            }
 			      	/*  }else{
 			        
