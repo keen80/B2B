@@ -96,7 +96,7 @@ Ext.define("B2B.controller.Beers", {
 		        if(!spinner.isHidden()) spinner.hide();
 		        this.getBeerForm().reset();
 				this.getApp().pop();
-});
+//});
 
 
 	},
