@@ -5,7 +5,7 @@ Ext.define("B2B.store.Badges_Ajax", {
 		model: "B2B.model.Badge",
 		proxy: {
 			type:'ajax',
-			url:'mock_badgelist.json',
+			url:'json/mock_badgelist.json',
 			reader: {
 				type:'json',
 				rootProperty: 'response.body.list',

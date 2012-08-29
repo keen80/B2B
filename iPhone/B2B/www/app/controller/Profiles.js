@@ -44,6 +44,7 @@ Ext.define("B2B.controller.Profiles", {
 		if (!a.actions){
 			a.actions = Ext.Viewport.add({
 				xtype: 'actionsheet',
+				zIndex: 900,
 				items: [
 					{
 						text: i18n.app.PANEL_PREFERENCES,

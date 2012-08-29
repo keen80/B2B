@@ -5,7 +5,7 @@ Ext.define("B2B.store.Places_Ajax", {
         model: "B2B.model.Place",
         proxy: {
             type:'ajax',
-            url:'mock_placelist.json',
+            url:'json/mock_placelist.json',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

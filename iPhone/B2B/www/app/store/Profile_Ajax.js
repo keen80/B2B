@@ -5,7 +5,7 @@ Ext.define("B2B.store.Profile_Ajax", {
 		model: "B2B.model.User",
 		proxy:{
 			type:'ajax',
-			url:'mock_user.json',
+			url:'json/mock_user.json',
 			reader:{
 				type:'json',
 				rootProperty: 'response.body.list',

@@ -1,9 +1,16 @@
 $base_color: #77AABB;
-//$active-color:#DDCC00;
 $base-gradient: 'flat';
 $tabs-bottom-active-gradient: 'flat';
 $tabs-bottom-gradient: 'flat';
 $tabs-dark-active-color: #DDCC00;
+
+// Lists
+$list-active-gradient: 'bevel';
+$list-header-bg-color: transparentize(saturate($base-color, 10%), .25);
+$list-header-gradient: 'matte';
+
+// Tabs
+$tabs-dark: #111;
 
 
 /*
@@ -243,9 +250,9 @@ $top-tab-height
 // @include sencha-indexbar;
 @include sencha-list;
 @include sencha-layout;
-@include sencha-carousel;
+//@include sencha-carousel;
 @include sencha-form;
-@include sencha-msgbox;
+//@include sencha-msgbox;
 @include sencha-loading-spinner;
 
 // Your custom code goes here...

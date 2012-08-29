@@ -5,7 +5,7 @@ Ext.define("B2B.store.Activities_Ajax", {
         model: "B2B.model.Activity",
         proxy: {
             type:'ajax',
-            url:'mock_activitylist.json',
+            url:'json/mock_activitylist.json',
             //type:'jsonp',
             //url:'http://localhost:8080/birrettaservice/rest/bserv/listMyActivity_jsonp',
             reader: {

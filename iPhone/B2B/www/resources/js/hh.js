@@ -1,3 +1,12 @@
+_.mixin(_.str.exports());
+
+google.maps.Map.prototype.clearMarkers = function() {
+    for(var i=0; i < this.markers.length; i++){
+        this.markers[i].setMap(null);
+    }
+    this.markers = new Array();
+};
+
 var HH = {
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",

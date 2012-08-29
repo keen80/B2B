@@ -5,7 +5,7 @@ Ext.define("B2B.store.Activities_User_Ajax", {
         model: "B2B.model.Activity",
         proxy: {
             type:'ajax',
-            url:'mock_activityuser.json',
+            url:'json/mock_activityuser.json',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

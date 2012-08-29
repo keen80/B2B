@@ -7,7 +7,7 @@ Ext.define("B2B.store.DrinkInCheckIn_Ajax", {
         proxy: {
             // Mock for Development 
             type:'ajax',
-            url:'mock_drinkincheckinlist.json',
+            url:'json/mock_drinkincheckinlist.json',
            // type:'jsonp',
            // url:'http://localhost:8080/birrettaservice/rest/bserv/listBeer_jsonp',
             reader: {

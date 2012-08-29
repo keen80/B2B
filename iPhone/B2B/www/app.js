@@ -4,9 +4,6 @@ Ext.Loader.setPath('Ext', './sdk/src');
 
 Ext.application({
 	"name": 'B2B',
-	requires: [
-		'Ext.MessageBox'
-	],
 
 	models: [ 'User', 'Friend', 'Beer', 'Drink', 'Activity', 'Notification', 'Place', 'BeerSingle', 'Feedback', 'Badge', 'FavoriteBeer' ],
 
@@ -19,7 +16,7 @@ Ext.application({
 
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
-		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local'/*, 'Beers_Single_Ajax'*/, 'Drinks_Local', 'Feedback_Ajax',
+		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Drinks_Local', 'Feedback_Ajax',
 		'Badges_Ajax',
 		'DrinkInCheckIn_Ajax',
 		'FavoriteBeers_Local'
@@ -57,7 +54,7 @@ Ext.application({
 	isIconPrecomposed: true,
 
 	startupImage: {
-		'320x460': 'resources/startup/320x460.jpg',
+		'320x460': 'resources/startup/320x460.png',
 		'640x920': 'resources/startup/640x920.png',
 		'768x1004': 'resources/startup/768x1004.png',
 		'748x1024': 'resources/startup/748x1024.png',
@@ -70,8 +67,7 @@ Ext.application({
 
 		goingTo.step1("Loading Store.Profile");
 
-		// Destroy the #appLoadingIndicator element
-		Ext.fly('appLoadingIndicator').destroy();
+	/*Ext.fly('appLoadingIndicator').destroy();*/
 
 		var profileStore = Ext.getStore("Profile_Local");
 
@@ -85,14 +81,8 @@ Ext.application({
 		}
 	},
 	onUpdated: function() {
-		Ext.Msg.confirm(
-			"Application Update",
-			"This application has just successfully been updated to the latest version. Reload now?",
-			function(buttonId) {
-				if (buttonId === 'yes') {
-					window.location.reload();
-				}
-			}
-		);
+		if(window.confirm(i18n.app.HINT_APPLICATIONRELOADED)){
+			window.location.reload();
+		}
 	}
 });

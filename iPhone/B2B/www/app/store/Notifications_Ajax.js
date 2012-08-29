@@ -6,7 +6,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
         model: "B2B.model.Notification",
         proxy: {
             type:'ajax',
-            url:'mock_notificationlist.json',
+            url:'json/mock_notificationlist.json',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

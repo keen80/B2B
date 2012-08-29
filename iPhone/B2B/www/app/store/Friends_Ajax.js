@@ -6,7 +6,7 @@ Ext.define("B2B.store.Friends_Ajax", {
         sorters: 'displayName',
         proxy: {
             type:'ajax',
-            url:'mock_friendlist.json',
+            url:'json/mock_friendlist.json',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
