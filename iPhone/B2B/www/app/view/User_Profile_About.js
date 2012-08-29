@@ -12,10 +12,10 @@ Ext.define('B2B.view.User_Profile_About', {
 		this.callParent(arguments);
 
 		var editProfileButton = {
-			text: i18n.app.BTN_EDIT,
+			text: i18n.app.BTN_SETTINGS,
 			ui: 'action',
 			id: 'edit_profile_btn',
-			handler: this.onEditProfileButtonTap,
+			handler: this.onSettingsProfileButtonTap,
 			scope: this
 		},
 		toolbar = {
@@ -124,6 +124,9 @@ Ext.define('B2B.view.User_Profile_About', {
 	},
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
+	},
+	onSettingsProfileButtonTap: function() {
+		this.fireEvent("settingsProfileCommand", this);
 	},
 	onProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);

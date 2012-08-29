@@ -69,12 +69,15 @@ var goingTo = {
 	},
 	setupPreferences: function(profile){
 		HH.log("---> Step: Setup Preferences");
+		/*
+		TODO
 		var preferencesForm = Ext.getCmp("userpreferencesform");
 		preferencesForm.reset();
 		preferencesForm.setRecord(profile);
 		B2B.app.getController('Preferences').onChangeTwitter(null, profile.data.shareTwitter);
 		B2B.app.getController('Preferences').onChangeFacebook(null, profile.data.shareFacebook);
-	}
+	*/
+}
 };
 
 /* Utils Global Object*/

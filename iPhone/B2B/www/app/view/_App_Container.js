@@ -32,7 +32,7 @@ Ext.define("B2B.view._App_Container", {
 				xtype: 'friendlistcontainerpanel'
 			},
 			{
-				xtype: 'userprofilecontainerpanel'
+				xtype: 'userprofileaboutpanel'
 			}/*,
 			{
 				xtype: 'cameracontainerpanel'
