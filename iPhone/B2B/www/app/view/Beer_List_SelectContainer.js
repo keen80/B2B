@@ -55,14 +55,14 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			xtype: 'beerlistselectsearchcomponent',
 		};
 
-		var beerList = {
-		    xtype: "beerlistcomponent",
+		var beerListSelect = {
+		    xtype: "beerlistselectcomponent",
 		    id: "beerlistselect",
 		   	store: null,
 		    singleSelect: true
 		};
 
-		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerList]);
+		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerListSelect]);
 	},
 	onBackBeerSelectButtonTap: function(){
 		this.fireEvent("backBeerSelectCommand", this);

@@ -35,7 +35,7 @@ Ext.define('B2B.view.Beer_List_SelectSearchComponent', {
 	            keyup: function(field, e) {
 		           	var value = field.getValue();
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
-		           	var beerlist = Ext.getCmp("beerlistbeerlistselect");
+		           	var beerlist = Ext.getCmp("beerlistselect");
 		           	var beerlistcontainer = Ext.getCmp("beerlistselectcontainer");
 		           	var infobar = Ext.getCmp("searchinfobarselect");
 

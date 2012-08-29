@@ -30,7 +30,7 @@ Ext.application({
 		'_SplashBeerSearch',
 		'Activity_List_Container', 'Activity_List', 'Activity_Detail', 'Activity_User',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
-		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent',
+		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent', 'Beer_List_Select',
 		'Drink_AroundMe',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',

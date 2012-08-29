@@ -13,6 +13,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 	config: {
 		title: i18n.app.PANEL_ADDBEER,
 		iconCls: 'add',
+		submitOnAction: true,
 		defaults: {
 			labelAlign: 'left',
 			labelWidth: '50%',

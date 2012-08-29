@@ -9,7 +9,7 @@ Ext.define("B2B.controller.Beers", {
 			beerForm: "beeraddform",
 			beerDetail: "beerdetailpanel",
 			beerlistcomponent: "beerlistcomponent",
-			beerlistselectcomponent: "beerlistselectcomponent",
+			beerlistselectcomponent: "beerlistselect",
 			spinner: 'tbarspinner',
 			app: "_app"
 		},
@@ -40,7 +40,7 @@ Ext.define("B2B.controller.Beers", {
 				itemtap: "onSelectBeer"
 			},
 			beerSelectContainer:{
-				backBeerSelectCommand: "onBackBeer"
+				backBeerSelectCommand: "onBackBeerSelect"
 			}
 		}
 	},
@@ -61,7 +61,7 @@ Ext.define("B2B.controller.Beers", {
 		var spinner = this.getSpinner();
 		if(spinner.isHidden()) spinner.show();
 		var beerForm = this.getBeerForm();
- 
+ /*
 		beerForm.submit({
 		    url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
 		    method: 'POST',
@@ -76,9 +76,31 @@ Ext.define("B2B.controller.Beers", {
 		    	if(!spinner.isHidden()) spinner.hide();
 		    }
 		});
+*/
+		Ext.util.JSONP.request({
+      params: beerForm.getValues,
+      url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
+      callbackKey: 'callback',
+      scope: 'this',
+      method: 'POST',
+      success: function(response) {
+        console.log(response.responseText);
+        if(!spinner.isHidden()) spinner.hide();
+      },
+
+      failure: function(response) {
+        console.log(response.responseText);
+        if(!spinner.isHidden()) spinner.hide();
+      }
+});
+
+
 	},
 	onBackBeer: function(){
 		this.getBeerForm().reset();
+		this.getApp().pop();
+	},
+	onBackBeerSelect: function(){
 		this.getApp().pop();
 	},
 	onViewBeerDetail: function(a, b, c, record){
@@ -107,6 +129,9 @@ Ext.define("B2B.controller.Beers", {
 		store.add(newFavorite);
 		store.sync()
 		HH.log("-- Added Beer " + beer.name+" to store (now "+store.getCount()+" items)");
+	},
+	onSelectBeer: function(){
+
 	},
 	/* Not Yet Implemented */
 	onEditBeer: function(){
