@@ -84,6 +84,7 @@ var i18n = {
 		"BTN_SAVE": "Save",
 		"BTN_SEARCHFRIEND": "Invite Friends",
 		"BTN_SEND": "Send",
+		"BTN_SETTINGS": "Settings",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
 		"DIALOG_BEERREPORTED": "Thank You for you report, We will look into it.",
