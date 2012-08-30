@@ -10,7 +10,14 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
 	initialize: function(){
         this.callParent(arguments);
 
-        var toolbar = {
+        var cancelButton = {
+			text: i18n.app.BTN_CANCEL,
+			ui: 'action',
+			id: 'cancel_privacy_btn',
+			handler: this.onCancelButtonTap,
+			scope: this
+		},
+        toolbar = {
             xtype: 'titlebar',
             title: i18n.app.PANEL_PRIVACY,
             cls: "sub_titlebar",
@@ -19,10 +26,12 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
             ui: 'neutral',
             defaults: {
                 iconMask: true
-            }
-        };
-
-        var fieldset_RemoveData = {
+            },
+            items: [
+            	cancelButton
+            ]
+        },
+        fieldset_RemoveData = {
 			xtype: 'fieldset',
 			title: utils.__(i18n.app.FORM_PRIVACY),
 			instructions: utils.__(i18n.app.HINT_CAREFULLY),
@@ -41,15 +50,14 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
 					]
 				}
 			]
-		}
-
-		var button_Logout = {
+		},
+		button_Logout = {
 			xtype: 'button',
 			id: 'BTN_logOut',
 			text: utils.__(i18n.app.BTN_LOGOUT),
 			ui: 'decline',
 			handler: this.onLogoutButtonTap
-		}
+		};
 
         this.add([toolbar, fieldset_RemoveData, button_Logout]);
     },
@@ -58,5 +66,8 @@ Ext.define('B2B.view.User_Profile_Privacy_Form', {
     },
     onLogoutButtonTap: function(){
         this.fireEvent("privacyLogoutCommand", this);
+    },
+    onCancelButtonTap: function(){
+    	this.fireEvent("cancelCommand", this);
     }
 });

@@ -6,15 +6,22 @@ Ext.define('B2B.view.User_Profile_About', {
 		title: i18n.app.PANEL_ABOUTME,
 		iconCls: 'user',
 		scrollable: false,
-		layout: 'vbox'
+		layout: 'card'
 	},
 	initialize: function(){
 		this.callParent(arguments);
 
-		var editProfileButton = {
+		var privacyButton = {
+			text: i18n.app.BTN_PRIVACY,
+			ui: 'action',
+			id: 'privacy_profile_btn',
+			handler: this.onPrivacyProfileButtonTap,
+			scope: this
+		},
+		settingsButton = {
 			text: i18n.app.BTN_SETTINGS,
 			ui: 'action',
-			id: 'edit_profile_btn',
+			id: 'settings_profile_btn',
 			handler: this.onSettingsProfileButtonTap,
 			scope: this
 		},
@@ -28,8 +35,9 @@ Ext.define('B2B.view.User_Profile_About', {
 				iconMask: true
 			},
 			items: [
+				privacyButton,
 				{ xtype: 'spacer' },
-				editProfileButton
+				settingsButton
 			]
 		},
 		profileButton = {
@@ -84,18 +92,6 @@ Ext.define('B2B.view.User_Profile_About', {
 			handler: this.onFavoritesButtonTap,
 			scope: this
 		},
-/*
-		topButtonsContainer = {
-			xtype: 'panel',
-			flex: 1,
-			padding: '20 0 10 0',
-			layout: {
-				type: 'hbox'
-			},
-			items: [
-				profileButton
-			]
-		},*/
 		middleButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
@@ -107,7 +103,7 @@ Ext.define('B2B.view.User_Profile_About', {
 				badgesButton,
 				favoritesButton
 			]
-		};
+		},
 		bottomButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
@@ -117,13 +113,34 @@ Ext.define('B2B.view.User_Profile_About', {
 			},
 			items: [
 				drinkListButton,
-				myActivityButton	
+				myActivityButton
 			]
+		},
+		item0 = {
+			xtype: 'panel',
+			flex: 1,
+			layout: {
+				type: 'vbox'
+			},
+			items: [
+				toolbar, profileButton, middleButtonsContainer, bottomButtonsContainer
+			]
+		},
+		item1 = {
+			xtype: 'userpreferencesform'
+		},
+		item2 = {
+			xtype: 'userprofileprivacyform'
 		};
-		this.add([toolbar, profileButton, middleButtonsContainer, bottomButtonsContainer]);
+
+		this.add([item0, item1, item2]);
+		this.setActiveItem(0);
 	},
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
+	},
+	onPrivacyProfileButtonTap: function() {
+		this.fireEvent("privacyProfileCommand", this);
 	},
 	onSettingsProfileButtonTap: function() {
 		this.fireEvent("settingsProfileCommand", this);

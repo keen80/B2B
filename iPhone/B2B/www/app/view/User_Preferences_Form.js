@@ -22,6 +22,13 @@ Ext.define('B2B.view.User_Preferences_Form', {
 			handler: this.onSavePreferencesButtonTap,
 			scope: this
 		},
+		cancelButton = {
+			text: i18n.app.BTN_CANCEL,
+			ui: 'action',
+			id: 'cancel_preferences_btn',
+			handler: this.onCancelButtonTap,
+			scope: this
+		},
 		toolbar = {
 			xtype: 'toolbar',
 			docked: 'top',
@@ -33,6 +40,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 				iconMask: true
 			},
 			items: [
+				cancelButton,
 				{ xtype: 'spacer' },
 				savePreferencesButton
 			]
@@ -110,5 +118,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 	onShareFacebookToggle: function(what){
 		this.fireEvent("toggleFacebookCommand", this, what);
 	},
-
+	onCancelButtonTap: function() {
+		this.fireEvent("cancelCommand", this);
+	}
 });

@@ -73,7 +73,7 @@ var goingTo = {
 		HH.log("---> Step: Setup DisplayName thru app");
 		var displayName = utils.getDisplayName(profile.data);
 		Ext.get("profile_username").setHtml(profile.data.username);
-		Ext.getCmp('AboutTitlebar').setTitle(displayName);
+		// Ext.getCmp('AboutTitlebar').setTitle(displayName);
 		Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
 	},
 	setupPreferences: function(profile){

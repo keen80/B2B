@@ -3,6 +3,7 @@ Ext.define("B2B.controller.Preferences", {
 	id: "Preferences",
 	config: {
 		refs: {
+			privacyForm: "userprofileprivacyform",
 			preferencesForm: "userpreferencesform",
 			appContainer: "App_Container",
 			app: "_app"
@@ -11,8 +12,12 @@ Ext.define("B2B.controller.Preferences", {
 			preferencesForm: {
 				showPreferencesCommand: "onShowPreferencesForm",
 				savePreferencesCommand: "onSavePreferences",
+				cancelCommand: "onCancel",
 				toggleTwitterCommand: "onChangeTwitter",
 				toggleFacebookCommand: "onChangeFacebook"
+			},
+			privacyForm: {
+				cancelCommand: "onCancel"
 			}
 		}
 	},
@@ -77,7 +82,18 @@ Ext.define("B2B.controller.Preferences", {
         }
 	},
 	onSavePreferences: function(){
-		console.log("asdf");
+		this.closePanel();
+	},
+	onCancel: function() {
+		this.closePanel();
+	},
+	closePanel: function() {
+		// this.getApp().pop();
+		var maninPanel = Ext.getCmp("userprofileaboutpanel");
+		maninPanel.animateActiveItem(0, {
+			type:'slide',
+			direction:'down'
+		});
 	},
 	init: function(){
 		this.callParent(arguments);

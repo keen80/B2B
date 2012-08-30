@@ -85,6 +85,7 @@ var i18n = {
 		"BTN_SEARCHFRIEND": "Invite Friends",
 		"BTN_SEND": "Send",
 		"BTN_SETTINGS": "Settings",
+		"BTN_PRIVACY": "Privacy",
 
 		"DIALOG_APPLICATIONDATAREMOVED": "All data were removed. <br />You will prompted to login again.",
 		"DIALOG_BEERREPORTED": "Thank You for you report, We will look into it.",
@@ -140,6 +141,7 @@ var i18n = {
 		"PICKER_CAMERA": "Camera",
 		"PICKER_LIBRARY": "Library",
 
+		"HINT_APPLICATIONRELOADED": "This application has just successfully been updated to the latest version. Reload now?",
 		"HINT_BEERCHOOSE": "Select a beer from favorite",
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",
 		"HINT_BEERCHOOSEBREWERY": "Do You Know the Brewery?",
@@ -169,9 +171,10 @@ var i18n = {
 		"TEXT_NOFAVORITEFOUND": "No favorite found",
 		"TEXT_NOFRIENDFOUND": "No friend found",
 		"TEXT_NONOTIFICATIONFOUND": "No activity found",
-		"TEXT_FEEDBACKFOUND": "No comments found",
+		"TEXT_NOFEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 		"TEXT_NOBADGEFOUND": "No badge found",
+		"TEXT_LOADINGCLAIM": "Drink <span class='hilite'>Carefully</span>, Always.",
 
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 

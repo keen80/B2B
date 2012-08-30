@@ -4,7 +4,7 @@ Ext.define('B2B.view.Activity_List_Container', {
         'Ext.TitleBar',
     ],
 	xtype: 'activitylistcontainerpanel',
-	
+
 	config: {
 		title: i18n.app.PANEL_ACTIVITY,
 		iconCls: 'maps',
@@ -24,14 +24,12 @@ Ext.define('B2B.view.Activity_List_Container', {
             width: '100%',
             docked: 'top',
             html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
-        };
-
-		var activityStreams = {
+        },
+        activityStreams = {
             xtype: "activitylistcomponent",
             store: Ext.getStore("Activities_Local"),
-        };
-
-        var myLastDrinkIn = {
+        },
+        myLastDrinkIn = {
         	xtype: "activityusercomponent",
             store: Ext.getStore("Activities_User_Ajax"),
             draggable: false,
