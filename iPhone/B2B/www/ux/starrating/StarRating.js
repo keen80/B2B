@@ -1,7 +1,7 @@
 /**
  * @author Pavel Podlipensky - http://podlipensky.com
  * @class Ext.ux.starrating.View
- * <p>This is an extension for Ext.field.Field which works with Sencha Touch 2. 
+ * <p>This is an extension for Ext.field.Field which works with Sencha Touch 2.
  * The Rating control provides an intuitive rating experience that allows users to select the number of stars (or other symbols) that represents their rating.</p>
  * <p>Sample Usage</p>
  * <pre><code>
@@ -12,7 +12,7 @@
  * 			itemHoverCls : 'x-rating-star-hover'
  * 		})
  * 	</code></pre>
- * 	
+ *
  */
 //Ext.namespace('Ext.ux.touch');
 
@@ -20,7 +20,7 @@
 Ext.define('Ext.ux.starrating.StarRating', {
     extend: 'Ext.field.Field',
     xtype: 'starrating',
-    
+
 	 /**
      * @event change
      * Fires just after user selected new value
@@ -28,7 +28,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
      * @param {Mixed} newValue The new value
      * @param {Mixed} oldValue The original value
      */
-	
+
 	config: {
         /**
         * @cfg {String} baseCls
@@ -39,7 +39,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
         baseCls: Ext.baseCSSPrefix + 'field x-rating-field',
 
         /**
-        * @cfg {Number} minValue  
+        * @cfg {Number} minValue
         * Minimum value which can be selected by user
         */
         minValue: -1,
@@ -51,7 +51,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
         defaultValue: -1,
 
         /**
-        * @cfg {Number} value 
+        * @cfg {Number} value
         * Value represents index of far right selected star, i.e. if 4 stars selected value will be equal to 3
         */
         value: -1,
@@ -64,12 +64,12 @@ Ext.define('Ext.ux.starrating.StarRating', {
 
         /**
         * @cfg {Boolean} clearIcon
-        * Determine whether to show clear button	 
+        * Determine whether to show clear button
         */
         clearIcon: false,
 
         /**
-        * @cfg {Number} itemsCount 
+        * @cfg {Number} itemsCount
         * If @items collection is not specified, the it will generate it with total amount of items equal to @itemsCount
         * NOTE: @itemCls and @itemHoverCl should be specified for proper items collection generation and control rendering.
         */
@@ -80,6 +80,8 @@ Ext.define('Ext.ux.starrating.StarRating', {
         * Class to apply to the item when it is not selected
         */
         itemCls: 'x-rating-star',
+
+        valueCls: 'x-rating-value',
 
         /**
         * @cfg {String} itemHoverCls
@@ -114,7 +116,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
     },
 
     initialize: function () {
-        
+
         var me = this;
         Ext.ux.starrating.StarRating.superclass.initialize.apply(me, arguments);
 
@@ -126,7 +128,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
         });
     },
 
-    updateComponent: function (newComponent, oldComponent) {        
+    updateComponent: function (newComponent, oldComponent) {
         this.callParent(arguments);
         if (oldComponent) {
             //TODO: cleanup event subscriptions
@@ -135,16 +137,16 @@ Ext.define('Ext.ux.starrating.StarRating', {
         var innerElement = this.innerElement,
             cls = this.getCls();
 
-        this.getComponent(); //why do we make this call?        
+        this.getComponent(); //why do we make this call?
         var newConfig = Ext.applyIf({
             items: new Array(this.getItemsCount() || 0)
-        }, this.config);        
+        }, this.config);
         newComponent._tpl.overwrite(newComponent.element.dom, newConfig);
-        this.items = newComponent.element.select('.x-rating-item', newComponent.element.dom);        
+        this.items = newComponent.element.select('.x-rating-item', newComponent.element.dom);
         if (this.config.clearIcon) {
             this.clearBtn = newComponent.element.down('.' + this.getClearCls());
             this.clearBtn.on('tap', this.onClear, this);
-        }        
+        }
     },
 
     /*
@@ -183,10 +185,10 @@ Ext.define('Ext.ux.starrating.StarRating', {
     },
 
     applyValue: function (value) {
-        value = parseFloat(value);        
+        value = parseFloat(value);
         if (isNaN(value) || value === null) {
             value = this.getDefaultValue();
-        }        
+        }
         //round the value to 1 decimal
         value = Math.round(value * 10) / 10;
 
@@ -199,20 +201,31 @@ Ext.define('Ext.ux.starrating.StarRating', {
     */
     displayValue: function (value) {
         if (!this.rendered) {
-            //TODO: replace event with ST2.0 equivalent            
+            //TODO: replace event with ST2.0 equivalent
             this.on('painted', Ext.Function.bind(this.displayValue, this, [value]), this, { single: true });
             return;
         }
-        var items = this.items;        
+        var items = this.items;
         var count = items.getCount();
         var itemCls = this.getItemCls();
         var hoverCls = this.getItemHoverCls();
-        
+        var valueCls = this.getValueCls();
+        var item = null;
+
         for (var i = 0; i < count; i++) {
-            var item = items.item(i);
-            item[i <= value ? 'addCls' : 'removeCls'](hoverCls);
-            item[i <= value ? 'removeCls' : 'addCls'](itemCls);
+            item = items.item(i);
+            item[i < value ? 'addCls' : 'removeCls'](hoverCls);
+            item[i < value ? 'removeCls' : 'addCls'](itemCls);
+            item['removeCls'](valueCls);
         }
+
+        value = (value >= count ? (count - 1) : value);
+        value = ( value < 0 ? 0 : value);
+
+        item = items.item(value);
+        item['removeCls'](hoverCls);
+        item['removeCls'](itemCls);
+        item['addCls'](valueCls);
     },
 
     setValue: function (value) {
@@ -221,7 +234,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
         if (isNaN(value) || value === null) {
             throw 'Argument exception: value argument is not a number.';
         }
-        var minValue = this.getMinValue();        
+        var minValue = this.getMinValue();
         //auto-correct user's input
         if (Ext.isNumber(minValue) && value < minValue) {
             value = minValue;
@@ -230,9 +243,9 @@ Ext.define('Ext.ux.starrating.StarRating', {
         if (this.items && value > this.items.getCount()) {
             value = this.items.getCount() - 1;
         }
-        this.callParent([value]);        
-        this.displayValue(value);      
-		this.fireEvent('change', this, value, currentValue);		
+        this.callParent([value]);
+        this.displayValue(value);
+		this.fireEvent('change', this, value, currentValue);
     },
 
     reset: function () {
@@ -260,11 +273,11 @@ Ext.define('Ext.ux.starrating.StarRating', {
      * @removed 2.0.0
      */
     Ext.deprecateProperty(this, 'singleColorPerValue', null, "Ext.ux.starrating.View.singleColorPerValue has been removed");
-	
+
 	/**
      * @member Ext.ux.starrating.View
      * @cfg {Boolean} useClearIcon
      * @removed 2.0.0
      */
-    Ext.deprecateProperty(this, 'useClearIcon', null, "Ext.ux.starrating.View.useClearIcon has been removed");  
+    Ext.deprecateProperty(this, 'useClearIcon', null, "Ext.ux.starrating.View.useClearIcon has been removed");
 });
