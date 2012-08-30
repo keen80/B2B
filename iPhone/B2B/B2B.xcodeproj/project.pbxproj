@@ -13,6 +13,8 @@
 		38D9D10715E511AD00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
 		38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
 		38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
+		38F5DC7215EF940B00545E11 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */; };
+		38F5DC7315EF940B00545E11 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5DC7115EF940B00545E11 /* Default~iphone.png */; };
 		F946B91915DE2E83003664FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91815DE2E83003664FF /* Foundation.framework */; };
 		F946B91B15DE2E83003664FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91A15DE2E83003664FF /* UIKit.framework */; };
 		F946B91D15DE2E83003664FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91C15DE2E83003664FF /* CoreGraphics.framework */; };
@@ -30,8 +32,6 @@
 		F946B95015DE2E83003664FF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B94F15DE2E83003664FF /* icon.png */; };
 		F946B95215DE2E83003664FF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95115DE2E83003664FF /* icon@2x.png */; };
 		F946B95415DE2E83003664FF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95315DE2E83003664FF /* icon-72.png */; };
-		F946B95715DE2E83003664FF /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95615DE2E83003664FF /* Default~iphone.png */; };
-		F946B95915DE2E83003664FF /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F946B95815DE2E83003664FF /* Default@2x~iphone.png */; };
 		F946B95B15DE2E83003664FF /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F946B95A15DE2E83003664FF /* Capture.bundle */; };
 		F946B95D15DE2E83003664FF /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = F946B95C15DE2E83003664FF /* Cordova.plist */; };
 		F946B96115DE2E83003664FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F946B96015DE2E83003664FF /* AppDelegate.m */; };
@@ -76,6 +76,8 @@
 		38B5BB1B15E8F2A700F85CB0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = VERSION; path = Libraries/Cordova/VERSION; sourceTree = "<group>"; };
 		38D9D10415E5119A00ACCA70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38D9D10A15E511E900ACCA70 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/Localizations/it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Default@2x~iphone.png"; path = "../www/resources/loading/Default@2x~iphone.png"; sourceTree = "<group>"; };
+		38F5DC7115EF940B00545E11 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Default~iphone.png"; path = "../www/resources/loading/Default~iphone.png"; sourceTree = "<group>"; };
 		F946B91415DE2E83003664FF /* B2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946B91815DE2E83003664FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F946B91A15DE2E83003664FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -96,8 +98,6 @@
 		F946B94F15DE2E83003664FF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
 		F946B95115DE2E83003664FF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
 		F946B95315DE2E83003664FF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
-		F946B95615DE2E83003664FF /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "Resources/splash/Default~iphone.png"; sourceTree = "<group>"; };
-		F946B95815DE2E83003664FF /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "Resources/splash/Default@2x~iphone.png"; sourceTree = "<group>"; };
 		F946B95A15DE2E83003664FF /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		F946B95C15DE2E83003664FF /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
 		F946B95F15DE2E83003664FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
@@ -245,8 +245,8 @@
 		F946B95515DE2E83003664FF /* splash */ = {
 			isa = PBXGroup;
 			children = (
-				F946B95615DE2E83003664FF /* Default~iphone.png */,
-				F946B95815DE2E83003664FF /* Default@2x~iphone.png */,
+				38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */,
+				38F5DC7115EF940B00545E11 /* Default~iphone.png */,
 			);
 			name = splash;
 			sourceTree = "<group>";
@@ -362,8 +362,6 @@
 				F946B95015DE2E83003664FF /* icon.png in Resources */,
 				F946B95215DE2E83003664FF /* icon@2x.png in Resources */,
 				F946B95415DE2E83003664FF /* icon-72.png in Resources */,
-				F946B95715DE2E83003664FF /* Default~iphone.png in Resources */,
-				F946B95915DE2E83003664FF /* Default@2x~iphone.png in Resources */,
 				F946B95B15DE2E83003664FF /* Capture.bundle in Resources */,
 				F946B95D15DE2E83003664FF /* Cordova.plist in Resources */,
 				F946B96615DE2E83003664FF /* MainViewController.xib in Resources */,
@@ -373,6 +371,8 @@
 				38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */,
 				38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */,
 				38B5BB1C15E8F2A700F85CB0 /* VERSION in Resources */,
+				38F5DC7215EF940B00545E11 /* Default@2x~iphone.png in Resources */,
+				38F5DC7315EF940B00545E11 /* Default~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

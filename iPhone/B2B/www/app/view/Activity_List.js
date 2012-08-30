@@ -13,10 +13,16 @@ Ext.define('B2B.view.Activity_List', {
             }
         ],
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
-        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getTextString(values)]}{[this.getWhenString()]}</div>",
+        itemTpl: new Ext.XTemplate([
+                    "<div class='{[this.getClass(values)]}'>",
+                    "{[this.getImageURL(values)]}",
+                    "{[this.getTextString(values)]}",
+                    "{[this.getWhenString()]}",
+                    "</div>"
+                ].join(""),
             {
             	getClass: function(values){
-            		return "activity-list-item small-list activity-type"+values.type;
+            		return "activity-list-item small-list activity-type" + values.type;
             	},
             	getImageURL: function(values){
                     var str = '<img class="avatar_small" src="';

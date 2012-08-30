@@ -34,18 +34,16 @@ Ext.define('B2B.view.Activity_List_Container', {
             store: Ext.getStore("Activities_User_Ajax"),
             draggable: false,
             height: 100
-        };
-
-         var myLastDrinkInPanel = {
+        },
+        myLastDrinkInPanel = {
         	xtype: "panel",
             id: "lastdrink",
             draggable: false,
             height: 70,
             docked: 'top',
             html: '<div class="loading_div"></div>'
-        };
-
-        var container = {
+        },
+        container = {
         	xtype: 'panel',
             layout: {
                 type: 'vbox',

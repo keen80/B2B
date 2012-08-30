@@ -31,15 +31,20 @@ Ext.define("B2B.store.Drinks_Ajax", {
 				HH.log("* Loaded: Store.Drinks_Ajax, copying to Local");
 				var store_local = Ext.getStore('Drinks_Local'),
 					image = HH.default_user48,
-					userdata = el.first();
+					userdata = el.first(),
+					lastDrink = Ext.getCmp("lastdrink"),
+					beerName = "", placeName = "", div = "";
 
-				if(Ext.getCmp("lastdrink")){
-					Ext.getCmp("lastdrink").setHtml(
+				if (lastDrink) {
+					beerName = (userdata.data.beerName ? userdata.data.beerName : "");
+					placeName = (userdata.data.placeName ? userdata.data.placeName : "");
+
+					lastDrink.setHtml(
 						[
 						'<div class="lastdrink">',
 						'<img class="avatar_medium" src="'+image+'" width="48" height="48" >',
 						'<div class="small-list-when"> 2 min fa</div>',
-						'<div class="medium-list-text">Your lastest drink was a <strong>'+userdata.data.beerName+'</strong>, at <strong>'+userdata.data.placeName+'</strong></div>',
+						'<div class="medium-list-text">Your lastest drink was a <strong>' + beerName + '</strong>, at <strong>' + placeName + '</strong></div>',
 						'</div>'
 						].join("")
 					);
