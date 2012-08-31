@@ -25676,19 +25676,19 @@ Ext.define("B2B.controller.Activities", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			activitylistcomponent: "activitylistcomponent",
-			activitylistcontainerpanel: "activitylistcontainerpanel",
-			activityDetail: "activitydetailpanel",
+			activitylist: "activitylist",
+			activity: "activity",
+			activityDetail: "activitylistdetail",
 			app: "_app"
 		},
 		control: {
-			activitylistcontainerpanel: {
+			activity: {
 				viewActivityDetailCommand: "onViewActivityDetail"
 			},
 			activityDetail: {
 				backActivityDetailCommand: "onBackActivityDetail"
 			},
-			activitylistcomponent: {
+			activitylist: {
 				itemtap: "onViewActivityDetail"
 			}
 		}
@@ -25697,7 +25697,7 @@ Ext.define("B2B.controller.Activities", {
 		setTimeout(function(){a.deselect(b);},500);
 		var jsonData = record.data;
 		this.getApp().push({
-			xtype: "activitydetailpanel",
+			xtype: "activitylistdetail",
 			jsonData: jsonData
 		});
 	},
@@ -36226,12 +36226,12 @@ Ext.define('Ext.TitleBar', {
     }
 });
 
-Ext.define('B2B.view.Activity_List_Container', {
+Ext.define('B2B.view.Activity', {
 	extend: 'Ext.Panel',
 	requires: [
         'Ext.TitleBar',
     ],
-	xtype: 'activitylistcontainerpanel',
+	xtype: 'activity',
 
 	config: {
 		title: i18n.app.PANEL_ACTIVITY,
@@ -36254,7 +36254,7 @@ Ext.define('B2B.view.Activity_List_Container', {
             html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
         },
         activityStreams = {
-            xtype: "activitylistcomponent",
+            xtype: "activitylist",
             store: Ext.getStore("Activities_Local"),
         },
         myLastDrinkIn = {
@@ -50553,7 +50553,7 @@ Ext.define('B2B.view.Activity_List', {
     requires: [
         'Ext.plugin.PullRefresh'
     ],
-    xtype: 'activitylistcomponent',
+    xtype: 'activitylist',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
         plugins: [
@@ -59844,7 +59844,7 @@ Ext.define("B2B.view._App_Container", {
 		},
 		items: [
 			{
-				xtype: 'activitylistcontainerpanel'
+				xtype: 'activity'
 			},
 			{
 				xtype: 'beerlistcontainerpanel'
@@ -61498,10 +61498,10 @@ selectBox.setOptions(
     }
 });
 
-Ext.define('B2B.view.Activity_Detail', {
+Ext.define('B2B.view.Activity_List_Detail', {
 	extend: 'Ext.form.Panel',
 	id: 'ActivityDetail',
-	xtype: 'activitydetailpanel',
+	xtype: 'activitylistdetail',
 	requires: [
         'Ext.Container',
         'Ext.MessageBox',

@@ -129,11 +129,12 @@ Ext.define('B2B.view.User_Profile_About', {
 		item1 = {
 			xtype: 'userpreferencesform'
 		},
+		/*
 		item2 = {
 			xtype: 'userprofileprivacyform'
-		};
+		};*/
 
-		this.add([item0, item1, item2]);
+		this.add([item0, item1/*, item2*/]);
 		this.setActiveItem(0);
 	},
 	onEditProfileButtonTap: function() {

@@ -3,7 +3,7 @@ Ext.define('B2B.view.Activity_List', {
     requires: [
         'Ext.plugin.PullRefresh'
     ],
-    xtype: 'activitylistcomponent',
+    xtype: 'activitylist',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
         plugins: [
@@ -12,15 +12,15 @@ Ext.define('B2B.view.Activity_List', {
                 pullRefreshText: 'Pull down for more!'
             }
         ],
-        loadMask:true,
-        emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
+        loadMask: true,
+        emptyText: '</pre><div class="list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate([
-                    "<div class='{[this.getClass(values)]}'>",
-                    "{[this.getImageURL(values)]}",
-                    "{[this.getTextString(values)]}",
-                    "{[this.getWhenString()]}",
-                    "</div>"
-                ].join(""),
+                "<div class='{[this.getClass(values)]}'>",
+                "{[this.getImageURL(values)]}",
+                "{[this.getTextString(values)]}",
+                "{[this.getWhenString()]}",
+                "</div>"
+            ].join(""),
             {
             	getClass: function(values){
             		return "activity-list-item small-list activity-type" + values.type;

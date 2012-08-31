@@ -41,11 +41,25 @@ Ext.define("B2B.controller.Profiles", {
 		this.getApp().pop();
 	},
 	onShowPrivacy: function() {
+		/*
 		var aboutPanel = Ext.getCmp("userprofileaboutpanel");
 		aboutPanel.animateActiveItem(2, {
 			type:'slide',
 			direction:'up'
+		});*/
+
+		item2 = {
+			xtype: 'userprofileprivacyform'
+		};
+
+		var profileContainer = this.getProfile();
+		profileContainer.add(item2);
+		profileContainer.animateActiveItem(2, {
+			type:'slide',
+			direction:'up'
 		});
+
+		
 	},
 	onShowSettings: function(a){
 		var aboutPanel = Ext.getCmp("userprofileaboutpanel");

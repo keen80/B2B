@@ -3,8 +3,7 @@ Ext.define("B2B.view._App_Container", {
 	xtype: 'App_Container',
 	requires: [
 		'Ext.ux.slidenavigation.SlideNavigation',
-		'Ext.ux.toolbarspinner.TSpinner',
-		'Ext.device.Camera'
+		'Ext.ux.toolbarspinner.TSpinner'
 	],
 	config: {
 		activeTab: 0,
@@ -23,7 +22,8 @@ Ext.define("B2B.view._App_Container", {
 		},
 		items: [
 			{
-				xtype: 'activitylistcontainerpanel'
+				xtype: 'activity',
+				id: 'activity'
 			},
 			{
 				xtype: 'beerlistcontainerpanel'
@@ -33,10 +33,7 @@ Ext.define("B2B.view._App_Container", {
 			},
 			{
 				xtype: 'userprofileaboutpanel'
-			}/*,
-			{
-				xtype: 'cameracontainerpanel'
-			}*/
+			}
 		]
 	},
 	initialize: function(){

@@ -1,5 +1,5 @@
 Ext.Loader.setConfig({enabled:true});
-Ext.Loader.setPath('Ext.ux', './ux');
+Ext.Loader.setPath('Ext.ux', './app/components');
 Ext.Loader.setPath('Ext', './sdk/src');
 
 Ext.application({
@@ -25,7 +25,7 @@ Ext.application({
 	views: [
 		'_App', '_Login', '_App_Slider', '_App_Container',
 		'_SplashBeerSearch',
-		'Activity_List_Container', 'Activity_List', 'Activity_Detail', 'Activity_User',
+		'Activity', 'Activity_List', 'Activity_List_Detail',
 		'Beer_List_Container', 'Beer_List', 'Beer_List_SearchComponent', 'Beer_Add_Form', 'Beer_Detail',
 		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent', 'Beer_List_Select',
 		'Drink_AroundMe',

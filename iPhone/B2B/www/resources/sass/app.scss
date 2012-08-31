@@ -1,21 +1,78 @@
-/* Base Color Setups*/
 
-//$base_color: #77AABB;
-$base_color: #FFF;
-$base-gradient: 'flat';
-$tabs-bottom-active-gradient: 'flat';
-$tabs-bottom-gradient: 'flat';
-$tabs-dark-active-color: #FFBC00;
-$active-color: #FFBC00;
+/* BASE COLOR SETUPS  ***************************************************** */
+ 
+    /*
+        PALETTE:
+        Orange: #FFBC00;
+    */
 
-// Lists
-$list-active-gradient: 'flat';
-$list-header-bg-color: transparentize(saturate($base-color, 10%), .25);
-$list-header-gradient: 'matte';
 
-// Tabs
-//$tabs-dark: #111;
+    $active-color: #FFBC00;
+    // $alert-color
+    $base_color: #FFF;
+    $base-gradient: 'flat';
+    // $bright-color
+    $button-gradient: 'matte';
+    // $button-height
+    // $button-radius
+    // $button-stroke-weight
+    // $carousel-indicator-size
+    // $carousel-indicator-spacing
+    // $carousel-track-size
+    // $form-bg-color
+    // $form-dark
+    // $form-field-bg-color
+    // $form-field-height
+    // $form-fieldset-radius
+    // $form-label-width
+    // $form-light
+    // $form-slider-size
+    // $form-spacing
+    // $form-textarea-height
+    // $form-thumb-size
+    // $form-thumb-space
+    // $form-toggle-size
+    // $global-row-height
 
+    // $include-bottom-tabs: false;
+    // $include-button-uis: false;
+    //$include-default-icons: false;
+    // $include-default-uis: false;
+    $include-form-sliders: false;
+    // $include-highlights: false;
+    $include-html-style: false;
+    //$include-tabbar-uis: false;
+    $include-toolbar-uis: false;
+    //$include-top-tabs: false;
+
+    // $light-tab-active
+    // $light-tab-color
+    $list-active-gradient: 'flat';
+    $list-header-bg-color: transparentize(saturate($base-color, 10%), .25);
+    $list-header-gradient: 'matte';
+    // $page-bg-color
+    // $sheet-bg-color
+    // $sheet-button-spacing
+    // $sheet-padding
+    $tabs-bottom-active-gradient: 'flat';
+    // $tabs-bottom-icon-size
+    $tabs-bottom-gradient: 'flat';
+    // $tabs-bottom-radius
+    $tabs-dark-active-color: #FFBC00;
+    // $tabs-dark: #111;
+    // $tabs-dark-color
+    $toolbar-gradient: 'flat';
+    // $toolbar-highlights
+    // $toolbar-icon-size
+    // $toolbar-input-bg
+    // $toolbar-input-color
+    // $toolbar-input-height
+    // $toolbar-spacing
+    // $top-tab-height
+    
+
+/* LAYOUT ***************************************************************** */
+    
     html, body {
         height: 100%;
         background-color: #FFF;
@@ -23,11 +80,19 @@ $list-header-gradient: 'matte';
         margin: 0;
     }
 
-/* LOADING SCREEN */
 
-    #appLoadingIndicator, #logo_claim, #logo_disclaimer {
+
+    /* SLIDER CONTAINER *************************************************** */
+
+
+
+
+/* SPLASH SCREEN ********************************************************** */
+
+    #appLoadingIndicator, #logo_header, #logo_claim, #logo_footer {
         width: 100%;
         position: absolute;
+        text-align: center;
     }
 
     #appLoadingIndicator{
@@ -37,8 +102,6 @@ $list-header-gradient: 'matte';
     }
 
     #logo_header{
-        width: 100%;
-        position: absolute;
         height: 40px;
         background: #FFBC00;
         top: 0;
@@ -53,7 +116,7 @@ $list-header-gradient: 'matte';
 
     #logo_claim {
         top: 50%;
-        text-align: center;
+       
         color: #FFF;
         text-shadow: 0px 2px 2px #000;
         font-size: 30px;
@@ -640,62 +703,7 @@ glossy: A glassy style gradient.
 recessed: A reversed gradient.
 
 
-$active-color
-$alert-color
-$base-color
-$base-gradient
-$bright-color
-$button-gradient
-$button-height
-$button-radius
-$button-stroke-weight
-$carousel-indicator-size
-$carousel-indicator-spacing
-$carousel-track-size
-$form-bg-color
-$form-dark
-$form-field-bg-color
-$form-field-height
-$form-fieldset-radius
-$form-label-width
-$form-light
-$form-slider-size
-$form-spacing
-$form-textarea-height
-$form-thumb-size
-$form-thumb-space
-$form-toggle-size
-$global-row-height
-$include-bottom-tabs
-$include-button-uis
-$include-default-icons
-$include-default-uis
-$include-form-sliders
-$include-highlights
-$include-html-style
-$include-tabbar-uis
-$include-toolbar-uis
-$include-top-tabs
-$light-tab-active
-$light-tab-color
-$page-bg-color
-$sheet-bg-color
-$sheet-button-spacing
-$sheet-padding
-$tabs-bottom-active-gradient
-$tabs-bottom-icon-size
-$tabs-bottom-gradient
-$tabs-bottom-radius
-$tabs-dark-active-color
-$tabs-dark-color
-$toolbar-gradient
-$toolbar-highlights
-$toolbar-icon-size
-$toolbar-input-bg
-$toolbar-input-color
-$toolbar-input-height
-$toolbar-spacing
-$top-tab-height
+
 
 */
 
