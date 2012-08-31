@@ -13,11 +13,15 @@ Ext.define('B2B.view.Place_Detail', {
 	config: {
 		title: i18n.app.PANEL_PLACE,
 		iconCls: 'add',
-		layout: 'vbox'
+		layout: 'vbox',
+		scrollable: {
+        	translationMethod: 'cssTransform'
+   		}
 	},
 	initialize: function(){
 		this.callParent(arguments);
     	var jsonData = this.jsonData,
+    		that = this,
 	    	getStringHTMLFromValues = function(){
 				var value = "";
 
@@ -37,7 +41,12 @@ Ext.define('B2B.view.Place_Detail', {
 				text: i18n.app.BTN_BACK,
 				ui: 'back',
 				id: 'placedetail_back_btn',
-				handler: this.onPlaceDetailBackButtonTap,
+				listeners: {
+					tap: function()
+					{
+						that.onPlaceDetailBackButtonTap();
+					}
+				},
 				scope: this
 			},
 		    toolbar = {
