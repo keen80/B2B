@@ -5,6 +5,9 @@ Ext.define('B2B.view.Place_Beer_List_SearchComponent', {
 	],
 	xtype: 'placebeerlistsearchcomponent',
 	id: 'placebeerlistsearchcomponent',
+	config: {
+		layout: 'vbox'
+	},
 	initialize: function(){
 		this.callParent(arguments);
 		var oldValueCount = 0,

@@ -14,12 +14,16 @@ Ext.define("B2B.controller.Places", {
 			placeDetail: {
 				backPlaceDetailCommand: "onBackPlace",
 				selectBeerDrinkCommand: "onSelectBeerDrink",
-				onDrinkInCommand: "onDrinkIn"
+				onDrinkInCommand: "onDrinkIn",
+				submitCheckInCommand: "submitCheckIn"
 			},
 			placelistcomponent: {
 				itemtap: "onViewPlaceDetail"
 			}
 		}
+	},
+	submitCheckIn: function() {
+		console.log("Check in!");
 	},
 	onReloadCommand: function(){
 		/* TODO: HOW THE HELL WE REFRESH THE REVIEW? */
