@@ -183,9 +183,8 @@ Ext.define('Ext.ux.starrating.StarRating', {
             return;
         }
         var offset = this.innerElement.getXY();
-        var initialX = this.items.first().getX();
 
-        var x = e.touches[0].pageX - initialX;
+        var x = e.touches[0].pageX - offset[0];
         if (!Ext.isDefined(this.diameter)) {
             if (this.items.getCount()) {
                 var size = this.items.first().getSize();
@@ -195,7 +194,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
                 this.diameter = 0;
             }
         }
-        console.log(x+ ' '+initialX + ' ' + this.diameter);
+
         var targetIndex = Math.floor(x / this.diameter);
         if (targetIndex > -1) {//TODO check if targetIndex is a number
             this.setValue(targetIndex);
@@ -237,11 +236,9 @@ Ext.define('Ext.ux.starrating.StarRating', {
             item['removeCls'](valueCls);
         }
 
-        console.log('Start ' + value);
         value--;
         value = (value >= count ? (count - 1) : value);
         value = (value < 0 ? 0 : value);
-        console.log('End ' + value);
 
         item = items.item(value);
         item['removeCls'](hoverCls);
