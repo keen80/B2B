@@ -84,15 +84,49 @@ Ext.define('B2B.view.Place_Detail', {
 				xtype: 'placebeerlistsearchcomponent'
 			},
 			beerList = {
-		    	xtype: "beerlistcomponent",
+		    	xtype: "placebeerlistcomponent",
 		    	id: "placebeerlist",
 		   		store: null,
 		    	singleSelect: true,
 		    	flex: 1
+			},
+			contentSearch = {
+				xtype: 'container',
+				id: 'searchBeerContent',
+				layout: 'vbox',
+				flex: 1,
+				items: [
+					beerlistsearchcomponent,
+					beerList
+				]
+			},
+			that = this,
+			beerSelected = {
+				xtype: 'container',
+				id: 'beerSelectedContent',
+				html: '',
+				margin: '10 0 10 0',
+				listeners: {
+					tap: {
+						fn: function() {
+							that.fireEvent("searchNewBeerCommand", that);
+						},
+        				element: 'element'
+					}
+				}
+			},
+			containerBeerSelected = {
+				xtype: 'panel',
+				id: 'containerbeerselected',
+				flex: 1,
+				layout: 'card',
+				items: [
+					contentSearch,
+					beerSelected
+				]
 			};
 
-		this.add([toolbar, submitCheckInButton, content, rating, beerlistsearchcomponent, beerList]);
-
+		this.add([toolbar, submitCheckInButton, content, rating, containerBeerSelected]);
 	},
 	/*
 	onPlaceReportButtonTap: function(){

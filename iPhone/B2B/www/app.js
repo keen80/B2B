@@ -42,7 +42,7 @@ Ext.application({
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
-		'Place_Beer_List_SearchComponent'
+		'Place_Beer_List', 'Place_Beer_List_SearchComponent'
 		],
 
 	icon: {

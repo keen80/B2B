@@ -97,6 +97,52 @@ strong{
     }
 }
 
+/********* BEER SELECTED *********/
+
+.beer-selected {
+    height: 84px;
+    position: relative;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.beer-selected > div{
+    font-size: 16pt;
+    float: left;
+    margin-top: 10px;
+}
+
+.beer-selected-image {
+    float: left;
+    border: 2px solid #EEE;
+}
+
+.search-new-beer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    background-color: #DDD;
+    bottom: 10px;
+
+    .search-new-beer-text {
+        float: left;
+        margin-top: 13px;
+        margin-left: 15px;
+    }
+
+    .search-new-beer-logo {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 10px;
+        top: 8px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgNJREFUeNrMmO1xgzAMhiHXATwCG8QbhG6QERiBbkAnaDdgBLoBYQLIBGQD6ATUTt2cz/WHZGyC7t78IMF5LFuy5HRZlmTP9sI/0jTFvEOZcqYjU6Z8d2O6Ml2YhrVwd+chPFgwjfw9oPhvSyYSG/CMBFM1iTGiANYrwFQ1WG/aAPlAfUC4P/UYSM6W3j/+B0kvgsFmPBA65dkRsJw8eF6ZZl8Pfjj2U+XwAhEBNVnGqX2XOA+4h4h4xzTe2QdwXDNjZKCNrgmrgIXFc2vNBFlgAHvDniMBAIlhdUYoYGaYYRXwWDWtEIUAFhG9J5susksb4EHKX7o8NwcG/NI8O9leOEgVimrXCNVTZ9ifTkDTSRHabppnmS/gVuYNSDYCHHwBaQQY3ZgzBLDDRpennYD7UkmGvwe3LolmAeGIIQ8WkERNNjhJKqwT1LO4wR5FyEjVea/FFAt5iDId2T6gqplEzCgkpKtopVhA6uhzc2RKcTVeE7Saka10DFo7Zk6R7aoR0tbV1a79IRLsIPQtclzmmZpm0ekNmMY9ZNPu5UnIzYKrfYwKCb2bySzRDVGL3JcPSOztVi7+BOrRWhP1DQKS2IIEAksNufFiKXaJ5FGXfTK2t+QJN6zQi6lWbpq2NG1K2VvJD4Ec5HrwWWZa7n5tkISGLKVqm3vunXv5Abhn+xFgAEohToNv7FcaAAAAAElFTkSuQmCC);
+        background-size: 100% 100%;
+    }
+}
 
 /* Lists */
 .x-list-item-label{
