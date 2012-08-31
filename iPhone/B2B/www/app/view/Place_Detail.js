@@ -58,16 +58,28 @@ Ext.define('B2B.view.Place_Detail', {
 			},
 			rating = {
 				xtype: 'starrating',
-				itemsCount : 10,
+				itemsCount : 5,
 				label : '',
-				value: 5,
+				value: 3,
 				valueCls: 'x-starrating-value',
 				itemCls : 'x-starrating',
 				itemHoverCls : 'x-starrating-hover',
-				height: 40
+				height: 40,
+				startValue: true,
+				endValue: true
+			},
+			beerlistsearchcomponent = {
+				xtype: 'placebeerlistsearchcomponent',
+				flex: 1
+			},
+			beerList = {
+		    	xtype: "beerlistcomponent",
+		    	id: "placebeerlist",
+		   		store: null,
+		    	singleSelect: true
 			};
 
-		this.add([toolbar, content, rating, { xtype: 'spacer' }]);
+		this.add([toolbar, content, rating, { xtype: 'spacer' }, beerlistsearchcomponent, beerList]);
 
 	},
 	/*

@@ -41,7 +41,8 @@ Ext.application({
 		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
-		'Badge_List', 'Badge_List_Container', 'Badge_Detail'
+		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
+		'Place_Beer_List_SearchComponent'
 		],
 
 	icon: {

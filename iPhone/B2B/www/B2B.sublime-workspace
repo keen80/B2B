@@ -242,6 +242,7 @@
 				"buffer_size": 1457,
 				"line_ending": "Windows"
 			}
+<<<<<<< HEAD
 		},
 		{
 			"file": "index.html",
@@ -266,6 +267,8 @@
 				"buffer_size": 1933,
 				"line_ending": "Windows"
 			}
+=======
+>>>>>>> Spero che nn si rompa tutto come al solito
 		}
 	],
 	"build_system": "",
@@ -304,6 +307,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/sencha-touch-all.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
@@ -341,6 +345,52 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SelectContainer.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Select.js",
+=======
+		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/app/controller/Profiles.js",
+		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/resources/js/hh.js",
+		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Badges_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/DrinkInCheckIn_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Feedback_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Ajax.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/FavoriteBeers_Local.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/model/FavoriteBeer.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail_Component.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Favorites.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List_Container.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
+		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
+>>>>>>> Spero che nn si rompa tutto come al solito
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
@@ -409,6 +459,7 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_AboutUs.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/bufferedlist/BufferedList.js",
+<<<<<<< HEAD
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Whatsnew.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Terms.js",
@@ -432,6 +483,9 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Region.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/user_login.js"
+=======
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js"
+>>>>>>> Spero che nn si rompa tutto come al solito
 	],
 	"find":
 	{
@@ -668,6 +722,10 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
+=======
+			"selected": 4,
+>>>>>>> Spero che nn si rompa tutto come al solito
 			"sheets":
 			[
 				{
@@ -716,7 +774,12 @@
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+=======
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+>>>>>>> Spero che nn si rompa tutto come al solito
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -761,51 +824,89 @@
 				},
 				{
 					"buffer": 3,
+<<<<<<< HEAD
 					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
 						"buffer_size": 23175,
+=======
+					"file": "resources/sass/app.scss",
+					"settings":
+					{
+						"buffer_size": 5725,
+>>>>>>> Spero che nn si rompa tutto come al solito
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								9051,
 								11930
+=======
+								294,
+								294
+>>>>>>> Spero che nn si rompa tutto come al solito
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 3731.0,
+=======
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+>>>>>>> Spero che nn si rompa tutto come al solito
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+<<<<<<< HEAD
 					"file": "app/view/_App_Container.js",
 					"settings":
 					{
 						"buffer_size": 1933,
+=======
+					"file": "app/store/Activities_User_Ajax.js",
+					"settings":
+					{
+						"buffer_size": 1140,
+>>>>>>> Spero che nn si rompa tutto come al solito
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								474,
 								474
+=======
+								224,
+								224
+>>>>>>> Spero che nn si rompa tutto come al solito
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+<<<<<<< HEAD
 							"translate_tabs_to_spaces": false
+=======
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+>>>>>>> Spero che nn si rompa tutto come al solito
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -813,6 +914,14 @@
 					},
 					"type": "text"
 				}
+<<<<<<< HEAD
+=======
+			]
+		},
+		{
+			"sheets":
+			[
+>>>>>>> Spero che nn si rompa tutto come al solito
 			]
 		}
 	],
@@ -844,7 +953,11 @@
 		"cols":
 		[
 			0.0,
+<<<<<<< HEAD
 			0.518192277433,
+=======
+			0.93920814188,
+>>>>>>> Spero che nn si rompa tutto come al solito
 			1.0
 		],
 		"rows":

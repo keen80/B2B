@@ -82,6 +82,10 @@ Ext.define('Ext.ux.starrating.StarRating', {
         itemCls: 'x-rating-star',
 
         valueCls: 'x-rating-value',
+        startValue: false,
+        endValue: false,
+        startValueCls: 'x-rating-startvalue',
+        endValueCls: 'x-rating-endvalue',
 
         /**
         * @cfg {String} itemHoverCls
@@ -99,6 +103,10 @@ Ext.define('Ext.ux.starrating.StarRating', {
 
         component: {
             tpl: new Ext.XTemplate(
+                '<tpl if="startValue">',
+                    '<div class="{startValueCls}">',
+                    '</div>',
+                '</tpl>',
                 '<tpl for="items">',
 				    '<div index="{[xindex - 1]}" class="{parent.itemCls} x-rating-item">',
             //'{tooltip}', TBD
@@ -108,6 +116,10 @@ Ext.define('Ext.ux.starrating.StarRating', {
 				    '<div class="{clearCls}">',
 				    '</div>',
 			    '</tpl>',
+                '<tpl if="endValue">',
+                    '<div class="{endValueCls}">',
+                    '</div>',
+                '</tpl>',
 			{
 			    compile: true
 			}),
@@ -147,6 +159,9 @@ Ext.define('Ext.ux.starrating.StarRating', {
             this.clearBtn = newComponent.element.down('.' + this.getClearCls());
             this.clearBtn.on('tap', this.onClear, this);
         }
+        if (this.config.startValue) {
+            this.startValueTag = newComponent.element.down('.' + this.getStartValueCls());
+        }
     },
 
     /*
@@ -168,7 +183,9 @@ Ext.define('Ext.ux.starrating.StarRating', {
             return;
         }
         var offset = this.innerElement.getXY();
-        var x = e.touches[0].pageX - offset[0];
+        var initialX = this.items.first().getX();
+
+        var x = e.touches[0].pageX - initialX;
         if (!Ext.isDefined(this.diameter)) {
             if (this.items.getCount()) {
                 var size = this.items.first().getSize();
@@ -178,6 +195,7 @@ Ext.define('Ext.ux.starrating.StarRating', {
                 this.diameter = 0;
             }
         }
+        console.log(x+ ' '+initialX + ' ' + this.diameter);
         var targetIndex = Math.floor(x / this.diameter);
         if (targetIndex > -1) {//TODO check if targetIndex is a number
             this.setValue(targetIndex);
@@ -219,8 +237,11 @@ Ext.define('Ext.ux.starrating.StarRating', {
             item['removeCls'](valueCls);
         }
 
+        console.log('Start ' + value);
+        value--;
         value = (value >= count ? (count - 1) : value);
-        value = ( value < 0 ? 0 : value);
+        value = (value < 0 ? 0 : value);
+        console.log('End ' + value);
 
         item = items.item(value);
         item['removeCls'](hoverCls);
