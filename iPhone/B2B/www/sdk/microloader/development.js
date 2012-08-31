@@ -33,13 +33,13 @@ If you are unsure which license is appropriate for your use, please contact the 
     }else{
         write('<script src="i18n/B2B-en-US.js"></'+'script>');
     }
-/*
-    if( !_.str.include(language_string, "en")){
+
+    if( _.str.include(language_string, "it")){
         moment.lang(language_string);
     }else{
         moment.lang("en");
     }
-*/
+
     if (navigator.onLine){
         HH.log("---+ Check: Online, Startup Start");
         var xhr = new XMLHttpRequest();
