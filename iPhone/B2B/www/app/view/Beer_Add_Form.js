@@ -7,8 +7,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
         'Ext.MessageBox',
         'Ext.Panel',
         'Ext.Toolbar',
-        'Ext.field.Select',
-        'Ext.ux.starrating.StarRating',
+        'Ext.field.Select'
     ],
 	config: {
 		title: i18n.app.PANEL_ADDBEER,

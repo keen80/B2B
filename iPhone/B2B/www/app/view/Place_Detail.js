@@ -7,117 +7,67 @@ Ext.define('B2B.view.Place_Detail', {
         'Ext.MessageBox',
         'Ext.Panel',
         'Ext.Toolbar',
-        'Ext.field.Select'
+        'Ext.field.Select',
+        'Ext.ux.starrating.StarRating'
     ],
 	config: {
 		title: i18n.app.PANEL_PLACE,
-		iconCls: 'add'
+		iconCls: 'add',
+		layout: 'vbox'
 	},
 	initialize: function(){
+		this.callParent(arguments);
+    	var jsonData = this.jsonData,
+	    	getStringHTMLFromValues = function(){
+				var value = "";
 
-    	this.callParent(arguments);
-    	var jsonData = this.jsonData;
+				if (!_.isEmpty(jsonData.image)) {
+				   value += '<img class="avatar_medium" src="' + jsonData.image +'" />';
+				}else{
+					value += '<img class="avatar_medium" src="' + HH.default_user64 +'" />';
+				}
 
-    	var getStringHTMLFromValues = function(){
-			var value = "";
+				value += "<h1>"+jsonData.placeName+"</p>";
+				value += "<p>"+jsonData.url+"</p>";
+				value += "<p>"+jsonData.category+"</p>";
+				return value;
+			},
+			backPlaceDetailButton = {
+				xtype: "button",
+				text: i18n.app.BTN_BACK,
+				ui: 'back',
+				id: 'placedetail_back_btn',
+				handler: this.onPlaceDetailBackButtonTap,
+				scope: this
+			},
+		    toolbar = {
+				xtype: 'toolbar',
+				cls: 'sub_titlebar',
+				docked: 'top',
+				items: [
+					backPlaceDetailButton/*,
+					{ xtype: 'spacer' },
+					reportBeerButton*/
+				]
+			},
+			content = {
+				xtype: 'container',
+				id: 'placeDetailContent',
+				html: getStringHTMLFromValues(jsonData),
+				flex: 1
+			},
+			rating = {
+				xtype: 'starrating',
+				itemsCount : 10,
+				label : '',
+				value: 5,
+				valueCls: 'x-starrating-value',
+				itemCls : 'x-starrating',
+				itemHoverCls : 'x-starrating-hover',
+				height: 40
+			};
 
-			if (!_.isEmpty(jsonData.image)) {
-			   value += '<img class="avatar_medium" src="' + jsonData.image +'" />';
-			}else{
-				value += '<img class="avatar_medium" src="' + HH.default_user64 +'" />';
-			}
-
-			value += "<h1>"+jsonData.placeName+"</p>";
-			value += "<p>"+jsonData.url+"</p>";
-			value += "<p>"+jsonData.category+"</p>";
-			return value;
-		},
-		backPlaceDetailButton = {
-			xtype: "button",
-			text: i18n.app.BTN_BACK,
-			ui: 'back',
-			id: 'placedetail_back_btn',
-			handler: this.onPlaceDetailBackButtonTap,
-			scope: this
-		},
-		mapPanel = {
-	        xtype: 'map',
-	        id: 'mapMiniDrink',
-	        useCurrentLocation: false,
-	        cls: 'mapMiniDrink',
-	        height: 100,
-	        mapOptions: {
-	            zoom: HH.map.zoomLevel2,
-	            mapTypeId : google.maps.MapTypeId.ROADMAP,
-	            navigationControl: false,
-	            zoomControl: false,
-	            mapTypeControl: false,
-	            scaleControl: false,
-	            streetViewControl: false,
-	            panControl: false,
-	            draggable: false
-	        },
-	        listeners: {
-	            maprender: function(me, map){
-	                map.markers = [];
-	                var position = new google.maps.LatLng(5.978132,116.072617);
-	                setTimeout(function() {
-	                    map.panTo(position);
-	                }, 1000);
-	            },
-	            centerchange: function(me, map){
-	              map.clearMarkers();
-	              map.markers.push(new google.maps.Marker({
-	                    position: new google.maps.LatLng(5.978132, 116.072617),
-	                    map: map,
-	                    icon: HH.map.marker
-	              }));
-	            }
-	        }
-	    },
-	    friendCheckInList = {
-		    xtype: "drinkincheckinlistcomponent",
-		    store: Ext.getStore("DrinkInCheckIn_Ajax")
-		},
-		toolbar = {
-			xtype: 'toolbar',
-			cls: 'sub_titlebar',
-			docked: 'top',
-			items: [
-				backPlaceDetailButton/*,
-				{ xtype: 'spacer' },
-				reportBeerButton*/
-			]
-		},
-		content = {
-			xtype: 'container',
-			id: 'placeDetailContent',
-			html: getStringHTMLFromValues(jsonData)
-		},
-		drinkInButton = {
-			xtype: "button",
-			text: i18n.app.BTN_DRINKIN,
-			ui: 'action',
-			id: 'favorites_add_btn',
-			handler: this.onDrinkInButtonTap,
-			scope: this
-			//docked: 'bottom'
-		},
-		beerButton = {
-			xtype: "button",
-			text: i18n.app.BTN_ADDBEERDRINK,
-			ui: 'action',
-			id: 'add_beerdrink_btn',
-			handler: this.onSelectBeerButtonTap,
-			scope: this
-		},
-		actionButton = beerButton;
-		//TODO CHECK
-		if(false){
-			actionButton = drinkInButton;
-		}
-
-		this.add([toolbar, mapPanel, content, actionButton, friendCheckInList]);
+		this.add([toolbar, content, rating, { xtype: 'spacer' }]);
 
 	},
 	/*
