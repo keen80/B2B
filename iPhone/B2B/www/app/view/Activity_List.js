@@ -12,6 +12,7 @@ Ext.define('B2B.view.Activity_List', {
                 pullRefreshText: 'Pull down for more!'
             }
         ],
+        loadMask:true,
         emptyText: '</pre><div class="activity-list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate([
                     "<div class='{[this.getClass(values)]}'>",

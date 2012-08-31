@@ -10,7 +10,7 @@ Ext.define("B2B.view._App_Container", {
 		activeTab: 0,
 		layout: {
 			animation: {
-				type: 'fade'
+				type: null
 			}
 		},
 		tabBar: {

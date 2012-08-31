@@ -17,7 +17,7 @@ Ext.define('B2B.view.Beer_List_Container', {
 
 		var me = this;
 
-
+/*
         var header = {
             xtype: 'container',
             cls: 'header_img',
@@ -26,7 +26,7 @@ Ext.define('B2B.view.Beer_List_Container', {
             docked: 'top',
             html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
         };
-
+*/
 		var beerlistsearchcomponent = {
 			xtype: 'beerlistsearchcomponent',
 		};
@@ -74,6 +74,6 @@ Ext.define('B2B.view.Beer_List_Container', {
 		    singleSelect: true
 		};
 
-		this.add([ header, beerlistsearchcomponent,/* beerToolbar, */beerList]);
+		this.add([ /*header, */beerlistsearchcomponent,/* beerToolbar, */beerList]);
 	}
 });

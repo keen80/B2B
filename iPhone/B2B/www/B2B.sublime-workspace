@@ -228,10 +228,18 @@
 	"buffers":
 	[
 		{
-			"file": "app.js",
+			"file": "app/view/Activity_List.js",
 			"settings":
 			{
-				"buffer_size": 3034,
+				"buffer_size": 1919,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/view/Beer_List_Container.js",
+			"settings":
+			{
+				"buffer_size": 1457,
 				"line_ending": "Windows"
 			}
 		},
@@ -239,39 +247,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1857,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "packager.json",
-			"settings":
-			{
-				"buffer_size": 3689,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/sass/app.scss",
-			"settings":
-			{
-				"buffer_size": 5725,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/store/Activities_User_Ajax.js",
-			"settings":
-			{
-				"buffer_size": 1140,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controller/Profiles.js",
-			"settings":
-			{
-				"buffer_size": 2217,
+				"buffer_size": 2215,
 				"line_ending": "Windows"
 			}
 		},
@@ -279,15 +255,15 @@
 			"file": "i18n/B2B-en-US.js",
 			"settings":
 			{
-				"buffer_size": 22995,
+				"buffer_size": 23175,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resources/js/hh.js",
+			"file": "app/view/_App_Container.js",
 			"settings":
 			{
-				"buffer_size": 5792,
+				"buffer_size": 1933,
 				"line_ending": "Windows"
 			}
 		}
@@ -298,10 +274,6 @@
 		"height": 58.0,
 		"selected_items":
 		[
-			[
-				"Package Control: instal",
-				"Package Control: Install Package"
-			],
 			[
 				"Package Control: insta",
 				"Package Control: Install Package"
@@ -332,65 +304,61 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Badges_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/DrinkInCheckIn_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Feedback_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/FavoriteBeers_Local.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/model/FavoriteBeer.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail_Component.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Favorites.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List_Container.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/sencha-touch-all.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/FavoriteBeers_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/FavoriteBeer.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Register.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail_Component.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SelectSearchComponent.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Favorites.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinkincheckinlist.json",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SelectContainer.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Select.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Profiles.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/DrinkInCheckIn_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/img/logo_text_black.png",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Drink.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinklist.json",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Place.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_placelist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_User_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/android.css",
@@ -398,36 +366,24 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/bb6.css",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/stylesheets/sencha-touch/default/widgets/_toolbar.scss",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/css-debug/sencha-touch.css",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_feedbacklist.json",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-it.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Feedback_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/packager.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/command/src/module/generate/App.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/templates/project/sencha-touch.scss",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Notification.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Activity.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_activityuser.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinkList.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_friendlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_SplashBeerSearch.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_activitylist.json",
@@ -441,16 +397,13 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_user.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Feedback.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/User.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Camera_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_beerlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_beersinglelist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/microloader/development.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
@@ -459,7 +412,26 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Whatsnew.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Terms.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Notification_Container.js"
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Notification_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/slidenavigation/SlideNavigation.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_Add_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Notifications.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_User.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Login.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/BeerSingle.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Camera.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Activities.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_Finder.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Camera_Picker.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Drinks.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Preferences.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Privacy_Form.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/Friend.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_State.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Type.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Region.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Local.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/user_login.js"
 	],
 	"find":
 	{
@@ -467,7 +439,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"<open folders>",
@@ -479,6 +451,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"getNameByAlias",
+			"getByAlias",
 			"info",
 			"log",
 			"console",
@@ -604,9 +578,7 @@
 			"\"\n",
 			"code",
 			"name",
-			"console.log",
-			"Ext.ux.touch.Rating",
-			"Event AddBeer"
+			"console.log"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -696,29 +668,29 @@
 	"groups":
 	[
 		{
-			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.js",
+					"file": "app/view/Activity_List.js",
 					"settings":
 					{
-						"buffer_size": 3034,
+						"buffer_size": 1919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1304,
-								1304
+								218,
+								183
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -728,128 +700,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "app/view/Beer_List_Container.js",
 					"settings":
 					{
-						"buffer_size": 1857,
+						"buffer_size": 1457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								703,
-								703
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "packager.json",
-					"settings":
-					{
-						"buffer_size": 3689,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3660,
-								3660
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1200.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/sass/app.scss",
-					"settings":
-					{
-						"buffer_size": 5725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								294,
-								294
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/store/Activities_User_Ajax.js",
-					"settings":
-					{
-						"buffer_size": 1140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/controller/Profiles.js",
-					"settings":
-					{
-						"buffer_size": 2217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1308,
-								1308
+								1274,
+								1274
 							]
 						],
 						"settings":
@@ -858,7 +720,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 288.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -866,50 +728,51 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 6,
-					"file": "i18n/B2B-en-US.js",
+					"buffer": 2,
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 22995,
+						"buffer_size": 2215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6275,
-								6275
+								1327,
+								1327
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2129.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "resources/js/hh.js",
+					"buffer": 3,
+					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
-						"buffer_size": 5792,
+						"buffer_size": 23175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								700,
-								700
+								9051,
+								11930
 							]
 						],
 						"settings":
@@ -918,7 +781,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2016.0,
+						"translation.y": 3731.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/view/_App_Container.js",
+					"settings":
+					{
+						"buffer_size": 1933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								474,
+								474
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -954,7 +844,7 @@
 		"cols":
 		[
 			0.0,
-			0.601920555474,
+			0.518192277433,
 			1.0
 		],
 		"rows":
@@ -989,6 +879,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 195.0,
+	"side_bar_width": 272.0,
 	"status_bar_visible": true
 }
