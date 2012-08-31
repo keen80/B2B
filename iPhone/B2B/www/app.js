@@ -68,7 +68,7 @@ Ext.application({
 
 		goingTo.step1("Loading Store.Profile");
 
-	/*Ext.fly('appLoadingIndicator').destroy();*/
+		Ext.fly('appLoadingIndicator').destroy();
 
 		var profileStore = Ext.getStore("Profile_Local");
 

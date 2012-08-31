@@ -6,8 +6,7 @@ Ext.define("B2B.view._App_Slider", {
         'Ext.Container',
         'Ext.MessageBox',
         'Ext.Panel',
-        'Ext.Toolbar',
-        'Ext.event.publisher.Dom'
+        'Ext.Toolbar'
     ],
     
     config: {
@@ -24,9 +23,7 @@ Ext.define("B2B.view._App_Slider", {
                 ui: 'plain',
                 id: 'slider_toolbar',                  
                 title: {
-                    //title: i18n.app.PANEL_NAVIGATION,
                     title: '<img id="slider_logo" src="resources/img/logopin_text_black_small.png" width="160px">',
-                    //centered: true,
                     width: 200,
                     left: 0
                 }
@@ -35,8 +32,9 @@ Ext.define("B2B.view._App_Slider", {
         },
         groups: {
             'Profile': 1,
-            'News': 2,
-            'Privacy': 3
+            'Goodies': 2,
+            'News': 3,
+            'Privacy': 4
         },
         defaults: {
             xtype: 'container'
@@ -44,12 +42,13 @@ Ext.define("B2B.view._App_Slider", {
         items: [
             {
                 title: '<div class="nav_slidemenu_profile">'+i18n.app.PANEL_CLAIM+'</div>',
+                id: 'slider_myprofile',
                 slideButton: {
                     selector: 'titlebar',
                     docked: 'left',
                     iconMask: true,
                     iconCls: 'list slidebutton',
-                    ui: 'action'
+                    ui: 'plain'
                 },
                 items: [
                     {
@@ -60,12 +59,13 @@ Ext.define("B2B.view._App_Slider", {
             {
                 title: i18n.app.LABEL_WHATSNEW,
                 group: 'News',
+                id: 'slider_whatsnew',
                 slideButton: {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
                     iconCls: 'list slidebutton',
-                    ui: 'action'
+                    ui: 'plain'
                 },
                 items: [
                     {
@@ -74,14 +74,32 @@ Ext.define("B2B.view._App_Slider", {
                 ]
             },
             {
+                title: i18n.app.LABEL_GOODIES,
+                group: 'Goodies',
+                id: 'slider_goodies',
+                slideButton: {
+                    selector: 'toolbar',
+                    docked: 'left',
+                    iconMask: true,
+                    iconCls: 'list slidebutton',
+                    ui: 'plain'
+                },
+                items: [
+                    {
+                 //       xtype: 'viewwhatsnew'
+                    }
+                ]
+            },
+            {
                 title: i18n.app.LABEL_TERMS,
                 group: 'Privacy',
+                id: 'slider_privacy',
                 slideButton: {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
                     iconCls: 'list',
-                    ui: 'action'
+                    ui: 'plain'
                 },
                 items: [
                     {
@@ -92,12 +110,13 @@ Ext.define("B2B.view._App_Slider", {
             {
                 title: i18n.app.LABEL_ABOUTUS ,
                 group: 'Privacy',
+                id: 'slider_aboutus',
                 slideButton: {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
                     iconCls: 'list slidebutton',
-                    ui: 'action'
+                    ui: 'plain'
                 },
                 items: [
                     {

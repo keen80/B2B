@@ -228,27 +228,44 @@
 	"buffers":
 	[
 		{
-			"file": "app/view/Activity_List.js",
+			"file": "sdk/microloader/development.js",
 			"settings":
 			{
-				"buffer_size": 1919,
+				"buffer_size": 2688,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/view/Beer_List_Container.js",
+			"file": "resources/sass/app.scss",
 			"settings":
 			{
-				"buffer_size": 1457,
+				"buffer_size": 25494,
 				"line_ending": "Windows"
 			}
-<<<<<<< HEAD
+		},
+		{
+			"contents": "Searching 1307 files for \" pictos-iconmask\" (regex, case sensitive)\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\all-classes.js:\n 27216   * - home\n 27217   *\n 27218:  * You can also use other pictos icons by using the {@link Global_CSS#pictos-iconmask pictos-iconmask} mixin in your SASS.\n 27219   *\n 27220   * ## Badges\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\resources\\sass\\app.scss:\n  669  @include sencha-list-pullrefresh;\n  670  \n  671: @include pictos-iconmask('list');\n  672: @include pictos-iconmask('chat4');\n  673: @include pictos-iconmask('trash');\n  674: @include pictos-iconmask('user_list');\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\sencha-touch-all.js:\n 55501   * - home\n 55502   *\n 55503:  * You can also use other pictos icons by using the {@link Global_CSS#pictos-iconmask pictos-iconmask} mixin in your SASS.\n 55504   *\n 55505   * ## Badges\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\css-debug\\android.css:\n  372   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n  373   *\n  374:  *     @include pictos-iconmask('attachment');\n  375   *\n  376   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n  ...\n 1133   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1134   *\n 1135:  *     @include pictos-iconmask('attachment');\n 1136   *\n 1137   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1485   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1486   *\n 1487:  *     @include pictos-iconmask('attachment');\n 1488   *\n 1489   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1837   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1838   *\n 1839:  *     @include pictos-iconmask('attachment');\n 1840   *\n 1841   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2225   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2226   *\n 2227:  *     @include pictos-iconmask('attachment');\n 2228   *\n 2229   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2619   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2620   *\n 2621:  *     @include pictos-iconmask('attachment');\n 2622   *\n 2623   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3054   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3055   *\n 3056:  *     @include pictos-iconmask('attachment');\n 3057   *\n 3058   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3435   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3436   *\n 3437:  *     @include pictos-iconmask('attachment');\n 3438   *\n 3439   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3805   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3806   *\n 3807:  *     @include pictos-iconmask('attachment');\n 3808   *\n 3809   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4208   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4209   *\n 4210:  *     @include pictos-iconmask('attachment');\n 4211   *\n 4212   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4560   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4561   *\n 4562:  *     @include pictos-iconmask('attachment');\n 4563   *\n 4564   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4989   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4990   *\n 4991:  *     @include pictos-iconmask('attachment');\n 4992   *\n 4993   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5368   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5369   *\n 5370:  *     @include pictos-iconmask('attachment');\n 5371   *\n 5372   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5754   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5755   *\n 5756:  *     @include pictos-iconmask('attachment');\n 5757   *\n 5758   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 6111   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 6112   *\n 6113:  *     @include pictos-iconmask('attachment');\n 6114   *\n 6115   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\css-debug\\apple.css:\n  372   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n  373   *\n  374:  *     @include pictos-iconmask('attachment');\n  375   *\n  376   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n  ...\n 1132   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1133   *\n 1134:  *     @include pictos-iconmask('attachment');\n 1135   *\n 1136   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1484   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1485   *\n 1486:  *     @include pictos-iconmask('attachment');\n 1487   *\n 1488   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1836   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1837   *\n 1838:  *     @include pictos-iconmask('attachment');\n 1839   *\n 1840   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2224   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2225   *\n 2226:  *     @include pictos-iconmask('attachment');\n 2227   *\n 2228   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2618   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2619   *\n 2620:  *     @include pictos-iconmask('attachment');\n 2621   *\n 2622   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3053   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3054   *\n 3055:  *     @include pictos-iconmask('attachment');\n 3056   *\n 3057   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3434   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3435   *\n 3436:  *     @include pictos-iconmask('attachment');\n 3437   *\n 3438   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3804   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3805   *\n 3806:  *     @include pictos-iconmask('attachment');\n 3807   *\n 3808   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4207   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4208   *\n 4209:  *     @include pictos-iconmask('attachment');\n 4210   *\n 4211   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4559   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4560   *\n 4561:  *     @include pictos-iconmask('attachment');\n 4562   *\n 4563   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4988   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4989   *\n 4990:  *     @include pictos-iconmask('attachment');\n 4991   *\n 4992   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5367   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5368   *\n 5369:  *     @include pictos-iconmask('attachment');\n 5370   *\n 5371   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5753   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5754   *\n 5755:  *     @include pictos-iconmask('attachment');\n 5756   *\n 5757   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 6110   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 6111   *\n 6112:  *     @include pictos-iconmask('attachment');\n 6113   *\n 6114   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\css-debug\\bb6.css:\n  372   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n  373   *\n  374:  *     @include pictos-iconmask('attachment');\n  375   *\n  376   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n  ...\n 1129   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1130   *\n 1131:  *     @include pictos-iconmask('attachment');\n 1132   *\n 1133   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1481   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1482   *\n 1483:  *     @include pictos-iconmask('attachment');\n 1484   *\n 1485   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1833   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1834   *\n 1835:  *     @include pictos-iconmask('attachment');\n 1836   *\n 1837   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2221   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2222   *\n 2223:  *     @include pictos-iconmask('attachment');\n 2224   *\n 2225   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2615   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2616   *\n 2617:  *     @include pictos-iconmask('attachment');\n 2618   *\n 2619   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3050   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3051   *\n 3052:  *     @include pictos-iconmask('attachment');\n 3053   *\n 3054   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3431   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3432   *\n 3433:  *     @include pictos-iconmask('attachment');\n 3434   *\n 3435   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3801   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3802   *\n 3803:  *     @include pictos-iconmask('attachment');\n 3804   *\n 3805   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4204   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4205   *\n 4206:  *     @include pictos-iconmask('attachment');\n 4207   *\n 4208   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4556   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4557   *\n 4558:  *     @include pictos-iconmask('attachment');\n 4559   *\n 4560   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4985   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4986   *\n 4987:  *     @include pictos-iconmask('attachment');\n 4988   *\n 4989   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5364   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5365   *\n 5366:  *     @include pictos-iconmask('attachment');\n 5367   *\n 5368   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5750   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5751   *\n 5752:  *     @include pictos-iconmask('attachment');\n 5753   *\n 5754   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 6107   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 6108   *\n 6109:  *     @include pictos-iconmask('attachment');\n 6110   *\n 6111   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\css-debug\\sencha-touch.css:\n  372   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n  373   *\n  374:  *     @include pictos-iconmask('attachment');\n  375   *\n  376   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n  ...\n 1132   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1133   *\n 1134:  *     @include pictos-iconmask('attachment');\n 1135   *\n 1136   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1484   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1485   *\n 1486:  *     @include pictos-iconmask('attachment');\n 1487   *\n 1488   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 1836   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 1837   *\n 1838:  *     @include pictos-iconmask('attachment');\n 1839   *\n 1840   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2224   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2225   *\n 2226:  *     @include pictos-iconmask('attachment');\n 2227   *\n 2228   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 2618   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 2619   *\n 2620:  *     @include pictos-iconmask('attachment');\n 2621   *\n 2622   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3053   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3054   *\n 3055:  *     @include pictos-iconmask('attachment');\n 3056   *\n 3057   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3434   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3435   *\n 3436:  *     @include pictos-iconmask('attachment');\n 3437   *\n 3438   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 3804   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 3805   *\n 3806:  *     @include pictos-iconmask('attachment');\n 3807   *\n 3808   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4207   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4208   *\n 4209:  *     @include pictos-iconmask('attachment');\n 4210   *\n 4211   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4559   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4560   *\n 4561:  *     @include pictos-iconmask('attachment');\n 4562   *\n 4563   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 4988   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 4989   *\n 4990:  *     @include pictos-iconmask('attachment');\n 4991   *\n 4992   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5367   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5368   *\n 5369:  *     @include pictos-iconmask('attachment');\n 5370   *\n 5371   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 5753   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 5754   *\n 5755:  *     @include pictos-iconmask('attachment');\n 5756   *\n 5757   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n ....\n 6110   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n 6111   *\n 6112:  *     @include pictos-iconmask('attachment');\n 6113   *\n 6114   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\themes\\stylesheets\\sencha-touch\\default\\_mixins.scss:\n   12   * Includes a base64-encoded icon for use within tab bars and buttons (With the component parameter iconMask: true).\n   13   *\n   14:  *     @include pictos-iconmask('attachment');\n   15   *\n   16   * @param {string} $name The name of the icon to be included. This is to match the name of the icon file (located at resources/themes/images/default/pictos) without its extention (.png).\n   17   */\n   18: @mixin pictos-iconmask($name) {\n   19    .x-tab .x-button-icon.#{$name},\n   20    .x-button .x-button-icon.x-icon-mask.#{$name} {\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\themes\\stylesheets\\sencha-touch\\default\\widgets\\_buttons.scss:\n  293  \n  294    @if $include-default-icons {\n  295:     @include pictos-iconmask('action');\n  296:     @include pictos-iconmask('add');\n  297:     @include pictos-iconmask('arrow_down');\n  298:     @include pictos-iconmask('arrow_left');\n  299:     @include pictos-iconmask('arrow_right');\n  300:     @include pictos-iconmask('arrow_up');\n  301:     @include pictos-iconmask('compose');\n  302:     @include pictos-iconmask('delete');\n  303:     @include pictos-iconmask('organize');\n  304:     @include pictos-iconmask('refresh');\n  305:     @include pictos-iconmask('reply');\n  306:     @include pictos-iconmask('search');\n  307:     @include pictos-iconmask('settings');\n  308:     @include pictos-iconmask('star');\n  309:     @include pictos-iconmask('trash');\n  310:     @include pictos-iconmask('maps');\n  311:     @include pictos-iconmask('locate');\n  312:     @include pictos-iconmask('home');\n  313    }\n  314  \n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\resources\\themes\\stylesheets\\sencha-touch\\default\\widgets\\_tabs.scss:\n  193  \n  194    @if $include-default-icons {\n  195:     @include pictos-iconmask('bookmarks');\n  196:     @include pictos-iconmask('download');\n  197:     @include pictos-iconmask('favorites');\n  198:     @include pictos-iconmask('info');\n  199:     @include pictos-iconmask('more');\n  200:     @include pictos-iconmask('time');\n  201:     @include pictos-iconmask('user');\n  202:     @include pictos-iconmask('team');\n  203    }\n  204  }\n\nC:\\Users\\HC\\Documents\\GitHub\\B2B\\iPhone\\B2B\\www\\sdk\\src\\Button.js:\n   52   * - home\n   53   *\n   54:  * You can also use other pictos icons by using the {@link Global_CSS#pictos-iconmask pictos-iconmask} mixin in your SASS.\n   55   *\n   56   * ## Badges\n\n95 matches across 11 files\n",
+			"settings":
+			{
+				"buffer_size": 27634,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
 		},
 		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2215,
+				"buffer_size": 1301,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index_prod.html",
+			"settings":
+			{
+				"buffer_size": 1308,
 				"line_ending": "Windows"
 			}
 		},
@@ -264,11 +281,33 @@
 			"file": "app/view/_App_Container.js",
 			"settings":
 			{
-				"buffer_size": 1933,
+				"buffer_size": 1934,
 				"line_ending": "Windows"
 			}
-=======
->>>>>>> Spero che nn si rompa tutto come al solito
+		},
+		{
+			"file": "resources/css/app.css",
+			"settings":
+			{
+				"buffer_size": 205469,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/js/hh.js",
+			"settings":
+			{
+				"buffer_size": 5795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 3068,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -307,11 +346,13 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/stylesheets/sencha-touch/default/_mixins.scss",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/sencha-touch-all.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
@@ -321,7 +362,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
@@ -345,52 +385,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SelectContainer.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Select.js",
-=======
-		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/app/controller/Profiles.js",
-		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/Users/maximus/Workspace/Projects/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Activities_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Badges_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Beers_Single_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/DrinkInCheckIn_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Feedback_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Notifications_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Profile_Ajax.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/js/hh.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/css/hh.css",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/resources/sass/app.scss",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/index.html",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/store/FavoriteBeers_Local.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/model/FavoriteBeer.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_Login.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Detail_Component.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_About.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Favorites.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List_Container.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_App.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/_Login.js",
-		"/C/Users/Aetheros/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Favorites_List.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
->>>>>>> Spero che nn si rompa tutto come al solito
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
@@ -423,7 +417,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Feedback_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/packager.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/command/src/module/generate/App.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/resources/themes/templates/project/sencha-touch.scss",
@@ -459,7 +452,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Friends_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_AboutUs.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/ux/bufferedlist/BufferedList.js",
-<<<<<<< HEAD
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Whatsnew.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_Terms.js",
@@ -481,15 +473,11 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_State.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Type.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_by_Region.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Local.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/user_login.js"
-=======
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/TemporaryData_Local.js"
->>>>>>> Spero che nn si rompa tutto come al solito
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Places_Local.js"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -505,6 +493,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"active",
+			" pictos-iconmask",
+			"lert(\"We are sorr",
 			"getNameByAlias",
 			"getByAlias",
 			"info",
@@ -629,10 +620,7 @@
 			"'",
 			"value",
 			"{text",
-			"\"\n",
-			"code",
-			"name",
-			"console.log"
+			"\"\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -722,26 +710,23 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-=======
-			"selected": 4,
->>>>>>> Spero che nn si rompa tutto come al solito
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/view/Activity_List.js",
+					"file": "sdk/microloader/development.js",
 					"settings":
 					{
-						"buffer_size": 1919,
+						"buffer_size": 2688,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								183
+								70,
+								70
 							]
 						],
 						"settings":
@@ -758,32 +743,447 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/view/Beer_List_Container.js",
+					"file": "resources/sass/app.scss",
 					"settings":
 					{
-						"buffer_size": 1457,
+						"buffer_size": 25494,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1274,
-								1274
+								20091,
+								20091
 							]
 						],
 						"settings":
 						{
-<<<<<<< HEAD
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-=======
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
->>>>>>> Spero che nn si rompa tutto come al solito
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 5997.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 27634,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										255,
+										271
+									],
+									[
+										463,
+										479
+									],
+									[
+										504,
+										520
+									],
+									[
+										546,
+										562
+									],
+									[
+										588,
+										604
+									],
+									[
+										815,
+										831
+									],
+									[
+										1127,
+										1143
+									],
+									[
+										1525,
+										1541
+									],
+									[
+										1923,
+										1939
+									],
+									[
+										2321,
+										2337
+									],
+									[
+										2719,
+										2735
+									],
+									[
+										3117,
+										3133
+									],
+									[
+										3515,
+										3531
+									],
+									[
+										3913,
+										3929
+									],
+									[
+										4311,
+										4327
+									],
+									[
+										4709,
+										4725
+									],
+									[
+										5107,
+										5123
+									],
+									[
+										5505,
+										5521
+									],
+									[
+										5903,
+										5919
+									],
+									[
+										6301,
+										6317
+									],
+									[
+										6699,
+										6715
+									],
+									[
+										7175,
+										7191
+									],
+									[
+										7573,
+										7589
+									],
+									[
+										7971,
+										7987
+									],
+									[
+										8369,
+										8385
+									],
+									[
+										8767,
+										8783
+									],
+									[
+										9165,
+										9181
+									],
+									[
+										9563,
+										9579
+									],
+									[
+										9961,
+										9977
+									],
+									[
+										10359,
+										10375
+									],
+									[
+										10757,
+										10773
+									],
+									[
+										11155,
+										11171
+									],
+									[
+										11553,
+										11569
+									],
+									[
+										11951,
+										11967
+									],
+									[
+										12349,
+										12365
+									],
+									[
+										12747,
+										12763
+									],
+									[
+										13221,
+										13237
+									],
+									[
+										13619,
+										13635
+									],
+									[
+										14017,
+										14033
+									],
+									[
+										14415,
+										14431
+									],
+									[
+										14813,
+										14829
+									],
+									[
+										15211,
+										15227
+									],
+									[
+										15609,
+										15625
+									],
+									[
+										16007,
+										16023
+									],
+									[
+										16405,
+										16421
+									],
+									[
+										16803,
+										16819
+									],
+									[
+										17201,
+										17217
+									],
+									[
+										17599,
+										17615
+									],
+									[
+										17997,
+										18013
+									],
+									[
+										18395,
+										18411
+									],
+									[
+										18793,
+										18809
+									],
+									[
+										19276,
+										19292
+									],
+									[
+										19674,
+										19690
+									],
+									[
+										20072,
+										20088
+									],
+									[
+										20470,
+										20486
+									],
+									[
+										20868,
+										20884
+									],
+									[
+										21266,
+										21282
+									],
+									[
+										21664,
+										21680
+									],
+									[
+										22062,
+										22078
+									],
+									[
+										22460,
+										22476
+									],
+									[
+										22858,
+										22874
+									],
+									[
+										23256,
+										23272
+									],
+									[
+										23654,
+										23670
+									],
+									[
+										24052,
+										24068
+									],
+									[
+										24450,
+										24466
+									],
+									[
+										24848,
+										24864
+									],
+									[
+										25357,
+										25373
+									],
+									[
+										25617,
+										25633
+									],
+									[
+										25932,
+										25948
+									],
+									[
+										25979,
+										25995
+									],
+									[
+										26023,
+										26039
+									],
+									[
+										26074,
+										26090
+									],
+									[
+										26125,
+										26141
+									],
+									[
+										26177,
+										26193
+									],
+									[
+										26226,
+										26242
+									],
+									[
+										26274,
+										26290
+									],
+									[
+										26321,
+										26337
+									],
+									[
+										26370,
+										26386
+									],
+									[
+										26418,
+										26434
+									],
+									[
+										26464,
+										26480
+									],
+									[
+										26511,
+										26527
+									],
+									[
+										26560,
+										26576
+									],
+									[
+										26605,
+										26621
+									],
+									[
+										26651,
+										26667
+									],
+									[
+										26696,
+										26712
+									],
+									[
+										26743,
+										26759
+									],
+									[
+										26976,
+										26992
+									],
+									[
+										27026,
+										27042
+									],
+									[
+										27075,
+										27091
+									],
+									[
+										27125,
+										27141
+									],
+									[
+										27170,
+										27186
+									],
+									[
+										27215,
+										27231
+									],
+									[
+										27260,
+										27276
+									],
+									[
+										27305,
+										27321
+									],
+									[
+										27538,
+										27554
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								25627,
+								25627
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7508.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -791,23 +1191,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2215,
+						"buffer_size": 1301,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1327,
-								1327
+								970,
+								970
 							]
 						],
 						"settings":
@@ -817,111 +1217,172 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-<<<<<<< HEAD
-					"file": "i18n/B2B-en-US.js",
-					"settings":
-					{
-						"buffer_size": 23175,
-=======
-					"file": "resources/sass/app.scss",
-					"settings":
-					{
-						"buffer_size": 5725,
->>>>>>> Spero che nn si rompa tutto come al solito
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-<<<<<<< HEAD
-								9051,
-								11930
-=======
-								294,
-								294
->>>>>>> Spero che nn si rompa tutto come al solito
-							]
-						],
-						"settings":
-						{
-<<<<<<< HEAD
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3731.0,
-=======
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
->>>>>>> Spero che nn si rompa tutto come al solito
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-<<<<<<< HEAD
-					"file": "app/view/_App_Container.js",
+					"file": "index_prod.html",
 					"settings":
 					{
-						"buffer_size": 1933,
-=======
-					"file": "app/store/Activities_User_Ajax.js",
-					"settings":
-					{
-						"buffer_size": 1140,
->>>>>>> Spero che nn si rompa tutto come al solito
+						"buffer_size": 1308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								474,
-								474
-=======
-								224,
-								224
->>>>>>> Spero che nn si rompa tutto come al solito
+								174,
+								106
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-<<<<<<< HEAD
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
-=======
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
->>>>>>> Spero che nn si rompa tutto come al solito
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "i18n/B2B-en-US.js",
+					"settings":
+					{
+						"buffer_size": 23175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								723,
+								870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/view/_App_Container.js",
+					"settings":
+					{
+						"buffer_size": 1934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1262,
+								1262
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/css/app.css",
+					"settings":
+					{
+						"buffer_size": 205469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205469,
+								205469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "resources/js/hh.js",
+					"settings":
+					{
+						"buffer_size": 5795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1742,
+								1742
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 3068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2548,
+								2548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
-<<<<<<< HEAD
-=======
-			]
-		},
-		{
-			"sheets":
-			[
->>>>>>> Spero che nn si rompa tutto come al solito
 			]
 		}
 	],
@@ -953,11 +1414,7 @@
 		"cols":
 		[
 			0.0,
-<<<<<<< HEAD
-			0.518192277433,
-=======
-			0.93920814188,
->>>>>>> Spero che nn si rompa tutto come al solito
+			0.413136985174,
 			1.0
 		],
 		"rows":

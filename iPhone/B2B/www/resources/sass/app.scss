@@ -1,29 +1,29 @@
 /* Base Color Setups*/
 
-$base_color: #77AABB;
+//$base_color: #77AABB;
+$base_color: #FFF;
 $base-gradient: 'flat';
 $tabs-bottom-active-gradient: 'flat';
 $tabs-bottom-gradient: 'flat';
-$tabs-dark-active-color: #DDCC00;
+$tabs-dark-active-color: #FFBC00;
+$active-color: #FFBC00;
 
 // Lists
-$list-active-gradient: 'bevel';
+$list-active-gradient: 'flat';
 $list-header-bg-color: transparentize(saturate($base-color, 10%), .25);
 $list-header-gradient: 'matte';
 
 // Tabs
 //$tabs-dark: #111;
 
-
-
-/* Custom CSS  */
-
     html, body {
         height: 100%;
-        background-color: #DDD;
+        background-color: #FFF;
         overflow: hidden;
         margin: 0;
     }
+
+/* LOADING SCREEN */
 
     #appLoadingIndicator, #logo_claim, #logo_disclaimer {
         width: 100%;
@@ -32,25 +32,45 @@ $list-header-gradient: 'matte';
 
     #appLoadingIndicator{
         height: 100%;
+        background : url("../bg/bg_plank.jpg") no-repeat #FFBC00;
+        background-size: 100%;
     }
+
+    #logo_header{
+        width: 100%;
+        position: absolute;
+        height: 40px;
+        background: #FFBC00;
+        top: 0;
+    }
+    #logo_upper{
+        width: 160px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-left: -50px;
+    }
+
     #logo_claim {
         top: 50%;
-        margin-top: -30px;
         text-align: center;
         color: #FFF;
         text-shadow: 0px 2px 2px #000;
-        font-size: 3em;
+        font-size: 30px;
         font-weight: bold;
     }
-    #logo_disclaimer{
-        bottom: 30px;
+    #logo_footer{
+        bottom: 20px;
+        width: 100%;
+        background: #FFBC00;
         text-align: center;
         color: #333;
-        font-size: 0.5em;
+        font-size: 10px;
         span{
             width: 40%;
             margin: 20px auto;
         }
+
     }
 
 /* TypoGraphy */
@@ -67,6 +87,24 @@ $list-header-gradient: 'matte';
 /* Layout */
     #slider_logo { padding-top: 8px}
 
+/* ACTIVITIES */
+    #act_lastdrink{
+        border-bottom: 2px solid #BBB;
+        .act_lastdrink{
+            padding: 4px;
+            img {
+                margin-top: 6px;
+            }
+        }
+    }
+
+
+/* Lists */
+    .x-list-item-label{ 
+        border: 1px solid #DDD;
+        margin: 4px;
+        border-radius: 10px;
+    }
 
 /* Small List */
 
@@ -94,12 +132,7 @@ $list-header-gradient: 'matte';
         border: 2px solid #EEE;
     }
 
-    .lastdrink{
-        padding: 4px;
-        img {
-            margin-top: 6px;
-        }
-    }
+
 
     .small-list-when, .small-list-drinkedin{
         text-align: right;
@@ -439,6 +472,9 @@ $list-header-gradient: 'matte';
   -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 1px 20px rgba(0, 0, 0, 0.6);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 1px 20px rgba(0, 0, 0, 0.6);
 }
+
+/* Fixes */
+#ext-button-1 { margin: 5px; }
 
 /*
 
