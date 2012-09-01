@@ -134,92 +134,157 @@
             margin: 20px auto;
         }
 
+#logo_claim {
+    top: 50%;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 2px 2px #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+#logo_footer{
+    bottom: 20px;
+    width: 100%;
+    background: #FFBC00;
+    text-align: center;
+    color: #333;
+    font-size: 10px;
+    span{
+        width: 40%;
+        margin: 20px auto;
     }
+}
 
 /* TypoGraphy */
 
-    .hilite{
-        color: #118da1;
-    }
+.hilite{
+    color: #118da1;
+}
 
-    strong{
-        font-weight: bold;
-        color: #69B;
-    }
+strong{
+    font-weight: bold;
+    color: #69B;
+}
 
 /* Layout */
-    #slider_logo { padding-top: 8px}
+#slider_logo { padding-top: 8px}
 
 /* ACTIVITIES */
-    #act_lastdrink{
-        border-bottom: 2px solid #BBB;
-        .act_lastdrink{
-            padding: 4px;
-            img {
-                margin-top: 6px;
-            }
+#act_lastdrink{
+    border-bottom: 2px solid #BBB;
+    .act_lastdrink{
+        padding: 4px;
+        img {
+            margin-top: 6px;
         }
     }
+}
 
+/********* BEER SELECTED *********/
+
+.beer-selected {
+    height: 84px;
+    position: relative;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.beer-selected > div{
+    font-size: 16pt;
+    float: left;
+    margin-top: 10px;
+}
+
+.beer-selected-image {
+    float: left;
+    border: 2px solid #EEE;
+}
+
+.search-new-beer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    background-color: #DDD;
+    bottom: 10px;
+
+    .search-new-beer-text {
+        float: left;
+        margin-top: 13px;
+        margin-left: 15px;
+    }
+
+    .search-new-beer-logo {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 10px;
+        top: 8px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgNJREFUeNrMmO1xgzAMhiHXATwCG8QbhG6QERiBbkAnaDdgBLoBYQLIBGQD6ATUTt2cz/WHZGyC7t78IMF5LFuy5HRZlmTP9sI/0jTFvEOZcqYjU6Z8d2O6Ml2YhrVwd+chPFgwjfw9oPhvSyYSG/CMBFM1iTGiANYrwFQ1WG/aAPlAfUC4P/UYSM6W3j/+B0kvgsFmPBA65dkRsJw8eF6ZZl8Pfjj2U+XwAhEBNVnGqX2XOA+4h4h4xzTe2QdwXDNjZKCNrgmrgIXFc2vNBFlgAHvDniMBAIlhdUYoYGaYYRXwWDWtEIUAFhG9J5susksb4EHKX7o8NwcG/NI8O9leOEgVimrXCNVTZ9ifTkDTSRHabppnmS/gVuYNSDYCHHwBaQQY3ZgzBLDDRpennYD7UkmGvwe3LolmAeGIIQ8WkERNNjhJKqwT1LO4wR5FyEjVea/FFAt5iDId2T6gqplEzCgkpKtopVhA6uhzc2RKcTVeE7Saka10DFo7Zk6R7aoR0tbV1a79IRLsIPQtclzmmZpm0ekNmMY9ZNPu5UnIzYKrfYwKCb2bySzRDVGL3JcPSOztVi7+BOrRWhP1DQKS2IIEAksNufFiKXaJ5FGXfTK2t+QJN6zQi6lWbpq2NG1K2VvJD4Ec5HrwWWZa7n5tkISGLKVqm3vunXv5Abhn+xFgAEohToNv7FcaAAAAAElFTkSuQmCC);
+        background-size: 100% 100%;
+    }
+}
 
 /* Lists */
-    .x-list-item-label{ 
-        border: 1px solid #DDD;
-        margin: 4px;
-        border-radius: 10px;
-    }
+.x-list-item-label{
+    border: 1px solid #DDD;
+    margin: 4px;
+    border-radius: 10px;
+}
 
 /* Small List */
 
-    .small-list-text, .medium-list-text{
-        position: relative;
-        left: 10px;
-        padding-right: 10px;
-    }
-    .small-list{
-        min-height: 30px;
-    }
-    .small-list-subtext{
-        position: relative;
-        left: 10px;
-        padding-right: 10px;
-        color: #AAA;
-        font-size: 12px;
-    }
-    .medium-list-text{
-        font-size: 16px;
-    }
+.small-list-text, .medium-list-text{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+}
+.small-list{
+    min-height: 30px;
+}
+.small-list-subtext{
+    position: relative;
+    left: 10px;
+    padding-right: 10px;
+    color: #AAA;
+    font-size: 12px;
+}
+.medium-list-text{
+    font-size: 16px;
+}
 
-    .avatar_small, .avatar_medium, .mapMiniDrink{
-        float: left;
-        border: 2px solid #EEE;
-    }
+.avatar_small, .avatar_medium, .mapMiniDrink{
+    float: left;
+    border: 2px solid #EEE;
+}
 
 
 
-    .small-list-when, .small-list-drinkedin{
-        text-align: right;
-        font-size: 11px;
-        color: #AAA;
-    }
+.small-list-when, .small-list-drinkedin{
+    text-align: right;
+    font-size: 11px;
+    color: #AAA;
+}
 
-    .small-list-drinkedin {
-        padding-left: 20px;
-        background: url(image-url.gif);
-    }
-    .profile-detail{
-        position: absolute;
-        top: 180px;
-        background: white;
-        border: 2px solid;
-        left: 60px;
-        padding: 10px;
-    }
+.small-list-drinkedin {
+    padding-left: 20px;
+    background: url(image-url.gif);
+}
+.profile-detail{
+    position: absolute;
+    top: 180px;
+    background: white;
+    border: 2px solid;
+    left: 60px;
+    padding: 10px;
+}
 
-    .footer_img{
-        margin: auto;
-        display: block;
-    }
+.footer_img{
+    margin: auto;
+    display: block;
+}
 
 /* --- IOS5 TOGGLE --------------- */
 .ios5_toggle .x-toggle {
@@ -432,6 +497,13 @@
 
 /************************************************/
 
+.place-detail-info {
+    position: relative;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 /* Modal Rating */
 
 .x-modal-rating {
@@ -497,8 +569,6 @@
     font-size: 14pt;
     padding-top: 10px;
 }
-
-
 
 .avatar, .avatar1, .avatar2 {
   width: 100px;
