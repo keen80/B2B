@@ -135,7 +135,7 @@ Ext.define('B2B.view.Beer_Search', {
 		var addBeerButton ={
 			xtype: 'button',
 				text: i18n.app.BTN_ADDBEER,
-				ui: 'beermain',
+				ui: 'action',
 				id: 'add_beer_btn',
 				iconCls: 'drink_beerpint_add',
 				iconMask: true,

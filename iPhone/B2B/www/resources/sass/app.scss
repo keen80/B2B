@@ -119,6 +119,22 @@
         #slider_left{
             .x-list-item-label {
                 width: 190px;
+                .slider_item_icon{
+                    padding-left: 30px;
+                    background-size: 26px;
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-image: url("../icons/beer.png");
+                }
+                .slider_whatsnew {
+                    background-image: url("../icons/splash_star.png");
+                }
+                .slider_terms {
+                    background-image: url("../icons/document.png");
+                }
+                .slider_aboutus {
+                    background-image: url("../icons/target.png");
+                }
             }
         }
     }
@@ -126,6 +142,8 @@
     #slider_logo {
         padding-top: 2px
     }
+
+
 
 
 /* SPLASH SCREEN ********************************************************** */
@@ -183,6 +201,11 @@
         color: #118da1;
     }
 
+    .x-field-input{
+        padding: 2px 4px;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
 /* ACTIVITIES ************************************************************* */
 
@@ -757,15 +780,6 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 
 */
 
-/* NATION FLAGS ************************************************************* */
-.nation {
-    background: right center;
-}
-
-.nation_ES{
-    background-image: url("../flags/ES.png");
-}
-
 
 @import 'sencha-touch/default/all';
 
@@ -793,6 +807,10 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 @include sencha-toolbar-ui('beermain', $beer-main-color,'flat');
 @include sencha-toolbar-ui('beersecondary', $beer-secondary-color,'flat');
 @include sencha-toolbar-ui('beerneutral', $beer-neutral-color,'flat');
+@include sencha-button-ui('beermain', $beer-main-color,'flat');
+@include sencha-button-ui('beersecondary', $beer-secondary-color,'flat');
+@include sencha-button-ui('beerneutral', $beer-neutral-color,'flat');
+
 
 /** To Do da rimuovere */
 @include pictos-iconmask('chat4');

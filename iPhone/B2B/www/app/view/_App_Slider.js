@@ -39,7 +39,7 @@ Ext.define("B2B.view._App_Slider", {
         },
         items: [
             {
-                title: '<div class="nav_slidemenu_profile">'+i18n.app.PANEL_CLAIM+'</div>',
+                title: '<div id="slider_title" class="slider_item_icon">'+i18n.app.PANEL_CLAIM+'</div>',
                 id: 'slider_myprofile',
                 slideButton: {
                     selector: 'titlebar',
@@ -56,7 +56,7 @@ Ext.define("B2B.view._App_Slider", {
                 ]
             },
             {
-                title: i18n.app.LABEL_WHATSNEW,
+                title: '<div class="slider_item_icon slider_whatsnew">'+i18n.app.LABEL_WHATSNEW+'</div>' ,
                 group: 'News',
                 id: 'slider_whatsnew',
                 slideButton: {
@@ -74,7 +74,7 @@ Ext.define("B2B.view._App_Slider", {
                 ]
             },/* // TODO IN PROGRESS
             {
-                title: i18n.app.LABEL_GOODIES,
+                title: '<div id="slider_goodies"  class="slider_item_icon">'+i18n.app.LABEL_GOODIES+'</div>' ,
                 group: 'Goodies',
                 id: 'slider_goodies',
                 slideButton: {
@@ -91,7 +91,7 @@ Ext.define("B2B.view._App_Slider", {
                 ]
             },*/
             {
-                title: i18n.app.LABEL_TERMS,
+                title: '<div class="slider_item_icon slider_terms">'+i18n.app.LABEL_TERMS+'</div>' ,
                 group: 'Privacy',
                 id: 'slider_privacy',
                 slideButton: {
@@ -109,7 +109,7 @@ Ext.define("B2B.view._App_Slider", {
                 ]
             },
             {
-                title: i18n.app.LABEL_ABOUTUS ,
+                title: '<div class="slider_item_icon slider_aboutus">'+i18n.app.LABEL_ABOUTUS+'</div>' ,
                 group: 'Privacy',
                 id: 'slider_aboutus',
                 slideButton: {

@@ -17,7 +17,7 @@ Ext.define('B2B.view.Friend_Search', {
 			text: i18n.app.BTN_SEARCHFRIEND,
 			ui: 'action',
 			id: 'search_friend_btn',
-			iconCls: 'smiley_friends_add',
+			iconCls: 'smiley_friend_add',
 			iconMask: true,
 			handler: this.onSearchFriendButtonTap,
 			scope: this

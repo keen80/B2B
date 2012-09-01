@@ -60,7 +60,6 @@ Ext.define('B2B.view.View_BottleSpinner', {
         }
 
         function startTouch() {
-            setTimeout(hideURLbar, 100);
 
             document.body.ontouchstart = function(e) {
                 oldangle1 = 0; oldangle2 = 0; oldangle3 = 0;
@@ -164,10 +163,6 @@ Ext.define('B2B.view.View_BottleSpinner', {
         }
         function spinout() {
             spintext.className = "spinout";
-        }
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
         }
 
         // detect orientation change, called periodically
