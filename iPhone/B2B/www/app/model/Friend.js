@@ -24,7 +24,7 @@ Ext.define("B2B.model.Friend", {
 			{ name: 'favorites', type: 'string', defaultValue: ''},
 			{ name: 'liked', type: 'string', defaultValue: '' },
 			{ name: 'counterCheckIns', type: 'int', defaultValue: 0 },
-			{ name: 'counterFriends', type: 'int', defaultValue: 0 },
+			{ name: 'counterFriend', type: 'int', defaultValue: 0 },
 			{ name: 'counterBadges', type: 'int', defaultValue: 0},
 		],
 		validations: [

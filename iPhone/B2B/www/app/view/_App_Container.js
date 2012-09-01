@@ -1,9 +1,10 @@
 Ext.define("B2B.view._App_Container", {
 	extend: 'Ext.tab.Panel',
-	xtype: 'App_Container',
+	xtype: 'appcontainer',
 	requires: [
 		'Ext.ux.slidenavigation.SlideNavigation',
-		'Ext.ux.toolbarspinner.TSpinner'
+		'Ext.ux.toolbarspinner.TSpinner',
+		'Ext.device.Camera'
 	],
 	config: {
 		activeTab: 0,
@@ -26,13 +27,16 @@ Ext.define("B2B.view._App_Container", {
 				id: 'activity'
 			},
 			{
-				xtype: 'beerlistcontainerpanel'
+				xtype: 'beer',
+				id: 'beers'
 			},
 			{
-				xtype: 'friendlistcontainerpanel'
+				xtype: 'friend',
+				id: 'friend'
 			},
 			{
-				xtype: 'userprofileaboutpanel'
+				xtype: 'userprofile',
+				id: 'userprofile'
 			}
 		]
 	},
@@ -40,18 +44,10 @@ Ext.define("B2B.view._App_Container", {
 
 		this.callParent(arguments);
 
-		var logo = {
-			xtype: 'image',
-			src: 'resources/img/logo_text_black_small.png',
-			height: 28,
-			width: 144,
-			align: 'left'
-		}
-
-		var gotoNotificationButton = {
+		var notificationButton = {
 			iconCls: 'chat4',
 			ui: 'plain',
-			id: 'jump_2_notification_btn',
+			id: 'notificationbutton',
 			handler: this.onGotoNotificationButtonTap,
 			scope: this,
 			align: 'left'
@@ -81,9 +77,9 @@ Ext.define("B2B.view._App_Container", {
 			defaults: {
 				iconMask: true
 			},
+			ui: 'beermain',
 			items: [
-				//logo,
-				gotoNotificationButton,
+				notificationButton,
 				toolbarSpinner,
 				gotoCheckInButton
 			]

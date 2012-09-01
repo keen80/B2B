@@ -1,10 +1,9 @@
-Ext.define('B2B.view.Friend_List_SearchComponent', {
+Ext.define('B2B.view.Friend_Search', {
 	extend: 'Ext.Panel',
 	requires: [
 		'Ext.field.Search'
 	],
-	xtype: 'friendlistsearchcomponent',
-	id: 'friendlistsearchcomponent',
+	xtype: 'friendsearch',
 	config: {
 		docked: 'top'
 	},
@@ -18,6 +17,8 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
 			text: i18n.app.BTN_SEARCHFRIEND,
 			ui: 'action',
 			id: 'search_friend_btn',
+			iconCls: 'smiley_friends_add',
+			iconMask: true,
 			handler: this.onSearchFriendButtonTap,
 			scope: this
 		};
@@ -70,18 +71,18 @@ Ext.define('B2B.view.Friend_List_SearchComponent', {
             }
 		};
 
-		var toolbar = {
+		var friendsearchtoolbar = {
 			xtype: 'toolbar',
-			id: 'searchfriendcomponenttoolbar',
+			id: 'friendsearchtoolbar',
 			cls: 'sub_titlebar',
-			ui: 'neutral',
+			ui: 'beerneutral',
 			docked: 'top',
 			items: [
 				searchField,
 				searchFriendButton
 			]
 		};
-		this.add([toolbar]);
+		this.add([friendsearchtoolbar]);
 	},
 	onSearchFriendButtonTap: function(){
 		this.fireEvent("searchFriendCommand", this);

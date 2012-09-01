@@ -9,25 +9,25 @@ Ext.define('B2B.view.Activity_List_Detail', {
 
     	this.callParent(arguments);
 
-    	var activitylistdetailbackbutton = {
+    	var detailbackbutton = {
 			xtype: "button",
 			text: i18n.app.BTN_BACK,
 			ui: 'back',
 			id: 'activitylistdetailbackbutton',
-			handler: this.onActivitylistdetailbackbuttonTap,
+			handler: this.onDetailbackbutton,
 			scope: this
 		},
-		activitylistdetailtoolbar = {
+		detailtoolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
 			docked: 'top',
 			items: [
-				activitylistdetailbackbutton
+				detailbackbutton
 			]
 		};
-		this.add([activitylistdetailtoolbar]);
+		this.add([detailtoolbar]);
     },
-	onActivitylistdetailbackbuttonTap: function(){
+	onDetailbackbuttonTap: function(){
 		this.fireEvent("backActivityDetailCommand", this);
 	}
 });

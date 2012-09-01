@@ -5,7 +5,7 @@ Ext.define("B2B.controller.Places", {
 			mapContainer: "drinkaroundmepanel",
 			placeDetail: "placedetailpanel",
 			appContainer: "App_Container",
-			placeBeerList: "placebeerlistcomponent",
+			placeBeerList: "placebeerlist",
 			app: "_app"
 		},
 		control: {

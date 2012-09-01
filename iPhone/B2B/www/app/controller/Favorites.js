@@ -3,7 +3,7 @@ Ext.define("B2B.controller.Favorites", {
 	config: {
 		refs: {
 			app: "_app",
-			profilePanel: "userprofileaboutpanel",
+			profilePanel: "userprofile",
 			favoritesPanel: "favoritespanel"
 		},
 		control: {
@@ -29,7 +29,7 @@ Ext.define("B2B.controller.Favorites", {
 	},
 	onJumpToBeer: function(){
 		this.getApp().pop();
-		var tabPanel = Ext.Viewport.down("App_Container");
+		var tabPanel = Ext.Viewport.down("appcontainer");
 		tabPanel.setActiveItem(1);
 	},
 	init: function(){

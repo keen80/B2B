@@ -9,7 +9,7 @@ Ext.define('B2B.view.Activity_List', {
         plugins: [
             {
                 xclass: 'Ext.plugin.PullRefresh',
-                pullRefreshText: 'Pull down for more!'
+                pullRefreshText: i18n.app.HINT_PULLDOWN
             }
         ],
         loadMask: true,
@@ -37,7 +37,7 @@ Ext.define('B2B.view.Activity_List', {
                 },
                 getWhenString: function(values){
                     var str = "<div class='small-list-when'>";
-                    str += "5 minuti fa";
+                    str += utils.getDate(values);
                     str += "</div>";
                     return str;
                 },

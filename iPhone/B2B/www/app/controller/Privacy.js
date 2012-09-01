@@ -3,7 +3,7 @@ Ext.define("B2B.controller.Privacy", {
 	config: {
 		refs: {
 			userprofileprivacyform: "#BTN_removeData",
-			appContainer: "App_Container",
+			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {

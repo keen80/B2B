@@ -3,7 +3,7 @@
 		"COMMON_ATTENTION": "Attention",
 
 		"PANEL_ABOUTME": "About Me",
-		"PANEL_ACTIVITY": "News Feed",
+		"PANEL_ACTIVITY": "What\'s New",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "Beers",
 		"PANEL_CHECKIN": "Check In",
@@ -157,17 +157,17 @@
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
 		"HINT_CHOOSEGENDER": "Select your Gender",
 		"HINT_CHOOSENATIONALITY": "Where do You live?",
-		"HINT_SEARCH2CHAR": "Start searching by writing 3 letters",
-		"HINT_SEARCH1CHAR": "Good, %1 more!",
+		"HINT_SEARCH2CHAR": "Start searching by writing <strong>3</strong> letters",
+		"HINT_SEARCH1CHAR": "Good, <strong>%1</strong> more!",
 		"HINT_SEARCHNORES": "Aww no result match.",
-		"HINT_SEARCHRESCHAR": "Yeah, found %1 results!",
-
+		"HINT_SEARCHRESCHAR": "Yeah, found <strong class='hilite'>%1</strong> results!",
 
 		"HINT_LOADING": "Loading...",
 		"HINT_CAREFULLY": "Use Carefully and at your own risk!",
 		"HINT_EMAIL": "Please, set a valid Email: it will be used for your password retrieval!",
 		"HINT_DISPLAYNAME": "We will display to other users only your selected Display Name",
 		"HINT_OFFLINE": "We are sorry, but an Internet Connection is required!",
+		"HINT_PULLDOWN": "Pull down for more!",
 
 		"TEXT_NOACTIVITYFOUND": "No activity found",
 		"TEXT_NOBEERFOUND": "No beer found",

@@ -4,7 +4,7 @@ Ext.define("B2B.controller.Camera", {
 	config : {
 		refs : {
 			app: "_app",
-			userprofileform: "userprofileform",
+			userform: "userform",
 			cameracontainerpanel : "cameracontainerpanel",
 			camerapicker : "camerapicker"
 		},
@@ -16,7 +16,7 @@ Ext.define("B2B.controller.Camera", {
 				openCameraCommand : "openCamera",
 				openLibraryCommand : "openLibrary"
 			},
-			userprofileform: {
+			userform: {
 				chooseProfilePictureCommand: "onChooseProfilePictureCommand"
 			}
 

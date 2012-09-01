@@ -1,7 +1,7 @@
-Ext.define('B2B.view.User_Profile_Form', {
+Ext.define('B2B.view.User_Form', {
 	extend: 'Ext.form.Panel',
-	xtype: 'userprofileform',
-	id: 'userprofileform',
+	xtype: 'userform',
+	id: 'userform',
 	requires: [
 		'Ext.form.FieldSet',
 		'Ext.field.Hidden',
@@ -45,7 +45,7 @@ Ext.define('B2B.view.User_Profile_Form', {
 													scope: this,
 													ui: 'confirm',
 													handler: function(){
-														Ext.getCmp("userprofileform").fireEvent("chooseProfilePictureCommand", this, Ext.getCmp("ProfileImage"));
+														Ext.getCmp("userform").fireEvent("chooseProfilePictureCommand", this, Ext.getCmp("ProfileImage"));
 														this.actions.hide();
 													}
 												},

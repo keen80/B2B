@@ -1,22 +1,15 @@
-Ext.define('B2B.view.Beer_List_SearchComponent', {
+Ext.define('B2B.view.Beer_Search', {
 	extend: 'Ext.Panel',
 	requires: [
 		'Ext.field.Search'
 	],
-	xtype: 'beerlistsearchcomponent',
-	id: 'beerlistsearchcomponent',
+	xtype: 'beersearch',
 	config: {
 		docked: 'top',
-		items: [
-			{
-				
-			}
-		]
 	},
 	initialize: function(){
 		this.callParent(arguments);
 		var oldValueCount = 0;
-		//var store = Ext.getStore('Beers_Single_Ajax');
 		var store = Ext.getStore('Beers_Ajax');
 		
 		var matchedhistory = [];
@@ -30,7 +23,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 	            scope: this,
 	            clearicontap: function(field){
 	            	var beerlist = Ext.getCmp("beerlist");
-	            	var infobar = Ext.getCmp("searchinfobar");
+	            	var infobar = Ext.getCmp("beersearchinfobar");
 	            	field.setValue("");
 	            	beerlist.setStore(null);
 		           	store.filterBy( function(record) {return false});
@@ -43,7 +36,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		           	var beerlist = Ext.getCmp("beerlist");
 		           	var splashscreen = Ext.getCmp("_splashbeersearch");
 		           	var beerlistcontainer = Ext.getCmp("beerlistcontainer");
-		           	var infobar = Ext.getCmp("searchinfobar");
+		           	var infobar = Ext.getCmp("beersearchinfobar");
 
 		           /*	if(value > 3){
 		           		 M1
@@ -51,7 +44,7 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 			        		beerlistcontainer.remove(splashscreen, true);
 			        		beerlistcontainer.add(
 				        		{
-				        			xtype: 'beerlistcomponent'
+				        			xtype: 'beerlist'
 				        		}
 				        	);
 				        	beerlist = Ext.getCmp("beerlist");
@@ -142,17 +135,19 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 		var addBeerButton ={
 			xtype: 'button',
 				text: i18n.app.BTN_ADDBEER,
-				ui: 'action',
+				ui: 'beermain',
 				id: 'add_beer_btn',
+				iconCls: 'drink_beerpint_add',
+				iconMask: true,
 				handler: this.onAddBeerButtonTap,
 				scope: this
 		}
 
-		var toolbar = {
+		var beertoolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
-			id: 'searchbeercomponenttoolbar',
-			ui: 'neutral',
+			id: 'beersearchtoolbar',
+			ui: 'beerneutral',
 			docked: 'top',
 			items: [
 				searchField,
@@ -160,13 +155,15 @@ Ext.define('B2B.view.Beer_List_SearchComponent', {
 			]
 		};
 
-		var searchInfoBar = {
+		var beersearchinfobar = {
 			xtype: 'container',
-			id: "searchinfobar",
+			cls: 'beersearchinfobar',
+			id: "beersearchinfobar",
 			docked: 'top',
-			html: "<span class='searchInfoBar'>"+i18n.app.HINT_SEARCH2CHAR+"</span>"
+			styleHtmlContent: true,
+			html: i18n.app.HINT_SEARCH2CHAR
 		}
-		this.add([toolbar, searchInfoBar]);
+		this.add([beertoolbar, beersearchinfobar]);
 	},
 	onAddBeerButtonTap: function(){
 		this.fireEvent("beerAddCommand", this);

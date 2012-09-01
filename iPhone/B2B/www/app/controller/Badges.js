@@ -2,7 +2,7 @@ Ext.define("B2B.controller.Badges", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			profile: "userprofileaboutpanel",
+			profile: "userprofile",
 			badgeListContainer: "badgelistcontainerpanel",
 			badgeList: "badgelistcomponent",
 			badgeDetail: "badgedetailpanel",

@@ -3,7 +3,7 @@ Ext.define('B2B.view.Activity', {
 	xtype: 'activity',
 	config: {
 		title: i18n.app.PANEL_ACTIVITY,
-		iconCls: 'maps',
+		iconCls: 'smiley_friends',
 		styleHtmlContent: true,
 		layout: {
         	type: 'fit'

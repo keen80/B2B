@@ -3,7 +3,7 @@ Ext.define("B2B.controller.Drinks", {
 	config: {
 		refs: {
 			checkInPanel: "drinkaroundmepanel",
-			appContainer: "App_Container",
+			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {

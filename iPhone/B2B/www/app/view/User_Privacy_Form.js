@@ -1,4 +1,4 @@
-Ext.define('B2B.view.User_Profile_Privacy_Form', {
+Ext.define('B2B.view.User_Privacy_Form', {
 	extend: 'Ext.form.Panel',
 	id: 'userprofileprivacyform',
 	xtype: 'userprofileprivacyform',

@@ -5,7 +5,7 @@ Ext.define("B2B.controller.Preferences", {
 		refs: {
 			privacyForm: "userprofileprivacyform",
 			preferencesForm: "userpreferencesform",
-			appContainer: "App_Container",
+			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {
@@ -89,7 +89,7 @@ Ext.define("B2B.controller.Preferences", {
 	},
 	closePanel: function() {
 		// this.getApp().pop();
-		var maninPanel = Ext.getCmp("userprofileaboutpanel");
+		var maninPanel = Ext.getCmp("userprofile");
 		maninPanel.animateActiveItem(0, {
 			type:'slide',
 			direction:'down'

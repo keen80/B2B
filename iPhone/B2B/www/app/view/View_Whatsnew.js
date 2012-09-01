@@ -1,5 +1,5 @@
 Ext.define('B2B.view.View_Whatsnew', {
-	extend: 'Ext.form.Panel',
+	extend: 'Ext.Panel',
 	xtype: 'viewwhatsnew',
 	config: {
 		title: i18n.app.PANEL_WHATSNEW,

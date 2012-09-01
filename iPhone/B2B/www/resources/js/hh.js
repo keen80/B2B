@@ -1,11 +1,17 @@
-_.mixin(_.str.exports());
+/* HH i18n implementation */
+var language_string = window.navigator.language || window.navigator.userLanguage || window.navigator.browserLanguage || window.navigator.systemLanguage;
 
-google.maps.Map.prototype.clearMarkers = function() {
-    for(var i=0; i < this.markers.length; i++){
-        this.markers[i].setMap(null);
-    }
-    this.markers = new Array();
-};
+if(_(['en-US', 'it']).contains(language_string)){
+    document.write('<script src="i18n/B2B-'+language_string+'.js"></'+'script>');
+}else{
+    document.write('<script src="i18n/B2B-en-US.js"></'+'script>');
+}
+
+if( _.str.include(language_string, "it")){
+    moment.lang(language_string);
+}else{
+    moment.lang("en");
+}
 
 var HH = {
 	APP_NAME: "Meet Beer",
@@ -72,9 +78,10 @@ var goingTo = {
 	setupDisplayName: function(profile){
 		HH.log("---> Step: Setup DisplayName thru app");
 		var displayName = utils.getDisplayName(profile.data);
-		Ext.get("profile_username").setHtml(profile.data.username);
+		//Ext.get("profile_username").setHtml(profile.data.username);
+		//TODO SPOSTARE IN UN CONTROLLER
 		// Ext.getCmp('AboutTitlebar').setTitle(displayName);
-		Ext.getCmp('appslidercontainer').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+		Ext.getCmp('appslider').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
 	},
 	setupPreferences: function(profile){
 		HH.log("---> Step: Setup Preferences");
@@ -98,6 +105,20 @@ var utils = {
 			CONST_String = CONST_String.replace("%"+i, arguments[i]);
 		};
 		return CONST_String;
+	},
+	checkConnection: function(){
+		if(!(navigator.online&&google)){
+			if(i18n){
+				alert(i18n.app.HINT_OFFLINE);
+			}else {alert("Cannot Connect")};
+			
+			return false;
+		}else{ return true}
+	},
+	getDate: function(date){
+		/* TODO: MOMENT INTEGRATION date */
+		var date = "5 min";
+		return date;
 	},
 	getActivityString: function(values){
 		var str;
@@ -170,4 +191,19 @@ var utils = {
 }
 
 HH.log("* Loaded: HH.js");
+HH.log("* Start: Before Init");
 
+_.mixin(_.str.exports());
+
+
+if(utils.checkConnection()){
+
+	google.maps.Map.prototype.clearMarkers = function() {
+	    for(var i=0; i < this.markers.length; i++){
+	        this.markers[i].setMap(null);
+	    }
+	    this.markers = new Array();
+	};
+}
+
+HH.log("* END: Before Init");

@@ -4,7 +4,7 @@ Ext.define("B2B.controller.Notifications", {
 		refs: {
 			notificationContainer: "notificationlistcontainerpanel",
 			notificationList: "notificationlistcomponent",
-			appContainer: "App_Container",
+			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {

@@ -1,7 +1,6 @@
-Ext.define('B2B.view.Friend_Detail', {
+Ext.define('B2B.view.Friend_List_Detail', {
 	extend: 'Ext.form.Panel',
-	id: 'FriendDetail',
-	xtype: 'frienddetailpanel',
+	xtype: 'friendlistdetail',
 	requires: [
 		'Ext.Container',
 		'Ext.MessageBox',

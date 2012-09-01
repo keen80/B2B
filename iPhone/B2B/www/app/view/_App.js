@@ -7,7 +7,8 @@ Ext.define("B2B.view._App", {
         navigationBar: false,
         items: [
             {
-                xtype: 'appslidercontainer'
+                xtype: 'appslider',
+                id: 'appslider'
             }
         ]
     }

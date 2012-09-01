@@ -1,11 +1,8 @@
 Ext.define("B2B.view._App_Slider", {
     extend: 'Ext.ux.slidenavigation.SlideNavigation',
-    xtype: 'appslidercontainer',
-    id: 'appslidercontainer',
+    xtype: 'appslider',
     requires: [
         'Ext.Container',
-        'Ext.MessageBox',
-        'Ext.Panel',
         'Ext.Toolbar'
     ],
     
@@ -14,6 +11,7 @@ Ext.define("B2B.view._App_Slider", {
         slideSelector: 'slidableToolbar',
         selectSlideDuration: 200,
         list: {
+            id: "slider_left",
             minDrag: 200,
             maxDrag: 400,
             width: 400,
@@ -47,12 +45,13 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'titlebar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list slidebutton',
+                    iconCls: 'slider slidebutton',
                     ui: 'plain'
                 },
                 items: [
                     {
-                        xtype: 'App_Container' 
+                        xtype: 'appcontainer',
+                        id: 'appcontainer'
                     }
                 ]
             },
@@ -64,15 +63,16 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list slidebutton',
+                    iconCls: 'slider slidebutton',
                     ui: 'plain'
                 },
                 items: [
                     {
-                        xtype: 'viewwhatsnew'
+                        xtype: 'viewwhatsnew',
+                        id: 'viewwhatsnew'
                     }
                 ]
-            },
+            },/* // TODO IN PROGRESS
             {
                 title: i18n.app.LABEL_GOODIES,
                 group: 'Goodies',
@@ -86,10 +86,10 @@ Ext.define("B2B.view._App_Slider", {
                 },
                 items: [
                     {
-                 //       xtype: 'viewwhatsnew'
+                        xtype: 'viewbottlespinner'
                     }
                 ]
-            },
+            },*/
             {
                 title: i18n.app.LABEL_TERMS,
                 group: 'Privacy',
@@ -98,12 +98,13 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list',
+                    iconCls: 'slider slidebutton',
                     ui: 'plain'
                 },
                 items: [
                     {
-                        xtype: 'viewterms'
+                        xtype: 'viewterms',
+                        id: 'viewterms'
                     }
                 ]
             },
@@ -115,12 +116,13 @@ Ext.define("B2B.view._App_Slider", {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list slidebutton',
+                    iconCls: 'slider slidebutton',
                     ui: 'plain'
                 },
                 items: [
                     {
-                        xtype: 'viewaboutus'
+                        xtype: 'viewaboutus',
+                        id: 'viewaboutus'
                     }
                 ]
             }

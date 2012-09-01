@@ -2,16 +2,16 @@ Ext.define("B2B.controller.Activities", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			activitylist: "activitylist",
+			app: "_app",
 			activity: "activity",
-			activityDetail: "activitylistdetail",
-			app: "_app"
+			activitylist: "activitylist",
+			activitylistdetail: "activitylistdetail"
 		},
 		control: {
 			activity: {
 				viewActivityDetailCommand: "onViewActivityDetail"
 			},
-			activityDetail: {
+			activitylistdetail: {
 				backActivityDetailCommand: "onBackActivityDetail"
 			},
 			activitylist: {
@@ -19,9 +19,12 @@ Ext.define("B2B.controller.Activities", {
 			}
 		}
 	},
+	/* Transizione popup activity detail */
 	onViewActivityDetail: function(a, b, c, record){
+		/* Deselezione lista */
 		setTimeout(function(){a.deselect(b);},500);
 		var jsonData = record.data;
+		/* Init Popup */
 		this.getApp().push({
 			xtype: "activitylistdetail",
 			jsonData: jsonData

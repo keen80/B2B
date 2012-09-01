@@ -51,7 +51,7 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			xtype: 'beerlistselectsearchcomponent'
 		},
 		beerList = {
-			xtype: "beerlistcomponent",
+			xtype: "beerlist",
 			id: "beerlistselect",
 			store: null,
 			singleSelect: true

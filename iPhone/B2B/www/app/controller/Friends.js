@@ -2,8 +2,8 @@ Ext.define("B2B.controller.Friends", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			friendListContainer: "friendlistcontainerpanel",
-			friendDetail: "frienddetailpanel",
+			friendListContainer: "friends",
+			friendDetail: "friendlistdetail",
 			friendFinder: "friendfinderpanel",
 			app: "_app"
 		},
@@ -19,7 +19,7 @@ Ext.define("B2B.controller.Friends", {
 			friendFinder: {
 				backFriendFinderCommand: "onBackFriendDetail"
 			},
-			friendlistcomponent: {
+			friendlist: {
 				itemtap: "onViewFriendDetail"
 			}
 		}
@@ -44,7 +44,7 @@ Ext.define("B2B.controller.Friends", {
 		var ajax_store = Ext.getStore('Friends_Local');
 		var jsonData = ajax_store.getAt(ajax_store.findExact("id", record.data.id));
 		this.getApp().push({
-			xtype: "frienddetailpanel",
+			xtype: "friendlistdetail",
 			jsonData: jsonData
 		});
 

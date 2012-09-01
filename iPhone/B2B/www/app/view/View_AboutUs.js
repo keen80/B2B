@@ -1,5 +1,5 @@
 Ext.define('B2B.view.View_AboutUs', {
-	extend: 'Ext.form.Panel',
+	extend: 'Ext.Panel',
 	xtype: 'viewaboutus',
 	config: {
 		title: i18n.app.PANEL_TERMS,

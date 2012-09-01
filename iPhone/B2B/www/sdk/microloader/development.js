@@ -26,20 +26,6 @@ If you are unsure which license is appropriate for your use, please contact the 
         write('<meta name="' + name + '" content="' + content + '">');
     }
 
-    /* HH i18n implementation */
-    var language_string = window.navigator.language || window.navigator.userLanguage || window.navigator.browserLanguage || window.navigator.systemLanguage;
-    if(_(['en-US', 'it']).contains(language_string)){
-        write('<script src="i18n/B2B-'+language_string+'.js"></'+'script>');
-    }else{
-        write('<script src="i18n/B2B-en-US.js"></'+'script>');
-    }
-
-    if( _.str.include(language_string, "it")){
-        moment.lang(language_string);
-    }else{
-        moment.lang("en");
-    }
-
     if (navigator.onLine){
         HH.log("---+ Check: Online, Startup Start");
         var xhr = new XMLHttpRequest();
@@ -77,7 +63,7 @@ If you are unsure which license is appropriate for your use, please contact the 
         HH.log("---> Step: Online, Startup End");
     }else{
         HH.log("---+ Check: Offline, alert fired.");
-        alert("We are sorry, but this application cannot start without an Internet Connection.");
+        alert(i18n.app.HINT_OFFLINE);
     }
 
 

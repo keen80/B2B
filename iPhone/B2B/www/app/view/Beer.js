@@ -1,13 +1,14 @@
-Ext.define('B2B.view.Beer_List_Container', {
+Ext.define('B2B.view.Beer', {
 	extend: 'Ext.Panel',
-	xtype: 'beerlistcontainerpanel',
-	id: "beerlistcontainer",
+	xtype: 'beer',
+	/*
 	requires: [
 		'Ext.SegmentedButton'
-	],
+	], */
 	config: {
 		title: i18n.app.LABEL_BEERS,
-		iconCls: 'trash',
+		iconCls: 'drink_beerpint',
+		scrollable: false,
 		layout: {
         	type: 'fit'
         }
@@ -15,20 +16,9 @@ Ext.define('B2B.view.Beer_List_Container', {
 	initialize: function(){
 		this.callParent(arguments);
 
-		var me = this;
-
-/*
-        var header = {
-            xtype: 'container',
-            cls: 'header_img',
-            height: 50,
-            width: '100%',
-            docked: 'top',
-            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
-        };
-*/
-		var beerlistsearchcomponent = {
-			xtype: 'beerlistsearchcomponent',
+		var beersearch = {
+			xtype: 'beersearch',
+			id: 'beersearch'
 		};
 		/*
 		var groupedButton = {
@@ -65,15 +55,13 @@ Ext.define('B2B.view.Beer_List_Container', {
 			]
 		};
 		*/
-		var beerList = {
-		    xtype: "beerlistcomponent",
+		var beerlist = {
+		    xtype: "beerlist",
 		    id: "beerlist",
 		   	store: null,
-		   // grouped: true,
-		   // indexBar: true,
 		    singleSelect: true
 		};
 
-		this.add([ /*header, */beerlistsearchcomponent,/* beerToolbar, */beerList]);
+		this.add([ beersearch, beerlist]);
 	}
 });

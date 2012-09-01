@@ -80,11 +80,11 @@ Ext.define('B2B.view.Place_Detail', {
 				endValue: true,
 				margin: '0 0 10 0'
 			},
-			beerlistsearchcomponent = {
-				xtype: 'placebeerlistsearchcomponent'
+			beersearch = {
+				xtype: 'placebeersearch'
 			},
 			beerList = {
-		    	xtype: "placebeerlistcomponent",
+		    	xtype: "placebeerlist",
 		    	id: "placebeerlist",
 		   		store: null,
 		    	singleSelect: true,
@@ -96,7 +96,7 @@ Ext.define('B2B.view.Place_Detail', {
 				layout: 'vbox',
 				flex: 1,
 				items: [
-					beerlistsearchcomponent,
+					beersearch,
 					beerList
 				]
 			},

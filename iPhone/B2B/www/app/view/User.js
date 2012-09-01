@@ -1,10 +1,9 @@
-Ext.define('B2B.view.User_Profile_About', {
+Ext.define('B2B.view.User', {
 	extend: 'Ext.Container',
-	xtype: 'userprofileaboutpanel',
-	id: "userprofileaboutpanel",
+	xtype: 'userprofile',
 	config: {
 		title: i18n.app.PANEL_ABOUTME,
-		iconCls: 'user',
+		iconCls: 'smiley_happy',
 		scrollable: false,
 		layout: 'card'
 	},
@@ -129,12 +128,11 @@ Ext.define('B2B.view.User_Profile_About', {
 		item1 = {
 			xtype: 'userpreferencesform'
 		},
-		/*
 		item2 = {
 			xtype: 'userprofileprivacyform'
-		};*/
+		};
 
-		this.add([item0, item1/*, item2*/]);
+		this.add([item0, item1, item2]);
 		this.setActiveItem(0);
 	},
 	onEditProfileButtonTap: function() {

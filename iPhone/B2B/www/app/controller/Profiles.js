@@ -2,8 +2,8 @@ Ext.define("B2B.controller.Profiles", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			profile: "userprofileaboutpanel",
-			profileForm: "userprofileform",
+			profile: "userprofile",
+			profileForm: "userform",
 			app: "_app"
 		},
 		control: {
@@ -21,7 +21,7 @@ Ext.define("B2B.controller.Profiles", {
 	},
 	onShowProfileForm: function(){
 		this.getApp().push({
-			xtype: "userprofileform"
+			xtype: "userform"
 		});
 
 		var profileForm = this.getProfileForm();
@@ -41,13 +41,13 @@ Ext.define("B2B.controller.Profiles", {
 		this.getApp().pop();
 	},
 	onShowPrivacy: function() {
-		/*
-		var aboutPanel = Ext.getCmp("userprofileaboutpanel");
+		
+		var aboutPanel = Ext.getCmp("userprofileprivacyform");
 		aboutPanel.animateActiveItem(2, {
 			type:'slide',
 			direction:'up'
-		});*/
-
+		});
+/*
 		item2 = {
 			xtype: 'userprofileprivacyform'
 		};
@@ -58,16 +58,16 @@ Ext.define("B2B.controller.Profiles", {
 			type:'slide',
 			direction:'up'
 		});
-
+*/
 		
 	},
 	onShowSettings: function(a){
-		var aboutPanel = Ext.getCmp("userprofileaboutpanel");
+		var aboutPanel = Ext.getCmp("userprofile");
 		aboutPanel.animateActiveItem(1, {
 			type:'slide',
 			direction:'up'
 		});
-		// var a = Ext.getCmp("userprofileaboutpanel");
+		// var a = Ext.getCmp("userprofile");
 		// if (!a.actions){
 		// 	a.actions = Ext.Viewport.add({
 		// 		xtype: 'actionsheet',
