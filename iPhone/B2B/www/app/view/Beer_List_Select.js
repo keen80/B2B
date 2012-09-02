@@ -1,18 +1,15 @@
 Ext.define('B2B.view.Beer_List_Select', {
     extend: 'Ext.dataview.List',
-    //extend: 'Ext.ux.bufferedlist.BufferedList',
     xtype: 'beerlistselectcomponent',
-    id: 'beerlistselectcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
-       // emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
+        emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
         {
         	getClass: function(values){
         		return "small-list beer-list-item-title beerTypeClass"+values.beerstyle+" nation_"+values.nationality;
         	},
             getImage1URL: function(values){
-                    //resources/beer/style"+values.beerstyle+".png'
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beerstyle)){
                          str += 'resources/img/default/blank_avatar_32.png';
@@ -23,12 +20,6 @@ Ext.define('B2B.view.Beer_List_Select', {
                     return str;
             },
             getImage2URL: function(values){
-                    // resources/beer/style"+values.beertype+".png'
-                    /*
-                    if(values.beertype){ tpl += "<img class='avatar_small' src='resources/beer/type"+values.beertype+".png'>"}
-                    else { tpl+= "<img class='avatar_small' src='resources/default_xsmall.png'" }
-
-                    */
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beertype)){
                          str += 'resources/img/default/blank_avatar_32.png';

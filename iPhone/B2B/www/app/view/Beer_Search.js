@@ -157,7 +157,6 @@ Ext.define('B2B.view.Beer_Search', {
 
 		var beersearchinfobar = {
 			xtype: 'container',
-			cls: 'beersearchinfobar',
 			id: "beersearchinfobar",
 			docked: 'top',
 			styleHtmlContent: true,

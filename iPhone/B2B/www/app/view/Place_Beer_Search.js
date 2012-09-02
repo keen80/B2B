@@ -33,7 +33,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 		           		var value = field.getValue(),
 		           			beerlist = Ext.getCmp("placebeerlist"),
 		           			splashscreen = Ext.getCmp("_splashbeersearch"),
-		           			beerlistcontainer = Ext.getCmp("placedetailpanel"),
+		           			beerlistcontainer = Ext.getCmp("placedetail"),
 		           			infobar = Ext.getCmp("placesearchinfobar");
 
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');

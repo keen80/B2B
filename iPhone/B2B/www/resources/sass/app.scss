@@ -90,6 +90,17 @@
     // $toolbar-spacing
     // $top-tab-height
     
+    /* MIXINS --------------------------------------------------------------- */
+
+        @mixin rounded_list {
+            .x-list-item-label{
+                background: #F0F0F0;
+                border: 1px solid #DDD;
+                margin: 4px;
+                border-radius: 10px;
+            }
+        }
+
 
 /* LAYOUT ***************************************************************** */
     
@@ -113,12 +124,19 @@
         border-radius: 0;
     }
 
+    .infobar{
+        font-size: 14px;
+        color: #666;
+        background: #FFD;
+        border-bottom: 1px solid #999;
+    }
+
     /* SLIDER ------------------------------------------------------------- */
 
     #appslider {
         #slider_left{
             .x-list-item-label {
-                width: 190px;
+                //width: 190px;
                 .slider_item_icon{
                     padding-left: 30px;
                     background-size: 26px;
@@ -142,8 +160,6 @@
     #slider_logo {
         padding-top: 2px
     }
-
-
 
 
 /* SPLASH SCREEN ********************************************************** */
@@ -219,27 +235,33 @@
         }
     }
 
-    .activity-type0, .activity-type1,  .activity-type2,  .activity-type3 {
-            padding-left: 10px;
+    #activitylist{
+        .activity-type0, .activity-type1,  .activity-type2,  .activity-type3 {
+                padding-left: 10px;
+        }
+        .activity-type0{
+        }
+        .activity-type1{
+            border-color: #F0F;
+        }
+        .activity-type2{
+            border-color: #0FF;
+        }
+        @include rounded_list;
     }
-    .activity-type0{
-    }
-    .activity-type1{
-        border-color: #F0F;
-    }
-    .activity-type2{
-        border-color: #0FF;
-    }
+
+
 
 /* BEERS ****************************************************************** */
     
     /* BEER COMPENDIUM -----------------------------------------------------*/
 
-    .beersearchinfobar{
-        font-size: 14px;
-        color: #666;
-        background: #FFD;
-        border-bottom: 1px solid #999;
+    #beersearchinfobar{
+        @extend .infobar;
+    }
+
+    #beerlist{
+        @include rounded_list;
     }
 
     .beer-selected {
@@ -289,6 +311,27 @@
 
 /* DRINKIN **************************************************************** */
 
+/* PLACES ***************************************************************** */
+
+    #placelist{
+        @include rounded_list;
+    }
+
+    #mapplace {
+        border-bottom: 1px solid #999;
+    }
+
+    #placesearchinfobar{
+        @extend .infobar;
+    }
+
+    #foursquare_logo{
+        padding: 2px;
+        img{
+            margin: 2px auto;
+            display: block;
+        }
+    }
 
 /* FRIENDS **************************************************************** */
 
@@ -303,15 +346,6 @@
 
 /* COMPONENTS ************************************************************* */
 
-
-    /* LIST --------------------------------------------------------------- */
-
-        .x-list-item-label{
-            background: #F0F0F0;
-            border: 1px solid #DDD;
-            margin: 4px;
-            border-radius: 10px;
-        }
 
         /* SMALL LIST  */
 
@@ -358,10 +392,6 @@
         padding: 10px;
     }
 
-    .footer_img{
-        margin: auto;
-        display: block;
-    }
 
 
 /* VENDOR ************************************************************* */
@@ -815,6 +845,7 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 /** To Do da rimuovere */
 @include pictos-iconmask('chat4');
 @include pictos-iconmask('locate');
+@include pictos-iconmask('refresh');
 
 @mixin beer-iconmask($name) {
   .x-tab .x-button-icon.#{$name},

@@ -1,7 +1,6 @@
 Ext.define('B2B.view.Place_Detail', {
 	extend: 'Ext.form.Panel',
-	id: 'PlaceDetail',
-	xtype: 'placedetailpanel',
+	xtype: 'placedetail',
 	requires: [
         'Ext.Container',
         'Ext.MessageBox',
@@ -142,6 +141,6 @@ Ext.define('B2B.view.Place_Detail', {
 		this.fireEvent("onDrinkInCommand", this);
 	},
 	onSubmitCheckInButtonTap: function(){
-		this.fireEvent("submitCheckInCommand", this);
+		this.fireEvent("checkInCommand", this);
 	}
 });

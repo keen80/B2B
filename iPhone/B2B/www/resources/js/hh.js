@@ -204,6 +204,8 @@ if(utils.checkConnection()){
 	    }
 	    this.markers = new Array();
 	};
+}else{
+	HH.log("Cannot init clearMarkers");
 }
 
 HH.log("* END: Before Init");

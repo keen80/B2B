@@ -163,6 +163,8 @@
 		"HINT_SEARCHRESCHAR": "Yeah, found <strong class='hilite'>%1</strong> results!",
 
 		"HINT_LOADING": "Loading...",
+		"HINT_GEOLOAD": "Hold on, We are figuring out where are you...",
+		"HINT_GEOERROR": "Sorry, We cannot retrieve your location, want to retry?",
 		"HINT_CAREFULLY": "Use Carefully and at your own risk!",
 		"HINT_EMAIL": "Please, set a valid Email: it will be used for your password retrieval!",
 		"HINT_DISPLAYNAME": "We will display to other users only your selected Display Name",
@@ -173,6 +175,8 @@
 		"TEXT_NOBEERFOUND": "No beer found",
 		"TEXT_NOFAVORITEFOUND": "No favorite found",
 		"TEXT_NOFRIENDFOUND": "No friend found",
+		"TEXT_NOPLACEFOUND": "...Looking for your nearest address...",
+		"TEXT_PLACEFOUND": "<strong>Near to:</strong> %1",
 		"TEXT_NONOTIFICATIONFOUND": "No activity found",
 		"TEXT_NOFEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",

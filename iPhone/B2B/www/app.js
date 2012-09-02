@@ -28,7 +28,7 @@ Ext.application({
 		'Activity', 'Activity_List', 'Activity_List_Detail',
 		'Beer', 'Beer_List', 'Beer_Search', 'Beer_Add_Form', 'Beer_Detail',
 		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent', 'Beer_List_Select',
-		'Drink_AroundMe',
+		'Place',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
 		'Favorites_List', 'Favorites_List_Container',

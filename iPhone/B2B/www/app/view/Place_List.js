@@ -1,6 +1,6 @@
 Ext.define('B2B.view.Place_List', {
     extend: 'Ext.dataview.List',
-    xtype: 'placelistcomponent',
+    xtype: 'placelist',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
         emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOPLACEFOUND)+'</div><pre>',

@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"placel",
+				"placeloadingmask"
+			],
+			[
+				"se",
+				"setExtraParam"
+			],
+			[
+				"add",
+				"addplace"
+			],
+			[
+				"border",
+				"border-bottom	zen:css_properties"
+			],
+			[
+				"place",
+				"placelist"
+			],
+			[
+				"map",
+				"mapplace"
+			],
+			[
+				"app",
+				"appContainer"
+			],
+			[
 				"background",
 				"background-image	zen:css_properties"
 			],
@@ -243,7 +271,7 @@
 			"file": "resources/sass/app.scss",
 			"settings":
 			{
-				"buffer_size": 43795,
+				"buffer_size": 44416,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,15 +295,7 @@
 			"file": "app/view/Beer_Search.js",
 			"settings":
 			{
-				"buffer_size": 4894,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/view/_App_Container.js",
-			"settings":
-			{
-				"buffer_size": 1755,
+				"buffer_size": 4865,
 				"line_ending": "Windows"
 			}
 		},
@@ -296,6 +316,30 @@
 			}
 		},
 		{
+			"file": "app/view/Place.js",
+			"settings":
+			{
+				"buffer_size": 5088,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controller/_App.js",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controller/Places.js",
+			"settings":
+			{
+				"buffer_size": 2567,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
@@ -307,7 +351,7 @@
 			"file": "resources/js/hh.js",
 			"settings":
 			{
-				"buffer_size": 6726,
+				"buffer_size": 6770,
 				"line_ending": "Windows"
 			}
 		},
@@ -315,7 +359,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 2949,
+				"buffer_size": 2940,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +367,7 @@
 			"file": "i18n/B2B-en-US.js",
 			"settings":
 			{
-				"buffer_size": 23348,
+				"buffer_size": 23611,
 				"line_ending": "Windows"
 			}
 		}
@@ -364,11 +408,19 @@
 	},
 	"file_history":
 	[
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_BottleSpinner.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/B2B.sublime-workspace",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Beer_Search.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Drinks.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Beer_List.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Select.js",
+		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/View_BottleSpinner.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Beer_Search.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Search.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Slider.js",
@@ -377,21 +429,16 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Badges.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Favorites.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Preferences.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Camera.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Profiles.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Privacy_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Beers.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Detail.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Search.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Beer_List_SearchComponent.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Places.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SearchComponent.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_SelectContainer.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_Beer_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/i18n/B2B-en-US.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Activity_List.js",
@@ -407,7 +454,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/all-classes.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app-all.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/sdk/command/vendor/nodejs/node_modules/uglify-js/tmp/app.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Drinks.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Notifications.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/_App.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Privacy.js",
@@ -433,7 +479,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/FavoriteBeers_Local.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/model/FavoriteBeer.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Friend_List_Container.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Place_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/DrinkInCheckIn_List.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/Drinks_Ajax.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Drink_AroundMe.js",
@@ -449,7 +494,6 @@
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Preferences_Form.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/mock_drinkincheckinlist.json",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_Add_Form.js",
-		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/Beer_List_Select.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/view/User_Profile_Container.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/controller/Feedbacks.js",
 		"/C/Users/HC/Documents/GitHub/B2B/iPhone/B2B/www/app/store/DrinkInCheckIn_Ajax.js",
@@ -511,6 +555,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"spinner",
+			"mapDrink",
+			"placebeerlist",
+			"submitCheckInCommand",
+			"onDrinkInCommand",
+			"drinkaroundmepanel",
+			"Drink_AroundMe",
+			"placedetailpanel",
+			"placelistcomponent",
 			"gotoNotificationButton",
 			"friendlistsearch",
 			"Friend_List_Search",
@@ -629,16 +682,7 @@
 			"\"SING\"",
 			"SING",
 			"\"NED\"",
-			"\"CUBA\"",
-			"cuba",
-			"\"IRL\"",
-			"\"USA\"",
-			"\"BEL\"",
-			"\"GER\"",
-			"\"FRA\"",
-			"\"ENG\"",
-			"\"ITA\"",
-			"}\n"
+			"\"CUBA\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -646,6 +690,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"mapplace",
+			"checkInCommand",
+			"place",
+			"Place",
+			"placedetail",
+			"placelist",
 			"notificationbutton",
 			"friendsearch",
 			"Friend_Search",
@@ -769,15 +819,15 @@
 					"file": "resources/sass/app.scss",
 					"settings":
 					{
-						"buffer_size": 43795,
+						"buffer_size": 44416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5058,
-								5058
+								12183,
+								10206
 							]
 						],
 						"settings":
@@ -791,7 +841,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2620.0,
+						"translation.y": 5967.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -855,15 +905,15 @@
 					"file": "app/view/Beer_Search.js",
 					"settings":
 					{
-						"buffer_size": 4894,
+						"buffer_size": 4865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4239,
-								4239
+								4622,
+								4622
 							]
 						],
 						"settings":
@@ -879,33 +929,6 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/view/_App_Container.js",
-					"settings":
-					{
-						"buffer_size": 1755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1364,
-								1364
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "app/view/Friend_Search.js",
 					"settings":
 					{
@@ -932,7 +955,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "app/view/_App_Slider.js",
 					"settings":
 					{
@@ -958,15 +981,97 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/view/Place.js",
+					"settings":
+					{
+						"buffer_size": 5088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4500,
+								4500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1775.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controller/_App.js",
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controller/Places.js",
+					"settings":
+					{
+						"buffer_size": 2567,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								890,
+								890
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 333.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "index.html",
 					"settings":
 					{
@@ -994,19 +1099,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "resources/js/hh.js",
 					"settings":
 					{
-						"buffer_size": 6726,
+						"buffer_size": 6770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2816,
-								2816
+								6734,
+								6734
 							]
 						],
 						"settings":
@@ -1015,25 +1120,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 2631.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 2949,
+						"buffer_size": 2940,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								840,
-								840
+								837,
+								837
 							]
 						],
 						"settings":
@@ -1048,19 +1153,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "i18n/B2B-en-US.js",
 					"settings":
 					{
-						"buffer_size": 23348,
+						"buffer_size": 23611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5013,
-								5013
+								6490,
+								6490
 							]
 						],
 						"settings":
@@ -1068,7 +1173,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": 42.0,
 						"translation.y": 2191.0,
 						"zoom_level": 1.0
 					},

@@ -2,35 +2,58 @@ Ext.define("B2B.controller.Places", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			mapContainer: "drinkaroundmepanel",
-			placeDetail: "placedetailpanel",
-			appContainer: "App_Container",
-			placeBeerList: "placebeerlist",
+			place: "place",
+			placelist: "placelist",
+			placedetail: "placedetail",
+			placebeerlist: "placebeerlist",
+			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {
-			mapContainer: {
-				reloadCommand: "onReloadCommand"
+			place: {
+				checkInDetailCommand: "onCheckInDetail",
+				refreshAroundCommand: "onCheckInRefreshAround",
+				backCheckCommand: "onBackCheck"
 			},
-			placeDetail: {
-				backPlaceDetailCommand: "onBackPlace",
-				selectBeerDrinkCommand: "onSelectBeerDrink",
-				onDrinkInCommand: "onDrinkIn",
-				submitCheckInCommand: "submitCheckIn",
-				searchNewBeerCommand: "searchNewBeer"
-			},
-			placelistcomponent: {
+			placelist: {
 				itemtap: "onViewPlaceDetail"
 			},
-			placeBeerList: {
+			placedetail: {
+				backPlaceDetailCommand: "onBackPlace",
+				selectBeerDrinkCommand: "onSelectBeerDrink",
+				checkInCommand: "onCheckIn",
+				searchNewBeerCommand: "searchNewBeer"
+			},
+			placebeerlist: {
 				itemtap: "selectBeerInPlace"
+			},
+			appContainer: {
+				gotoCheckInCommand: "onGotoCheckIn"
 			}
 		}
 	},
-	submitCheckIn: function() {
-		HH.log("Check in!");
+	onGotoCheckIn: function(){
+		this.getApp().push({
+			xtype: "place",
+			id: "place"
+		});
+	},
+	onBackCheck: function(){
 		this.getApp().pop();
 	},
+	onBackPlace: function(){
+		this.getApp().pop();
+	},
+	onCheckInRefreshAround: function(){
+		alert("ToDO: To Be Implemented");
+	},
+	onShow: function(){
+		console.log("TODO: Refresh on Show");
+
+		/* function(list, opts){
+        this.getStore().load();*/
+	},
+
 	selectBeerInPlace: function(source, index, item, e, evObj) {
 		setTimeout(function(){source.deselect(index);},500);
 		var container = Ext.getCmp("containerbeerselected"),
@@ -49,27 +72,21 @@ Ext.define("B2B.controller.Places", {
 		var container = Ext.getCmp("containerbeerselected");
 		container.setActiveItem(0);
 	},
-	onReloadCommand: function(){
-		/* TODO: HOW THE HELL WE REFRESH THE REVIEW? */
-		HH.log("TODO: Map Reload Mock");
-	},
-	onBackPlace: function(){
-		this.getApp().pop();
-	},
 	onViewPlaceDetail: function(a, b, c, record){
 		setTimeout(function(){a.deselect(b);},500);
 		var jsonData = record.data;
 		this.getApp().push({
-			xtype: "placedetailpanel",
+			xtype: "placedetail",
 			jsonData: jsonData
 		});
 	},
 	onSelectBeerDrink: function(){
 		this.getApp().push({
 			xtype: "beerlistselectcontainerpanel",
+			id: "beerlistselectcontainerpanel"
 		});
 	},
-	onDrinkIn: function(){
+	onCheckIn: function(){
 		this.getApp().pop();
 	},
 	init: function(){
