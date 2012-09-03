@@ -267,7 +267,7 @@
     }
 
     #beerlist.base_bg{
-            background: url("../bg/beersearch.png") #DADADA no-repeat bottom right;
+            background: url("../bg/beersearch.png") #DADADA repeat bottom right;
     }
 
     .beer-selected {
@@ -320,7 +320,7 @@
 /* PLACES ***************************************************************** */
 
     #placelist{
-        background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+        background: url("../bg/bg.png") #DADADA repeat bottom right;
         @include rounded_list;
     }
 
@@ -344,7 +344,7 @@
 
     #friendlist{
         .x-body{
-            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+            background: url("../bg/bg.png") #DADADA repeat bottom right;
         }
     }
 
@@ -377,7 +377,7 @@
             color: #AAA;
         }
         .x-body{
-            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+            background: url("../bg/bg.png") #DADADA repeat bottom right;
         }
     }
 

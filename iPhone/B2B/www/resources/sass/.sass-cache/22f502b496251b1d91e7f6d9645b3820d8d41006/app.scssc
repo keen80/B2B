@@ -1,7 +1,7 @@
 3.2.1 (Media Mark)
-1193cb60c7e124debcda19ebcfcb98e835c0c496
+bb23faa485eee5044ad0767ee2f7007a491fa5be
 o:Sass::Tree::RootNode
-:@template"ø°
+:@template"ì°
 /* BASE COLOR SETUPS  ***************************************************** */
  
     /*
@@ -270,7 +270,7 @@
     }
 
     #beerlist.base_bg{
-            background: url("../bg/beersearch.png") #DADADA no-repeat bottom right;
+            background: url("../bg/beersearch.png") #DADADA repeat bottom right;
     }
 
     .beer-selected {
@@ -323,7 +323,7 @@
 /* PLACES ***************************************************************** */
 
     #placelist{
-        background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+        background: url("../bg/bg.png") #DADADA repeat bottom right;
         @include rounded_list;
     }
 
@@ -347,7 +347,7 @@
 
     #friendlist{
         .x-body{
-            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+            background: url("../bg/bg.png") #DADADA repeat bottom right;
         }
     }
 
@@ -380,7 +380,7 @@
             color: #AAA;
         }
         .x-body{
-            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+            background: url("../bg/bg.png") #DADADA repeat bottom right;
         }
     }
 
@@ -1196,7 +1196,7 @@ right;@;ið;@;<;=;ið;@;ið;4;5;
 [ ;6[ ;"rounded_listo;$;%i ;&["#beerlist.base_bg;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@6;*[o;>;)@6;i;["beerlisto;1;)@6;i;["base_bg;i;i;@;i;	T;
 [o;2;%i ;o;9	;[
-o;:;;{ ;@;#0;i;6[o; 	;;!;"../bg/beersearch.png;@;i;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;io; 	;;3;"no-repeat;@;io; 	;;3;"bottom;@;io; 	;;3;"
+o;:;;{ ;@;#0;i;6[o; 	;;!;"../bg/beersearch.png;@;i;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;io; 	;;3;"repeat;@;io; 	;;3;"bottom;@;io; 	;;3;"
 right;@;i;@;<;=;i;@;i;4;5;
 [ ;["backgroundo;$;%i ;&[".beer-selected;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@];*[o;1;)@];i;["beer-selected;i;i;@;i;	T;
@@ -1252,7 +1252,7 @@ righto;2;%i ;o; ;;3;"8px;@;@;i8;4;5;
 [ o;$;%i ;&["#placelist;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@o;*[o;>;)@o;iB;["placelist;iB;iB;@;iB;	T;
 [o;2;%i ;o;9	;[
-o;:;;{ ;@;#0;iC;6[o; 	;;!;"../bg/bg.png;@;iC;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;iCo; 	;;3;"no-repeat;@;iCo; 	;;3;"bottom;@;iCo; 	;;3;"
+o;:;;{ ;@;#0;iC;6[o; 	;;!;"../bg/bg.png;@;iC;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;iCo; 	;;3;"repeat;@;iCo; 	;;3;"bottom;@;iCo; 	;;3;"
 right;@;iC;@;<;=;iC;@;iC;4;5;
 [ ;["backgroundo;?;;{ ;@;#0;iD;
 [ ;6[ ;"rounded_listo;$;%i ;&["#mapplace;'o;(;)" ;*[o;+;*[o;,
@@ -1277,7 +1277,7 @@ block;@;@;iS;4;5;
 [o;$;%i ;&[".x-body;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@	;*[o;1;)@	;iZ;["x-body;iZ;iZ;@;iZ;	T;
 [o;2;%i ;o;9	;[
-o;:;;{ ;@;#0;i[;6[o; 	;;!;"../bg/bg.png;@;i[;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;i[o; 	;;3;"no-repeat;@;i[o; 	;;3;"bottom;@;i[o; 	;;3;"
+o;:;;{ ;@;#0;i[;6[o; 	;;!;"../bg/bg.png;@;i[;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;i[o; 	;;3;"repeat;@;i[o; 	;;3;"bottom;@;i[o; 	;;3;"
 right;@;i[;@;<;=;i[;@;i[;4;5;
 [ ;["backgroundo;
 ;;;["S/* BADGES ***************************************************************** */;@;i_;
@@ -1315,7 +1315,7 @@ coloro;2;%i ;o; ;;3;"	bold;@;@;iv;4;5;
 coloro;$;%i ;&[".x-body;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@í;*[o;1;)@í;i{;["x-body;i{;i{;@;i{;	T;
 [o;2;%i ;o;9	;[
-o;:;;{ ;@;#0;i|;6[o; 	;;!;"../bg/bg.png;@;i|;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;i|o; 	;;3;"no-repeat;@;i|o; 	;;3;"bottom;@;i|o; 	;;3;"
+o;:;;{ ;@;#0;i|;6[o; 	;;!;"../bg/bg.png;@;i|;"urlo;	;{	;iÚ;i;iÚ;iÚ;0;@;i|o; 	;;3;"repeat;@;i|o; 	;;3;"bottom;@;i|o; 	;;3;"
 right;@;i|;@;<;=;i|;@;i|;4;5;
 [ ;["backgroundo;
 ;;;["/* Badge detail */;@;i€;

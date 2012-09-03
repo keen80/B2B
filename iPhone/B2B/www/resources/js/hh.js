@@ -3,15 +3,18 @@ var language_string = window.navigator.language || window.navigator.userLanguage
 
 if(_(['en-US', 'it']).contains(language_string)){
     document.write('<script src="i18n/B2B-'+language_string+'.js"></'+'script>');
-}else{
-    document.write('<script src="i18n/B2B-en-US.js"></'+'script>');
 }
+
+/*else{
+    document.write('<script src="i18n/B2B-en-US.js"></'+'script>');
+}*/
 
 if( _.str.include(language_string, "it")){
     moment.lang(language_string);
 }else{
     moment.lang("en");
 }
+
 
 var HH = {
 	APP_NAME: "Meet Beer",
@@ -109,8 +112,10 @@ var utils = {
 	checkConnection: function(){
 		if(!(navigator.online&&google)){
 			if(i18n){
+				return true;
+			}else {
 				alert(i18n.app.HINT_OFFLINE);
-			}else {alert("Cannot Connect")};
+			};
 			
 			return false;
 		}else{ return true}
