@@ -48,7 +48,7 @@ Ext.define('B2B.view.User_Form', {
 						xtype: 'field',
 						label: i18n.app.FORM_AVATAR,
 						labelAlign: 'top',
-						component: 
+						component:
 						{
 							xtype: 'image',
 							name: 'image',
@@ -238,7 +238,16 @@ Ext.define('B2B.view.User_Form', {
 		this.add([toolbar]);
 	},
 	onSaveProfileButtonTap: function(){
-		this.fireEvent("saveProfileCommand", this);
+		var values = this.getValues();
+		console.log(values);
+		this.fireEvent("saveProfileCommand", this,
+						values.email,
+						values.email,
+						values.displayName,
+						values.email,
+						values.gender,
+						values.nationality,
+						values.birthDay);
 	},
 	onBackProfileButtonTap: function(){
 		this.fireEvent("backProfileCommand", this);

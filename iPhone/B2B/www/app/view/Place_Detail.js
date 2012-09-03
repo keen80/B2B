@@ -68,6 +68,7 @@ Ext.define('B2B.view.Place_Detail', {
 			},
 			rating = {
 				xtype: 'starrating',
+				id: 'beerrating',
 				itemsCount : 5,
 				label : '',
 				value: 3,
@@ -141,6 +142,10 @@ Ext.define('B2B.view.Place_Detail', {
 		this.fireEvent("onDrinkInCommand", this);
 	},
 	onSubmitCheckInButtonTap: function(){
-		this.fireEvent("checkInCommand", this);
+		var profile = Ext.getStore('Profile_Local').first(),
+			rating = Ext.getCmp("beerrating"),
+			value = rating.getValue();
+
+		this.fireEvent("checkInCommand", this, profile.data.idUser, null, this.jsonData.idPlace, "", value, value, value);
 	}
 });

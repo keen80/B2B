@@ -1,5 +1,5 @@
 Ext.define('B2B.view.Place', {
-	extend: 'Ext.Panel',
+  extend: 'Ext.Panel',
     requires: [
         'Ext.Map'
     ],
@@ -12,13 +12,14 @@ Ext.define('B2B.view.Place', {
 	},
 	initialize: function(){
       var me = this;
+
       this.callParent(arguments);
-      /*
+
       me.setMasked({
         xtype: 'loadmask',
         message: i18n.app.HINT_GEOLOAD
       });
-	   */
+
       var mapplace = {
         xtype: 'map',
         id: 'mapplace',
@@ -93,8 +94,8 @@ Ext.define('B2B.view.Place', {
                           icon: HH.map.marker
                     }));
 */
-                  var infobar = Ext.getCmp('placesearchinfobar');
-                  var geoStore = Ext.getStore("Places_Ajax");
+                  var infobar = Ext.getCmp('placesearchinfobar'),
+                      geoStore = Ext.getStore("Places_Ajax");
                   //geoStore.getProxy().extraParams.lat = geo.getLatitude();
                   //geoStore.getProxy().extraParams.long = geo.getLongititude();
                   geoStore.getProxy().setExtraParam('lat', geo.getLatitude());
@@ -106,10 +107,11 @@ Ext.define('B2B.view.Place', {
               },
               locationerror: function(geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
                   console.error(message);
+                  me.setMasked(false);
+					   Ext.getStore("Places_Ajax").load();
                   if(confirm(i18n.app.HINT_GEOERROR)){
-                      alert("TO DO: RELOAD?");
+//                      alert("TO DO: RELOAD?");
                   }else{
-                     me.setMasked(false);
                      me.fireEvent("backCheckCommand", me);
                   }
               }
@@ -147,13 +149,10 @@ Ext.define('B2B.view.Place', {
       };
 
       this.add([toolbar, verticalbox, squarelogo ]);
-      Ext.getStore("Places_Ajax").load();
 
       /* Done adding comps, start updating loc */
 
-//		   geo.updateLocation();
-
-//      Ext.getCmp('placevbox').add(, );
+		   geo.updateLocation();
   },
   onRefreshAroundButtonTap: function(){
         this.fireEvent("refreshAroundCommand", this);

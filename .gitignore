@@ -165,3 +165,11 @@ pip-log.txt
 #HH
 Thumbs.db
 .sass-cache
+
+*.sublime-project
+
+*.sublime-workspace
+
+*.sublime-project
+
+*.sublime-project

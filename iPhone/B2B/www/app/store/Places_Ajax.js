@@ -4,8 +4,10 @@ Ext.define("B2B.store.Places_Ajax", {
     config: {
         model: "B2B.model.Place",
         proxy: {
-            type:'ajax',
-            url:'json/mock_placelist.json',
+            // type:'ajax',
+            //url:'json/mock_placelist.json',
+            url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/findLocNear_jsonp',
+            type: 'jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
@@ -22,10 +24,10 @@ Ext.define("B2B.store.Places_Ajax", {
             callback: function(success,response){
                 HH.log("Beers Store Callback");
             },
-            load:function(el,records, successful){ 
+            load:function(el,records, successful){
                 HH.log("* Loaded: Store.Places_Ajax");
             }
         }
     }
-    
+
 });

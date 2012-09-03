@@ -65,6 +65,7 @@ Ext.define("B2B.controller.Places", {
             	"<div class='small-list-subtext'>"+utils.getBeerStyleFromCode(parseInt(e.data.beerstyle))+"</div>"+
             "</div>"+
             "<div class='search-new-beer'><div class='search-new-beer-text'>"+i18n.app.CHANGE_BEER+"</div><div class='search-new-beer-logo'></div></div>");
+		this.idBeerSelected = e.data.idBeer;
 
 		container.setActiveItem(1);
 	},
@@ -86,7 +87,39 @@ Ext.define("B2B.controller.Places", {
 			id: "beerlistselectcontainerpanel"
 		});
 	},
-	onCheckIn: function(){
+	onCheckIn: function(source, idUser, idBeer, idPlace, image, rate, rate1, rate2){
+		var beer = (idBeer === null ? this.idBeerSelected : idBeer);
+
+		Ext.Ajax.request({
+			url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/checkIn",
+			method: "POST",
+			headers: {
+        		"btUsername": idUser
+    		},
+			params: {
+				idUser: idUser,
+				idBeer: beer,
+				idPlace: idPlace,
+				image: image,
+				rate: rate,
+				rate1: rate1,
+				rate2: rate2
+			},
+			failure: function(response) {
+				console.log("FAIL: " + response.responseText);
+			},
+			success: function(response) {
+				var dec = Ext.decode(response.responseText);
+				console.log("SUCCESS: " + response.responseText);
+				if (dec.response.status.code < 200) {
+					alert("CheckIn OK!");
+				} else {
+					alert("CheckIn Fail: " + dec.response.status.msg);
+					console.log("SUCCESS: " + dec.response.responseText);
+				}
+			}
+		});
+
 		this.getApp().pop();
 	},
 	init: function(){

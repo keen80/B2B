@@ -33,8 +33,26 @@ Ext.define("B2B.controller.Profiles", {
 		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));*/
 	},
 
-	onSaveProfile: function() {
-		Ext.Msg.alert("Saved!");
+	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {
+		Ext.Ajax.request({
+			url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/saveUser",
+			method: "POST",
+			headers: {
+        		"btUsername": username
+    		},
+			params: {
+				idUser: idUser,
+				username: username,
+				displayName: displayName,
+				email: email,
+				gender: gender,
+				nationality: nationality,
+				birthDate: birthDate
+			},
+			callback: function(response) {
+				console.log(response);
+			}
+		});
 		this.getApp().pop();
 	},
 	onBackProfile: function() {
