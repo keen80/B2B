@@ -16,35 +16,54 @@ Ext.define('B2B.view.Activity_List', {
         emptyText: '</pre><div class="list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate([
                 "<div class='{[this.getClass(values)]}'>",
-                "{[this.getImageURL(values)]}",
                 "{[this.getTextString(values)]}",
-                "{[this.getWhenString()]}",
                 "</div>"
             ].join(""),
             {
             	getClass: function(values){
             		return "activity-list-item small-list activity-type" + values.type;
             	},
-            	getImageURL: function(values){
-                    var str = '<img class="avatar_small" src="';
-                    if (_.isEmpty(values.image)){
-                         str += HH.default_place32;
+            	getAvatarURL: function(values){
+                    var str = '<img class="avatar" src="';
+                    if (_.isEmpty(values.avatar)){
+                         str += HH.default_user64;
                      }else{
-                        str+=values.image;
+                        str+=values.avatar;
                      }
-                    str += '" width="32" height="32">';
+                    str += '" width="64" height="64">';
                 	return str;
                 },
-                getWhenString: function(values){
-                    var str = "<div class='small-list-when'>";
-                    str += utils.getDate(values);
-                    str += "</div>";
+                getImageURL: function(values){
+                    var str = "";
+                    if (!_.isEmpty(values.image)){
+                        str= '<img class="photo" src="'+values.image+'">';
+                     }
                     return str;
                 },
                 getTextString: function(values){
-                    var str = "<div class='small-list-text'>";
-            		str += utils.getActivityString(values);
-                	str += "</div>";
+                    var str = [
+                        "<div class='list-header'>",
+                            "<small class='time'>",
+                                utils.getDate(values),
+                            "</small>",
+                            "<span class='info'>",
+                               this.getAvatarURL(values),
+                                values.displayName,
+                            "</span>",
+                        "</div>",
+                       // "<div class='list-photo'>",
+                            this.getImageURL(values),
+                       // "</div>",
+                        "<p class='list-text'>",
+            		      utils.getActivityString(values),
+                	   "</p>",
+                       "<div class='list-footer'>",
+                            "<span class='like'>",
+                                values.like,
+                            "</span>",
+                       "</div>"
+                    ].join("");
+
                     return str;
                 }
             }

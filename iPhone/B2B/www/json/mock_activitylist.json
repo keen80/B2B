@@ -10,6 +10,7 @@
         {
           "idActivity": "act-01",
           "image": "",
+          "avatar": "",
           "displayName": "Vale",
           "idUser": "user_2",
           "idBeer": "",
@@ -26,6 +27,7 @@
         {
           "idActivity": "act-02",
           "image": "",
+          "avatar": "",
           "displayName": "Giancarlo",
           "idUser": "user-5",
           "idBeer": "beer-02",
@@ -41,7 +43,8 @@
         },
         {
           "idActivity": "act-03",
-          "image": "",
+          "image": "http://farm3.static.flickr.com/2586/3917246219_a9982ffcb5.jpg",
+          "avatar": "",
           "displayName": "Giancarlo",
           "idUser": "user-5",
           "idBeer": "beer-03",
@@ -58,6 +61,7 @@
         {
           "idActivity": "act-04",
           "image": "",
+          "avatar": "",
           "displayName": "Pino",
           "idUser": "user-4",
           "idBeer": "",
@@ -74,6 +78,7 @@
         {
           "idActivity": "act-05",
           "image": "",
+          "avatar": "",
           "displayName": "Romina",
           "idUser": "user-6",
           "idBeer": "",
@@ -90,6 +95,7 @@
         {
           "idActivity": "act-06",
           "image": "",
+          "avatar": "",
           "displayName": "Belen",
           "idUser": "user-7",
           "idBeer": "beer-07",

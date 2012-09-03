@@ -100,6 +100,14 @@
             }
         }
 
+        @mixin light-border{
+            border: 1px solid #EEE;
+        }
+
+        @mixin dark-border{
+            border: 1px solid #AAA;
+        }
+
 
 /* LAYOUT ***************************************************************** */
     
@@ -449,7 +457,63 @@
     }
     .small-list{
         min-height: 30px;
+
+
+        .list-header{
+            margin-left: 58px;
+            .time{
+                position: relative;
+                float: right;
+                margin-top: 1px;
+                padding: 2px 2px 2px 20px;
+                color: #BBB;
+               // background: url("../icons/time_clock.png") no-repeat top left;
+               // background-size: 20px;
+            }
+            .info{
+                font-weight: bold;
+                .avatar{
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                     // width: 48px;
+                     // height: 48px;
+                     // background-size: 48px;
+                      -webkit-border-radius: 5px;
+                      border-radius: 5px;
+                     // display: inline-block;
+                     // background: none center center no-repeat;
+                }
+            }
+        }
+        .list-text{
+            margin-left: 58px;
+            word-wrap: break-word;
+            margin-bottom: 10px;
+        }
+        .photo{
+            clear: both;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            width: 96%;
+            @include dark-border;
+        }
+        .list-footer{
+            text-align: right;
+            .like{
+                padding: 2px 10px 2px 30px;
+                margin: 1px;
+                @include light-border;
+                color: #BBB;
+                background: url("../icons/smiley_laughing.png") no-repeat top left;
+                background-size: 20px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+        }
     }
+
+
     .small-list-subtext{
         position: relative;
         left: 10px;
@@ -466,15 +530,18 @@
         border: 2px solid #EEE;
     }
 
+    .small-list-who {
+        float: right;
+    }
     .small-list-when, .small-list-drinkedin{
-        text-align: right;
+        flot: right;
         font-size: 11px;
         color: #AAA;
     }
 
     .small-list-drinkedin {
-        padding-left: 20px;
-        background: url(image-url.gif);
+       // padding-left: 20px;
+      //  background: url(image-url.gif);
     }
     .profile-detail{
         position: absolute;
@@ -707,23 +774,6 @@
 }
 
 
-.avatar, .avatar1, .avatar2 {
-  width: 100px;
-  height: 100px;
-  background-size: 100px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  display: inline-block;
-  background: none center center no-repeat;
-}
-
-.avatar1 {
-  background-image: url(http://a3.twimg.com/profile_images/1106236669/twitter_sharp.png);
-}
-
-.avatar2 {
-  background-image: url(https://twimg0-a.akamaihd.net/profile_images/1513955198/IMG_0853-cut.jpg);
-}
 
 .cutout {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
