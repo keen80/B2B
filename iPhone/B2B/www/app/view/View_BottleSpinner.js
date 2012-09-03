@@ -3,9 +3,9 @@ Ext.define('B2B.view.View_BottleSpinner', {
 	xtype: 'viewbottlespinner',
 	config: {
 		title: i18n.app.PANEL_BOTTLESPINNER,
-		iconCls: 'settings6',
+		iconCls: 'drink_beerbottle',
 		styleHtmlContent: true,
-        cls: 'slidableToolbar',
+       // cls: 'slidableToolbar',
 
 		html: [
 			'<div id="game" style="display: block; ">',
@@ -18,6 +18,8 @@ Ext.define('B2B.view.View_BottleSpinner', {
 	},
 	initialize: function(){
         
+        var me = this;
+
         this.callParent(arguments);
 
         var viewbottlespinnertoolbar = {
@@ -50,9 +52,9 @@ Ext.define('B2B.view.View_BottleSpinner', {
         var centery = 150;
 
         function main() {
-            bottle = elm("bottle");
-            shadow = elm("shadow");
-            spintext = elm("spintext");
+            bottle = Ext.get("bottle");
+            shadow = Ext.get("shadow");
+            spintext = Ext.get("spintext");
 
             startspin(1000);
             setTimeout(startTouch, 3000);
@@ -61,12 +63,12 @@ Ext.define('B2B.view.View_BottleSpinner', {
 
         function startTouch() {
 
-            document.body.ontouchstart = function(e) {
+            me.ontouchstart = function(e) {
                 oldangle1 = 0; oldangle2 = 0; oldangle3 = 0;
                 cancelspin();
             }
 
-            document.body.ontouchmove = function(e) {
+            me.ontouchmove = function(e) {
 
                 e.preventDefault();
 
@@ -87,7 +89,7 @@ Ext.define('B2B.view.View_BottleSpinner', {
                 shadow.style.webkitTransform = val;
                 rot = angle;
             }
-            document.body.ontouchend = function(e){
+            me.ontouchend = function(e){
                 if (timer_rot == 0) {
                     var val = ((oldangle2 - oldangle1) + (oldangle3 - oldangle2)) / 2;
                     val /= 3;
@@ -101,9 +103,9 @@ Ext.define('B2B.view.View_BottleSpinner', {
         }
 
         function stopTouch() {
-            document.body.ontouchstart = null;
-            document.body.ontouchmove = null;
-            document.body.ontouchend = null;
+            me.ontouchstart = null;
+            me.ontouchmove = null;
+            me.ontouchend = null;
         }
 
         function elm(id) {

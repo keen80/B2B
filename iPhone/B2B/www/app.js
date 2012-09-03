@@ -35,14 +35,15 @@ Ext.application({
 		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
 		'Friend_Finder',
 		'Friend', 'Friend_List', 'Friend_Search', 'Friend_List_Detail',
-		'Notification_Container', 'Notification_List',
+		'Notification', 'Notification_List',
 		'User', 'User_Form',
 		'User_Privacy_Form', 'User_Preferences_Form',
 		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
-		'Place_Beer_List', 'Place_Beer_Search'
+		'Place_Beer_List', 'Place_Beer_Search',
+		'View_BottleSpinner'
 		],
 
 	icon: {

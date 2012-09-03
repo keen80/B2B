@@ -72,24 +72,25 @@ Ext.define("B2B.view._App_Slider", {
                         id: 'viewwhatsnew'
                     }
                 ]
-            },/* // TODO IN PROGRESS
+            },
             {
-                title: '<div id="slider_goodies"  class="slider_item_icon">'+i18n.app.LABEL_GOODIES+'</div>' ,
+                title: '<div id="slider_goodies"  class="slider_item_icon slider_bottle">'+i18n.app.LABEL_BOTTLESPINNER+'</div>' ,
                 group: 'Goodies',
                 id: 'slider_goodies',
                 slideButton: {
                     selector: 'toolbar',
                     docked: 'left',
                     iconMask: true,
-                    iconCls: 'list slidebutton',
+                    iconCls: 'slider slidebutton',
                     ui: 'plain'
                 },
                 items: [
                     {
-                        xtype: 'viewbottlespinner'
+                        xtype: 'viewbottlespinner',
+                        id: 'viewbottlespinner'
                     }
                 ]
-            },*/
+            },
             {
                 title: '<div class="slider_item_icon slider_terms">'+i18n.app.LABEL_TERMS+'</div>' ,
                 group: 'Privacy',

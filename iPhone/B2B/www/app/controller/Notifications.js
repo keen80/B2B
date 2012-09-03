@@ -2,7 +2,7 @@ Ext.define("B2B.controller.Notifications", {
 	extend: "Ext.app.Controller",
 	config: {
 		refs: {
-			notificationContainer: "notificationlistcontainerpanel",
+			notificationContainer: "notification",
 			notificationList: "notificationlistcomponent",
 			appContainer: "appcontainer",
 			app: "_app"
@@ -22,7 +22,8 @@ Ext.define("B2B.controller.Notifications", {
 	},
 	onNotificationShow: function(){
 		this.getApp().push({
-			xtype: "notificationlistcontainerpanel"
+			xtype: "notification",
+			id: 'notification'
 		});
 	},
 	onNotificationRead: function(a, b, c, record){

@@ -1,6 +1,6 @@
-Ext.define('B2B.view.Notification_Container', {
+Ext.define('B2B.view.Notification', {
 	extend: 'Ext.Panel',
-	xtype: 'notificationlistcontainerpanel',
+	xtype: 'notification',
 	config: {
 		title: i18n.app.LABEL_FRIENDS,
 		iconCls: 'user_list',

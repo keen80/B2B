@@ -19,6 +19,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 		var savePreferencesButton = {
 			text: i18n.app.BTN_SAVE,
 			ui: 'action',
+			iconCls: 'check_yes',
 			id: 'save_preferences_btn',
 			handler: this.onSavePreferencesButtonTap,
 			scope: this

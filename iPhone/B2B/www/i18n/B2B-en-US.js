@@ -28,6 +28,7 @@
 
 		"FORM_ACCOUNT": "Account",
 		"FORM_ACTIVATEDON": "Registered Since",
+		"FORM_ADDBEER": "Send Us a New Beer!",
 		"FORM_AVATAR": "Your Image <small>(Tap to change)</small>",
 		"FORM_BIRTHDATE": "Birth Date",
 		"FORM_DESCRIPTION": "Something About You",
@@ -113,13 +114,14 @@
 		"LABEL_BEERSTYLE": "Style",
 		"LABEL_BEERTYPE": "Type",
 		"LABEL_BEERGRAD": "Grad",
-
+		"LABEL_BOTTLESPINNER": "Bottle Spinner",
 		"LABEL_CHECKIN": "Check In",
 		"LABEL_DRINK": "Drink",
 		"LABEL_DRINKS": "Drinks",
 		"LABEL_FEMALE": "Female",
 		"LABEL_FRIEND": "Friend",
 		"LABEL_FRIENDS": "Friends",
+		"LABEL_GOODIES": "Goodies",
 		"LABEL_MALE": "Male",
 		"LABEL_MANAGELOGINDATA": "My Login Data",
 		"LABEL_NOTIFICATION": "Notification",
@@ -145,7 +147,7 @@
 
 		"PICKER_CAMERA": "Camera",
 		"PICKER_LIBRARY": "Library",
-
+		"HINT_ADDBEER": "Your Beer will be submitted and after a short review, will be added to our Database.",
 		"HINT_APPLICATIONRELOADED": "This application has just successfully been updated to the latest version. Reload now?",
 		"HINT_BEERCHOOSE": "Select a beer from favorite",
 		"HINT_BEERCHOOSENAME": "The Name of the Beer?",

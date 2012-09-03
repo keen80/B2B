@@ -13,6 +13,7 @@ Ext.define('B2B.view.User', {
 		var privacyButton = {
 			text: i18n.app.BTN_PRIVACY,
 			ui: 'action',
+			iconCls: 'alert_attention',
 			id: 'privacy_profile_btn',
 			handler: this.onPrivacyProfileButtonTap,
 			scope: this
@@ -20,6 +21,7 @@ Ext.define('B2B.view.User', {
 		settingsButton = {
 			text: i18n.app.BTN_SETTINGS,
 			ui: 'action',
+			iconCls: 'cog_settings_gear',
 			id: 'settings_profile_btn',
 			handler: this.onSettingsProfileButtonTap,
 			scope: this

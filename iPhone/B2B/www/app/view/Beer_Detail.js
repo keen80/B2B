@@ -43,14 +43,6 @@ Ext.define('B2B.view.Beer_Detail', {
 				reportBeerButton
 			]
 		},
-		reportBeerButton = {
-			xtype: "button",
-			text: i18n.app.BTN_BEERREPORT,
-			ui: 'action',
-			id: 'beer_report_btn',
-			handler: this.onBeerReportButtonTap,
-			scope: this
-		},
 		addBeerFavoriteButton = {
 			xtype: "button",
 			text: i18n.app.BTN_ADDBEERFAVORITE,

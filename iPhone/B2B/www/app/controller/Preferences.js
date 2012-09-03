@@ -86,7 +86,6 @@ Ext.define("B2B.controller.Preferences", {
 		profileContainer.remove(Ext.getCmp('userpreferencesform'));
 	},
 	closePanel: function() {
-		// this.getApp().pop();
 		var maninPanel = Ext.getCmp("userprofile");
 		maninPanel.animateActiveItem(0, {
 			type:'slide',

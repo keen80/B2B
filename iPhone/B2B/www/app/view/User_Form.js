@@ -16,7 +16,6 @@ Ext.define('B2B.view.User_Form', {
 		iconCls: 'settings6',
 		url: '/cippa.php',
 		items: [
-		
 			{
 				xtype: 'fieldset',
 				title: i18n.app.FORM_ACCOUNT,
@@ -208,6 +207,7 @@ Ext.define('B2B.view.User_Form', {
 		var saveProfileButton = {
 			text: i18n.app.BTN_SAVE,
 			ui: 'action',
+			iconCls: 'check_yes',
 			id: 'save_profile_btn',
 			handler: this.onSaveProfileButtonTap,
 			scope: this

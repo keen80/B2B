@@ -153,6 +153,9 @@
                     background-position: left;
                     background-image: url("../icons/beer.png");
                 }
+                .slider_bottle{
+                    background-image: url("../icons/drink_beerbottle.png");
+                }
                 .slider_whatsnew {
                     background-image: url("../icons/splash_star.png");
                 }
@@ -245,7 +248,7 @@
     }
 
     #activitylist{
-         background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+         background: url("../bg/bg.png") #DADADA repeat bottom right;
         .activity-type0, .activity-type1,  .activity-type2,  .activity-type3 {
                 padding-left: 10px;
         }
@@ -415,6 +418,11 @@
         padding-top: 10px;
     }
 
+/* NOTIFICATION *********************************************************** */
+    #notification{
+        background: url("../bg/bg.png") #DADADA repeat bottom right;
+        @include rounded_list;
+    }
 
 /* USER ******************************************************************* */
     #userform  .x-body{
@@ -448,13 +456,9 @@
 /* COMPONENTS ************************************************************* */
 
 
-        /* SMALL LIST  */
+    /* SMALL LIST  */
 
-    .small-list-text, .medium-list-text{
-        position: relative;
-        left: 10px;
-        padding-right: 10px;
-    }
+
     .small-list{
         min-height: 30px;
 
@@ -467,8 +471,6 @@
                 margin-top: 1px;
                 padding: 2px 2px 2px 20px;
                 color: #BBB;
-               // background: url("../icons/time_clock.png") no-repeat top left;
-               // background-size: 20px;
             }
             .info{
                 font-weight: bold;
@@ -476,13 +478,8 @@
                     position: absolute;
                     top: 12px;
                     left: 12px;
-                     // width: 48px;
-                     // height: 48px;
-                     // background-size: 48px;
-                      -webkit-border-radius: 5px;
-                      border-radius: 5px;
-                     // display: inline-block;
-                     // background: none center center no-repeat;
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
                 }
             }
         }
@@ -503,23 +500,28 @@
             .like{
                 padding: 2px 10px 2px 30px;
                 margin: 1px;
-                @include light-border;
-                color: #BBB;
+                @include dark-border;
                 background: url("../icons/smiley_laughing.png") no-repeat top left;
                 background-size: 20px;
                 -webkit-border-radius: 5px;
                 border-radius: 5px;
+                opacity: 0.3;
+            }
+            .like:hover{
+                opacity: 1 !important;
             }
         }
     }
 
-
-    .small-list-subtext{
+    .small-list-text, .medium-list-text, .small-list-subtext{
         position: relative;
         left: 10px;
         padding-right: 10px;
+    }
+
+    .small-list-subtext{
         color: #AAA;
-        font-size: 12px;
+        font-size: 11px;
     }
     .medium-list-text{
         font-size: 16px;
@@ -530,19 +532,12 @@
         border: 2px solid #EEE;
     }
 
-    .small-list-who {
+    .small-list-right, .small-list-drinkedin{
         float: right;
-    }
-    .small-list-when, .small-list-drinkedin{
-        flot: right;
         font-size: 11px;
         color: #AAA;
     }
 
-    .small-list-drinkedin {
-       // padding-left: 20px;
-      //  background: url(image-url.gif);
-    }
     .profile-detail{
         position: absolute;
         top: 180px;
@@ -792,11 +787,46 @@
 #ext-button-5,
  { margin: 5px; }
 
+/* SPIN BOTTLE ************************************************************* */
+
+#bottle {
+    width: 300px; height: 100px;
+    position: absolute;
+    left: 10px; top: 150px;
+    /* initial rotation */
+    -webkit-transform: rotateZ(-50deg);
+}
+.normal {
+    background: transparent url(../img/bottle.png) no-repeat left top;
+}
+.blurred {
+    background: transparent url(../img/bottle_blur.png) no-repeat left top;
+}
+#shadow {
+    width: 300px; height: 100px;
+    left: 18px; top: 175px;
+    position: absolute;
+    background: transparent url(../img/bottle_shadow.png) no-repeat left top;
+    -webkit-transform: rotateZ(-50deg);
+}
+
+.spinin {
+    -webkit-animation-name: 'in';
+    -webkit-animation-duration: 2.0s;
+}
+
+@-webkit-keyframes 'in' {
+    from {
+        -webkit-transform: scaleX(4.0) scaleY(4.0) rotateZ(180deg);
+    }
+    to {
+        -webkit-transform: scaleX(1.0) scaleY(1.0);
+    }
+}
+
+
+
 /*
-
-
-
-
 
 
 // Adding ui theme
@@ -935,8 +965,9 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 
 /** To Do da rimuovere */
 @include pictos-iconmask('chat4');
-@include pictos-iconmask('locate');
+@include pictos-iconmask('flag');
 @include pictos-iconmask('refresh');
+@include pictos-iconmask('compose');
 
 @mixin beer-iconmask($name) {
   .x-tab .x-button-icon.#{$name},
@@ -945,11 +976,18 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
   }
 }
 
+@include beer-iconmask('alert_attention');
+@include beer-iconmask('check_yes');
 @include beer-iconmask('contacts');
+@include beer-iconmask('cog_settings_gear');
+@include beer-iconmask('drink_beerbottle');
 @include beer-iconmask('drink_beerpint');
 @include beer-iconmask('drink_beerpint_add');
+@include beer-iconmask('flag_nationality_event');
 @include beer-iconmask('slider');
+@include beer-iconmask('star_favorite_round');
 @include beer-iconmask('position');
 @include beer-iconmask('smiley_happy');
 @include beer-iconmask('smiley_friends');
 @include beer-iconmask('smiley_friend_add');
+@include beer-iconmask('position');

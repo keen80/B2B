@@ -61,7 +61,7 @@ Ext.define("B2B.view._App_Container", {
 		};
 
 		var gotoCheckInButton = {
-			iconCls: 'locate',
+			iconCls: 'position',
 			ui: 'action',
 			id: 'jump_2_checkin_btn',
 			handler: this.onGotoCheckInButtonTap,

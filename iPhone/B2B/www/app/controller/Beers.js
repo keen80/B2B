@@ -53,7 +53,8 @@ Ext.define("B2B.controller.Beers", {
 		});
 
 		this.getApp().push({
-			xtype: "beeraddform"
+			xtype: "beeraddform",
+			id: 'beeraddform'
 		});
 		var beerForm = this.getBeerForm();
 		beerForm.setRecord(newBeer);
