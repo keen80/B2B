@@ -29,7 +29,7 @@ Ext.define('B2B.view.Activity_List_Detail', {
 		};
 		this.add([detailtoolbar]);
     },
-	onDetailBackButtonTap: function(){
+	onDetailbackbuttonTap: function(){
 		this.fireEvent("backActivityDetailCommand", this);
 	}
 });
