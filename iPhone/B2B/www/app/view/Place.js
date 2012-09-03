@@ -10,20 +10,20 @@ Ext.define('B2B.view.Place', {
     layout: 'card',
     scrollable: false
 	},
-  initialize: function(){
+	initialize: function(){
       var me = this;
       this.callParent(arguments);
-      
+      /*
       me.setMasked({
         xtype: 'loadmask',
         message: i18n.app.HINT_GEOLOAD
       });
-
+	   */
       var mapplace = {
         xtype: 'map',
         id: 'mapplace',
         flex: 1,
-        useCurrentLocation: true, 
+        useCurrentLocation: true,
         height: 140,
         mapOptions: {
             zoom: HH.map.zoomLevel,
@@ -49,26 +49,23 @@ Ext.define('B2B.view.Place', {
               }));
             }
         }
-      };
-
-      var refreshAroundButton = {
+      },
+		  refreshAroundButton = {
           text: i18n.app.BTN_REFRESH,
           ui: 'action',
           id: 'refresh_around_btn',
           iconCls: 'refresh',
           handler: this.onRefreshAroundButtonTap,
           scope: this
-      };
-
-      var backCheckButton = {
+      },
+      backCheckButton = {
           text: i18n.app.BTN_BACK,
           ui: 'back',
           id: 'back_Check_btn',
           handler: this.onBackCheckButtonTap,
           scope: this
-      };
-
-      var toolbar = {
+      },
+      toolbar = {
           xtype: 'toolbar',
           docked: 'top',
           cls: 'sub_titlebar',
@@ -82,9 +79,8 @@ Ext.define('B2B.view.Place', {
             { xtype: 'spacer' },
             refreshAroundButton
           ]
-      };
-
-      var geo = Ext.create('Ext.util.Geolocation', {
+      },
+      geo = Ext.create('Ext.util.Geolocation', {
           autoUpdate: false,
           listeners: {
               locationupdate: function(geo) {
@@ -103,8 +99,8 @@ Ext.define('B2B.view.Place', {
                   //geoStore.getProxy().extraParams.long = geo.getLongititude();
                   geoStore.getProxy().setExtraParam('lat', geo.getLatitude());
                   geoStore.getProxy().setExtraParam('lon', geo.getLongitude());
-                  HH.log('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude())
-                  if(infobar) infobar.setHtml('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
+						   HH.log('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
+//                  if(infobar) infobar.setHtml('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
                   geoStore.load();
                   me.setMasked(false);
               },
@@ -118,47 +114,46 @@ Ext.define('B2B.view.Place', {
                   }
               }
           }
-      });
-
-      var placelist = {
+      }),
+      placelist = {
         xtype: 'placelist',
         id: 'placelist',
         store: Ext.getStore("Places_Ajax"),
         flex: 1
-      };
-
-      var squarelogo ={
+      },
+      squarelogo ={
         xtype: 'container',
         docked: 'bottom',
         id: 'foursquare_logo',
         html: '<img src="resources/img/poweredByFoursquare_footer.png" width="200px">'
-      }
-
-      var placesearchinfobar = {
+		   },
+       placesearchinfobar = {
         xtype: 'container',
         id: "placesearchinfobar",
        // docked: 'top',
         styleHtmlContent: true,
         html: i18n.app.TEXT_NOPLACEFOUND
-      }
-
-      var verticalbox = {
+		   },
+       verticalbox = {
         xtype: "container",
         id: 'placevbox',
         layout: 'vbox',
         align: 'stretch',
         items: [
-            mapplace
+            mapplace,
+				placesearchinfobar,
+			placelist
         ]
       };
 
       this.add([toolbar, verticalbox, squarelogo ]);
+      Ext.getStore("Places_Ajax").load();
 
       /* Done adding comps, start updating loc */
 
-      geo.updateLocation();
+//		   geo.updateLocation();
 
-      Ext.getCmp('placevbox').add(placesearchinfobar, placelist);
+//      Ext.getCmp('placevbox').add(, );
   },
   onRefreshAroundButtonTap: function(){
         this.fireEvent("refreshAroundCommand", this);

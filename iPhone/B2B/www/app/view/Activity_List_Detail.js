@@ -14,7 +14,7 @@ Ext.define('B2B.view.Activity_List_Detail', {
 			text: i18n.app.BTN_BACK,
 			ui: 'back',
 			id: 'activitylistdetailbackbutton',
-			handler: this.onDetailbackbutton,
+			handler: this.onDetailbackbuttonTap,
 			scope: this
 		},
 		detailtoolbar = {

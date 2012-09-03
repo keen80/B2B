@@ -10,9 +10,9 @@ if(_(['en-US', 'it']).contains(language_string)){
 }*/
 
 if( _.str.include(language_string, "it")){
-    moment.lang(language_string);
+//    moment.lang(language_string);
 }else{
-    moment.lang("en");
+//    moment.lang("en");
 }
 
 
