@@ -42,12 +42,12 @@ Ext.define('B2B.view.User', {
 		profileButton = {
 			id: 'profile_btn',
 			xtype: 'button',
-			ui: 'action',
+			ui: 'plain',
 			icon: 'image.png',
-			margin: '10 0 10 0',
+			margin: '10 2 10 0',
 			text: i18n.app.BTN_PROFILE,
 			badgeText: i18n.app.BTN_PROFILE,
-			flex: 1,
+			flex: 2,
 			html: [
 				'<img class="avatar_medium" height="48" width="48" src="'+HH.default_user48+'" />',
 				'<div class="profile_right"><p id="profile_username"></p></div>'
@@ -59,6 +59,7 @@ Ext.define('B2B.view.User', {
 			id: 'badges_btn',
 			xtype: 'button',
 			ui: 'action',
+			margin: '4px 2px',
 			text: i18n.app.BTN_BADGES,
 			flex: 1,
 			handler: this.onBadgesButtonTap,
@@ -68,6 +69,7 @@ Ext.define('B2B.view.User', {
 			id: 'drinklist_btn',
 			xtype: 'button',
 			ui: 'action',
+			margin: '4px 2px',
 			text: i18n.app.BTN_DRINKLIST,
 			flex: 1,
 			handler: this.onDrinkListButtonTap,
@@ -77,6 +79,7 @@ Ext.define('B2B.view.User', {
 			xtype: 'button',
 			id: 'myactivity_btn',
 			ui: 'action',
+			margin: '4px 2px',
 			text: i18n.app.BTN_MYACTIVITY,
 			flex: 1,
 			handler: this.onMyActivityButtonTap,
@@ -86,15 +89,28 @@ Ext.define('B2B.view.User', {
 			id: 'favorites_btn',
 			xtype: 'button',
 			ui: 'action',
+			margin: '4px 2px',
 			text: i18n.app.BTN_FAVORITES,
 			flex: 1,
 			handler: this.onFavoritesButtonTap,
 			scope: this
 		},
-		middleButtonsContainer = {
+		friendsButton = {
+			id: 'friends_btn',
+			xtype: 'button',
+			ui: 'plain',
+			xtype: 'button',
+			ui: 'action',
+			margin: '0 8 10',
+			text: i18n.app.BTN_FRIENDS,
+			flex: 1,
+			handler: this.onFriendsButtonTap,
+			scope: this
+		},
+		secondRowButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
-			padding: '0 0 10 0',
+			padding: '0 4 10 4',
 			layout: {
 				type: 'hbox'
 			},
@@ -103,10 +119,10 @@ Ext.define('B2B.view.User', {
 				favoritesButton
 			]
 		},
-		bottomButtonsContainer = {
+		thirdButtonsContainer = {
 			xtype: 'panel',
 			flex: 1,
-			padding: '0 0 30 0',
+			padding: '0 4 10 4',
 			layout: {
 				type: 'hbox'
 			},
@@ -122,17 +138,11 @@ Ext.define('B2B.view.User', {
 				type: 'vbox'
 			},
 			items: [
-				toolbar, profileButton, middleButtonsContainer, bottomButtonsContainer
+				toolbar, profileButton, secondRowButtonsContainer, thirdButtonsContainer, friendsButton
 			]
-		},
-		item1 = {
-			xtype: 'userpreferencesform'
-		},
-		item2 = {
-			xtype: 'userprofileprivacyform'
 		};
 
-		this.add([item0, item1, item2]);
+		this.add([item0]);
 		this.setActiveItem(0);
 	},
 	onEditProfileButtonTap: function() {
@@ -158,6 +168,9 @@ Ext.define('B2B.view.User', {
 	},
 	onFavoritesButtonTap: function() {
 		this.fireEvent("favoritesProfileCommand", this);
+	},
+	onFriendsButtonTap: function() {
+		this.fireEvent("friendsProfileCommand", this);
 	},
 	refreshProfileData: function() {
 		this.fireEvent("reloadProfileCommand", this);

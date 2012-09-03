@@ -41,32 +41,32 @@ Ext.define("B2B.controller.Profiles", {
 		this.getApp().pop();
 	},
 	onShowPrivacy: function() {
-		
-		var aboutPanel = Ext.getCmp("userprofileprivacyform");
-		aboutPanel.animateActiveItem(2, {
-			type:'slide',
-			direction:'up'
-		});
-/*
-		item2 = {
-			xtype: 'userprofileprivacyform'
+		var userProfilePrivacy = {
+			xtype: 'userprofileprivacyform',
+			id: 'userprofileprivacyform'
 		};
 
 		var profileContainer = this.getProfile();
-		profileContainer.add(item2);
+		profileContainer.add(userProfilePrivacy);
 		profileContainer.animateActiveItem(2, {
 			type:'slide',
 			direction:'up'
 		});
-*/
-		
 	},
 	onShowSettings: function(a){
-		var aboutPanel = Ext.getCmp("userprofile");
-		aboutPanel.animateActiveItem(1, {
+
+		var userpreferencesform = {
+			xtype: 'userpreferencesform',
+			id: 'userpreferencesform'
+		};
+
+		var profileContainer = this.getProfile();
+		profileContainer.add(userpreferencesform);
+		profileContainer.animateActiveItem(2, {
 			type:'slide',
 			direction:'up'
 		});
+
 		// var a = Ext.getCmp("userprofile");
 		// if (!a.actions){
 		// 	a.actions = Ext.Viewport.add({
@@ -120,8 +120,3 @@ Ext.define("B2B.controller.Profiles", {
 		this.callParent(arguments);
 	}
 });
-
-/*
-userpreferencesform
-userprofileprivacyform
-*/

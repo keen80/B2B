@@ -104,7 +104,7 @@ Ext.define('B2B.view.Place', {
                   geoStore.getProxy().setExtraParam('lat', geo.getLatitude());
                   geoStore.getProxy().setExtraParam('lon', geo.getLongitude());
                   HH.log('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude())
-                  infobar.setHtml('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
+                  if(infobar) infobar.setHtml('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
                   geoStore.load();
                   me.setMasked(false);
               },

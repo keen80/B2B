@@ -35,6 +35,6 @@ Ext.define('B2B.view.Activity', {
             store: Ext.getStore("Activities_Local"),
         }
 
-		this.add([ activityheader, mylatestdrink, activitylist ]);
+		this.add([ /*activityheader,*/ mylatestdrink, activitylist ]);
     }
 });

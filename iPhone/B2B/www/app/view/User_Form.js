@@ -16,103 +16,100 @@ Ext.define('B2B.view.User_Form', {
 		iconCls: 'settings6',
 		url: '/cippa.php',
 		items: [
+		
 			{
-				xtype: 'panel',
-				layout:{
-					type:'hbox',
-					align: 'strech'
-				},
-				defaults:{flex:'1'},
+				xtype: 'fieldset',
+				title: i18n.app.FORM_ACCOUNT,
+				instructions: i18n.app.HINT_DISPLAYNAME,
 				items: [
 					{
-						xtype: 'image',
-						name: 'image',
-						id : 'ProfileImage',
-						// TODO AVATAR IMAGE
-						src: HH.default_user64,
-						width: 64,
-						margin: 10,
-						mode: 'element',
-						listeners: {
-							tap: function (img, evt) {
-								if(!this.actions){
-									this.actions = Ext.Viewport.add(
-										{
-											xtype: 'actionsheet',
-											items: [
-												{
-													text: i18n.app.BTN_CHOOSEPICTURE,
-													scope: this,
-													ui: 'confirm',
-													handler: function(){
-														Ext.getCmp("userform").fireEvent("chooseProfilePictureCommand", this, Ext.getCmp("ProfileImage"));
-														this.actions.hide();
+						xtype: 'hiddenfield',
+						name: 'idUser'
+					},
+					{
+						xtype: 'hiddenfield',
+						name: 'pwdHash'
+					},
+					{
+						xtype: 'hiddenfield',
+						name: 'role'
+					},
+					{
+						xtype: 'hiddenfield',
+						name: 'status'
+					},
+					{
+						xtype: 'textfield',
+						name: 'username',
+						label: i18n.app.FORM_USERNAME,
+						labelWidth: '40%',
+						disabled: true
+					},
+					{
+						xtype: 'field',
+						label: i18n.app.FORM_AVATAR,
+						labelAlign: 'top',
+						component: 
+						{
+							xtype: 'image',
+							name: 'image',
+							id : 'profileformimage',
+							// TODO AVATAR IMAGE
+							src: HH.default_user64,
+							mode: 'element',
+							listeners: {
+								tap: function (img, evt) {
+									if(!this.actions){
+										this.actions = Ext.Viewport.add(
+											{
+												xtype: 'actionsheet',
+												items: [
+													{
+														text: i18n.app.BTN_CHOOSEPICTURE,
+														scope: this,
+														ui: 'confirm',
+														handler: function(){
+															Ext.getCmp("userform").fireEvent("chooseProfilePictureCommand", this, Ext.getCmp("profileformimage"));
+															this.actions.hide();
+														}
+													},
+													{
+														text: i18n.app.BTN_REMOVEPICTURE,
+														scope: this,
+														ui: 'decline',
+														handler: function(){
+															Ext.getCmp("profileformimage").setSrc(HH.default_user64);
+															this.actions.hide();
+														}
+													},
+													{
+														text: i18n.app.BTN_CANCEL,
+														scope: this,
+														handler: function(){
+															this.actions.hide();
+														}
 													}
-												},
-												{
-													text: i18n.app.BTN_REMOVEPICTURE,
-													scope: this,
-													ui: 'decline',
-													handler: function(){
-														Ext.getCmp("ProfileImage").setSrc(HH.default_user64);
-														this.actions.hide();
-													}
-												},
-												{
-													text: i18n.app.BTN_CANCEL,
-													scope: this,
-													handler: function(){
-														this.actions.hide();
-													}
-												}
-											]
-										}
-									);
+												]
+											}
+										);
+									}
+									this.actions.show();
 								}
-								this.actions.show();
 							}
 						}
 					},
 					{
-						xtype: 'fieldset',
-						title: i18n.app.FORM_ACCOUNT,
-						instructions: i18n.app.HINT_DISPLAYNAME,
-						flex: 1,
-						items: [
-							{
-								xtype: 'hiddenfield',
-								name: 'idUser'
-							},
-							{
-								xtype: 'hiddenfield',
-								name: 'pwdHash'
-							},
-							{
-								xtype: 'hiddenfield',
-								name: 'role'
-							},
-							{
-								xtype: 'hiddenfield',
-								name: 'status'
-							},
-							{
-								xtype: 'textfield',
-								name: 'username',
-								label: i18n.app.FORM_USERNAME,
-								disabled: true
-							},
-							{
-								xtype: 'textfield',
-								name: 'email',
-								label: i18n.app.FORM_EMAIL,
-								disabled: true
-							},
-							{
-								xtype: 'textfield',
-								name: 'displayName',
-								label: i18n.app.FORM_DISPLAYNAME
-							}
-						]
+						xtype: 'textfield',
+						name: 'email',
+						label: i18n.app.FORM_EMAIL,
+						labelWidth: '40%',
+						disabled: true
+					},
+					{
+						xtype: 'textfield',
+						name: 'displayName',
+						label: i18n.app.FORM_DISPLAYNAME,
+						labelWidth: '40%'
 					}
 				]
 			},
@@ -124,23 +121,28 @@ Ext.define('B2B.view.User_Form', {
 						xtype: 'textfield',
 						name: 'firstName',
 						label: i18n.app.FORM_FIRSTNAME,
+						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEFIRSTNAME,
 					},
 					{
 						xtype: 'textfield',
 						name: 'lastName',
 						label: i18n.app.FORM_LASTNAME,
+						labelWidth: '40%'
 					},
 					{
 						xtype: 'textfield',
 						name: 'description',
 						label: i18n.app.FORM_DESCRIPTION,
+						labelAlign: 'top'
+						//labelWidth: '40%'
 					},
 					{
 						xtype: 'datepickerfield',
 						destroyPickerOnHide: true,
 						name: 'birthDay',
 						label: i18n.app.FORM_BIRTHDATE,
+						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEBIRTHDATE,
 						yearFrom: 1940
 					},
@@ -148,6 +150,7 @@ Ext.define('B2B.view.User_Form', {
 						xtype: 'selectfield',
 						name: "gender",
 						label: i18n.app.FORM_GENDER,
+						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEGENDER,
 						options: [
 							{
@@ -169,6 +172,7 @@ Ext.define('B2B.view.User_Form', {
 						name: "nationality",
 						cls: "nation",
 						label: i18n.app.FORM_NATIONALITY,
+						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSENATIONALITY,
 						options: i18n.countries
 					}
@@ -182,6 +186,7 @@ Ext.define('B2B.view.User_Form', {
 						name: 'activatedOn',
 						id: 'activatedOnField',
 						label: i18n.app.FORM_ACTIVATEDON,
+						labelWidth: '40%',
 						disabled: true
 					},
 					{
@@ -189,6 +194,7 @@ Ext.define('B2B.view.User_Form', {
 						name: 'lastLoginOn',
 						id: 'lastLoginOnField',
 						label: i18n.app.FORM_LASTLOGINON,
+						labelWidth: '40%',
 						disabled: true
 					}
 				]

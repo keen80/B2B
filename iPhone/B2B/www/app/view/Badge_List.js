@@ -6,8 +6,8 @@ Ext.define('B2B.view.Badge_List', {
 		emptyText: '</pre><div class="badge-list-empty-text">'+utils.__(i18n.app.TEXT_NOBADGEFOUND)+'</div><pre>',
 		itemTpl: new Ext.XTemplate([
 				"<div class='{[this.getClass(values)]}'>",
-				"{[this.getImageURL(values)]}",
-				"{[this.getString(values)]}",
+					"{[this.getImageURL(values)]}",
+					"{[this.getString(values)]}",
 				"</div>"
 			].join(""),
 		{
@@ -15,16 +15,15 @@ Ext.define('B2B.view.Badge_List', {
 				return "badge-list-item-title small-list";
 			},
 			getImageURL: function(values) {
-					var className = "badge_image_small",
-						str = "";
-					className += (values.active === true ? " active" : "");
+					var str = "",
+					className = (values.active === true ? " active" : "");
 					str = "<img class='" + className + "' src='";
 					if (_.isEmpty(values.imageUlr)) {
-						str += HH.default_badge32;
+						str += HH.default_badge64;
 					}else{
 						str += values.imageUrl;
 					}
-					str += "' width='32' height='32'>";
+					str += "' width='64' height='64'>";
 					return str;
 			},
 			getString: function(values) {

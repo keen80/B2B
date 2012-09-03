@@ -1,6 +1,7 @@
 Ext.define('B2B.view.Beer_List', {
     extend: 'Ext.dataview.List',
     xtype: 'beerlist',
+    cls: 'base_bg',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
        // emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',

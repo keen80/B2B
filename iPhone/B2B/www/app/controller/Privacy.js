@@ -1,16 +1,19 @@
 Ext.define("B2B.controller.Privacy", {
 	extend: "Ext.app.Controller",
 	config: {
-		refs: {
-			userprofileprivacyform: "#BTN_removeData",
+		refs: { 
+			userprofileprivacyform: "userprofileprivacyform",
+			profile: "userprofile",
 			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {
 			userprofileprivacyform: {
 				privacyRemoveDataCommand: "onRemoveDataCommand",
-				privacyLogoutCommand: "onLogOutCommand"
-			}
+				privacyLogoutCommand: "onLogOutCommand",
+				privacyBackCommand: 'onBackPrivacy'
+			},
+
 		}
 	},
 	onRemoveDataCommand: function(){
@@ -40,6 +43,10 @@ Ext.define("B2B.controller.Privacy", {
 		Ext.getStore("Profile_Ajax").removeAll();
 		Ext.getStore("Profile_Local").removeAll();
 		window.location.reload();
+	},
+	onBackPrivacy: function(){
+		var profileContainer = Ext.getCmp('userprofile');
+		profileContainer.remove(Ext.getCmp('userprofileprivacyform'));
 	},
 	init: function(){
 		this.callParent(arguments);

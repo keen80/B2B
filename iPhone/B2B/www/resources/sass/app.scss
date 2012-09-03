@@ -16,11 +16,10 @@
     $beer-main-color: #118DA1;
     $beer-neutral-color: #EEE;
     $beer-secondary-color: #FFBC00;
-    
-    $font-big:10px;
-    $font-medium:10px;
-    $font-small:10px;
-    $smallest:8px;
+
+    $fontsize_medium: 94%;
+    $fontsize_small: 80%;
+    $fontsize_xsmall: 70%;
 
     //$active-color: #FFBC00;
     $active-color: $beer-secondary-color;
@@ -55,7 +54,7 @@
     // $include-button-uis: false;
     // $include-default-icons: false;
     // $include-default-uis: false;
-    $include-form-sliders: false;
+    // $include-form-sliders: false;
     // $include-highlights: false;
     //$include-html-style: false;
     //$include-tabbar-uis: false;
@@ -94,8 +93,8 @@
 
         @mixin rounded_list {
             .x-list-item-label{
-                background: #F0F0F0;
-                border: 1px solid #DDD;
+                background: #F9F9F9;
+                border: 1px solid #CCC;
                 margin: 4px;
                 border-radius: 10px;
             }
@@ -112,7 +111,6 @@
     }
 
     .x-slidenavigation-container{
-        //border: 1px solid #AAA;
         -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     } 
@@ -136,7 +134,10 @@
     #appslider {
         #slider_left{
             .x-list-item-label {
-                //width: 190px;
+                width: 190px;
+                border: 1px solid #CCC;
+                margin: 4px;
+                border-radius: 10px;
                 .slider_item_icon{
                     padding-left: 30px;
                     background-size: 26px;
@@ -236,6 +237,7 @@
     }
 
     #activitylist{
+         background: url("../bg/bg.png") #DADADA no-repeat bottom right;
         .activity-type0, .activity-type1,  .activity-type2,  .activity-type3 {
                 padding-left: 10px;
         }
@@ -262,6 +264,10 @@
 
     #beerlist{
         @include rounded_list;
+    }
+
+    #beerlist.base_bg{
+            background: url("../bg/beersearch.png") #DADADA no-repeat bottom right;
     }
 
     .beer-selected {
@@ -314,6 +320,7 @@
 /* PLACES ***************************************************************** */
 
     #placelist{
+        background: url("../bg/bg.png") #DADADA no-repeat bottom right;
         @include rounded_list;
     }
 
@@ -335,12 +342,98 @@
 
 /* FRIENDS **************************************************************** */
 
+    #friendlist{
+        .x-body{
+            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+        }
+    }
+
+/* BADGES ***************************************************************** */
+
+    #badgelist{
+        
+        text-align: center;
+        font-size: $fontsize_xsmall;
+        .x-list-item-label{
+            float: left;
+            width: 98px;
+            margin: 2px;
+            border: 1px solid #AAA;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #EEE;
+            opacity: 0.5;
+        }
+        img.active {
+            border: 2px solid #EEE;
+            opacity: 1;
+        }
+        .badge-list-text.active {
+            color: $beer-main-color;
+            font-weight: bold;
+        }
+        .badge-list-text {
+            color: #AAA;
+        }
+        .x-body{
+            background: url("../bg/bg.png") #DADADA no-repeat bottom right;
+        }
+    }
+
+    /* Badge detail */
+
+    .badge-image-big {
+        position: relative;
+        border: 2px solid #EEE;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .badge-detail {
+        position: relative;
+
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+
+    .badge-title {
+        font-size: 18pt;
+    }
+
+    .badge-description {
+        font-size: 14pt;
+        padding-top: 10px;
+    }
+
 
 /* USER ******************************************************************* */
+    #userform  .x-body{
+        font-size: $fontsize_medium;
+        input, textarea, select {
+            font-size: $fontsize_small;
+        }        
+    }
 
-
+    #profileformimage {
+        text-align: center;
+        background-color: #AAA;
+        img{
+            margin: 10px;
+            border: 1px solid #AAA;
+        }        
+    }
 
 /* TYPOGRAPHY ************************************************************* */
+
+    .x-form .x-scroll-container > .x-inner{
+        padding: 10px !important;
+    }
+
+    .x-form-fieldset-title, .x-form-label {
+        white-space: normal;
+    }
 
 
 
@@ -406,6 +499,7 @@
             border: 0.1em solid #888;
             width: 4.7em;
             height:1.7em;
+            border-radius: 0;
         }
         .x-thumb{
             width: 1.6em;
@@ -413,45 +507,41 @@
         .x-thumb:before {
             width: 1.7em;
             height:1.7em;
-            top:  -.06em;
+            top:  0 !important;
             left: -.06em;
-            box-shadow: inset 0 2px 1px white, inset 0 -2px 1px white ;
-            background-color: #dfdfdf !important;
-            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,  from(#dfdfdf), to(#ffffff));
+            background-color:  $beer-secondary-color !important;
+            background-image: none;
+            border-radius: 0;
         }
+
         .x-toggle-on {
-            background-color: #369aee;
-            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,  from(#007fea), to(#6EAFE6));
-            -webkit-box-shadow:  inset .4em .9em .1em 0 rgba(0,0,0,0.05), inset .1em .1em .3em 0 rgba(0,0,0,0.4);
-            box-shadow: inset .4em .9em .1em 0 rgba(0,0,0,0.1), inset .1em .1em .3em 0 rgba(0,0,0,0.4);
+            background-color: $beer-main-color;
+            background-image: none;
         }
-        .x-toggle-on:before {
+
+        .x-toggle-on-before{
             position:absolute;
-            content:'ON';
             font-size: 1.0em;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing:-.05em;
-            color: #fff;
-            left: 1em;
             top: .28em;
+        }            
+        .x-toggle-on:before {
+            @extend .x-toggle-on-before;
+            content:'ON';
+            color: #FFF;
+            left: 1em;
         }
         .x-toggle-off {
-            background-color: #fff !important;
+            background-color: #FAFAFA !important;
             background-image: none;
-            -webkit-box-shadow:  inset -.4em .9em .1em 0 rgba(0,0,0,0.05), inset -.1em .1em .3em 0 rgba(0,0,0,0.4);
-            box-shadow: inset -.4em .9em .1em 0 rgba(0,0,0,0.1), inset -.1em .1em .3em 0 rgba(0,0,0,0.4);
         }
         .x-toggle-off:before {
-            position:absolute;
+            @extend .x-toggle-on-before;
             content:'OFF';
-            font-size: 1.0em;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            letter-spacing:-.05em;
             color: #999;
             left: 2em;
-            top: .28em;
         }
     }
 
@@ -616,59 +706,6 @@
     margin-top: 2.7em;
 }
 
-/* List badge */
-
-.badge_image_small {
-    float: left;
-    border: 2px solid #EEE;
-    opacity: 0.25;
-}
-
-.badge_image_small.active {
-    float: left;
-    border: 2px solid #EEE;
-    opacity: 1;
-}
-
-.badge-list-text.active {
-    position: relative;
-    left: 10px;
-    padding-right: 10px;
-    color: black;
-}
-
-.badge-list-text {
-    position: relative;
-    left: 10px;
-    padding-right: 10px;
-    color: gray;
-}
-
-/* Badge detail */
-
-.badge-image-big {
-    position: relative;
-    border: 2px solid #EEE;
-    left: 50%;
-    margin-left: -100px;
-}
-
-.badge-detail {
-    position: relative;
-
-    width: 300px;
-    left: 50%;
-    margin-left: -150px;
-}
-
-.badge-title {
-    font-size: 18pt;
-}
-
-.badge-description {
-    font-size: 14pt;
-    padding-top: 10px;
-}
 
 .avatar, .avatar1, .avatar2 {
   width: 100px;
@@ -698,8 +735,12 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 1px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Fixes */
-#ext-button-1 { margin: 5px; }
+/* Fixes TO DO, questo fa schifo */
+#ext-button-1,
+#ext-button-3,
+#ext-button-4,
+#ext-button-5,
+ { margin: 5px; }
 
 /*
 

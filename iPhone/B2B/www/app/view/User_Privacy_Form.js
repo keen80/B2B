@@ -68,6 +68,6 @@ Ext.define('B2B.view.User_Privacy_Form', {
         this.fireEvent("privacyLogoutCommand", this);
     },
     onCancelButtonTap: function(){
-    	this.fireEvent("cancelCommand", this);
+    	this.fireEvent("privacyBackCommand", this);
     }
 });

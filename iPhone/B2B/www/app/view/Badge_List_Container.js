@@ -35,6 +35,7 @@ Ext.define('B2B.view.Badge_List_Container', {
 		},
 		badgeList = {
 			xtype: "badgelistcomponent",
+			id: 'badgelist',
 			store: Ext.getStore("Badges_Ajax"),
 			ui: 'round'
 		};

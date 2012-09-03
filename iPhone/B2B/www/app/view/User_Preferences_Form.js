@@ -14,6 +14,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 
 	initialize: function(){
 		this.callParent(arguments);
+		var me = this;
 
 		var savePreferencesButton = {
 			text: i18n.app.BTN_SAVE,
@@ -53,9 +54,10 @@ Ext.define('B2B.view.User_Preferences_Form', {
 					xtype: 'iostogglefield',
 					name: 'enableNotification',
 					label: i18n.app.FORM_NOTIFICATIONENABLE,
+					labelWidth: '50%',
 					listeners: {
 						change: function (slider, thumb, newValue, oldValue) {
-						   HH.log("Notification Toggle");
+						   HH.log("TODO: Notification Toggle");
 						}
 					}
 				}
@@ -66,6 +68,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 			id: 'twitterToggle',
 			name: 'shareTwitter',
 			label: i18n.app.FORM_SHARETWITTER,
+			labelWidth: '50%',
 			listeners: {
 				change: function (slider, thumb, newValue, oldValue) {
 					if (oldValue == 0) {
@@ -82,6 +85,7 @@ Ext.define('B2B.view.User_Preferences_Form', {
 			id: 'facebookToggle',
 			name: 'shareFacebook',
 			label: i18n.app.FORM_SHAREFACEBOOK,
+			labelWidth: '50%',
 			listeners: {
 				change: function (slider, thumb, newValue, oldValue) {
 					if (oldValue == 0) {
@@ -119,6 +123,6 @@ Ext.define('B2B.view.User_Preferences_Form', {
 		this.fireEvent("toggleFacebookCommand", this, what);
 	},
 	onCancelButtonTap: function() {
-		this.fireEvent("cancelCommand", this);
+		this.fireEvent("backPreferencesCommand", this);
 	}
 });

@@ -32,7 +32,7 @@ Ext.define('B2B.view.Friend', {
 		    ui: 'round'
 		};
 
-		this.add([friendHeader, friendListSearch, friendList]);
+		this.add([/*friendHeader,*/ friendListSearch, friendList]);
 
     }
 });
