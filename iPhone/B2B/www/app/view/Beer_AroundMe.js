@@ -1,4 +1,4 @@
-Ext.define('B2B.view.BeerAroundMe', {
+Ext.define('B2B.view.Beer_AroundMe', {
 	extend: 'Ext.Panel',
 	xtype: 'beeraroundmepanel',
 	config: {

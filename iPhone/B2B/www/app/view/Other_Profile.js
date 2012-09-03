@@ -1,4 +1,4 @@
-Ext.define('B2B.view.OtherProfile', {
+Ext.define('B2B.view.Other_Profile', {
 	extend: 'Ext.Panel',
 	xtype: 'otherprofilepanel',
 	config: {

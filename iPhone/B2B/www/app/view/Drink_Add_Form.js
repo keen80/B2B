@@ -1,4 +1,4 @@
-Ext.define('B2B.view.DrinkAddForm', {
+Ext.define('B2B.view.Drink_Add_Form', {
 	extend: 'Ext.Panel',
 	xtype: 'drinkaddformpanel',
 	config: {
