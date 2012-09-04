@@ -1,0 +1,20 @@
+
+http://mapicons.nicolasmollet.com/category/markers/?custom_color=662d91&style=gradient&zipfile=1
+
+Restaurants  restaurants.png
+Bars & Nightclubs  bar.png
+Art & Culture  artgallery.png
+Sightseeing photo.png
+Beauty  beautysalon.png
+Health  medicine.png
+Gourmet Shopping  farmstand.png
+Well-being/ Fitness  massage.png
+Sports & Leisure  soccer.png
+Pets  pets.png  bags.png
+Accommodation  home.png
+Design Shopping  mall.png
+Fashion Shopping  bags.png
+Outings  music_rock.png
+Scamp  male-2.png
+Lifestyle  group-2.png
+

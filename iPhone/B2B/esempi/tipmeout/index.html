@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TipMeOut</title>
+
+    <!-- CSS -->
+    <!-- @merge all/all.css -->
+    <link rel="stylesheet" type="text/css" href="lib/sencha-touch.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Ext.ux.touch.MultiSelect.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Ext.ux.touch.Rating.css"/>
+    <!-- @end -->
+
+    <!-- Libs -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places,geometry&sensor=false&language=en&v=3.6"></script>
+
+    <script type="text/javascript" src="oninit.js"></script>
+    <!-- @merge all/all.js -->
+	
+    <script type="text/javascript" src="lib/underscore-min.js"></script>
+    <script type="text/javascript" src="lib/phonegap/phonegap-1.0.0-android.js"></script>
+
+    
+
+    <script type="text/javascript" src="lib/sencha-touch.js"></script>
+    <script type="text/javascript" src="lib/ext/ErrorsCatcher.js"></script>
+    
+
+    <script type="text/javascript" src="app/config.js"></script>
+    <script type="text/javascript" src="app/namespaces.js"></script>
+    <script type="text/javascript" src="app/consts.js"></script>
+    <script type="text/javascript" src="app/config_shared.js"></script>
+    <script type="text/javascript" src="lib/ext/TabbedPane.js"></script>
+    <script type="text/javascript" src="lib/ext/TabBarMvc.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/routes.js"></script>
+
+
+    <!-- LOCALES -->
+    <script type="text/javascript" src="lib/i18n/translations.js"></script>
+    <script type="text/javascript" src="lib/i18n/i18n.js"></script>
+    <script type="text/javascript" src="lib/locale/en-sencha.js"></script>
+
+    <script type="text/javascript" src="lib/stacktrace.js"></script>
+    <script type="text/javascript" src="lib/ext/object.js"></script>
+    <script type="text/javascript" src="lib/tmo/application_helper.js"></script>
+    <script type="text/javascript" src="lib/tmo/utils.js"></script>
+    <script type="text/javascript" src="lib/tmo/back_button.js"></script>
+    <script type="text/javascript" src="lib/webdb/WebDBReader.js"></script>
+    <script type="text/javascript" src="lib/webdb/WebDBProxy.js"></script>
+    <script type="text/javascript" src="lib/webdb/WebDBSync.js"></script>
+    <script type="text/javascript" src="lib/tmo/pagination.js"></script>
+    <script type="text/javascript" src="lib/tmo/string.js"></script>
+    <script type="text/javascript" src="lib/tmo/geo.js"></script>
+    <script type="text/javascript" src="lib/tmo/camera.js"></script>
+    <script type="text/javascript" src="lib/ext/selectfield.js"></script>
+    <script type="text/javascript" src="lib/ext/searchfield.js"></script>
+    <script type="text/javascript" src="lib/ext/checkbox.js"></script>
+    <script type="text/javascript" src="lib/ext/list.js"></script>
+    <script type="text/javascript" src="lib/ext/EnhancedStore.js"></script>
+    <script type="text/javascript" src="lib/ext/TimePicker.js"></script>
+    <script type="text/javascript" src="lib/ext/NumberPicker.js"></script>
+    <script type="text/javascript" src="lib/ext/form/TimePicker.js"></script>
+    <script type="text/javascript" src="lib/ext/form/NumberPicker.js"></script>
+    <script type="text/javascript" src="lib/ext/filter.js"></script>
+    <script type="text/javascript" src="lib/ext/infowindow.js"></script>
+    <script type="text/javascript" src="lib/ext/Ext.ux.touch.MapLoader.js"></script>
+    <script type="text/javascript" src="lib/ext/map.js"></script>
+    <script type="text/javascript" src="lib/ext/errors.js"></script>
+    <script type="text/javascript" src="lib/tmo/components/filter_bar.js"></script>
+    <script type="text/javascript" src="lib/tmo/components/stars.js"></script>
+    <script type="text/javascript" src="app/profile.js"></script>
+    <script type="text/javascript" src="app/server.js"></script>
+    <script type="text/javascript" src="lib/ext/form/Ext.ux.touch.MultiSelect.js"></script>
+    <script type="text/javascript" src="lib/ext/form/Ext.ux.touch.Rating.js"></script>
+
+
+    <!-- CONTROLLERS -->
+    <script src="app/controllers/Session.js" type="text/javascript"></script>
+    <script src="app/controllers/Dashboard.js" type="text/javascript"></script>
+    <script src="app/controllers/Search.js" type="text/javascript"></script>
+    <script src="app/controllers/Network.js" type="text/javascript"></script>
+    <script src="app/controllers/Places.js" type="text/javascript"></script>
+    <script src="app/controllers/Events.js" type="text/javascript"></script>
+    <script src="app/controllers/EventsGuests.js" type="text/javascript"></script>
+    <script src="app/controllers/Groups.js" type="text/javascript"></script>
+    <script src="app/controllers/Messages.js" type="text/javascript"></script>
+    <script src="app/controllers/Profile.js" type="text/javascript"></script>
+    <script src="app/controllers/Share.js" type="text/javascript"></script>
+    <script src="app/controllers/Album.js" type="text/javascript"></script>
+    <script src="app/controllers/Tips.js" type="text/javascript"></script>
+    <script src="app/controllers/Comments.js" type="text/javascript"></script>
+    <script src="app/controllers/Settings.js" type="text/javascript"></script>
+    <script src="app/controllers/CheckIns.js" type="text/javascript"></script>
+    <script src="app/controllers/Debug.js" type="text/javascript"></script>
+
+    <!-- MODELS -->
+    <script src="app/models/RelationshipDetail.js" type="text/javascript"></script>
+    <script src="app/models/User.js" type="text/javascript"></script>
+    <script src="app/models/Place.js" type="text/javascript"></script>
+    <script src="app/models/Event.js" type="text/javascript"></script>
+    <script src="app/models/Group.js" type="text/javascript"></script>
+    <script src="app/models/EventGuest.js" type="text/javascript"></script>
+    <script src="app/models/Message.js" type="text/javascript"></script>
+    <script src="app/models/Picture.js" type="text/javascript"></script>
+    <script src="app/models/Tip.js" type="text/javascript"></script>
+    <script src="app/models/Comment.js" type="text/javascript"></script>
+    <script src="app/models/Sms.js" type="text/javascript"></script>
+    <script src="app/models/Email.js" type="text/javascript"></script>
+    <script src="app/models/CheckIn.js" type="text/javascript"></script>
+
+    <script src="app/models/userDetails/UserDetail.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailResidence.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailClub.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailClubType.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailSchool.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailSchoolType.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailProfession.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailEmploymentStatus.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailRelationshipStatus.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailInterest.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailInterestType.js" type="text/javascript"></script>
+    <script src="app/models/userDetails/UserDetailIndustryType.js" type="text/javascript"></script>
+
+    <!-- STORES -->
+    <script src="app/stores/Users.js" type="text/javascript"></script>
+    <script src="app/stores/ConnectUsers.js" type="text/javascript"></script>
+    <script src="app/stores/ObjectCategory.js" type="text/javascript"></script>
+    <script src="app/stores/PlaceBudgets.js" type="text/javascript"></script>
+    <script src="app/stores/PlaceCategories.js" type="text/javascript"></script>
+    <script src="app/stores/EventCategories.js" type="text/javascript"></script>
+    <script src="app/stores/Places.js" type="text/javascript"></script>
+    <script src="app/stores/Events.js" type="text/javascript"></script>
+    <script src="app/stores/Groups.js" type="text/javascript"></script>
+    <script src="app/stores/EventGuests.js" type="text/javascript"></script>
+    <script src="app/stores/Messages.js" type="text/javascript"></script>
+    <script src="app/stores/Pictures.js" type="text/javascript"></script>
+    <script src="app/stores/Tips.js" type="text/javascript"></script>
+    <script src="app/stores/Comments.js" type="text/javascript"></script>
+    <script src="app/stores/UserDetails.js" type="text/javascript"></script>
+    <script src="app/stores/ClubTypes.js" type="text/javascript"></script>
+    <script src="app/stores/SchoolTypes.js" type="text/javascript"></script>
+    <script src="app/stores/EmploymentStatuses.js" type="text/javascript"></script>
+    <script src="app/stores/RelationshipStatuses.js" type="text/javascript"></script>
+    <script src="app/stores/InterestTypes.js" type="text/javascript"></script>
+    <script src="app/stores/IndustryTypes.js" type="text/javascript"></script>
+
+    <!-- VIEWS -->
+    <script type="text/javascript" src="app/views/Viewport.js"></script>
+
+    <script type="text/javascript" src="app/views/shared/headers.js"></script>
+
+    <script type="text/javascript" src="app/views/session/index.js"></script>
+    <script type="text/javascript" src="app/views/session/login.js"></script>
+    <script type="text/javascript" src="app/views/session/new.js"></script>
+    <script type="text/javascript" src="app/views/session/new/connect.js"></script>
+    <script type="text/javascript" src="app/views/session/new/checkin.js"></script>
+    <script type="text/javascript" src="app/views/session/no_connection.js"></script>
+
+    <script type="text/javascript" src="app/views/dashboard/index.js"></script>
+    <script type="text/javascript" src="app/views/dashboard/intro.js"></script>
+
+    <script type="text/javascript" src="app/views/search/index.js"></script>
+
+    <script type="text/javascript" src="app/views/network/index.js"></script>
+    <script type="text/javascript" src="app/views/network/show.js"></script>
+    <script type="text/javascript" src="app/views/network/show/addresses.js"></script>
+    <script type="text/javascript" src="app/views/network/show/events.js"></script>
+    <script type="text/javascript" src="app/views/network/show/people.js"></script>
+    <script type="text/javascript" src="app/views/network/show/profile.js"></script>
+    <script type="text/javascript" src="app/views/network/show/interests.js"></script>
+
+    <script type="text/javascript" src="app/views/places/partials.js"></script>
+    <script type="text/javascript" src="app/views/places/index.js"></script>
+    <script type="text/javascript" src="app/views/places/show.js"></script>
+    <script type="text/javascript" src="app/views/places/show/map.js"></script>
+    <script type="text/javascript" src="app/views/places/filter.js"></script>
+    <script type="text/javascript" src="app/views/places/new/map.js"></script>
+    <script type="text/javascript" src="app/views/places/new/form.js"></script>
+    <script type="text/javascript" src="app/views/places/edit/form.js"></script>
+
+    <script type="text/javascript" src="app/views/events/index.js"></script>
+    <script type="text/javascript" src="app/views/events/show.js"></script>
+    <script type="text/javascript" src="app/views/events/show/map.js"></script>
+    <script type="text/javascript" src="app/views/events/filter.js"></script>
+    <script type="text/javascript" src="app/views/events/form.js"></script>
+    <script type="text/javascript" src="app/views/events/edit/form.js"></script>
+    <script type="text/javascript" src="app/views/events/new/form.js"></script>
+    <script type="text/javascript" src="app/views/events/new/place.js"></script>
+
+    <script type="text/javascript" src="app/views/event_guests/index.js"></script>
+    <script type="text/javascript" src="app/views/event_guests/new/form.js"></script>
+
+    <script type="text/javascript" src="app/views/groups/manage.js"></script>
+    <script type="text/javascript" src="app/views/groups/user.js"></script>
+
+    <script type="text/javascript" src="app/views/messages/index.js"></script>
+    <script type="text/javascript" src="app/views/messages/show.js"></script>
+
+    <script type="text/javascript" src="app/views/profile/partials.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit.js"></script>
+    <script type="text/javascript" src="app/views/profile/show.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/nested_form.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_basic.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_residences.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_clubs.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_schools.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_professions.js"></script>
+    <script type="text/javascript" src="app/views/profile/edit/form_interests.js"></script>
+
+
+    <script type="text/javascript" src="app/views/share/index.js"></script>
+    <script type="text/javascript" src="app/views/share/message.js"></script>
+    <script type="text/javascript" src="app/views/share/groups.js"></script>
+
+    <script type="text/javascript" src="app/views/album/index.js"></script>
+    <script type="text/javascript" src="app/views/album/show.js"></script>
+
+    <script type="text/javascript" src="app/views/tips/new/form.js"></script>
+    <script type="text/javascript" src="app/views/tips/index.js"></script>
+    <script type="text/javascript" src="app/views/tips/show.js"></script>
+    <script type="text/javascript" src="app/views/tips/edit.js"></script>
+
+    <script type="text/javascript" src="app/views/comments/partials.js"></script>
+    <script type="text/javascript" src="app/views/comments/index.js"></script>
+    <script type="text/javascript" src="app/views/comments/form.js"></script>
+    <script type="text/javascript" src="app/views/comments/new/form.js"></script>
+
+    <script type="text/javascript" src="app/views/settings/index.js"></script>
+    <script type="text/javascript" src="app/views/settings/form.js"></script>
+    <script type="text/javascript" src="app/views/settings/form_confidentiality.js"></script>
+    <script type="text/javascript" src="app/views/settings/form_checkin.js"></script>
+    <script type="text/javascript" src="app/views/settings/form_notifications.js"></script>
+    <script type="text/javascript" src="app/views/settings/form_language.js"></script>
+
+    <script type="text/javascript" src="app/views/check_ins/new/form.js"></script>
+    <script type="text/javascript" src="app/views/check_ins/index.js"></script>
+
+    <script type="text/javascript" src="app/views/debug/index.js"></script>
+    <script type="text/javascript" src="lib/jsOAuth-1.3.3.min.js"></script>
+
+    <!-- SHARED -->
+    <script type="text/javascript" src="app/views/shared/components.js"></script>
+    <script type="text/javascript" src="app/views/shared/places.js"></script>
+    <script type="text/javascript" src="app/views/shared/sharing.js"></script>
+    <script type="text/javascript" src="app/views/shared/network.js"></script>
+    <script type="text/javascript" src="app/views/shared/map.js"></script>
+
+    
+    <script type="text/javascript" src="lib/phonegap/android/sms_email_plugin.js"></script>
+    <script type="text/javascript" src="lib/phonegap/android/softkeyboard.js"></script>
+    <script type="text/javascript" src="lib/phonegap/android/childbrowser.js"></script>
+    <script type="text/javascript" src="lib/phonegap/android/PushNotification.js"></script>
+    
+
+    
+
+    
+
+    <!-- ADAPTERS -->
+    <script type="text/javascript" src="lib/tmo/adapters/sms.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/email.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/keyboard.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/twitter.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/facebook.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/PushNotification.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/memstat.js"></script>
+    <script type="text/javascript" src="lib/tmo/adapters/child_browser.js"></script>
+
+    <!-- @end -->
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>if (Ext.is.Desktop && TmoConfig.debug) Tmo.Adapters.facebook.desktop.init()</script>
+
+<textarea id="network-list-tpl" class="x-hidden-display">
+    <div class="global_list">
+        <div class="avatar" style="background-image: url({[Tmo.Utils.thumb(values.thumb_url)]})"></div>
+        <div class="name">
+            {first_name} {last_name}
+            <span class="grey smaller">{[values.primary_group_name_for_current_user ? "("+values.primary_group_name_for_current_user+")":""]}</span>
+        </div>
+        <div class="grey">{[_.compact([values.city, I18n.t("user.relationship_details.addresses_with_count", {count: values.addresses_count}).toLowerCase()]).join(", ")]}</div>
+        <div class="bt"></div>
+        <tpl if="has_shared_obj_text">
+            <div class="grey smaller ta_r">
+                <tpl if="is_my_friend">
+                    <img src="images/icons/friends.png" width="14" height="14" class="lock_icon"/>
+                </tpl>
+                <tpl if="!is_my_friend">
+                    <img src="images/icons/world.png" width="14" height="14" class="lock_icon"/>
+                </tpl>
+                {has_shared_obj_text}
+            </div>
+        </tpl>
+    </div>
+</textarea>
+
+<textarea id="places-list-tpl" class="x-hidden-display">
+
+    <tpl if="values.is_gp == true">
+        <div class="global_list list_add_icon">
+            <div class="avatar google_place" style="background-image: url({gp_icon})"></div>
+            <div class="name">{name}</div>
+            <div class="grey">{[_.compact([formatAddress(values.address, values.number),values.locality]).join(", ")]} {postal_code}</div>
+        </div>
+    </tpl>
+
+    <tpl if="values.is_gp != true">
+        <div class="global_list">
+            <div class="avatar" style="background-image: url({[Tmo.Utils.thumb(values.thumb_url)]})"></div>
+            <div class="name">{name}</div>
+
+            <div class="grey">{[_.compact([formatAddress(values.address, values.number),values.locality]).join(", ")]} {postal_code}</div>
+            <div class="rating">
+                <tpl if="tips_results_count !== 0">
+                    <em>{[Tmo.Utils.stars(values.avg_result)]}</em>
+                </tpl>
+                {[I18n.t("tip", {count: values.tips_results_count})]}{[formatDistanceForPlaces(values.distance)]}
+            </div>
+
+            <tpl if="values.addressbook || values.wishlist">
+                <div class="mutual">
+                    <div><img src="images/icons/list/{[(values.addressbook ? "address_book" : "wishlist")]}.png" alt="network addressbook" /></div>
+                </div>
+            </tpl>
+
+            <div class="bt"></div>
+        </div>
+        </tpl>
+</textarea>
+
+<textarea id="events-list-tpl" class="x-hidden-display">
+    <div class="global_list">
+        <div class="avatar" style="background-image: url({[Tmo.Utils.thumb(values.thumb_url)]})"></div>
+        <div class="name">{name}</div>
+        <div class="grey">{category_name}</div>
+        <div class="grey smaller">{place_raw.name:ellipsis(35)}</div>
+        <div class="grey smaller">{[(new App.models.Event(values)).formattedDates()]} {[I18n.t("support.by")]} {[(new App.models.Event(values)).formattedCreatorName().toPurple()]}</div>
+    </div>
+</textarea>
+
+<textarea id="messages-list-tpl" class="x-hidden-display">
+    <tpl if="values.state === 'unread'">
+        <div class="global_list unread">
+            <div class="avatar" style="background-image: url({[Tmo.Utils.thumb(values.message_sender.thumb_url)]})"></div>
+            <div class="name">{first_line}</div>
+            <div class="grey">{[Tmo.Utils.fDataMsg(values.created_at)]}</div>
+            <div class="grey">{second_line:ellipsis(35)}</div>
+        </div>
+    </tpl>
+    <tpl if="values.state !== 'unread'">
+        <div class="global_list">
+            <div class="avatar" style="background-image: url({[Tmo.Utils.thumb(values.message_sender.thumb_url)]})"></div>
+            <div class="name">{first_line}</div>
+            <div class="grey">{[Tmo.Utils.fDataMsg(values.created_at)]}</div>
+            <div class="grey">{second_line:ellipsis(35)}</div>
+        </div>
+    </tpl>
+</textarea>
+
+</body>
+</html>
