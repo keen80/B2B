@@ -77,7 +77,7 @@
 		38E7C20015F5FBE700447218 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "../www/resources/loading/Default@2x~iphone.png"; sourceTree = "<group>"; };
 		38F5DC7115EF940B00545E11 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "../www/resources/loading/Default~iphone.png"; sourceTree = "<group>"; };
-		F946B91415DE2E83003664FF /* B2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F946B91415DE2E83003664FF /* MeetBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946B91815DE2E83003664FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F946B91A15DE2E83003664FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F946B91C15DE2E83003664FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,7 @@
 		F946B91515DE2E83003664FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F946B91415DE2E83003664FF /* B2B.app */,
+				F946B91415DE2E83003664FF /* MeetBeer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			);
 			name = B2B;
 			productName = B2B;
-			productReference = F946B91415DE2E83003664FF /* B2B.app */;
+			productReference = F946B91415DE2E83003664FF /* MeetBeer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -507,7 +507,7 @@
 					"-Obj-C",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -630,7 +630,7 @@
 					"-Obj-C",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -671,7 +671,7 @@
 					"-Obj-C",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
