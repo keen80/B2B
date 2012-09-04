@@ -79,6 +79,11 @@ var goingTo = {
 			Ext.getStore('Notifications_Ajax').load();
 	},
 	setupDisplayName: function(profile){
+
+		var myLastDrink = Ext.getStore("Drinks_Local").first();
+
+		Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
+
 		HH.log("---> Step: Setup DisplayName thru app");
 		var displayName = utils.getDisplayName(profile.data);
 		//Ext.get("profile_username").setHtml(profile.data.username);
@@ -125,8 +130,32 @@ var utils = {
 		var date = "5 min";
 		return date;
 	},
+	getDrinkString: function(){
+		switch(values.rate){
+			case 0:
+				return this.__(i18n.app.DRINK_TEXT_1_1, values.beerName, values.placeName);
+				break;
+			case 1:
+				return this.__(i18n.app.DRINK_TEXT_1_2, values.beerName, values.placeName);
+				break;
+			case 2:
+				return this.__(i18n.app.DRINK_TEXT_1_3, values.beerName, values.placeName);
+				break;
+			case 3:
+				return this.__(i18n.app.DRINK_TEXT_1_4, values.beerName, values.placeName);
+				break;
+			case 4:
+				return this.__(i18n.app.DRINK_TEXT_1_5, values.beerName, values.placeName);
+				break;
+			case 5:
+				return this.__(i18n.app.DRINK_TEXT_1_6, values.beerName, values.placeName);
+				break;
+			default:
+				return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
+				break;
+		}
+	},
 	getActivityString: function(values){
-		var str;
 		switch(values.type){
 			case 0:
 				return this.__(i18n.app.ACTIVITY_TEXT_0_1, values.displayName, values.friendName);
@@ -141,10 +170,8 @@ var utils = {
 				return this.__(i18n.app.ACTIVITY_TEXT_0_0, values.username, values.friendname);
 				break;
 		}
-		return str;
 	},
 	getNotificationString: function(values){
-		var str;
 		switch(values.type){
 			case 0:
 				return this.__(i18n.app.NOTIFICATION_TEXT_0_1, values.friendName);
@@ -162,7 +189,6 @@ var utils = {
 				return this.__(i18n.app.NOTIFICATION_TEXT_0_0, values.friendName);
 				break;
 		}
-		return str;
 	},
 	getDisplayName: function(json){
 		if (json.displayName){

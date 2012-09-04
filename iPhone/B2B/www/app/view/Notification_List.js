@@ -36,9 +36,9 @@ Ext.define('B2B.view.Notification_List', {
 
                      var str = [
                         "<div class='list-header-small'>",
-                            "<small class='time'>",
+                         /*   "<small class='time'>",
                                 utils.getDate(values),
-                            "</small>",
+                            "</small>",*/
                             "<span class='info'>",
                                 this.getImageURL(values),
                                 values.displayName,

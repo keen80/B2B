@@ -18,7 +18,7 @@ Ext.define("B2B.store.Drinks_Local", {
                 HH.log("Beers Store Callback");
             },
             load:function(el,records, successful){ 
- 
+            
             }
         }
     }
