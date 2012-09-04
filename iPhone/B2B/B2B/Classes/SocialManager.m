@@ -19,6 +19,18 @@
 
 @synthesize facebook = _facebook;
 
++(SocialManager *) sharedSocialManager
+{
+	static SocialManager *socialManager = nil;
+	
+	if (socialManager == nil)
+	{
+		socialManager = [[SocialManager alloc] init];
+	}
+	
+	return socialManager;
+}
+
 -(id) init
 {
 	self = [super init];
@@ -38,34 +50,34 @@
 	[super dealloc];
 }
 
--(void) removeFacebookSession
+-(FBSession *) facebook
 {
-	if (_facebook != nil)
-	{
-		[_facebook release];
-		_facebook = nil;
-	}
-	
-}
-
--(void) createFacebookSession
-{
-	[self removeFacebookSession];
-	
 	if (_facebook == nil)
 	{
         _facebook = [[FBSession alloc] init];
     }
 	
-	if (_facebook.state == FBSessionStateCreatedTokenLoaded)
+	return _facebook;
+}
+
+-(void) createFacebookSession
+{
+	self.facebook = nil;
+	
+	if (self.facebook.state != FBSessionStateCreatedTokenLoaded)
 	{
-		[_facebook openWithCompletionHandler:^(FBSession *session,
+		[self.facebook openWithCompletionHandler:^(FBSession *session,
 														 FBSessionState status,
 														 NSError *error)
 		{
 			//Aggiorno lo stato al ripristino della sessione
 		}];
 	}
+}
+
+-(void) initLogin
+{
+	[self createFacebookSession];
 }
 
 @end

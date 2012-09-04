@@ -18,6 +18,10 @@
 
 @property (nonatomic, retain) FBSession *facebook;
 
++(SocialManager *) sharedSocialManager;
+
 -(void) createFacebookSession;
+
+-(void) initLogin;
 
 @end

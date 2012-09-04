@@ -10,6 +10,12 @@ Ext.define('B2B.view.Place', {
     layout: 'card',
     scrollable: false
 	},
+		   listeners : {
+		   show : function() {
+		   this.geolocation.updateLocation();
+
+		   }
+		   },
 	initialize: function(){
       var me = this;
 
@@ -80,8 +86,8 @@ Ext.define('B2B.view.Place', {
             { xtype: 'spacer' },
             refreshAroundButton
           ]
-      },
-      geo = Ext.create('Ext.util.Geolocation', {
+	};
+	this.geolocation = Ext.create('Ext.util.Geolocation', {
           autoUpdate: false,
           listeners: {
               locationupdate: function(geo) {
@@ -106,8 +112,8 @@ Ext.define('B2B.view.Place', {
                   me.setMasked(false);
               },
               locationerror: function(geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
-                  console.error(message);
-                  me.setMasked(false);
+					console.error(message);
+					me.setMasked(false);
 					   Ext.getStore("Places_Ajax").load();
                   if(confirm(i18n.app.HINT_GEOERROR)){
 //                      alert("TO DO: RELOAD?");
@@ -116,8 +122,8 @@ Ext.define('B2B.view.Place', {
                   }
               }
           }
-      }),
-      placelist = {
+								  });
+      var placelist = {
         xtype: 'placelist',
         id: 'placelist',
         store: Ext.getStore("Places_Ajax"),
@@ -152,12 +158,12 @@ Ext.define('B2B.view.Place', {
 
       /* Done adding comps, start updating loc */
 
-		   geo.updateLocation();
-  },
+		     },
   onRefreshAroundButtonTap: function(){
         this.fireEvent("refreshAroundCommand", this);
   },
   onBackCheckButtonTap: function(){
+		this.geolocation.setAutoUpdate(false);
         this.fireEvent("backCheckCommand", this);
   }
 

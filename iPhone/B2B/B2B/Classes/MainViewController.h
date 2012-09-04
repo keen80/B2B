@@ -8,12 +8,12 @@
 
 #import <Cordova/CDVViewController.h>
 
-#import "SocialManager.h"
+@class WebViewBridge;
 
-@interface MainViewController : CDVViewController <UIApplicationDelegate>
+@interface MainViewController : CDVViewController
 {
 @private
-	SocialManager *socialManager;
+	WebViewBridge *bridge;
 }
 
 @end

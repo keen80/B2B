@@ -10,13 +10,17 @@
 
 #import <Cordova/CDVViewController.h>
 
+@class MainViewController;
+@class SocialManager;
+
 @interface AppDelegate : NSObject <UIApplicationDelegate>
 {
 @private
+	SocialManager *socialManager;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow* window;
-@property (nonatomic, retain) IBOutlet CDVViewController* viewController;
+@property (nonatomic, retain) IBOutlet MainViewController* viewController;
 
 @end
 

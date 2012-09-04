@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 
+#import "WebViewBridge.h"
+
 @implementation MainViewController
 
 -(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -16,31 +18,17 @@
 	
 	if (self)
 	{
-		socialManager = nil;
+		bridge = [[WebViewBridge alloc] init];
 	}
 	
 	return self;
 }
 
-#pragma mark - View lifecycle
-
--(void) viewDidLoad
+-(void) dealloc
 {
-	[super viewDidLoad];
+	[bridge release];
 	
-	if (socialManager == nil)
-	{
-		socialManager = [[SocialManager alloc] init];
-	}
-	
-	[socialManager createFacebookSession];
-}
-
-#pragma mark - UIApplication delegate methods
-
--(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return [socialManager.facebook handleOpenURL:url];
+	[super dealloc];
 }
 
 #pragma UIWebDelegate implementation
@@ -55,9 +43,8 @@
 
 -(BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
-//	NSLog(@"%@", [request.URL absoluteString]);
-	return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+	NSString *stringURL = [[request URL] absoluteString];
+    return ([bridge decodeSelectorWithString:stringURL] && [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType]);
 }
-
 
 @end

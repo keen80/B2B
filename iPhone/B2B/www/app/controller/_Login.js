@@ -12,7 +12,7 @@ Ext.define("B2B.controller._Login", {
 		}
 	},
 	onLoginCommand: function(){
-
+//		   document.location = "selector://targets=socialManager:initLogin";
 		/*
 			Check Auth via AJAX
 
@@ -47,9 +47,9 @@ Ext.define("B2B.controller._Login", {
 
         failure_: function(){
             alert("Could not connect to server.");
-        }   
+        }
+		 
     });
-
 
 	},
 	init: function(){

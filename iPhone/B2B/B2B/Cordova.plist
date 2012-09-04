@@ -30,6 +30,7 @@
 		<string>mt0.googleapis.com</string>
 		<string>maps.gstatic.com</string>
 		<string>maps.google.com</string>
+		<string>192.168.1.7</string>
 	</array>
 	<key>Plugins</key>
 	<dict>

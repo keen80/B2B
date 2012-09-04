@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3870EA5115F5EB110098D90F /* SocialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870EA5015F5EB110098D90F /* SocialManager.m */; };
 		3870EA5415F5EE520098D90F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870EA5315F5EE520098D90F /* FacebookSDK.framework */; };
+		388C106015F606AD00EA676F /* WebViewBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 388C105F15F606AD00EA676F /* WebViewBridge.m */; };
 		38B5BB1A15E8F23600F85CB0 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5BB0715E8F12A00F85CB0 /* libCordova.a */; };
 		38B5BB1C15E8F2A700F85CB0 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 38B5BB1B15E8F2A700F85CB0 /* VERSION */; };
 		38D9D10515E5119A00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
@@ -70,6 +71,8 @@
 		3870EA4F15F5EB110098D90F /* SocialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialManager.h; path = Classes/SocialManager.h; sourceTree = "<group>"; };
 		3870EA5015F5EB110098D90F /* SocialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialManager.m; path = Classes/SocialManager.m; sourceTree = "<group>"; };
 		3870EA5315F5EE520098D90F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		388C105E15F606AC00EA676F /* WebViewBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewBridge.h; path = Classes/WebViewBridge.h; sourceTree = "<group>"; };
+		388C105F15F606AD00EA676F /* WebViewBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewBridge.m; path = Classes/WebViewBridge.m; sourceTree = "<group>"; };
 		38AF912315F1254F007AC08E /* CordovaBuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CordovaBuildSettings.xcconfig; sourceTree = "<group>"; };
 		38B5BAFC15E8F12A00F85CB0 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = B2B/Libraries/Cordova/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		38B5BB1B15E8F2A700F85CB0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = VERSION; path = Libraries/Cordova/VERSION; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				F946B96515DE2E83003664FF /* MainViewController.xib */,
 				3870EA4F15F5EB110098D90F /* SocialManager.h */,
 				3870EA5015F5EB110098D90F /* SocialManager.m */,
+				388C105E15F606AC00EA676F /* WebViewBridge.h */,
+				388C105F15F606AD00EA676F /* WebViewBridge.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				F946B96115DE2E83003664FF /* AppDelegate.m in Sources */,
 				F946B96415DE2E83003664FF /* MainViewController.m in Sources */,
 				3870EA5115F5EB110098D90F /* SocialManager.m in Sources */,
+				388C106015F606AD00EA676F /* WebViewBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

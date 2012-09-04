@@ -12,6 +12,8 @@
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVURLProtocol.h>
 
+#import "SocialManager.h"
+
 @implementation AppDelegate
 
 @synthesize window, viewController;
@@ -38,6 +40,7 @@
 
 -(void) dealloc
 {
+	socialManager = nil;
 	self.viewController = nil;
 	
 	[super dealloc];
@@ -50,6 +53,8 @@
  */
 -(BOOL) application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+	socialManager = [SocialManager sharedSocialManager];
+	
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
     self.window.autoresizesSubviews = YES;
@@ -98,8 +103,6 @@
     return YES;
 }
 
-// this happens while we are running ( in the background, or from within our own app )
-// only valid if B2B-Info.plist specifies a protocol to handle
 -(BOOL) application:(UIApplication*)application handleOpenURL:(NSURL*)url
 {
     if (!url)
@@ -115,6 +118,31 @@
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
     
     return YES;    
+}
+
+-(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+	BOOL ok = [socialManager.facebook handleOpenURL:url];
+	NSLog(@"Ok: %i - %@", ok, socialManager.facebook.accessToken);
+	
+    return [socialManager.facebook handleOpenURL:url];
+}
+
+-(void) applicationWillTerminate:(UIApplication *)application
+{
+    [socialManager.facebook close];
+}
+
+-(void) applicationDidBecomeActive:(UIApplication *)application
+{
+	if (socialManager.facebook.state == FBSessionStateCreatedOpening)
+	{
+        // BUG: for the iOS 6 preview we comment this line out to compensate for a race-condition in our
+        // state transition handling for integrated Facebook Login; production code should close a
+        // session in the opening state on transition back to the application; this line will again be
+        // active in the next production rev
+        //[self.session close]; // so we close our session and start over
+    }
 }
 
 @end
