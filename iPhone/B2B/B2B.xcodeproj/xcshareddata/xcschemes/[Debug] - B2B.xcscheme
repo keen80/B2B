@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F946B91315DE2E83003664FF"
-               BuildableName = "B2B.app"
+               BuildableName = "MeetBeer.app"
                BlueprintName = "B2B"
                ReferencedContainer = "container:B2B.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F946B91315DE2E83003664FF"
-            BuildableName = "B2B.app"
+            BuildableName = "MeetBeer.app"
             BlueprintName = "B2B"
             ReferencedContainer = "container:B2B.xcodeproj">
          </BuildableReference>
@@ -47,13 +47,12 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      enableOpenGLFrameCaptureMode = "0"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F946B91315DE2E83003664FF"
-            BuildableName = "B2B.app"
+            BuildableName = "MeetBeer.app"
             BlueprintName = "B2B"
             ReferencedContainer = "container:B2B.xcodeproj">
          </BuildableReference>
@@ -71,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F946B91315DE2E83003664FF"
-            BuildableName = "B2B.app"
+            BuildableName = "MeetBeer.app"
             BlueprintName = "B2B"
             ReferencedContainer = "container:B2B.xcodeproj">
          </BuildableReference>
