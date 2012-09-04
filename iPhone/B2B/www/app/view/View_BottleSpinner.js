@@ -6,15 +6,15 @@ Ext.define('B2B.view.View_BottleSpinner', {
 		iconCls: 'drink_beerbottle',
 		styleHtmlContent: true,
        // cls: 'slidableToolbar',
-       layout: {type:'fit',align:'stretch'},
+       layout: {type:'fit', align:'stretch'},
        items: [
             {
                 xtype: 'container',
                 id: 'bottlegame',
-                flex:1,
+              //  flex:1,
                 html: [
-                    '<div id="rules" >',
-                        '<p>RULES ARE EASY</p>',
+                    '<div id="rules">',
+                        i18n.app.TEXT_BOTTLEGAME,
                     '</div>',
                 ].join("")
             }
@@ -38,20 +38,24 @@ Ext.define('B2B.view.View_BottleSpinner', {
             }
         };
 
-        var button = {
+        var startgamebutton = {
             xtype: 'button',
-            docked: 'bottom',
+            ui: 'action',
             id: "startgamebutton",
-            label: "START",
-            height: 100,
+            text: i18n.app.BTN_PLAY,
+            height: 50,
+            margin: 30,
+            width: '80%',
             handler: this.startGame
         }
 
-        this.add([viewbottlespinnertoolbar, button]);
+        this.add([viewbottlespinnertoolbar, startgamebutton]);
     },
     startGame: function(){
-
         var playground = Ext.getCmp('bottlegame');
+        var startgamebutton = Ext.getCmp('startgamebutton');
+        startgamebutton.destroy();
+
         playground.setHtml([
                     '<div id="playground" style="display: block; ">',
                         '<div id="shadow"> </div>',
@@ -141,8 +145,8 @@ Ext.define('B2B.view.View_BottleSpinner', {
             window.scrollTo(0, 1);
             centerx = window.innerWidth/2;
             centery = window.innerHeight/2;
-            var x = (centerx - 150);
-            var y = (centery - 150);
+            var x = (centerx - 140);
+            var y = (centery - 60);
             bottle.style.left = x + "px";
             bottle.style.top = y + "px";
             shadow.style.left = (x+8) + "px";

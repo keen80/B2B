@@ -793,6 +793,10 @@
 
 /* SPIN BOTTLE ************************************************************* */
 
+#bottlegame{
+    background: transparent url(../bg/beergame.png) no-repeat center center;
+}
+
 #bottle {
     width: 300px; height: 100px;
     position: absolute;
@@ -814,6 +818,18 @@
     -webkit-transform: rotateZ(-50deg);
 }
 
+#rules{
+    font-weight: bold;
+    padding: 200px 20px 20px 20px;
+    h1{
+        color: $beer-main-color;
+        text-shadow: 0px 2px 2px #000;
+        font-size: 30px;
+    }
+
+}
+
+/*
 .spinin {
     -webkit-animation-name: 'in';
     -webkit-animation-duration: 2.0s;
@@ -827,6 +843,9 @@
         -webkit-transform: scaleX(1.0) scaleY(1.0);
     }
 }
+*/
+
+
 
 
 

@@ -1,7 +1,7 @@
 3.2.1 (Media Mark)
-d80d5e5cd30b6b67421478e71223de712e4fbf58
+a3d5b87a2d2d25cee6058f53da114bd66090705f
 o:Sass::Tree::RootNode
-:@template"˘∫
+:@template"º
 /* BASE COLOR SETUPS  ***************************************************** */
  
     /*
@@ -796,6 +796,10 @@ d80d5e5cd30b6b67421478e71223de712e4fbf58
 
 /* SPIN BOTTLE ************************************************************* */
 
+#bottlegame{
+    background: transparent url(../bg/beergame.png) no-repeat center center;
+}
+
 #bottle {
     width: 300px; height: 100px;
     position: absolute;
@@ -817,6 +821,18 @@ d80d5e5cd30b6b67421478e71223de712e4fbf58
     -webkit-transform: rotateZ(-50deg);
 }
 
+#rules{
+    font-weight: bold;
+    padding: 200px 20px 20px 20px;
+    h1{
+        color: $beer-main-color;
+        text-shadow: 0px 2px 2px #000;
+        font-size: 30px;
+    }
+
+}
+
+/*
 .spinin {
     -webkit-animation-name: 'in';
     -webkit-animation-duration: 2.0s;
@@ -830,6 +846,9 @@ d80d5e5cd30b6b67421478e71223de712e4fbf58
         -webkit-transform: scaleX(1.0) scaleY(1.0);
     }
 }
+*/
+
+
 
 
 
@@ -998,7 +1017,7 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 @include beer-iconmask('smiley_friends');
 @include beer-iconmask('smiley_friend_add');
 @include beer-iconmask('position');:@options{ :
-@linei:@has_childrenT:@children[Ωo:Sass::Tree::CommentNode
+@linei:@has_childrenT:@children[æo:Sass::Tree::CommentNode
 :
 @type:normal:@value["S/* BASE COLOR SETUPS  ***************************************************** */;@;i;
 [ o;
@@ -1939,55 +1958,74 @@ o;,
 [o;2;%i ;o; ;;3;"5px;@;@;i;4;5;
 [ ;["margino;
 ;;;["T/* SPIN BOTTLE ************************************************************* */;@;i;
-[ o;$;%i ;&["#bottle;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@ê;*[o;>;)@ê;i;["bottle;i;i;@;i;	T;
+[ o;$;%i ;&["#bottlegame;'o;(;)" ;*[o;+;*[o;,
+;-0;.o;/;0{ ;)@ê;*[o;>;)@ê;i;["bottlegame;i;i;@;i;	T;
+[o;2;%i ;o;9	;[
+o; 	;;3;"transparent;@;io; 	;;3;"url(../bg/beergame.png);@;io; 	;;3;"no-repeat;@;io; 	;;3;"center;@;io; 	;;3;"center;@;i;@;<;=;i;@;i;4;5;
+[ ;["backgroundo;$;%i ;&["#bottle;'o;(;)" ;*[o;+;*[o;,
+;-0;.o;/;0{ ;)@∞;*[o;>;)@∞;i ;["bottle;i ;i ;@;i ;	T;
 [o;2;%i ;o; ;;3;"
-300px;@;@;i;4;5;
+300px;@;@;i!;4;5;
 [ ;["
 widtho;2;%i ;o; ;;3;"
-100px;@;@;i;4;5;
-[ ;["heighto;2;%i ;o; ;;3;"absolute;@;@;i;4;5;
-[ ;["positiono;2;%i ;o; ;;3;"	10px;@;@;i;4;5;
+100px;@;@;i!;4;5;
+[ ;["heighto;2;%i ;o; ;;3;"absolute;@;@;i";4;5;
+[ ;["positiono;2;%i ;o; ;;3;"	10px;@;@;i#;4;5;
 [ ;["	lefto;2;%i ;o; ;;3;"
-150px;@;@;i;4;5;
+150px;@;@;i#;4;5;
 [ ;["topo;
-;;;["/* initial rotation */;@;i ;
-[ o;2;%i ;o;:;;{ ;@;#0;i!;6[o;;[ ;["deg;i…;"-50deg;@;i!;"rotateZ;@;i!;4;5;
+;;;["/* initial rotation */;@;i$;
+[ o;2;%i ;o;:;;{ ;@;#0;i%;6[o;;[ ;["deg;i…;"-50deg;@;i%;"rotateZ;@;i%;4;5;
 [ ;["-webkit-transformo;$;%i ;&[".normal;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@œ;*[o;1;)@œ;i#;["normal;i#;i#;@;i#;	T;
+;-0;.o;/;0{ ;)@Ô;*[o;1;)@Ô;i';["normal;i';i';@;i';	T;
 [o;2;%i ;o;9	;[
-o; 	;;3;"transparent;@;i$o; 	;;3;"url(../img/bottle.png);@;i$o; 	;;3;"no-repeat;@;i$o; 	;;3;"	left;@;i$o; 	;;3;"top;@;i$;@;<;=;i$;@;i$;4;5;
+o; 	;;3;"transparent;@;i(o; 	;;3;"url(../img/bottle.png);@;i(o; 	;;3;"no-repeat;@;i(o; 	;;3;"	left;@;i(o; 	;;3;"top;@;i(;@;<;=;i(;@;i(;4;5;
 [ ;["backgroundo;$;%i ;&[".blurred;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@Ô;*[o;1;)@Ô;i&;["blurred;i&;i&;@;i&;	T;
+;-0;.o;/;0{ ;)@;*[o;1;)@;i*;["blurred;i*;i*;@;i*;	T;
 [o;2;%i ;o;9	;[
-o; 	;;3;"transparent;@;i'o; 	;;3;" url(../img/bottle_blur.png);@;i'o; 	;;3;"no-repeat;@;i'o; 	;;3;"	left;@;i'o; 	;;3;"top;@;i';@;<;=;i';@;i';4;5;
+o; 	;;3;"transparent;@;i+o; 	;;3;" url(../img/bottle_blur.png);@;i+o; 	;;3;"no-repeat;@;i+o; 	;;3;"	left;@;i+o; 	;;3;"top;@;i+;@;<;=;i+;@;i+;4;5;
 [ ;["backgroundo;$;%i ;&["#shadow;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@;*[o;>;)@;i);["shadow;i);i);@;i);	T;
+;-0;.o;/;0{ ;)@/;*[o;>;)@/;i-;["shadow;i-;i-;@;i-;	T;
 [o;2;%i ;o; ;;3;"
-300px;@;@;i*;4;5;
+300px;@;@;i.;4;5;
 [ ;["
 widtho;2;%i ;o; ;;3;"
-100px;@;@;i*;4;5;
-[ ;["heighto;2;%i ;o; ;;3;"	18px;@;@;i+;4;5;
+100px;@;@;i.;4;5;
+[ ;["heighto;2;%i ;o; ;;3;"	18px;@;@;i/;4;5;
 [ ;["	lefto;2;%i ;o; ;;3;"
-175px;@;@;i+;4;5;
-[ ;["topo;2;%i ;o; ;;3;"absolute;@;@;i,;4;5;
+175px;@;@;i/;4;5;
+[ ;["topo;2;%i ;o; ;;3;"absolute;@;@;i0;4;5;
 [ ;["positiono;2;%i ;o;9	;[
-o; 	;;3;"transparent;@;i-o; 	;;3;""url(../img/bottle_shadow.png);@;i-o; 	;;3;"no-repeat;@;i-o; 	;;3;"	left;@;i-o; 	;;3;"top;@;i-;@;<;=;i-;@;i-;4;5;
-[ ;["backgroundo;2;%i ;o;:;;{ ;@;#0;i.;6[o;;[ ;["deg;i…;"-50deg;@;i.;"rotateZ;@;i.;4;5;
-[ ;["-webkit-transformo;$;%i ;&[".spinin;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@Z;*[o;1;)@Z;i1;["spinin;i1;i1;@;i1;	T;
-[o;2;%i ;o; ;;3;"	'in';@;@;i2;4;5;
-[ ;["-webkit-animation-nameo;2;%i ;o; ;;3;"	2.0s;@;@;i3;4;5;
-[ ;["-webkit-animation-durationo:Sass::Tree::DirectiveNode
-;["@-webkit-keyframes "	'in'" ;@;i6;	T;
-[o;$;%i ;&["	from;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@|;*[o;7	;80;)@|;i7;["	from;i7;i7;@;i7;	T;
-[o;2;%i ;o;9	;[o;:;;{ ;@;#0;i8;6[o;;@@;[ ;f4;"4;@;i8;"scaleXo;:;;{ ;@;#0;i8;6[o;;@@;[ ;f4;"4;@;i8;"scaleYo;:;;{ ;@;#0;i8;6[o;;[ ;["deg;i¥;"180deg;@;i8;"rotateZ;@;<;=;i8;@;i8;4;5;
-[ ;["-webkit-transformo;$;%i ;&["to;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@´;*[o;7	;80;)@´;i:;["to;i:;i:;@;i:;	T;
-[o;2;%i ;o;9	;[o;:;;{ ;@;#0;i;;6[o;;@@;[ ;f1;"1;@;i;;"scaleXo;:;;{ ;@;#0;i;;6[o;;@@;[ ;f1;"1;@;i;;"scaleY;@;<;=;i;;@;i;;4;5;
-[ ;["-webkit-transformo;
+o; 	;;3;"transparent;@;i1o; 	;;3;""url(../img/bottle_shadow.png);@;i1o; 	;;3;"no-repeat;@;i1o; 	;;3;"	left;@;i1o; 	;;3;"top;@;i1;@;<;=;i1;@;i1;4;5;
+[ ;["backgroundo;2;%i ;o;:;;{ ;@;#0;i2;6[o;;[ ;["deg;i…;"-50deg;@;i2;"rotateZ;@;i2;4;5;
+[ ;["-webkit-transformo;$;%i ;&["#rules;'o;(;)" ;*[o;+;*[o;,
+;-0;.o;/;0{ ;)@z;*[o;>;)@z;i5;["
+rules;i5;i5;@;i5;	T;
+[o;2;%i ;o; ;;3;"	bold;@;@;i6;4;5;
+[ ;["font-weighto;2;%i ;o; ;;3;"200px 20px 20px 20px;@;@;i7;4;5;
+[ ;["paddingo;$;%i ;&["h1;'o;(;)" ;*[o;+;*[o;,
+;-0;.o;/;0{ ;)@ñ;*[o;7	;80;)@ñ;i8;["h1;i8;i8;@;i8;	T;
+[o;2;%i ;o;	;@;i9;"beer_main_color;"beer-main-color;@;i9;4;5;
+[ ;["
+coloro;2;%i ;o; ;;3;"0px 2px 2px #000;@;@;i:;4;5;
+[ ;["text-shadowo;2;%i ;o; ;;3;"	30px;@;@;i;;4;5;
+[ ;["font-sizeo;
+;;;["/*
+.spinin {
+    -webkit-animation-name: 'in';
+    -webkit-animation-duration: 2.0s;
+}
+
+@-webkit-keyframes 'in' {
+    from {
+        -webkit-transform: scaleX(4.0) scaleY(4.0) rotateZ(180deg);
+    }
+    to {
+        -webkit-transform: scaleX(1.0) scaleY(1.0);
+    }
+}
+*/;@;i@;
+[ o;
 ;;;["®	/*
 /* Adding ui theme
 @include sencha-toolbar-ui('gray-light',rgb(200, 200, 200),'matte');
@@ -2087,65 +2125,65 @@ o; 	;;3;"transparent;@;i-o; 	;;3;""url(../img/bottle_shadow.png);@;
 ****************
 http://www.slideshare.net/senchainc/theming-sencha-touch
 
-*/ */;@;iA;
+*/ */;@;iT;
 [ o:Sass::Tree::ImportNode
-;0;@;i´;
+;0;@;iæ;
 [ :@imported_filename"sencha-touch/default/allo;
 ;;;["t/* You may remove any of the following modules that you
- * do not use in order to create a smaller css file. */;@;i≠;
-[ o;?;;{ ;@;#0;iØ;
-[ ;6[ ;"sencha-panelo;?;;{ ;@;#0;i∞;
-[ ;6[ ;"sencha-buttonso;?;;{ ;@;#0;i±;
-[ ;6[ ;"sencha-sheeto;?;;{ ;@;#0;i≤;
-[ ;6[ ;"sencha-pickero;?;;{ ;@;#0;i≥;
-[ ;6[ ;"sencha-tabso;?;;{ ;@;#0;i¥;
-[ ;6[ ;"sencha-toolbaro;?;;{ ;@;#0;iµ;
+ * do not use in order to create a smaller css file. */;@;i¿;
+[ o;?;;{ ;@;#0;i¬;
+[ ;6[ ;"sencha-panelo;?;;{ ;@;#0;i√;
+[ ;6[ ;"sencha-buttonso;?;;{ ;@;#0;iƒ;
+[ ;6[ ;"sencha-sheeto;?;;{ ;@;#0;i≈;
+[ ;6[ ;"sencha-pickero;?;;{ ;@;#0;i∆;
+[ ;6[ ;"sencha-tabso;?;;{ ;@;#0;i«;
+[ ;6[ ;"sencha-toolbaro;?;;{ ;@;#0;i»;
 [ ;6[ ;"sencha-toolbar-formso;
-;;;["$/* @include sencha-indexbar; */;@;i∂;
-[ o;?;;{ ;@;#0;i∑;
-[ ;6[ ;"sencha-listo;?;;{ ;@;#0;i∏;
+;;;["$/* @include sencha-indexbar; */;@;i…;
+[ o;?;;{ ;@;#0;i ;
+[ ;6[ ;"sencha-listo;?;;{ ;@;#0;iÀ;
 [ ;6[ ;"sencha-layouto;
-;;;["#/*@include sencha-carousel; */;@;iπ;
-[ o;?;;{ ;@;#0;i∫;
+;;;["#/*@include sencha-carousel; */;@;iÃ;
+[ o;?;;{ ;@;#0;iÕ;
 [ ;6[ ;"sencha-formo;
-;;;["!/*@include sencha-msgbox; */;@;iª;
-[ o;?;;{ ;@;#0;iº;
+;;;["!/*@include sencha-msgbox; */;@;iŒ;
+[ o;?;;{ ;@;#0;iœ;
 [ ;6[ ;"sencha-loading-spinnero;
-;;;["(/* Your custom code goes here... */;@;iæ;
-[ o;?;;{ ;@;#0;iø;
-[ ;6[ ;"sencha-list-pullrefresho;?;;{ ;@;#0;i¬;
-[ ;6[o; 	;;!;"beermain;@;i¬o;	;@;i¬;"beer_main_color;"beer-main-coloro; 	;;!;"	flat;@;i¬;"sencha-toolbar-uio;?;;{ ;@;#0;i√;
-[ ;6[o; 	;;!;"beersecondary;@;i√o;	;@;i√;"beer_secondary_color;"beer-secondary-coloro; 	;;!;"	flat;@;i√;"sencha-toolbar-uio;?;;{ ;@;#0;iƒ;
-[ ;6[o; 	;;!;"beerneutral;@;iƒo;	;@;iƒ;"beer_neutral_color;"beer-neutral-coloro; 	;;!;"	flat;@;iƒ;"sencha-toolbar-uio;?;;{ ;@;#0;i≈;
-[ ;6[o; 	;;!;"beermain;@;i≈o;	;@;i≈;"beer_main_color;"beer-main-coloro; 	;;!;"	flat;@;i≈;"sencha-button-uio;?;;{ ;@;#0;i∆;
-[ ;6[o; 	;;!;"beersecondary;@;i∆o;	;@;i∆;"beer_secondary_color;"beer-secondary-coloro; 	;;!;"	flat;@;i∆;"sencha-button-uio;?;;{ ;@;#0;i«;
-[ ;6[o; 	;;!;"beerneutral;@;i«o;	;@;i«;"beer_neutral_color;"beer-neutral-coloro; 	;;!;"	flat;@;i«;"sencha-button-uio;
-;;;["/** To Do da rimuovere */;@;i ;
-[ o;?;;{ ;@;#0;iÀ;
+;;;["(/* Your custom code goes here... */;@;i—;
+[ o;?;;{ ;@;#0;i“;
+[ ;6[ ;"sencha-list-pullrefresho;?;;{ ;@;#0;i’;
+[ ;6[o; 	;;!;"beermain;@;i’o;	;@;i’;"beer_main_color;"beer-main-coloro; 	;;!;"	flat;@;i’;"sencha-toolbar-uio;?;;{ ;@;#0;i÷;
+[ ;6[o; 	;;!;"beersecondary;@;i÷o;	;@;i÷;"beer_secondary_color;"beer-secondary-coloro; 	;;!;"	flat;@;i÷;"sencha-toolbar-uio;?;;{ ;@;#0;i◊;
+[ ;6[o; 	;;!;"beerneutral;@;i◊o;	;@;i◊;"beer_neutral_color;"beer-neutral-coloro; 	;;!;"	flat;@;i◊;"sencha-toolbar-uio;?;;{ ;@;#0;iÿ;
+[ ;6[o; 	;;!;"beermain;@;iÿo;	;@;iÿ;"beer_main_color;"beer-main-coloro; 	;;!;"	flat;@;iÿ;"sencha-button-uio;?;;{ ;@;#0;iŸ;
+[ ;6[o; 	;;!;"beersecondary;@;iŸo;	;@;iŸ;"beer_secondary_color;"beer-secondary-coloro; 	;;!;"	flat;@;iŸ;"sencha-button-uio;?;;{ ;@;#0;i⁄;
+[ ;6[o; 	;;!;"beerneutral;@;i⁄o;	;@;i⁄;"beer_neutral_color;"beer-neutral-coloro; 	;;!;"	flat;@;i⁄;"sencha-button-uio;
+;;;["/** To Do da rimuovere */;@;i›;
+[ o;?;;{ ;@;#0;iﬁ;
 [ ;6[o; 	;;!;"
-chat4;@;iÀ;"pictos-iconmasko;?;;{ ;@;#0;iÃ;
-[ ;6[o; 	;;!;"	flag;@;iÃ;"pictos-iconmasko;?;;{ ;@;#0;iÕ;
-[ ;6[o; 	;;!;"refresh;@;iÕ;"pictos-iconmasko;?;;{ ;@;#0;iŒ;
-[ ;6[o; 	;;!;"compose;@;iŒ;"pictos-iconmasko;";@;#0;i–;	T;
-[o;$;%i ;&[	".x-tab .x-button-icon.o;	;@;i—;"	name;"	name".,
-  .x-button .x-button-icon.x-icon-mask.o;	;@;i“;"	name;"	name;@;i“;	T;
-[o;2;%i ;o;:;;{ ;@;#0;i”;6[o;	;@;i”;"theme_name;"theme-nameo:Sass::Script::Operation
-:@operator:	plus:@operand2o; 	;;!;"	.png;@;i”;@;i”:@operand1o;J
-;K;L;Mo;	;@;i”;"	name;"	name;@;i”;No; 	;;!;"
-beer/;@;i”;"theme_image;@;i”;4;5;
-[ ;["-webkit-mask-image;6[[o;;@;"	name;"	name0;"beer-iconmasko;?;;{ ;@;#0;i◊;
-[ ;6[o; 	;;!;"alert_attention;@;i◊;"beer-iconmasko;?;;{ ;@;#0;iÿ;
-[ ;6[o; 	;;!;"check_yes;@;iÿ;"beer-iconmasko;?;;{ ;@;#0;iŸ;
-[ ;6[o; 	;;!;"contacts;@;iŸ;"beer-iconmasko;?;;{ ;@;#0;i⁄;
-[ ;6[o; 	;;!;"cog_settings_gear;@;i⁄;"beer-iconmasko;?;;{ ;@;#0;i€;
-[ ;6[o; 	;;!;"drink_beerbottle;@;i€;"beer-iconmasko;?;;{ ;@;#0;i‹;
-[ ;6[o; 	;;!;"drink_beerpint;@;i‹;"beer-iconmasko;?;;{ ;@;#0;i›;
-[ ;6[o; 	;;!;"drink_beerpint_add;@;i›;"beer-iconmasko;?;;{ ;@;#0;iﬁ;
-[ ;6[o; 	;;!;"flag_nationality_event;@;iﬁ;"beer-iconmasko;?;;{ ;@;#0;iﬂ;
-[ ;6[o; 	;;!;"slider;@;iﬂ;"beer-iconmasko;?;;{ ;@;#0;i‡;
-[ ;6[o; 	;;!;"star_favorite_round;@;i‡;"beer-iconmasko;?;;{ ;@;#0;i·;
-[ ;6[o; 	;;!;"position;@;i·;"beer-iconmasko;?;;{ ;@;#0;i‚;
-[ ;6[o; 	;;!;"smiley_happy;@;i‚;"beer-iconmasko;?;;{ ;@;#0;i„;
-[ ;6[o; 	;;!;"smiley_friends;@;i„;"beer-iconmasko;?;;{ ;@;#0;i‰;
-[ ;6[o; 	;;!;"smiley_friend_add;@;i‰;"beer-iconmasko;?;;{ ;@;#0;iÂ;
-[ ;6[o; 	;;!;"position;@;iÂ;"beer-iconmask
+chat4;@;iﬁ;"pictos-iconmasko;?;;{ ;@;#0;iﬂ;
+[ ;6[o; 	;;!;"	flag;@;iﬂ;"pictos-iconmasko;?;;{ ;@;#0;i‡;
+[ ;6[o; 	;;!;"refresh;@;i‡;"pictos-iconmasko;?;;{ ;@;#0;i·;
+[ ;6[o; 	;;!;"compose;@;i·;"pictos-iconmasko;";@;#0;i„;	T;
+[o;$;%i ;&[	".x-tab .x-button-icon.o;	;@;i‰;"	name;"	name".,
+  .x-button .x-button-icon.x-icon-mask.o;	;@;iÂ;"	name;"	name;@;iÂ;	T;
+[o;2;%i ;o;:;;{ ;@;#0;iÊ;6[o;	;@;iÊ;"theme_name;"theme-nameo:Sass::Script::Operation
+:@operator:	plus:@operand2o; 	;;!;"	.png;@;iÊ;@;iÊ:@operand1o;I
+;J;K;Lo;	;@;iÊ;"	name;"	name;@;iÊ;Mo; 	;;!;"
+beer/;@;iÊ;"theme_image;@;iÊ;4;5;
+[ ;["-webkit-mask-image;6[[o;;@;"	name;"	name0;"beer-iconmasko;?;;{ ;@;#0;iÍ;
+[ ;6[o; 	;;!;"alert_attention;@;iÍ;"beer-iconmasko;?;;{ ;@;#0;iÎ;
+[ ;6[o; 	;;!;"check_yes;@;iÎ;"beer-iconmasko;?;;{ ;@;#0;iÏ;
+[ ;6[o; 	;;!;"contacts;@;iÏ;"beer-iconmasko;?;;{ ;@;#0;iÌ;
+[ ;6[o; 	;;!;"cog_settings_gear;@;iÌ;"beer-iconmasko;?;;{ ;@;#0;iÓ;
+[ ;6[o; 	;;!;"drink_beerbottle;@;iÓ;"beer-iconmasko;?;;{ ;@;#0;iÔ;
+[ ;6[o; 	;;!;"drink_beerpint;@;iÔ;"beer-iconmasko;?;;{ ;@;#0;i;
+[ ;6[o; 	;;!;"drink_beerpint_add;@;i;"beer-iconmasko;?;;{ ;@;#0;iÒ;
+[ ;6[o; 	;;!;"flag_nationality_event;@;iÒ;"beer-iconmasko;?;;{ ;@;#0;iÚ;
+[ ;6[o; 	;;!;"slider;@;iÚ;"beer-iconmasko;?;;{ ;@;#0;iÛ;
+[ ;6[o; 	;;!;"star_favorite_round;@;iÛ;"beer-iconmasko;?;;{ ;@;#0;iÙ;
+[ ;6[o; 	;;!;"position;@;iÙ;"beer-iconmasko;?;;{ ;@;#0;iı;
+[ ;6[o; 	;;!;"smiley_happy;@;iı;"beer-iconmasko;?;;{ ;@;#0;iˆ;
+[ ;6[o; 	;;!;"smiley_friends;@;iˆ;"beer-iconmasko;?;;{ ;@;#0;i˜;
+[ ;6[o; 	;;!;"smiley_friend_add;@;i˜;"beer-iconmasko;?;;{ ;@;#0;i¯;
+[ ;6[o; 	;;!;"position;@;i¯;"beer-iconmask
