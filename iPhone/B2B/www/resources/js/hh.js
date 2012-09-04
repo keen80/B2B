@@ -189,6 +189,20 @@ var utils = {
 		if (interval > 1) return interval + "m ";
 		return Math.floor(seconds) + "s";
 	},
+	getReverseGeo: function(lat, lon, what){
+		var locationString = "";
+		var geocoder = new google.maps.Geocoder();
+		var latlng = new google.maps.LatLng(lat, lon);
+		if(geocoder){
+		    geocoder.geocode({"latLng": latlng}, function (results, status) {
+		         if (status == google.maps.GeocoderStatus.OK ) {
+		         	if(typeof( what ) != "undefined"){
+		         		what.setHtml(results[0].formatted_address);
+		         	}
+		         }
+			});
+		}
+	},
 	getCountryFromCode: function(value){
 		return (_.find(i18n.countries, function(state){ return state.value === value.toUpperCase();})||"").text;
 	},
@@ -206,6 +220,12 @@ var utils = {
 	},
 	getBeerCodeFromType: function(text) {
 		return (_.find(i18n.beertypes, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
+	},
+	getLocationCategoryFromCode: function(value) {
+		return (_.find(i18n.locationCategory, function(type){ return type.value === value;})||"").text;
+	},
+	getCodeFromLocationCategory: function(text) {
+		return (_.find(i18n.locationCategory, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
 	}
 }
 

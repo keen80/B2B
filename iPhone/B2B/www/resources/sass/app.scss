@@ -19,6 +19,7 @@
 
     $fontsize_medium: 94%;
     $fontsize_small: 80%;
+    $fontsize_small_px: 12px;
     $fontsize_xsmall: 70%;
 
     //$active-color: #FFBC00;
@@ -108,6 +109,16 @@
             border: 1px solid #AAA;
         }
 
+        @mixin indent-list64{
+            margin-left: 58px;
+            margin-top: 4px;
+        }
+
+        @mixin indent-list32{
+            margin-left: 38px;
+            margin-top: 2px;
+        }
+
 
 /* LAYOUT ***************************************************************** */
     
@@ -117,6 +128,8 @@
         overflow: hidden;
         margin: 0;
     }
+
+    .clear { clear:both;}
 
     .x-slidenavigation-container{
         -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -226,11 +239,11 @@
 
     strong{
         font-weight: bold;
-        color: #69B;
+        color: #000;
     }
 
     .hilite{
-        color: #118da1;
+        color: $beer-main-color;
     }
 
     .x-field-input{
@@ -345,6 +358,8 @@
 
     #placesearchinfobar{
         @extend .infobar;
+       // background: url("../icons/position.png") left center;
+       // background-size: 10px;
     }
 
     #foursquare_logo{
@@ -462,13 +477,11 @@
 
     /* SMALL LIST  */
 
-
     .small-list{
         min-height: 30px;
-
-
+        font-size: $fontsize_small_px;
         .list-header{
-            margin-left: 58px;
+            @include indent-list64;
             .time{
                 position: relative;
                 float: right;
@@ -487,10 +500,25 @@
                 }
             }
         }
+        .list-header-small{
+            @extend .list-header;
+            @include indent-list32;
+        }
         .list-text{
-            margin-left: 58px;
+            @include indent-list64;
             word-wrap: break-word;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
+            clear:both;
+            color: #999;
+            font-size: 11px;
+        }
+        .list-text-notification{
+            @include indent-list32;
+            word-wrap: break-word;
+            margin-bottom: 4px;
+            clear:both;
+            color: #999;
+            font-size: 12px;
         }
         .photo{
             clear: both;
@@ -500,23 +528,45 @@
             @include dark-border;
         }
         .list-footer{
-            text-align: right;
-            .like{
-                padding: 2px 10px 2px 30px;
+            .subtext{
+                color: #AAA;
+                font-size: 11px;
+                position: relative;
+            }
+            .location-category{
+                @extend .subtext;
+                @include indent-list32;
+                float: left;
+            }
+            .lowerbox{
+                padding: 1px 10px 0px 30px;
                 margin: 1px;
                 @include dark-border;
-                background: url("../icons/smiley_laughing.png") no-repeat top left;
-                background-size: 20px;
+                background-size: 18px;
                 -webkit-border-radius: 5px;
                 border-radius: 5px;
                 opacity: 0.3;
+                position: relative;
+                float: right;
             }
-            .like:hover{
+            .like{
+                @extend .lowerbox;
+                background: url("../icons/smiley_laughing.png") no-repeat top left;
+            }
+            .like:active{
+                opacity: 1 !important;
+            }
+            .drinkins{
+                @extend .lowerbox;
+                background: url("../icons/beer.png") no-repeat top left;
+            }
+            .drinkins:active{
                 opacity: 1 !important;
             }
         }
     }
-
+/* DA SMANTELLARE PIANO PIANO
+*/
     .small-list-text, .medium-list-text, .small-list-subtext{
         position: relative;
         left: 10px;
@@ -531,12 +581,12 @@
         font-size: 16px;
     }
 
-    .avatar_small, .avatar_medium, .mapMiniDrink{
+    .avatar_small{
         float: left;
         border: 2px solid #EEE;
     }
 
-    .small-list-right, .small-list-drinkedin{
+    .small-list-right{
         float: right;
         font-size: 11px;
         color: #AAA;

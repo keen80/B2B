@@ -100,8 +100,8 @@ Ext.define('B2B.view.Place', {
                   //geoStore.getProxy().extraParams.long = geo.getLongititude();
                   geoStore.getProxy().setExtraParam('lat', geo.getLatitude());
                   geoStore.getProxy().setExtraParam('lon', geo.getLongitude());
-						   HH.log('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
-//                  if(infobar) infobar.setHtml('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
+						      HH.log('lat: '+ geo.getLatitude()+' , '+'lon:'+geo.getLongitude());
+                  utils.getReverseGeo(geo.getLatitude(), geo.getLongitude(), infobar);
                   geoStore.load();
                   me.setMasked(false);
               },
@@ -143,8 +143,8 @@ Ext.define('B2B.view.Place', {
         align: 'stretch',
         items: [
             mapplace,
-				placesearchinfobar,
-			placelist
+      			placesearchinfobar,
+      			placelist
         ]
       };
 

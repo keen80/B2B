@@ -169,6 +169,7 @@
 
 		"HINT_LOADING": "Loading...",
 		"HINT_GEOLOAD": "Hold on, We are figuring out where are you...",
+		"HINT_LOCATIONINFOBAR": "<strong>Approx:</strong> Lat: <span class='hilite'>%1</span>, Lng: <span class='hilite'>%2</span>",
 		"HINT_GEOERROR": "Sorry, We cannot retrieve your location, want to retry?",
 		"HINT_CAREFULLY": "Use Carefully and at your own risk!",
 		"HINT_EMAIL": "Please, set a valid Email: it will be used for your password retrieval!",
@@ -198,25 +199,25 @@
 							"</ol>",
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 
-		"ACTIVITY_TEXT_0_0": "Know what? %1 is doing somethin!",
-		"ACTIVITY_TEXT_0_1": "<strong>%1</strong> is now friend with <strong>%2</strong>",
-		"ACTIVITY_TEXT_1_0": "<strong>%1</strong> was at <strong>%2 drinking <strong>%3</strong>",
-		"ACTIVITY_TEXT_1_1": "<strong>%1</strong> has a wonderful <strong>%2</strong> in <strong>%3</strong>",
-		"ACTIVITY_TEXT_1_2": "<strong>%1</strong> has a good <strong>%2</strong> in <strong>%3</strong>",
-		"ACTIVITY_TEXT_1_3": "<strong>%1</strong> has a nice <strong>%2</strong> in <strong>%3</strong>",
-		"ACTIVITY_TEXT_1_4": "<strong>%1</strong> has a bad <strong>%2</strong> in <strong>%3</strong>",
-		"ACTIVITY_TEXT_1_5": "<strong>%1</strong> has the worst <strong>%2</strong> in <strong>%3</strong> in the life",
-		"ACTIVITY_TEXT_2_1": "<strong>%1</strong> has joined <strong>%2</strong>",
-		"ACTIVITY_TEXT_3_1": "<strong>%1</strong> has commented <strong>%3</strong>",
-		"ACTIVITY_TEXT_4_1": "<strong>%1</strong> has changed the profile picture",
-		"ACTIVITY_TEXT_5_1": "<strong>%1</strong> has written a message on <strong>%2</strong> page",
-		"ACTIVITY_TEXT_6_1": "<strong>%1</strong> likes <strong>%2</strong>",
+		"ACTIVITY_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
+		"ACTIVITY_TEXT_0_1": "<strong class='hilite'>%1</strong> is now friend with <strong class='hilite'>%2</strong>",
+		"ACTIVITY_TEXT_1_0": "<strong class='hilite'>%1</strong> was at <strong class='hilite'>%2 drinking <strong class='hilite'>%3</strong>",
+		"ACTIVITY_TEXT_1_1": "<strong class='hilite'>%1</strong> has a wonderful <strong class='hilite'>%2</strong> in <strong class='hilite'>%3</strong>",
+		"ACTIVITY_TEXT_1_2": "<strong class='hilite'>%1</strong> has a good <strong class='hilite'>%2</strong> in <strong class='hilite'>%3</strong>",
+		"ACTIVITY_TEXT_1_3": "<strong class='hilite'>%1</strong> has a nice <strong class='hilite'>%2</strong> in <strong class='hilite'>%3</strong>",
+		"ACTIVITY_TEXT_1_4": "<strong class='hilite'>%1</strong> has a bad <strong class='hilite'>%2</strong> in <strong class='hilite'>%3</strong>",
+		"ACTIVITY_TEXT_1_5": "<strong class='hilite'>%1</strong> has the worst <strong class='hilite'>%2</strong> in <strong class='hilite'>%3</strong> in the life",
+		"ACTIVITY_TEXT_2_1": "<strong class='hilite'>%1</strong> has joined <strong class='hilite'>%2</strong>",
+		"ACTIVITY_TEXT_3_1": "<strong class='hilite'>%1</strong> has commented <strong class='hilite'>%2</strong>",
+		"ACTIVITY_TEXT_4_1": "<strong class='hilite'>%1</strong> has changed the profile picture",
+		"ACTIVITY_TEXT_5_1": "<strong class='hilite'>%1</strong> has written a message on <strong class='hilite'>%2</strong> page",
+		"ACTIVITY_TEXT_6_1": "<strong class='hilite'>%1</strong> likes <strong class='hilite'>%2</strong>",
 
-		"NOTIFICATION_TEXT_0_0": "Know what? <strong>%1</strong> is doing somethin!",
-		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong> has sent You a message!",
-		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong> has sent You a message!",
-		"NOTIFICATION_TEXT_2_1": "<strong>%1</strong> has commented your DrinkIn",
-		"NOTIFICATION_TEXT_3_1": "Great! The last <strong>%1</strong> has unlocked the <strong>%2</strong>!",
+		"NOTIFICATION_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
+		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong class='hilite'> has sent You a message!",
+		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong class='hilite'> has sent You a message!",
+		"NOTIFICATION_TEXT_2_1": "<strong>%1</strong class='hilite'> has commented your DrinkIn",
+		"NOTIFICATION_TEXT_3_1": "Great! The last <strong class='hilite'>%1</strong> has unlocked the <strong class='hilite'>%2</strong>!",
 
 		"Z": "Puppa Code"
 	},
@@ -567,6 +568,27 @@
 		{ "text": "Scotland", "value": "SCO"},
 		{ "text": "Wales", "value": "WAL"},
 		{ "text": "Ex Yugoslavia", "value": "YUG"}
-	]
+	],
+
+	"locationCategory": [
+		{"text": "Other Great Outdoors", "value": "4bf58dd8d48988d162941735" },
+		{"text": "Gas Station / Garage", "value": "4bf58dd8d48988d113951735" },
+		{"text": "Restaurant", "value": "4bf58dd8d48988d1c4941735" },
+		{"text": "Hotel Bar", "value": "4bf58dd8d48988d1d5941735" },
+		{"text": "Mountain", "value": "4eb1d4d54b900d56c88a45fc" },
+		{"text": "Steakhouse", "value": "4bf58dd8d48988d1cc941735" },
+		{"text": "General Travel", "value": "4bf58dd8d48988d1f6931735" },
+		{"text": "Pool", "value": "4bf58dd8d48988d15e941735" },
+		{"text": "Café", "value": "4bf58dd8d48988d16d941735" },
+		{"text": "Bed & Breakfast", "value": "4bf58dd8d48988d1f8931735" },
+		{"text": "Nightclub", "value": "4bf58dd8d48988d11f941735" },
+		{"text": "Italian Restaurant", "value": "4bf58dd8d48988d110941735" },
+		{"text": "General Entertainment", "value": "4bf58dd8d48988d1f1931735" },
+		{"text": "Breakfast Spot", "value": "4bf58dd8d48988d143941735" },
+		{"text": "Pub", "value": "4bf58dd8d48988d11b941735" },
+		{"text": "Hotel Pool", "value": "4bf58dd8d48988d132951735" },
+		{"text": "Indie Movie Theater", "value": "4bf58dd8d48988d17e941735" }
+	],
+
 
 };

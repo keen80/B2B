@@ -16,7 +16,7 @@ Ext.define('B2B.view.Activity_List', {
         emptyText: '</pre><div class="list-empty-text">'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</div><pre>',
         itemTpl: new Ext.XTemplate([
                 "<div class='{[this.getClass(values)]}'>",
-                "{[this.getTextString(values)]}",
+                    "{[this.getTextString(values)]}",
                 "</div>"
             ].join(""),
             {
@@ -47,7 +47,7 @@ Ext.define('B2B.view.Activity_List', {
                                 utils.getDate(values),
                             "</small>",
                             "<span class='info'>",
-                               this.getAvatarURL(values),
+                                this.getAvatarURL(values),
                                 values.displayName,
                             "</span>",
                         "</div>",
@@ -61,7 +61,8 @@ Ext.define('B2B.view.Activity_List', {
                             "<span class='like'>",
                                 values.like,
                             "</span>",
-                       "</div>"
+                       "</div>",
+                       "<div class='clear'></div>"
                     ].join("");
 
                     return str;

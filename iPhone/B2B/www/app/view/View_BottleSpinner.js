@@ -145,8 +145,8 @@ Ext.define('B2B.view.View_BottleSpinner', {
             window.scrollTo(0, 1);
             centerx = window.innerWidth/2;
             centery = window.innerHeight/2;
-            var x = (centerx - 140);
-            var y = (centery - 60);
+            var x = (centerx - 110);
+            var y = (centery - 50);
             bottle.style.left = x + "px";
             bottle.style.top = y + "px";
             shadow.style.left = (x+8) + "px";

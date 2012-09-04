@@ -13,16 +13,19 @@ Ext.define('B2B.view.Notification_List', {
             }
         ],
         emptyText: '</pre><div class="friend-list-empty-text">'+utils.__(i18n.app.TEXT_NOFRIENDFOUND)+'</div><pre>',
-       // itemTpl: '</pre><div class="list-item-title">{username}</div><div class="list-item-narrative">{firstName} {lastName}</div><pre>',
-        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage(values)]}{[this.getTextString(values)]}</div>",
+         itemTpl: new Ext.XTemplate([
+                "<div class='{[this.getClass(values)]}'>",
+                    "{[this.getTextString(values)]}",
+                "</div>",
+            ].join(""),
             {
-            	getClass: function(values){
-            		return "notification-list-item small-list notification-type"+values.type;
-            	},
-                getImage: function(values){
-                    var str = '<img class="avatar_small" src="';
+                getClass: function(values){
+                    return "place-list-item small-list";
+                },
+                getImageURL: function(values){
+                    var str = '<img class="avatar" src="';
                     if (_.isEmpty(values.image)){
-                         str += 'resources/img/default/blank_avatar_32.png';
+                         str += HH.default_place32;
                      }else{
                         str+=values.image;
                      }
@@ -30,11 +33,25 @@ Ext.define('B2B.view.Notification_List', {
                     return str;
                 },
                 getTextString: function(values){
-                    var str = "<div class='small-list-text'>";
-                    str += utils.getNotificationString(values);
-                    str += "</div>";
+
+                     var str = [
+                        "<div class='list-header-small'>",
+                            "<small class='time'>",
+                                utils.getDate(values),
+                            "</small>",
+                            "<span class='info'>",
+                                this.getImageURL(values),
+                                values.displayName,
+                            "</span>",
+                        "</div>",
+                        "<p class='list-text-notification'>",
+                            utils.getNotificationString(values),
+                        "</p>",
+                        "<div class='clear'></div>"
+                    ].join("");
                     return str;
                 }
-            })
+            }
+        )
 	}
-});
+}); 
