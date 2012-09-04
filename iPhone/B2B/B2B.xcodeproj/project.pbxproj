@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3870EA5115F5EB110098D90F /* SocialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870EA5015F5EB110098D90F /* SocialManager.m */; };
+		3870EA5415F5EE520098D90F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870EA5315F5EE520098D90F /* FacebookSDK.framework */; };
+		388C106015F606AD00EA676F /* WebViewBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 388C105F15F606AD00EA676F /* WebViewBridge.m */; };
 		38B5BB1A15E8F23600F85CB0 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5BB0715E8F12A00F85CB0 /* libCordova.a */; };
 		38B5BB1C15E8F2A700F85CB0 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 38B5BB1B15E8F2A700F85CB0 /* VERSION */; };
 		38D9D10515E5119A00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
 		38D9D10715E511AD00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
 		38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
-		38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D9D10315E5119A00ACCA70 /* Localizable.strings */; };
+		38E7C20115F5FBE700447218 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38E7C1FE15F5FBE700447218 /* Localizable.strings */; };
 		38F5DC7215EF940B00545E11 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */; };
 		38F5DC7315EF940B00545E11 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F5DC7115EF940B00545E11 /* Default~iphone.png */; };
 		F946B91915DE2E83003664FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F946B91815DE2E83003664FF /* Foundation.framework */; };
@@ -65,14 +68,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3870EA4F15F5EB110098D90F /* SocialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialManager.h; path = Classes/SocialManager.h; sourceTree = "<group>"; };
+		3870EA5015F5EB110098D90F /* SocialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialManager.m; path = Classes/SocialManager.m; sourceTree = "<group>"; };
+		3870EA5315F5EE520098D90F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		388C105E15F606AC00EA676F /* WebViewBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewBridge.h; path = Classes/WebViewBridge.h; sourceTree = "<group>"; };
+		388C105F15F606AD00EA676F /* WebViewBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewBridge.m; path = Classes/WebViewBridge.m; sourceTree = "<group>"; };
 		38AF912315F1254F007AC08E /* CordovaBuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CordovaBuildSettings.xcconfig; sourceTree = "<group>"; };
 		38B5BAFC15E8F12A00F85CB0 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = B2B/Libraries/Cordova/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		38B5BB1B15E8F2A700F85CB0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = VERSION; path = Libraries/Cordova/VERSION; sourceTree = "<group>"; };
-		38D9D10415E5119A00ACCA70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		38D9D10A15E511E900ACCA70 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/Localizations/it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38E7C1FF15F5FBE700447218 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38E7C20015F5FBE700447218 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38F5DC7015EF940B00545E11 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "../www/resources/loading/Default@2x~iphone.png"; sourceTree = "<group>"; };
 		38F5DC7115EF940B00545E11 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "../www/resources/loading/Default~iphone.png"; sourceTree = "<group>"; };
-		F946B91415DE2E83003664FF /* B2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F946B91415DE2E83003664FF /* MeetBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946B91815DE2E83003664FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F946B91A15DE2E83003664FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F946B91C15DE2E83003664FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,12 +130,31 @@
 				F946B92D15DE2E83003664FF /* SystemConfiguration.framework in Frameworks */,
 				F946B92F15DE2E83003664FF /* MobileCoreServices.framework in Frameworks */,
 				F946B93115DE2E83003664FF /* CoreMedia.framework in Frameworks */,
+				3870EA5415F5EE520098D90F /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3870EA4215F5E8CC0098D90F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3870EA5215F5EE520098D90F /* Facebook */,
+				38B5BAFC15E8F12A00F85CB0 /* CordovaLib.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3870EA5215F5EE520098D90F /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				3870EA5315F5EE520098D90F /* FacebookSDK.framework */,
+			);
+			name = Facebook;
+			path = B2B/Libraries/Facebook;
+			sourceTree = "<group>";
+		};
 		38B5BAFD15E8F12A00F85CB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,10 +174,18 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		38E7C1FD15F5FBE700447218 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				38E7C1FE15F5FBE700447218 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
 		F946B90615DE2E83003664FF = {
 			isa = PBXGroup;
 			children = (
-				38B5BAFC15E8F12A00F85CB0 /* CordovaLib.xcodeproj */,
+				3870EA4215F5E8CC0098D90F /* Libraries */,
 				F946B93215DE2E83003664FF /* B2B */,
 				F946B96F15DE2EAA003664FF /* www */,
 				F946B91715DE2E83003664FF /* Frameworks */,
@@ -161,7 +196,7 @@
 		F946B91515DE2E83003664FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F946B91415DE2E83003664FF /* B2B.app */,
+				F946B91415DE2E83003664FF /* MeetBeer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,9 +246,9 @@
 		F946B93D15DE2E83003664FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38E7C1FD15F5FBE700447218 /* Localizations */,
 				38B5BB1B15E8F2A700F85CB0 /* VERSION */,
 				F946B95A15DE2E83003664FF /* Capture.bundle */,
-				38D9D10315E5119A00ACCA70 /* Localizable.strings */,
 				F946B94E15DE2E83003664FF /* icons */,
 				F946B95515DE2E83003664FF /* splash */,
 			);
@@ -247,6 +282,10 @@
 				F946B96215DE2E83003664FF /* MainViewController.h */,
 				F946B96315DE2E83003664FF /* MainViewController.m */,
 				F946B96515DE2E83003664FF /* MainViewController.xib */,
+				3870EA4F15F5EB110098D90F /* SocialManager.h */,
+				3870EA5015F5EB110098D90F /* SocialManager.m */,
+				388C105E15F606AC00EA676F /* WebViewBridge.h */,
+				388C105F15F606AD00EA676F /* WebViewBridge.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -276,7 +315,7 @@
 			);
 			name = B2B;
 			productName = B2B;
-			productReference = F946B91415DE2E83003664FF /* B2B.app */;
+			productReference = F946B91415DE2E83003664FF /* MeetBeer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -354,10 +393,10 @@
 				38D9D10515E5119A00ACCA70 /* Localizable.strings in Resources */,
 				38D9D10715E511AD00ACCA70 /* Localizable.strings in Resources */,
 				38D9D10915E511BA00ACCA70 /* Localizable.strings in Resources */,
-				38D9D10B15E511E900ACCA70 /* Localizable.strings in Resources */,
 				38B5BB1C15E8F2A700F85CB0 /* VERSION in Resources */,
 				38F5DC7215EF940B00545E11 /* Default@2x~iphone.png in Resources */,
 				38F5DC7315EF940B00545E11 /* Default~iphone.png in Resources */,
+				38E7C20115F5FBE700447218 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +410,8 @@
 				F946B93915DE2E83003664FF /* main.m in Sources */,
 				F946B96115DE2E83003664FF /* AppDelegate.m in Sources */,
 				F946B96415DE2E83003664FF /* MainViewController.m in Sources */,
+				3870EA5115F5EB110098D90F /* SocialManager.m in Sources */,
+				388C106015F606AD00EA676F /* WebViewBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,8 +421,16 @@
 		38D9D10315E5119A00ACCA70 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38D9D10415E5119A00ACCA70 /* en */,
-				38D9D10A15E511E900ACCA70 /* it */,
+			);
+			name = Localizable.strings;
+			path = /Users/maximus/Workspace/Projects/B2B/iPhone/B2B/B2B;
+			sourceTree = "<absolute>";
+		};
+		38E7C1FE15F5FBE700447218 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38E7C1FF15F5FBE700447218 /* en */,
+				38E7C20015F5FBE700447218 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -398,6 +447,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Fabio Poli";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fabio Poli";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/B2B/Libraries/Facebook\"/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -435,13 +485,20 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B2B/B2B-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "B2B/B2B-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -454,8 +511,9 @@
 					"-weak-lSystem",
 					"-all_load",
 					"-Obj-C",
+					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -470,6 +528,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Poli (A329ZH8V5N)";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/B2B/Libraries/Facebook\"/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -512,6 +571,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fabio Poli (A329ZH8V5N)";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/B2B/Libraries/Facebook\"/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -547,7 +607,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -555,6 +618,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "B2B/B2B-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -567,8 +634,9 @@
 					"-weak-lSystem",
 					"-all_load",
 					"-Obj-C",
+					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -581,13 +649,20 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "B2B/B2B-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "B2B/B2B-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/B2B/Libraries/Facebook\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -600,8 +675,9 @@
 					"-weak-lSystem",
 					"-all_load",
 					"-Obj-C",
+					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetBeer;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;

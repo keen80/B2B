@@ -8,13 +8,27 @@
 
 #import "MainViewController.h"
 
+#import "WebViewBridge.h"
+
 @implementation MainViewController
 
-#pragma mark - View lifecycle
-
--(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	
+	if (self)
+	{
+		bridge = [[WebViewBridge alloc] init];
+	}
+	
+	return self;
+}
+
+-(void) dealloc
+{
+	[bridge release];
+	
+	[super dealloc];
 }
 
 #pragma UIWebDelegate implementation
@@ -29,9 +43,8 @@
 
 -(BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
-//	NSLog(@"%@", [request.URL absoluteString]);
-	return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+	NSString *stringURL = [[request URL] absoluteString];
+    return ([bridge decodeSelectorWithString:stringURL] && [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType]);
 }
-
 
 @end

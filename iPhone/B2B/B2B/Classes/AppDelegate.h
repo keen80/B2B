@@ -10,18 +10,17 @@
 
 #import <Cordova/CDVViewController.h>
 
+@class MainViewController;
+@class SocialManager;
+
 @interface AppDelegate : NSObject <UIApplicationDelegate>
 {
-
+@private
+	SocialManager *socialManager;
 }
 
-// invoke string is passed to your app on launch, this is only valid if you 
-// edit B2B-Info.plist to add a protocol
-// a simple tutorial can be found here : 
-// http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-
 @property (nonatomic, retain) IBOutlet UIWindow* window;
-@property (nonatomic, retain) IBOutlet CDVViewController* viewController;
+@property (nonatomic, retain) IBOutlet MainViewController* viewController;
 
 @end
 

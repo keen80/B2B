@@ -8,6 +8,12 @@
 
 #import <Cordova/CDVViewController.h>
 
+@class WebViewBridge;
+
 @interface MainViewController : CDVViewController
+{
+@private
+	WebViewBridge *bridge;
+}
 
 @end
