@@ -29,6 +29,8 @@
 		[cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
         
 		[CDVURLProtocol registerURLProtocol];
+		
+		
 	}
     
     return self;

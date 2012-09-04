@@ -10,11 +10,37 @@
 
 @implementation MainViewController
 
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	
+	if (self)
+	{
+		socialManager = nil;
+	}
+	
+	return self;
+}
+
 #pragma mark - View lifecycle
 
--(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(void) viewDidLoad
 {
-    return [super shouldAutorotateToInterfaceOrientation:interfaceOrientation];
+	[super viewDidLoad];
+	
+	if (socialManager == nil)
+	{
+		socialManager = [[SocialManager alloc] init];
+	}
+	
+	[socialManager createFacebookSession];
+}
+
+#pragma mark - UIApplication delegate methods
+
+-(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [socialManager.facebook handleOpenURL:url];
 }
 
 #pragma UIWebDelegate implementation

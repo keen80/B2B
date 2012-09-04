@@ -8,6 +8,12 @@
 
 #import <Cordova/CDVViewController.h>
 
-@interface MainViewController : CDVViewController
+#import "SocialManager.h"
+
+@interface MainViewController : CDVViewController <UIApplicationDelegate>
+{
+@private
+	SocialManager *socialManager;
+}
 
 @end
