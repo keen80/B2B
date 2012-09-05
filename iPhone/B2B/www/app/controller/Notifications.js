@@ -29,7 +29,25 @@ Ext.define("B2B.controller.Notifications", {
 	onNotificationRead: function(a, b, c, record){
 		/* deselection of the list */
 		setTimeout(function(){a.deselect(b);},500);
-	
+		var user = Ext.getStore("Profile_Local").first().data;
+		//record.data.idNotification
+		 Ext.Ajax.request({
+                        url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/setNotificationRead",
+                        method: "GET",
+                        headers: {
+                        "btUsername": user.idUser,
+                        "btSid" : "puppa"
+                    },
+                        params: {
+                                idUser: user.idUser,
+                                idNotification: record.data.idNotification
+                        },
+                        callback: function(response) {
+                                console.log(response);
+                        }
+                });
+		
+
 		console.error("TODO: Notification Read");
 	},
 	onNotificationReadAll: function(){

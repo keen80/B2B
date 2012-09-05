@@ -25,6 +25,7 @@ Ext.define("B2B.controller.Friends", {
 		}
 	},
 	onSearchFriend: function(){
+		HH.log("puppa");
 		this.getApp().push({
 			xtype: "friendfinderpanel"
 		});

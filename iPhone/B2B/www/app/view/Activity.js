@@ -12,7 +12,14 @@ Ext.define('B2B.view.Activity', {
 	initialize: function(){
 
     	this.callParent(arguments);
-
+        var storeProfile = Ext.getStore("Profile_Local");
+        var storeJSONP=Ext.getStore('Activities_Ajax');
+        var user=storeProfile.first().data;
+        HH.log("LOAD PROFILE FOR ACTIVITY "+user.idUser);
+        storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
+        storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
+        storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+        storeJSONP.load();
         var activityheader = {
             xtype: 'container',
             cls: 'header_img',

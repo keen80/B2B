@@ -11,7 +11,14 @@ Ext.define('B2B.view.Notification', {
 	initialize: function(){
 
     	this.callParent(arguments);
-
+    	var storeProfile = Ext.getStore("Profile_Local");
+        var storeJSONP=Ext.getStore('Notifications_Ajax');
+        var user=storeProfile.first().data;
+        HH.log("LOAD PROFILE FOR notification "+user.idUser);
+        storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
+        storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
+        storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+        storeJSONP.load();
     	var markNotificationAllReadButton = {
 			xtype: "button",
 			text: i18n.app.BTN_MARKALLREAD,

@@ -5,17 +5,16 @@ Ext.define("B2B.store.Notifications_Ajax", {
     config: {
         model: "B2B.model.Notification",
         proxy: {
-            type:'ajax',
-            url:'json/mock_notificationlist.json',
+            //type:'ajax',
+            //url:'json/mock_notificationlist.json',
+            type:'jsonp',
+            url:'http://192.168.1.7:8080/birrettaservice/rest/bserv/listNotification_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
-            },
-            extraParams:{
-                username: 'test'
             }
         },
         autoload: true,
