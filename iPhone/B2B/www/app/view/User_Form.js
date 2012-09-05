@@ -1,7 +1,6 @@
 Ext.define('B2B.view.User_Form', {
 	extend: 'Ext.form.Panel',
 	xtype: 'userform',
-	id: 'userform',
 	requires: [
 		'Ext.form.FieldSet',
 		'Ext.field.Hidden',

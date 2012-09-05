@@ -20,17 +20,28 @@ Ext.define("B2B.controller.Profiles", {
 		}
 	},
 	onShowProfileForm: function(){
+		/*
 		this.getApp().push({
-			xtype: "userform"
+			xtype: "userform",
+			id: "userform"
 		});
 
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-		/*var activatedOnField = Ext.getCmp('activatedOnField');
-		var lastLoginOnField = Ext.getCmp('lastLoginOnField');
-		activatedOnField.setValue(moment(activatedOnField.getValue()).format('dddd, do MMMM YYYY'));
-		lastLoginOnField.setValue(moment(lastLoginOnField.getValue()).format('dddd, do MMMM YYYY'));*/
+*/
+		var userform = {
+			xtype: 'userform',
+			id: 'userform'
+		};
+
+		var profileContainer = this.getProfile();
+		profileContainer.add(userform);
+		var profileForm = this.getProfileForm();
+		profileForm.reset();
+		profileForm.setRecord(Ext.getStore('Profile_Local').first());
+		profileContainer.setActiveItem(2);
+		
 	},
 
 	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {
@@ -53,10 +64,13 @@ Ext.define("B2B.controller.Profiles", {
 				console.log(response);
 			}
 		});
-		this.getApp().pop();
+		var profileContainer = Ext.getCmp('userprofile');
+		profileContainer.remove(Ext.getCmp('userform'));
 	},
 	onBackProfile: function() {
-		this.getApp().pop();
+		//this.getApp().pop();
+		var profileContainer = Ext.getCmp('userprofile');
+		profileContainer.remove(Ext.getCmp('userform'));
 	},
 	onShowPrivacy: function() {
 		var userProfilePrivacy = {
@@ -66,10 +80,7 @@ Ext.define("B2B.controller.Profiles", {
 
 		var profileContainer = this.getProfile();
 		profileContainer.add(userProfilePrivacy);
-		profileContainer.animateActiveItem(2, {
-			type:'slide',
-			direction:'up'
-		});
+		profileContainer.setActiveItem(2);
 	},
 	onShowSettings: function(a){
 
@@ -80,59 +91,10 @@ Ext.define("B2B.controller.Profiles", {
 
 		var profileContainer = this.getProfile();
 		profileContainer.add(userpreferencesform);
-		profileContainer.animateActiveItem(2, {
-			type:'slide',
-			direction:'up'
-		});
-
-		// var a = Ext.getCmp("userprofile");
-		// if (!a.actions){
-		// 	a.actions = Ext.Viewport.add({
-		// 		xtype: 'actionsheet',
-		// 		zIndex: 900,
-		// 		items: [
-		// 			{
-		// 				text: i18n.app.PANEL_PREFERENCES,
-		// 				scope: this,
-		// 				ui: 'decline',
-		// 				handler: function(){
-		// 					a.actions.hide();
-		// 					// this.getApp().push({
-		// 					// 	xtype: "userpreferencesform"
-		// 					// });
-		// 					a.animateActiveItem(1, {
-		// 						type:'slide',
-		// 						direction:'up'
-		// 					});
-		// 				}
-		// 			},
-		// 			{
-		// 				text: i18n.app.PANEL_PRIVACY,
-		// 				scope: this,
-		// 				handler: function(){
-		// 					a.actions.hide();
-		// 					this.getApp().push({
-		// 						xtype: "userprofileprivacyform"
-		// 					});
-		// 				}
-		// 			},
-		// 			{
-		// 				text: i18n.app.BTN_CANCEL,
-		// 				scope: this,
-		// 				handler: function(){
-		// 					a.actions.hide();
-		// 				}
-		// 			}
-		// 		]
-		// 	});
-		// }
-		// a.actions.show();
+		profileContainer.setActiveItem(2);
 	},
 	launch: function(){
 		this.callParent(arguments);
-		/*var storeProfile = Ext.getStore("Profile_Ajax");
-		storeProfile.remove(storeProfile.getRange());
-		storeProfile.load();*/
 	},
 	init: function(){
 		this.callParent(arguments);

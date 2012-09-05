@@ -33,13 +33,20 @@ Ext.define("B2B.controller.Places", {
 		}
 	},
 	onGotoCheckIn: function(){
-		this.getApp().push({
-			xtype: "place",
-			id: "place"
-		});
+		var place = {
+			xtype: 'place',
+			id: 'place'
+		};
+
+		var appcontainer = Ext.getCmp('_app'); //.getProfile();
+		appcontainer.add(place);
+		appcontainer.setActiveItem(2);
+
 	},
 	onBackCheck: function(){
-		this.getApp().pop();
+		/* this.getApp().pop(); */
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.remove(Ext.getCmp('place'));
 	},
 	onBackPlace: function(){
 		this.getApp().pop();

@@ -59,7 +59,7 @@ Ext.define('B2B.view.Activity_List', {
                 	   "</p>",
                        "<div class='list-footer'>",
                             "<span class='like'>",
-                                values.like,
+                                (_.isEmpty(values.like))?0:values.like,
                             "</span>",
                        "</div>",
                        "<div class='clear'></div>"
