@@ -10,7 +10,16 @@ Ext.define('B2B.view.Friend', {
 	},
 	initialize: function(){
     	this.callParent(arguments);
-
+    	var storeProfile = Ext.getStore("Profile_Local");
+    	var storeAjaxFriend=Ext.getStore('Friends_Ajax');
+    	var user=storeProfile.first().data;
+		HH.log("LOAD PROFILE FOR FRIENDS "+user.idUser);
+		storeAjaxFriend.getProxy().setExtraParam('idUser', user.idUser);
+		storeAjaxFriend.getProxy().setExtraParam('btUsername',user.idUser);
+		storeAjaxFriend.getProxy().setExtraParam('btSid','puppa');
+		//Ext.apply(storeAjaxFriend.getProxy().headers, {'btUsername':user.idUser});
+		storeAjaxFriend.load();
+		
         var friendHeader = {
             xtype: 'container',
             cls: 'header_img',

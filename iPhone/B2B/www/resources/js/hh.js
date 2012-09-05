@@ -59,21 +59,19 @@ var goingTo = {
 		var storeProfile = Ext.getStore("Profile_Local");
 		var storeFriend = Ext.getStore('Friends_Local');
 		var storeNotification = Ext.getStore('Notifications_Local');
-
 		var profile = storeProfile.first();
 
 		this.setupDisplayName(profile);
 		this.setupPreferences(profile);
-
 		storeFriend.load();
 		storeNotification.load();
 
 		/*if(toBeer || storeBeer.getCount() < 1)
 			console.log("BeerList is empty or need to be refreshed");
-			Ext.getStore('Beers_Ajax').load(); */
+			Ext.getStore('Beers_Ajax').load(); 
 		if(toFriend || storeFriend.getCount() < 1)
 			HH.log("---> Step: Store_Friend is empty or need to be refreshed");
-			Ext.getStore('Friends_Ajax').load();
+			Ext.getStore('Friends_Ajax').load();*/
 		if(toNotification || storeNotification.getCount() < 1)
 			HH.log("---> Step: Store.Notification is empty or need to be refreshed");
 			Ext.getStore('Notifications_Ajax').load();
