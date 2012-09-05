@@ -1,7 +1,7 @@
 Ext.define("B2B.controller.Privacy", {
 	extend: "Ext.app.Controller",
 	config: {
-		refs: { 
+		refs: {
 			userprofileprivacyform: "userprofileprivacyform",
 			profile: "userprofile",
 			appContainer: "appcontainer",
@@ -12,8 +12,7 @@ Ext.define("B2B.controller.Privacy", {
 				privacyRemoveDataCommand: "onRemoveDataCommand",
 				privacyLogoutCommand: "onLogOutCommand",
 				privacyBackCommand: 'onBackPrivacy'
-			},
-
+			}
 		}
 	},
 	onRemoveDataCommand: function(){
@@ -47,6 +46,9 @@ Ext.define("B2B.controller.Privacy", {
 	onBackPrivacy: function(){
 		var profileContainer = Ext.getCmp('userprofile');
 		profileContainer.remove(Ext.getCmp('userprofileprivacyform'));
+	},
+	launch: function(){
+		this.callParent(arguments);
 	},
 	init: function(){
 		this.callParent(arguments);

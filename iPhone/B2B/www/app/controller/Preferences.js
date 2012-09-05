@@ -3,9 +3,7 @@ Ext.define("B2B.controller.Preferences", {
 	id: "Preferences",
 	config: {
 		refs: {
-			privacyForm: "userprofileprivacyform",
 			preferencesForm: "userpreferencesform",
-			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {
