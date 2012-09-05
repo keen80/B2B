@@ -11,7 +11,14 @@ Ext.define('B2B.view.Badge_List_Container', {
 	},
 	initialize: function() {
 		this.callParent(arguments);
-
+		 var storeProfile = Ext.getStore("Profile_Local");
+        var storeJSONP=Ext.getStore('Badges_Ajax');
+        var user=storeProfile.first().data;
+        HH.log("LOAD PROFILE FOR Badges "+user.idUser);
+        storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
+        storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
+        storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+        storeJSONP.load();
 		var backButton = {
 			text: i18n.app.BTN_BACK,
 			ui: 'back',

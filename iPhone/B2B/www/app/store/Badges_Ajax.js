@@ -4,8 +4,10 @@ Ext.define("B2B.store.Badges_Ajax", {
 	config: {
 		model: "B2B.model.Badge",
 		proxy: {
-			type:'ajax',
-			url:'json/mock_badgelist.json',
+			//type:'ajax',
+			//url:'json/mock_badgelist.json',
+			type:'jsonp',
+            url:'http://192.168.1.7:8080/birrettaservice/rest/bserv/findBadgesUser_jsonp',
 			reader: {
 				type:'json',
 				rootProperty: 'response.body.list',

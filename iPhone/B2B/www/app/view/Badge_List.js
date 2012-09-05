@@ -18,10 +18,10 @@ Ext.define('B2B.view.Badge_List', {
 					var str = "",
 					className = (values.active === true ? " active" : "");
 					str = "<img class='" + className + "' src='";
-					if (_.isEmpty(values.imageUlr)) {
+					if (_.isEmpty(values.image)) {
 						str += HH.default_badge64;
 					}else{
-						str += values.imageUrl;
+						str += values.image;
 					}
 					str += "' width='64' height='64'>";
 					return str;
@@ -30,9 +30,9 @@ Ext.define('B2B.view.Badge_List', {
 				var tpl = "",
 					className = "badge-list-text";
 
-				if (values.title) {
+				if (values.name) {
 					className += (values.active === true ? " active" : "");
-					tpl = "<div class='" + className + "'>" + values.title + "</div>";
+					tpl = "<div class='" + className + "'>" + values.name + "</div>";
 					tpl += "</div>";
 				}
 

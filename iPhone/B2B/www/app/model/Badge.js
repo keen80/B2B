@@ -4,11 +4,14 @@ Ext.define("B2B.model.Badge", {
 	config: {
 		identifier:'uuid',
 		fields: [
-			{ name: 'idBadge', type: 'string' },
-			{ name: 'title', type: 'string' },
-			{ name: 'description', type: 'string' },
-			{ name: 'imageUrl', type: 'string' },
-			{ name: 'active', type: 'boolean' }
+			{ name: 'idBadge', type: 'int' },
+			{ name: 'name', type: 'string' },
+			{ name: 'cod', type: 'int' },
+			{ name: 'category', type: 'int' },
+			{ name: 'image', type: 'string' },
+			//TO DO
+			{ name: 'active', type: 'boolean' },
+			{ name: 'description', type: 'string' }
 		],
 		validations: [
 			{ type: 'presence', field: 'idBadge'}
