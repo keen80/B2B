@@ -2,6 +2,8 @@
 	"app": {
 		"COMMON_ATTENTION": "Attention",
 
+		"ALERT_ERRORCOMMUNICATION": "There was a problem during communication with server. Please, try again later.",
+
 		"PANEL_ABOUTME": "About Me",
 		"PANEL_ACTIVITY": "What\'s New",
 		"PANEL_ADDBEER": "Add a Beer",
@@ -49,6 +51,11 @@
 		"FORM_FEEDBACK": "Feedback",
 
 		"PLACEHOLDER_USERNAME": "Your Username",
+		"PLACEHOLDER_EMAIL": "Your Email",
+		"PLACEHOLDER_DISPLAYNAME": "Your Display Name",
+		"PLACEHOLDER_GENDER": "Your Gender",
+		"PLACEHOLDER_NATIONALITY": "Your Nationality",
+		"PLACEHOLDER_BIRTHDAY": "Your Birthday",
 		"PLACEHOLDER_PASSWORD": "Your Password",
 
 		"BTN_ADDBEER": "Add a Beer",
@@ -91,6 +98,7 @@
 		"BTN_SETTINGS": "Settings",
 		"BTN_PRIVACY": "Privacy",
 		"BTN_CHECKIN": "CheckIn!",
+		"BTN_REGISTER": "Register",
 
 		"CHANGE_BEER": "Change beer",
 

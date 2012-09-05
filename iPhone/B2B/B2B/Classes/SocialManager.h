@@ -10,13 +10,20 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 
+@protocol SocialManagerDelegate <NSObject>
+
+-(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict;
+
+@end
+
 @interface SocialManager : NSObject
 {
 @private
-	FBSession *_facebook;
+	FBRequestConnection *requestConnection;
+	id <SocialManagerDelegate> delegate;
 }
 
-@property (nonatomic, retain) FBSession *facebook;
+@property (nonatomic, assign) id <SocialManagerDelegate> delegate;
 
 +(SocialManager *) sharedSocialManager;
 

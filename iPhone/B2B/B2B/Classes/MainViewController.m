@@ -19,6 +19,7 @@
 	if (self)
 	{
 		bridge = [[WebViewBridge alloc] init];
+		[SocialManager sharedSocialManager].delegate = self;
 	}
 	
 	return self;
@@ -26,9 +27,18 @@
 
 -(void) dealloc
 {
+	[SocialManager sharedSocialManager].delegate = nil;
 	[bridge release];
 	
 	[super dealloc];
+}
+
+-(void) executeJavascriptString:(NSString *)function
+{
+    if (function && ![function isEqualToString:@""])
+    {
+        [self.webView stringByEvaluatingJavaScriptFromString:function];
+    }
 }
 
 #pragma UIWebDelegate implementation
@@ -45,6 +55,20 @@
 {
 	NSString *stringURL = [[request URL] absoluteString];
     return ([bridge decodeSelectorWithString:stringURL] && [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType]);
+}
+
+#pragma mark - SocialManager delegate methods
+
+-(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict
+{
+	NSString *email = [dict valueForKey:@"email"];
+	NSString *displayName = [dict valueForKey:@"name"];
+	NSString *nationality = [dict valueForKey:@"locale"];
+	NSString *gender = [dict valueForKey:@"gender"];
+	NSString *birthDay = [dict valueForKey:@"birthday"];
+	//email, displayName, gender, nationality, birthDay
+	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(\"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", email, displayName, gender, nationality, birthDay];
+	[self executeJavascriptString:string];
 }
 
 @end

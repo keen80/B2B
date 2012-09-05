@@ -31,6 +31,8 @@
 		<string>maps.gstatic.com</string>
 		<string>maps.google.com</string>
 		<string>192.168.1.7</string>
+		<string>graph.facebook.com</string>
+		<string>facebook.com</string>
 	</array>
 	<key>Plugins</key>
 	<dict>

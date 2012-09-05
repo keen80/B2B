@@ -24,7 +24,7 @@ Ext.application({
 
 	views: [
 		'_App', '_Login', '_App_Slider', '_App_Container',
-		'_SplashBeerSearch',
+		'_SplashBeerSearch', '_Register',
 		'Activity', 'Activity_List', 'Activity_List_Detail',
 		'Beer', 'Beer_List', 'Beer_Search', 'Beer_Add_Form', 'Beer_Detail',
 		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent', 'Beer_List_Select',
@@ -72,15 +72,17 @@ Ext.application({
 		Ext.fly('appLoadingIndicator').destroy();
 
 		var profileStore = Ext.getStore("Profile_Local");
-
-		if(profileStore && profileStore.getCount() < 1){
+		if (profileStore && profileStore.getCount() < 1) {
 			HH.log("---+ Check: ProfileStore Empty - Show view._login");
 			Ext.Viewport.add(Ext.create('B2B.view._Login'));
-		}else{
-			HH.log("---+ Check: ProfileStore OK, loading view._App");
-			goingTo.step2("Loading Store.Profile_Ajax");
-			Ext.Viewport.add(Ext.create('B2B.view._App'));
+		} else {
+			// HH.log("---+ Check: ProfileStore OK, loading view._App");
+			// goingTo.step2("Loading Store.Profile_Ajax");
+			// Ext.Viewport.add(Ext.create('B2B.view._App'));
+			var data = profileStore.first().data;
+			utils.generateToken(data, profileStore, Ext.Viewport);
 		}
+//				    loginOnFBCompleted("email", "displayName", "gender", "nationality", "birthDay");
 	},
 	onUpdated: function() {
 		if(window.confirm(i18n.app.HINT_APPLICATIONRELOADED)){

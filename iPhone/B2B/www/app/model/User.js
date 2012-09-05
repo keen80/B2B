@@ -22,6 +22,7 @@ Ext.define("B2B.model.User", {
 			{ name: 'role', type: 'int' },
 			{ name: 'status', type: 'int' },
 			{ name: 'pwdHash', type: 'string' },
+			{ name: 'token', type: 'string' },
 			{ name: 'activatedOn', type: 'date', dateformat: 'c' },
 			{ name: 'lastLoginOn', type: 'date', dateformat: 'c' },
 			{ name: 'favorites', type: 'string', defaultValue: ''},

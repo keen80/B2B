@@ -17,8 +17,6 @@
 
 @implementation SocialManager
 
-@synthesize facebook = _facebook;
-
 +(SocialManager *) sharedSocialManager
 {
 	static SocialManager *socialManager = nil;
@@ -31,47 +29,80 @@
 	return socialManager;
 }
 
--(id) init
-{
-	self = [super init];
-	
-	if (self)
-	{
-		_facebook = nil;
-	}
-	
-	return self;
-}
-
 -(void) dealloc
 {
-	self.facebook = nil;
-	
 	[super dealloc];
-}
-
--(FBSession *) facebook
-{
-	if (_facebook == nil)
-	{
-        _facebook = [[FBSession alloc] init];
-    }
-	
-	return _facebook;
 }
 
 -(void) createFacebookSession
 {
-	self.facebook = nil;
-	
-	if (self.facebook.state != FBSessionStateCreatedTokenLoaded)
+	if (FBSession.activeSession.isOpen)
 	{
-		[self.facebook openWithCompletionHandler:^(FBSession *session,
-														 FBSessionState status,
-														 NSError *error)
-		{
-			//Aggiorno lo stato al ripristino della sessione
-		}];
+        // login is integrated with the send button -- so if open, we send
+        [self requestPersonalInfo];
+    }
+	else
+	{
+        [FBSession openActiveSessionWithPermissions:[NSArray arrayWithObjects:@"email", @"user_birthday", nil]
+                                       allowLoginUI:YES
+                                  completionHandler:^(FBSession *session,
+                                                      FBSessionState status,
+                                                      NSError *error)
+		 {
+			 if (error)
+			 {
+				 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+																 message:error.localizedDescription
+																delegate:nil
+													   cancelButtonTitle:@"OK"
+													   otherButtonTitles:nil];
+				 [alert show];
+			 }
+			 else if (FB_ISSESSIONOPENWITHSTATE(status))
+			 {
+				 [self requestPersonalInfo];
+			 }
+		 }];
+    }
+}
+
+-(void) requestPersonalInfo
+{
+	requestConnection = [[FBRequestConnection alloc] init];
+	
+	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
+	{
+		[self requestCompleted:connection forFbID:@"me" result:result error:error];
+	};
+	
+	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
+												  graphPath:@"me"] autorelease];
+	
+	[requestConnection addRequest:request completionHandler:handler];
+	[requestConnection start];
+}
+
+-(void) requestCompleted:(FBRequestConnection *)connection
+                 forFbID:fbID
+                  result:(id)result
+                   error:(NSError *)error
+{
+    if (requestConnection &&
+        connection != requestConnection)
+	{
+        return;
+    }
+    
+    // clean this up, for posterity
+    [requestConnection release];
+	requestConnection = nil;
+	
+	NSLog(@"%@", result);
+	
+	SEL selector = @selector(facebookLoginCompleted:personalInfo:);
+	if ([self.delegate respondsToSelector:selector])
+	{
+		[self.delegate facebookLoginCompleted:YES personalInfo:result];
 	}
 }
 

@@ -30,7 +30,8 @@
 		"liked": "",
 		"counterFriends": 32,
 		"counterCheckIns": 3,
-		"counterBadges": 2
+		"counterBadges": 2,
+		"token": ""
 		}
 	]
 	}

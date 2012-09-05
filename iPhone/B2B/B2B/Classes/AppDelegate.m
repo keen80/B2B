@@ -11,6 +11,7 @@
 
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVURLProtocol.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 #import "SocialManager.h"
 
@@ -122,20 +123,17 @@
 
 -(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-	BOOL ok = [socialManager.facebook handleOpenURL:url];
-	NSLog(@"Ok: %i - %@", ok, socialManager.facebook.accessToken);
-	
-    return [socialManager.facebook handleOpenURL:url];
+    return [FBSession.activeSession handleOpenURL:url];
 }
 
 -(void) applicationWillTerminate:(UIApplication *)application
 {
-    [socialManager.facebook close];
+    [FBSession.activeSession close];
 }
 
 -(void) applicationDidBecomeActive:(UIApplication *)application
 {
-	if (socialManager.facebook.state == FBSessionStateCreatedOpening)
+	if (FBSession.activeSession.state == FBSessionStateCreatedOpening)
 	{
         // BUG: for the iOS 6 preview we comment this line out to compensate for a race-condition in our
         // state transition handling for integrated Facebook Login; production code should close a

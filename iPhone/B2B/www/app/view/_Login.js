@@ -12,7 +12,7 @@ Ext.define('B2B.view._Login', {
 				xtype: 'fieldset',
 				margin: '50px auto',
 				id: '_loginfieldset',
-				items:[
+				items:[/*
 					{
 						xtype: 'hiddenfield',
 						name: 'dateRequest',
@@ -47,27 +47,17 @@ Ext.define('B2B.view._Login', {
 		                        }
 		                    }
 		                }
-					}
+					}*/
 				]
 			}
-		],
-		listeners : {           
-            element : 'element',
-            delegate : 'a',
-            tap : function(e, t) {
-          		console.log("TEST");
-          		/* TODO: sta cosa non funziona */
-          		e.preventDefault();
-          		e.stopPropagation();
-     		}
-     	}
+		]
 	},
 	initialize: function(){
         this.callParent(arguments);
-        
+
 		var button_Login = {
 			xtype: 'button',
-			id: 'BTN_login',
+			id: 'btn_login',
             width: 150,
             text: 'Log In',
             margin: '15px auto',
@@ -78,9 +68,9 @@ Ext.define('B2B.view._Login', {
 
         Ext.getCmp('_loginfieldset').add([ button_Login]);
     },
-    
+
     onLoginButtonTap: function(){
         this.fireEvent("loginCommand", this);
     }
-    
+
 });

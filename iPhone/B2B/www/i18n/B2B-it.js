@@ -2,6 +2,8 @@ var i18n = {
 	"app": {
 		"COMMON_ATTENTION": "Attention",
 
+		"ALERT_ERRORCOMMUNICATION": "There was a problem during communication with server. Please, try again later.",
+
 		"PANEL_ABOUTME": "About Me",
 		"PANEL_ACTIVITY": "What\'s New",
 		"PANEL_ADDBEER": "Add a Beer",
@@ -49,6 +51,11 @@ var i18n = {
 		"FORM_FEEDBACK": "Feedback",
 
 		"PLACEHOLDER_USERNAME": "Your Username",
+		"PLACEHOLDER_EMAIL": "Your Email",
+		"PLACEHOLDER_DISPLAYNAME": "Your Display Name",
+		"PLACEHOLDER_GENDER": "Your Gender",
+		"PLACEHOLDER_NATIONALITY": "Your Nationality",
+		"PLACEHOLDER_BIRTHDAY": "Your Birthday",
 		"PLACEHOLDER_PASSWORD": "Your Password",
 
 		"BTN_ADDBEER": "Add a Beer",
@@ -65,7 +72,7 @@ var i18n = {
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
 		"BTN_DRINKIN": "Drink In!",
-		"BTN_DRINKLIST": "Drink List",
+		"BTN_DRINKLIST": "My DrinkIns",
 		"BTN_EDIT": "Edit",
 		"BTN_FAVORITES": "Favorites",
 		"BTN_ADDFAVORITE": "Add a Favorite Beer",
@@ -77,6 +84,7 @@ var i18n = {
 		"BTN_ORDERBYALPHA": "Alphabetical",
 		"BTN_ORDERBYSTYLE": "by Style",
 		"BTN_ORDERBYNATION": "by Nation",
+		"BTN_PLAY": "Play!",
 		"BTN_PHOTO": "Take a photo",
 		"BTN_PROFILE": "Tap to Edit!",
 		"BTN_REFRESH": "Refresh",
@@ -90,6 +98,7 @@ var i18n = {
 		"BTN_SETTINGS": "Settings",
 		"BTN_PRIVACY": "Privacy",
 		"BTN_CHECKIN": "CheckIn!",
+		"BTN_REGISTER": "Register",
 
 		"CHANGE_BEER": "Change beer",
 
@@ -188,6 +197,13 @@ var i18n = {
 		"TEXT_LOADINGDISCLAIMER": "All trademarks, service marks, registered marks, or registered service marks are the property of their respective owners",
 		"TEXT_LOADINGCLAIM": "Drink <span class='hilite'>Responsibly</span>, Always.",
 
+		"TEXT_BOTTLEGAME": "<h1>The Beer Bottle Game!</h1>"+
+							"<ol>"+
+								"<li>Find some Friends</li>"+
+								"<li>Get some Beers</li>"+
+								"<li>Truth or Dare?</li>"+
+								"<li>Spin the Bottle!</li>"+
+							"</ol>",
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 
 		"ACTIVITY_TEXT_0_0": "Know what? %1 is doing somethin!",

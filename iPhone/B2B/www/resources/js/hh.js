@@ -50,7 +50,12 @@ var goingTo = {
 	},
 	step2: function(msg){
 		HH.log("---> Step: "+msg);
-		Ext.getStore('Profile_Ajax').load();
+		var profile = Ext.getStore('Profile_Local').first().data;
+		var profileAjax = Ext.getStore('Profile_Ajax');
+		profileAjax.getProxy().setExtraParam("btUsername", profile.idUser);
+		profileAjax.getProxy().setExtraParam("btSid", profile.token);
+		profileAjax.getProxy().setExtraParam("username", profile.username);
+		profileAjax.load();
 		Ext.getStore('Activities_User_Ajax').load();
 		Ext.getStore('Activities_Ajax').load();
 	},
@@ -101,157 +106,6 @@ var goingTo = {
 	*/
 }
 };
-
-/* Utils Global Object*/
-var utils = {
-	/* translate f() a la wordpress */
-	__:	function(CONST_String){
-		if ( _.isUndefined(CONST_String)) CONST_String = "";
-		for (var i = arguments.length - 1; i >= 1; i--) {
-			CONST_String = CONST_String.replace("%"+i, arguments[i]);
-		};
-		return CONST_String;
-	},
-	checkConnection: function(){
-		if(!(navigator.online&&google)){
-			if(i18n){
-				return true;
-			}else {
-				alert(i18n.app.HINT_OFFLINE);
-			};
-			
-			return false;
-		}else{ return true}
-	},
-	getDate: function(date){
-		/* TODO: MOMENT INTEGRATION date */
-		var date = "5 min";
-		return date;
-	},
-	getDrinkString: function(){
-		switch(values.rate){
-			case 0:
-				return this.__(i18n.app.DRINK_TEXT_1_1, values.beerName, values.placeName);
-				break;
-			case 1:
-				return this.__(i18n.app.DRINK_TEXT_1_2, values.beerName, values.placeName);
-				break;
-			case 2:
-				return this.__(i18n.app.DRINK_TEXT_1_3, values.beerName, values.placeName);
-				break;
-			case 3:
-				return this.__(i18n.app.DRINK_TEXT_1_4, values.beerName, values.placeName);
-				break;
-			case 4:
-				return this.__(i18n.app.DRINK_TEXT_1_5, values.beerName, values.placeName);
-				break;
-			case 5:
-				return this.__(i18n.app.DRINK_TEXT_1_6, values.beerName, values.placeName);
-				break;
-			default:
-				return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
-				break;
-		}
-	},
-	getActivityString: function(values){
-		switch(values.type){
-			case 0:
-				return this.__(i18n.app.ACTIVITY_TEXT_0_1, values.displayName, values.friendName);
-				break;
-			case 1:
-				return this.__(i18n.app.ACTIVITY_TEXT_2_1, values.username, values.friendname);
-				break;
-			case 2:
-				return this.__(i18n.app.ACTIVITY_TEXT_1_1, values.displayName, values.beerName, values.placeName);
-				break;
-			default:
-				return this.__(i18n.app.ACTIVITY_TEXT_0_0, values.username, values.friendname);
-				break;
-		}
-	},
-	getNotificationString: function(values){
-		switch(values.type){
-			case 0:
-				return this.__(i18n.app.NOTIFICATION_TEXT_0_1, values.friendName);
-				break;
-			case 1:
-				return this.__(i18n.app.NOTIFICATION_TEXT_1_1, values.friendName);
-				break;
-			case 2:
-				return this.__(i18n.app.NOTIFICATION_TEXT_2_1, values.friendName);
-				break;
-			case 3:
-				return this.__(i18n.app.NOTIFICATION_TEXT_3_1, values.beerName, values.targetName);
-				break;
-			default:
-				return this.__(i18n.app.NOTIFICATION_TEXT_0_0, values.friendName);
-				break;
-		}
-	},
-	getDisplayName: function(json){
-		if (json.displayName){
-			return json.displayName;
-		} else if(json.firstName && json.lastName){
-			return json.firstName + " " + ((json.lastName).charAt(0)).toUpperCase() + ".";
-		}else if(json.firstName){
-			return json.firstName;
-		} else {
-			return json.username;
-		}
-	},
-	getHumanDate: function(date){
-		var seconds = Math.floor(((new Date().getTime()/1000) - date)),
-		interval = Math.floor(seconds / 31536000);
-		if (interval > 1) return interval + "y";
-		interval = Math.floor(seconds / 2592000);
-		if (interval > 1) return interval + "m";
-		interval = Math.floor(seconds / 86400);
-		if (interval >= 1) return interval + "d";
-		interval = Math.floor(seconds / 3600);
-		if (interval >= 1) return interval + "h";
-		interval = Math.floor(seconds / 60);
-		if (interval > 1) return interval + "m ";
-		return Math.floor(seconds) + "s";
-	},
-	getReverseGeo: function(lat, lon, what){
-		var locationString = "";
-		var geocoder = new google.maps.Geocoder();
-		var latlng = new google.maps.LatLng(lat, lon);
-		if(geocoder){
-		    geocoder.geocode({"latLng": latlng}, function (results, status) {
-		         if (status == google.maps.GeocoderStatus.OK ) {
-		         	if(typeof( what ) != "undefined"){
-		         		what.setHtml(results[0].formatted_address);
-		         	}
-		         }
-			});
-		}
-	},
-	getCountryFromCode: function(value){
-		return (_.find(i18n.countries, function(state){ return state.value === value.toUpperCase();})||"").text;
-	},
-	getCodeFromCountry: function(text){
-		return (_.find(i18n.countries, function(state){ return state.text.toUpperCase() === text.toUpperCase();})||"").value;
-	},
-	getBeerStyleFromCode: function(value) {
-		return (_.find(i18n.beerstyles, function(style){ return style.value === value;})||"").text;
-	},
-	getBeerCodeFromStyle: function(text) {
-		return (_.find(i18n.beerstyles, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
-	},
-	getBeerTypeFromCode: function(value) {
-		return (_.find(i18n.beertypes, function(type){ return type.value === value;})||"").text;
-	},
-	getBeerCodeFromType: function(text) {
-		return (_.find(i18n.beertypes, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
-	},
-	getLocationCategoryFromCode: function(value) {
-		return (_.find(i18n.locationCategory, function(type){ return type.value === value;})||"").text;
-	},
-	getCodeFromLocationCategory: function(text) {
-		return (_.find(i18n.locationCategory, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
-	}
-}
 
 HH.log("* Loaded: HH.js");
 HH.log("* Start: Before Init");
