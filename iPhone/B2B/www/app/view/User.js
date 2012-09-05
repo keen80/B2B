@@ -9,7 +9,8 @@ Ext.define('B2B.view.User', {
 	},
 	initialize: function(){
 		this.callParent(arguments);
-		var profileStore
+		var profileStore = Ext.getStore('Profile_Local');
+		var profile = (profileStore.first()).data;
 		var privacyButton = {
 			text: i18n.app.BTN_PRIVACY,
 			ui: 'action',
@@ -51,10 +52,14 @@ Ext.define('B2B.view.User', {
 			flex: 2,
 			html: [
 				'<div class="profile_left_panel">',
-					'<img class="avatar" height="64" width="64" src="'+HH.default_user64+'" />',
+					'<img class="avatar" height="64" width="64" src="'+utils.getUserAvatar()+'" />',
 				'</div>',
 				'<div class="profile_right">',
-					'<p id="profile_username">',
+					'<p class="profile_displaymame">',
+						profile.displayName,
+					'</p>',
+					'<p class="profile_description">',
+						profile.description,
 					'</p>',
 				'</div>',
 			].join(""),
@@ -64,7 +69,9 @@ Ext.define('B2B.view.User', {
 		badgesButton = {
 			id: 'badges_btn',
 			xtype: 'button',
-			ui: 'action',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px",
 			margin: '4px 2px',
 			text: i18n.app.BTN_BADGES,
 			flex: 1,
@@ -74,7 +81,9 @@ Ext.define('B2B.view.User', {
 		drinkListButton = {
 			id: 'drinklist_btn',
 			xtype: 'button',
-			ui: 'action',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px",
 			margin: '4px 2px',
 			text: i18n.app.BTN_DRINKLIST,
 			flex: 1,
@@ -84,7 +93,9 @@ Ext.define('B2B.view.User', {
 		myActivityButton = {
 			xtype: 'button',
 			id: 'myactivity_btn',
-			ui: 'action',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px",
 			margin: '4px 2px',
 			text: i18n.app.BTN_MYACTIVITY,
 			flex: 1,
@@ -94,7 +105,9 @@ Ext.define('B2B.view.User', {
 		favoritesButton = {
 			id: 'favorites_btn',
 			xtype: 'button',
-			ui: 'action',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px",
 			margin: '4px 2px',
 			text: i18n.app.BTN_FAVORITES,
 			flex: 1,
@@ -106,35 +119,56 @@ Ext.define('B2B.view.User', {
 			xtype: 'button',
 			ui: 'plain',
 			xtype: 'button',
-			ui: 'action',
-			margin: '0 8 10',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px", 
+			margin: '4px 2px',
 			text: i18n.app.BTN_FRIENDS,
 			flex: 1,
 			handler: this.onFriendsButtonTap,
 			scope: this
 		},
+
+		statsButton = {
+			id: 'statss_btn',
+			xtype: 'button',
+			ui: 'plain',
+			xtype: 'button',
+			ui: 'beerneutral',
+			width: "100px",
+			height: "100px", 
+			margin: '4px 2px',
+			text: i18n.app.BTN_STATS,
+			flex: 1,
+			handler: this.onStatsButtonTap,
+			scope: this
+		},
 		secondRowButtonsContainer = {
 			xtype: 'panel',
-			flex: 1,
+			//flex: 1,
 			padding: '0 4 10 4',
 			layout: {
-				type: 'hbox'
+				type: 'hbox',
+				pack: 'center'
 			},
 			items: [
 				badgesButton,
-				favoritesButton
+				favoritesButton,
+				friendsButton
 			]
 		},
 		thirdButtonsContainer = {
 			xtype: 'panel',
-			flex: 1,
+			//flex: 1,
 			padding: '0 4 10 4',
 			layout: {
-				type: 'hbox'
+				type: 'hbox',
+				pack: 'center'
 			},
 			items: [
 				drinkListButton,
-				myActivityButton
+				myActivityButton,
+				statsButton
 			]
 		},
 		item0 = {
@@ -144,7 +178,7 @@ Ext.define('B2B.view.User', {
 				type: 'vbox'
 			},
 			items: [
-				toolbar, profileButton, secondRowButtonsContainer, thirdButtonsContainer, friendsButton
+				toolbar, profileButton, secondRowButtonsContainer, thirdButtonsContainer
 			]
 		};
 

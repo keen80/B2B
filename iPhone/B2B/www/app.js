@@ -72,6 +72,9 @@ Ext.application({
 		Ext.fly('appLoadingIndicator').destroy();
 
 		var profileStore = Ext.getStore("Profile_Local");
+		
+		Ext.Viewport.add(Ext.create('B2B.view._App'));
+		/*
 		if (profileStore && profileStore.getCount() < 1) {
 			HH.log("---+ Check: ProfileStore Empty - Show view._login");
 			Ext.Viewport.add(Ext.create('B2B.view._Login'));
@@ -82,7 +85,7 @@ Ext.application({
 			var data = profileStore.first().data;
 			utils.generateToken(data, profileStore, Ext.Viewport);
 		}
-//				    loginOnFBCompleted("email", "displayName", "gender", "nationality", "birthDay");
+//				    loginOnFBCompleted("email", "displayName", "gender", "nationality", "birthDay");*/
 	},
 	onUpdated: function() {
 		if(window.confirm(i18n.app.HINT_APPLICATIONRELOADED)){

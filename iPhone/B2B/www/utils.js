@@ -24,6 +24,17 @@ var utils = {
 		var date = "5 min";
 		return date;
 	},
+	getUserAvatar: function(profile){
+		var avatar_url = HH.default_user64;
+		if(profile){
+			if (!_isEmpty(profile.avatar)){
+				avatar_url = profile.avatar;
+			}else if ( !_Empty(profile.email) ){
+				avatar_url = "http://www.gravatar.com/avatar/"+md5(profile.email)+"?s=64";
+			}
+		}
+		return avatar_url;
+	},
 	getActivityString: function(values){
 		var str;
 		switch(values.type){
