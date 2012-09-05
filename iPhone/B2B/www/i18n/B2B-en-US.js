@@ -1,4 +1,4 @@
-﻿var i18n = {
+var i18n = {
 	"app": {
 		"COMMON_ATTENTION": "Attention",
 
@@ -31,12 +31,14 @@
 		"FORM_ACCOUNT": "Account",
 		"FORM_ACTIVATEDON": "Registered Since",
 		"FORM_ADDBEER": "Send Us a New Beer!",
+		"FORM_BEERDETAIL": "Info",
 		"FORM_AVATAR": "Your Image <small>(Tap to change)</small>",
 		"FORM_BIRTHDATE": "Birth Date",
 		"FORM_DESCRIPTION": "Something About You",
 		"FORM_DISPLAYNAME": "Your Display Name",
 		"FORM_EMAIL": "Your Email Address",
 		"FORM_FIRSTNAME": "First Name",
+		"FORM_NAME": "Name",
 		"FORM_GENDER": "Gender",
 		"FORM_LASTLOGINON": "Last Login",
 		"FORM_LASTNAME": "Last Name",
@@ -61,6 +63,7 @@
 		"BTN_ADDBEER": "Add a Beer",
 		"BTN_ADDBEERDRINK": "Add a Beer from the List",
 		"BTN_ADDBEERFAVORITE": "Add this beer to favorite",
+		"BTN_FAVORITE": "Favorite",
 		"BTN_FRIENDS": "Friends",
 		"BTN_ADDFRIEND": "Add a Friend",
 		"BTN_BACK": "Back",
@@ -165,6 +168,7 @@
 		"HINT_BEERCHOOSESTYLE": "Which Style",
 		"HINT_BEERCHOOSEGRAD": "Alcoholic Grade?",
 		"HINT_BEERCHOOSENATIONALITY": "Do You know the Nation?",
+		"HINT_BEERREPORT": "If you find these information not correct, feel free to report us.",
 		"HINT_CHOOSEBIRTHDATE": "When did You born?",
 		"HINT_CHOOSEFIRSTNAME": "How Can I Call You?",
 		"HINT_CHOOSELASTNAME": "Your Last Name?",
@@ -206,6 +210,13 @@
 								"<li>Spin the Bottle!</li>"+
 							"</ol>",
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
+
+		"DRINK_TEXT_1_0": "You drink a %1 at %2",
+		"DRINK_TEXT_1_1": "You have an horrible drink of %1 at %2",
+		"DRINK_TEXT_1_2": "You didn't enjoy the %1 at %2",
+		"DRINK_TEXT_1_3": "You have a good drink of %1 at %2",
+		"DRINK_TEXT_1_4": "You enjoy a %1 at %2",
+		"DRINK_TEXT_1_5": "You really enjoy the %1 at %2",
 
 		"ACTIVITY_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
 		"ACTIVITY_TEXT_0_1": "<strong class='hilite'>%1</strong> is now friend with <strong class='hilite'>%2</strong>",

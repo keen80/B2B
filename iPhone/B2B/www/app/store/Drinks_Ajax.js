@@ -30,13 +30,13 @@ Ext.define("B2B.store.Drinks_Ajax", {
 			load:function(el,records, successful){
 				HH.log("* Loaded: Store.Drinks_Ajax, copying to Local");
 			
-				var store_local = Ext.getStore('Drinks_Local'),
-					image = HH.default_user48,
+				var store_local = Ext.getStore('Drinks_Local');
+				/*	image = HH.default_user48,
 					userdata = el.first(),
 					lastDrink = Ext.getCmp("lastdrink"),
 					beerName = "", placeName = "", div = "";
-				/*
 				
+
 				if (lastDrink) {
 					beerName = (userdata.data.beerName ? userdata.data.beerName : "");
 					placeName = (userdata.data.placeName ? userdata.data.placeName : "");

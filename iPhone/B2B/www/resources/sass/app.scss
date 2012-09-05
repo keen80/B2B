@@ -119,6 +119,19 @@
             margin-top: 2px;
         }
 
+        @mixin field_nationality($selector) {
+            .field_nationality_#{$selector} {
+                background: url("../flags/#{$selector}.png")  no-repeat 98% center !important;
+            }
+        }
+
+        @mixin beer-iconmask($name) {
+          .x-tab .x-button-icon.#{$name},
+          .x-button .x-button-icon.x-icon-mask.#{$name} {
+            -webkit-mask-image: theme_image($theme-name, "beer/" + $name + ".png");
+          }
+        }
+
 
 /* LAYOUT ***************************************************************** */
     
@@ -464,6 +477,22 @@
             margin: 10px;
             border: 1px solid #AAA;
         }        
+    }
+
+    #profile_btn{
+        .profile_left_panel{
+            float: left;
+            position: relative;
+
+            .avatar{
+
+            }    
+        }
+        .profile_right_panel {
+            left: 100px;
+            position: relative;
+        }
+        
     }
 
 /* TYPOGRAPHY ************************************************************* */
@@ -1010,6 +1039,264 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 
 */
 
+/* FIELD NATIONALITY ******************************************************** */
+
+/* 
+This is art, generation of the lines below
+_.each(_.values(i18n.countries), function(a){ console.log('@include field_nationality("'+(a.value).toLowerCase()+'");'); });
+*/
+
+.field_nationality_ {
+     background: url("../flags/_.png")  no-repeat 98% center !important;
+}
+
+@include field_nationality("af");
+@include field_nationality("ax");
+@include field_nationality("al");
+@include field_nationality("dz");
+@include field_nationality("as");
+@include field_nationality("ad");
+@include field_nationality("ao");
+@include field_nationality("ai");
+@include field_nationality("aq");
+@include field_nationality("ag");
+@include field_nationality("ar");
+@include field_nationality("am");
+@include field_nationality("aw");
+@include field_nationality("au");
+@include field_nationality("at");
+@include field_nationality("az");
+@include field_nationality("bs");
+@include field_nationality("bh");
+@include field_nationality("bd");
+@include field_nationality("bb");
+@include field_nationality("by");
+@include field_nationality("be");
+@include field_nationality("bz");
+@include field_nationality("bj");
+@include field_nationality("bm");
+@include field_nationality("bt");
+@include field_nationality("bo");
+@include field_nationality("ba");
+@include field_nationality("bw");
+@include field_nationality("bv");
+@include field_nationality("br");
+@include field_nationality("io");
+@include field_nationality("bn");
+@include field_nationality("bg");
+@include field_nationality("bf");
+@include field_nationality("bi");
+@include field_nationality("kh");
+@include field_nationality("cm");
+@include field_nationality("ca");
+@include field_nationality("cv");
+@include field_nationality("ky");
+@include field_nationality("cf");
+@include field_nationality("td");
+@include field_nationality("cl");
+@include field_nationality("cn");
+@include field_nationality("cx");
+@include field_nationality("cc");
+@include field_nationality("co");
+@include field_nationality("km");
+@include field_nationality("cg");
+@include field_nationality("cd");
+@include field_nationality("ck");
+@include field_nationality("cr");
+@include field_nationality("ci");
+@include field_nationality("hr");
+@include field_nationality("cu");
+@include field_nationality("cy");
+@include field_nationality("cz");
+@include field_nationality("dk");
+@include field_nationality("dj");
+@include field_nationality("dm");
+@include field_nationality("do");
+@include field_nationality("ec");
+@include field_nationality("eg");
+@include field_nationality("sv");
+@include field_nationality("gq");
+@include field_nationality("er");
+@include field_nationality("ee");
+@include field_nationality("et");
+@include field_nationality("fk");
+@include field_nationality("fo");
+@include field_nationality("fj");
+@include field_nationality("fi");
+@include field_nationality("fr");
+@include field_nationality("gf");
+@include field_nationality("pf");
+@include field_nationality("tf");
+@include field_nationality("ga");
+@include field_nationality("gm");
+@include field_nationality("ge");
+@include field_nationality("de");
+@include field_nationality("gh");
+@include field_nationality("gi");
+@include field_nationality("gr");
+@include field_nationality("gl");
+@include field_nationality("gd");
+@include field_nationality("gp");
+@include field_nationality("gu");
+@include field_nationality("gt");
+@include field_nationality("gg");
+@include field_nationality("gn");
+@include field_nationality("gw");
+@include field_nationality("gy");
+@include field_nationality("ht");
+@include field_nationality("hm");
+@include field_nationality("va");
+@include field_nationality("hn");
+@include field_nationality("hk");
+@include field_nationality("hu");
+@include field_nationality("is");
+@include field_nationality("in");
+@include field_nationality("id");
+@include field_nationality("ir");
+@include field_nationality("iq");
+@include field_nationality("ie");
+@include field_nationality("im");
+@include field_nationality("il");
+@include field_nationality("it");
+@include field_nationality("jm");
+@include field_nationality("jp");
+@include field_nationality("je");
+@include field_nationality("jo");
+@include field_nationality("kz");
+@include field_nationality("ke");
+@include field_nationality("ki");
+@include field_nationality("kp");
+@include field_nationality("kr");
+@include field_nationality("kw");
+@include field_nationality("kg");
+@include field_nationality("la");
+@include field_nationality("lv");
+@include field_nationality("lb");
+@include field_nationality("ls");
+@include field_nationality("lr");
+@include field_nationality("ly");
+@include field_nationality("li");
+@include field_nationality("lt");
+@include field_nationality("lu");
+@include field_nationality("mo");
+@include field_nationality("mk");
+@include field_nationality("mg");
+@include field_nationality("mw");
+@include field_nationality("my");
+@include field_nationality("mv");
+@include field_nationality("ml");
+@include field_nationality("mt");
+@include field_nationality("mh");
+@include field_nationality("mq");
+@include field_nationality("mr");
+@include field_nationality("mu");
+@include field_nationality("yt");
+@include field_nationality("mx");
+@include field_nationality("fm");
+@include field_nationality("md");
+@include field_nationality("mc");
+@include field_nationality("mn");
+@include field_nationality("ms");
+@include field_nationality("ma");
+@include field_nationality("mz");
+@include field_nationality("mm");
+@include field_nationality("na");
+@include field_nationality("nr");
+@include field_nationality("np");
+@include field_nationality("nl");
+@include field_nationality("an");
+@include field_nationality("nc");
+@include field_nationality("nz");
+@include field_nationality("ni");
+@include field_nationality("ne");
+@include field_nationality("ng");
+@include field_nationality("nu");
+@include field_nationality("nf");
+@include field_nationality("mp");
+@include field_nationality("no");
+@include field_nationality("om");
+@include field_nationality("pk");
+@include field_nationality("pw");
+@include field_nationality("ps");
+@include field_nationality("pa");
+@include field_nationality("pg");
+@include field_nationality("py");
+@include field_nationality("pe");
+@include field_nationality("ph");
+@include field_nationality("pn");
+@include field_nationality("pl");
+@include field_nationality("pt");
+@include field_nationality("pr");
+@include field_nationality("qa");
+@include field_nationality("re");
+@include field_nationality("ro");
+@include field_nationality("ru");
+@include field_nationality("rw");
+@include field_nationality("sh");
+@include field_nationality("kn");
+@include field_nationality("lc");
+@include field_nationality("pm");
+@include field_nationality("vc");
+@include field_nationality("ws");
+@include field_nationality("sm");
+@include field_nationality("st");
+@include field_nationality("sa");
+@include field_nationality("sn");
+@include field_nationality("cs");
+@include field_nationality("sc");
+@include field_nationality("sl");
+@include field_nationality("sg");
+@include field_nationality("sk");
+@include field_nationality("si");
+@include field_nationality("sb");
+@include field_nationality("so");
+@include field_nationality("za");
+@include field_nationality("gs");
+@include field_nationality("es");
+@include field_nationality("lk");
+@include field_nationality("sd");
+@include field_nationality("sr");
+@include field_nationality("sj");
+@include field_nationality("sz");
+@include field_nationality("se");
+@include field_nationality("ch");
+@include field_nationality("sy");
+@include field_nationality("tw");
+@include field_nationality("tj");
+@include field_nationality("tz");
+@include field_nationality("th");
+@include field_nationality("tl");
+@include field_nationality("tg");
+@include field_nationality("tk");
+@include field_nationality("to");
+@include field_nationality("tt");
+@include field_nationality("tn");
+@include field_nationality("tr");
+@include field_nationality("tm");
+@include field_nationality("tc");
+@include field_nationality("tv");
+@include field_nationality("ug");
+@include field_nationality("ua");
+@include field_nationality("ae");
+@include field_nationality("gb");
+@include field_nationality("us");
+@include field_nationality("um");
+@include field_nationality("uy");
+@include field_nationality("uz");
+@include field_nationality("vu");
+@include field_nationality("ve");
+@include field_nationality("vn");
+@include field_nationality("vg");
+@include field_nationality("vi");
+@include field_nationality("wf");
+@include field_nationality("eh");
+@include field_nationality("ye");
+@include field_nationality("zm");
+@include field_nationality("nirl");
+@include field_nationality("sco");
+@include field_nationality("wal");
+@include field_nationality("yug");
+
 
 @import 'sencha-touch/default/all';
 
@@ -1047,13 +1334,7 @@ http://www.slideshare.net/senchainc/theming-sencha-touch
 @include pictos-iconmask('flag');
 @include pictos-iconmask('refresh');
 @include pictos-iconmask('compose');
-
-@mixin beer-iconmask($name) {
-  .x-tab .x-button-icon.#{$name},
-  .x-button .x-button-icon.x-icon-mask.#{$name} {
-    -webkit-mask-image: theme_image($theme-name, "beer/" + $name + ".png");
-  }
-}
+@include pictos-iconmask('favorites');
 
 @include beer-iconmask('alert_attention');
 @include beer-iconmask('check_yes');

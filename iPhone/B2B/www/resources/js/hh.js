@@ -84,7 +84,8 @@ var goingTo = {
 	setupDisplayName: function(profile){
 
 		var myLastDrink = Ext.getStore("Drinks_Local").first();
-
+		var testdata = Ext.create("B2B.model.Drink", {
+		});
 		Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
 
 		HH.log("---> Step: Setup DisplayName thru app");

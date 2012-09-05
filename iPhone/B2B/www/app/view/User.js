@@ -9,7 +9,7 @@ Ext.define('B2B.view.User', {
 	},
 	initialize: function(){
 		this.callParent(arguments);
-
+		var profileStore
 		var privacyButton = {
 			text: i18n.app.BTN_PRIVACY,
 			ui: 'action',
@@ -44,15 +44,19 @@ Ext.define('B2B.view.User', {
 		profileButton = {
 			id: 'profile_btn',
 			xtype: 'button',
-			ui: 'plain',
-			icon: 'image.png',
+			ui: 'beerneutral',
 			margin: '10 2 10 0',
 			text: i18n.app.BTN_PROFILE,
 			badgeText: i18n.app.BTN_PROFILE,
 			flex: 2,
 			html: [
-				'<img class="avatar_medium" height="48" width="48" src="'+HH.default_user48+'" />',
-				'<div class="profile_right"><p id="profile_username"></p></div>'
+				'<div class="profile_left_panel">',
+					'<img class="avatar" height="64" width="64" src="'+HH.default_user64+'" />',
+				'</div>',
+				'<div class="profile_right">',
+					'<p id="profile_username">',
+					'</p>',
+				'</div>',
 			].join(""),
 			handler: this.onProfileButtonTap,
 			scope: this

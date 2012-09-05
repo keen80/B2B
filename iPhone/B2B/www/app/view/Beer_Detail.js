@@ -13,9 +13,10 @@ Ext.define('B2B.view.Beer_Detail', {
 		title: i18n.app.PANEL_BEERDETAIL,
 		iconCls: 'add'
 	},
-	initialize: function(){
-
+	initialize: function(){		
 		this.callParent(arguments);
+
+		var info = this.jsonData.data;
 
 		var backBeerDetailButton = {
 			xtype: "button",
@@ -43,20 +44,109 @@ Ext.define('B2B.view.Beer_Detail', {
 				reportBeerButton
 			]
 		},
-		addBeerFavoriteButton = {
+		addbeerfavorite = {
 			xtype: "button",
-			text: i18n.app.BTN_ADDBEERFAVORITE,
-			ui: 'action',
-			id: 'favorites_addbeer_btn',
+			text: i18n.app.BTN_FAVORITE,
+			ui: 'small',
+			iconCls: 'favorites',
+			iconMask: true,
+			margin: 2,
+			id: 'addbeerfavorite',
 			handler: this.onFavoritesAddBeerButtonTap,
+			flex: 1,
 			scope: this,
-			//docked: 'bottom'
 		},
-		container = {
+		findbeeraroundme = {
+			xtype: "button",
+			text: i18n.app.BTN_FAVORITE,
+			ui: 'small',
+			iconCls: 'favorites',
+			iconMask: true,
+			margin: 2,
+			id: 'findbeeraroundme',
+			handler: this.onFavoritesAddBeerButtonTap,
+			flex: 1,
+			scope: this,
+		},
+		controlcontainer ={
 			xtype: 'container',
-			html: this.getStringHTMLFromValues(this.jsonData.data)
-		}
-		this.add([toolbar, container, addBeerFavoriteButton]);
+			 layout: {
+		        type: 'hbox',
+		        align: 'center'
+		    },
+			items:[
+				addbeerfavorite,
+				findbeeraroundme
+			]
+		};
+		var skifo = info.name;
+		var beerfieldset = {
+				xtype: 'fieldset',
+				title: i18n.app.FORM_BEERDETAIL,
+				instructions: i18n.app.HINT_BEERREPORT,
+				items: [
+					{
+						xtype: 'textfield',
+						name: 'name',
+						readOnly  : true,
+						cls: 'beer_form_textfield',
+						value: _.titleize(skifo),
+						label: i18n.app.LABEL_BEERNAME
+					},
+					{
+						xtype: 'textfield',
+						name: 'brewery',
+						readOnly  : true,
+						cls: 'beer_form_textfield',
+						value: info.brewery,
+						label: i18n.app.LABEL_BEERBREWERY
+					},
+					{
+						xtype: 'textfield',
+						name: "beerstyle",
+						readOnly  : true,
+						cls: 'beer_form_textfield',
+						label: i18n.app.LABEL_BEERSTYLE,
+						value: utils.getBeerStyleFromCode(info.beerstyle)
+					},
+					{
+						xtype: 'textfield',
+						name: "beertype",
+						readOnly  : true,
+						cls: 'beer_form_textfield',
+						label: i18n.app.LABEL_BEERTYPE,
+						value: utils.getBeerTypeFromCode(info.beertype)
+					},
+					{
+						xtype: 'textfield',
+						name: "grad",
+						readOnly  : true,
+						cls: 'beer_form_textfield',
+						label: i18n.app.LABEL_BEERGRAD,
+						value: info.grad
+					},
+					{
+						xtype: 'textfield',
+						name: "nationality",
+						readOnly  : true,
+						cls: 'beer_form_textfield field_nationality_'+(info.nationality).toLowerCase(),
+						label: i18n.app.FORM_NATIONALITY,
+						value: utils.getCountryFromCode(info.nationality)
+					},
+					{
+						xtype: 'textareafield',
+						name: 'description',
+						cls: 'beer_form_textfield',
+						labelAlign: 'top',
+						readOnly  : true,
+						label: i18n.app.LABEL_BEERDESCRIPTION,
+						value: info.description
+					}
+				]
+		};
+		console.log(info);
+		console.log(skifo);
+		this.add([toolbar, controlcontainer, beerfieldset]);
 
 	},
 	getStringHTMLFromValues: function(info){
@@ -79,7 +169,7 @@ Ext.define('B2B.view.Beer_Detail', {
 		this.fireEvent("reportBeerCommand", this);
 	},
 	onFavoritesAddBeerButtonTap: function(){
-		this.fireEvent("addFavoriteBeerCommand", this, this.jsonData.data);
+		this.fireEvent("addFavoriteBeerCommand", this, this.info.data);
 	},
 	onBeerDetailBackButtonTap: function(){
 		this.fireEvent("backBeerDetailCommand", this);

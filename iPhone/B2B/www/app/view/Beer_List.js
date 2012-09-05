@@ -8,7 +8,7 @@ Ext.define('B2B.view.Beer_List', {
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
         {
         	getClass: function(values){
-        		return "small-list beer-list-item-title beerTypeClass"+values.beerstyle+" nation_"+values.nationality;
+        		return "small-list beer-list-item-title beerTypeClass"+values.beerstyle;
         	},
             getImage1URL: function(values){
                     //resources/beer/style"+values.beerstyle+".png'
@@ -32,9 +32,10 @@ Ext.define('B2B.view.Beer_List', {
                     return str;
             },
             getString: function(values){
+                var nationAvatar = (_.isEmpty(values.nationality)) ? "_":(values.nationality).toLowerCase(); 
                 var tpl = [
                     "<div class='small-list-right'>",
-                        "<img src='resources/flags/"+(values.nationality).toLowerCase()+".png'>",
+                        "<img src='resources/flags/"+nationAvatar+".png'>",
                     "</div>",
                     "<div class='small-list-text'>",
                         _.titleize(values.name),

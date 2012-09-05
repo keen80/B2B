@@ -11,12 +11,12 @@ Ext.define("B2B.view._App_Container", {
 		layout: {
 			animation: {
 				type: null
-			}
+			},
 		},
 		tabBar: {
 			layout: {
 				pack: 'center',
-				align: 'center'
+				align: 'stretch'
 			},
 			docked: 'bottom',
 			scrollable: false

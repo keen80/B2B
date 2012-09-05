@@ -114,7 +114,6 @@ Ext.define("B2B.controller.Beers", {
 		//var jsonData = ajax_store.getAt(ajax_store.findExact("name", record.data.name));
 		this.getApp().push({
 			xtype: "beerdetailpanel",
-			//jsonData: jsonData
 			jsonData: record
 		});
 

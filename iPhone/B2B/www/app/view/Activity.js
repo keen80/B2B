@@ -34,39 +34,38 @@ Ext.define('B2B.view.Activity', {
             draggable: false,
             height: 80,
             docked: 'top',
-            //data: (myDrinks.first()).data,
             //html: '<div class="loading_div"></div>'
             tpl: new Ext.XTemplate([
-                "<div class='{[this.getClass(values)]}'>",
+                "<div class='{[this.getClass()]}'>",
                     "{[this.getTextString(values)]}",
                 "</div>"
             ].join(""),
             {
-                getClass: function(values){
+                getClass: function(){
                     return "small-list";
                 },
-                getImageURL: function(values){
+                getImageURL: function(a){
                     var str = '<img class="avatar" src="';
-                    if (_.isEmpty(values.avatar)){
+                    if (_.isEmpty(a.avatar)){
                          str += HH.default_user32;
                      }else{
-                        str+=values.avatar;
+                        str+=a.avatar;
                      }
                     str += '" width="32" height="32">';
                     return str;
                 },
-                getTextString: function(values){
+                getTextString: function(v){
                     var str = [
                         "<div class='list-header-small'>",
                             "<small class='time'>",
-                                utils.getDate(values),
+                                utils.getDate(v),
                             "</small>",
                             "<span class='info'>",
-                                this.getImageURL(values),
+                                this.getImageURL(v),
                             "</span>",
                         "</div>",
                         "<p class='list-text'>",
-                          utils.getDrinkString(values),
+                          utils.getDrinkString(v),
                         "</p>",
                         "<div class='clear'></div>"
                     ].join("");
@@ -76,23 +75,6 @@ Ext.define('B2B.view.Activity', {
             })
         };
 
-
-
-        /*
-
-            { name: 'idDrink', type: 'string' },
-            { name: 'displayName', type: 'string' },
-            { name: 'idUser', type: 'string' },
-            { name: 'idBeer', type: 'string' },
-            { name: 'beerName', type: 'string' },
-            { name: 'idPlace', type: 'string' },
-            { name: 'placeName', type: 'string' },
-            { name: 'image', type: 'string' },
-            { name: 'rate', type: 'int' },
-            { name: 'insertedOn', type: 'date', dateformat: 'c' }
-
-
-        */
         activitylist = {
             xtype: "activitylist",
             id: 'activitylist',
