@@ -100,20 +100,24 @@ var goingTo = {
 			Ext.getStore('Notifications_Ajax').load();
 	},
 	setupDisplayName: function(profile) {
-		var myLastDrink = Ext.getStore("Drinks_Local").first(),
-			testdata = Ext.create("B2B.model.Drink", {
-			}),
-			latestDrink = Ext.getCmp('mylatestdrink');
+		var drinksLocal = Ext.getStore("Drinks_Local"),
+			latestDrink = Ext.getCmp('mylatestdrink'),
+			data = (profile ? profile.data : null),
+			displayName = "", title = "";
 
-		if (latestDrink) {
-			Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
+		if (latestDrink && drinksLocal && drinksLocal.getCount() > 0) {
+			latestDrink.setData(drinksLocal.first().data);
+			//Ext.get("profile_username").setHtml(profile.data.username);
+			//TODO SPOSTARE IN UN CONTROLLER
+			// Ext.getCmp('AboutTitlebar').setTitle(displayName);
+		}
 
-			HH.log("---> Step: Setup DisplayName thru app");
-			var displayName = utils.getDisplayName(profile.data);
-		//Ext.get("profile_username").setHtml(profile.data.username);
-		//TODO SPOSTARE IN UN CONTROLLER
-		// Ext.getCmp('AboutTitlebar').setTitle(displayName);
-			Ext.getCmp('appslider').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+		if (data) {
+			displayName = utils.getDisplayName(data);
+			HH.log("---> Step: Setup DisplayName thru app - " + displayName);
+			title = '<div class="nav_slidemenu_profile"><img src="' + data.avatar +
+					'" class="smallavatar"><span>' + displayName + '</span>';
+			Ext.getCmp('appslider').setTitle(title);
 		}
 	},
 	setupPreferences: function(profile){

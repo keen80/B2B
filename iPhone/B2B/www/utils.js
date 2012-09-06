@@ -21,33 +21,36 @@ var utils = {
 	},
 	getDate: function(date){
 		/* TODO: MOMENT INTEGRATION date */
-		var date = "5 min";
-		return date;
+		var newDate = "5 min";
+		return newDate;
 	},
-	getDrinkString: function() {
-		switch(values.rate){
-			case 0:
-				return this.__(i18n.app.DRINK_TEXT_1_1, values.beerName, values.placeName);
-			case 1:
-				return this.__(i18n.app.DRINK_TEXT_1_2, values.beerName, values.placeName);
-			case 2:
-				return this.__(i18n.app.DRINK_TEXT_1_3, values.beerName, values.placeName);
-			case 3:
-				return this.__(i18n.app.DRINK_TEXT_1_4, values.beerName, values.placeName);
-			case 4:
-				return this.__(i18n.app.DRINK_TEXT_1_5, values.beerName, values.placeName);
-			case 5:
-				return this.__(i18n.app.DRINK_TEXT_1_6, values.beerName, values.placeName);
-			default:
-				return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
+	getDrinkString: function(values) {
+		if (values) {
+			switch(values.rate){
+				case 0:
+					return this.__(i18n.app.DRINK_TEXT_1_1, values.beerName, values.placeName);
+				case 1:
+					return this.__(i18n.app.DRINK_TEXT_1_2, values.beerName, values.placeName);
+				case 2:
+					return this.__(i18n.app.DRINK_TEXT_1_3, values.beerName, values.placeName);
+				case 3:
+					return this.__(i18n.app.DRINK_TEXT_1_4, values.beerName, values.placeName);
+				case 4:
+					return this.__(i18n.app.DRINK_TEXT_1_5, values.beerName, values.placeName);
+				case 5:
+					return this.__(i18n.app.DRINK_TEXT_1_6, values.beerName, values.placeName);
+				default:
+					return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
+			}
 		}
+		return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
 	},
 	getUserAvatar: function(profile){
 		var avatar_url = HH.default_user64;
-		if(profile){
-			if( !(_.isUndefined(profile.avatar) || _.isUndefined(profile.avatar)) ){
+		if (profile) {
+			if ( !(_.isUndefined(profile.avatar) || _.isUndefined(profile.avatar)) ) {
 				avatar_url = profile.avatar;
-			}else if ( !_.isUndefined(profile.email) ){
+			} else if ( !_.isUndefined(profile.email) ) {
 				avatar_url = "http://www.gravatar.com/avatar/"+md5(profile.email)+"?s=64";
 			}
 		}
@@ -56,15 +59,15 @@ var utils = {
 	getProgressPoint: function(profile){
 		var currentPoints = 0;
 		var maxPoints = 0;
-		if(profile){
-			if (! (_.isNumber(parseInt(profile.currentPoints)) || _.isNumber(parseInt(profile.maxPoints)))){
+		if (profile) {
+			if (! (_.isNumber(parseInt(profile.currentPoints)) || _.isNumber(parseInt(profile.maxPoints)))) {
 				currentPoints = parseInt(profile.currentPoints);
 				maxPoints = parseInt(profile.maxPoints);
 				if (currentPoints < 1) { return 1 }
 				if (maxPoints < 1) { return 10 }
 				else{
 					return Math.ceil(currentPoints * 100 / maxPoints);				}
-			}else
+			} else
 				return 1;
 			}
 		return 1;

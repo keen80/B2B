@@ -66,7 +66,8 @@ Ext.application({
 
 	launch: function() {
 		Ext.Viewport.setMasked({
-            xtype: 'loadmask'
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
         });
 
 		HH.log("---> Step: app.js:launch()");
