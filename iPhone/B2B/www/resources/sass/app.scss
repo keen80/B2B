@@ -16,6 +16,7 @@
     $beer-main-color: #118DA1;
     $beer-neutral-color: #EEE;
     $beer-secondary-color: #FFBC00;
+    $beer-white-color: #FAFAFA;
 
     $fontsize_medium: 94%;
     $fontsize_small: 80%;
@@ -109,6 +110,23 @@
             border: 1px solid #AAA;
         }
 
+        @mixin small-subtle{
+            font-size: $fontsize_small;
+            font-weight: normal;
+            color: #666;
+        }
+
+        @mixin xsmall-subtle{
+            font-size: $fontsize_xsmall;
+            font-weight: normal;
+            color: #AAA;
+        }
+
+        @mixin indent-list72{
+            margin-left: 72px;
+            margin-top: 6px;
+        }
+
         @mixin indent-list64{
             margin-left: 58px;
             margin-top: 4px;
@@ -167,6 +185,13 @@
         padding: 10px;
         border-bottom: 2px solid #AAA;
         background: #FFF;
+    }
+
+    hr {
+        display: block; height: 1px;
+        border: 0;
+        border-top: 1px solid #DDD;
+        margin: 1em 0; padding: 0;
     }
 
     /* SLIDER ------------------------------------------------------------- */
@@ -463,6 +488,14 @@
     }
 
 /* USER ******************************************************************* */
+    
+    #userprofile{
+        background: url("../bg/bg.png") #DADADA repeat bottom right;
+        .x-layout-card-item{
+            background: none;
+        }
+    }
+
     #userform  .x-body{
         font-size: $fontsize_medium;
         input, textarea, select {
@@ -476,25 +509,97 @@
         img{
             margin: 10px;
             border: 1px solid #AAA;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background: #FAFAFA;
         }        
     }
 
     #profile_btn{
-        .profile_left_panel{
-            float: left;
-            position: relative;
-
-            .avatar{
-
-            }    
+        .x-button-label{
+            word-wrap: break-word;
+            white-space: normal;
         }
         .profile_right_panel {
-            left: 100px;
             position: relative;
+            text-align: left;
+            min-width: 100px;
+
+            .profile_displayname{
+                @include indent-list72;
+            }
+            .profile_description{
+                @include indent-list72;
+                font-weight: normal;
+                font-size: $fontsize_small;
+                color:  #999;
+                font-variant: italic;
+            }
+            .avatar{
+                border: 1px solid #CCC;
+                position: absolute;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background: #FFF;
+            }
         }
-        
+        .profile_points{
+            font-size: $fontsize_small;
+        }
     }
 
+    .progress-bar {
+        background-color: #FCFCFC;
+        height: 25px;
+        padding: 5px;
+        width: 260px;
+        position: relative;
+        margin: 10px auto;
+        text-align: left;    
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+        box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+        .bar {
+            background-color: $beer-main-color;  
+            display: inline-block;
+            height: 100%;   
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+                -webkit-transition: width .4s ease-in-out;
+                transition: width .4s ease-in-out;    
+        }
+        .points{
+            float: right;
+            @include xsmall-subtle;
+        }
+    }
+
+    .profile_square {
+        text-align: center;
+        display: block;
+        word-wrap: break-word;
+        white-space: normal;
+        .x-button-label{
+            word-wrap: break-word;
+            white-space: normal;
+        }
+        .badge{
+          //  border: 1px solid #CCC;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+           // background: #FFF;
+            display: block;
+           // opacity: 0.8;
+        }
+        span {
+            @include small-subtle;
+            display: block;
+            font-weight: normal;
+        }
+    }
 /* TYPOGRAPHY ************************************************************* */
 
     .x-form .x-scroll-container > .x-inner{
@@ -638,7 +743,7 @@
 
 
 
-/* VENDOR ************************************************************* */
+/* VENDOR ***************************************************************** */
 
 
     /* IOS5 TOGGLE ******************************************************** */
@@ -857,8 +962,6 @@
     margin-top: 2.7em;
 }
 
-
-
 .cutout {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
@@ -875,6 +978,50 @@
 #ext-button-4,
 #ext-button-5,
  { margin: 5px; }
+
+ /* CALLOUT */
+ .callout{
+      .calloutUp{
+        height: 0;
+        width: 0;
+        border-bottom: 12px solid #DDD;
+        border-left: 12px dotted transparent;
+        border-right: 12px dotted transparent;
+        left: 0px;
+        top: 0px;
+        margin-left: 20px;
+        z-index: 10;
+    }
+     .calloutUp2{
+        position: relative;
+        left: -10px;
+        top: 2px;
+        height: 0;
+        width: 0;
+        border-bottom: 10px solid #F2F2F2;
+        //border-bottom: 10px solid #FFD;
+        border-left: 10px dotted transparent;
+        border-right: 10px dotted transparent;
+        z-index: 11;
+    }
+    .divContainerUp{
+        background-color: #F2F2F2;
+      //  background: #FFD;
+        border: solid 1px #DDD;
+        position: relative;
+        top: -1px;
+        z-index: 9;
+        padding: 4px;
+        text-align: left;
+        font-size: $fontsize_xsmall;
+        font-weight: normal;
+        color: #666;
+       // height: 50px;
+    }
+
+}
+
+
 
 /* SPIN BOTTLE ************************************************************* */
 
@@ -1327,6 +1474,13 @@ _.each(_.values(i18n.countries), function(a){ console.log('@include field_nation
 @include sencha-button-ui('beermain', $beer-main-color,'flat');
 @include sencha-button-ui('beersecondary', $beer-secondary-color,'flat');
 @include sencha-button-ui('beerneutral', $beer-neutral-color,'flat');
+@include sencha-button-ui('beerwhite', $beer-white-color,'flat');
+@include sencha-button-ui('beerred', #FFFAFA,'flat');
+@include sencha-button-ui('beerblue', #FAFAFF,'flat');
+@include sencha-button-ui('beeryellow', #FFFFFA,'flat');
+@include sencha-button-ui('beercyan', #FAFFFF,'flat');
+@include sencha-button-ui('beerviolet', #FFFAFF,'flat');
+@include sencha-button-ui('beergreen', #FAFFFA,'flat');
 
 
 /** To Do da rimuovere */
