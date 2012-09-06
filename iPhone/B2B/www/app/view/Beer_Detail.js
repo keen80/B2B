@@ -144,8 +144,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					}
 				]
 		};
-		console.log(info);
-		console.log(skifo);
+
 		this.add([toolbar, controlcontainer, beerfieldset]);
 
 	},

@@ -78,6 +78,7 @@ Ext.define("B2B.controller.Beers", {
 		beerForm.submit({
 			url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
 			method: 'POST',
+			successProperty: 'response.status.success',
 			success: function() {
 				alert('form submitted successfully!');
 				if(!spinner.isHidden()) spinner.hide();
@@ -95,7 +96,6 @@ Ext.define("B2B.controller.Beers", {
 				app.remove(beeraddform);
 			}
 		});
-
 	},
 	onBackBeer: function(){
 		var app = this.getApp();
