@@ -13,42 +13,7 @@ Ext.define('B2B.view._Login', {
 				xtype: 'fieldset',
 				margin: '50px auto',
 				id: '_loginfieldset',
-				items:[/*
-					{
-						xtype: 'hiddenfield',
-						name: 'dateRequest',
-						value: new Date()
-					},
-					{
-						xtype: 'textfield',
-						id: 'loginform_username',
-						name: 'username',
-						placeHolder: i18n.app.PLACEHOLDER_USERNAME,
-						listeners: {
-		                    keyup: function(fld, e){
-		                        if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
-		                            e.stopEvent();
-		                            fld.element.dom.blur();
-		                            window.scrollTo(0,0);
-		                        }
-		                    }
-		                }
-					},
-					{
-						xtype: 'passwordfield',
-						id: 'loginform_password',
-						name: 'password',
-						placeHolder: i18n.app.PLACEHOLDER_PASSWORD,
-						listeners: {
-		                    keyup: function(fld, e){
-		                        if (e.browserEvent.keyCode == 13 || e.browserEvent.keyCode == 10) {
-		                            e.stopEvent();
-		                            fld.element.dom.blur();
-		                            window.scrollTo(0,0);
-		                        }
-		                    }
-		                }
-					}*/
+				items:[
 				]
 			}
 		]

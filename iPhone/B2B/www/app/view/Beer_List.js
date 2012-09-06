@@ -1,8 +1,8 @@
 Ext.define('B2B.view.Beer_List', {
     extend: 'Ext.dataview.List',
     xtype: 'beerlist',
-    cls: 'base_bg',
 	config: {
+        cls: 'base_bg',
         loadingText: i18n.app.HINT_LOADING,
        // emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
         //itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
@@ -33,7 +33,7 @@ Ext.define('B2B.view.Beer_List', {
                     return str;
             },
             getString: function(values){
-                var nationAvatar = (_.isEmpty(values.nationality)) ? "_":(values.nationality).toLowerCase(); 
+                var nationAvatar = (_.isEmpty(values.nationality)) ? "_":(values.nationality).toLowerCase();
                 var tpl = [
                     "<div class='small-list-right'>",
                         "<img src='resources/flags/"+nationAvatar+".png'>",
