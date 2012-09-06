@@ -42,10 +42,11 @@ Ext.define('B2B.view.User_Privacy_Form', {
 					items: [
 						{
 							xtype: 'button',
-							id: 'BTN_removeData',
+							id: 'privacyremovedatabtn',
 							text: utils.__(i18n.app.BTN_REMOVEPERSONAL),
 							ui: 'decline-small',
-							handler: this.onRemoveDataButtonTap
+							handler: this.onRemoveDataButtonTap,
+							scope: this
 						}
 					]
 				}
@@ -53,10 +54,11 @@ Ext.define('B2B.view.User_Privacy_Form', {
 		},
 		button_Logout = {
 			xtype: 'button',
-			id: 'BTN_logOut',
+			id: 'privacylogoutbtn',
 			text: utils.__(i18n.app.BTN_LOGOUT),
 			ui: 'decline',
-			handler: this.onLogoutButtonTap
+			handler: this.onLogoutButtonTap,
+			scope: this
 		};
 
         this.add([toolbar, fieldset_RemoveData, button_Logout]);

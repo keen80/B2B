@@ -1,14 +1,13 @@
 Ext.define("B2B.controller.Privacy", {
 	extend: "Ext.app.Controller",
+	id: "Privacy",
 	config: {
 		refs: {
-			userprofileprivacyform: "userprofileprivacyform",
-			profile: "userprofile",
-			appContainer: "appcontainer",
+			userPrivacyForm: "userprofileprivacyform",
 			app: "_app"
 		},
 		control: {
-			userprofileprivacyform: {
+			userPrivacyForm: {
 				privacyRemoveDataCommand: "onRemoveDataCommand",
 				privacyLogoutCommand: "onLogOutCommand",
 				privacyBackCommand: 'onBackPrivacy'
