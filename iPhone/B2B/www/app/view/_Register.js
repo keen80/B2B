@@ -4,7 +4,7 @@ Ext.define('B2B.view._Register', {
 	xtype: '_register',
 	config: {
 		iconCls: 'settings6',
-		url: 'http://192.168.1.7',
+		url: HH.IP_PORT_SERVER,
 		styleHtmlContent: true,
 		items: [
 			{
@@ -12,6 +12,10 @@ Ext.define('B2B.view._Register', {
 				margin: '50px auto',
 				id: '_registerfieldset',
 				items:[
+					{
+						xtype: 'hiddenfield',
+						name: 'idUser'
+					},
 					{
 						xtype: 'textfield',
 						id: 'registerform_email',

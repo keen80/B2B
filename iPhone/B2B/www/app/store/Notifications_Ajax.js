@@ -21,12 +21,12 @@ Ext.define("B2B.store.Notifications_Ajax", {
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);
-                Ext.Msg.alert('Loading failed', response.statusText);
+                utils.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
                 console.log("Friends Store Callback");
             },
-            load:function(el,records, successful){ 
+            load:function(el,records, successful){
                 HH.log("* Loaded: Store.Notification_Ajax, copying to Local");
                 var store_local = Ext.getStore('Notifications_Local');
 
@@ -41,5 +41,5 @@ Ext.define("B2B.store.Notifications_Ajax", {
             }
         }
     }
-    
+
 });

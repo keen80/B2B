@@ -12,8 +12,8 @@ var utils = {
 		if(!(navigator.online&&google)){
 			if(i18n){
 				return true;
-			}else {
-				alert(i18n.app.HINT_OFFLINE);
+			} else {
+				utils.alert(i18n.app.HINT_OFFLINE, i18n.app.COMMON_ATTENTION, false, null);
 			};
 
 			return false;
@@ -172,51 +172,14 @@ var utils = {
 	getCodeFromLocationCategory: function(text) {
 		return (_.find(i18n.locationCategory, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
 	},
-	generateToken: function(data, store, viewport) {
-		if (data && store && viewport) {
-			viewport.setMasked(true);
-			if (_.isEmpty(data.token)) {
-				Ext.Ajax.request({
-					//url: "http://192.168.1.161:8080/birrettaservice/rest/bserv/login",
-					url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/generaToken",
-					method: "POST",
-					params: {
-						idUser: data.idUser
-					},
-					success: function(result) {
-						var json = Ext.decode(result.responseText, true);
-						if (json && json.response.status.code < 200) {
-							viewport.setMasked(false);
-							var token = json.response.body.list[0].btSid;
-							HH.log("---> Step: Generate Token Success");
-							store.first().set("token", token);
-							// store.sync();
-							// Ext.getStore("Profile_Local").first().data.token =
-							goingTo.step2("Loading Store.Profile_Ajax");
-							viewport.removeAll(true, true);
-							viewport.add(Ext.create('B2B.view._App'));
-						} else {
-							HH.log("--> Step: Generate token failure - CODE: " + json.response.status.code);
-							utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
-						}
-					},
-					failure: function(result) {
-						HH.log("---> Step: Generate token failure");
-						utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
-					}
-				});
-			} else {
-				viewport.setMasked(false);
-				HH.log("---+ Check: ProfileStore OK, loading view._App");
-				goingTo.step2("Loading Store.Profile_Ajax");
-				viewport.removeAll(true, true);
-				viewport.add(Ext.create('B2B.view._App'));
-			}
-		}
-	},
-	alert: function(title, message) {
+	alert: function(message, title, confirm, callback) {
 		if (navigator && navigator.notification) {
-			navigator.notification.alert(message, null, title);
+			title = (title ? title : "");
+			if (confirm) {
+				navigator.notification.confirm(message, callback, title, i18n.app.BTN_CANCEL + ',' + i18n.app.BTN_OK);
+			} else {
+				navigator.notification.alert(message, null, title, i18n.app.BTN_OK);
+			}
 		} else {
 			alert(message);
 		}

@@ -4,10 +4,8 @@ Ext.define("B2B.store.Profile_Ajax", {
 	config: {
 		model: "B2B.model.User",
 		proxy:{
-			 type:'ajax',
-			 url:'json/mock_user.json',
-			// type: 'jsonp',
-			//url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/detailsUserByUsername_jsonp',
+			url: (HH.LOAD_PROFILE_MOCK ? 'json/mock_user.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/detailsUserByUsername_jsonp'),
+           	type: (HH.LOAD_PROFILE_MOCK ? 'ajax' : 'jsonp'),
 			reader:{
 				type:'json',
 				rootProperty: 'response.body.list',
@@ -20,7 +18,7 @@ Ext.define("B2B.store.Profile_Ajax", {
 		listeners: {
 			exception:function(proxy, response, orientation){
 				console.error('Failure Notification', response.responseText);
-				goingTo.step3("Nevermind We will use the LS");
+				goingTo.step4("Nevermind We will use the LS");
 			},
 			load: function(el,records, successful){
 				HH.log("* Loaded: Store.Profile_Ajax, copying to Local");
@@ -48,15 +46,17 @@ Ext.define("B2B.store.Profile_Ajax", {
 				this.each(function(record) {
 					store_local.add(record.data);
 				});
-				store_local.first().set("token", token);
+
+				if (store_local.getCount() > 0) {
+					store_local.first().set("token", token);
+				}
+
 				store_local.sync();
 				this.removeAll();
 
 				/* see resources/js/hh */
-				goingTo.step3("Load: App Defaults from Store.Profile_Local", toBeer, toFriend, toNotify);
+				goingTo.step3("Load: Activities", toBeer, toFriend, toNotify);
 			}
-
 		}
 	},
-
 });

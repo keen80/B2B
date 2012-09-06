@@ -80,7 +80,7 @@ Ext.define("B2B.controller.Beers", {
 			method: 'POST',
 			successProperty: 'response.status.success',
 			success: function() {
-				alert('form submitted successfully!');
+				utils.alert('form submitted successfully!');
 				if(!spinner.isHidden()) spinner.hide();
 				var app = this.getApp();
 				var beeraddform = Ext.getCmp('beeraddform');
@@ -88,7 +88,7 @@ Ext.define("B2B.controller.Beers", {
 				app.remove(beeraddform);
 			},
 			failure: function(form, action) {
-				alert("PUPPA");
+				utils.alert("PUPPA");
 				if(!spinner.isHidden()) spinner.hide();
 				var app = Ext.getCmp('_app');
 				var beeraddform = Ext.getCmp('beeraddform');
@@ -139,10 +139,10 @@ Ext.define("B2B.controller.Beers", {
 	},
 	/* Not Yet Implemented */
 	onEditBeer: function(){
-		Ext.Msg.alert('TODO: Event EditBeer Received, Next release');
+		utils.alert('TODO: Event EditBeer Received, Next release');
 	},
 	onDeleteBeer: function(){
-		Ext.Msg.alert('TODO: DeleteBeer Not Implemented');
+		utils.alert('TODO: DeleteBeer Not Implemented');
 	},
 	onReportBeer: function(a){
 		if (!a.actions){
@@ -154,7 +154,7 @@ Ext.define("B2B.controller.Beers", {
 						scope: this,
 						ui: 'decline',
 						handler: function(){
-							alert(i18n.app.DIALOG_BEERREPORTED)
+							utils.alert(i18n.app.DIALOG_BEERREPORTED)
 							a.actions.hide();
 						}
 					},
