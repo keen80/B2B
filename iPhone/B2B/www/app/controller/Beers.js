@@ -46,7 +46,7 @@ Ext.define("B2B.controller.Beers", {
 		}
 	},
 	onShowBeerForm: function(){
-
+/*
 		var newBeer = Ext.create("B2B.model.Beer", {
 		//	'idUser': B2B.app.loggedUser.idUser,
 		//	'username': B2B.app.loggedUser.username,
@@ -58,6 +58,17 @@ Ext.define("B2B.controller.Beers", {
 		});
 		var beerForm = this.getBeerForm();
 		beerForm.setRecord(newBeer);
+*/
+		var beeraddform = {
+			xtype: "beeraddform",
+			id: 'beeraddform'
+		};
+
+		var app = Ext.getCmp('_app');
+		app.add(beeraddform);
+		app.setActiveItem(2);
+
+		//beeraddform.setRecord(newBeer);
 	},
 	onSaveBeer: function(){
 		var spinner = this.getSpinner();
@@ -70,37 +81,29 @@ Ext.define("B2B.controller.Beers", {
 			success: function() {
 				alert('form submitted successfully!');
 				if(!spinner.isHidden()) spinner.hide();
-				this.getBeerForm().reset();
-				this.getApp().pop();
+				var app = this.getApp();
+				var beeraddform = Ext.getCmp('beeraddform');
+				beeraddform.reset();
+				app.remove(beeraddform);
 			},
 			failure: function(form, action) {
 				alert("PUPPA");
 				if(!spinner.isHidden()) spinner.hide();
+				var app = Ext.getCmp('_app');
+				var beeraddform = Ext.getCmp('beeraddform');
+				beeraddform.reset();
+				app.remove(beeraddform);
 			}
 		});
 
-		Ext.util.JSONP.request({
-	  params: beerForm.getValues,
-	  url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
-	  callbackKey: 'callback',
-	  scope: 'this',
-	  method: 'POST',
-	  success: function(response) {
-		console.log(response.responseText);
-		if(!spinner.isHidden()) spinner.hide();
-	  },
-
-	  failure: function(response) {
-		console.log(response.responseText);
-		if(!spinner.isHidden()) spinner.hide();
-	  }
-});
-
-
 	},
 	onBackBeer: function(){
-		this.getBeerForm().reset();
-		this.getApp().pop();
+		var app = this.getApp();
+		var beeraddform = Ext.getCmp('beeraddform');
+		beeraddform.reset();
+		app.remove(beeraddform);
+		//this.getBeerForm().reset();
+		//this.getApp().pop();
 	},
 	onBackBeerSelect: function(){
 		this.getApp().pop();

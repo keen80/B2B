@@ -46,7 +46,7 @@ Ext.define('B2B.view.User', {
 			id: 'profile_btn',
 			xtype: 'button',
 			ui: 'beerwhite',
-			margin: '6px 10px',
+			margin: '4px 10px',
 			text: i18n.app.BTN_PROFILE,
 			badgeText: i18n.app.BTN_PROFILE,
 			flex: 2,
@@ -197,7 +197,7 @@ Ext.define('B2B.view.User', {
 		secondRowButtonsContainer = {
 			xtype: 'panel',
 			//flex: 1,
-			padding: '0 4 10 4',
+			padding: '0px 4px',
 			layout: {
 				type: 'hbox',
 				pack: 'center'
@@ -211,7 +211,7 @@ Ext.define('B2B.view.User', {
 		thirdButtonsContainer = {
 			xtype: 'panel',
 			//flex: 1,
-			padding: '0 4 10 4',
+			padding: '0 4 4 4',
 			layout: {
 				type: 'hbox',
 				pack: 'center'

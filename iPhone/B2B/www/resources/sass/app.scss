@@ -125,7 +125,7 @@
 
         @mixin indent-list72{
             margin-left: 72px;
-            margin-top: 6px;
+            margin-top: 2px;
         }
 
         @mixin indent-list64{
@@ -192,7 +192,7 @@
         display: block; height: 1px;
         border: 0;
         border-top: 1px solid #DDD;
-        margin: 1em 0; padding: 0;
+        margin: 10px 0; padding: 0;
     }
 
     .x-tabbar.x-docked-bottom .x-tab{
@@ -407,12 +407,15 @@
 
     #placesearchinfobar{
         @extend .infobar;
-        background: url("../icons/position.png") no-repeat 10px center;
+        background-image: url("../icons/position.png");
+        background-position:  10px center;
+        background-repeat: no-repeat;
         background-size: 20px;
-        opacity: 0.5;
         padding-left: 30px;
+        height: 30px;
         .x-html{
             padding: 4px;
+            line-height: 20px;
         }
     }
 
@@ -518,9 +521,9 @@
         background-color: #AAA;
         img{
             margin: 10px;
-            border: 1px solid #AAA;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
+            border: 2px solid #333;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
             background: #FAFAFA;
         }        
     }
@@ -541,9 +544,8 @@
             .profile_description{
                 @include indent-list72;
                 font-weight: normal;
-                font-size: $fontsize_small;
+                font-size: $fontsize_xsmall;
                 color:  #999;
-                font-variant: italic;
             }
             .avatar{
                 border: 1px solid #CCC;
@@ -555,16 +557,17 @@
         }
         .profile_points{
             font-size: $fontsize_small;
+            margin: 4px auto;
         }
     }
 
     .progress-bar {
-        background-color: #FCFCFC;
-        height: 25px;
-        padding: 5px;
+        background-color: #F6F6F6;
+        height: 24px;
+        padding: 4px;
         width: 260px;
         position: relative;
-        margin: 10px auto;
+        margin: 4px auto;
         text-align: left;    
         -webkit-border-radius: 5px;
         border-radius: 5px;
@@ -680,7 +683,7 @@
         .list-footer{
             .subtext{
                 color: #AAA;
-                font-size: $fontsize_xsmall;
+                font-size: $fontsize_small_px;
                 position: relative;
             }
             .location-category{
@@ -1021,7 +1024,7 @@
         position: relative;
         top: -1px;
         z-index: 9;
-        padding: 4px;
+        padding: 4px 10px;
         text-align: left;
         font-size: $fontsize_xsmall;
         font-weight: normal;

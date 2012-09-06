@@ -12,6 +12,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 		title: i18n.app.PANEL_ADDBEER,
 		iconCls: 'add',
 		submitOnAction: true,
+		layout:{animation:false},
 		defaults: {
 			labelAlign: 'left',
 			labelWidth: '50%',
@@ -83,6 +84,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 	initialize: function(){
 
     	this.callParent(arguments);
+    	var profile = (Ext.getStore('Profile_Local').first()).data;
 
     	var backBeerButton = {
 			xtype: "button",
@@ -95,11 +97,13 @@ Ext.define('B2B.view.Beer_Add_Form', {
 
 		var saveBeerButton = {
 			xtype: "button",
-			text: i18n.app.BTN_SAVE,
+			text: i18n.app.BTN_SEND,
 			ui: 'action',
 			id: 'beer_save_btn',
+			margin: '10px',
 			handler: this.onBeerSaveButtonTap,
-			scope: this
+			scope: this,
+			docked: 'bottom'
 		};
 
 		var toolbar = {
@@ -108,17 +112,14 @@ Ext.define('B2B.view.Beer_Add_Form', {
 			title: i18n.app.PANEL_ADDBEERPANEL,
 			docked: 'top',
 			items: [
-				backBeerButton,
-				{
-					xtype: 'spacer'
-				},
-				saveBeerButton
+				backBeerButton
 			]
 		};
 
-		this.add([toolbar]);
-		Ext.getCmp("selectfieldnationality").setOptions(i18n.countries);
-
+		this.add([toolbar, saveBeerButton]);
+		var selectfieldnationality = Ext.getCmp("selectfieldnationality");
+		selectfieldnationality.setOptions(i18n.countries);
+		selectfieldnationality.setValue(profile.nationality);
     },
 	onBeerSaveButtonTap: function(){
 		this.fireEvent("beerSaveCommand", this);
