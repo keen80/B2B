@@ -4,10 +4,8 @@ Ext.define("B2B.store.Places_Ajax", {
     config: {
         model: "B2B.model.Place",
         proxy: {
-            // type:'ajax',
-            //url:'json/mock_placelist.json',
-            url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/findLocNear_jsonp',
-            type: 'jsonp',
+            type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            url: (HH.OFFLINE_MODE ? 'json/mock_placelist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/findLocNear_jsonp'),
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

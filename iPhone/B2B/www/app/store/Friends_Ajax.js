@@ -5,8 +5,8 @@ Ext.define("B2B.store.Friends_Ajax", {
         model: "B2B.model.Friend",
         sorters: 'displayName',
         proxy: {
-            type: (HH.LOAD_PROFILE_MOCK ? 'ajax' : 'jsonp'),
-            url: (HH.LOAD_PROFILE_MOCK ? 'json/mock_friendlist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listFriend_jsonp'),
+            type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            url: (HH.OFFLINE_MODE ? 'json/mock_friendlist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listFriend_jsonp'),
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

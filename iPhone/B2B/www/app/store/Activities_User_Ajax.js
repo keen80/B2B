@@ -4,10 +4,8 @@ Ext.define("B2B.store.Activities_User_Ajax", {
     config: {
         model: "B2B.model.Activity",
         proxy: {
-           // type:'ajax',
-           // url:'json/mock_activityuser.json',
-            type:'jsonp',
-            url:HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/listMyActivity_jsonp',
+            type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            url: (HH.OFFLINE_MODE ? 'json/mock_activityuser.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listMyActivity_jsonp'),
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

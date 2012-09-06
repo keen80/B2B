@@ -5,10 +5,8 @@ Ext.define("B2B.store.Notifications_Ajax", {
     config: {
         model: "B2B.model.Notification",
         proxy: {
-            //type:'ajax',
-            //url:'json/mock_notificationlist.json',
-            type:'jsonp',
-            url:HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/listNotification_jsonp',
+            type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            url: (HH.OFFLINE_MODE ? 'json/mock_notificationlist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listNotification_jsonp'),
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

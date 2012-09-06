@@ -8,8 +8,8 @@ Ext.define("B2B.store.Drinks_Ajax", {
 			// Mock for Development
 			type:'ajax',
 			url:'json/mock_drinklist.json',
-			//type:'jsonp',
-			//url:'http://192.168.1.161:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+			// type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            // url: (HH.OFFLINE_MODE ? 'json/mock_drinklist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listBeer_jsonp'),
 			reader: {
 				type:'json',
 				rootProperty: 'response.body.list',

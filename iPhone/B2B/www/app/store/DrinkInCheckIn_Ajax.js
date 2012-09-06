@@ -8,8 +8,8 @@ Ext.define("B2B.store.DrinkInCheckIn_Ajax", {
             // Mock for Development
             type:'ajax',
             url:'json/mock_drinkincheckinlist.json',
-           // type:'jsonp',
-           // url:'http://localhost:8080/birrettaservice/rest/bserv/listBeer_jsonp',
+            // type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+            // url: (HH.OFFLINE_MODE ? 'json/mock_drinkincheckinlist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listBeer_jsonp'),
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
