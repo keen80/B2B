@@ -70,22 +70,24 @@ var authentication = {
 		birthDay: ""
 	},
 	loginOnFBCompleted: function(email, displayName, gender, nationality, birthDay) {
+		var viewport = Ext.Viewport;
+
 		this.userLoggedOnFB.email = email;
 		this.userLoggedOnFB.displayName = displayName;
 		this.userLoggedOnFB.gender = gender;
 		this.userLoggedOnFB.nationality = (nationality ? nationality.split("_")[0].toUpperCase() : "");
 		this.userLoggedOnFB.birthDay = birthDay;
 
-		Ext.Viewport.setMasked(true);
+		viewport.setMasked(true);
 		var profileStore = Ext.getStore("Profile_Local");
 		if (profileStore) {
 			if (profileStore.getCount() < 1) {
-				this.generateToken(email, Ext.Viewport);
+				this.generateToken(email, viewport);
 			} else {
 				var data = profileStore.first().data;
 				if (data.idUser !== email || _.isEmpty(data.token)) {
 					Ext.getStore("Profile_Local").removeAll();
-					this.generateToken(email, Ext.Viewport);
+					this.generateToken(email, viewport);
 				} else {
 					viewport.removeAll(true, true);
 					goingTo.step2("Loading Store.Profile_Ajax");
@@ -93,7 +95,7 @@ var authentication = {
 				}
 			}
 		}
-		Ext.Viewport.setMasked(false);
+		viewport.setMasked(false);
 	},
 	registerUserWithParams: function(values) {
 		var errorCode = -1,
