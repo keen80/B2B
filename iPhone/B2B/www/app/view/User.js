@@ -70,7 +70,7 @@ Ext.define('B2B.view.User', {
 
 					'</div>',
 					'<div class="callout">',
-						'<div class="calloutUp"><div class="calloutUp2"></div></div><div class="divContainerUp">',
+						'<div class="calloutTip1"><div class="calloutTip2"></div></div><div class="calloutContent">',
 							utils.getPointClaim(profile),
     					'</div>',
     				'</div>',

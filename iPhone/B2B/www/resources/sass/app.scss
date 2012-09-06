@@ -17,6 +17,7 @@
     $beer-neutral-color: #EEE;
     $beer-secondary-color: #FFBC00;
     $beer-white-color: #FAFAFA;
+    $infobar-color: #FFD;
 
     $fontsize_medium: 94%;
     $fontsize_small: 80%;
@@ -192,6 +193,10 @@
         border: 0;
         border-top: 1px solid #DDD;
         margin: 1em 0; padding: 0;
+    }
+
+    .x-tabbar.x-docked-bottom .x-tab{
+        width: 24%;
     }
 
     /* SLIDER ------------------------------------------------------------- */
@@ -402,8 +407,13 @@
 
     #placesearchinfobar{
         @extend .infobar;
-       // background: url("../icons/position.png") left center;
-       // background-size: 10px;
+        background: url("../icons/position.png") no-repeat 10px center;
+        background-size: 20px;
+        opacity: 0.5;
+        padding-left: 30px;
+        .x-html{
+            padding: 4px;
+        }
     }
 
     #foursquare_logo{
@@ -523,7 +533,7 @@
         .profile_right_panel {
             position: relative;
             text-align: left;
-            min-width: 100px;
+            min-height: 60px;
 
             .profile_displayname{
                 @include indent-list72;
@@ -670,7 +680,7 @@
         .list-footer{
             .subtext{
                 color: #AAA;
-                font-size: 11px;
+                font-size: $fontsize_xsmall;
                 position: relative;
             }
             .location-category{
@@ -980,8 +990,10 @@
  { margin: 5px; }
 
  /* CALLOUT */
- .callout{
-      .calloutUp{
+.callout{
+    position: relative;
+    margin-top: -10px;
+    .calloutTip1{
         height: 0;
         width: 0;
         border-bottom: 12px solid #DDD;
@@ -992,21 +1004,19 @@
         margin-left: 20px;
         z-index: 10;
     }
-     .calloutUp2{
+    .calloutTip2{
         position: relative;
         left: -10px;
         top: 2px;
         height: 0;
         width: 0;
-        border-bottom: 10px solid #F2F2F2;
-        //border-bottom: 10px solid #FFD;
+        border-bottom: 10px solid $infobar-color;
         border-left: 10px dotted transparent;
         border-right: 10px dotted transparent;
         z-index: 11;
-    }
-    .divContainerUp{
-        background-color: #F2F2F2;
-      //  background: #FFD;
+        }
+    .calloutContent{
+        background: $infobar-color;
         border: solid 1px #DDD;
         position: relative;
         top: -1px;
@@ -1016,7 +1026,6 @@
         font-size: $fontsize_xsmall;
         font-weight: normal;
         color: #666;
-       // height: 50px;
     }
 
 }
@@ -1489,6 +1498,7 @@ _.each(_.values(i18n.countries), function(a){ console.log('@include field_nation
 @include pictos-iconmask('refresh');
 @include pictos-iconmask('compose');
 @include pictos-iconmask('favorites');
+@include pictos-iconmask('home2');
 
 @include beer-iconmask('alert_attention');
 @include beer-iconmask('check_yes');
