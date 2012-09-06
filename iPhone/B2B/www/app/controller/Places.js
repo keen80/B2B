@@ -98,7 +98,7 @@ Ext.define("B2B.controller.Places", {
 		var beer = (idBeer === null ? this.idBeerSelected : idBeer);
 
 		Ext.Ajax.request({
-			url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/checkIn",
+			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/checkIn",
 			method: "POST",
 			headers: {
         		"btUsername": idUser

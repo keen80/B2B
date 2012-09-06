@@ -46,7 +46,7 @@ Ext.define("B2B.controller.Profiles", {
 
 	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {
 		Ext.Ajax.request({
-			url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/saveUser",
+			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/saveUser",
 			method: "POST",
 			headers: {
         		"btUsername": username

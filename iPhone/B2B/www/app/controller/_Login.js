@@ -20,7 +20,7 @@ Ext.define("B2B.controller._Login", {
 		var store = Ext.getStore("Profile_Local"),
 			date = Ext.Date.format(values.birthDay, 'c');
 		Ext.Ajax.request({
-			url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/saveUser",
+			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/saveUser",
 			method: "POST",
 			headers: {
         		"btUsername": values.email
