@@ -13,7 +13,7 @@ var utils = {
 			if(i18n){
 				return true;
 			} else {
-				utils.alert(i18n.app.HINT_OFFLINE, i18n.app.COMMON_ATTENTION, false, null);
+				utils.alert(i18n.app.HINT_OFFLINE, i18n.app.COMMON_ATTENTION);
 			};
 
 			return false;
@@ -45,7 +45,7 @@ var utils = {
 				if (currentPoints < 1) { return 1 }
 				if (maxPoints < 1) { return 10 }
 				else{
-					return Math.ceil(currentPoints * 100 / maxPoints);				} 
+					return Math.ceil(currentPoints * 100 / maxPoints);				}
 			}else
 				return 1;
 			}

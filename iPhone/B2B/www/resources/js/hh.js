@@ -59,7 +59,7 @@ var goingTo = {
 		profileAjax.load();
 	},
 	step2: function(msg){
-		HH.log("---> Step: " + msg);
+		HH.log("---> Step2: " + msg);
 		var profileLocal = Ext.getStore('Profile_Local'),
 			profileAjax = Ext.getStore('Profile_Ajax'),
 			data = null;
@@ -74,13 +74,13 @@ var goingTo = {
 		profileAjax.load();
 	},
 	step3: function(msg, toBeer, toFriend, toNotification) {
-		HH.log("---> Step: " + msg);
+		HH.log("---> Step3: " + msg);
 		Ext.getStore('Activities_User_Ajax').load();
 		Ext.getStore('Activities_Ajax').load();
 		this.step4("Load: App Defaults from Store.Profile_Local", toBeer, toFriend, toNotification);
 	},
 	step4: function(msg, toBeer, toFriend, toNotification){
-		HH.log("---> Step: "+msg);
+		HH.log("---> Step4: "+msg);
 		var storeProfile = Ext.getStore("Profile_Local");
 		var storeFriend = Ext.getStore('Friends_Local');
 		var storeNotification = Ext.getStore('Notifications_Local');

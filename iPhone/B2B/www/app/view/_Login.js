@@ -7,6 +7,7 @@ Ext.define('B2B.view._Login', {
 		url: 'http://192.168.1.161',
 		styleHtmlContent: true,
 		html:'Cannot login? <a href="#">Send me my credentials via email!</a>',
+		scrollable: false,
 		items: [
 			{
 				xtype: 'fieldset',

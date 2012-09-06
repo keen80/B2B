@@ -65,14 +65,18 @@ Ext.application({
 	},
 
 	launch: function() {
+		Ext.Viewport.setMasked({
+            xtype: 'loadmask'
+        });
+
 		HH.log("---> Step: app.js:launch()");
 
 		goingTo.step1("Loading Store.Profile");
 
 		if (HH.SKIP_LOGIN) {
 			Ext.fly('appLoadingIndicator').destroy();
-			Ext.Viewport.removeAll(true, true);
 			goingTo.step2("Loading Store.Profile_Ajax");
+			Ext.Viewport.removeAll(true, true);
 			Ext.Viewport.add([Ext.create('B2B.view._App')]);
 		} else {
 			bridge.getFBUserLogInStatus();
