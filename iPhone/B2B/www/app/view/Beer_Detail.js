@@ -107,7 +107,7 @@ Ext.define('B2B.view.Beer_Detail', {
 						readOnly  : true,
 						cls: 'beer_form_textfield',
 						label: i18n.app.LABEL_BEERSTYLE,
-						value: utils.getBeerStyleFromCode(info.beerstyle)
+						value: utils.getBeerStyleFromCode(parseInt(info.beerstyle))
 					},
 					{
 						xtype: 'textfield',
@@ -115,7 +115,7 @@ Ext.define('B2B.view.Beer_Detail', {
 						readOnly  : true,
 						cls: 'beer_form_textfield',
 						label: i18n.app.LABEL_BEERTYPE,
-						value: utils.getBeerTypeFromCode(info.beertype)
+						value: utils.getBeerTypeFromCode(parseInt(info.beertype))
 					},
 					{
 						xtype: 'textfield',
