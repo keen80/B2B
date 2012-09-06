@@ -128,6 +128,11 @@
 -(void) logout
 {
 	[FBSession.activeSession closeAndClearTokenInformation];
+	SEL selector = @selector(logoutCompleted);
+	if ([self.delegate respondsToSelector:selector])
+	{
+		[self.delegate logoutCompleted];
+	}
 }
 
 @end

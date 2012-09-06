@@ -12,6 +12,7 @@ function facebookLogInStatus(isLoggedIn) {
 };
 
 function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDay) {
+	Ext.Viewport.setMasked(false);
 	if (success) {
 		if (Ext.fly('appLoadingIndicator')) {
 			Ext.fly('appLoadingIndicator').destroy();
@@ -20,6 +21,10 @@ function loginOnFBCompleted(success, email, displayName, gender, nationality, bi
 	} else {
 		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 	}
+};
+
+function logoutCompleted() {
+	window.location.reload();
 };
 
 var bridge = {
@@ -32,6 +37,7 @@ var bridge = {
 		}
 	},
 	getFBUserInformations: function() {
+		Ext.Viewport.setMasked(true);
 		if (Ext.feature.has.Touch) {
 			var selector = "targets=socialManager:getFBUserInformations";
 			this.sendSelector(selector);
@@ -52,6 +58,7 @@ var bridge = {
 			var selector = "targets=socialManager:logout";
 			this.sendSelector(selector);
 		} else {
+			logoutCompleted();
 		}
 	},
 	sendSelector: function(selector) {

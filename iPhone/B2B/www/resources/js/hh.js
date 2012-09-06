@@ -30,7 +30,7 @@ var HH = {
 	"default_place64": "resources/img/default/blank_place_64.png",
 	"default_badge32": "resources/img/default/blank_badge_32.png",
 	"default_badge64": "resources/img/default/blank_badge_64.png",
-	IP_PORT_SERVER: "http://192.168.1.7:8080",
+	IP_PORT_SERVER: "http://93.70.93.36:8080",
 	DEBUG: true,
 	"beergroup": 2,
 	map: {

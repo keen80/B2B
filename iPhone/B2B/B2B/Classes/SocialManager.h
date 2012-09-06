@@ -14,6 +14,7 @@
 
 -(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict;
 -(void) facebookUserLoginStatus:(BOOL)isLogged;
+-(void) logoutCompleted;
 
 @end
 
