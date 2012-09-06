@@ -94,7 +94,7 @@
 		birthDay = [dict valueForKey:@"birthday"];
 		birthDay = ([birthDay length] == 0 ? @"" : birthDay);
 	}
-	//email, displayName, gender, nationality, birthDay
+	//success, email, displayName, gender, nationality, birthDay
 	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(%@, \"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", suc, email, displayName, gender, nationality, birthDay];
 	[self executeJavascriptString:string];
 }

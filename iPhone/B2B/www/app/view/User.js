@@ -161,7 +161,7 @@ Ext.define('B2B.view.User', {
 			ui: 'beeryellow',
 			cls: 'profile_square',
 			width: "100px",
-			height: "80px", 
+			height: "80px",
 			margin: '4px 2px',
 			//text: i18n.app.BTN_FRIENDS,
 			html: [
@@ -181,7 +181,7 @@ Ext.define('B2B.view.User', {
 			ui: 'beerviolet',
 			cls: 'profile_square',
 			width: "100px",
-			height: "80px", 
+			height: "80px",
 			margin: '4px 2px',
 			//text: i18n.app.BTN_STATS,
 			html: [
@@ -252,10 +252,10 @@ Ext.define('B2B.view.User', {
 		this.fireEvent("badgesProfileCommand", this);
 	},
 	onDrinkListButtonTap: function() {
-		Ext.Msg.alert("To Be Implemented");
+		utils.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
-		Ext.Msg.alert("To Be Implemented");
+		utils.alert("To Be Implemented");
 	},
 	onFavoritesButtonTap: function() {
 		this.fireEvent("favoritesProfileCommand", this);

@@ -116,7 +116,6 @@ Ext.define('B2B.view.Place', {
 					me.setMasked(false);
 					   Ext.getStore("Places_Ajax").load();
                   if(confirm(i18n.app.HINT_GEOERROR)){
-//                      alert("TO DO: RELOAD?");
                   }else{
                      me.fireEvent("backCheckCommand", me);
                   }

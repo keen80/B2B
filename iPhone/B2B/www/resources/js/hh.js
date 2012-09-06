@@ -17,8 +17,8 @@ if( _.str.include(language_string, "it")){
 
 
 var HH = {
-	SKIP_LOGIN: false,
-	LOAD_PROFILE_MOCK: false,
+	SKIP_LOGIN: true,
+	LOAD_PROFILE_MOCK: true,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	"default_user32": "resources/img/default/blank_avatar_32.png",

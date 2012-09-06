@@ -19,7 +19,7 @@ Ext.define("B2B.store.Places_Ajax", {
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);
-                Ext.Msg.alert('Loading failed', response.statusText);
+                utils.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
                 HH.log("Beers Store Callback");
