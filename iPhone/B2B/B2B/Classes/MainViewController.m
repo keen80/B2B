@@ -19,7 +19,6 @@
 	if (self)
 	{
 		bridge = [[WebViewBridge alloc] init];
-		[SocialManager sharedSocialManager].delegate = self;
 	}
 	
 	return self;
@@ -31,6 +30,20 @@
 	[bridge release];
 	
 	[super dealloc];
+}
+
+-(void) viewDidLoad
+{
+	[super viewDidLoad];
+	
+	[SocialManager sharedSocialManager].delegate = self;
+}
+
+-(void) viewDidUnload
+{
+	[super viewDidUnload];
+	
+	[SocialManager sharedSocialManager].delegate = nil;
 }
 
 -(void) executeJavascriptString:(NSString *)function
@@ -61,13 +74,34 @@
 
 -(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict
 {
-	NSString *email = [dict valueForKey:@"email"];
-	NSString *displayName = [dict valueForKey:@"name"];
-	NSString *nationality = [dict valueForKey:@"locale"];
-	NSString *gender = [dict valueForKey:@"gender"];
-	NSString *birthDay = [dict valueForKey:@"birthday"];
+	NSString *suc = (success ? @"true" : @"false");
+	NSString *email = @"";
+	NSString *displayName = @"";
+	NSString *nationality = @"";
+	NSString *gender = @"";
+	NSString *birthDay = @"";
+	
+	if (dict != nil)
+	{
+		email = [dict valueForKey:@"email"];
+		email = ([email length] == 0 ? @"" : email);
+		displayName = [dict valueForKey:@"name"];
+		displayName = ([displayName length] == 0 ? @"" : displayName);
+		nationality = [dict valueForKey:@"locale"];
+		nationality = ([nationality length] == 0 ? @"" : nationality);
+		gender = [dict valueForKey:@"gender"];
+		gender = ([gender length] == 0 ? @"" : gender);
+		birthDay = [dict valueForKey:@"birthday"];
+		birthDay = ([birthDay length] == 0 ? @"" : birthDay);
+	}
 	//email, displayName, gender, nationality, birthDay
-	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(\"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", email, displayName, gender, nationality, birthDay];
+	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(%@, \"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", suc, email, displayName, gender, nationality, birthDay];
+	[self executeJavascriptString:string];
+}
+
+-(void) facebookUserLoginStatus:(BOOL)isLogged
+{
+	NSString *string = [NSString stringWithFormat:@"facebookLogInStatus(%@);", (isLogged ? @"true" : @"false")];
 	[self executeJavascriptString:string];
 }
 

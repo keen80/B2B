@@ -13,6 +13,7 @@
 @protocol SocialManagerDelegate <NSObject>
 
 -(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict;
+-(void) facebookUserLoginStatus:(BOOL)isLogged;
 
 @end
 
@@ -29,6 +30,6 @@
 
 -(void) createFacebookSession;
 
--(void) initLogin;
+-(void) doLoginOnFB;
 
 @end

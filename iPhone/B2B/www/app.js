@@ -71,21 +71,7 @@ Ext.application({
 
 		Ext.fly('appLoadingIndicator').destroy();
 
-		var profileStore = Ext.getStore("Profile_Local");
-		
-		Ext.Viewport.add(Ext.create('B2B.view._App'));
-		/*
-		if (profileStore && profileStore.getCount() < 1) {
-			HH.log("---+ Check: ProfileStore Empty - Show view._login");
-			Ext.Viewport.add(Ext.create('B2B.view._Login'));
-		} else {
-			// HH.log("---+ Check: ProfileStore OK, loading view._App");
-			// goingTo.step2("Loading Store.Profile_Ajax");
-			// Ext.Viewport.add(Ext.create('B2B.view._App'));
-			var data = profileStore.first().data;
-			utils.generateToken(data, profileStore, Ext.Viewport);
-		}
-//				    loginOnFBCompleted("email", "displayName", "gender", "nationality", "birthDay");*/
+		bridge.getFBUserLogInStatus();
 	},
 	onUpdated: function() {
 		if(window.confirm(i18n.app.HINT_APPLICATIONRELOADED)){

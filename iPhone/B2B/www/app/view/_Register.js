@@ -13,6 +13,10 @@ Ext.define('B2B.view._Register', {
 				id: '_registerfieldset',
 				items:[
 					{
+						xtype: 'hiddenfield',
+						name: 'idUser'
+					},
+					{
 						xtype: 'textfield',
 						id: 'registerform_email',
 						name: 'email',

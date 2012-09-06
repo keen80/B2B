@@ -38,7 +38,6 @@
 {
 	if (FBSession.activeSession.isOpen)
 	{
-        // login is integrated with the send button -- so if open, we send
         [self requestPersonalInfo];
     }
 	else
@@ -51,12 +50,13 @@
 		 {
 			 if (error)
 			 {
-				 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-																 message:error.localizedDescription
-																delegate:nil
-													   cancelButtonTitle:@"OK"
-													   otherButtonTitles:nil];
-				 [alert show];
+				 NSLog(@"[FBSession] Error: %@", error.localizedDescription);
+				 
+				 SEL selector = @selector(facebookLoginCompleted:personalInfo:);
+				 if ([self.delegate respondsToSelector:selector])
+				 {
+					 [self.delegate facebookLoginCompleted:NO personalInfo:nil];
+				 }
 			 }
 			 else if (FB_ISSESSIONOPENWITHSTATE(status))
 			 {
@@ -102,11 +102,25 @@
 	SEL selector = @selector(facebookLoginCompleted:personalInfo:);
 	if ([self.delegate respondsToSelector:selector])
 	{
-		[self.delegate facebookLoginCompleted:YES personalInfo:result];
+		[self.delegate facebookLoginCompleted:(error == nil) personalInfo:result];
 	}
 }
 
--(void) initLogin
+-(void) getFBUserLogInStatus
+{
+	SEL selector = @selector(facebookUserLoginStatus:);
+	if ([self.delegate respondsToSelector:selector])
+	{
+		[self.delegate facebookUserLoginStatus:(FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded)];
+	}
+}
+
+-(void) getFBUserInformations
+{
+	[self requestPersonalInfo];
+}
+
+-(void) doLoginOnFB
 {
 	[self createFacebookSession];
 }
