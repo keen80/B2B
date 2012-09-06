@@ -46,7 +46,11 @@ Ext.define("B2B.store.Profile_Ajax", {
 				this.each(function(record) {
 					store_local.add(record.data);
 				});
-				store_local.first().set("token", token);
+
+				if (store_local.getCount() > 0) {
+					store_local.first().set("token", token);
+				}
+
 				store_local.sync();
 				this.removeAll();
 
