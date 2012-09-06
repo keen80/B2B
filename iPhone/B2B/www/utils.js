@@ -27,13 +27,31 @@ var utils = {
 	getUserAvatar: function(profile){
 		var avatar_url = HH.default_user64;
 		if(profile){
-			if (!_isEmpty(profile.avatar)){
+
+			if( !(_.isUndefined(profile.avatar) || _.isUndefined(profile.avatar)) ){
 				avatar_url = profile.avatar;
-			}else if ( !_Empty(profile.email) ){
+			}else if ( !_.isUndefined(profile.email) ){
 				avatar_url = "http://www.gravatar.com/avatar/"+md5(profile.email)+"?s=64";
 			}
 		}
 		return avatar_url;
+	},
+	getProgressPoint: function(profile){
+		var currentpoints = 0;
+		var maxpoints = 0;
+		var progresspoints = 0;
+		if(profile){
+			if (! (_.isUndefined(profile.currentPoint) || _.isUndefined(profile.maxPoints))){
+				currentpoints = profile.currentPoint;
+				maxpoints = profile.maxPoints;
+				if (currentPoints = 0) { return 0 }
+				if (maxPoints == 0) { return 10 }
+				else{
+					return ceil(currentPoints * 100 / maxPoints);				} 
+			}else
+				return 10;
+			}
+		return progresspoints;
 	},
 	getActivityString: function(values){
 		var str;

@@ -4,10 +4,10 @@ Ext.define("B2B.store.Profile_Ajax", {
 	config: {
 		model: "B2B.model.User",
 		proxy:{
-			// type:'ajax',
-			// url:'json/mock_user.json',
-			url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/detailsUserByUsername_jsonp',
-            type: 'jsonp',
+			 type:'ajax',
+			 url:'json/mock_user.json',
+			//url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/detailsUserByUsername_jsonp',
+           // type: 'jsonp',
 			reader:{
 				type:'json',
 				rootProperty: 'response.body.list',

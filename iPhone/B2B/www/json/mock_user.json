@@ -17,6 +17,8 @@
 		"firstName": "Marco",
 		"lastName": "Calabro",
 		"gender": 1,
+		"currentPoints": 50,
+		"maxPoints": 200,
 		"nationality": "IT",
 		"shareTwitter": true,
 		"shareFacebook": false,

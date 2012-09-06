@@ -77,7 +77,7 @@ var i18n = {
 		"BTN_DRINKIN": "Drink In!",
 		"BTN_DRINKLIST": "My DrinkIns",
 		"BTN_EDIT": "Edit",
-		"BTN_FAVORITES": "Favorites",
+		"BTN_FAVORITES": "Favorite Beers",
 		"BTN_ADDFAVORITE": "Add a Favorite Beer",
 		"BTN_LOGIN": "Login",
 		"BTN_LOGOUT": "Logout",

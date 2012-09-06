@@ -46,7 +46,7 @@ Ext.define("B2B.controller.Beers", {
 		}
 	},
 	onShowBeerForm: function(){
-
+/*
 		var newBeer = Ext.create("B2B.model.Beer", {
 		//	'idUser': B2B.app.loggedUser.idUser,
 		//	'username': B2B.app.loggedUser.username,
@@ -58,6 +58,20 @@ Ext.define("B2B.controller.Beers", {
 		});
 		var beerForm = this.getBeerForm();
 		beerForm.setRecord(newBeer);
+*/
+		var beeraddform = {
+			xtype: 'beeraddform',
+			id: 'beeraddform'
+		};
+
+		var profileContainer = this.getProfile();
+		profileContainer.add(beeraddform);
+		var profileForm = this.getProfileForm();
+		profileForm.reset();
+		profileForm.setRecord(Ext.getStore('Profile_Local').first());
+		profileContainer.setActiveItem(2);
+
+
 	},
 	onSaveBeer: function(){
 		var spinner = this.getSpinner();
