@@ -3,7 +3,7 @@ Ext.define('B2B.view.Friend', {
 	xtype: 'friend',
 	config: {
 		title: i18n.app.LABEL_FRIENDS,
-		iconCls: 'contacts',
+		iconCls: 'smiley_friends',
         layout: {
         	type: 'fit'
         }

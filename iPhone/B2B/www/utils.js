@@ -27,7 +27,6 @@ var utils = {
 	getUserAvatar: function(profile){
 		var avatar_url = HH.default_user64;
 		if(profile){
-
 			if( !(_.isUndefined(profile.avatar) || _.isUndefined(profile.avatar)) ){
 				avatar_url = profile.avatar;
 			}else if ( !_.isUndefined(profile.email) ){
@@ -37,24 +36,45 @@ var utils = {
 		return avatar_url;
 	},
 	getProgressPoint: function(profile){
-		var currentpoints = 0;
-		var maxpoints = 0;
-		var progresspoints = 0;
+		var currentPoints = 0;
+		var maxPoints = 0;
 		if(profile){
-			if (! (_.isUndefined(profile.currentPoint) || _.isUndefined(profile.maxPoints))){
-				currentpoints = profile.currentPoint;
-				maxpoints = profile.maxPoints;
-				if (currentPoints = 0) { return 0 }
-				if (maxPoints == 0) { return 10 }
+			if (! (_.isNumber(parseInt(profile.currentPoints)) || _.isNumber(parseInt(profile.maxPoints)))){
+				currentPoints = parseInt(profile.currentPoints);
+				maxPoints = parseInt(profile.maxPoints);
+				if (currentPoints < 1) { return 1 }
+				if (maxPoints < 1) { return 10 }
 				else{
-					return ceil(currentPoints * 100 / maxPoints);				} 
+					return Math.ceil(currentPoints * 100 / maxPoints);				} 
 			}else
-				return 10;
+				return 1;
 			}
-		return progresspoints;
+		return 1;
+	},
+	getPointLabel: function(profile){
+		var what = "todo con profile";
+		var currentPoints = _.isEmpty(profile.currentPoints)?profile.currentPoints:"0"
+		switch(what){
+			case 0:
+				return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
+				break;
+			default:
+				return this.__(i18n.app.POINTLABEL_TEXT_0_0, currentPoints);
+				break;
+		};
+	},
+	getPointClaim: function(profile){
+		var what = "todo con profile";
+		switch(what){
+			case 0:
+				return this.__(i18n.app.POINTCLAIM_TEXT_0_1);
+				break;
+			default:
+				return this.__(i18n.app.POINTCLAIM_TEXT_0_0);
+				break;
+		};
 	},
 	getActivityString: function(values){
-		var str;
 		switch(values.type){
 			case 0:
 				return this.__(i18n.app.ACTIVITY_TEXT_0_1, values.displayName, values.friendName);
@@ -69,10 +89,8 @@ var utils = {
 				return this.__(i18n.app.ACTIVITY_TEXT_0_0, values.username, values.friendname);
 				break;
 		}
-		return str;
 	},
 	getNotificationString: function(values){
-		var str;
 		switch(values.type){
 			case 0:
 				return this.__(i18n.app.NOTIFICATION_TEXT_0_1, values.friendName);
@@ -90,7 +108,6 @@ var utils = {
 				return this.__(i18n.app.NOTIFICATION_TEXT_0_0, values.friendName);
 				break;
 		}
-		return str;
 	},
 	getDisplayName: function(json){
 		if (json.displayName){
