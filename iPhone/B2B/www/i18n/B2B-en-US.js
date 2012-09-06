@@ -221,11 +221,11 @@ var i18n = {
 		"DRINK_TEXT_1_4": "You enjoy a %1 at %2",
 		"DRINK_TEXT_1_5": "You really enjoy the %1 at %2",
 
-		"POINTCLAIM_TEXT_0_0": "C'mon, You are still far far away from the top",
+		"POINTCLAIM_TEXT_0_0": "<strong>C'mon</strong>, You are still <strong class='hilite'>far far away</strong> from the top",
 		"POINTCLAIM_TEXT_0_1": "<strong>WOW</strong> ! You are the <strong class='hilite'>King of the Hill</strong>",
 
-		"POINTLABEL_TEXT_0_0": "You don't earn any point, this week, wanna bear?",
-		"POINTLABEL_TEXT_0_1": "This week, You earned %1 points",
+		"POINTLABEL_TEXT_0_0": "<strong>Awwww</strong> You didn't earn <strong class='hilite'>any point</strong> this week...",
+		"POINTLABEL_TEXT_0_1": "This week, You earned <strong class='hilite'>%1</strong> points",
 
 		"ACTIVITY_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
 		"ACTIVITY_TEXT_0_1": "<strong class='hilite'>%1</strong> is now friend with <strong class='hilite'>%2</strong>",
@@ -254,7 +254,7 @@ var i18n = {
 		{"text": "ALE - BRITISH STYLE etc", "value": 0 },
 		{"text": "LAGER - PALE (CHIARA)", "value": 1 },
 		{"text": "STRONG LAGER", "value": 2 },
-		{"text": "LAGER - PALE (CHIARA)NSPICED/HERBS", "value": 3 },
+		{"text": "NSPICED/HERBS", "value": 3 },
 		{"text": "STOUT/PORTER", "value": 4 },
 		{"text": "SPECIAL", "value": 5 },
 		{"text": "WHEAT (GRANO)", "value": 6 },

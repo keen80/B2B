@@ -79,7 +79,7 @@ Ext.define('B2B.view.Beer_Detail', {
 				findbeeraroundme
 			]
 		};
-		var skifo = info.name;
+
 		var beerfieldset = {
 				xtype: 'fieldset',
 				title: i18n.app.FORM_BEERDETAIL,
@@ -88,23 +88,23 @@ Ext.define('B2B.view.Beer_Detail', {
 					{
 						xtype: 'textfield',
 						name: 'name',
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield',
-						value: _.titleize(skifo),
+						value: _.titleize(info.name),
 						label: i18n.app.LABEL_BEERNAME
 					},
 					{
 						xtype: 'textfield',
 						name: 'brewery',
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield',
-						value: info.brewery,
+						value: _.titleize(info.brewery),
 						label: i18n.app.LABEL_BEERBREWERY
 					},
 					{
 						xtype: 'textfield',
 						name: "beerstyle",
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield',
 						label: i18n.app.LABEL_BEERSTYLE,
 						value: utils.getBeerStyleFromCode(parseInt(info.beerstyle))
@@ -112,7 +112,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					{
 						xtype: 'textfield',
 						name: "beertype",
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield',
 						label: i18n.app.LABEL_BEERTYPE,
 						value: utils.getBeerTypeFromCode(parseInt(info.beertype))
@@ -120,7 +120,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					{
 						xtype: 'textfield',
 						name: "grad",
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield',
 						label: i18n.app.LABEL_BEERGRAD,
 						value: info.grad
@@ -128,7 +128,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					{
 						xtype: 'textfield',
 						name: "nationality",
-						readOnly  : true,
+						readOnly: true,
 						cls: 'beer_form_textfield field_nationality_'+(info.nationality).toLowerCase(),
 						label: i18n.app.FORM_NATIONALITY,
 						value: utils.getCountryFromCode(info.nationality)
@@ -138,7 +138,7 @@ Ext.define('B2B.view.Beer_Detail', {
 						name: 'description',
 						cls: 'beer_form_textfield',
 						labelAlign: 'top',
-						readOnly  : true,
+						readOnly: true,
 						label: i18n.app.LABEL_BEERDESCRIPTION,
 						value: info.description
 					}
