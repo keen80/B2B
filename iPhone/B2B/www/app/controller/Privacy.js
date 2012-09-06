@@ -16,7 +16,7 @@ Ext.define("B2B.controller.Privacy", {
 	},
 	onRemoveDataCommand: function(){
 		var removeCallback = function(button){
-			if (button == 1) {
+			if (button === 2) {
 				Ext.getStore("Activities_Ajax").removeAll();
 				Ext.getStore("Activities_Local").removeAll();
 				Ext.getStore("Beers_Ajax").removeAll();
@@ -31,7 +31,6 @@ Ext.define("B2B.controller.Privacy", {
 				Ext.getStore("Profile_Ajax").removeAll();
 				Ext.getStore("Profile_Local").removeAll();
 				bridge.logout();
-				window.location.reload();
 			}
 		};
 
@@ -39,13 +38,11 @@ Ext.define("B2B.controller.Privacy", {
 	},
 	onLogOutCommand: function(){
 		var logoutCallback = function(button){
-			if (button == 1) {
+			if (button === 2) {
 				Ext.getStore("Profile_Ajax").removeAll();
 				Ext.getStore("Profile_Local").removeAll();
 
 				bridge.logout();
-
-				window.location.reload();
 			}
 		};
 

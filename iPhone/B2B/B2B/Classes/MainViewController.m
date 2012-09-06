@@ -105,4 +105,10 @@
 	[self executeJavascriptString:string];
 }
 
+-(void) logoutCompleted
+{
+	NSString *string = @"logoutCompleted();";
+	[self executeJavascriptString:string];
+}
+
 @end
