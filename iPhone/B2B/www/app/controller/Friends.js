@@ -5,9 +5,14 @@ Ext.define("B2B.controller.Friends", {
 			friendListContainer: "friends",
 			friendDetail: "friendlistdetail",
 			friendFinder: "friendfinderpanel",
+			friendsearch: "friendsearch",
 			app: "_app"
 		},
 		control: {
+			friendsearch: 
+			{
+				searchFriendCommand: "onSearchFriend",
+			},
 			friendListContainer: {
 				searchFriendCommand: "onSearchFriend",
 				viewFriendDetailCommand: "onViewFriendDetail"
@@ -24,11 +29,15 @@ Ext.define("B2B.controller.Friends", {
 			}
 		}
 	},
-	onSearchFriend: function(){
+	onSearchFriend: function(resource){
 		HH.log("puppa");
+		var rockIt = function(resource){
+			HH.log(resource);
+		};
 		this.getApp().push({
 			xtype: "friendfinderpanel"
 		});
+	//confirm(i18n.app.DIALOG_YOUSURE, rockIt(resource));
 	},
 	onRemoveFriend: function(){
 		//Ext.Msg.alert('Event DeleteFriend Received');

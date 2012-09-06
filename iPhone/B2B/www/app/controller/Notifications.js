@@ -32,7 +32,7 @@ Ext.define("B2B.controller.Notifications", {
 		var user = Ext.getStore("Profile_Local").first().data;
 		//record.data.idNotification
 		 Ext.Ajax.request({
-                        url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/setNotificationRead",
+                        url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/setNotificationRead",
                         method: "GET",
                         headers: {
                         "btUsername": user.idUser,
