@@ -16,18 +16,10 @@ Ext.define("B2B.controller._Login", {
 		}
 	},
 	onRegisterCommand: function(source, values) {
-		Ext.Viewport.setMasked(true);
-		var store = Ext.getStore("Profile_Local"),
-			date = Ext.Date.format(values.birthDay, 'c');
-		Ext.Ajax.request({
-			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/saveUser",
-			method: "POST",
-			headers: {
-        		"btUsername": values.email
-    		},
-			params: {
-				idUser: values.email,
-				username: values.email,
+		var date = Ext.Date.format(values.birthDay, 'c'),
+			params = {
+				idUser: values.idUser,
+				username: values.idUser,
 				displayName: values.displayName,
 				email: values.email,
 				gender: values.gender,
@@ -44,5 +36,3 @@ Ext.define("B2B.controller._Login", {
 		this.callParent(arguments);
 	}
 });
-
-

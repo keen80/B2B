@@ -113,7 +113,7 @@ var authentication = {
 			};
 
 			Ext.Ajax.request({
-				url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/saveUser",
+				url: HH.IP_PORT_SERVER + "/birrettaservice/rest/bserv/saveUser",
 				method: "POST",
 				headers: {
 	        		"btUsername": values.idUser
@@ -160,8 +160,7 @@ var authentication = {
 
 		if (!_.isEmpty(idUser)) {
 			Ext.Ajax.request({
-				//url: "http://192.168.1.161:8080/birrettaservice/rest/bserv/login",
-				url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/generaToken",
+				url: HH.IP_PORT_SERVER + "/birrettaservice/rest/bserv/generaToken",
 				method: "POST",
 				params: {
 					idUser: idUser

@@ -105,14 +105,17 @@ var goingTo = {
 		var myLastDrink = Ext.getStore("Drinks_Local").first();
 		var testdata = Ext.create("B2B.model.Drink", {
 		});
-		Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
+		var latestDrink = Ext.getCmp('mylatestdrink');
+		if (latestDrink) {
+			Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
 
-		HH.log("---> Step: Setup DisplayName thru app");
-		var displayName = utils.getDisplayName(profile.data);
+			HH.log("---> Step: Setup DisplayName thru app");
+			var displayName = utils.getDisplayName(profile.data);
 		//Ext.get("profile_username").setHtml(profile.data.username);
 		//TODO SPOSTARE IN UN CONTROLLER
 		// Ext.getCmp('AboutTitlebar').setTitle(displayName);
-		Ext.getCmp('appslider').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+			Ext.getCmp('appslider').setTitle('<div class="nav_slidemenu_profile"><img src="'+profile.data.avatar+'" class="smallavatar"><span>'+displayName+'</span>');
+		}
 	},
 	setupPreferences: function(profile){
 		HH.log("---> Step: Setup Preferences");

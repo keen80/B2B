@@ -4,7 +4,7 @@ Ext.define("B2B.store.Profile_Ajax", {
 	config: {
 		model: "B2B.model.User",
 		proxy:{
-			url: (HH.LOAD_PROFILE_MOCK ? 'json/mock_user.json' : 'http://192.168.1.7:8080/birrettaservice/rest/bserv/detailsUserByUsername_jsonp'),
+			url: (HH.LOAD_PROFILE_MOCK ? 'json/mock_user.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/detailsUserByUsername_jsonp'),
            	type: (HH.LOAD_PROFILE_MOCK ? 'ajax' : 'jsonp'),
 			reader:{
 				type:'json',
