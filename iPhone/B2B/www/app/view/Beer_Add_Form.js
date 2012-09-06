@@ -8,7 +8,6 @@ Ext.define('B2B.view.Beer_Add_Form', {
         'Ext.Toolbar',
         'Ext.field.Select'
     ],
-    successProperty: 'response.status.success',
 	config: {
 		title: i18n.app.PANEL_ADDBEER,
 		iconCls: 'add',

@@ -98,8 +98,9 @@
             .x-list-item-label{
                 background: #F9F9F9;
                 border: 1px solid #CCC;
-                margin: 4px;
-                border-radius: 10px;
+                margin: 2px;
+                border-radius: 6px;
+                padding: 6px 10px;
             }
         }
 
@@ -192,7 +193,7 @@
         display: block; height: 1px;
         border: 0;
         border-top: 1px solid #DDD;
-        margin: 10px 0; padding: 0;
+        margin: 10px 0 0; padding: 0;
     }
 
     .x-tabbar.x-docked-bottom .x-tab{
@@ -407,7 +408,7 @@
 
     #placesearchinfobar{
         @extend .infobar;
-        background-image: url("../icons/position.png");
+        background-image: url("../icons/locate.png");
         background-position:  10px center;
         background-repeat: no-repeat;
         background-size: 20px;
@@ -536,7 +537,7 @@
         .profile_right_panel {
             position: relative;
             text-align: left;
-            min-height: 60px;
+            min-height: 42px;
 
             .profile_displayname{
                 @include indent-list72;
@@ -556,8 +557,8 @@
             }
         }
         .profile_points{
-            font-size: $fontsize_small;
-            margin: 4px auto;
+            font-size: $fontsize_xsmall;
+            margin: 2px auto;
         }
     }
 
@@ -604,6 +605,7 @@
             -webkit-border-radius: 5px;
             border-radius: 5px;
            // background: #FFF;
+            margin: 0 auto;
             display: block;
            // opacity: 0.8;
         }
@@ -650,6 +652,7 @@
                     left: 12px;
                     -webkit-border-radius: 5px;
                     border-radius: 5px;
+                    border: 1px solid #CCC;
                 }
             }
         }
@@ -685,6 +688,7 @@
                 color: #AAA;
                 font-size: $fontsize_small_px;
                 position: relative;
+                padding: 6px 10px;
             }
             .location-category{
                 @extend .subtext;

@@ -78,7 +78,6 @@ Ext.define("B2B.controller.Beers", {
 		beerForm.submit({
 			url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
 			method: 'POST',
-			successProperty: 'response.status.success',
 			success: function() {
 				utils.alert('form submitted successfully!');
 				if(!spinner.isHidden()) spinner.hide();

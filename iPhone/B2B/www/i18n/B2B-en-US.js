@@ -75,7 +75,7 @@ var i18n = {
 		"BTN_CHOOSEPICTURE": "Choose a Picture",
 		"BTN_DELETE": "Delete",
 		"BTN_DRINKIN": "Drink In!",
-		"BTN_DRINKLIST": "My DrinkIns",
+		"BTN_DRINKLIST": "Drink Ins",
 		"BTN_EDIT": "Edit",
 		"BTN_FAVORITES": "Favorite Beers",
 		"BTN_ADDFAVORITE": "Add a Favorite Beer",
