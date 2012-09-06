@@ -27,6 +27,7 @@ var HH = {
 	"default_place32": "resources/img/default/blank_avatar_32.png",
 	"default_badge32": "resources/img/default/blank_avatar_32.png",
 	"default_badge64": "resources/img/default/blank_avatar_64.png",
+	IP_PORT_SERVER: "http://192.168.1.7:8080",
 	DEBUG: true,
 	"beergroup": 2,
 	map: {
@@ -45,17 +46,18 @@ var HH = {
 
 var goingTo = {
 	step1: function(msg){
-		HH.log("---> Step: "+msg);
+		HH.log("---> Step1: "+msg);
 		Ext.getStore('Profile_Local').load();
+	//	var profile = Ext.getStore('Profile_Local').first().data;
+		var profileAjax = Ext.getStore('Profile_Ajax');
+	//	profileAjax.getProxy().setExtraParam("btUsername", profile.idUser);
+	//	profileAjax.getProxy().setExtraParam("btSid", profile.token);
+	//	profileAjax.getProxy().setExtraParam("username", profile.username);
+		profileAjax.load();
 	},
 	step2: function(msg){
-		HH.log("---> Step: "+msg);
-		var profile = Ext.getStore('Profile_Local').first().data;
-		var profileAjax = Ext.getStore('Profile_Ajax');
-		profileAjax.getProxy().setExtraParam("btUsername", profile.idUser);
-		profileAjax.getProxy().setExtraParam("btSid", profile.token);
-		profileAjax.getProxy().setExtraParam("username", profile.username);
-		profileAjax.load();
+		HH.log("---> Step2: "+msg);
+		
 		Ext.getStore('Activities_User_Ajax').load();
 		Ext.getStore('Activities_Ajax').load();
 	},

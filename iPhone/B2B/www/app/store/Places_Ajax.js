@@ -6,7 +6,7 @@ Ext.define("B2B.store.Places_Ajax", {
         proxy: {
             // type:'ajax',
             //url:'json/mock_placelist.json',
-            url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/findLocNear_jsonp',
+            url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/findLocNear_jsonp',
             type: 'jsonp',
             reader: {
                 type:'json',

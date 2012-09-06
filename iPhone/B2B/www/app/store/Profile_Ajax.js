@@ -6,8 +6,8 @@ Ext.define("B2B.store.Profile_Ajax", {
 		proxy:{
 			 type:'ajax',
 			 url:'json/mock_user.json',
-			//url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/detailsUserByUsername_jsonp',
-           // type: 'jsonp',
+			// type: 'jsonp',
+			//url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/detailsUserByUsername_jsonp',
 			reader:{
 				type:'json',
 				rootProperty: 'response.body.list',

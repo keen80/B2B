@@ -8,7 +8,7 @@ Ext.define("B2B.store.Notifications_Ajax", {
             //type:'ajax',
             //url:'json/mock_notificationlist.json',
             type:'jsonp',
-            url:'http://192.168.1.7:8080/birrettaservice/rest/bserv/listNotification_jsonp',
+            url:HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/listNotification_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',

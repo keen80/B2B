@@ -46,7 +46,7 @@ Ext.define("B2B.controller.Beers", {
 		}
 	},
 	onShowBeerForm: function(){
-/*
+
 		var newBeer = Ext.create("B2B.model.Beer", {
 		//	'idUser': B2B.app.loggedUser.idUser,
 		//	'username': B2B.app.loggedUser.username,
@@ -58,20 +58,6 @@ Ext.define("B2B.controller.Beers", {
 		});
 		var beerForm = this.getBeerForm();
 		beerForm.setRecord(newBeer);
-*/
-		var beeraddform = {
-			xtype: 'beeraddform',
-			id: 'beeraddform'
-		};
-
-		var profileContainer = this.getProfile();
-		profileContainer.add(beeraddform);
-		var profileForm = this.getProfileForm();
-		profileForm.reset();
-		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-		profileContainer.setActiveItem(2);
-
-
 	},
 	onSaveBeer: function(){
 		var spinner = this.getSpinner();
@@ -79,7 +65,7 @@ Ext.define("B2B.controller.Beers", {
 		var beerForm = this.getBeerForm();
 
 		beerForm.submit({
-			url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/insertBeer',
+			url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
 			method: 'POST',
 			success: function() {
 				alert('form submitted successfully!');
@@ -95,7 +81,7 @@ Ext.define("B2B.controller.Beers", {
 
 		Ext.util.JSONP.request({
 	  params: beerForm.getValues,
-	  url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
+	  url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
 	  callbackKey: 'callback',
 	  scope: 'this',
 	  method: 'POST',

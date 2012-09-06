@@ -7,7 +7,7 @@ Ext.define("B2B.store.Activities_Ajax", {
            // type:'ajax',
            // url:'json/mock_activitylist.json',
             type:'jsonp',
-            url:'http://192.168.1.7:8080/birrettaservice/rest/bserv/listFriendActivity_jsonp',
+            url:HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/listFriendActivity_jsonp',
             reader: {
                 type:'json',
                 rootProperty: 'response.body.list',
