@@ -5,7 +5,6 @@ Ext.define("B2B.view._App_Slider", {
         'Ext.Container',
         'Ext.Toolbar'
     ],
-    
     config: {
         fullscreen: true,
         slideSelector: 'slidableToolbar',
@@ -19,14 +18,14 @@ Ext.define("B2B.view._App_Slider", {
                 xtype: 'toolbar',
                 docked: 'top',
                 ui: 'plain',
-                id: 'slider_toolbar',                  
+                id: 'slider_toolbar',
                 title: {
                     title: '<img id="slider_logo" src="resources/img/logopin_text_black_small.png" width="160px">',
                     width: 200,
                     left: 0
                 }
             }]
-            
+
         },
         groups: {
             'Profile': 1,

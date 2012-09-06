@@ -13,7 +13,6 @@ Ext.define('B2B.view.View_Whatsnew', {
 		].join("")
 	},
 	initialize: function(){
-        
         this.callParent(arguments);
 
         var toolbar = {
