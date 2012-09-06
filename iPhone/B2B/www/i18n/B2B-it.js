@@ -221,8 +221,8 @@ var i18n = {
 		"ACTIVITY_TEXT_6_1": "<strong>%1</strong> likes <strong>%2</strong>",
 
 		"NOTIFICATION_TEXT_0_0": "Know what? <strong>%1</strong> is doing somethin!",
-		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong> has sent You a message!",
-		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong> has sent You a message!",
+		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong> ti ha invitato!",
+		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong> ha confermato la tua amicizia!",
 		"NOTIFICATION_TEXT_2_1": "<strong>%1</strong> has commented your DrinkIn",
 		"NOTIFICATION_TEXT_3_1": "Great! The last <strong>%1</strong> has unlocked the <strong>%2</strong>!",
 

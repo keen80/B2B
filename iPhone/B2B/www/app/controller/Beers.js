@@ -65,7 +65,7 @@ Ext.define("B2B.controller.Beers", {
 		var beerForm = this.getBeerForm();
 
 		beerForm.submit({
-			url: 'http://192.168.1.3:8080/birrettaservice/rest/bserv/insertBeer',
+			url: 'http://192.168.1.7:8080/birrettaservice/rest/bserv/insertBeer',
 			method: 'POST',
 			success: function() {
 				alert('form submitted successfully!');

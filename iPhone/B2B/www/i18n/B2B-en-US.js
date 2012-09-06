@@ -234,8 +234,8 @@ var i18n = {
 		"ACTIVITY_TEXT_6_1": "<strong class='hilite'>%1</strong> likes <strong class='hilite'>%2</strong>",
 
 		"NOTIFICATION_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
-		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong class='hilite'> has sent You a message!",
-		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong class='hilite'> has sent You a message!",
+		"NOTIFICATION_TEXT_0_1": "<strong>%1</strong class='hilite'> has invite you!",
+		"NOTIFICATION_TEXT_1_1": "<strong>%1</strong class='hilite'> has confirmed your friendship!",
 		"NOTIFICATION_TEXT_2_1": "<strong>%1</strong class='hilite'> has commented your DrinkIn",
 		"NOTIFICATION_TEXT_3_1": "Great! The last <strong class='hilite'>%1</strong> has unlocked the <strong class='hilite'>%2</strong>!",
 

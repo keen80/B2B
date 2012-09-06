@@ -26,6 +26,7 @@ Ext.define("B2B.model.Friend", {
 			{ name: 'counterCheckIns', type: 'int', defaultValue: 0 },
 			{ name: 'counterFriend', type: 'int', defaultValue: 0 },
 			{ name: 'counterBadges', type: 'int', defaultValue: 0},
+			{ name: 'countWeekCheckIns', type: 'int', defaultValue: 0}
 		],
 		validations: [
 			{ type: 'presence', field: 'displayName'}
