@@ -37,7 +37,7 @@ Ext.define("B2B.controller.Camera", {
 				this.openLibrary();
 			}
 		} else {
-			Ext.Msg.alert(i18n.app.COMMON_ATTENTION, i18n.app.LABEL_CAMERA_NOT_AVAILABLE);
+			utils.alert(i18n.app.LABEL_CAMERA_NOT_AVAILABLE, i18n.app.COMMON_ATTENTION);
 		}
 	},
 	openLibrary : function(){

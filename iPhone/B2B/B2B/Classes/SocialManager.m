@@ -125,4 +125,9 @@
 	[self createFacebookSession];
 }
 
+-(void) logout
+{
+	[FBSession.activeSession closeAndClearTokenInformation];
+}
+
 @end

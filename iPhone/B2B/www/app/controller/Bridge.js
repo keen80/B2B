@@ -1,9 +1,11 @@
 // Bridge to native functions
 function facebookLogInStatus(isLoggedIn) {
-	console.log("[Bridge] facebookLogInStatus: " + isLoggedIn);
 	if (isLoggedIn) {
 		bridge.getFBUserInformations();
 	} else {
+		if (Ext.fly('appLoadingIndicator')) {
+			Ext.fly('appLoadingIndicator').destroy();
+		}
 		Ext.Viewport.removeAll(true, true);
 		Ext.Viewport.add(Ext.create('B2B.view._Login'));
 	}
@@ -11,7 +13,12 @@ function facebookLogInStatus(isLoggedIn) {
 
 function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDay) {
 	if (success) {
+		if (Ext.fly('appLoadingIndicator')) {
+			Ext.fly('appLoadingIndicator').destroy();
+		}
 		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDay);
+	} else {
+		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 	}
 };
 
@@ -40,6 +47,13 @@ var bridge = {
 			loginOnFBCompleted(true, "pippo@gmail.com", "Pippo", "male", "it_IT", "10/09/1983");
 		}
 	},
+	logout: function() {
+		if (Ext.feature.has.Touch) {
+			var selector = "targets=socialManager:logout";
+			this.sendSelector(selector);
+		} else {
+		}
+	},
 	sendSelector: function(selector) {
 		if (Ext.feature.has.Touch && !_.isEmpty(selector)) {
 			document.location = "selector://" + selector;
@@ -62,6 +76,7 @@ var authentication = {
 		this.userLoggedOnFB.nationality = (nationality ? nationality.split("_")[0].toUpperCase() : "");
 		this.userLoggedOnFB.birthDay = birthDay;
 
+		Ext.Viewport.setMasked(true);
 		var profileStore = Ext.getStore("Profile_Local");
 		if (profileStore) {
 			if (profileStore.getCount() < 1) {
@@ -72,12 +87,13 @@ var authentication = {
 					Ext.getStore("Profile_Local").removeAll();
 					this.generateToken(email, Ext.Viewport);
 				} else {
-					goingTo.step2("Loading Store.Profile_Ajax");
 					viewport.removeAll(true, true);
-					viewport.add(Ext.create('B2B.view._App'));
+					goingTo.step2("Loading Store.Profile_Ajax");
+					viewport.add([Ext.create('B2B.view._App')]);
 				}
 			}
 		}
+		Ext.Viewport.setMasked(false);
 	},
 	registerUserWithParams: function(values) {
 		var errorCode = -1,
@@ -104,7 +120,6 @@ var authentication = {
 	    		},
 				params: params,
 				success: function(result) {
-					Ext.Viewport.setMasked(false);
 					var json = Ext.decode(result.responseText, true);
 					if (json) {
 						errorCode = json.response.status.code;
@@ -141,8 +156,9 @@ var authentication = {
 		var errorCode = -1,
 			that= this;
 
+		Ext.Viewport.setMasked(true);
+
 		if (!_.isEmpty(idUser)) {
-			Ext.Viewport.setMasked(true);
 			Ext.Ajax.request({
 				//url: "http://192.168.1.161:8080/birrettaservice/rest/bserv/login",
 				url: "http://192.168.1.7:8080/birrettaservice/rest/bserv/generaToken",
@@ -181,8 +197,6 @@ var authentication = {
 		var store = Ext.getStore("Profile_Local"),
 			viewport = Ext.Viewport;
 
-		viewport.setMasked(false);
-
 		switch(index) {
 			case 0:    // Success
 				HH.log("---> Step: [Generate Token] Success");
@@ -197,7 +211,7 @@ var authentication = {
 				goingTo.step2("Loading Store.Profile_Ajax");
 
 				viewport.removeAll(true, true);
-				viewport.add(Ext.create('B2B.view._App'));
+				viewport.add([Ext.create('B2B.view._App')]);
 				break;
 			case 1:    // Fail: user not present
 				HH.log("--> Step: [Generate token] User not present - CODE: " + errorCode);
@@ -212,21 +226,23 @@ var authentication = {
 					nationality: this.userLoggedOnFB.nationality
 				});
 
-				Ext.Viewport.removeAt(0, true);
-				Ext.Viewport.add(register);
+				Ext.Viewport.removeAll(true, true);
+				Ext.Viewport.add([register]);
 				break;
 			case 2:    // Fail
 				HH.log("--> Step: [Generate token] Failure - CODE: " + errorCode);
-				utils.alert(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
+				utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 				break;
 			case 3:    // Params error
 				HH.log("---> Step: [Generate token] Params are wrongs");
 				break;
 		}
+
+		viewport.setMasked(false);
 	},
 	_doRegisterUserCallback: function(index, userValues, errorCode) {
-		var store = Ext.getStore("Profile_Local");
-		Ext.Viewport.setMasked(false);
+		var store = Ext.getStore("Profile_Local")
+			viewport = Ext.Viewport;
 
 		switch(index) {
 			case 0:    // Success
@@ -235,10 +251,10 @@ var authentication = {
 					store.removeAll();
 					store.add(userValues);
 					store.sync();
-					goingTo.step2("Loading Store.Profile_Ajax");
 
 					viewport.removeAll(true, true);
-					viewport.add(Ext.create('B2B.view._App'));
+					goingTo.step2("Loading Store.Profile_Ajax");
+					viewport.add([Ext.create('B2B.view._App')]);
 				} else {
 					HH.log("---> Step: [Register user] Failure - User values are empty");
 				}
@@ -251,5 +267,7 @@ var authentication = {
 				HH.log("---> Step: [Register user] Params are wrong");
 				break;
 		}
+
+		viewport.setMasked(false);
 	}
 };

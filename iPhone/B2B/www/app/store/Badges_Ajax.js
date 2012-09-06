@@ -20,7 +20,7 @@ Ext.define("B2B.store.Badges_Ajax", {
 		listeners:{
 			exception:function(proxy, response, orientation){
 				console.error('Failure Badge', response.responseText);
-				Ext.Msg.alert('Loading failed', response.statusText);
+				utils.alert('Loading failed', response.statusText);
 			},
 			callback: function(success,response){
 				HH.log("Badges Store Callback");

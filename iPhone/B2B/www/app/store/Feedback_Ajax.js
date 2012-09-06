@@ -25,7 +25,7 @@ Ext.define("B2B.store.Feedback_Ajax", {
 		listeners:{
 			exception:function(proxy, response, orientation){
 				console.error('Failure Notification', response.responseText);
-				Ext.Msg.alert('Loading failed', response.statusText);
+				utils.alert('Loading failed', response.statusText);
 			},
 			callback: function(success,response){
 				console.log("Feedback Store Callback");

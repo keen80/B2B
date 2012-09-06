@@ -68,13 +68,13 @@ Ext.define("B2B.controller.Beers", {
 			url: HH.IP_PORT_SERVER+'/birrettaservice/rest/bserv/insertBeer',
 			method: 'POST',
 			success: function() {
-				alert('form submitted successfully!');
+				utils.alert('form submitted successfully!');
 				if(!spinner.isHidden()) spinner.hide();
 				this.getBeerForm().reset();
 				this.getApp().pop();
 			},
 			failure: function(form, action) {
-				alert("PUPPA");
+				utils.alert("PUPPA");
 				if(!spinner.isHidden()) spinner.hide();
 			}
 		});
@@ -136,10 +136,10 @@ Ext.define("B2B.controller.Beers", {
 	},
 	/* Not Yet Implemented */
 	onEditBeer: function(){
-		Ext.Msg.alert('TODO: Event EditBeer Received, Next release');
+		utils.alert('TODO: Event EditBeer Received, Next release');
 	},
 	onDeleteBeer: function(){
-		Ext.Msg.alert('TODO: DeleteBeer Not Implemented');
+		utils.alert('TODO: DeleteBeer Not Implemented');
 	},
 	onReportBeer: function(a){
 		if (!a.actions){
@@ -151,7 +151,7 @@ Ext.define("B2B.controller.Beers", {
 						scope: this,
 						ui: 'decline',
 						handler: function(){
-							alert(i18n.app.DIALOG_BEERREPORTED)
+							utils.alert(i18n.app.DIALOG_BEERREPORTED)
 							a.actions.hide();
 						}
 					},

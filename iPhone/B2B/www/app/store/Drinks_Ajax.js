@@ -22,20 +22,20 @@ Ext.define("B2B.store.Drinks_Ajax", {
 		listeners:{
 			exception:function(proxy, response, orientation){
 				console.error('Failure Notification', response.responseText);
-				Ext.Msg.alert('Loading failed', response.statusText);
+				utils.alert('Loading failed', response.statusText);
 			},
 			callback: function(success,response){
 				HH.log("Beers Store Callback");
 			},
 			load:function(el,records, successful){
 				HH.log("* Loaded: Store.Drinks_Ajax, copying to Local");
-			
+
 				var store_local = Ext.getStore('Drinks_Local');
 				/*	image = HH.default_user48,
 					userdata = el.first(),
 					lastDrink = Ext.getCmp("lastdrink"),
 					beerName = "", placeName = "", div = "";
-				
+
 
 				if (lastDrink) {
 					beerName = (userdata.data.beerName ? userdata.data.beerName : "");
@@ -52,7 +52,7 @@ Ext.define("B2B.store.Drinks_Ajax", {
 					);
 				}*/
 
-		
+
 
 
 				/* Copying to localstorage */

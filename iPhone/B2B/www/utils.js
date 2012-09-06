@@ -12,8 +12,8 @@ var utils = {
 		if(!(navigator.online&&google)){
 			if(i18n){
 				return true;
-			}else {
-				alert(i18n.app.HINT_OFFLINE);
+			} else {
+				utils.alert(i18n.app.HINT_OFFLINE, i18n.app.COMMON_ATTENTION, false, null);
 			};
 
 			return false;
@@ -172,9 +172,14 @@ var utils = {
 	getCodeFromLocationCategory: function(text) {
 		return (_.find(i18n.locationCategory, function(code){ return code.text.toUpperCase() === text.toUpperCase();})||"").value;
 	},
-	alert: function(title, message) {
+	alert: function(message, title, confirm, callback) {
 		if (navigator && navigator.notification) {
-			navigator.notification.alert(message, null, title);
+			title = (title ? title : "");
+			if (confirm) {
+				navigator.notification.confirm(message, callback, title, i18n.app.BTN_CANCEL + ',' + i18n.app.BTN_OK);
+			} else {
+				navigator.notification.alert(message, null, title, i18n.app.BTN_OK);
+			}
 		} else {
 			alert(message);
 		}

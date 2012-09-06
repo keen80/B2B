@@ -40,7 +40,6 @@ Ext.define("B2B.controller.Friends", {
 	//confirm(i18n.app.DIALOG_YOUSURE, rockIt(resource));
 	},
 	onRemoveFriend: function(){
-		//Ext.Msg.alert('Event DeleteFriend Received');
 		var removeIt = function(){
 			this.getApp().pop();
 		};
@@ -50,7 +49,7 @@ Ext.define("B2B.controller.Friends", {
 	onViewFriendDetail: function(a, b, c, record){
 		/* Deselection of the list */
 		setTimeout(function(){a.deselect(b);},500);
-		
+
 		var ajax_store = Ext.getStore('Friends_Local');
 		var jsonData = ajax_store.getAt(ajax_store.findExact("id", record.data.id));
 		this.getApp().push({

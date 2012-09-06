@@ -103,6 +103,8 @@ var i18n = {
 		"BTN_PRIVACY": "Privacy",
 		"BTN_CHECKIN": "CheckIn!",
 		"BTN_REGISTER": "Register",
+		"BTN_OK": "OK",
+		"BTN_CANCEL": "Cancel",
 
 		"CHANGE_BEER": "Change beer",
 

@@ -15,17 +15,17 @@ Ext.define("B2B.store.Friends_Ajax", {
                 successProperty: 'response.status.success',
                 totalProperty: 'response.status.count',
                 messageProperty: 'response.status.msg'
-            }            
+            }
         },
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);
-                Ext.Msg.alert('Loading failed', response.statusText);
+                utils.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
                 HH.log("Friends Store Callback");
             },
-            load:function(el,records, successful){ 
+            load:function(el,records, successful){
                 HH.log("* Loaded: Store.Friends_Ajax, copying to Local");
                 var store_local = Ext.getStore('Friends_Local');
 
@@ -40,5 +40,5 @@ Ext.define("B2B.store.Friends_Ajax", {
             }
         }
     }
-    
+
 });

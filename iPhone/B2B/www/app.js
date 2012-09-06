@@ -69,9 +69,14 @@ Ext.application({
 
 		goingTo.step1("Loading Store.Profile");
 
-		Ext.fly('appLoadingIndicator').destroy();
-
-		bridge.getFBUserLogInStatus();
+		if (HH.SKIP_LOGIN) {
+			Ext.fly('appLoadingIndicator').destroy();
+			Ext.Viewport.removeAll(true, true);
+			goingTo.step2("Loading Store.Profile_Ajax");
+			Ext.Viewport.add([Ext.create('B2B.view._App')]);
+		} else {
+			bridge.getFBUserLogInStatus();
+		}
 	},
 	onUpdated: function() {
 		if(window.confirm(i18n.app.HINT_APPLICATIONRELOADED)){

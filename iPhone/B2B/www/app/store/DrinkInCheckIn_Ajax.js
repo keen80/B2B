@@ -5,7 +5,7 @@ Ext.define("B2B.store.DrinkInCheckIn_Ajax", {
     config: {
         model: "B2B.model.Drink",
         proxy: {
-            // Mock for Development 
+            // Mock for Development
             type:'ajax',
             url:'json/mock_drinkincheckinlist.json',
            // type:'jsonp',
@@ -22,17 +22,17 @@ Ext.define("B2B.store.DrinkInCheckIn_Ajax", {
         listeners:{
             exception:function(proxy, response, orientation){
                 console.error('Failure Notification', response.responseText);
-                Ext.Msg.alert('Loading failed', response.statusText);
+                utils.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
                 console.log("Beers Store Callback");
             },
-            load:function(el,records, successful){ 
+            load:function(el,records, successful){
                 HH.log("* Loaded: Store.DrinkinCheckIn_Ajax");
 
 
             }
         }
     }
-    
+
 });

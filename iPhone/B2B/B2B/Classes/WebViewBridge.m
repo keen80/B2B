@@ -51,9 +51,7 @@
     }
     
     stringURL = [stringURL stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
-    NSLog(@"[WebViewBridge] %@", stringURL);
-    
+        
     NSRange range = [self searchSelector:stringURL];
     
     if (range.location != NSNotFound)

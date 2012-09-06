@@ -17,6 +17,8 @@ if( _.str.include(language_string, "it")){
 
 
 var HH = {
+	SKIP_LOGIN: false,
+	LOAD_PROFILE_MOCK: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	"default_user32": "resources/img/default/blank_avatar_32.png",
@@ -56,12 +58,27 @@ var goingTo = {
 		profileAjax.load();
 	},
 	step2: function(msg){
-		HH.log("---> Step2: "+msg);
-		
+		HH.log("---> Step: " + msg);
+		var profileLocal = Ext.getStore('Profile_Local'),
+			profileAjax = Ext.getStore('Profile_Ajax'),
+			data = null;
+
+		if (profileLocal && profileLocal.getCount() > 0) {
+			data = profileLocal.first().data;
+			profileAjax.getProxy().setExtraParam("btUsername", data.idUser);
+			profileAjax.getProxy().setExtraParam("btSid", data.token);
+			profileAjax.getProxy().setExtraParam("username", data.username);
+		}
+
+		profileAjax.load();
+	},
+	step3: function(msg, toBeer, toFriend, toNotification) {
+		HH.log("---> Step: " + msg);
 		Ext.getStore('Activities_User_Ajax').load();
 		Ext.getStore('Activities_Ajax').load();
+		this.step4("Load: App Defaults from Store.Profile_Local", toBeer, toFriend, toNotification);
 	},
-	step3: function(msg, toBeer, toFriend, toNotification){
+	step4: function(msg, toBeer, toFriend, toNotification){
 		HH.log("---> Step: "+msg);
 		var storeProfile = Ext.getStore("Profile_Local");
 		var storeFriend = Ext.getStore('Friends_Local');
@@ -75,7 +92,7 @@ var goingTo = {
 
 		/*if(toBeer || storeBeer.getCount() < 1)
 			console.log("BeerList is empty or need to be refreshed");
-			Ext.getStore('Beers_Ajax').load(); 
+			Ext.getStore('Beers_Ajax').load();
 		if(toFriend || storeFriend.getCount() < 1)
 			HH.log("---> Step: Store_Friend is empty or need to be refreshed");
 			Ext.getStore('Friends_Ajax').load();*/

@@ -52,7 +52,7 @@ Ext.define("B2B.controller.Places", {
 		this.getApp().pop();
 	},
 	onCheckInRefreshAround: function(){
-		alert("ToDO: To Be Implemented");
+		utils.alert("ToDO: To Be Implemented");
 	},
 	onShow: function(){
 		console.log("TODO: Refresh on Show");
@@ -119,9 +119,9 @@ Ext.define("B2B.controller.Places", {
 				var dec = Ext.decode(response.responseText);
 				console.log("SUCCESS: " + response.responseText);
 				if (dec.response.status.code < 200) {
-					alert("CheckIn OK!");
+					utils.alert("CheckIn OK!");
 				} else {
-					alert("CheckIn Fail: " + dec.response.status.msg);
+					utils.alert("CheckIn Fail: " + dec.response.status.msg);
 					console.log("SUCCESS: " + dec.response.responseText);
 				}
 			}
