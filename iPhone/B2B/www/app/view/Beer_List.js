@@ -5,7 +5,8 @@ Ext.define('B2B.view.Beer_List', {
 	config: {
         loadingText: i18n.app.HINT_LOADING,
        // emptyText: '</pre><div class="beer-list-empty-text">'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</div><pre>',
-        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
+        //itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
+        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getString(values)]}</div>",
         {
         	getClass: function(values){
         		return "small-list beer-list-item-title beerTypeClass"+values.beerstyle;
