@@ -219,6 +219,12 @@ var i18n = {
 		"DRINK_TEXT_1_4": "You enjoy a %1 at %2",
 		"DRINK_TEXT_1_5": "You really enjoy the %1 at %2",
 
+		"POINTCLAIM_TEXT_0_0": "C'mon, You are still far far away from the top",
+		"POINTCLAIM_TEXT_0_1": "<strong>WOW</strong> ! You are the <strong class='hilite'>King of the Hill</strong>",
+
+		"POINTLABEL_TEXT_0_0": "You don't earn any point, this week, wanna bear?",
+		"POINTLABEL_TEXT_0_1": "This week, You earned %1 points",
+
 		"ACTIVITY_TEXT_0_0": "Know what? <strong class='hilite'>%1</strong> is doing somethin!",
 		"ACTIVITY_TEXT_0_1": "<strong class='hilite'>%1</strong> is now friend with <strong class='hilite'>%2</strong>",
 		"ACTIVITY_TEXT_1_0": "<strong class='hilite'>%1</strong> was at <strong class='hilite'>%2 drinking <strong class='hilite'>%3</strong>",
