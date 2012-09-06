@@ -49,14 +49,8 @@ var HH = {
 
 var goingTo = {
 	step1: function(msg){
-		HH.log("---> Step1: "+msg);
+		HH.log("---> Step1: " + msg);
 		Ext.getStore('Profile_Local').load();
-	//	var profile = Ext.getStore('Profile_Local').first().data;
-		var profileAjax = Ext.getStore('Profile_Ajax');
-	//	profileAjax.getProxy().setExtraParam("btUsername", profile.idUser);
-	//	profileAjax.getProxy().setExtraParam("btSid", profile.token);
-	//	profileAjax.getProxy().setExtraParam("username", profile.username);
-		profileAjax.load();
 	},
 	step2: function(msg){
 		HH.log("---> Step2: " + msg);
@@ -79,15 +73,19 @@ var goingTo = {
 		Ext.getStore('Activities_Ajax').load();
 		this.step4("Load: App Defaults from Store.Profile_Local", toBeer, toFriend, toNotification);
 	},
-	step4: function(msg, toBeer, toFriend, toNotification){
-		HH.log("---> Step4: "+msg);
-		var storeProfile = Ext.getStore("Profile_Local");
-		var storeFriend = Ext.getStore('Friends_Local');
-		var storeNotification = Ext.getStore('Notifications_Local');
-		var profile = storeProfile.first();
+	step4: function(msg, toBeer, toFriend, toNotification) {
+		HH.log("---> Step4: " + msg);
+		var storeProfile = Ext.getStore("Profile_Local"),
+			storeFriend = Ext.getStore('Friends_Local'),
+			storeNotification = Ext.getStore('Notifications_Local'),
+			profile = null;
 
-		this.setupDisplayName(profile);
-		this.setupPreferences(profile);
+		if (storeProfile && storeProfile.getCount() > 0) {
+			profile = storeProfile.first();
+			this.setupDisplayName(profile);
+			this.setupPreferences(profile);
+		}
+
 		storeFriend.load();
 		storeNotification.load();
 
@@ -101,12 +99,12 @@ var goingTo = {
 			HH.log("---> Step: Store.Notification is empty or need to be refreshed");
 			Ext.getStore('Notifications_Ajax').load();
 	},
-	setupDisplayName: function(profile){
+	setupDisplayName: function(profile) {
+		var myLastDrink = Ext.getStore("Drinks_Local").first(),
+			testdata = Ext.create("B2B.model.Drink", {
+			}),
+			latestDrink = Ext.getCmp('mylatestdrink');
 
-		var myLastDrink = Ext.getStore("Drinks_Local").first();
-		var testdata = Ext.create("B2B.model.Drink", {
-		});
-		var latestDrink = Ext.getCmp('mylatestdrink');
 		if (latestDrink) {
 			Ext.getCmp('mylatestdrink').setData(myLastDrink.data);
 

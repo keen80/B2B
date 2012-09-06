@@ -30,7 +30,7 @@ Ext.define("B2B.store.Profile_Ajax", {
 					token = "";
 
 				/* has something changed? Then we flag to load the whole resxs */
-				if(store_local.getCount() > 0 && el.getCount() > 0){
+				if (store_local && store_local.getCount() > 0 && el && el.getCount() > 0) {
 					localJSON  = store_local.first().data;
 					remoteJSON = el.first().data;
 					token = localJSON.token;

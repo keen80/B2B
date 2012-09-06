@@ -37,5 +37,4 @@ Ext.define("B2B.store.Activities_Ajax", {
             }
         }
     }
-
 });
