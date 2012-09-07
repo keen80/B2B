@@ -6,15 +6,15 @@ Ext.define("B2B.store.Drinks_Ajax", {
 		model: "B2B.model.Drink",
 		proxy: {
 			// Mock for Development
-			type:'ajax',
-			url:'json/mock_drinklist.json',
-			// type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
-            // url: (HH.OFFLINE_MODE ? 'json/mock_drinklist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listBeer_jsonp'),
+			//type:'ajax',
+			//url:'json/mock_drinklist.json',
+			 type: (HH.OFFLINE_MODE ? 'ajax' : 'jsonp'),
+             url: (HH.OFFLINE_MODE ? 'json/mock_drinklist.json' : HH.IP_PORT_SERVER + '/birrettaservice/rest/bserv/listDrink_jsonp'),
 			reader: {
 				type:'json',
 				rootProperty: 'response.body.list',
 				successProperty: 'response.status.success',
-				totalProperty: 'response.status.count',
+			//	totalProperty: 'response.status.count',
 				messageProperty: 'response.status.msg'
 			}
 		},

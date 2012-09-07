@@ -5,7 +5,9 @@ Ext.define("B2B.controller.Activities", {
 			app: "_app",
 			activity: "activity",
 			activitylist: "activitylist",
-			activitylistdetail: "activitylistdetail"
+			activitylistdetail: "activitylistdetail",
+			profile: "userprofile",
+			historypanel: "historypanel"
 		},
 		control: {
 			activity: {
@@ -16,6 +18,12 @@ Ext.define("B2B.controller.Activities", {
 			},
 			activitylist: {
 				itemtap: "onViewActivityDetail"
+			},
+			profile: {
+				activityListProfileCommand: "onShowMyActivityList"
+			},
+			historypanel: {
+				backToProfileCommand: "onBackActivityDetail"
 			}
 		}
 	},
@@ -29,6 +37,13 @@ Ext.define("B2B.controller.Activities", {
 			xtype: "activitylistdetail",
 			id: "activitylistdetail",
 			jsonData: jsonData
+		});
+	},
+	onShowMyActivityList : function()
+	{
+		HH.log("arrivato qui activity");
+		this.getApp().push({
+			xtype: "historypanel"
 		});
 	},
 	onBackActivityDetail: function() {

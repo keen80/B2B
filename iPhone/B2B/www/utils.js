@@ -21,8 +21,8 @@ var utils = {
 	},
 	getDate: function(date){
 		/* TODO: MOMENT INTEGRATION date */
-		var newDate = "5 min";
-		return newDate;
+		//var newDate = "5 min";
+		return date;
 	},
 	getDrinkString: function(values) {
 		if (values) {
@@ -101,10 +101,10 @@ var utils = {
 				return this.__(i18n.app.ACTIVITY_TEXT_0_1, values.displayName, values.friendName);
 				break;
 			case 1:
-				return this.__(i18n.app.ACTIVITY_TEXT_1_1, values.displayName, values.beerName, values.placeName);
+				return this.__(i18n.app.ACTIVITY_TEXT_2_1, values.username, values.friendname);
 				break;
 			case 2:
-				return this.__(i18n.app.ACTIVITY_TEXT_2_1, values.username, values.friendname);
+				return this.__(i18n.app.ACTIVITY_TEXT_1_1, values.displayName, values.beerName, values.placeName);
 				break;
 			default:
 				return this.__(i18n.app.ACTIVITY_TEXT_0_0, values.username, values.friendname);

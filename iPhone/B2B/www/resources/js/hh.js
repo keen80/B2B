@@ -17,7 +17,7 @@ if( _.str.include(language_string, "it")){
 
 
 var HH = {
-	SKIP_LOGIN: true,
+	SKIP_LOGIN: false,
 	OFFLINE_MODE: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",

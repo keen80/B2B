@@ -23,11 +23,20 @@ Ext.define("B2B.store.Activities_User_Ajax", {
                 utils.alert('Loading failed', response.statusText);
             },
             callback: function(success,response){
-                console.log("Activities Store Callback");
+                console.log("Activities User Store Callback");
             },
             load: function(el,records, successful){
-                HH.log("* Loaded: Activities_User_Ajax");
+                  HH.log("* Loaded: Activities_User_Ajax, copying to Local");
+                var store_local = Ext.getStore('Activities_User_Local');
 
+                /* Copying to Localstorage */
+                store_local.removeAll();
+                store_local.getProxy().clear();
+                this.each(function(record) {
+                    store_local.add(record.data);
+                });
+                store_local.sync();
+                this.removeAll();
             }
         }
     }
