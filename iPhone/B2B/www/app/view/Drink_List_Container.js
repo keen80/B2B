@@ -43,8 +43,8 @@ Ext.define('B2B.view.Drink_List_Container', {
 		drinkList = {
 			xtype: "drinkincheckinlistcomponent",
 			id: 'drinklist',
-			store: Ext.getStore("Drinks_Local")
-			//ui: 'round'
+			store: Ext.getStore("Drinks_Local"),
+			ui: 'round'
 		};
 
 		this.add([toolbar, drinkList]);
