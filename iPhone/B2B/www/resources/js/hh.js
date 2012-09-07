@@ -17,7 +17,7 @@ if( _.str.include(language_string, "it")){
 
 
 var HH = {
-	SKIP_LOGIN: false,
+	SKIP_LOGIN: true,
 	OFFLINE_MODE: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
@@ -78,14 +78,24 @@ var goingTo = {
 		var storeProfile = Ext.getStore("Profile_Local"),
 			storeFriend = Ext.getStore('Friends_Local'),
 			storeNotification = Ext.getStore('Notifications_Local'),
-			profile = null;
+			profile = null, user = null,
+			storeProfileDrinks = Ext.getStore('Drinks_Ajax');
 
 		if (storeProfile && storeProfile.getCount() > 0) {
 			profile = storeProfile.first();
-			this.setupDisplayName(profile);
-			this.setupPreferences(profile);
-		}
+			user = profile.data;
+        	HH.log("LOAD PROFILE FOR Drinks "+user.idUser);
+        	storeProfileDrinks.getProxy().setExtraParam('idUser', user.idUser);
+        	storeProfileDrinks.getProxy().setExtraParam('btUsername',user.idUser);
+        	storeProfileDrinks.getProxy().setExtraParam('btSid', user.token);//user.token
+        	storeProfileDrinks.load();
+    	}
 
+    	if (profile) {
+    		this.setupDisplayName(profile);
+			this.setupPreferences(profile);	
+    	}
+    	
 		storeFriend.load();
 		storeNotification.load();
 
@@ -104,7 +114,7 @@ var goingTo = {
 			latestDrink = Ext.getCmp('mylatestdrink'),
 			data = (profile ? profile.data : null),
 			displayName = "", title = "";
-
+		HH.log("LATEST drink:");
 		if (latestDrink && drinksLocal && drinksLocal.getCount() > 0) {
 			latestDrink.setData(drinksLocal.first().data);
 			//Ext.get("profile_username").setHtml(profile.data.username);

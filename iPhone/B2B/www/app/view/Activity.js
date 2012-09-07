@@ -15,12 +15,22 @@ Ext.define('B2B.view.Activity', {
         var storeProfile = Ext.getStore('Profile_Local'),
             storeJSONP = Ext.getStore('Activities_Ajax'),
             user = null,
+            activityheader = {
+                xtype: 'container',
+                cls: 'header_img',
+                height: 50,
+                width: '100%',
+                docked: 'top',
+                html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
+            },
             mylatestdrink = {
-              /*  xtype: "panel",
+                xtype: "panel",
                 id: "mylatestdrink",
                 draggable: false,
                 height: 80,
                 docked: 'top',
+                store: Ext.getStore("Drinks_Local"),
+                //html: '<div class="loading_div"></div>'
                 tpl: new Ext.XTemplate([
                     "<div class='{[this.getClass()]}'>",
                         "{[this.getTextString(values)]}",
@@ -58,10 +68,7 @@ Ext.define('B2B.view.Activity', {
 
                         return str;
                     }
-                })*/
-                xtype: "drinkincheckinlistcomponent",
-                id: 'drinklist',
-                store: Ext.getStore("Drinks_Local")
+                })
             },
             activitylist = {
                 xtype: "activitylist",
@@ -74,11 +81,11 @@ Ext.define('B2B.view.Activity', {
             HH.log("LOAD PROFILE FOR ACTIVITY " + user.idUser);
             storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
             storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
-            storeJSONP.getProxy().setExtraParam('btSid', user.token);//user.token
+            storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
         }
 
         storeJSONP.load();
 
-		this.add([ mylatestdrink, activitylist ]);
+		this.add([ /*activityheader,*/ mylatestdrink, activitylist ]);
     }
 });
