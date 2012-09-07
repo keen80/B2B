@@ -23,9 +23,9 @@ Ext.define('B2B.view.Place_Detail', {
 				var value = '<div class="place-detail-info">';
 
 				if (!_.isEmpty(jsonData.image)) {
-				   value += '<img class="avatar_medium" src="' + jsonData.image +'" />';
+				   value += '<img class="avatar_medium" src="' + jsonData.image +'" width="32px" height="32px" />';
 				}else{
-					value += '<img class="avatar_medium" src="' + HH.default_place32 +'" />';
+					value += '<img class="avatar_medium" src="' + HH.default_place32 +'" width="32px" height="32px" />';
 				}
 
 				value += "<h1>"+jsonData.placeName+"</p>";
@@ -59,7 +59,7 @@ Ext.define('B2B.view.Place_Detail', {
 				height: 30,
 				handler: this.onSubmitCheckInButtonTap,
 				scope: this
-			}
+			},
 			content = {
 				xtype: 'container',
 				id: 'placeDetailContent',
@@ -146,6 +146,6 @@ Ext.define('B2B.view.Place_Detail', {
 			rating = Ext.getCmp("beerrating"),
 			value = rating.getValue();
 
-		this.fireEvent("checkInCommand", this, profile.data.idUser, null, this.jsonData.idPlace, "", value, value, value);
+		this.fireEvent("checkInCommand", this, profile.data, null, this.jsonData.idPlace, "", value, value, value);
 	}
 });

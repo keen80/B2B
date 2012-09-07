@@ -52,7 +52,7 @@ Ext.define("B2B.controller.Places", {
 		this.getApp().pop();
 	},
 	onCheckInRefreshAround: function(){
-		utils.alert("ToDO: To Be Implemented");
+		// utils.alert("ToDO: To Be Implemented");
 	},
 	onShow: function(){
 		console.log("TODO: Refresh on Show");
@@ -94,17 +94,17 @@ Ext.define("B2B.controller.Places", {
 			id: "beercomponent"
 		});
 	},
-	onCheckIn: function(source, idUser, idBeer, idPlace, image, rate, rate1, rate2){
+	onCheckIn: function(source, user, idBeer, idPlace, image, rate, rate1, rate2){
 		var beer = (idBeer === null ? this.idBeerSelected : idBeer);
 
 		Ext.Ajax.request({
 			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/checkIn",
 			method: "POST",
 			headers: {
-        		"btUsername": idUser
+        		"btUsername": user.idUser
     		},
 			params: {
-				idUser: idUser,
+				idUser: user.idUser,
 				idBeer: beer,
 				idPlace: idPlace,
 				image: image,

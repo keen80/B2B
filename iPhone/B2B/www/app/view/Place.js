@@ -1,7 +1,9 @@
 Ext.define('B2B.view.Place', {
 	extend: 'Ext.Panel',
 	requires: [
-		'Ext.Map'
+		'Ext.Map',
+		'Ext.util.DelayedTask',
+		'Ext.util.Geolocation'
 	],
 	xtype: 'place',
 	config: {
@@ -11,7 +13,9 @@ Ext.define('B2B.view.Place', {
 		scrollable: false,
 		listeners : {
 			show : function() {
-			this.geolocation.updateLocation();
+				if (this.task) {
+					this.task.delay(500);
+				}
 			}
 	 	},
 	},
@@ -22,6 +26,11 @@ Ext.define('B2B.view.Place', {
 				xtype: 'loadmask',
 				message: i18n.app.HINT_GEOLOAD
 			});
+
+		me.task = Ext.create('Ext.util.DelayedTask', function() {
+			me.task.cancel();
+    		me.geolocation.updateLocation();
+		});
 
 		var mapplace = {
 			xtype: 'map',
@@ -54,7 +63,7 @@ Ext.define('B2B.view.Place', {
 				}
 			}
 		},
-			refreshAroundButton = {
+		refreshAroundButton = {
 			text: i18n.app.BTN_REFRESH,
 			ui: 'action',
 			id: 'refresh_around_btn',
@@ -110,13 +119,16 @@ Ext.define('B2B.view.Place', {
 					me.setMasked(false);
 				},
 				locationerror: function(geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
-						console.error(message);
-						me.setMasked(false);
-						 Ext.getStore("Places_Ajax").load();
-					if(confirm(i18n.app.HINT_GEOERROR)){
-					}else{
-						 me.fireEvent("backCheckCommand", me);
+					console.error("[Geolocation] ERROR: " + message);
+					me.setMasked(false);
+					Ext.getStore("Places_Ajax").load();
+					var callback = function(button) {
+						if (button === 2) {
+							this.geolocation.updateLocation();
+							// me.fireEvent("backCheckCommand", me);
+						}
 					}
+					utils.alert(i18n.app.HINT_GEOERROR, i18n.app.COMMON_ATTENTION, true, callback);
 				}
 			}
 		});
@@ -158,7 +170,8 @@ Ext.define('B2B.view.Place', {
 
 	},
 	onRefreshAroundButtonTap: function() {
-			this.fireEvent("refreshAroundCommand", this);
+		this.geolocation.updateLocation();
+		this.fireEvent("refreshAroundCommand", this);
 	},
 	onBackCheckButtonTap: function() {
 		this.geolocation.setAutoUpdate(false);
