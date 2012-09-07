@@ -3,7 +3,12 @@ Ext.define('B2B.view.Friend_List', {
 	xtype: 'friendlist',
 	config: {
 		loadingText: i18n.app.HINT_LOADING,
-		emptyText: '</pre><div class="friend-list-empty-text">'+utils.__(i18n.app.TEXT_NOFRIENDFOUND)+'</div><pre>',
+		emptyText: [
+			'<div class="friend-list-empty-text list-empty-text">',
+				'<p>'+utils.__(i18n.app.TEXT_NOFRIENDFOUND)+'</p>',
+				'<p>'+utils.__(i18n.app.TEXT_WHYADDFRIEND)+'</p>',
+			'</div>',
+		].join(""),
 		itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getString(values)]}</div>",
 		{
 			getClass: function(values){

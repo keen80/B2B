@@ -17,7 +17,7 @@ Ext.define('B2B.view.Notification', {
         HH.log("LOAD PROFILE FOR notification "+user.idUser);
         storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
         storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
-        storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+        storeJSONP.getProxy().setExtraParam('btSid', user.token);//user.token
         storeJSONP.load();
     	var markNotificationAllReadButton = {
 			xtype: "button",

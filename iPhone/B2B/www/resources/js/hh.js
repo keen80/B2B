@@ -41,7 +41,7 @@ var HH = {
 	log: function(what, isError) {
 		if ( this.DEBUG && !isError ) {
 			console.log(what);
-		} else if ( this.DEBUG && Error){
+		} else if ( this.DEBUG && isError){
 			console.error(what);
 		}
 	}

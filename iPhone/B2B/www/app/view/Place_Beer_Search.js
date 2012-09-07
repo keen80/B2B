@@ -34,7 +34,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 		           			beerlist = Ext.getCmp("placebeerlist"),
 		           			splashscreen = Ext.getCmp("_splashbeersearch"),
 		           			beerlistcontainer = Ext.getCmp("placedetail"),
-		           			infobar = Ext.getCmp("placesearchinfobar");
+		           			infobar = Ext.getCmp("beersearchinfobar");
 
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 
@@ -45,6 +45,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 			            oldValueCount = value;
 
 			           	if (value.length > 2) {
+			           		beerlist.show();
 			           		beerlist.setStore(null);
 			           		store.clearFilter();
 
@@ -81,6 +82,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 			        			infobar.setHtml(utils.__(i18n.app.HINT_SEARCHNORES));
 			        		}
 			           	}else{
+			           		beerlist.hide();
 			           		beerlist.setStore(null);
 			           		store.filterBy( function(record) {return false});
 			           	}
@@ -102,7 +104,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 			                field.element.dom.blur();
 			                window.scrollTo(0,0);
 			                var activeItem = beerlist.setActiveItem(1);
-			                console.log(beerlist.getActiveItem());
+			                
 			            }
 	           		}
             	}
@@ -128,10 +130,11 @@ Ext.define('B2B.view.Place_Beer_Search', {
 			},
 			searchInfoBar = {
 				xtype: 'container',
-				id: "placesearchinfobar",
+				id: "beersearchinfobar",
 				docked: 'top',
 				html: "<span class='searchInfoBar'>"+i18n.app.HINT_SEARCH2CHAR+"</span>"
 			};
+			
 			this.add([toolbar, searchInfoBar]);
 		},
 		onAddBeerButtonTap: function(){
