@@ -3,14 +3,14 @@ Ext.define("B2B.controller.Beers", {
 	config: {
 		refs: {
 			beerSearchComponent: "beersearch",
-			beerSelectContainer: "beerlistselectcontainerpanel",
-			beerSelectSearchComponent: "beerlistselectsearchcomponent",
+			beerSelectContainer: "beercomponent",
+			beerSelectSearchComponent: "beercomponent",
 			beerList: "beer",
 			beerForm: "beeraddform",
 			beerDetail: "beerdetailpanel",
 			beerlist: "beerlist",
-			beerlistselectcomponent: "beerlistselect",
-			beerlistselectcomponent: "beerlistselectcomponent",
+			beerlistcomponent: "beerlistselect",
+			beerlistcomponent: "beerlistcomponent",
 			spinner: 'tbarspinner',
 			app: "_app"
 		},
@@ -37,7 +37,7 @@ Ext.define("B2B.controller.Beers", {
 			beerlist: {
 				itemtap: "onViewBeerDetail"
 			},
-			beerlistselectcomponent: {
+			beerlistcomponent: {
 				itemtap: "onSelectBeer"
 			},
 			beerSelectContainer:{

@@ -1,10 +1,9 @@
-Ext.define('B2B.view.Beer_List_SelectSearchComponent', {
+Ext.define('B2B.view.Beer_Component_Search', {
 	extend: 'Ext.Panel',
 	requires: [
 		'Ext.field.Search'
 	],
-	xtype: 'beerlistselectsearchcomponent',
-	id: 'beerlistselectsearchcomponent',
+	xtype: 'beercomponentsearch',
 	config: {
 		docked: 'top'
 	},
@@ -33,7 +32,7 @@ Ext.define('B2B.view.Beer_List_SelectSearchComponent', {
 			           	var value = field.getValue();
 			           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 			           	var beerlist = Ext.getCmp("beerlistselect");
-			           	var beerlistcontainer = Ext.getCmp("beerlistselectcontainer");
+			           	var beerlistcontainer = Ext.getCmp("beercomponent");
 			           	var infobar = Ext.getCmp("searchinfobarselect");
 
 				           	if((!value||value < oldValueCount)){

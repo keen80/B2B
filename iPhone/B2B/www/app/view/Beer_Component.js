@@ -1,7 +1,6 @@
-Ext.define('B2B.view.Beer_List_SelectContainer', {
+Ext.define('B2B.view.Beer_Component', {
 	extend: 'Ext.Panel',
-	xtype: 'beerlistselectcontainerpanel',
-	id: "beerlistselectcontainer",
+	xtype: 'beercomponent',
 	requires: [
 		'Ext.SegmentedButton'
 	],
@@ -47,8 +46,8 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			displayField: "beerName",
 			docked: 'top'
 		},
-		beerlistselectsearchcomponent = {
-			xtype: 'beerlistselectsearchcomponent'
+		beercomponent = {
+			xtype: 'beercomponent'
 		},
 		beerList = {
 			xtype: "beerlist",
@@ -57,7 +56,7 @@ Ext.define('B2B.view.Beer_List_SelectContainer', {
 			singleSelect: true
 		};
 
-		this.add([toolbar, selectbeerfavorite, beerlistselectsearchcomponent, beerList]);
+		this.add([toolbar, selectbeerfavorite, beercomponent, beerList]);
 	},
 	onBackBeerSelectButtonTap: function(){
 		this.fireEvent("backBeerSelectCommand", this);

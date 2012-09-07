@@ -11,38 +11,7 @@ Ext.define('B2B.view.User', {
 		this.callParent(arguments);
 		var profileStore = Ext.getStore('Profile_Local');
 		var profile = (profileStore.first()).data;
-		var privacyButton = {
-			text: i18n.app.BTN_PRIVACY,
-			ui: 'action',
-			iconCls: 'alert_attention',
-			id: 'privacy_profile_btn',
-			handler: this.onPrivacyProfileButtonTap,
-			scope: this
-		},
-		settingsButton = {
-			text: i18n.app.BTN_SETTINGS,
-			ui: 'action',
-			iconCls: 'cog_settings_gear',
-			id: 'settings_profile_btn',
-			handler: this.onSettingsProfileButtonTap,
-			scope: this
-		},
-		toolbar = {
-			xtype: 'toolbar',
-			cls: "sub_titlebar",
-			docked: 'top',
-			id: 'AboutTitlebar',
-			ui: 'neutral',
-			defaults: {
-				iconMask: true
-			},
-			items: [
-				privacyButton,
-				{ xtype: 'spacer' },
-				settingsButton
-			]
-		},
-		profileButton = {
+		var profileButton = {
 			id: 'profile_btn',
 			xtype: 'button',
 			ui: 'beerwhite',
@@ -52,7 +21,7 @@ Ext.define('B2B.view.User', {
 			flex: 2,
 			html: [
 				'<div class="profile_right_panel">',
-					'<img id="profile_image" class="avatar" height="48" width="48" src="'+utils.getUserAvatar()+'" />',
+					'<img id="profile_image" class="avatar" height="56" width="56" src="'+utils.getUserAvatar()+'" />',
 					'<p class="profile_displayname">',
 						profile.displayName,
 					'</p>',
@@ -76,7 +45,7 @@ Ext.define('B2B.view.User', {
     				'</div>',
 					"<div class='clear'></div>"
 			].join(""),
-			handler: this.onProfileButtonTap,
+			handler: this.onEditProfileButtonTap,
 			scope: this
 		},
 		badgesButton = {
@@ -175,8 +144,8 @@ Ext.define('B2B.view.User', {
 			scope: this
 		},
 
-		statsButton = {
-			id: 'statss_btn',
+		settingsButton = {
+			id: 'settings_btn',
 			xtype: 'button',
 			ui: 'beerviolet',
 			cls: 'profile_square',
@@ -185,13 +154,13 @@ Ext.define('B2B.view.User', {
 			margin: '4px 2px',
 			//text: i18n.app.BTN_STATS,
 			html: [
-					'<img class="badge" height="56" width="56" src="resources/icons/flag.png" >',
+					'<img class="badge" height="56" width="56" src="resources/icons/settings.png" >',
 					'<span class="profile_squarebutton">',
-						i18n.app.BTN_STATS,
+						i18n.app.BTN_SETTINGS,
 					'</span>',
 			].join(""),
 			flex: 1,
-			handler: this.onStatsButtonTap,
+			handler: this.onSettingsButtonTap,
 			scope: this
 		},
 		secondRowButtonsContainer = {
@@ -219,7 +188,7 @@ Ext.define('B2B.view.User', {
 			items: [
 				drinkListButton,
 				myActivityButton,
-				statsButton
+				settingsButton
 			]
 		},
 		item0 = {
@@ -229,7 +198,7 @@ Ext.define('B2B.view.User', {
 				type: 'vbox'
 			},
 			items: [
-				toolbar, profileButton, secondRowButtonsContainer, thirdButtonsContainer
+				profileButton, secondRowButtonsContainer, thirdButtonsContainer
 			]
 		};
 
@@ -239,14 +208,8 @@ Ext.define('B2B.view.User', {
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
 	},
-	onPrivacyProfileButtonTap: function() {
-		this.fireEvent("privacyProfileCommand", this);
-	},
-	onSettingsProfileButtonTap: function() {
-		this.fireEvent("settingsProfileCommand", this);
-	},
-	onProfileButtonTap: function() {
-		this.fireEvent("editProfileCommand", this);
+	onSettingsButtonTap: function() {
+		this.fireEvent("settingsCommand", this);
 	},
 	onBadgesButtonTap: function() {
 		this.fireEvent("badgesProfileCommand", this);

@@ -46,6 +46,7 @@ var i18n = {
 		"FORM_NOTIFICATIONENABLE": "Enable Notifications",
 		"FORM_PASSWORD": "Password",
 		"FORM_PRIVACY": "Privacy",
+		"FORM_SETTINGS": "Settings",
 		"FORM_PROFILE": "Profile",
 		"FORM_SHARETWITTER": "Share on Twitter",
 		"FORM_SHAREFACEBOOK": "Share on Facebook",

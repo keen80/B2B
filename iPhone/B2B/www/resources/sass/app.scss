@@ -508,6 +508,9 @@
         .x-layout-card-item{
             background: none;
         }
+        .x-hasbadge .x-badge {
+            padding: 2px 4px;
+        }
     }
 
     #userform  .x-body{
@@ -537,7 +540,7 @@
         .profile_right_panel {
             position: relative;
             text-align: left;
-            min-height: 42px;
+            min-height: 56px;
 
             .profile_displayname{
                 @include indent-list72;
@@ -733,6 +736,7 @@
     .small-list-subtext{
         color: #AAA;
         font-size: 11px;
+        width: 90%;
     }
     .medium-list-text{
         font-size: 16px;
@@ -999,7 +1003,8 @@
  /* CALLOUT */
 .callout{
     position: relative;
-    margin-top: -10px;
+    margin-top: -6px;
+
     .calloutTip1{
         height: 0;
         width: 0;

@@ -9,9 +9,8 @@ Ext.define("B2B.controller.Profiles", {
 		control: {
 			profile: {
 				editProfileCommand: "onShowProfileForm",
-				reloadProfileCommand: "onReloadProfile",
-				settingsProfileCommand: "onShowSettings",
-				privacyProfileCommand: "onShowPrivacy"
+				friendsProfileCommand: "onShowFriends",
+				settingsCommand: "onShowSettings"
 			},
 			profileForm: {
 				saveProfileCommand: "onSaveProfile",
@@ -20,16 +19,7 @@ Ext.define("B2B.controller.Profiles", {
 		}
 	},
 	onShowProfileForm: function(){
-		/*
-		this.getApp().push({
-			xtype: "userform",
-			id: "userform"
-		});
-
-		var profileForm = this.getProfileForm();
-		profileForm.reset();
-		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-*/
+		console.log(this);
 		var userform = {
 			xtype: 'userform',
 			id: 'userform'
@@ -68,29 +58,21 @@ Ext.define("B2B.controller.Profiles", {
 		profileContainer.remove(Ext.getCmp('userform'));
 	},
 	onBackProfile: function() {
-		//this.getApp().pop();
 		var profileContainer = Ext.getCmp('userprofile');
 		profileContainer.remove(Ext.getCmp('userform'));
 	},
-	onShowPrivacy: function() {
-		var userProfilePrivacy = {
-			xtype: 'userprofileprivacyform',
-			id: 'userprofileprivacyform'
-		};
-
-		var profileContainer = this.getProfile();
-		profileContainer.add(userProfilePrivacy);
-		profileContainer.setActiveItem(2);
+	onShowFriends: function() {
+		var tabPanel = Ext.Viewport.down("appcontainer");
+		tabPanel.setActiveItem(Ext.getCmp('friend'));
 	},
-	onShowSettings: function(a){
-
-		var userpreferencesform = {
-			xtype: 'userpreferencesform',
-			id: 'userpreferencesform'
+	onShowSettings: function() {
+		var settings = {
+			xtype: 'settings',
+			id: 'settings'
 		};
 
 		var profileContainer = this.getProfile();
-		profileContainer.add(userpreferencesform);
+		profileContainer.add(settings);
 		profileContainer.setActiveItem(2);
 	},
 	launch: function(){

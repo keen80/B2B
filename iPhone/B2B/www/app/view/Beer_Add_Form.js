@@ -88,7 +88,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 
     	var backBeerButton = {
 			xtype: "button",
-			text: i18n.app.BTN_BACK,
+			text: i18n.app.BTN_CANCEL,
 			ui: 'back',
 			id: 'beer_back_btn',
 			handler: this.onBeerBackButtonTap,

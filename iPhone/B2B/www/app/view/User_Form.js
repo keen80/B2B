@@ -212,7 +212,7 @@ Ext.define('B2B.view.User_Form', {
 			scope: this
 		},
 		backProfileButton = {
-			text: i18n.app.BTN_BACK,
+			text: i18n.app.BTN_CANCEL,
 			ui: 'back',
 			id: 'back_profile_btn',
 			handler: this.onBackProfileButtonTap,

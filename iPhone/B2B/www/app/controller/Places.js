@@ -90,8 +90,8 @@ Ext.define("B2B.controller.Places", {
 	},
 	onSelectBeerDrink: function(){
 		this.getApp().push({
-			xtype: "beerlistselectcontainerpanel",
-			id: "beerlistselectcontainerpanel"
+			xtype: "beercomponent",
+			id: "beercomponent"
 		});
 	},
 	onCheckIn: function(source, idUser, idBeer, idPlace, image, rate, rate1, rate2){

@@ -10,7 +10,7 @@ Ext.application({
 	controllers: [
 		'_App', '_Login',
 		'Friends', 'Activities', 'Profiles', 'Beers', 'Drinks', 'Notifications',
-		'Preferences', 'Privacy', 'Places', 'Feedbacks', 'Camera', 'Badges',
+		'Settings', 'Places', 'Feedbacks', 'Camera', 'Badges',
 		'Favorites'
 	],
 
@@ -27,7 +27,7 @@ Ext.application({
 		'_SplashBeerSearch', '_Register',
 		'Activity', 'Activity_List', 'Activity_List_Detail',
 		'Beer', 'Beer_List', 'Beer_Search', 'Beer_Add_Form', 'Beer_Detail',
-		'Beer_List_SelectContainer', 'Beer_List_SelectSearchComponent', 'Beer_List_Select',
+		'Beer_Component', 'Beer_Component_Search', 'Beer_Component_List',
 		'Place',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
@@ -37,7 +37,7 @@ Ext.application({
 		'Friend', 'Friend_List', 'Friend_Search', 'Friend_List_Detail',
 		'Notification', 'Notification_List',
 		'User', 'User_Form',
-		'User_Privacy_Form', 'User_Preferences_Form',
+		'Settings',
 		'View_Terms', 'View_Whatsnew', 'View_AboutUs',
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
