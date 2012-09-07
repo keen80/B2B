@@ -21,7 +21,7 @@ var HH = {
 	OFFLINE_MODE: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
-	IP_PORT_SERVER: "http://93.70.93.36:8080",
+	IP_PORT_SERVER: "http://antreem.dtdns.net:8080",
 	default_user32: "resources/img/default/blank_avatar_32.png",
 	default_user48: "resources/img/default/blank_avatar_48.png",
 	default_user64: "resources/img/default/blank_avatar_64.png",
