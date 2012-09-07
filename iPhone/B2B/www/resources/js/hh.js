@@ -18,7 +18,7 @@ if( _.str.include(language_string, "it")){
 
 var HH = {
 	SKIP_LOGIN: true,
-	OFFLINE_MODE: true,
+	OFFLINE_MODE: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	IP_PORT_SERVER: "http://93.70.93.36:8080",
@@ -41,7 +41,7 @@ var HH = {
 	log: function(what, isError) {
 		if ( this.DEBUG && !isError ) {
 			console.log(what);
-		} else if ( this.DEBUG && Error){
+		} else if ( this.DEBUG && isError){
 			console.error(what);
 		}
 	}

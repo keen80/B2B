@@ -27,6 +27,7 @@ Ext.define("B2B.controller.Activities", {
 		/* Init Popup */
 		this.getApp().push({
 			xtype: "activitylistdetail",
+			id: "activitylistdetail",
 			jsonData: jsonData
 		});
 	},

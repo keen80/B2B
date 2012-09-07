@@ -15,21 +15,12 @@ Ext.define('B2B.view.Activity', {
         var storeProfile = Ext.getStore('Profile_Local'),
             storeJSONP = Ext.getStore('Activities_Ajax'),
             user = null,
-            activityheader = {
-                xtype: 'container',
-                cls: 'header_img',
-                height: 50,
-                width: '100%',
-                docked: 'top',
-                html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
-            },
             mylatestdrink = {
                 xtype: "panel",
                 id: "mylatestdrink",
                 draggable: false,
                 height: 80,
                 docked: 'top',
-                //html: '<div class="loading_div"></div>'
                 tpl: new Ext.XTemplate([
                     "<div class='{[this.getClass()]}'>",
                         "{[this.getTextString(values)]}",
@@ -85,6 +76,6 @@ Ext.define('B2B.view.Activity', {
 
         storeJSONP.load();
 
-		this.add([ /*activityheader,*/ mylatestdrink, activitylist ]);
+		this.add([ mylatestdrink, activitylist ]);
     }
 });

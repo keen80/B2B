@@ -25,7 +25,7 @@ Ext.define('B2B.view.Place_Detail', {
 				if (!_.isEmpty(jsonData.image)) {
 				   value += '<img class="avatar_medium" src="' + jsonData.image +'" />';
 				}else{
-					value += '<img class="avatar_medium" src="' + HH.default_user64 +'" />';
+					value += '<img class="avatar_medium" src="' + HH.default_place32 +'" />';
 				}
 
 				value += "<h1>"+jsonData.placeName+"</p>";

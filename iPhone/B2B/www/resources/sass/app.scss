@@ -293,7 +293,7 @@
 /* TYPOGRAPHY ************************************************************* */
 
     strong{
-        font-weight: bold;
+        font-weight: bold !important;
         color: #000;
     }
 
@@ -637,6 +637,12 @@
 
 /* COMPONENTS ************************************************************* */
 
+    .list-empty-text{
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+        font-weight: bold;
+    }
 
     /* SMALL LIST  */
 
