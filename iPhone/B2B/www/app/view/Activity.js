@@ -24,7 +24,7 @@ Ext.define('B2B.view.Activity', {
                 html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
             },
             mylatestdrink = {
-                xtype: "panel",
+              /*  xtype: "panel",
                 id: "mylatestdrink",
                 draggable: false,
                 height: 80,
@@ -67,7 +67,10 @@ Ext.define('B2B.view.Activity', {
 
                         return str;
                     }
-                })
+                })*/
+                xtype: "drinkincheckinlistcomponent",
+                id: 'drinklist',
+                store: Ext.getStore("Drinks_Local")
             },
             activitylist = {
                 xtype: "activitylist",
