@@ -217,12 +217,12 @@ var i18n = {
 							"</ol>",
 		"TEXT_LOREM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque lacus, ultrices blandit porttitor et, ultrices eget ligula. Morbi non risus dui, nec semper sapien. Cras ornare egestas iaculis. Mauris volutpat tortor eleifend velit euismod dictum. Nam scelerisque elementum justo, sed tempor mauris rutrum nec. Phasellus libero elit, hendrerit ut ultricies non, interdum vel eros. Nam ultrices dui a diam vulputate pharetra. Mauris eu varius mauris. Praesent suscipit augue mollis nibh scelerisque adipiscing faucibus lectus blandit. Pellentesque mi enim, interdum eu dignissim ac, mattis nec urna. Fusce egestas libero a sem tristique sit amet fermentum urna imperdiet. Nunc risus metus, convallis sed volutpat vel, mollis commodo tortor. Quisque ac faucibus lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim sapien eget augue suscipit vitae faucibus erat tincidunt.",
 
-		"DRINK_TEXT_1_0": "You drink a %1 at %2",
-		"DRINK_TEXT_1_1": "You have an horrible drink of %1 at %2",
-		"DRINK_TEXT_1_2": "You didn't enjoy the %1 at %2",
-		"DRINK_TEXT_1_3": "You have a good drink of %1 at %2",
-		"DRINK_TEXT_1_4": "You enjoy a %1 at %2",
-		"DRINK_TEXT_1_5": "You really enjoy the %1 at %2",
+				"DRINK_TEXT_1_0": "You drink a <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
+		"DRINK_TEXT_1_1": "You have an horrible drink of <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
+		"DRINK_TEXT_1_2": "You didn't enjoy the <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
+		"DRINK_TEXT_1_3": "You have a good drink of <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
+		"DRINK_TEXT_1_4": "You enjoy a <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
+		"DRINK_TEXT_1_5": "You really enjoy the <strong class='hilite'>%1</strong> at <strong class='hilite'>%2</strong>",
 
 		"POINTCLAIM_TEXT_0_0": "<strong>C'mon</strong>, You are still <strong class='hilite'>far far away</strong> from the top",
 		"POINTCLAIM_TEXT_0_1": "<strong>WOW</strong> ! You are the <strong class='hilite'>King of the Hill</strong>",
