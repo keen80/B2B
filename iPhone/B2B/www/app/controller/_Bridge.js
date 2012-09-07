@@ -18,6 +18,7 @@ function loginOnFBCompleted(success, email, displayName, gender, nationality, bi
 	if (success) {
 		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDay);
 	} else {
+		console.log("ERRRRRRRRRRRRRRRRRR");
 		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 		Ext.Viewport.setMasked(false);
 	}

@@ -59,11 +59,13 @@
                                                       NSError *error)
 		 {
 			 BOOL err = NO;
-			 switch (status) {
+			 switch (status)
+			 {
+				 case FBSessionStateClosed:
+					 [FBSession.activeSession closeAndClearTokenInformation];
 				 case FBSessionStateOpen:
 					 err = (error != nil);
 					 break;
-				 case FBSessionStateClosed:
 				 case FBSessionStateClosedLoginFailed:
 					 [FBSession.activeSession closeAndClearTokenInformation];
 					 err = YES;
@@ -93,18 +95,22 @@
 -(void) requestPersonalInfo
 {
 	[self removeCurrentRequest];
-	requestConnection = [[FBRequestConnection alloc] init];
 	
-	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
+	if (FBSession.activeSession.isOpen)
 	{
-		[self requestCompleted:connection forFbID:@"me" result:result error:error];
-	};
-	
-	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
-												  graphPath:@"me"] autorelease];
-	
-	[requestConnection addRequest:request completionHandler:handler];
-	[requestConnection start];
+		requestConnection = [[FBRequestConnection alloc] init];
+		
+		FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
+		{
+			[self requestCompleted:connection forFbID:@"me" result:result error:error];
+		};
+		
+		FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
+													   graphPath:@"me"] autorelease];
+		
+		[requestConnection addRequest:request completionHandler:handler];
+		[requestConnection start];
+	}
 }
 
 -(void) requestCompleted:(FBRequestConnection *)connection
@@ -128,6 +134,8 @@
 		[self.delegate facebookLoginCompleted:(error == nil) personalInfo:result];
 	}
 }
+
+#pragma mark - Request
 
 -(void) getFBUserLogInStatus
 {
@@ -162,7 +170,7 @@
 
 -(void) applicationBecomeActive
 {
-	if (!FBSession.activeSession.isOpen)
+	if (!FBSession.activeSession.isOpen && (FBSession.activeSession.state != FBSessionStateCreatedTokenLoaded))
 	{
 		[FBSession.activeSession close];
 		[self removeCurrentRequest];
