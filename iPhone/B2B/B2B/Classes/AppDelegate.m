@@ -32,8 +32,6 @@
 		[cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
         
 		[CDVURLProtocol registerURLProtocol];
-		
-		
 	}
     
     return self;
@@ -133,6 +131,9 @@
 
 -(void) applicationDidBecomeActive:(UIApplication *)application
 {
+	[socialManager applicationBecomeActive];
+	[self.viewController applicationBecomeActive];
+	
 	if (FBSession.activeSession.state == FBSessionStateCreatedOpening)
 	{
         // BUG: for the iOS 6 preview we comment this line out to compensate for a race-condition in our

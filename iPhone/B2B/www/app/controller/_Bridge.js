@@ -13,10 +13,13 @@ function facebookLogInStatus(isLoggedIn) {
 };
 
 function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDay) {
+	bridge.pendingRequest = false;
+
 	if (success) {
 		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDay);
 	} else {
 		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
+		Ext.Viewport.setMasked(false);
 	}
 };
 
@@ -24,9 +27,21 @@ function logoutCompleted() {
 	window.location.reload();
 };
 
+function viewDidAppear() {
+
+};
+
+function applicationBecomeActive(fbUserIsLoggedIn) {
+	if (!fbUserIsLoggedIn && bridge.pendingRequest) {
+		bridge.pendingRequest = false;
+		Ext.Viewport.setMasked(false);
+	}
+};
+
 /**********************************************************************************************/
 
 var bridge = {
+	pendingRequest: false,
 	getFBUserLogInStatus: function() {
 		if (Ext.feature.has.Touch) {
 			var selector = "targets=socialManager:getFBUserLogInStatus";
@@ -36,6 +51,14 @@ var bridge = {
 		}
 	},
 	getFBUserInformations: function() {
+		this.pendingRequest = true;
+
+		Ext.Viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+        Ext.Viewport.setMasked(true);
+
 		if (Ext.feature.has.Touch) {
 			var selector = "targets=socialManager:getFBUserInformations";
 			this.sendSelector(selector);
@@ -44,6 +67,14 @@ var bridge = {
 		}
 	},
 	doLoginOnFB: function() {
+		this.pendingRequest = true;
+
+		Ext.Viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+        Ext.Viewport.setMasked(true);
+
 		if (Ext.feature.has.Touch) {
 			var selector = "targets=socialManager:doLoginOnFB";
 			this.sendSelector(selector);

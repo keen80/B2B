@@ -10,6 +10,7 @@
 
 @interface SocialManager (Private)
 
+-(void) removeCurrentRequest;
 -(void) removeFacebookSession;
 -(void) createFacebookSession;
 
@@ -31,7 +32,16 @@
 
 -(void) dealloc
 {
+	[self removeCurrentRequest];
+	
 	[super dealloc];
+}
+
+-(void) removeCurrentRequest
+{
+	[requestConnection cancel];
+	[requestConnection release];
+	requestConnection = nil;
 }
 
 -(void) createFacebookSession
@@ -48,7 +58,21 @@
                                                       FBSessionState status,
                                                       NSError *error)
 		 {
-			 if (error)
+			 BOOL err = NO;
+			 switch (status) {
+				 case FBSessionStateOpen:
+					 err = (error != nil);
+					 break;
+				 case FBSessionStateClosed:
+				 case FBSessionStateClosedLoginFailed:
+					 [FBSession.activeSession closeAndClearTokenInformation];
+					 err = YES;
+					 break;
+				 default:
+					 break;
+			 }
+			 
+			 if (err)
 			 {
 				 NSLog(@"[FBSession] Error: %@", error.localizedDescription);
 				 
@@ -58,7 +82,7 @@
 					 [self.delegate facebookLoginCompleted:NO personalInfo:nil];
 				 }
 			 }
-			 else if (FB_ISSESSIONOPENWITHSTATE(status))
+			 else
 			 {
 				 [self requestPersonalInfo];
 			 }
@@ -68,6 +92,7 @@
 
 -(void) requestPersonalInfo
 {
+	[self removeCurrentRequest];
 	requestConnection = [[FBRequestConnection alloc] init];
 	
 	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
@@ -92,10 +117,8 @@
 	{
         return;
     }
-    
-    // clean this up, for posterity
-    [requestConnection release];
-	requestConnection = nil;
+	
+    [self removeCurrentRequest];
 	
 	NSLog(@"%@", result);
 	
@@ -127,11 +150,22 @@
 
 -(void) logout
 {
+	[self removeCurrentRequest];
 	[FBSession.activeSession closeAndClearTokenInformation];
+	
 	SEL selector = @selector(logoutCompleted);
 	if ([self.delegate respondsToSelector:selector])
 	{
 		[self.delegate logoutCompleted];
+	}
+}
+
+-(void) applicationBecomeActive
+{
+	if (!FBSession.activeSession.isOpen)
+	{
+		[FBSession.activeSession close];
+		[self removeCurrentRequest];
 	}
 }
 

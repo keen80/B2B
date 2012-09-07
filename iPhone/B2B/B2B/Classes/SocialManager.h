@@ -30,7 +30,7 @@
 +(SocialManager *) sharedSocialManager;
 
 -(void) createFacebookSession;
-
 -(void) doLoginOnFB;
+-(void) applicationBecomeActive;
 
 @end

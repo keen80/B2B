@@ -32,6 +32,8 @@
 	[super dealloc];
 }
 
+#pragma mark - View lifecycle
+
 -(void) viewDidLoad
 {
 	[super viewDidLoad];
@@ -45,6 +47,15 @@
 	
 	[SocialManager sharedSocialManager].delegate = nil;
 }
+
+-(void) viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	[self executeJavascriptString:@"viewDidAppear();"];
+}
+
+#pragma mark -
 
 -(void) executeJavascriptString:(NSString *)function
 {
@@ -110,5 +121,13 @@
 	NSString *string = @"logoutCompleted();";
 	[self executeJavascriptString:string];
 }
+
+-(void) applicationBecomeActive
+{
+	NSString *open = (FBSession.activeSession.isOpen ? @"true" : @"false");
+	NSString *string = [NSString stringWithFormat:@"applicationBecomeActive(%@);", open];
+	[self executeJavascriptString:string];
+}
+
 
 @end

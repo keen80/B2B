@@ -12,10 +12,12 @@
 
 @class WebViewBridge;
 
-@interface MainViewController : CDVViewController <SocialManagerDelegate>
+@interface MainViewController : CDVViewController <SocialManagerDelegate, UIApplicationDelegate>
 {
 @private
 	WebViewBridge *bridge;
 }
+
+-(void) applicationBecomeActive;
 
 @end

@@ -9,6 +9,11 @@ var authentication = {
 	loginOnFBCompleted: function(email, displayName, gender, nationality, birthDay) {
 		var viewport = Ext.Viewport;
 
+		viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+
 		this.userLoggedOnFB.email = email;
 		this.userLoggedOnFB.displayName = displayName;
 		this.userLoggedOnFB.gender = gender;
@@ -16,29 +21,37 @@ var authentication = {
 		this.userLoggedOnFB.birthDay = birthDay;
 
 		viewport.setMasked(true);
-		var profileStore = Ext.getStore("Profile_Local");
+		var profileStore = Ext.getStore("Profile_Local").load();
 		if (profileStore) {
 			if (profileStore.getCount() < 1) {
-				this.generateToken(email, viewport);
+				this.generateToken(email);
 			} else {
 				var data = profileStore.first().data;
 				if (data.idUser !== email || _.isEmpty(data.token)) {
 					Ext.getStore("Profile_Local").removeAll();
-					this.generateToken(email, viewport);
+					this.generateToken(email);
 				} else {
 					viewport.removeAll(true, true);
 					goingTo.step2("Loading Store.Profile_Ajax");
 					viewport.add([Ext.create('B2B.view._App')]);
+					viewport.setMasked(false);
 				}
 			}
+		} else {
+			viewport.setMasked(false);
 		}
-		viewport.setMasked(false);
 	},
 	registerUserWithParams: function(values) {
 		var errorCode = -1,
-			that = this;
+			that = this,
+			viewport = Ext.Viewport;
 
-		Ext.Viewport.setMasked(true);
+		viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+
+		viewport.setMasked(true);
 
 		if (values && !_.isEmpty(values.idUser) && !_.isEmpty(values.displayName) && !_.isEmpty(values.birthDate)) {
 			var params = {
@@ -93,9 +106,15 @@ var authentication = {
 	},
 	generateToken: function(idUser) {
 		var errorCode = -1,
-			that= this;
+			that= this,
+			viewport = Ext.Viewport;
 
-		Ext.Viewport.setMasked(true);
+		viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+
+		viewport.setMasked(true);
 
 		if (!_.isEmpty(idUser)) {
 			Ext.Ajax.request({
@@ -171,8 +190,8 @@ var authentication = {
 				if (Ext.fly('appLoadingIndicator')) {
 					Ext.fly('appLoadingIndicator').destroy();
 				}
-				Ext.Viewport.removeAll(true, true);
-				Ext.Viewport.add([register]);
+				viewport.removeAt(0);
+				viewport.add([register]);
 				break;
 			case 2:    // Fail
 				HH.log("--> Step: [Generate token] Failure - CODE: " + errorCode);
@@ -186,7 +205,7 @@ var authentication = {
 		viewport.setMasked(false);
 	},
 	_doRegisterUserCallback: function(index, userValues, errorCode) {
-		var store = Ext.getStore("Profile_Local")
+		var store = Ext.getStore("Profile_Local"),
 			viewport = Ext.Viewport;
 
 		switch(index) {
