@@ -4,18 +4,18 @@ Ext.define('B2B.view._Login', {
 	xtype: '_login',
 	config: {
 		iconCls: 'settings6',
-		url: 'http://192.168.1.161',
 		styleHtmlContent: true,
-		html:'Cannot login? <a href="#">Send me my credentials via email!</a>',
+		// html:'Cannot login? <a href="#">Send me my credentials via email!</a>',
 		scrollable: false,
+		layout: 'vbox',
 		items: [
+			{ xtype: 'spacer'},
 			{
 				xtype: 'fieldset',
 				margin: '50px auto',
 				id: '_loginfieldset',
-				items:[
-				]
-			}
+			},
+			{ xtype: 'spacer'}
 		]
 	},
 	initialize: function(){
@@ -32,7 +32,7 @@ Ext.define('B2B.view._Login', {
 			handler: this.onLoginButtonTap
 		}
 
-        Ext.getCmp('_loginfieldset').add([ button_Login]);
+        Ext.getCmp('_loginfieldset').add([button_Login]);
     },
 
     onLoginButtonTap: function(){

@@ -96,9 +96,7 @@
 {
 	[self removeCurrentRequest];
 	
-	if (FBSession.activeSession.isOpen)
-	{
-		requestConnection = [[FBRequestConnection alloc] init];
+	requestConnection = [[FBRequestConnection alloc] init];
 		
 		FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
 		{
@@ -110,7 +108,6 @@
 		
 		[requestConnection addRequest:request completionHandler:handler];
 		[requestConnection start];
-	}
 }
 
 -(void) requestCompleted:(FBRequestConnection *)connection

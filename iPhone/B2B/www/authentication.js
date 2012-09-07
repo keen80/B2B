@@ -195,7 +195,6 @@ var authentication = {
 				break;
 			case 2:    // Fail
 				HH.log("--> Step: [Generate token] Failure - CODE: " + errorCode);
-				console.log("-----------------ERRRRRRRRRRRRRRRRRR");
 				utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 				break;
 			case 3:    // Params error
@@ -226,7 +225,6 @@ var authentication = {
 				break;
 			case 1:    // Fail
 				HH.log("--> Step: [Register user] Failure - CODE: " + errorCode);
-				console.log("--*********ERRRRRRRRRRRRRRRRRR");
 				utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
 				break;
 			case 2:    // Params error
