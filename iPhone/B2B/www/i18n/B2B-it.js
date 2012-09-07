@@ -6,6 +6,7 @@ var i18n = {
 
 		"PANEL_ABOUTME": "About Me",
 		"PANEL_ACTIVITY": "What\'s New",
+		"PANEL_HISTORY": "My history of Activity",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "Beers",
 		"PANEL_CHECKIN": "Check In",
@@ -203,6 +204,7 @@ var i18n = {
 		"TEXT_NOFEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 		"TEXT_NOBADGEFOUND": "No badge found",
+		"TEXT_NODRINKFOUND" : "No Drink found",
 		"TEXT_LOADINGDISCLAIMER": "All trademarks, service marks, registered marks, or registered service marks are the property of their respective owners",
 		"TEXT_LOADINGCLAIM": "Drink <span class='hilite'>Responsibly</span>, Always.",
 

@@ -204,6 +204,7 @@ var i18n = {
 		"TEXT_NOFEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 		"TEXT_NOBADGEFOUND": "No badge found",
+		"TEXT_NODRINKFOUND" : "No Drink found",
 		"TEXT_LOADINGDISCLAIMER": "All trademarks, service marks, registered marks, or registered service marks are the property of their respective owners",
 		"TEXT_LOADINGCLAIM": "Drink <span class='hilite'>Responsibly</span>, Always.",
 

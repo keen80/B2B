@@ -3,8 +3,12 @@ Ext.define('B2B.view.DrinkInCheckIn_List', {
     xtype: 'drinkincheckinlistcomponent',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
-        emptyText: '',
-        itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImageURL(values)]}{[this.getTextString(values)]}</div>",
+        emptyText: '</pre><div class="badge-list-empty-text">'+utils.__(i18n.app.TEXT_NODRINKFOUND)+'</div><pre>',
+        itemTpl: new Ext.XTemplate([
+            "<div class='{[this.getClass(values)]}'>",
+                "{[this.getImageURL(values)]}",
+               "{[this.getTextString(values)]}",
+            "</div>"].join(""),
             {
             	getClass: function(values){
             		return "drinkincheckin-list-item small-list";
