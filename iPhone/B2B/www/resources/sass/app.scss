@@ -152,6 +152,11 @@
           }
         }
 
+        @mixin no-select {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
 
 /* LAYOUT ***************************************************************** */
     
@@ -1527,3 +1532,12 @@ _.each(_.values(i18n.countries), function(a){ console.log('@include field_nation
 @include beer-iconmask('smiley_friends');
 @include beer-iconmask('smiley_friend_add');
 @include beer-iconmask('position');
+
+/* HACKS */
+
+/* Disable Selection */
+:not(input) {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
