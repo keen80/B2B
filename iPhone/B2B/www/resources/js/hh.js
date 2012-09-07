@@ -17,8 +17,8 @@ if( _.str.include(language_string, "it")){
 
 
 var HH = {
-	SKIP_LOGIN: true,
-	OFFLINE_MODE: true,
+	SKIP_LOGIN: false,
+	OFFLINE_MODE: false,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	IP_PORT_SERVER: "http://93.70.93.36:8080",
