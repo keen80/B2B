@@ -81,7 +81,7 @@ var i18n = {
 		"BTN_EDIT": "Edit",
 		"BTN_FAVORITES": "Favorite Beers",
 		"BTN_ADDFAVORITE": "Add a Favorite Beer",
-		"BTN_LOGIN": "Login",
+		"BTN_LOGIN": "Login with Facebook",
 		"BTN_LOGOUT": "Logout",
 		"BTN_MARKALLREAD": "Mark Read",
 		"BTN_MYACTIVITY": "History",
@@ -265,7 +265,7 @@ var i18n = {
 		{"text": "ALE - BELGIAN STYLE etc", "value": 8 },
 		{"text": "ALE/LAGER HYBRID", "value": 9 },
 		{"text": "LAGER - DARK (SCURA)", "value": 10 },
-		{"text": "LAMBIC", "value": 11 }		
+		{"text": "LAMBIC", "value": 11 }
 	],
 
 	"beertypes": [

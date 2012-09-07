@@ -13,7 +13,7 @@ Ext.define('B2B.view.Beer_Detail', {
 		title: i18n.app.PANEL_BEERDETAIL,
 		iconCls: 'add'
 	},
-	initialize: function(){		
+	initialize: function(){
 		this.callParent(arguments);
 
 		var info = this.jsonData.data;
@@ -81,68 +81,68 @@ Ext.define('B2B.view.Beer_Detail', {
 		};
 
 		var beerfieldset = {
-				xtype: 'fieldset',
-				title: i18n.app.FORM_BEERDETAIL,
-				instructions: i18n.app.HINT_BEERREPORT,
-				items: [
-					{
-						xtype: 'textfield',
-						name: 'name',
-						readOnly: true,
-						cls: 'beer_form_textfield',
-						value: _.titleize(info.name),
-						label: i18n.app.LABEL_BEERNAME
-					},
-					{
-						xtype: 'textfield',
-						name: 'brewery',
-						readOnly: true,
-						cls: 'beer_form_textfield',
-						value: _.titleize(info.brewery),
-						label: i18n.app.LABEL_BEERBREWERY
-					},
-					{
-						xtype: 'textfield',
-						name: "beerstyle",
-						readOnly: true,
-						cls: 'beer_form_textfield',
-						label: i18n.app.LABEL_BEERSTYLE,
-						value: utils.getBeerStyleFromCode(parseInt(info.beerstyle))
-					},
-					{
-						xtype: 'textfield',
-						name: "beertype",
-						readOnly: true,
-						cls: 'beer_form_textfield',
-						label: i18n.app.LABEL_BEERTYPE,
-						value: utils.getBeerTypeFromCode(parseInt(info.beertype))
-					},
-					{
-						xtype: 'textfield',
-						name: "grad",
-						readOnly: true,
-						cls: 'beer_form_textfield',
-						label: i18n.app.LABEL_BEERGRAD,
-						value: info.grad
-					},
-					{
-						xtype: 'textfield',
-						name: "nationality",
-						readOnly: true,
-						cls: 'beer_form_textfield field_nationality_'+(info.nationality).toLowerCase(),
-						label: i18n.app.FORM_NATIONALITY,
-						value: utils.getCountryFromCode(info.nationality)
-					},
-					{
-						xtype: 'textareafield',
-						name: 'description',
-						cls: 'beer_form_textfield',
-						labelAlign: 'top',
-						readOnly: true,
-						label: i18n.app.LABEL_BEERDESCRIPTION,
-						value: info.description
-					}
-				]
+			xtype: 'fieldset',
+			title: i18n.app.FORM_BEERDETAIL,
+			instructions: i18n.app.HINT_BEERREPORT,
+			items: [
+				{
+					xtype: 'textfield',
+					name: 'name',
+					readOnly: true,
+					cls: 'beer_form_textfield',
+					value: _.titleize(info.name),
+					label: i18n.app.LABEL_BEERNAME
+				},
+				{
+					xtype: 'textfield',
+					name: 'brewery',
+					readOnly: true,
+					cls: 'beer_form_textfield',
+					value: _.titleize(info.brewery),
+					label: i18n.app.LABEL_BEERBREWERY
+				},
+				{
+					xtype: 'textfield',
+					name: "beerstyle",
+					readOnly: true,
+					cls: 'beer_form_textfield',
+					label: i18n.app.LABEL_BEERSTYLE,
+					value: utils.getBeerStyleFromCode(parseInt(info.beerstyle))
+				},
+				{
+					xtype: 'textfield',
+					name: "beertype",
+					readOnly: true,
+					cls: 'beer_form_textfield',
+					label: i18n.app.LABEL_BEERTYPE,
+					value: utils.getBeerTypeFromCode(parseInt(info.beertype))
+				},
+				{
+					xtype: 'textfield',
+					name: "grad",
+					readOnly: true,
+					cls: 'beer_form_textfield',
+					label: i18n.app.LABEL_BEERGRAD,
+					value: info.grad
+				},
+				{
+					xtype: 'textfield',
+					name: "nationality",
+					readOnly: true,
+					cls: 'beer_form_textfield field_nationality_'+(info.nationality).toLowerCase(),
+					label: i18n.app.FORM_NATIONALITY,
+					value: utils.getCountryFromCode(info.nationality)
+				},
+				{
+					xtype: 'textareafield',
+					name: 'description',
+					cls: 'beer_form_textfield',
+					labelAlign: 'top',
+					readOnly: true,
+					label: i18n.app.LABEL_BEERDESCRIPTION,
+					value: info.description
+				}
+			]
 		};
 
 		this.add([toolbar, controlcontainer, beerfieldset]);
