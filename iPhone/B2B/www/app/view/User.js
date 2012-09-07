@@ -215,7 +215,8 @@ Ext.define('B2B.view.User', {
 		this.fireEvent("badgesProfileCommand", this);
 	},
 	onDrinkListButtonTap: function() {
-		utils.alert("To Be Implemented");
+		this.fireEvent("drinkListProfileCommand", this);
+		//utils.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
 		utils.alert("To Be Implemented");
