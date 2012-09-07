@@ -17,7 +17,7 @@ Ext.application({
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
 		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Drinks_Local', 'Feedback_Ajax',
-		'Badges_Ajax',
+		'Badges_Ajax','Activities_User_Local',
 		'DrinkInCheckIn_Ajax',
 		'FavoriteBeers_Local'
 	],
@@ -43,7 +43,7 @@ Ext.application({
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
 		'Place_Beer_List', 'Place_Beer_Search',
-		'View_BottleSpinner','Drink_List_Container'
+		'View_BottleSpinner','Drink_List_Container','History_Panel'
 		],
 
 	icon: {

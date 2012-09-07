@@ -219,7 +219,8 @@ Ext.define('B2B.view.User', {
 		//utils.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
-		utils.alert("To Be Implemented");
+		this.fireEvent("activityListProfileCommand", this);
+		//utils.alert("To Be Implemented");
 	},
 	onFavoritesButtonTap: function() {
 		this.fireEvent("favoritesProfileCommand", this);

@@ -6,6 +6,7 @@ var i18n = {
 
 		"PANEL_ABOUTME": "About Me",
 		"PANEL_ACTIVITY": "What\'s New",
+		"PANEL_HISTORY": "My history of Activity",
 		"PANEL_ADDBEER": "Add a Beer",
 		"PANEL_BEER": "Beers",
 		"PANEL_CHECKIN": "Check In",
