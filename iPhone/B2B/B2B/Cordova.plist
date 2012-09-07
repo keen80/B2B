@@ -24,16 +24,7 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
-		<string>mt1.googleapis.com</string>
-		<string>csi.gstatic.com</string>
-		<string>maps.googleapis.com</string>
-		<string>mt0.googleapis.com</string>
-		<string>maps.gstatic.com</string>
-		<string>maps.google.com</string>
-		<string>192.168.1.7</string>
-		<string>graph.facebook.com</string>
-		<string>facebook.com</string>
-		<string>93.70.93.36</string>
+		<string>*</string>
 	</array>
 	<key>Plugins</key>
 	<dict>

@@ -62,7 +62,7 @@ var goingTo = {
 			data = profileLocal.first().data;
 			profileAjax.getProxy().setExtraParam("btUsername", data.idUser);
 			profileAjax.getProxy().setExtraParam("btSid", data.token);
-			profileAjax.getProxy().setExtraParam("username", data.username);
+			profileAjax.getProxy().setExtraParam("username", data.idUser);
 		}
 
 		profileAjax.load();
