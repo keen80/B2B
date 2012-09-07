@@ -12,8 +12,13 @@ Ext.define('B2B.view.Notification_List', {
                 pullRefreshText: 'Pull down for more!'
             }
         ],
-        emptyText: '</pre><div class="friend-list-empty-text">'+utils.__(i18n.app.TEXT_NOFRIENDFOUND)+'</div><pre>',
-         itemTpl: new Ext.XTemplate([
+        emptyText: [
+            '<div class="notification-list-empty-text list-empty-text">',
+                '<p>'+utils.__(i18n.app.TEXT_NONOTIFICATIONFOUND)+'</p>',
+                '<p>'+utils.__(i18n.app.TEXT_WHYADDFRIEND)+'</p>',
+            '</div>',
+        ].join(""),
+        itemTpl: new Ext.XTemplate([
                 "<div class='{[this.getClass(values)]}'>",
                     "{[this.getTextString(values)]}",
                 "</div>",

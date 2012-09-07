@@ -33,13 +33,6 @@ Ext.define('B2B.view.DrinkInCheckIn_List', {
                 	return str;
                 },
                 getTextString: function(values){
-                  /*  var str = '<div class="small-list-text">';
-            		str += values.placeName;
-                	str += '</div>';
-                	str += '<div class="small-list-drinkedin">';
-            		if(parseInt(values.drinkedIn) >0) str += values.drinkedIn;
-                	str += "</div>";
-                    return str;*/
                      var str = [
                         "<div class='list-header'>",
                             "<small class='time'>",

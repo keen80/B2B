@@ -9,7 +9,6 @@ Ext.define('B2B.view.Beer_List', {
                 '<p>'+utils.__(i18n.app.TEXT_NOBEERFOUND)+'</p>',
             '</div>'
         ].join(""),
-        //itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getImage2URL(values)]}{[this.getString(values)]}</div>",
         itemTpl: new Ext.XTemplate("<div class='{[this.getClass(values)]}'>{[this.getImage1URL(values)]}{[this.getString(values)]}</div>",
         {
         	getClass: function(values){
@@ -19,9 +18,9 @@ Ext.define('B2B.view.Beer_List', {
                     //resources/beer/style"+values.beerstyle+".png'
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beerstyle)){
-                         str += 'resources/img/default/blank_beer_32.png';
+                         str += 'resources/img/default/blank_beer32.png';
                      }else{
-                        str += 'resources/img/default/blank_beer_32.png';
+                        str += 'resources/img/default/blank_beer32.png';
                      }
                     str += '" width="32" height="32">';
                     return str;
@@ -29,9 +28,9 @@ Ext.define('B2B.view.Beer_List', {
             getImage2URL: function(values){
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beertype)){
-                         str += 'resources/img/default/blank_beer_32.png';
+                         str += 'resources/img/default/blank_beer32.png';
                      }else{
-                        str += 'resources/img/default/blank_beer_32.png';
+                        str += 'resources/img/default/blank_beer32.png';
                      }
                     str += '" width="32" height="32">';
                     return str;

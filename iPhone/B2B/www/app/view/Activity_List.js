@@ -49,7 +49,7 @@ Ext.define('B2B.view.Activity_List', {
                     var str = [
                         "<div class='list-header'>",
                             "<small class='time'>",
-                                utils.getDate(values.date),
+                                utils.getDate(v),
                             "</small>",
                             "<span class='info'>",
                                 this.getAvatarURL(values),

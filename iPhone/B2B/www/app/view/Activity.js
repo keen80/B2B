@@ -43,16 +43,16 @@ Ext.define('B2B.view.Activity', {
                     getImageURL: function(a){
                         var str = '<img class="avatar" src="';
                         if (_.isEmpty(a.avatar)){
-                             str += HH.default_user32;
+                             str += HH.default_user64;
                          }else{
                             str+=a.avatar;
                          }
-                        str += '" width="32" height="32">';
+                        str += '" width="64" height="64">';
                         return str;
                     },
                     getTextString: function(v){
                         var str = [
-                            "<div class='list-header-small'>",
+                            "<div class='list-header-mylastdrink'>",
                                 "<small class='time'>",
                                     utils.getDate(v),
                                 "</small>",
@@ -61,7 +61,9 @@ Ext.define('B2B.view.Activity', {
                                 "</span>",
                             "</div>",
                             "<p class='list-text'>",
-                              utils.getDrinkString(v),
+                                "<strong>",
+                                    utils.getDrinkString(v),
+                                "</strong>",
                             "</p>",
                             "<div class='clear'></div>"
                         ].join("");

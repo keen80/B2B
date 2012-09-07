@@ -21,10 +21,13 @@ Ext.define("B2B.controller.Notifications", {
 		}
 	},
 	onNotificationShow: function(){
-		this.getApp().push({
+		var notification = {
 			xtype: "notification",
 			id: 'notification'
-		});
+		};
+		var appcontainer = Ext.getCmp('_app'); //.getProfile();
+		appcontainer.add(notification);
+		appcontainer.setActiveItem(2);
 	},
 	onNotificationRead: function(a, b, c, record){
 		/* deselection of the list */
@@ -54,7 +57,8 @@ Ext.define("B2B.controller.Notifications", {
 		console.error("TODO: Notification Read All");
 	},
 	onNotificationBack: function(){
-		this.getApp().pop();
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.remove(Ext.getCmp('notification'));
 	},
 	launch: function(){
 		this.callParent(arguments);

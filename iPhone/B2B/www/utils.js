@@ -19,28 +19,31 @@ var utils = {
 			return false;
 		}else{ return true}
 	},
-	getDate: function(date){
-		/* TODO: MOMENT INTEGRATION date */
-		//var newDate = "5 min";
-		return date;
+	getDate: function(values){
+		var date = values.insertedOn;
+		if(!_.isUndefined(date)){
+			return this.getHumanDate(new Date(date));
+		}else{
+			return i18n.app.TEXT_DATESOMETIME;
+		}
 	},
 	getDrinkString: function(values) {
 		if (values) {
 			switch(values.rate){
 				case 0:
-					return this.__(i18n.app.DRINK_TEXT_1_1, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_1, _.titleize(values.beerName), values.placeName);
 				case 1:
-					return this.__(i18n.app.DRINK_TEXT_1_2, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_2, _.titleize(values.beerName), values.placeName);
 				case 2:
-					return this.__(i18n.app.DRINK_TEXT_1_3, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_3, _.titleize(values.beerName), values.placeName);
 				case 3:
-					return this.__(i18n.app.DRINK_TEXT_1_4, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_4, _.titleize(values.beerName), values.placeName);
 				case 4:
-					return this.__(i18n.app.DRINK_TEXT_1_5, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_5, _.titleize(values.beerName), values.placeName);
 				case 5:
-					return this.__(i18n.app.DRINK_TEXT_1_6, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_6, _.titleize(values.beerName), values.placeName);
 				default:
-					return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
+					return this.__(i18n.app.DRINK_TEXT_1_0, _.titleize(values.beerName), values.placeName);
 			}
 		}
 		return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
@@ -142,7 +145,7 @@ var utils = {
 		}
 	},
 	getHumanDate: function(date){
-		var seconds = Math.floor(((new Date().getTime()/1000) - date)),
+		var seconds = Math.floor(((new Date().getTime()/1000) - date.getTime()/1000)),
 		interval = Math.floor(seconds / 31536000);
 		if (interval > 1) return interval + "y";
 		interval = Math.floor(seconds / 2592000);

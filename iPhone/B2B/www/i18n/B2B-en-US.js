@@ -194,6 +194,7 @@ var i18n = {
 		"HINT_OFFLINE": "We are sorry, but an Internet Connection is required!",
 		"HINT_PULLDOWN": "Pull down for more!",
 
+		"TEXT_DATESOMETIME": "Some time ago",
 		"TEXT_NOACTIVITYFOUND": "No activity found",
 		"TEXT_NOBEERFOUND": "No beer found",
 		"TEXT_NOFAVORITEFOUND": "No favorite found",
@@ -201,7 +202,7 @@ var i18n = {
 		"TEXT_WHYADDFRIEND": "Start <strong class='hilite'>inviting</strong>  to enjoy this App!",
 		"TEXT_NOPLACEFOUND": "...Looking for your nearest address...",
 		"TEXT_PLACEFOUND": "<strong>Near to:</strong> %1",
-		"TEXT_NONOTIFICATIONFOUND": "No activity found",
+		"TEXT_NONOTIFICATIONFOUND": "No notification found",
 		"TEXT_NOFEEDBACKFOUND": "No comments found",
 		"TEXT_NOPROFILEFOUND": "No profile found",
 		"TEXT_NOBADGEFOUND": "No badge found",

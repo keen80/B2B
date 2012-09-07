@@ -102,6 +102,9 @@
                 border-radius: 6px;
                 padding: 6px 10px;
             }
+            .x-list{
+                background: transparent;
+            }
         }
 
         @mixin light-border{
@@ -136,6 +139,11 @@
 
         @mixin indent-list32{
             margin-left: 38px;
+            margin-top: 2px;
+        }
+
+         @mixin indent-list0{
+            margin-left: 0px;
             margin-top: 2px;
         }
 
@@ -186,12 +194,6 @@
         color: #666;
         background: #FFD;
         border-bottom: 1px solid #999;
-    }
-
-    #mylatestdrink{
-        padding: 10px;
-        border-bottom: 2px solid #AAA;
-        background: #FFF;
     }
 
     hr {
@@ -309,13 +311,27 @@
 
 /* ACTIVITIES ************************************************************* */
 
-    #act_lastdrink{
+    #mylatestdrink{
         border-bottom: 2px solid #BBB;
-        .act_lastdrink{
-            padding: 4px;
-            img {
-                margin-top: 6px;
+        padding: 10px;
+        background: #FFF;
+        .list-header-mylastdrink{
+            @extend .list-header;
+            @include indent-list0;
+            top: 0;
+            left: 0;
+           .avatar{
+                top: 0 !important;
+                left: 0 !important;
             }
+        }
+        .list-text{
+            @include indent-list72;
+            word-wrap: break-word;
+            margin-bottom: 4px;
+            clear:both;
+            color: #999;
+            font-size: 12px;
         }
     }
 
@@ -399,6 +415,8 @@
     }
 
 /* DRINKIN **************************************************************** */
+
+
 
 /* PLACES ***************************************************************** */
 
@@ -502,7 +520,7 @@
 
 /* NOTIFICATION *********************************************************** */
     #notification{
-        background: url("../bg/bg.png") #DADADA repeat bottom right;
+        background: url("../bg/notification.png") #DADADA repeat bottom right;
         @include rounded_list;
     }
 
@@ -670,10 +688,12 @@
                 }
             }
         }
+        
         .list-header-small{
             @extend .list-header;
             @include indent-list32;
         }
+
         .list-text{
             @include indent-list64;
             word-wrap: break-word;

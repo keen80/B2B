@@ -3,7 +3,11 @@ Ext.define('B2B.view.Badge_List', {
 	xtype: 'badgelistcomponent',
 	config: {
 		loadingText: i18n.app.HINT_LOADING,
-		emptyText: '</pre><div class="badge-list-empty-text">'+utils.__(i18n.app.TEXT_NOBADGEFOUND)+'</div><pre>',
+        emptyText: [
+            '<div class="badge-list-empty-text list-empty-text">',
+                '<p>'+utils.__(i18n.app.TEXT_NOBADGEFOUND)+'</p>',
+            '</div>'
+        ].join(""),
 		itemTpl: new Ext.XTemplate([
 				"<div class='{[this.getClass(values)]}'>",
 					"{[this.getImageURL(values)]}",
