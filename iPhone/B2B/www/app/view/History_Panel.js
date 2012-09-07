@@ -18,7 +18,7 @@ Ext.define('B2B.view.History_Panel', {
         HH.log("LOAD PROFILE FOR Activity "+user.idUser);
         storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
         storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
-        storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+        storeJSONP.getProxy().setExtraParam('btSid', user.token);//user.token
         storeJSONP.load();
        var backButton = {
             text: i18n.app.BTN_BACK,

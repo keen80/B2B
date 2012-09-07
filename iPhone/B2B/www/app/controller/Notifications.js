@@ -31,22 +31,21 @@ Ext.define("B2B.controller.Notifications", {
 		setTimeout(function(){a.deselect(b);},500);
 		var user = Ext.getStore("Profile_Local").first().data;
 		//record.data.idNotification
-		 Ext.Ajax.request({
-                        url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/setNotificationRead",
-                        method: "GET",
-                        headers: {
-                        "btUsername": user.idUser,
-                        "btSid" : "puppa"
-                    },
-                        params: {
-                                idUser: user.idUser,
-                                idNotification: record.data.idNotification
-                        },
-                        callback: function(response) {
-                                console.log(response);
-                        }
-                });
-		
+		Ext.Ajax.request({
+			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/setNotificationRead",
+			method: "GET",
+			headers: {
+				"btUsername": user.idUser,
+				"btSid" : user.token
+			},
+			params: {
+					idUser: user.idUser,
+					idNotification: record.data.idNotification
+			},
+			callback: function(response) {
+					console.log(response);
+			}
+		});
 
 		console.error("TODO: Notification Read");
 	},

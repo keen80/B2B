@@ -71,7 +71,7 @@ Ext.define('B2B.view.Activity', {
             HH.log("LOAD PROFILE FOR ACTIVITY " + user.idUser);
             storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
             storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
-            storeJSONP.getProxy().setExtraParam('btSid','puppa');//user.token
+            storeJSONP.getProxy().setExtraParam('btSid', user.token);//user.token
         }
 
         storeJSONP.load();

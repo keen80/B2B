@@ -39,7 +39,7 @@ Ext.define('B2B.view.Friend', {
     		HH.log("LOAD PROFILE FOR FRIENDS " + user.idUser);
 			storeAjaxFriend.getProxy().setExtraParam('idUser', user.idUser);
 			storeAjaxFriend.getProxy().setExtraParam('btUsername',user.idUser);
-			storeAjaxFriend.getProxy().setExtraParam('btSid','puppa');//user.token
+			storeAjaxFriend.getProxy().setExtraParam('btSid', user.token);//user.token
 			//Ext.apply(storeAjaxFriend.getProxy().headers, {'btUsername':user.idUser});
     	}
 
