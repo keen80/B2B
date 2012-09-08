@@ -49,7 +49,7 @@ Ext.define('B2B.view.Notification_List', {
                                 values.displayName,
                             "</span>",
                         "</div>",
-                        "<p class='list-text-notification'>",
+                        "<p class='list-text'>",
                             utils.getNotificationString(values),
                         "</p>",
                         "<div class='clear'></div>"

@@ -5,20 +5,9 @@ if(_(['en-US', 'it']).contains(language_string)){
     document.write('<script src="i18n/B2B-'+language_string+'.js"></'+'script>');
 }
 
-/*else{
-    document.write('<script src="i18n/B2B-en-US.js"></'+'script>');
-}*/
-
-if( _.str.include(language_string, "it")){
-//    moment.lang(language_string);
-}else{
-//    moment.lang("en");
-}
-
-
 var HH = {
 	SKIP_LOGIN: true,
-	OFFLINE_MODE: false,
+	OFFLINE_MODE: true,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	IP_PORT_SERVER: "http://antreem.dtdns.net:8080",
