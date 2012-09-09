@@ -59,27 +59,36 @@ var utils = {
 		}
 		return avatar_url;
 	},
-	getProgressPoint: function(profile){
-		var currentPoints = 0;
-		var maxPoints = 0;
-		if (profile) {
-			if (! (_.isNumber(parseInt(profile.currentPoints)) || _.isNumber(parseInt(profile.maxPoints)))) {
-				currentPoints = parseInt(profile.currentPoints);
-				maxPoints = parseInt(profile.maxPoints);
-				if (currentPoints < 1) { return 1 }
-				if (maxPoints < 1) { return 10 }
-				else{
-					return Math.ceil(currentPoints * 100 / maxPoints);				}
-			} else
-				return 1;
+	getProgressPoints: function(profile){
+		if (profile && _.isNumber(profile.currentPoints)) {
+			if (profile.currentPoints < 1) {
+				return 1
 			}
+			else{
+				var max = 1;
+				if (this.getMaxPoints(profile) > 0) max = this.getMaxPoints(profile);
+				return Math.ceil(profile.currentPoints * 100 / max);
+			}
+		}
+		return 1;
+	},
+	getMaxPoints: function(profile){
+		if (profile && _.isNumber(profile.maxPoints)){
+			return profile.maxPoints;
+		}
 		return 1;
 	},
 	getPointLabel: function(profile){
-		var what = "todo con profile";
-		var currentPoints = _.isEmpty(profile.currentPoints)?profile.currentPoints:"0"
-		switch(what){
-			case 0:
+		var pointstatus = 0;
+		var currentPoints = profile.currentPoints;
+		if(currentPoints > 0){
+			if (currentPoints < profile.maxPoints){
+				pointstatus = 1;
+			}
+		};
+console.log(pointstatus);
+		switch(pointstatus){
+			case 1:
 				return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
 				break;
 			default:
@@ -88,13 +97,21 @@ var utils = {
 		};
 	},
 	getPointClaim: function(profile){
-		var what = "todo con profile";
-		switch(what){
-			case 0:
-				return this.__(i18n.app.POINTCLAIM_TEXT_0_1);
+		var pointstatus = 0;
+		
+		var currentPoints = profile.currentPoints;
+		/*
+		if(currentPoints > 0){
+			if (currentPoints < profile.maxPoints){
+				pointstatus = 1;
+			}
+		};*/
+		switch(pointstatus){
+			case 1:
+				return this.__(i18n.app.POINTCLAIM_TEXT_0_1, currentPoints);
 				break;
 			default:
-				return this.__(i18n.app.POINTCLAIM_TEXT_0_0);
+				return this.__(i18n.app.POINTCLAIM_TEXT_0_0, currentPoints);
 				break;
 		};
 	},

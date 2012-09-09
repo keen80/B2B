@@ -22,7 +22,6 @@ Ext.define('B2B.view.Place_Beer_List', {
                     return str;
             },
             getImage2URL: function(values){
-
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beertype)){
                          str += 'resources/img/default/blank_avatar_32.png';

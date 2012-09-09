@@ -34,8 +34,8 @@ Ext.define('B2B.view.User', {
 						utils.getPointLabel(profile),
 					'</p>',
 					'<div class="progress-bar">',
-					    '<span class="bar" style="width: '+utils.getProgressPoint(profile)+'%"></span>',
-						'<span class="points">'+(!_.isEmpty(profile.maxPoints)?profile.maxPoints+' pt.': '')+'</span>',
+					    '<span class="bar" style="width: '+utils.getProgressPoints(profile)+'%"></span>',
+						'<span class="points">'+((utils.getMaxPoints(profile) > 0)?utils.getMaxPoints(profile)+' pt.': '')+'</span>',
 
 					'</div>',
 					'<div class="callout">',

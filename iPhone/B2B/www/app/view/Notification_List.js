@@ -26,7 +26,7 @@ Ext.define('B2B.view.Notification_List', {
             {
                 getClass: function(values){
                     var str = "notification-list-item small-list";
-                    if (values.status == 1){
+                    if (values.status == 1||values.status == "1"){
                         str += " to_read";
                     }
                     return str;
@@ -34,7 +34,7 @@ Ext.define('B2B.view.Notification_List', {
                 getImageURL: function(values){
                     var str = '<img class="avatar" src="';
                     if (_.isEmpty(values.image)){
-                         str += HH.default_place32;
+                         str += HH.default_user32;
                      }else{
                         str+=values.image;
                      }

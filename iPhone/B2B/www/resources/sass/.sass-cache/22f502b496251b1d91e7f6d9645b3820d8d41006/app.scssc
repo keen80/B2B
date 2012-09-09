@@ -1,7 +1,7 @@
 3.2.1 (Media Mark)
-35a8c25bee6d606f3df6a3d222e3526596f8fc5a
+561bd21e06d3ac9dd432e3d4bcd117f6ad7bf740
 o:Sass::Tree::RootNode
-:@template"ì˛
+:@template"t˛
 /* BASE COLOR SETUPS  ***************************************************** */
  
     /*
@@ -198,7 +198,7 @@
                 font-weight: bold;
                 .avatar{
                     position: absolute;
-                    top: 12px;
+                    top: 10px;
                     left: 12px;
                     -webkit-border-radius: 5px;
                     border-radius: 5px;
@@ -671,14 +671,14 @@
         .list-header-small{
             @extend .list-header;
             @include indent-list32;
-            .list-text{
-                @include indent-list32;
-                word-wrap: break-word;
-                margin-bottom: 4px;
-                clear:both;
-                color: #999;
-                font-size: 12px;
-            }
+        }
+         .list-text{
+            @include indent-list32;
+            word-wrap: break-word;
+            margin-bottom: 4px;
+            clear:both;
+            color: #999;
+            font-size: 12px;
         }
     }
 
@@ -1785,7 +1785,7 @@ coloro;2;%i ;o;7	;[	o;8;9{ ;@;#0;iø;6[o; 	;;!;"!../icons/time_clock_g
 [ ;["font-weighto;$;%i ;&[".avatar;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@æ;*[o;1;)@æ;iƒ;["avatar;iƒ;iƒ;@;iƒ;	T;
 [o;2;%i ;o; ;;3;"absolute;@;@;i≈;4;5;
-[ ;["positiono;2;%i ;o; ;;3;"	12px;@;@;i∆;4;5;
+[ ;["positiono;2;%i ;o; ;;3;"	10px;@;@;i∆;4;5;
 [ ;["topo;2;%i ;o; ;;3;"	12px;@;@;i«;4;5;
 [ ;["	lefto;2;%i ;o; ;;3;"5px;@;@;i»;4;5;
 [ ;["-webkit-border-radiuso;2;%i ;o; ;;3;"5px;@;@;i…;4;5;
@@ -2324,21 +2324,21 @@ right;@;ió;@;>;?;ió;@;ió;4;5;
 [ ;["backgroundo;E;9{ ;@;#0;iò;
 [ ;6[ ;"rounded_listo;$;%i ;&["#notificationlist;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@£;*[o;N;)@£;iõ;["notificationlist;iõ;iõ;@;iõ;	T;
-[o;$;%i ;&[".list-header-small;'o;(;)" ;*[o;+;*[o;,
+[o;$;%i ;&[".list-header-small;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@≥;*[o;1;)@≥;iú;["list-header-small;iú;iú;@;iú;	T;
-[o;F
+[o;F
 ;G["."list-header;HF;@;iù;
 [ o;E;9{ ;@;#0;iû;
 [ ;6[ ;"indent-list32o;$;%i ;&[".list-text;'o;(;)" ;*[o;+;*[o;,
-;-0;.o;/;0{ ;)@Õ;*[o;1;)@Õ;iü;["list-text;iü;iü;@;iü;	T;
-[o;E;9{ ;@;#0;i†;
-[ ;6[ ;"indent-list32o;2;%i ;o; ;;3;"break-word;@;@;i°;4;5;
-[ ;["word-wrapo;2;%i ;o; ;;3;"4px;@;@;i¢;4;5;
-[ ;["margin-bottomo;2;%i ;o; ;;3;"	both;@;@;i£;4;5;
+;-0;.o;/;0{ ;)@Õ;*[o;1;)@Õ;i†;["list-text;i†;i†;@;i†;	T;
+[o;E;9{ ;@;#0;i°;
+[ ;6[ ;"indent-list32o;2;%i ;o; ;;3;"break-word;@;@;i¢;4;5;
+[ ;["word-wrapo;2;%i ;o; ;;3;"4px;@;@;i£;4;5;
+[ ;["margin-bottomo;2;%i ;o; ;;3;"	both;@;@;i§;4;5;
 [ ;["
-clearo;2;%i ;o; ;;3;"	#999;@;@;i§;4;5;
+clearo;2;%i ;o; ;;3;"	#999;@;@;i•;4;5;
 [ ;["
-coloro;2;%i ;o; ;;3;"	12px;@;@;i•;4;5;
+coloro;2;%i ;o; ;;3;"	12px;@;@;i¶;4;5;
 [ ;["font-sizeo;
 ;;;["S/* USER ******************************************************************* */;@;i™;
 [ o;$;%i ;&["#userprofile;'o;(;)" ;*[o;+;*[o;,

@@ -195,7 +195,7 @@
                 font-weight: bold;
                 .avatar{
                     position: absolute;
-                    top: 12px;
+                    top: 10px;
                     left: 12px;
                     -webkit-border-radius: 5px;
                     border-radius: 5px;
@@ -668,14 +668,14 @@
         .list-header-small{
             @extend .list-header;
             @include indent-list32;
-            .list-text{
-                @include indent-list32;
-                word-wrap: break-word;
-                margin-bottom: 4px;
-                clear:both;
-                color: #999;
-                font-size: 12px;
-            }
+        }
+         .list-text{
+            @include indent-list32;
+            word-wrap: break-word;
+            margin-bottom: 4px;
+            clear:both;
+            color: #999;
+            font-size: 12px;
         }
     }
 

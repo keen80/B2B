@@ -11,7 +11,7 @@ Ext.define('B2B.view.Settings', {
 
         var cancelButton = {
 			text: i18n.app.BTN_BACK,
-			ui: 'action',
+			ui: 'back',
 			id: 'cancel_settings_btn',
 			handler: this.onBackButtonTap,
 			scope: this
@@ -22,7 +22,6 @@ Ext.define('B2B.view.Settings', {
             cls: "sub_titlebar",
             docked: 'top',
             id: 'SettingsTitlebar',
-            ui: 'neutral',
             defaults: {
                 iconMask: true
             },
