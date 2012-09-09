@@ -13,7 +13,12 @@ Ext.define('B2B.view.DrinkInCheckIn_List', {
             }
         ],
         loadMask: true,
-        emptyText: '</pre><div class="list-empty-text">'+utils.__(i18n.app.TEXT_NODRINKFOUND)+'</div><pre>',
+        emptyText: [
+            '<div class="activity-list-empty-text list-empty-text">',
+                '<p>'+utils.__(i18n.app.TEXT_NOACTIVITYFOUND)+'</p>',
+                '<p>'+utils.__(i18n.app.TEXT_WHYADDFRIEND)+'</p>',
+            '</div>'
+        ].join(""),
         itemTpl: new Ext.XTemplate([
             "<div class='{[this.getClass(values)]}'>",
                "{[this.getTextString(values)]}",
@@ -23,31 +28,29 @@ Ext.define('B2B.view.DrinkInCheckIn_List', {
             		return "drinkincheckin-list-item small-list";
             	},
             	getImageURL: function(values){
-                    var str = '<img class="avatar_small" src="';
+                    var str = '<img class="avatar" src="';
                     if (_.isEmpty(values.image)){
-                         str += 'resources/img/default/blank_avatar_32.png';
+                         str += HH.default_user48;
                      }else{
                         str+=values.image;
                      }
-                    str += '" width="32" height="32">';
+                    str += '" width="48" height="48">';
                 	return str;
                 },
                 getTextString: function(values){
                      var str = [
                         "<div class='list-header'>",
                             "<small class='time'>",
-                                utils.getDate(values.insertedOn),
+                                utils.getDate(values),
                             "</small>",
                             "<span class='info'>",
+                                this.getImageURL(values),
                                 values.displayName,
                             "</span>",
                         "</div>",
-                       // "<div class='list-photo'>",
-                            this.getImageURL(values),
-                       // "</div>",
                         "<p class='list-text'>",
                           utils.getDrinkString(values),
-                       "</p>"
+                        "</p>"
                     ].join("");
 
                     return str;

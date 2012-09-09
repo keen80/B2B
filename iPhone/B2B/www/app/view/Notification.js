@@ -51,7 +51,8 @@ Ext.define('B2B.view.Notification', {
 		};
 
 		var notificationList = {
-		    xtype: "notificationlistcomponent",
+		    xtype: "notificationlist",
+		    id: "notificationlist",
 		    store: Ext.getStore("Notifications_Local"),
 		};
 

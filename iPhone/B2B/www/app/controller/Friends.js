@@ -30,7 +30,6 @@ Ext.define("B2B.controller.Friends", {
 		}
 	},
 	onSearchFriend: function(resource){
-		HH.log("puppa");
 		var rockIt = function(resource){
 			HH.log(resource);
 		};

@@ -22,7 +22,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 	            	scope: this,
 	            	clearicontap: function(field){
 	            		var beerlist = Ext.getCmp("placebeerlist"),
-	            			infobar = Ext.getCmp("placesearchinfobar");
+	            			infobar = Ext.getCmp("beerdrinkinfobar");
 	            		field.setValue("");
 	            		beerlist.setStore(null);
 		           		store.filterBy( function(record) {return false});
@@ -34,7 +34,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 		           			beerlist = Ext.getCmp("placebeerlist"),
 		           			splashscreen = Ext.getCmp("_splashbeersearch"),
 		           			beerlistcontainer = Ext.getCmp("placedetail"),
-		           			infobar = Ext.getCmp("beersearchinfobar");
+		           			infobar = Ext.getCmp("beerdrinkinfobar");
 
 		           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 
@@ -130,7 +130,7 @@ Ext.define('B2B.view.Place_Beer_Search', {
 			},
 			searchInfoBar = {
 				xtype: 'container',
-				id: "beersearchinfobar",
+				id: "beerdrinkinfobar",
 				docked: 'top',
 				html: "<span class='searchInfoBar'>"+i18n.app.HINT_SEARCH2CHAR+"</span>"
 			};

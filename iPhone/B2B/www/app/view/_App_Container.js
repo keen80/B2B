@@ -2,7 +2,6 @@ Ext.define("B2B.view._App_Container", {
 	extend: 'Ext.tab.Panel',
 	xtype: 'appcontainer',
 	requires: [
-		'Ext.ux.slidenavigation.SlideNavigation',
 		'Ext.ux.toolbarspinner.TSpinner',
 		'Ext.device.Camera'
 	],

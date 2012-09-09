@@ -5,7 +5,6 @@ Ext.define("B2B.controller.Drinks", {
 			profile: "userprofile",
 			drinkListContainer: "drinklistcontainerpanel",
 			drinkList: "drinkincheckinlistcomponent",
-//			appContainer: "appcontainer",
 			app: "_app"
 		},
 		control: {
@@ -21,12 +20,17 @@ Ext.define("B2B.controller.Drinks", {
 		this.callParent(arguments);
 	},
 	popCurrentView: function() {
-		this.getApp().pop();
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.remove(Ext.getCmp('drinklistcontainerpanel'));
 	},
 	onShowDrinkList: function() {
-		HH.log("arrivato qui");
-		this.getApp().push({
-			xtype: "drinklistcontainerpanel"
-		});
+		var drinklistcontainerpanel = {
+			xtype: 'drinklistcontainerpanel',
+			id: 'drinklistcontainerpanel'
+		};
+		
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.add(drinklistcontainerpanel);
+		appcontainer.setActiveItem(2);
 	}
 });

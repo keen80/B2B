@@ -43,7 +43,8 @@ Ext.application({
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
 		'Place_Beer_List', 'Place_Beer_Search',
-		'View_BottleSpinner','Drink_List_Container','History_Panel'
+		'View_BottleSpinner','Drink_List_Container','History_Panel',
+		'Landing_DrinkIn'
 		],
 
 	icon: {

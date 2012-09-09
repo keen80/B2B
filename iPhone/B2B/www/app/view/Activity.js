@@ -50,19 +50,19 @@ Ext.define('B2B.view.Activity', {
                         str += '" width="64" height="64">';
                         return str;
                     },
-                    getTextString: function(v){
+                    getTextString: function(values){
                         var str = [
                             "<div class='list-header-mylastdrink'>",
                                 "<small class='time'>",
-                                    utils.getDate(v),
+                                    utils.getDate(values),
                                 "</small>",
                                 "<span class='info'>",
-                                    this.getImageURL(v),
+                                    this.getImageURL(values),
                                 "</span>",
                             "</div>",
                             "<p class='list-text'>",
                                 "<strong>",
-                                    utils.getDrinkString(v),
+                                    utils.getDrinkString(values),
                                 "</strong>",
                             "</p>",
                             "<div class='clear'></div>"

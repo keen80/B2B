@@ -46,9 +46,9 @@ Ext.define("B2B.controller.Settings", {
 		utils.alert(utils.__(i18n.app.DIALOG_YOUSURELOGOUT), i18n.app.PANEL_LOGOUT, true, logoutCallback);
 	},
 	onBackSettings: function(){
-		var profileContainer = Ext.getCmp('userprofile');
+		var appcontainer = Ext.getCmp('_app');
 		console.log("TODO Save preferences");
-		profileContainer.remove(Ext.getCmp('settings'));
+		appcontainer.remove(Ext.getCmp('settings'));
 	},
 	init: function(){
 		this.callParent(arguments);

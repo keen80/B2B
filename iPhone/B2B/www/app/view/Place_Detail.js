@@ -10,7 +10,7 @@ Ext.define('B2B.view.Place_Detail', {
         'Ext.ux.starrating.StarRating'
     ],
 	config: {
-		title: i18n.app.PANEL_PLACE,
+		// title: i18n.app.PANEL_PLACE,
 		iconCls: 'add',
 		layout: 'vbox',
 		scrollable: false,

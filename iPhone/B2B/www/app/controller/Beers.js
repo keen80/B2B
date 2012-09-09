@@ -64,9 +64,9 @@ Ext.define("B2B.controller.Beers", {
 			id: 'beeraddform'
 		};
 
-		var app = Ext.getCmp('_app');
-		app.add(beeraddform);
-		app.setActiveItem(2);
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.add(beeraddform);
+		appcontainer.setActiveItem(2);
 
 		//beeraddform.setRecord(newBeer);
 	},

@@ -19,17 +19,12 @@ Ext.define('B2B.view.Landing_DrinkIn', {
           scope: this
       	};
 
-		var toolbar = {
-			xtype: 'toolbar',
-			cls: 'sub_titlebar',
-			title: i18n.app.PANEL_GREAT,
-			docked: 'top',
-			items: [
-			]
-		};
-
 		var content = {
-
+			xtype: 'container',
+			id: 'landindrink_content',
+			layout:{
+				
+			}
 		};
 
 		this.add([toolbar, content]);

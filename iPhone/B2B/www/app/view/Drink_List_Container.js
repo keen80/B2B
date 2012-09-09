@@ -1,7 +1,6 @@
 Ext.define('B2B.view.Drink_List_Container', {
 	extend: 'Ext.Panel',
 	xtype: 'drinklistcontainerpanel',
-	id: 'drinklistcontainerpanel',
 	config: {
 		title: i18n.app.LABEL_DRINKS,
 		iconCls: 'drink_list',
@@ -17,7 +16,7 @@ Ext.define('B2B.view.Drink_List_Container', {
         HH.log("LOAD PROFILE FOR Drinks "+user.idUser);
         storeJSONP.getProxy().setExtraParam('idUser', user.idUser);
         storeJSONP.getProxy().setExtraParam('btUsername',user.idUser);
-        storeJSONP.getProxy().setExtraParam('btSid', user.token);//user.token
+        storeJSONP.getProxy().setExtraParam('btSid', user.token);
         storeJSONP.load();
 		var backButton = {
 			text: i18n.app.BTN_BACK,
@@ -36,8 +35,7 @@ Ext.define('B2B.view.Drink_List_Container', {
 				iconMask: true
 			},
 			items: [
-				backButton,
-				{ xtype: 'spacer' }
+				backButton
 			]
 		},
 		drinkList = {

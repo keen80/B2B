@@ -57,8 +57,8 @@ Ext.define("B2B.controller.Profiles", {
 		profileContainer.remove(Ext.getCmp('userform'));
 	},
 	onBackProfile: function() {
-		var profileContainer = Ext.getCmp('userprofile');
-		profileContainer.remove(Ext.getCmp('userform'));
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.remove(Ext.getCmp('userform'));
 	},
 	onShowFriends: function() {
 		var tabPanel = Ext.Viewport.down("appcontainer");
@@ -70,9 +70,9 @@ Ext.define("B2B.controller.Profiles", {
 			id: 'settings'
 		};
 
-		var profileContainer = this.getProfile();
-		profileContainer.add(settings);
-		profileContainer.setActiveItem(2);
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.add(settings);
+		appcontainer.setActiveItem(2);
 	},
 	launch: function(){
 		this.callParent(arguments);

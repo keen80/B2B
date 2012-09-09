@@ -6,6 +6,7 @@ Ext.define("B2B.controller.Places", {
 			placelist: "placelist",
 			placedetail: "placedetail",
 			placebeerlist: "placebeerlist",
+			landingdrinkin: "landingdrinkin",
 			appContainer: "appcontainer",
 			app: "_app"
 		},
@@ -27,6 +28,9 @@ Ext.define("B2B.controller.Places", {
 			placebeerlist: {
 				itemtap: "selectBeerInPlace"
 			},
+			landingdrinkin: {
+				landingDrinkBackCommand: "onBackLandingDrink"
+			},
 			appContainer: {
 				gotoCheckInCommand: "onGotoCheckIn"
 			}
@@ -38,7 +42,7 @@ Ext.define("B2B.controller.Places", {
 			id: 'place'
 		};
 
-		var appcontainer = Ext.getCmp('_app'); //.getProfile();
+		var appcontainer = Ext.getCmp('_app');
 		appcontainer.add(place);
 		appcontainer.setActiveItem(2);
 
@@ -85,6 +89,7 @@ Ext.define("B2B.controller.Places", {
 		var jsonData = record.data;
 		this.getApp().push({
 			xtype: "placedetail",
+			id: "placedetail",
 			jsonData: jsonData
 		});
 	},
@@ -97,6 +102,9 @@ Ext.define("B2B.controller.Places", {
 	onCheckIn: function(source, user, idBeer, idPlace, image, rate, rate1, rate2){
 		var beer = (idBeer === null ? this.idBeerSelected : idBeer);
 
+		console.log(this.getApp.getItems);
+
+		/*
 		Ext.Ajax.request({
 			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/checkIn",
 			method: "POST",
@@ -127,7 +135,10 @@ Ext.define("B2B.controller.Places", {
 			}
 		});
 
-		this.getApp().pop();
+		this.getApp().pop(); */
+	},
+	onBackLandingDrink: function(){
+
 	},
 	init: function(){
 		this.callParent(arguments);

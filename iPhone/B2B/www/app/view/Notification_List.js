@@ -3,7 +3,7 @@ Ext.define('B2B.view.Notification_List', {
     requires: [
         'Ext.plugin.PullRefresh'
     ],
-    xtype: 'notificationlistcomponent',
+    xtype: 'notificationlist',
 	config: {
         loadingText: i18n.app.HINT_LOADING,
         plugins: [
@@ -25,7 +25,11 @@ Ext.define('B2B.view.Notification_List', {
             ].join(""),
             {
                 getClass: function(values){
-                    return "place-list-item small-list";
+                    var str = "notification-list-item small-list";
+                    if (values.status == 1){
+                        str += " to_read";
+                    }
+                    return str;
                 },
                 getImageURL: function(values){
                     var str = '<img class="avatar" src="';

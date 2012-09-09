@@ -15,11 +15,11 @@
           "idFriend" : "user_02",
           "beerName": "",
           "placeName": "",
-          "friendName" : "Vale",
+          "friendName" : "Vale To Read",
           "targetName": "",
           "image": "",
           "type": 0,
-          "status": false,
+          "status": 1,
           "insertedOn": new Date()
         },
         {
@@ -34,7 +34,7 @@
           "targetName": "",
           "image": "",
           "type": 1,
-          "status": false,
+          "status": 0,
           "insertedOn": new Date()
         },
         {
@@ -49,7 +49,7 @@
           "targetName": "",
           "image": "",
           "type": 2,
-          "status": false,
+          "status": 0,
           "insertedOn": new Date()
         },
         {
@@ -64,7 +64,7 @@
           "targetName": "Irish Fever",
           "image": "",
           "type": 3,
-          "status": false,
+          "status": 0,
           "insertedOn": new Date()
         },
       ]

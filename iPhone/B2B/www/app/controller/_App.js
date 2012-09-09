@@ -11,10 +11,8 @@ Ext.define("B2B.controller._App", {
 		}
 	},
 	onInitialize: function(){
-
-	},
-	init: function(){
-		this.callParent(arguments);
+		// NavigationView comes with a hidden titlebar, however if we destroy everything goes nuts
+		//Ext.getCmp('ext-titlebar-1').destroy();
 	}
 });
 
