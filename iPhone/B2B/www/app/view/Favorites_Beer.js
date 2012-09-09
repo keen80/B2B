@@ -1,13 +1,8 @@
-Ext.define('B2B.view.Favorites_List_Container', {
+Ext.define('B2B.view.Favorites_Beer', {
 	extend: 'Ext.form.Panel',
-	id: 'favoritespanel',
-	xtype: 'favoritespanel',
+	xtype: 'favoritesbeer',
 	requires: [
-		'Ext.Container',
-		'Ext.MessageBox',
-		'Ext.Panel',
 		'Ext.Toolbar',
-		'Ext.field.Select'
 	],
 	config: {
 		title: i18n.app.PANEL_FAVORITESPANEL,
@@ -25,7 +20,7 @@ Ext.define('B2B.view.Favorites_List_Container', {
 			handler: this.onFavoritesBackButtonTap,
 			scope: this
 		},
-		jumptoBeerButton = {
+		/*jumptoBeerButton = {
 			xtype: "button",
 			text: i18n.app.BTN_ADDFAVORITE,
 			ui: 'action',
@@ -33,7 +28,7 @@ Ext.define('B2B.view.Favorites_List_Container', {
 			handler: this.onFavoritesAddButtonTap,
 			scope: this,
 			docked: 'bottom'
-		},
+		},*/
 		toolbar = {
 			xtype: 'toolbar',
 			cls: 'sub_titlebar',
@@ -43,10 +38,12 @@ Ext.define('B2B.view.Favorites_List_Container', {
 			]
 		},
 		favoritesList = {
-			xtype: "favoriteslistcomponent",
+			xtype: "favoritesbeerlist",
+			id: "favoritesbeerlist",
 			store: Ext.getStore("FavoriteBeers_Local"),
 			flex: 1
-		},
+		};
+		/*
 		container = {
 			xtype: 'panel',
 			flex: 1,
@@ -58,8 +55,8 @@ Ext.define('B2B.view.Favorites_List_Container', {
 				jumptoBeerButton
 			]
 		};
-
-		this.add([toolbar, /*favoritesList,*/ container]);
+*/
+		this.add([toolbar, favoritesList /* , container */]);
 
 	},
 	onFavoritesBackButtonTap: function(){

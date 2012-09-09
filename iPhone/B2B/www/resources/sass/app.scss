@@ -556,7 +556,28 @@
 
 /* DRINKIN **************************************************************** */
 
-
+    #placedetail{
+        background: /*url("../bg/bg.png")*/ #DADADA repeat bottom right;
+        .x-form-fieldset-title {
+            margin: 4px 0.7em;
+            font-size: $fontsize-small;
+        }
+    }
+    #placedetailcontent{
+        @include rounded_list;
+        background: #FAFAFA;
+        padding: 10px;
+        margin: 10px 0;
+        .small-list{
+            min-height: 46px;
+            .list-header-small{
+                @include indent-list72
+            }
+            .avatar {
+                top: 0;
+            }
+        }
+    }      
 
 /* PLACES ***************************************************************** */
 

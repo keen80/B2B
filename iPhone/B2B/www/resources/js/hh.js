@@ -17,6 +17,7 @@ var HH = {
 	default_beerstyle32: "resources/img/default/blank_avatar_32.png",
 	default_beergrad32: "resources/img/default/blank_avatar_32.png",
 	default_place32: "resources/img/default/blank_place_32.png",
+	default_place48: "resources/img/default/blank_place_48.png",
 	default_place64: "resources/img/default/blank_place_64.png",
 	default_badge32: "resources/img/default/blank_badge_32.png",
 	default_badge64: "resources/img/default/blank_badge_64.png",

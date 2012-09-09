@@ -4,7 +4,7 @@ Ext.define("B2B.controller.Favorites", {
 		refs: {
 			app: "_app",
 			profilePanel: "userprofile",
-			favoritesPanel: "favoritespanel"
+			favoritesPanel: "favoritesbeer"
 		},
 		control: {
 			app: {
@@ -20,12 +20,17 @@ Ext.define("B2B.controller.Favorites", {
 		}
 	},
 	onFavoritesOpen: function(){
-		this.getApp().push({
-			xtype: "favoritespanel"
-		});
+		var favoritesbeer = {
+			xtype: "favoritesbeer",
+			id: "favoritesbeer"
+		};
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.add(favoritesbeer);
+		appcontainer.setActiveItem(2);
 	},
 	onFavoritesBack: function(){
-		this.getApp().pop();
+		var appcontainer = Ext.getCmp('_app');
+		appcontainer.add(Ext.getCmp('favoritesbeer'));
 	},
 	onJumpToBeer: function(){
 		this.getApp().pop();

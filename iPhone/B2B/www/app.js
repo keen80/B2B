@@ -31,7 +31,7 @@ Ext.application({
 		'Place',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
-		'Favorites_List', 'Favorites_List_Container',
+		'Favorites_Beer_List', 'Favorites_Beer',
 		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
 		'Friend_Finder',
 		'Friend', 'Friend_List', 'Friend_Search', 'Friend_List_Detail',
@@ -42,7 +42,7 @@ Ext.application({
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
-		'Place_Beer_List', 'Place_Beer_Search',
+		/*'Place_Beer_List', 'Place_Beer_Search',*/
 		'View_BottleSpinner','Drink_List_Container','History_Panel',
 		'Landing_DrinkIn'
 		],

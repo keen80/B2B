@@ -102,8 +102,6 @@ Ext.define("B2B.controller.Places", {
 	onCheckIn: function(source, user, idBeer, idPlace, image, rate, rate1, rate2){
 		var beer = (idBeer === null ? this.idBeerSelected : idBeer);
 
-		console.log(this.getApp.getItems);
-
 		/*
 		Ext.Ajax.request({
 			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/checkIn",
