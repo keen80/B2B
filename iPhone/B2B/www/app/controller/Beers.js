@@ -64,7 +64,7 @@ Ext.define("B2B.controller.Beers", {
 			id: 'beeraddform'
 		};
 
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.add(beeraddform);
 		appcontainer.setActiveItem(2);
 
@@ -147,6 +147,7 @@ Ext.define("B2B.controller.Beers", {
 		if (!a.actions){
 			a.actions = Ext.Viewport.add({
 				xtype: 'actionsheet',
+				zIndex: 9999,
 				items: [
 					{
 						text: i18n.app.BTN_BEERREPORTXL,

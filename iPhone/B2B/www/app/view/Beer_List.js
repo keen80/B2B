@@ -45,8 +45,8 @@ Ext.define('B2B.view.Beer_List', {
                         _.titleize(values.name),
                     "</div>",
                     "<div class='small-list-subtext'>",
-                        utils.getBeerStyleFromCode(parseInt(values.beerstyle)),
-                        (values.beertype) ? " - " + utils.getBeerTypeFromCode(parseInt(values.beertype)): "",
+                        utils.getBeerStyleFromCode(values.beerstyle),
+                        (values.beertype) ? " - " + utils.getBeerTypeFromCode(values.beertype): "",
                     "</div>"].join("");
                 return tpl;
             }

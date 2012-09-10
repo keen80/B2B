@@ -47,7 +47,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 						cls: 'beer_form_selectfield',
 						placeHolder: i18n.app.HINT_BEERCHOOSESTYLE,
 						options: i18n.beerstyles,
-						value: 1
+						value: "0"
 					},
 					{
 						xtype: 'selectfield',
@@ -56,7 +56,7 @@ Ext.define('B2B.view.Beer_Add_Form', {
 						cls: 'beer_form_selectfield',
 						placeHolder: i18n.app.HINT_BEERCHOOSEGRAD,
 						options: i18n.beergrads,
-						value: 1
+						value: "0"
 					},
 					{
 						xtype: 'selectfield',
@@ -83,37 +83,34 @@ Ext.define('B2B.view.Beer_Add_Form', {
 	initialize: function(){
 
     	this.callParent(arguments);
-    	var profile = (Ext.getStore('Profile_Local').first()).data;
-
-    	var backBeerButton = {
-			xtype: "button",
-			text: i18n.app.BTN_CANCEL,
-			ui: 'back',
-			id: 'beer_back_btn',
-			handler: this.onBeerBackButtonTap,
-			scope: this
-		};
-
-		var saveBeerButton = {
-			xtype: "button",
-			text: i18n.app.BTN_SEND,
-			ui: 'action',
-			id: 'beer_save_btn',
-			margin: '10px',
-			handler: this.onBeerSaveButtonTap,
-			scope: this,
-			docked: 'bottom'
-		};
-
-		var toolbar = {
-			xtype: 'toolbar',
-			cls: 'sub_titlebar',
-			title: i18n.app.PANEL_ADDBEERPANEL,
-			docked: 'top',
-			items: [
-				backBeerButton
-			]
-		};
+    	var profile = (Ext.getStore('Profile_Local').first()).data,
+    		backBeerButton = {
+				xtype: "button",
+				text: i18n.app.BTN_CANCEL,
+				ui: 'back',
+				id: 'beer_back_btn',
+				handler: this.onBeerBackButtonTap,
+				scope: this
+			},
+			saveBeerButton = {
+				xtype: "button",
+				text: i18n.app.BTN_SEND,
+				ui: 'action',
+				id: 'beer_save_btn',
+				margin: '10px',
+				handler: this.onBeerSaveButtonTap,
+				scope: this,
+				docked: 'bottom'
+			},
+			toolbar = {
+				xtype: 'toolbar',
+				cls: 'sub_titlebar',
+				title: i18n.app.PANEL_ADDBEERPANEL,
+				docked: 'top',
+				items: [
+					backBeerButton
+				]
+			};
 
 		this.add([toolbar, saveBeerButton]);
 		var selectfieldnationality = Ext.getCmp("selectfieldnationality");
