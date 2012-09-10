@@ -20,7 +20,8 @@ Ext.define("B2B.controller.Profiles", {
 	},
 	onShowProfileForm: function(){
 		var userform = {
-			xtype: 'userform'
+			xtype: 'userform',
+			id: "userform"
 		};
 
 		var profileContainer = this.getProfile();
