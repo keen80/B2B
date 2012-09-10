@@ -77,39 +77,46 @@ var utils = {
 	},
 	getPointLabel: function(profile){
 		var pointstatus = 0;
-		var currentPoints = profile.currentPoints;
-		if(currentPoints > 0){
-			if (currentPoints < profile.maxPoints){
-				pointstatus = 1;
-			}
-		};
-		switch(pointstatus){
-			case 1:
-				return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
-				break;
-			default:
-				return this.__(i18n.app.POINTLABEL_TEXT_0_0, currentPoints);
-				break;
-		};
+
+		if (profile) {
+			var currentPoints = profile.currentPoints;
+			if(currentPoints > 0){
+				if (currentPoints < profile.maxPoints){
+					pointstatus = 1;
+				}
+			};
+			switch(pointstatus){
+				case 1:
+					return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
+					break;
+				default:
+					return this.__(i18n.app.POINTLABEL_TEXT_0_0, currentPoints);
+					break;
+			};
+		}
+		return "";
 	},
 	getPointClaim: function(profile){
 		var pointstatus = 0;
 
-		var currentPoints = profile.currentPoints;
-		/*
-		if(currentPoints > 0){
-			if (currentPoints < profile.maxPoints){
-				pointstatus = 1;
-			}
-		};*/
-		switch(pointstatus){
-			case 1:
-				return this.__(i18n.app.POINTCLAIM_TEXT_0_1, currentPoints);
-				break;
-			default:
-				return this.__(i18n.app.POINTCLAIM_TEXT_0_0, currentPoints);
-				break;
-		};
+		if (profile) {
+			var currentPoints = profile.currentPoints;
+			/*
+			if(currentPoints > 0){
+				if (currentPoints < profile.maxPoints){
+					pointstatus = 1;
+				}
+			};*/
+			switch(pointstatus){
+				case 1:
+					return this.__(i18n.app.POINTCLAIM_TEXT_0_1, currentPoints);
+					break;
+				default:
+					return this.__(i18n.app.POINTCLAIM_TEXT_0_0, currentPoints);
+					break;
+			};
+		}
+		return "";
 	},
 	getBeerColorImage: function(values){
 		if (values || values.color){

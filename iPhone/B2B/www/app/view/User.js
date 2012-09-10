@@ -9,8 +9,16 @@ Ext.define('B2B.view.User', {
 	},
 	initialize: function(){
 		this.callParent(arguments);
-		var profileStore = Ext.getStore('Profile_Local');
-		var profile = (profileStore.first()).data;
+		var profileStore = Ext.getStore('Profile_Local'),
+			profile = {
+				displayName: "",
+				description: "",
+			};
+
+		if (profileStore.getCount() > 0) {
+			profile = profileStore.first().data;
+		}
+
 		var profileButton = {
 			id: 'profile_btn',
 			xtype: 'button',
@@ -21,7 +29,7 @@ Ext.define('B2B.view.User', {
 			flex: 2,
 			html: [
 				'<div class="profile_right_panel">',
-					'<img id="profile_image" class="avatar" height="56" width="56" src="'+utils.getUserAvatar()+'" />',
+					'<img id="profile_image" class="avatar" height="56" width="56" src="' + utils.getUserAvatar() + '" />',
 					'<p class="profile_displayname">',
 						profile.displayName,
 					'</p>',
