@@ -1,7 +1,6 @@
-Ext.define('B2B.view.Favorites_List', {
+Ext.define('B2B.view.Favorites_Beer_List', {
 	extend: 'Ext.dataview.List',
-	xtype: 'favoriteslistcomponent',
-	id: 'favoriteslistcomponent',
+	xtype: 'favoritesbeerlist',
 	config: {
 		loadingText: i18n.app.HINT_LOADING,
 		emptyText: '</pre><div class="favorites-list-empty-text">'+utils.__(i18n.app.TEXT_NOFAVORITEFOUND)+'</div><pre>',

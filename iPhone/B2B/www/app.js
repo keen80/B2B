@@ -17,7 +17,7 @@ Ext.application({
 	stores: [
 		'Activities_Ajax', 'Beers_Ajax', 'Friends_Ajax', 'Profile_Ajax', 'Notifications_Ajax', 'Places_Ajax', 'Drinks_Ajax', 'Activities_User_Ajax',
 		'Activities_Local', 'Friends_Local', 'Profile_Local', 'Notifications_Local', 'Drinks_Local', 'Feedback_Ajax',
-		'Badges_Ajax','Activities_User_Local',
+		'Badges_Ajax','Activities_User_Local','Friends_Facebook_Local','Friends_Facebook_Ajax',
 		'DrinkInCheckIn_Ajax',
 		'FavoriteBeers_Local'
 	],
@@ -31,9 +31,9 @@ Ext.application({
 		'Place',
 		'DrinkInCheckIn_List',
 		'Place_List', 'Place_Detail',
-		'Favorites_List', 'Favorites_List_Container',
+		'Favorites_Beer_List', 'Favorites_Beer',
 		'Feedback_Container', 'Feedback_Form', 'Feedback_List',
-		'Friend_Finder',
+		'Friend_Finder','Friend_Invite_List','Friend_Invite_Panel','Friend_Invite_Search',
 		'Friend', 'Friend_List', 'Friend_Search', 'Friend_List_Detail',
 		'Notification', 'Notification_List',
 		'User', 'User_Form',
@@ -42,7 +42,7 @@ Ext.application({
 		'Component_IOSToggle', 'Component_NotificationBar',
 		'Camera_Container', 'Camera_Picker',
 		'Badge_List', 'Badge_List_Container', 'Badge_Detail',
-		'Place_Beer_List', 'Place_Beer_Search',
+		/*'Place_Beer_List', 'Place_Beer_Search',*/
 		'View_BottleSpinner','Drink_List_Container','History_Panel',
 		'Landing_DrinkIn'
 		],

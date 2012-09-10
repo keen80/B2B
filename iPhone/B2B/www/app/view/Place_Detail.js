@@ -10,7 +10,6 @@ Ext.define('B2B.view.Place_Detail', {
         'Ext.ux.starrating.StarRating'
     ],
 	config: {
-		// title: i18n.app.PANEL_PLACE,
 		iconCls: 'add',
 		layout: 'vbox',
 		scrollable: false,
@@ -19,20 +18,39 @@ Ext.define('B2B.view.Place_Detail', {
 	initialize: function(){
 		this.callParent(arguments);
     	var jsonData = this.jsonData,
-	    	getStringHTMLFromValues = function(){
-				var value = '<div class="place-detail-info">';
-
-				if (!_.isEmpty(jsonData.image)) {
-				   value += '<img class="avatar_medium" src="' + jsonData.image +'" width="32px" height="32px" />';
-				}else{
-					value += '<img class="avatar_medium" src="' + HH.default_place32 +'" width="32px" height="32px" />';
-				}
-
-				value += "<h1>"+jsonData.placeName+"</p>";
-				value += "<p>"+jsonData.url+"</p>";
-				value += "<p>"+jsonData.category+"</p></div>";
-				return value;
-			},
+    		that = this,
+			getStringHTMLFromValues = function(values){
+				var getImageURL = function(values){
+                    var str = '<img class="avatar" src="';
+                    if (_.isEmpty(values.image)){
+                         str += HH.default_place48;
+                     }else{
+                        str+=values.image;
+                     }
+                    str += '" width="48" height="48">';
+                	return str;
+                };
+                 var str = [
+	                 "<div class='place-detail-item small-list'>",
+	                    "<div class='list-header-small'>",
+	                        "<span class='info'>",
+	                            getImageURL(values),
+	                            values.placeName,
+	                        "</span>",
+	                    "</div>",
+	                    "<div class='list-footer'>",
+	                        "<span class='location-category'>",
+	                            utils.getLocationCategoryFromCode(values.category),
+	                        "</span>",
+	                       /* "<span class='drinkins'>",
+	                            values.drinkedIn,
+	                        "</span>",*/
+	                    "</div>",
+	                    "<div class='clear'></div>",
+                    "</div>"
+                ].join("");
+                return str;
+            },
 			backPlaceDetailButton = {
 				xtype: "button",
 				text: i18n.app.BTN_BACK,
@@ -45,12 +63,19 @@ Ext.define('B2B.view.Place_Detail', {
 				xtype: 'toolbar',
 				cls: 'sub_titlebar',
 				docked: 'top',
+				title: i18n.app.PANEL_DRINKIN,
 				items: [
-					backPlaceDetailButton/*,
-					{ xtype: 'spacer' },
-					reportBeerButton*/
+					backPlaceDetailButton
 				]
 			},
+			placedetailcontent = {
+				xtype: 'container',
+				id: 'placedetailcontent',
+				html: getStringHTMLFromValues(jsonData),
+				docked: 'top'
+			},
+
+/* */
 			submitCheckInButton = {
 				xtype: "button",
 				text: i18n.app.BTN_CHECKIN,
@@ -60,31 +85,28 @@ Ext.define('B2B.view.Place_Detail', {
 				handler: this.onSubmitCheckInButtonTap,
 				scope: this
 			},
-			content = {
-				xtype: 'container',
-				id: 'placeDetailContent',
-				html: getStringHTMLFromValues(jsonData),
-				margin: '10 0 10 0'
-			},
+
+/* */
 			rating = {
 				xtype: 'starrating',
 				id: 'beerrating',
 				itemsCount : 5,
-				label : '',
+				label : false,
 				value: 3,
 				valueCls: 'x-starrating-value',
 				itemCls : 'x-starrating',
 				itemHoverCls : 'x-starrating-hover',
-				height: 40,
 				startValue: true,
-				endValue: true,
-				margin: '0 0 10 0'
+				endValue: true
 			},
+
+
 			beersearch = {
-				xtype: 'placebeersearch'
+				xtype: 'beersearch',
+				id: 'placebeersearch'
 			},
 			beerList = {
-		    	xtype: "placebeerlist",
+		    	xtype: "beerlist",
 		    	id: "placebeerlist",
 		   		store: null,
 		    	singleSelect: true,
@@ -100,7 +122,6 @@ Ext.define('B2B.view.Place_Detail', {
 					beerList
 				]
 			},
-			that = this,
 			beerSelected = {
 				xtype: 'container',
 				id: 'beerSelectedContent',
@@ -126,12 +147,71 @@ Ext.define('B2B.view.Place_Detail', {
 				]
 			};
 
-		this.add([toolbar, submitCheckInButton, content, rating, containerBeerSelected]);
+
+/*
+		var step1 = {
+			xtype: 'fieldset',
+			id: 'drinkinstep1',
+			title: i18n.app.FORM_DRINKIN_STEP1_OK,
+			items: [
+				placedetailcontent
+			]
+		};
+		*/
+		var step1 = placedetailcontent;
+		var step2 = {
+			xtype: 'fieldset',
+			id: 'drinkinstep2',
+			title: i18n.app.FORM_DRINKIN_STEP2_TODO,
+			items: [
+				rating
+			]
+		};
+		var step3 = {
+				xtype: 'fieldset',
+				id: 'drinkinstep3',
+				title: i18n.app.FORM_DRINKIN_STEP3_TODO,
+				items: [
+					{
+						xtype: 'tabpanel',
+						id: 'beerchoosetab',
+						ui: 'beermain',
+						tabBar: {
+							layout: {
+								pack: 'center'
+							}
+						},
+						items: [
+							{
+								//xtype: "beer",
+								title: i18n.app.LABEL_BEERHERE,
+								id: "drinkinplacebeerlist",
+								//store: Ext.getStore("Beers_place_Local"),
+								flex: 1
+							},
+							{
+								//xtype: "favoritesbeer",
+								title: i18n.app.LABEL_BEERFAVORITE,
+								id: "drinkinfavoritesbeerlist",
+								store: Ext.getStore("FavoriteBeers_Local"),
+								flex: 1
+							},
+							{
+							//	xtype: "beercomponentsearch",
+								title: i18n.app.LABEL_BEERSEARCH,
+								id: "placebeerlist",
+								flex: 1
+							}
+						]
+					}
+				]
+		}
+
+
+		//this.add([toolbar, submitCheckInButton, content, rating, containerBeerSelected]);
+		this.add([toolbar, step1, step2, step3]);
 	},
-	/*
-	onPlaceReportButtonTap: function(){
-		this.fireEvent("reportPlaceCommand", this);
-	},*/
+	
 	onPlaceDetailBackButtonTap: function(){
 		this.fireEvent("backPlaceDetailCommand", this);
 	},

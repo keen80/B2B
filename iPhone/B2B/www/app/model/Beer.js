@@ -16,6 +16,7 @@ Ext.define("B2B.model.Beer", {
 			{ name: 'grad', type: 'float' },
 			{ name: 'image', type: 'string' },
 			{ name: 'status', type: 'int' },
+			{ name: 'color', type: 'int' },
 			{ name: 'insertedOn', type: 'date', dateformat: 'c' },
 			{ name: 'param1', type: 'int', defaultValue: 1  },
 			{ name: 'param2', type: 'int', defaultValue: 1 },

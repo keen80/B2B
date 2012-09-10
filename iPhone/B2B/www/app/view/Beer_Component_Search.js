@@ -20,8 +20,8 @@ Ext.define('B2B.view.Beer_Component_Search', {
 				listeners : {
 		            scope: this,
 		            clearicontap: function(field){
-		            	var beerlist = Ext.getCmp("beerlistselect");
-		            	var infobar = Ext.getCmp("searchinfobarselect");
+		            	var beerlist = Ext.getCmp("beercomponent_beerlistselect");
+		            	var infobar = Ext.getCmp("beercomponent_searchinfobarselect");
 		            	field.setValue("");
 		            	beerlist.setStore(null);
 			           	store.filterBy( function(record) {return false});
@@ -32,8 +32,7 @@ Ext.define('B2B.view.Beer_Component_Search', {
 			           	var value = field.getValue();
 			           		value = value.replace(/[^a-zA-Z 0-9]+/g,'');
 			           	var beerlist = Ext.getCmp("beerlistselect");
-			           	var beerlistcontainer = Ext.getCmp("beercomponent");
-			           	var infobar = Ext.getCmp("searchinfobarselect");
+			           	var infobar = Ext.getCmp("beercomponent_searchinfobarselect");
 
 				           	if((!value||value < oldValueCount)){
 				           		beerlist.setStore(null);
@@ -108,14 +107,14 @@ Ext.define('B2B.view.Beer_Component_Search', {
 				xtype: 'button',
 				text: i18n.app.BTN_ADDBEER,
 				ui: 'action',
-				id: 'add_beerselect_btn',
+				id: 'beercomponent_add_beerselect_btn',
 				handler: this.onAddBeerButtonTap,
 				scope: this
 			},
 			subtoolbar = {
 				xtype: 'toolbar',
 				cls: 'sub_titlebar',
-				id: 'searchselectbeercomponenttoolbar',
+				id: 'beercomponent_searchselectbeercomponenttoolbar',
 				ui: 'neutral',
 				docked: 'top',
 				items: [
@@ -125,7 +124,7 @@ Ext.define('B2B.view.Beer_Component_Search', {
 			},
 			searchInfoBar = {
 				xtype: 'container',
-				id: "searchinfobarselect",
+				id: "beercomponent_searchinfobarselect",
 				docked: 'top',
 				html: "<span class='searchInfoBar'>"+i18n.app.HINT_SEARCH2CHAR+"</span>"
 			};
@@ -133,6 +132,6 @@ Ext.define('B2B.view.Beer_Component_Search', {
 		this.add([subtoolbar, searchInfoBar]);
 	},
 	onAddBeerButtonTap: function(){
-		this.fireEvent("beerAddCommand", this);
+		this.fireEvent("beercomponent_beerAddCommand", this);
 	}
 });

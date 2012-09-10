@@ -47,7 +47,9 @@ Ext.define('B2B.view.Place', {
 				scaleControl: false,
 				streetViewControl: false,
 				panControl: false,
-				draggable: false
+				draggable: false,
+				scrollwheel: false,
+                disableDoubleClickZoom: true
 			},
 			listeners: {
 				maprender: function(me, map){
