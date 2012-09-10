@@ -14,7 +14,8 @@
 
 -(void) facebookLoginCompleted:(BOOL)success personalInfo:(NSDictionary *)dict;
 -(void) facebookUserLoginStatus:(BOOL)isLogged;
--(void) logoutCompleted;
+-(void) facebookFriendsCompleted:(NSArray *)friends;
+-(void) facebookLogoutCompleted;
 
 @end
 
@@ -29,8 +30,10 @@
 
 +(SocialManager *) sharedSocialManager;
 
+-(void) applicationBecomeActive;
+
 -(void) createFacebookSession;
 -(void) doLoginOnFB;
--(void) applicationBecomeActive;
+-(void) requestFacebookFriends;
 
 @end

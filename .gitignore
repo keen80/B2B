@@ -181,3 +181,5 @@ iPhone/.DS_Store
 iPhone/.DS_Store
 
 iPhone/B2B/.DS_Store
+
+*.xcuserstate

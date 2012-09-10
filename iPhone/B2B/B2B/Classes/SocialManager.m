@@ -14,6 +14,12 @@
 -(void) removeFacebookSession;
 -(void) createFacebookSession;
 
+-(void) requestPersonalInfo;
+-(void) requestPersonalInfoCompleted:(FBRequestConnection *)connection
+							 forFbID:fbID
+							  result:(id)result
+							   error:(NSError *)error;
+
 @end
 
 @implementation SocialManager
@@ -32,6 +38,7 @@
 
 -(void) dealloc
 {
+	self.delegate = nil;
 	[self removeCurrentRequest];
 	
 	[super dealloc];
@@ -92,47 +99,37 @@
     }
 }
 
--(void) requestPersonalInfo
-{
-	[self removeCurrentRequest];
-	
-	requestConnection = [[FBRequestConnection alloc] init];
-		
-		FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
-		{
-			[self requestCompleted:connection forFbID:@"me" result:result error:error];
-		};
-		
-		FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
-													   graphPath:@"me"] autorelease];
-		
-		[requestConnection addRequest:request completionHandler:handler];
-		[requestConnection start];
-}
+#pragma mark - Public methods
 
--(void) requestCompleted:(FBRequestConnection *)connection
-                 forFbID:fbID
-                  result:(id)result
-                   error:(NSError *)error
+-(void) applicationBecomeActive
 {
-    if (requestConnection &&
-        connection != requestConnection)
+	if (!FBSession.activeSession.isOpen && (FBSession.activeSession.state != FBSessionStateCreatedTokenLoaded))
 	{
-        return;
-    }
-	
-    [self removeCurrentRequest];
-	
-	NSLog(@"%@", result);
-	
-	SEL selector = @selector(facebookLoginCompleted:personalInfo:);
-	if ([self.delegate respondsToSelector:selector])
-	{
-		[self.delegate facebookLoginCompleted:(error == nil) personalInfo:result];
+		[FBSession.activeSession close];
+		[self removeCurrentRequest];
 	}
 }
 
-#pragma mark - Request
+#pragma mark - Private requests
+
+-(void) requestPersonalInfo
+{
+	[self removeCurrentRequest];
+	requestConnection = [[FBRequestConnection alloc] init];
+	
+	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
+	{
+		[self requestPersonalInfoCompleted:connection forFbID:@"me" result:result error:error];
+	};
+	
+	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
+												   graphPath:@"me"] autorelease];
+	
+	[requestConnection addRequest:request completionHandler:handler];
+	[requestConnection start];
+}
+
+#pragma mark - Facebook public requests
 
 -(void) getFBUserLogInStatus
 {
@@ -158,19 +155,71 @@
 	[self removeCurrentRequest];
 	[FBSession.activeSession closeAndClearTokenInformation];
 	
-	SEL selector = @selector(logoutCompleted);
+	SEL selector = @selector(facebookLogoutCompleted);
 	if ([self.delegate respondsToSelector:selector])
 	{
-		[self.delegate logoutCompleted];
+		[self.delegate facebookLogoutCompleted];
 	}
 }
 
--(void) applicationBecomeActive
+-(void) requestFacebookFriends
 {
-	if (!FBSession.activeSession.isOpen && (FBSession.activeSession.state != FBSessionStateCreatedTokenLoaded))
+	[self removeCurrentRequest];
+	requestConnection = [[FBRequestConnection alloc] init];
+	
+	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
 	{
-		[FBSession.activeSession close];
-		[self removeCurrentRequest];
+		[self requestPersonalInfoCompleted:connection forFbID:@"me" result:result error:error];
+	};
+	
+	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
+												   graphPath:@"me/friends"] autorelease];
+	
+	[requestConnection addRequest:request completionHandler:handler];
+	[requestConnection start];
+}
+
+#pragma mark - Facebook callbacks
+
+-(void) requestPersonalInfoCompleted:(FBRequestConnection *)connection
+							 forFbID:fbID
+							  result:(id)result
+							   error:(NSError *)error
+{
+    if (requestConnection &&
+        connection != requestConnection)
+	{
+        return;
+    }
+	
+    [self removeCurrentRequest];
+	
+	NSLog(@"%@", result);
+	
+	SEL selector = @selector(facebookLoginCompleted:personalInfo:);
+	if ([self.delegate respondsToSelector:selector])
+	{
+		[self.delegate facebookLoginCompleted:(error == nil) personalInfo:result];
+	}
+}
+
+-(void) requestFacebookFriendsCompleted:(FBRequestConnection *)connection
+								forFbID:fbID
+								 result:(id)result
+								  error:(NSError *)error
+{
+    if (requestConnection &&
+        connection != requestConnection)
+	{
+        return;
+    }
+    [self removeCurrentRequest];
+	NSLog(@"[SocialManager] Request friends completed!");
+	
+	SEL selector = @selector(facebookFriendsCompleted:);
+	if ([self.delegate respondsToSelector:selector])
+	{
+		[self.delegate facebookFriendsCompleted:result];
 	}
 }
 
