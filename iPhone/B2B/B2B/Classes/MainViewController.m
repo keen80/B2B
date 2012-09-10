@@ -119,10 +119,15 @@
 	[self executeJavascriptString:string];
 }
 
--(void) logoutCompleted
+-(void) facebookLogoutCompleted
 {
 	NSString *string = @"logoutCompleted();";
 	[self executeJavascriptString:string];
+}
+
+-(void) facebookFriendsCompleted:(NSArray *)friends
+{
+	
 }
 
 -(void) applicationBecomeActive

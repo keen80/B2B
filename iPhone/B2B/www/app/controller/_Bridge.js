@@ -23,6 +23,11 @@ function loginOnFBCompleted(success, idFB, email, displayName, gender, nationali
 	}
 };
 
+// Se null allora è stato generato un errore
+function facebookFriendsCompleted(arrayFriends) {
+
+};
+
 function logoutCompleted() {
 	window.location.reload();
 };
@@ -88,6 +93,14 @@ var bridge = {
 			this.sendSelector(selector);
 		} else {
 			logoutCompleted();
+		}
+	},
+	getFacebookFriends: function() {
+		if (Ext.feature.has.Touch) {
+			var selector = "targets=socialManager:requestFacebookFriends";
+			this.sendSelector(selector);
+		} else {
+			facebookFriendsCompleted(null);
 		}
 	},
 	sendSelector: function(selector) {
