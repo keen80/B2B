@@ -16,7 +16,7 @@ Ext.define("B2B.controller._Login", {
 		}
 	},
 	onRegisterCommand: function(source, values) {
-		var date = Ext.Date.format(values.birthDay, 'c'),
+		var date = Ext.Date.format(values.birthDate, 'c'),
 			params = {
 				idUser: values.idUser,
 				username: values.idUser,

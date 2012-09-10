@@ -75,7 +75,7 @@ Ext.define('B2B.view._Register', {
 					{
 						xtype: 'datepickerfield',
 						destroyPickerOnHide: true,
-						name: 'birthDay',
+						name: 'birthDate',
 						label: i18n.app.FORM_BIRTHDATE,
 						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEBIRTHDATE,

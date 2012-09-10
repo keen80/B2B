@@ -4,9 +4,9 @@ var authentication = {
 		displayName: "",
 		gender: "",
 		nationality: "",
-		birthDay: ""
+		birthDate: ""
 	},
-	loginOnFBCompleted: function(email, displayName, gender, nationality, birthDay) {
+	loginOnFBCompleted: function(email, displayName, gender, nationality, birthDate) {
 		var viewport = Ext.Viewport;
 
 		viewport.setMasked({
@@ -18,7 +18,7 @@ var authentication = {
 		this.userLoggedOnFB.displayName = displayName;
 		this.userLoggedOnFB.gender = gender;
 		this.userLoggedOnFB.nationality = (nationality ? nationality.split("_")[0].toUpperCase() : "");
-		this.userLoggedOnFB.birthDay = birthDay;
+		this.userLoggedOnFB.birthDate = birthDate;
 
 		viewport.setMasked(true);
 		var profileStore = Ext.getStore("Profile_Local").load();
@@ -180,7 +180,7 @@ var authentication = {
 
 				register.setValues({
 					idUser: this.userLoggedOnFB.email,
-					birthDay: new Date(this.userLoggedOnFB.birthDay),
+					birthDate: new Date(this.userLoggedOnFB.birthDate),
 					email: this.userLoggedOnFB.email,
 					displayName: this.userLoggedOnFB.displayName,
 					gender: this.userLoggedOnFB.gender,

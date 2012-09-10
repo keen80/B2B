@@ -60,7 +60,6 @@ var i18n = {
 		"PLACEHOLDER_DISPLAYNAME": "Your Display Name",
 		"PLACEHOLDER_GENDER": "Your Gender",
 		"PLACEHOLDER_NATIONALITY": "Your Nationality",
-		"PLACEHOLDER_BIRTHDAY": "Your Birthday",
 		"PLACEHOLDER_PASSWORD": "Your Password",
 
 		"BTN_ADDBEER": "Add a Beer",

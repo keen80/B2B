@@ -1,6 +1,7 @@
 Ext.define('B2B.view.User_Form', {
 	extend: 'Ext.form.Panel',
 	xtype: 'userform',
+	id: 'userform',
 	requires: [
 		'Ext.form.FieldSet',
 		'Ext.field.Hidden',
@@ -139,7 +140,7 @@ Ext.define('B2B.view.User_Form', {
 					{
 						xtype: 'datepickerfield',
 						destroyPickerOnHide: true,
-						name: 'birthDay',
+						name: 'birthDate',
 						label: i18n.app.FORM_BIRTHDATE,
 						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEBIRTHDATE,
@@ -239,7 +240,6 @@ Ext.define('B2B.view.User_Form', {
 	},
 	onSaveProfileButtonTap: function(){
 		var values = this.getValues();
-		console.log(values);
 		this.fireEvent("saveProfileCommand", this,
 						values.email,
 						values.email,
@@ -247,7 +247,7 @@ Ext.define('B2B.view.User_Form', {
 						values.email,
 						values.gender,
 						values.nationality,
-						values.birthDay);
+						values.birthDate);
 	},
 	onBackProfileButtonTap: function(){
 		this.fireEvent("backProfileCommand", this);

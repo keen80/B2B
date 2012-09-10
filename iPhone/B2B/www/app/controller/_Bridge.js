@@ -12,11 +12,11 @@ function facebookLogInStatus(isLoggedIn) {
 	}
 };
 
-function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDay) {
+function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDate) {
 	bridge.pendingRequest = false;
 
 	if (success) {
-		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDay);
+		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDate);
 	} else {
 		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 		Ext.Viewport.setMasked(false);

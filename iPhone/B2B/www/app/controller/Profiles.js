@@ -20,8 +20,7 @@ Ext.define("B2B.controller.Profiles", {
 	},
 	onShowProfileForm: function(){
 		var userform = {
-			xtype: 'userform',
-			id: 'userform'
+			xtype: 'userform'
 		};
 
 		var profileContainer = this.getProfile();
@@ -29,11 +28,19 @@ Ext.define("B2B.controller.Profiles", {
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-		// profileContainer.setActiveItem(2);
-
 	},
-
 	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {
+		var errorCode = -1, errorMsg = "",
+			that = this,
+			viewport = Ext.Viewport;
+
+		viewport.setMasked({
+            xtype: 'loadmask',
+            loadingText: i18n.app.HINT_LOADING
+        });
+
+		viewport.setMasked(true);
+
 		Ext.Ajax.request({
 			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/saveUser",
 			method: "POST",
@@ -49,15 +56,47 @@ Ext.define("B2B.controller.Profiles", {
 				nationality: nationality,
 				birthDate: birthDate
 			},
-			callback: function(response) {
-				console.log(response);
+			success: function(result) {
+				var json = Ext.decode(result.responseText, true);
+				if (json) {
+					errorCode = json.response.status.code;
+					errorMsg = json.response.status.msg;
+
+					if (errorCode < 200 && json.response.body.list.length > 0) {
+						that._doSaveProfileCallback(0, errorMsg, errorCode);
+					} else {
+						that._doSaveProfileCallback(1, errorMsg, errorCode);
+					}
+				} else {
+					that._doSaveProfileCallback(1, errorMsg, errorCode);
+				}
+			},
+			failure: function(result) {
+				that._doSaveProfileCallback(1, errorMsg, errorCode);
 			}
 		});
 		var profileContainer = Ext.getCmp('userprofile');
 		profileContainer.remove(Ext.getCmp('userform'));
 	},
+	_doSaveProfileCallback: function(index, errorMsg, errorCode) {
+		var viewport = Ext.Viewport;
+
+		switch(index) {
+			case 0:    // Success
+				HH.log("---> Step: [Save user] Success");
+				var appcontainer = this.getApp();
+				appcontainer.remove(Ext.getCmp('userform'));
+				break;
+			default:    // Fail
+				HH.log("--> Step: [Save user] Failure - CODE: " + errorCode + " - MSG: " + errorMsg);
+				utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
+				break;
+		}
+
+		viewport.setMasked(false);
+	},
 	onBackProfile: function() {
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.remove(Ext.getCmp('userform'));
 	},
 	onShowFriends: function() {
