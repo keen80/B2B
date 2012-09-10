@@ -11,7 +11,7 @@ Ext.define("B2B.controller.Friends", {
 		control: {
 			friendsearch: 
 			{
-				searchFriendCommand: "onSearchFriend",
+				searchFriendCommand: "onSearchFriend"
 			},
 			friendListContainer: {
 				searchFriendCommand: "onSearchFriend",
@@ -34,7 +34,7 @@ Ext.define("B2B.controller.Friends", {
 			HH.log(resource);
 		};
 		this.getApp().push({
-			xtype: "friendfinderpanel"
+			xtype: "friendinvitepanel"
 		});
 	//confirm(i18n.app.DIALOG_YOUSURE, rockIt(resource));
 	},
