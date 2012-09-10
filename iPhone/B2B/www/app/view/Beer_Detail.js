@@ -107,7 +107,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					readOnly: true,
 					cls: 'beer_form_textfield',
 					label: i18n.app.LABEL_BEERSTYLE,
-					value: utils.getBeerStyleFromCode(parseInt(info.beerstyle))
+					value: utils.getBeerStyleFromCode(info.beerstyle)
 				},
 				{
 					xtype: 'textfield',
@@ -115,7 +115,7 @@ Ext.define('B2B.view.Beer_Detail', {
 					readOnly: true,
 					cls: 'beer_form_textfield',
 					label: i18n.app.LABEL_BEERTYPE,
-					value: utils.getBeerTypeFromCode(parseInt(info.beertype))
+					value: utils.getBeerTypeFromCode(info.beertype)
 				},
 				{
 					xtype: 'textfield',
@@ -157,8 +157,8 @@ Ext.define('B2B.view.Beer_Detail', {
 
 		value += '<p>' + i18n.app.LABEL_BEERNAME + ': <span>' + _.titleize(info.name) + '</span></p>';
 		if(info.brewery) value+= '<p>' + i18n.app.LABEL_BEERBREWERY + ': <span>' + _.titleize(info.brewery) + '</span></p>';
-		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(parseInt(info.beerstyle)) + '</span></p>';
-		if(info.beertype) value += '<p>' + i18n.app.LABEL_BEERTYPE + ': <span>' + utils.getBeerTypeFromCode(parseInt(info.beertype)) + '</span></p>';
+		if(info.beerstyle) value += '<p>' + i18n.app.LABEL_BEERSTYLE + ': <span>' + utils.getBeerStyleFromCode(info.beerstyle) + '</span></p>';
+		if(info.beertype) value += '<p>' + i18n.app.LABEL_BEERTYPE + ': <span>' + utils.getBeerTypeFromCode(info.beertype) + '</span></p>';
 		if(info.grad) value += '<p>' + i18n.app.LABEL_BEERGRAD + ': <span>' + info.grad + '</span></p>';
 		if(info.nationality) value += '<p>' + i18n.app.LABEL_BEERNATIONALITY + ': <span>' + utils.getCountryFromCode(info.nationality) + '</span></p>';
 		if(info.description) value += '<p>' + i18n.app.LABEL_BEERDESCRIPTION + ': <span>' + info.description + '</span></p>';

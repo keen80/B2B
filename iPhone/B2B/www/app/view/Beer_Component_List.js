@@ -32,8 +32,8 @@ Ext.define('B2B.view.Beer_Component_List', {
             getString: function(values){
                 var tpl = "";
                 tpl += "<div class='small-list-text'>"+_.titleize(values.name)+"</div>"+
-                       "<div class='small-list-subtext'>"+utils.getBeerStyleFromCode(parseInt(values.beerstyle));
-                if(values.beertype) tpl += " - " + utils.getBeerTypeFromCode(parseInt(values.beertype));
+                       "<div class='small-list-subtext'>"+utils.getBeerStyleFromCode(values.beerstyle);
+                if(values.beertype) tpl += " - " + utils.getBeerTypeFromCode(values.beertype);
                 tpl += "</div>";
                 return tpl;
             }

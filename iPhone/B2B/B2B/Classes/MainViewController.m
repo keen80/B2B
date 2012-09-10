@@ -91,9 +91,12 @@
 	NSString *nationality = @"";
 	NSString *gender = @"";
 	NSString *birthDay = @"";
+	NSString *idFB = @"";
 	
 	if (dict != nil)
 	{
+		idFB = [[dict valueForKey:@"id"] description];
+		idFB = ([idFB length] == 0 ? @"" : idFB);
 		email = [dict valueForKey:@"email"];
 		email = ([email length] == 0 ? @"" : email);
 		displayName = [dict valueForKey:@"name"];
@@ -105,8 +108,8 @@
 		birthDay = [dict valueForKey:@"birthday"];
 		birthDay = ([birthDay length] == 0 ? @"" : birthDay);
 	}
-	//success, email, displayName, gender, nationality, birthDay
-	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(%@, \"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", suc, email, displayName, gender, nationality, birthDay];
+	//success, id, email, displayName, gender, nationality, birthDay
+	NSString *string = [NSString stringWithFormat:@"loginOnFBCompleted(%@, \"%@\", \"%@\",\"%@\",\"%@\",\"%@\",\"%@\");", suc, idFB, email, displayName, gender, nationality, birthDay];
 	[self executeJavascriptString:string];
 }
 
@@ -116,10 +119,15 @@
 	[self executeJavascriptString:string];
 }
 
--(void) logoutCompleted
+-(void) facebookLogoutCompleted
 {
 	NSString *string = @"logoutCompleted();";
 	[self executeJavascriptString:string];
+}
+
+-(void) facebookFriendsCompleted:(NSArray *)friends
+{
+	
 }
 
 -(void) applicationBecomeActive

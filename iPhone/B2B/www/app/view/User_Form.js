@@ -1,6 +1,7 @@
 Ext.define('B2B.view.User_Form', {
 	extend: 'Ext.form.Panel',
 	xtype: 'userform',
+	id: 'userform',
 	requires: [
 		'Ext.form.FieldSet',
 		'Ext.field.Hidden',
@@ -23,6 +24,10 @@ Ext.define('B2B.view.User_Form', {
 					{
 						xtype: 'hiddenfield',
 						name: 'idUser'
+					},
+					{
+						xtype: 'hiddenfield',
+						name: 'idFacebook'
 					},
 					{
 						xtype: 'hiddenfield',
@@ -61,6 +66,7 @@ Ext.define('B2B.view.User_Form', {
 										this.actions = Ext.Viewport.add(
 											{
 												xtype: 'actionsheet',
+												zIndex: 9999,	// Evita il problema di visualizzazione della actionsheet sotto alle viste
 												items: [
 													{
 														text: i18n.app.BTN_CHOOSEPICTURE,
@@ -138,7 +144,7 @@ Ext.define('B2B.view.User_Form', {
 					{
 						xtype: 'datepickerfield',
 						destroyPickerOnHide: true,
-						name: 'birthDay',
+						name: 'birthDate',
 						label: i18n.app.FORM_BIRTHDATE,
 						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEBIRTHDATE,
@@ -238,15 +244,7 @@ Ext.define('B2B.view.User_Form', {
 	},
 	onSaveProfileButtonTap: function(){
 		var values = this.getValues();
-		console.log(values);
-		this.fireEvent("saveProfileCommand", this,
-						values.email,
-						values.email,
-						values.displayName,
-						values.email,
-						values.gender,
-						values.nationality,
-						values.birthDay);
+		this.fireEvent("saveProfileCommand", this, values);
 	},
 	onBackProfileButtonTap: function(){
 		this.fireEvent("backProfileCommand", this);

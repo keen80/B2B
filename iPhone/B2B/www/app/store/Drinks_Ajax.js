@@ -63,7 +63,8 @@ Ext.define("B2B.store.Drinks_Ajax", {
 				});
 				store_local.sync();
 				this.removeAll();
-				goingTo.setupDisplayName(Ext.getStore("Profile_Local"));
+
+				goingTo.updateDisplayName();
 
 			}
 		}

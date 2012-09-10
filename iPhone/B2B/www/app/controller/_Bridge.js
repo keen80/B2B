@@ -12,15 +12,20 @@ function facebookLogInStatus(isLoggedIn) {
 	}
 };
 
-function loginOnFBCompleted(success, email, displayName, gender, nationality, birthDay) {
+function loginOnFBCompleted(success, idFB, email, displayName, gender, nationality, birthDate) {
 	bridge.pendingRequest = false;
 
 	if (success) {
-		authentication.loginOnFBCompleted(email, displayName, gender, nationality, birthDay);
+		authentication.loginOnFBCompleted(idFB, email, displayName, gender, nationality, birthDate);
 	} else {
 		utils.alert(i18n.app.ALERT_ERRORCOMMUNICATION, i18n.app.COMMON_ATTENTION);
 		Ext.Viewport.setMasked(false);
 	}
+};
+
+// Se null allora è stato generato un errore
+function facebookFriendsCompleted(arrayFriends) {
+
 };
 
 function logoutCompleted() {
@@ -63,7 +68,7 @@ var bridge = {
 			var selector = "targets=socialManager:getFBUserInformations";
 			this.sendSelector(selector);
 		} else {
-			loginOnFBCompleted(true, "pippo@gmail.com", "Pippo", "male", "it_IT", "10/09/1983");
+			loginOnFBCompleted(true, "02130123102", "pippo@gmail.com", "Pippo", "male", "it_IT", "10/09/1983");
 		}
 	},
 	doLoginOnFB: function() {
@@ -79,7 +84,7 @@ var bridge = {
 			var selector = "targets=socialManager:doLoginOnFB";
 			this.sendSelector(selector);
 		} else {
-			loginOnFBCompleted(true, "pippo@gmail.com", "Pippo", "male", "it_IT", "10/09/1983");
+			loginOnFBCompleted(true, "02130123102", "pippo@gmail.com", "Pippo", "male", "it_IT", "10/09/1983");
 		}
 	},
 	logout: function() {
@@ -88,6 +93,14 @@ var bridge = {
 			this.sendSelector(selector);
 		} else {
 			logoutCompleted();
+		}
+	},
+	getFacebookFriends: function() {
+		if (Ext.feature.has.Touch) {
+			var selector = "targets=socialManager:requestFacebookFriends";
+			this.sendSelector(selector);
+		} else {
+			facebookFriendsCompleted(null);
 		}
 	},
 	sendSelector: function(selector) {

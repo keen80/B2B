@@ -17,6 +17,10 @@ Ext.define('B2B.view._Register', {
 						name: 'idUser'
 					},
 					{
+						xtype: 'hiddenfield',
+						name: 'idFacebook'
+					},
+					{
 						xtype: 'textfield',
 						id: 'registerform_email',
 						name: 'email',
@@ -75,7 +79,7 @@ Ext.define('B2B.view._Register', {
 					{
 						xtype: 'datepickerfield',
 						destroyPickerOnHide: true,
-						name: 'birthDay',
+						name: 'birthDate',
 						label: i18n.app.FORM_BIRTHDATE,
 						labelWidth: '40%',
 						placeHolder: i18n.app.HINT_CHOOSEBIRTHDATE,

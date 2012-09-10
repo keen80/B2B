@@ -5,7 +5,7 @@ Ext.define('B2B.view.User', {
 		title: i18n.app.PANEL_ABOUTME,
 		iconCls: 'smiley_happy',
 		scrollable: false,
-		layout: 'card'
+		layout: 'vbox'
 	},
 	initialize: function(){
 		this.callParent(arguments);
@@ -58,10 +58,10 @@ Ext.define('B2B.view.User', {
 			margin: '4px 2px',
 			//text: i18n.app.BTN_BADGES,
 			html: [
-					'<img class="badge" height="56" width="56" src="resources/icons/badge.png" >',
-					'<span class="profile_squarebutton">',
-						profile.counterBadges + " "+i18n.app.BTN_BADGES,
-					'</span>',
+				'<img class="badge" height="56" width="56" src="resources/icons/badge.png" >',
+				'<span class="profile_squarebutton">',
+					profile.counterBadges + " "+i18n.app.BTN_BADGES,
+				'</span>',
 			].join(""),
 			flex: 1,
 			handler: this.onBadgesButtonTap,
@@ -77,10 +77,10 @@ Ext.define('B2B.view.User', {
 			margin: '4px 2px',
 			//text: i18n.app.BTN_DRINKLIST,
 			html: [
-					'<img class="badge" height="56" width="56" src="resources/icons/drinks.png" >',
-					'<span class="profile_squarebutton">',
-						profile.counterCheckIns + " "+i18n.app.BTN_DRINKLIST,
-					'</span>',
+				'<img class="badge" height="56" width="56" src="resources/icons/drinks.png" >',
+				'<span class="profile_squarebutton">',
+					profile.counterCheckIns + " "+i18n.app.BTN_DRINKLIST,
+				'</span>',
 			].join(""),
 			flex: 1,
 			handler: this.onDrinkListButtonTap,
@@ -96,10 +96,10 @@ Ext.define('B2B.view.User', {
 			margin: '4px 2px',
 			//text: i18n.app.BTN_MYACTIVITY,
 			html: [
-					'<img class="badge" height="56" width="56" src="resources/icons/time_clock.png" >',
-					'<span class="profile_squarebutton">',
-						i18n.app.BTN_MYACTIVITY,
-					'</span>',
+				'<img class="badge" height="56" width="56" src="resources/icons/time_clock.png" >',
+				'<span class="profile_squarebutton">',
+					i18n.app.BTN_MYACTIVITY,
+				'</span>',
 			].join(""),
 			flex: 1,
 			handler: this.onMyActivityButtonTap,
@@ -115,10 +115,10 @@ Ext.define('B2B.view.User', {
 			margin: '4px 2px',
 			//text: i18n.app.BTN_FAVORITES,
 			html: [
-					'<img class="badge" height="56" width="56" src="resources/icons/star.png" >',
-					'<span class="profile_squarebutton">',
-						i18n.app.BTN_FAVORITES,
-					'</span>',
+				'<img class="badge" height="56" width="56" src="resources/icons/star.png" >',
+				'<span class="profile_squarebutton">',
+					i18n.app.BTN_FAVORITES,
+				'</span>',
 			].join(""),
 			flex: 1,
 			handler: this.onFavoritesButtonTap,
@@ -190,20 +190,9 @@ Ext.define('B2B.view.User', {
 				myActivityButton,
 				settingsButton
 			]
-		},
-		item0 = {
-			xtype: 'panel',
-			flex: 1,
-			layout: {
-				type: 'vbox'
-			},
-			items: [
-				profileButton, secondRowButtonsContainer, thirdButtonsContainer
-			]
 		};
 
-		this.add([item0]);
-		this.setActiveItem(0);
+		this.add([profileButton, secondRowButtonsContainer, thirdButtonsContainer]);
 	},
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
@@ -216,11 +205,9 @@ Ext.define('B2B.view.User', {
 	},
 	onDrinkListButtonTap: function() {
 		this.fireEvent("drinkListProfileCommand", this);
-		//utils.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
 		this.fireEvent("activityListProfileCommand", this);
-		//utils.alert("To Be Implemented");
 	},
 	onFavoritesButtonTap: function() {
 		this.fireEvent("favoritesProfileCommand", this);

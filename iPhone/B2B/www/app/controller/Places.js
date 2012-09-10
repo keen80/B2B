@@ -42,14 +42,14 @@ Ext.define("B2B.controller.Places", {
 			id: 'place'
 		};
 
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.add(place);
 		appcontainer.setActiveItem(2);
 
 	},
 	onBackCheck: function(){
 		/* this.getApp().pop(); */
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.remove(Ext.getCmp('place'));
 	},
 	onBackPlace: function(){
@@ -73,7 +73,7 @@ Ext.define("B2B.controller.Places", {
 		beerSelected.setHtml("<div class='beer-selected'>"+
 			"<img class='beer-selected-image' src='resources/img/default/blank_avatar_64.png' width='64' height='64' />"+
 				"<div class='small-list-text'>"+_.titleize(e.data.name)+"</div>"+
-            	"<div class='small-list-subtext'>"+utils.getBeerStyleFromCode(parseInt(e.data.beerstyle))+"</div>"+
+            	"<div class='small-list-subtext'>"+utils.getBeerStyleFromCode(e.data.beerstyle)+"</div>"+
             "</div>"+
             "<div class='search-new-beer'><div class='search-new-beer-text'>"+i18n.app.CHANGE_BEER+"</div><div class='search-new-beer-logo'></div></div>");
 		this.idBeerSelected = e.data.idBeer;

@@ -83,9 +83,9 @@ var goingTo = {
 
     	if (profile) {
     		this.setupDisplayName(profile);
-			this.setupPreferences(profile);	
+			this.setupPreferences(profile);
     	}
-    	
+
 		storeFriend.load();
 		storeNotification.load();
 
@@ -98,6 +98,14 @@ var goingTo = {
 		if(toNotification || storeNotification.getCount() < 1)
 			HH.log("---> Step: Store.Notification is empty or need to be refreshed");
 			Ext.getStore('Notifications_Ajax').load();
+	},
+	updateDisplayName: function() {
+		var storeProfile = Ext.getStore("Profile_Local");
+
+		if (storeProfile && storeProfile.getCount() > 0) {
+			profile = storeProfile.first();
+			this.setupDisplayName(profile);
+		}
 	},
 	setupDisplayName: function(profile) {
 		var drinksLocal = Ext.getStore("Drinks_Local"),
