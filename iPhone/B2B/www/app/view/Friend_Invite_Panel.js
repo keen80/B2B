@@ -11,8 +11,8 @@ Ext.define('B2B.view.Friend_Invite_Panel', {
 	initialize: function(){
     	this.callParent(arguments);
 
-    	var storeAjaxFriend = Ext.getStore('Friends_Facebook_Ajax'),
-    			friendHeader = {
+    	//var storeAjaxFriend = Ext.getStore('Friends_Facebook_Ajax');
+    	var	friendHeader = {
 	            xtype: 'container',
 	            cls: 'header_img',
 	            height: 50,
@@ -20,7 +20,7 @@ Ext.define('B2B.view.Friend_Invite_Panel', {
 	            docked: 'top',
 	            html: '<img src="'+HH.default_user64+'" width="100%" height="50px" >'
 	        },
-	        friendListSearch = {
+	        friendInviteList = {
 				xtype: 'friendinvitesearch',
 				id: 'friendinvitesearch'
 			},
@@ -39,8 +39,8 @@ Ext.define('B2B.view.Friend_Invite_Panel', {
 			/Ext.apply(storeAjaxFriend.getProxy().headers, {'btUsername':user.idUser});*/
     	}
 
-		storeAjaxFriend.load();
-		this.add([/*friendHeader,*/ friendListSearch, friendList]);
+		//storeAjaxFriend.load();
+		this.add([/*friendHeader,*/ friendInviteList, friendList]);
 
     }
 });
