@@ -86,7 +86,6 @@ var utils = {
 				pointstatus = 1;
 			}
 		};
-console.log(pointstatus);
 		switch(pointstatus){
 			case 1:
 				return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
@@ -114,6 +113,22 @@ console.log(pointstatus);
 				return this.__(i18n.app.POINTCLAIM_TEXT_0_0, currentPoints);
 				break;
 		};
+	},
+	getBeerColorImage: function(values){
+		if (values || values.color){
+			if (_.isEmpty(values)){
+				if (values.beerstyle == 1 ) return 0; //chiara
+				if (values.beerstyle == 7 ) return 2; // rossa
+				if (values.beerstyle == 3 ) return 1; // torbida
+				if (values.beerstyle == 5 ) return 1; // torbida
+				if (values.beerstyle == 11 ) return 1; // torbida
+				if (values.beerstyle == 4 ) return 3; // stout
+				if (values.beerstyle == 10 ) return 3; // stout
+			}else{
+				return values.color;
+			}
+		}
+		return 0;
 	},
 	getActivityString: function(values){
 		switch(values.type){

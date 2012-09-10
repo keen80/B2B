@@ -71,8 +71,11 @@ Ext.define('B2B.view.Place_Detail', {
 			placedetailcontent = {
 				xtype: 'container',
 				id: 'placedetailcontent',
-				html: getStringHTMLFromValues(jsonData)
+				html: getStringHTMLFromValues(jsonData),
+				docked: 'top'
 			},
+
+
 			submitCheckInButton = {
 				xtype: "button",
 				text: i18n.app.BTN_CHECKIN,
@@ -86,16 +89,16 @@ Ext.define('B2B.view.Place_Detail', {
 				xtype: 'starrating',
 				id: 'beerrating',
 				itemsCount : 5,
-				label : '',
+				label : false,
 				value: 3,
 				valueCls: 'x-starrating-value',
 				itemCls : 'x-starrating',
 				itemHoverCls : 'x-starrating-hover',
-				height: 40,
 				startValue: true,
-				endValue: true,
-				margin: '0 0 10 0'
+				endValue: true
 			},
+
+
 			beersearch = {
 				xtype: 'beersearch',
 				id: 'placebeersearch'
@@ -143,7 +146,16 @@ Ext.define('B2B.view.Place_Detail', {
 			};
 
 
-
+/*
+		var step1 = {
+			xtype: 'fieldset',
+			id: 'drinkinstep1',
+			title: i18n.app.FORM_DRINKIN_STEP1_OK,
+			items: [
+				placedetailcontent
+			]
+		};
+		*/
 		var step1 = placedetailcontent;
 		var step2 = {
 			xtype: 'fieldset',
@@ -161,25 +173,30 @@ Ext.define('B2B.view.Place_Detail', {
 					{
 						xtype: 'tabpanel',
 						id: 'beerchoosetab',
-						ui: 'neutral',
+						ui: 'beermain',
+						tabBar: {
+							layout: {
+								pack: 'center'
+							}
+						},
 						items: [
 							{
 								//xtype: "beer",
-								title: "LIPPA",
+								title: i18n.app.LABEL_BEERHERE,
 								id: "drinkinplacebeerlist",
 								//store: Ext.getStore("Beers_place_Local"),
 								//flex: 1
 							},
 							{
 								//xtype: "favoritesbeer",
-								title: "CIPPA",
+								title: i18n.app.LABEL_BEERFAVORITE,
 								id: "drinkinfavoritesbeerlist",
 								store: Ext.getStore("FavoriteBeers_Local"),
 								//flex: 1
 							},
 							{
 							//	xtype: "beercomponentsearch",
-								title: "CUCU",
+								title: i18n.app.LABEL_BEERSEARCH,
 								id: "drinkinbeersearch",
 								//flex: 1
 							}

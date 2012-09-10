@@ -15,13 +15,19 @@ Ext.define('B2B.view.Beer_List', {
         		return "small-list beer-list-item-title beerTypeClass"+values.beerstyle;
         	},
             getImage1URL: function(values){
-                    //resources/beer/style"+values.beerstyle+".png'
+                    /*
                     var str = '<img class="avatar_small" src="';
                     if (_.isEmpty(values.beerstyle)){
                          str += 'resources/img/default/blank_beer32.png';
                      }else{
                         str += 'resources/img/default/blank_beer32.png';
                      }
+                    str += '" width="32" height="32">';
+                    return str;
+                    */
+                    // Invece degli stili per ora facciamo vedere il colore della birra
+                    var str = '<img class="avatar_small" src="';
+                    str += utils.getBeerColorImage(values);
                     str += '" width="32" height="32">';
                     return str;
             },
