@@ -27,6 +27,10 @@ Ext.define('B2B.view.User_Form', {
 					},
 					{
 						xtype: 'hiddenfield',
+						name: 'idFacebook'
+					},
+					{
+						xtype: 'hiddenfield',
 						name: 'pwdHash'
 					},
 					{
@@ -240,14 +244,7 @@ Ext.define('B2B.view.User_Form', {
 	},
 	onSaveProfileButtonTap: function(){
 		var values = this.getValues();
-		this.fireEvent("saveProfileCommand", this,
-						values.email,
-						values.email,
-						values.displayName,
-						values.email,
-						values.gender,
-						values.nationality,
-						values.birthDate);
+		this.fireEvent("saveProfileCommand", this, values);
 	},
 	onBackProfileButtonTap: function(){
 		this.fireEvent("backProfileCommand", this);

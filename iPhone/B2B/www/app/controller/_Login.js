@@ -16,18 +16,8 @@ Ext.define("B2B.controller._Login", {
 		}
 	},
 	onRegisterCommand: function(source, values) {
-		var date = Ext.Date.format(values.birthDate, 'c'),
-			params = {
-				idUser: values.idUser,
-				username: values.idUser,
-				displayName: values.displayName,
-				email: values.email,
-				gender: values.gender,
-				nationality: values.nationality,
-				birthDate: date
-			};
-
-		authentication.registerUserWithParams(params);
+		values.birthDate = Ext.Date.format(values.birthDate, 'c');
+		authentication.registerUserWithParams(values);
 	},
 	onLoginCommand: function() {
 		bridge.doLoginOnFB();

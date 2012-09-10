@@ -6,8 +6,8 @@ if(_(['en-US', 'it']).contains(language_string)){
 }
 
 var HH = {
-	SKIP_LOGIN: false,
-	OFFLINE_MODE: false,
+	SKIP_LOGIN: true,
+	OFFLINE_MODE: true,
 	APP_NAME: "Meet Beer",
 	APP_LOGO: "resources/img/logo_text.png",
 	IP_PORT_SERVER: "http://antreem.dtdns.net:8080",

@@ -29,7 +29,7 @@ Ext.define("B2B.controller.Profiles", {
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
 	},
-	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {
+	onSaveProfile: function(source, values) {
 		var errorCode = -1, errorMsg = "",
 			that = this,
 			viewport = Ext.Viewport;
@@ -45,16 +45,20 @@ Ext.define("B2B.controller.Profiles", {
 			url: HH.IP_PORT_SERVER+"/birrettaservice/rest/bserv/saveUser",
 			method: "POST",
 			headers: {
-        		"btUsername": username
+        		"btUsername": values.username
     		},
 			params: {
-				idUser: idUser,
-				username: username,
-				displayName: displayName,
-				email: email,
-				gender: gender,
-				nationality: nationality,
-				birthDate: birthDate
+				idUser: values.idUser,
+				idFacebook: values.idFacebook,
+				username: values.username,
+				email: values.email,
+				displayName: values.displayName,
+				firstName: values.firstName,
+				lastName: values.lastName,
+				description: values.description,
+				birthDate: values.birthDate,
+				gender: values.gender,
+				nationality: values.nationality
 			},
 			success: function(result) {
 				var json = Ext.decode(result.responseText, true);
@@ -89,7 +93,7 @@ Ext.define("B2B.controller.Profiles", {
 				break;
 			default:    // Fail
 				HH.log("--> Step: [Save user] Failure - CODE: " + errorCode + " - MSG: " + errorMsg);
-				utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
+				utils.alert(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
 				break;
 		}
 

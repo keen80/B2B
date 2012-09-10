@@ -1,12 +1,13 @@
 var authentication = {
 	userLoggedOnFB: {
+		idFB: "",
 		email: "",
 		displayName: "",
 		gender: "",
 		nationality: "",
 		birthDate: ""
 	},
-	loginOnFBCompleted: function(email, displayName, gender, nationality, birthDate) {
+	loginOnFBCompleted: function(idFB, email, displayName, gender, nationality, birthDate) {
 		var viewport = Ext.Viewport;
 
 		viewport.setMasked({
@@ -14,6 +15,7 @@ var authentication = {
             loadingText: i18n.app.HINT_LOADING
         });
 
+        this.userLoggedOnFB.idFB = idFB;
 		this.userLoggedOnFB.email = email;
 		this.userLoggedOnFB.displayName = displayName;
 		this.userLoggedOnFB.gender = gender;
@@ -56,6 +58,7 @@ var authentication = {
 		if (values && !_.isEmpty(values.idUser) && !_.isEmpty(values.displayName) && !_.isEmpty(values.birthDate)) {
 			var params = {
 				idUser: values.idUser,
+				idFacebook: values.idFacebook,
 				username: values.idUser,
 				displayName: values.displayName,
 				email: values.email,
@@ -80,6 +83,7 @@ var authentication = {
 							var token = json.response.body.list[0].btSid;
 							that._doRegisterUserCallback(0, {
 									idUser: params.idUser,
+									idFacebook: params.idFacebook,
 									username: params.username,
 									displayName: params.displayName,
 									email: params.email,
@@ -180,6 +184,7 @@ var authentication = {
 
 				register.setValues({
 					idUser: this.userLoggedOnFB.email,
+					idFacebook: this.userLoggedOnFB.idFB,
 					birthDate: new Date(this.userLoggedOnFB.birthDate),
 					email: this.userLoggedOnFB.email,
 					displayName: this.userLoggedOnFB.displayName,
@@ -225,7 +230,7 @@ var authentication = {
 				break;
 			case 1:    // Fail
 				HH.log("--> Step: [Register user] Failure - CODE: " + errorCode);
-				utils.title(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
+				utils.alert(i18n.app.COMMON_ATTENTION, i18n.app.ALERT_ERRORCOMMUNICATION);
 				break;
 			case 2:    // Params error
 				HH.log("---> Step: [Register user] Params are wrong");
