@@ -61,6 +61,7 @@ Ext.define('B2B.view.User_Form', {
 										this.actions = Ext.Viewport.add(
 											{
 												xtype: 'actionsheet',
+												zIndex: 9999,	// Evita il problema di visualizzazione della actionsheet sotto alle viste
 												items: [
 													{
 														text: i18n.app.BTN_CHOOSEPICTURE,
