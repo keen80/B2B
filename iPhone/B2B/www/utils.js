@@ -29,21 +29,18 @@ var utils = {
 	},
 	getDrinkString: function(values) {
 		if (values) {
-			switch(values.rate){
-				case 0:
-					return this.__(i18n.app.DRINK_TEXT_1_1, _.titleize(values.beerName), values.placeName);
-				case 1:
-					return this.__(i18n.app.DRINK_TEXT_1_2, _.titleize(values.beerName), values.placeName);
-				case 2:
-					return this.__(i18n.app.DRINK_TEXT_1_3, _.titleize(values.beerName), values.placeName);
-				case 3:
-					return this.__(i18n.app.DRINK_TEXT_1_4, _.titleize(values.beerName), values.placeName);
-				case 4:
-					return this.__(i18n.app.DRINK_TEXT_1_5, _.titleize(values.beerName), values.placeName);
-				case 5:
-					return this.__(i18n.app.DRINK_TEXT_1_6, _.titleize(values.beerName), values.placeName);
-				default:
-					return this.__(i18n.app.DRINK_TEXT_1_0, _.titleize(values.beerName), values.placeName);
+			if (values.rate === "0") {
+				return this.__(i18n.app.DRINK_TEXT_1_1, _.titleize(values.beerName), values.placeName);
+			} else if (values.rate === "1") {
+				return this.__(i18n.app.DRINK_TEXT_1_2, _.titleize(values.beerName), values.placeName);
+			} else if (values.rate === "2") {
+				return this.__(i18n.app.DRINK_TEXT_1_3, _.titleize(values.beerName), values.placeName);
+			} else if (values.rate === "3") {
+				return this.__(i18n.app.DRINK_TEXT_1_4, _.titleize(values.beerName), values.placeName);
+			} else if (values.rate === "4") {
+				return this.__(i18n.app.DRINK_TEXT_1_5, _.titleize(values.beerName), values.placeName);
+			} else if (values.rate === "5") {
+				return this.__(i18n.app.DRINK_TEXT_1_6, _.titleize(values.beerName), values.placeName);
 			}
 		}
 		return this.__(i18n.app.DRINK_TEXT_1_0, values.beerName, values.placeName);
@@ -86,7 +83,7 @@ var utils = {
 				pointstatus = 1;
 			}
 		};
-console.log(pointstatus);
+
 		switch(pointstatus){
 			case 1:
 				return this.__(i18n.app.POINTLABEL_TEXT_0_1, currentPoints);
@@ -98,7 +95,7 @@ console.log(pointstatus);
 	},
 	getPointClaim: function(profile){
 		var pointstatus = 0;
-		
+
 		var currentPoints = profile.currentPoints;
 		/*
 		if(currentPoints > 0){

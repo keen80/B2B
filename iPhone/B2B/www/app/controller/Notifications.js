@@ -25,7 +25,7 @@ Ext.define("B2B.controller.Notifications", {
 			xtype: "notification",
 			id: 'notification'
 		};
-		var appcontainer = Ext.getCmp('_app'); //.getProfile();
+		var appcontainer = this.getApp(); //.getProfile();
 		appcontainer.add(notification);
 		appcontainer.setActiveItem(2);
 	},

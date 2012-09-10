@@ -25,11 +25,11 @@ Ext.define("B2B.controller.Profiles", {
 		};
 
 		var profileContainer = this.getProfile();
-		profileContainer.add(userform);
+		this.getApp().add(userform);
 		var profileForm = this.getProfileForm();
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
-		profileContainer.setActiveItem(2);
+		// profileContainer.setActiveItem(2);
 
 	},
 
@@ -70,7 +70,7 @@ Ext.define("B2B.controller.Profiles", {
 			id: 'settings'
 		};
 
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.add(settings);
 		appcontainer.setActiveItem(2);
 	},

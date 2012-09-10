@@ -20,7 +20,7 @@ Ext.define("B2B.controller.Drinks", {
 		this.callParent(arguments);
 	},
 	popCurrentView: function() {
-		var appcontainer = Ext.getCmp('_app');
+		var appcontainer = this.getApp();
 		appcontainer.remove(Ext.getCmp('drinklistcontainerpanel'));
 	},
 	onShowDrinkList: function() {
@@ -28,8 +28,8 @@ Ext.define("B2B.controller.Drinks", {
 			xtype: 'drinklistcontainerpanel',
 			id: 'drinklistcontainerpanel'
 		};
-		
-		var appcontainer = Ext.getCmp('_app');
+
+		var appcontainer = this.getApp();
 		appcontainer.add(drinklistcontainerpanel);
 		appcontainer.setActiveItem(2);
 	}

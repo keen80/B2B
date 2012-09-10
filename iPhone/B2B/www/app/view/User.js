@@ -5,7 +5,7 @@ Ext.define('B2B.view.User', {
 		title: i18n.app.PANEL_ABOUTME,
 		iconCls: 'smiley_happy',
 		scrollable: false,
-		layout: 'card'
+		layout: 'vbox'
 	},
 	initialize: function(){
 		this.callParent(arguments);
@@ -190,20 +190,9 @@ Ext.define('B2B.view.User', {
 				myActivityButton,
 				settingsButton
 			]
-		},
-		item0 = {
-			xtype: 'panel',
-			flex: 1,
-			layout: {
-				type: 'vbox'
-			},
-			items: [
-				profileButton, secondRowButtonsContainer, thirdButtonsContainer
-			]
 		};
 
-		this.add([item0]);
-		this.setActiveItem(0);
+		this.add([profileButton, secondRowButtonsContainer, thirdButtonsContainer]);
 	},
 	onEditProfileButtonTap: function() {
 		this.fireEvent("editProfileCommand", this);
@@ -216,11 +205,9 @@ Ext.define('B2B.view.User', {
 	},
 	onDrinkListButtonTap: function() {
 		this.fireEvent("drinkListProfileCommand", this);
-		//utils.alert("To Be Implemented");
 	},
 	onMyActivityButtonTap: function() {
 		this.fireEvent("activityListProfileCommand", this);
-		//utils.alert("To Be Implemented");
 	},
 	onFavoritesButtonTap: function() {
 		this.fireEvent("favoritesProfileCommand", this);
