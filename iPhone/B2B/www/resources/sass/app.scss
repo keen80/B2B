@@ -1023,7 +1023,7 @@
             border-radius: 20px;
             border: 15px solid white;
             background-color: $beer-main-color;
-            margin-top: 7px;
+            margin-top: 5px;
         }
 
         .x-starrating-value {
@@ -1590,12 +1590,12 @@ _.each(_.values(i18n.countries), function(a){ console.log('@include field_nation
 @include sencha-button-ui('beersecondary', $beer-secondary-color,'matte');
 @include sencha-button-ui('beerneutral', $beer-neutral-color,'matte');
 @include sencha-button-ui('beerwhite', $beer-white-color,'matte');
-@include sencha-button-ui('beerred', #FFFAFA,'matte');
-@include sencha-button-ui('beerblue', #FAFAFF,'matte');
-@include sencha-button-ui('beeryellow', #FFFFFA,'matte');
-@include sencha-button-ui('beercyan', #FAFFFF,'matte');
-@include sencha-button-ui('beerviolet', #FFFAFF,'matte');
-@include sencha-button-ui('beergreen', #FAFFFA,'matte');
+@include sencha-button-ui('beerred', #FFF9F9,'matte');
+@include sencha-button-ui('beerblue', #F9F9FF,'matte');
+@include sencha-button-ui('beeryellow', #FFFFF9,'matte');
+@include sencha-button-ui('beercyan', #F9FFFF,'matte');
+@include sencha-button-ui('beerviolet', #FFF9FF,'matte');
+@include sencha-button-ui('beergreen', #F9FFF9,'matte');
 
 
 /** To Do da rimuovere */

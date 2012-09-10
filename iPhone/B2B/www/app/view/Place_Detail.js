@@ -75,7 +75,7 @@ Ext.define('B2B.view.Place_Detail', {
 				docked: 'top'
 			},
 
-
+/* */
 			submitCheckInButton = {
 				xtype: "button",
 				text: i18n.app.BTN_CHECKIN,
@@ -85,6 +85,8 @@ Ext.define('B2B.view.Place_Detail', {
 				handler: this.onSubmitCheckInButtonTap,
 				scope: this
 			},
+
+/* */
 			rating = {
 				xtype: 'starrating',
 				id: 'beerrating',
@@ -185,20 +187,20 @@ Ext.define('B2B.view.Place_Detail', {
 								title: i18n.app.LABEL_BEERHERE,
 								id: "drinkinplacebeerlist",
 								//store: Ext.getStore("Beers_place_Local"),
-								//flex: 1
+								flex: 1
 							},
 							{
 								//xtype: "favoritesbeer",
 								title: i18n.app.LABEL_BEERFAVORITE,
 								id: "drinkinfavoritesbeerlist",
 								store: Ext.getStore("FavoriteBeers_Local"),
-								//flex: 1
+								flex: 1
 							},
 							{
 							//	xtype: "beercomponentsearch",
 								title: i18n.app.LABEL_BEERSEARCH,
-								id: "drinkinbeersearch",
-								//flex: 1
+								id: "placebeerlist",
+								flex: 1
 							}
 						]
 					}

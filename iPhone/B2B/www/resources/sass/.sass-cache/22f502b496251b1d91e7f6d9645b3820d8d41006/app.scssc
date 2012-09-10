@@ -1,5 +1,5 @@
 3.2.1 (Media Mark)
-89ad70c945c7367af5f05bd1db51793b714e4bad
+89aab76b3c52fc8548918512171f8fc052ee121f
 o:Sass::Tree::RootNode
 :@template"uÖ
 /* BASE COLOR SETUPS  ***************************************************** */
@@ -1026,7 +1026,7 @@
             border-radius: 20px;
             border: 15px solid white;
             background-color: $beer-main-color;
-            margin-top: 7px;
+            margin-top: 5px;
         }
 
         .x-starrating-value {
@@ -1593,12 +1593,12 @@ _.each(_.values(i18n.countries), function(a){ console.log('@include field_nation
 @include sencha-button-ui('beersecondary', $beer-secondary-color,'matte');
 @include sencha-button-ui('beerneutral', $beer-neutral-color,'matte');
 @include sencha-button-ui('beerwhite', $beer-white-color,'matte');
-@include sencha-button-ui('beerred', #FFFAFA,'matte');
-@include sencha-button-ui('beerblue', #FAFAFF,'matte');
-@include sencha-button-ui('beeryellow', #FFFFFA,'matte');
-@include sencha-button-ui('beercyan', #FAFFFF,'matte');
-@include sencha-button-ui('beerviolet', #FFFAFF,'matte');
-@include sencha-button-ui('beergreen', #FAFFFA,'matte');
+@include sencha-button-ui('beerred', #FFF9F9,'matte');
+@include sencha-button-ui('beerblue', #F9F9FF,'matte');
+@include sencha-button-ui('beeryellow', #FFFFF9,'matte');
+@include sencha-button-ui('beercyan', #F9FFFF,'matte');
+@include sencha-button-ui('beerviolet', #FFF9FF,'matte');
+@include sencha-button-ui('beergreen', #F9FFF9,'matte');
 
 
 /** To Do da rimuovere */
@@ -2793,7 +2793,7 @@ o;F
 [ o;2;%i ;o; ;;3;"	20px;@;@;iÿ;4;5;
 [ ;["border-radiuso;2;%i ;o; ;;3;"15px solid white;@;@;i ;4;5;
 [ ;["bordero;2;%i ;o;	;@;i;"beer_main_color;"beer-main-color;@;i;4;5;
-[ ;["background-coloro;2;%i ;o; ;;3;"7px;@;@;i;4;5;
+[ ;["background-coloro;2;%i ;o; ;;3;"5px;@;@;i;4;5;
 [ ;["margin-topo;$;%i ;&[".x-starrating-value;'o;(;)" ;*[o;+;*[o;,
 ;-0;.o;/;0{ ;)@/;*[o;1;)@/;i;["x-starrating-value;i;i;@;i;	T;
 [
@@ -3408,17 +3408,17 @@ matte;@;i6;"sencha-button-uio;E;9{ ;@;#0;i7;
 matte;@;i7;"sencha-button-uio;E;9{ ;@;#0;i8;
 [ ;6[o; 	;;!;"beerwhite;@;i8o;	;@;i8;"beer_white_color;"beer-white-coloro; 	;;!;"
 matte;@;i8;"sencha-button-uio;E;9{ ;@;#0;i9;
-[ ;6[o; 	;;!;"beerred;@;i9o;	;{	;iÿ;i;iú;iú;0;@;i9o; 	;;!;"
+[ ;6[o; 	;;!;"beerred;@;i9o;	;{	;iÿ;i;iù;iù;0;@;i9o; 	;;!;"
 matte;@;i9;"sencha-button-uio;E;9{ ;@;#0;i:;
-[ ;6[o; 	;;!;"beerblue;@;i:o;	;{	;iú;i;iú;iÿ;0;@;i:o; 	;;!;"
+[ ;6[o; 	;;!;"beerblue;@;i:o;	;{	;iù;i;iù;iÿ;0;@;i:o; 	;;!;"
 matte;@;i:;"sencha-button-uio;E;9{ ;@;#0;i;;
-[ ;6[o; 	;;!;"beeryellow;@;i;o;	;{	;iÿ;i;iÿ;iú;0;@;i;o; 	;;!;"
+[ ;6[o; 	;;!;"beeryellow;@;i;o;	;{	;iÿ;i;iÿ;iù;0;@;i;o; 	;;!;"
 matte;@;i;;"sencha-button-uio;E;9{ ;@;#0;i<;
-[ ;6[o; 	;;!;"beercyan;@;i<o;	;{	;iú;i;iÿ;iÿ;0;@;i<o; 	;;!;"
+[ ;6[o; 	;;!;"beercyan;@;i<o;	;{	;iù;i;iÿ;iÿ;0;@;i<o; 	;;!;"
 matte;@;i<;"sencha-button-uio;E;9{ ;@;#0;i=;
-[ ;6[o; 	;;!;"beerviolet;@;i=o;	;{	;iÿ;i;iú;iÿ;0;@;i=o; 	;;!;"
+[ ;6[o; 	;;!;"beerviolet;@;i=o;	;{	;iÿ;i;iù;iÿ;0;@;i=o; 	;;!;"
 matte;@;i=;"sencha-button-uio;E;9{ ;@;#0;i>;
-[ ;6[o; 	;;!;"beergreen;@;i>o;	;{	;iú;i;iÿ;iú;0;@;i>o; 	;;!;"
+[ ;6[o; 	;;!;"beergreen;@;i>o;	;{	;iù;i;iÿ;iù;0;@;i>o; 	;;!;"
 matte;@;i>;"sencha-button-uio;
 ;;;["/** To Do da rimuovere */;@;iA;
 [ o;E;9{ ;@;#0;iB;
