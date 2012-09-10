@@ -30,7 +30,7 @@ Ext.define("B2B.controller.Profiles", {
 		profileForm.reset();
 		profileForm.setRecord(Ext.getStore('Profile_Local').first());
 		profileContainer.setActiveItem(2);
-		
+
 	},
 
 	onSaveProfile: function(source, idUser, username, displayName, email, gender, nationality, birthDate) {

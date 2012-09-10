@@ -46,18 +46,17 @@ Ext.define('B2B.view.Beer_Add_Form', {
 						id: "selectfieldbeerstyle",
 						cls: 'beer_form_selectfield',
 						placeHolder: i18n.app.HINT_BEERCHOOSESTYLE,
-						//label: i18n.app.LABEL_BEERSTYLE,
-						options: i18n.beerstyles
+						options: i18n.beerstyles,
+						value: 1
 					},
 					{
 						xtype: 'selectfield',
 						name: "grad",
 						id: "selectfieldgrad",
 						cls: 'beer_form_selectfield',
-						//label: i18n.app.LABEL_BEERGRAD,
 						placeHolder: i18n.app.HINT_BEERCHOOSEGRAD,
-						store: null,
-						options: i18n.beergrads
+						options: i18n.beergrads,
+						value: 1
 					},
 					{
 						xtype: 'selectfield',

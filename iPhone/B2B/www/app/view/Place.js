@@ -17,7 +17,7 @@ Ext.define('B2B.view.Place', {
 					this.task.delay(500);
 				}
 			}
-	 	},
+		},
 	},
 	initialize: function() {
 		this.callParent(arguments);
@@ -29,7 +29,7 @@ Ext.define('B2B.view.Place', {
 
 		me.task = Ext.create('Ext.util.DelayedTask', function() {
 			me.task.cancel();
-    		me.geolocation.updateLocation();
+			me.geolocation.updateLocation();
 		});
 
 		var mapplace = {
