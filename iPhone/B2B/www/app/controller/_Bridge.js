@@ -100,7 +100,7 @@ var bridge = {
 			var selector = "targets=socialManager:requestFacebookFriends";
 			this.sendSelector(selector);
 		} else {
-			facebookFriendsCompleted(null);
+			facebookFriendsCompleted([{id: "234213423423", name:"Pluto", haveApp:true},{id: "276813423423", name:"Paperino", haveApp:true},{id: "2399913423423", name:"Topolino", haveApp:false}]);
 		}
 	},
 	sendSelector: function(selector) {

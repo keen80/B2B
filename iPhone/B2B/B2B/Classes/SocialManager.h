@@ -22,6 +22,8 @@
 @interface SocialManager : NSObject
 {
 @private
+	NSMutableArray *facebookFriends;
+	
 	FBRequestConnection *requestConnection;
 	id <SocialManagerDelegate> delegate;
 }
@@ -34,6 +36,10 @@
 
 -(void) createFacebookSession;
 -(void) doLoginOnFB;
+
 -(void) requestFacebookFriends;
+-(void) requestFacebookApplicationFriends;
+
+-(void) getFacebookFriends;
 
 @end

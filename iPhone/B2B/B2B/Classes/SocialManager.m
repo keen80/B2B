@@ -19,6 +19,10 @@
 							 forFbID:fbID
 							  result:(id)result
 							   error:(NSError *)error;
+-(void) requestFacebookApplicationFriendsCompleted:(FBRequestConnection *)connection
+										   forFbID:fbID
+											result:(id)result
+											 error:(NSError *)error;
 
 @end
 
@@ -40,6 +44,10 @@
 {
 	self.delegate = nil;
 	[self removeCurrentRequest];
+	
+	[facebookFriends removeAllObjects];
+	[facebookFriends release];
+	facebookFriends = nil;
 	
 	[super dealloc];
 }
@@ -169,7 +177,7 @@
 	
 	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
 	{
-		[self requestPersonalInfoCompleted:connection forFbID:@"me" result:result error:error];
+		[self requestFacebookFriendsCompleted:connection forFbID:@"me/friends" result:result error:error];
 	};
 	
 	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
@@ -177,6 +185,30 @@
 	
 	[requestConnection addRequest:request completionHandler:handler];
 	[requestConnection start];
+}
+
+-(void) requestFacebookApplicationFriends
+{
+	[self removeCurrentRequest];
+	requestConnection = [[FBRequestConnection alloc] init];
+	
+	FBRequestHandler handler = ^(FBRequestConnection *connection, id result, NSError *error)
+	{
+		[self requestFacebookApplicationFriendsCompleted:connection forFbID:@"me" result:result error:error];
+	};
+	
+	FBRequest *request = [[[FBRequest alloc] initWithSession:FBSession.activeSession
+												  restMethod:@"friends.getAppUsers"
+												  parameters:[NSDictionary dictionary]
+												  HTTPMethod:@"GET"] autorelease];
+	
+	[requestConnection addRequest:request completionHandler:handler];
+	[requestConnection start];
+}
+
+-(void) getFacebookFriends
+{
+	[self requestFacebookFriends];
 }
 
 #pragma mark - Facebook callbacks
@@ -215,6 +247,29 @@
     }
     [self removeCurrentRequest];
 	NSLog(@"[SocialManager] Request friends completed!");
+	
+	if (facebookFriends == nil)
+	{
+		facebookFriends = [[NSMutableArray alloc] init];
+	}
+	
+	[facebookFriends removeAllObjects];
+	
+	[self requestFacebookApplicationFriends];
+}
+
+-(void) requestFacebookApplicationFriendsCompleted:(FBRequestConnection *)connection
+										   forFbID:fbID
+											result:(id)result
+											 error:(NSError *)error
+{
+    if (requestConnection &&
+        connection != requestConnection)
+	{
+        return;
+    }
+    [self removeCurrentRequest];
+	NSLog(@"[SocialManager] Request application's friends completed!");
 	
 	SEL selector = @selector(facebookFriendsCompleted:);
 	if ([self.delegate respondsToSelector:selector])
